@@ -1,0 +1,6 @@
+* text=auto
+*.bat text=crlf
+*.md text=crlf
+config.yaml text=crlf
+ftp.txt text=crlf
+apps/licenses/* text=crlf
