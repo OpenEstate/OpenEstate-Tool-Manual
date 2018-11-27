@@ -1,0 +1,20 @@
+{{ define "metaTitle" }}{{ .Title }} ({{ .Site.Title }}){{ end }}
+{{ define "metaDescription" }}{{- .Description -}}{{ end }}
+{{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
+{{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}
+
+{{- define "head" -}}
+{{ partialCached "include-website-toc.html" . -}}
+{{- end -}}
+
+{{ define "content" }}
+<div class="row">
+    <div id="content" class="col-lg-8 col-xl-9 order-last order-lg-first clearfix">
+        {{- .Content -}}
+    </div>
+    <div id="toc" class="col-lg-4 col-xl-3 order-first order-lg-last">
+        <div id="toc-nav" class="list-group mb-3" style="font-size:0.9em;">
+        </div>
+    </div>
+</div>
+{{ end }}

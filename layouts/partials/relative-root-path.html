@@ -1,0 +1,4 @@
+{{- if .Parent -}}{{- template "path" .Parent -}}{{- end -}}
+{{- define "path" -}}
+{{- if .Parent -}}../{{- template "path" .Parent -}}{{- end -}}
+{{- end -}}

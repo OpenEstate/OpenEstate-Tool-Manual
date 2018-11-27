@@ -1,0 +1,36 @@
+defaultContentLanguage: en
+enableRobotsTXT: false
+relativeURLs: true
+uglyURLs: true
+metaDataFormat: yaml
+
+languages:
+  en:
+    title: Manual for OpenEstate-ImmoTool
+    baseURL: https://manual.openestate.org/en/
+    contentDir: content/en
+    languageName: English
+    weight: 10
+
+  de:
+    title: Handbuch für OpenEstate-ImmoTool
+    baseURL: https://manual.openestate.org/de/
+    contentDir: content/de
+    languageName: Deutsch
+    weight: 20
+
+blackfriday:
+  taskLists: false
+
+disableKinds:
+- sitemap
+- RSS
+- taxonomy
+- taxonomyTerm
+
+outputs:
+  home:
+  - HTML
+  - JSON
+  page:
+  - HTML

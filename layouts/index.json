@@ -1,0 +1,7 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.Pages -}}
+{{- if ne .File.Path "suche.md" -}}
+{{- $.Scratch.Add "index" (dict "uri" .URL "title" .Title "content" .Plain "description" .Description) -}}
+{{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

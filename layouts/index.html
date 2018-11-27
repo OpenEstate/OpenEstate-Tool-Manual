@@ -1,0 +1,11 @@
+{{ define "metaTitle" }}{{- .Site.Title -}}{{ end }}
+{{ define "metaDescription" }}{{- .Description -}}{{ end }}
+{{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
+
+{{ define "content" }}
+<h1>{{- .Site.Title -}}</h1>
+<hr>
+<div id="content" class="clearfix">
+{{- .Content -}}
+</div>
+{{ end }}
