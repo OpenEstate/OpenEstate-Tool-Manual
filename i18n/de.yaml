@@ -14,3 +14,5 @@
   translation: "Ihre Suche nach dem Begriff {1} lieferte {0} Ergebnisse."
 - id: "Scroll to the top of the page."
   translation: "An den Anfang der Seite scrollen."
+- id: "Table of contents"
+  translation: "Inhaltsverzeichnis"

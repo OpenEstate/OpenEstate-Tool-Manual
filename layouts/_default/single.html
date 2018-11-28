@@ -4,6 +4,8 @@
 {{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}
 
 {{- define "head" -}}
+{{ partialCached "include-scrolltofixed.html" . -}}
+{{ partialCached "include-scrollspy.html" . -}}
 {{ partialCached "include-website-toc.html" . -}}
 {{- end -}}
 
@@ -12,8 +14,11 @@
     <div id="content" class="col-lg-8 col-xl-9 order-last order-lg-first clearfix">
         {{- .Content -}}
     </div>
-    <div id="toc" class="col-lg-4 col-xl-3 order-first order-lg-last">
-        <div id="toc-nav" class="list-group mb-3" style="font-size:0.9em;">
+    <div id="toc" class="col-lg-4 col-xl-3 order-first order-lg-last d-print-none">
+        <div id="toc-card" class="card mb-3">
+            <div class="card-header">{{ i18n "Table of contents" }}</div>
+            <div id="toc-nav" class="list-group" style="font-size:0.9em;">
+            </div>
         </div>
     </div>
 </div>

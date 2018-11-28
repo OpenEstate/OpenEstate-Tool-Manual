@@ -38,9 +38,20 @@ function updateScrollButton() {
     }
 }
 
+function scrollToElement(element) {
+    //console.info('SCROLL TO');
+    //console.info(element);
+    var top = element.offset().top - 75;
+    scrollToPosition(top);
+}
+
+function scrollToPosition(top) {
+    $('html, body').animate({scrollTop: top}, 600);
+}
+
 $(document).ready(function () {
 
-    // leere Tabellen-Kopfzeilen ausblenden
+    // hide empty table headers
     $('#content table thead').each(function (index) {
         var thead = $(this);
 
@@ -57,30 +68,35 @@ $(document).ready(function () {
         }
     });
 
-    // CSS-Klassen für Tabellen setzen
+    // add css classes for tables
     $('#content table')
         .addClass('table table-striped table-bordered table-hover')
         .wrap('<div class="table-responsive"></div>');
 
-    // CSS-Klassen für Figure setzen
+    // add css classes for figures
     $('#content figure')
         .wrap('<div class="figure-container text-center"></div>');
     $('#content figure > img')
         .addClass('img-fluid');
 
-    // ggf. Scroll-Button einblenden / ausblenden
+    // show / hide the scroll button
     updateScrollButton();
-    $( window ).resize(function() {
+    $(window).resize(function () {
         updateScrollButton();
     });
-    $( window ).scroll(function() {
+    $(window).scroll(function () {
         updateScrollButton();
     });
 
-    // Klick auf den Scroll-Button verarbeiten
-    $('#scroll-up').click(function(){
-        $('html, body').animate({ scrollTop: 0 }, 600);
+    // process clicks on the scroll button
+    $('#scroll-up').click(function () {
+        scrollToPosition(0);
         $('#scroll-up').blur();
         return false;
+    });
+
+    $('#content a[href^="#"]').click(function (event) {
+        event.preventDefault();
+        scrollToElement($($(this).attr('href')));
     });
 });
