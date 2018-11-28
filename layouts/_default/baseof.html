@@ -27,9 +27,33 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarMain">
         {{ partial "menu-main.html" . -}}
-        <form action="{{ partial "relative-root-path.html" . }}search.html" method="get" class="form-inline my-2 my-md-0">
-            <input class="form-control mr-sm-2" type="text" name="q" placeholder="{{ i18n "Your search term…" }}" aria-label="{{ i18n "Search" }}" style="width:200px;">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" title="{{ i18n "Search" }}"><i class="fas fa-search"></i></button>
+        <ul id="nav-search" class="nav navbar-nav d-lg-none" data-sm-options="{ showTimeout:0 }">
+            <li class="nav-item dropdown d-none d-md-block">
+                <a href="#" title="Diese Webseite durchsuchen." class="nav-link dropdown-toggle">
+                    <i class="fas fa-search"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right p-0">
+                    <li id="search-dropdown" class="p-0">
+                        <form action="{{ partial "relative-root-path.html" . }}search.html" method="get">
+                            <div class="input-group">
+                                <input name="q" type="text" class="form-control" placeholder="{{ i18n "Your search term…" }}" aria-label="{{ i18n "Your search term…" }}">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit" title="{{ i18n "Search" }}."><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="navbar-text d-block d-md-none p-0"><hr></div>
+        <form id="search-form" action="{{ partial "relative-root-path.html" . }}search.html" method="get" class="form-inline d-md-none d-lg-inline">
+            <div class="input-group">
+                <input class="form-control mr-sm-2" type="text" name="q" placeholder="{{ i18n "Your search term…" }}" aria-label="{{ i18n "Your search term…" }}">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" title="{{ i18n "Search" }}"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
         </form>
     </div>
 </nav>

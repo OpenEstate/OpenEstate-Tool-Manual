@@ -33,6 +33,39 @@ nav.navbar {
     margin: -75px 0 0; /* negative fixed header height */
 }
 
+/* search form (dropdown) */
+
+#search-dropdown {
+    width: 100vw;
+    max-width: 250px;
+}
+
+#search-dropdown .input-group {
+    width: 100%;
+}
+
+/* search form (embedded) */
+
+#search-form {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    #search-form {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #search-form {
+        width: 300px;
+    }
+}
+
+#search-form .input-group {
+    width: 100%;
+}
+
 /**
  * logo in main menu
  */

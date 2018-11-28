@@ -79,6 +79,25 @@ $(document).ready(function () {
     $('#content figure > img')
         .addClass('img-fluid');
 
+    // don't hide search popup as long as the search field is focused
+    $('#nav-search').on('beforehide.smapi', function(e, menu)
+    {
+        if ($('#nav-search .form-control').is(':focus')) {
+            //console.info( 'keep search open' );
+            return false;
+        }
+        else {
+            //console.info( 'close search' );
+            return true;
+        }
+    });
+
+    // hide search popup if the search field looses its focus
+    $('#nav-search .form-control').blur(function() {
+        //console.info( 'lost focus' );
+        $('#nav-search .dropdown-menu').fadeOut();
+    });
+
     // show / hide the scroll button
     updateScrollButton();
     $(window).resize(function () {
