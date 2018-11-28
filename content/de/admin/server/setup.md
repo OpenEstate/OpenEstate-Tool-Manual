@@ -89,7 +89,7 @@ Es ist aber auch in anderen Fällen grundsätzlich sinnvoll eine Verschlüsselun
 
 > **Hinweis**
 >
-> Der ImmoTool-Server erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle ImmoTools in Ihrem Netzwerk konfigurieren](#admins.server.ssl.client).
+> Der ImmoTool-Server erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle ImmoTools in Ihrem Netzwerk konfigurieren](#admin_server_setup_ssl_client).
 
 
 #### SSL-Zertifikat erzeugen {#admin_server_setup_ssl_cert}
@@ -195,7 +195,7 @@ Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss 
 
 Beim Aufbau der Verbindung muss als Protokoll `hsqls` ausgewählt werden, damit das ImmoTool / AdminTool eine verschlüsselte Verbindung zum ImmoTool-Server herstellen kann.
 
-Beim Erzeugen eines neuen Projekts kann im [Projektassistenten](usage_general_projects.md#usage_general_projects_wizard) das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
+Beim Erzeugen eines neuen Projekts kann im [Projektassistenten]({{< relref "../../usage/general/projects.md#usage_general_projects_wizard" >}}) das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
 
 {{< figure src="setup_ssl_immotool-01.jpg" caption="SSL-Verschlüsselung via Projektassistent aktivieren" >}}
 

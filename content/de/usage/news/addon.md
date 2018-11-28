@@ -24,7 +24,7 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "Nachrich
 
 ### Einstellungen {#usage_news_addon_settings}
 
-Die folgenden Einstellungen werden vom "Nachrichten Add-On" in die [Programm-Einstellungen](usage_general_settings.md#usage_general_settings) eingefügt.
+Die folgenden Einstellungen werden vom "Nachrichten Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
 > **TODO**
 >

@@ -8,7 +8,7 @@ weight: 30
 menu:
   main:
     parent: usage-email
-    identifier: usage-email-accounts
+    identifier: usage-email-account
 
 ---
 
@@ -23,7 +23,7 @@ Für jede E-Mailadresse, die mit dem ImmoTool genutzt werden soll, können Sie i
 
 > **Hinweis**
 >
-> Die technischen Details zur Einrichtung des E-Mailkontos erfahren Sie von Ihrem E-Mailanbieter. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter](usage_email_providers.md#usage_email_providers).
+> Die technischen Details zur Einrichtung des E-Mailkontos erfahren Sie von Ihrem E-Mailanbieter. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers" >}}).
 
 
 ### E-Mailkonto hinzufügen {#usage_email_accounts_add}
@@ -105,7 +105,7 @@ Um eingehende Nachrichten über das **IMAP**-Protokoll vom E-Mailserver abholen 
 
 > **Hinweis**
 >
-> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die IMAP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter](usage_email_providers.md#usage_email_providers_imap).
+> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die IMAP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_imap" >}}).
 
 
 Folgende Port-Nummern werden bei IMAP meist für die verschiedenen Verschlüsselungsverfahren verwendet:
@@ -143,7 +143,7 @@ Um eingehende Mails über das **POP3**-Protokoll vom E-Mailserver abholen zu kö
 
 > **Hinweis**
 >
-> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die POP3-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter](usage_email_providers.md#usage_email_providers_pop3).
+> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die POP3-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_pop3" >}}).
 
 Folgende Port-Nummern werden bei POP3 meist für die verschiedenen Verschlüsselungsverfahren verwendet:
 
@@ -180,7 +180,7 @@ Um ausgehende Mails über das **SMTP**-Protokoll versenden zu können, öffnen S
 
 > **Hinweis**
 >
-> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die SMTP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter](usage_email_providers.md#usage_email_providers_smtp).
+> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die SMTP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_smtp" >}}).
 
 Folgende Port-Nummern werden bei SMTP meist für die verschiedenen Verschlüsselungsverfahren verwendet:
 

@@ -27,7 +27,7 @@ Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Rechner d
 
 > **Hinweis**
 >
-> Wenn Sie ImmoTool auf nur einem einzelnen Rechner betreiben wollen, empfiehlt sich die einfachere [Einzelplatz-Installation](install_local.md#intro_install_local).
+> Wenn Sie ImmoTool auf nur einem einzelnen Rechner betreiben wollen, empfiehlt sich die einfachere [Einzelplatz-Installation]({{< relref "install_local.md#intro_install_local" >}}).
 
 
 ### Vorteile einer Netzwerk-Installation {#intro_install_network_pro}

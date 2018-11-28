@@ -49,7 +49,7 @@ Klicken Sie in der [Ansicht des E-Mailordners](#usage_email_manage_folder) mit d
 
 ### E-Mails aus Adressbuch versenden {#usage_email_manage_addressbook}
 
-In der [Adressübersicht](usage_addressbook_manage.md#usage_addressbook_manage_table) und im [Adressformular](usage_addressbook_manage.md#usage_addressbook_manage_form) kann über das Aktionsmenü die Erzeugung eine neuen E-Mail gestartet werden.
+In der [Adressübersicht]({{< relref "../addressbook/manage.md#usage_addressbook_manage_table" >}}) und im [Adressformular]({{< relref "../addressbook/manage.md#usage_addressbook_manage_form" >}}) kann über das Aktionsmenü die Erzeugung eine neuen E-Mail gestartet werden.
 
 {{< figure src="compose_from_addressbook.jpg" caption="E-Mail aus dem Adressbestand verfassen" >}}
 

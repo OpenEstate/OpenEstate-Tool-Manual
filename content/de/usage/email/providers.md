@@ -21,7 +21,7 @@ Selbstverständlich können auch beliebige andere E-Mailanbieter mit dem ImmoToo
 
 ### E-Mailempfang via IMAP {#usage_email_providers_imap}
 
-Die folgende Tabelle enthält einer Übersicht der IMAP-Einstellungen von verschiedenen bekannten E-Mailanbietern. Abhängig von der gewählten Verschlüsselungstechnik ("Krypto") muss eine bestimmte Port-Nr bei der [Einrichtung des Mailempfangs via IMAP](usage_email_accounts.md#usage_email_accounts_setup_imap) verwendet werden.
+Die folgende Tabelle enthält einer Übersicht der IMAP-Einstellungen von verschiedenen bekannten E-Mailanbietern. Abhängig von der gewählten Verschlüsselungstechnik ("Krypto") muss eine bestimmte Port-Nr bei der [Einrichtung des Mailempfangs via IMAP]({{< relref "account.md#usage_email_accounts_setup_imap" >}}) verwendet werden.
 
 | Anbieter | Anmeldung | Krypto     | Server                | Port  |
 | -------- | --------- | ---------- | --------------------- | -----:|
@@ -36,7 +36,7 @@ Die folgende Tabelle enthält einer Übersicht der IMAP-Einstellungen von versch
 
 ### E-Mailempfang via POP3 {#usage_email_providers_pop3}
 
-Die folgende Tabelle enthält einer Übersicht der POP3-Einstellungen von verschiedenen bekannten E-Mailanbietern. Abhängig von der gewählten Verschlüsselungstechnik ("Krypto") muss eine bestimmte Port-Nr bei der [Einrichtung des Mailempfangs via POP3](usage_email_accounts.md#usage_email_accounts_setup_pop3) verwendet werden.
+Die folgende Tabelle enthält einer Übersicht der POP3-Einstellungen von verschiedenen bekannten E-Mailanbietern. Abhängig von der gewählten Verschlüsselungstechnik ("Krypto") muss eine bestimmte Port-Nr bei der [Einrichtung des Mailempfangs via POP3]({{< relref "account.md#usage_email_accounts_setup_pop3" >}}) verwendet werden.
 
 | Anbieter | Anmeldung | Krypto     | Server                | Port  |
 | -------- | --------- | ---------- | --------------------- | -----:|
@@ -51,7 +51,7 @@ Die folgende Tabelle enthält einer Übersicht der POP3-Einstellungen von versch
 
 ### E-Mailversand via SMTP {#usage_email_providers_smtp}
 
-Die folgende Tabelle enthält einer Übersicht der SMTP-Einstellungen von verschiedenen bekannten E-Mailanbietern. Abhängig von der gewählten Verschlüsselungstechnik ("Krypto") muss eine bestimmte Port-Nr bei der [Einrichtung des Mailversands via SMTP](usage_email_accounts.md#usage_email_accounts_setup_smtp) verwendet werden.
+Die folgende Tabelle enthält einer Übersicht der SMTP-Einstellungen von verschiedenen bekannten E-Mailanbietern. Abhängig von der gewählten Verschlüsselungstechnik ("Krypto") muss eine bestimmte Port-Nr bei der [Einrichtung des Mailversands via SMTP]({{< relref "account.md#usage_email_accounts_setup_smtp" >}}) verwendet werden.
 
 | Anbieter | Anmeldung | Krypto     | Server                | Port  |
 | -------- | --------- | ---------- | --------------------- | -----:|

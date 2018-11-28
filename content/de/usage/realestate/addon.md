@@ -28,7 +28,7 @@ Die jeweiligen Funktionalitäten erreichen Sie über die Sidebar oder das Kopfme
 
 ### Einstellungen {#usage_realestate_addon_settings}
 
-Für das "Immobilien-Add-On" können diverse Einstellungen in den [Programm-Einstellungen](usage_general_settings.md#usage_general_settings_realestate_addon) vorgenommen werden.
+Für das "Immobilien-Add-On" können diverse Einstellungen in den [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings_realestate_addon" >}}) vorgenommen werden.
 
 
 ### Fragen & Antworten zum Immobilien Add-On {#usage_realestate_addon_faq}

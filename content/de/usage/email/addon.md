@@ -24,12 +24,12 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "E-Mail A
 
 > **Hinweis**
 >
-> Um das "E-Mail Add-On" verwenden zu können benötigen Sie eine E-Mailadresse, die einen Zugriff über die Mailprotokolle **POP3**, **IMAP** und/oder **SMTP** ermöglicht. Dies ist bei den meisten E-Mailanbietern der Fall. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter](usage_email_providers.md#usage_email_providers).
+> Um das "E-Mail Add-On" verwenden zu können benötigen Sie eine E-Mailadresse, die einen Zugriff über die Mailprotokolle **POP3**, **IMAP** und/oder **SMTP** ermöglicht. Dies ist bei den meisten E-Mailanbietern der Fall. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers" >}}).
 
 
 ### Einstellungen {#usage_email_addon_settings}
 
-Die folgenden Einstellungen werden vom "E-Mail Add-On" in die [Programm-Einstellungen](usage_general_settings.md#usage_general_settings) eingefügt.
+Die folgenden Einstellungen werden vom "E-Mail Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
 > **TODO**
 >

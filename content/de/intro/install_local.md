@@ -23,7 +23,7 @@ Beim Programmstart wird automatisch eine Datenbank auf dem Rechner des Anwenders
 
 > **Hinweis**
 >
-> Wenn Sie ImmoTool mit mehreren Mitarbeitern nutzen wollen, führen Sie bitte statt dessen eine [Netzwerk-Installation](install_network.md#intro_install_network) durch.
+> Wenn Sie ImmoTool mit mehreren Mitarbeitern nutzen wollen, führen Sie bitte statt dessen eine [Netzwerk-Installation]({{< relref "install_network.md#intro_install_network" >}}) durch.
 
 
 #### Vorteile einer Einzelplatz-Installation {#intro_install_local_pro}
@@ -41,7 +41,7 @@ Beim Programmstart wird automatisch eine Datenbank auf dem Rechner des Anwenders
 
 ### Programmpaket installieren
 
-Das ImmoTool wird derzeit als [ZIP-Archiv](http://de.wikipedia.org/wiki/ZIP-Dateiformat) und [TAR.GZ-Archiv](http://de.wikipedia.org/wiki/Tar) [zum Download angeboten](download.md#intro_download). Entpacken Sie das heruntergeladene Archiv auf Ihrem Rechner.
+Das ImmoTool wird derzeit als [ZIP-Archiv](http://de.wikipedia.org/wiki/ZIP-Dateiformat) und [TAR.GZ-Archiv](http://de.wikipedia.org/wiki/Tar) [zum Download angeboten]({{< relref "download.md#intro_download" >}}). Entpacken Sie das heruntergeladene Archiv auf Ihrem Rechner.
 
 Danach sollten Sie einen neuen Ordner namens `OpenEstate-ImmoTool` vorfinden. Verschieben Sie diesen Ordner an eine Stelle auf Ihrer Festplatte, von der Sie das Programm später leicht wieder finden können (z.B. in den Ordner "Eigenen Dateien").
 

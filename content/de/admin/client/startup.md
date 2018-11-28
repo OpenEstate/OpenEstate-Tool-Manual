@@ -54,7 +54,7 @@ Der Programmstart des ImmoTools via `ImmoTool.exe` / `ImmoTool.bat` / `ImmoTool.
     Stellt eine Zusammenfassung aller Parameter auf der Konsole dar und beendet das Programm.
 
 -   **-noProject**
-    Startet das Programm ohne automatisch ein Projekt zu öffnen. Statt dessen wird der [Projektassistent](usage_general_projects.md#usage_general_projects_wizard) dargestellt.
+    Startet das Programm ohne automatisch ein Projekt zu öffnen. Statt dessen wird der [Projektassistent]({{< relref "../../usage/general/projects.md#usage_general_projects_wizard" >}}) dargestellt.
 
 -   **-noUpdate**
     Deaktiviert die Funktion zur automatischen Aktualisierung im Programm.
