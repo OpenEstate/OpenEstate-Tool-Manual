@@ -6,10 +6,9 @@
 
 {{ define "title" }}Seite nicht gefunden{{ end }}
 {{ define "content" }}
-<h2>Seite nicht gefunden</h2>
+<h2>{{ i18n "Page not found" }}</h2>
 <hr>
 <div id="content" class="clearfix">
-  Die angeforderte Seite wurde leider nicht gefunden.
-  Eventuell ist der verwendete Link nicht mehr gültig.
+    {{ i18n "Your requested page was not found. Maybe the link you've clicked is not valid anymore." }}
 </div>
 {{ end }}

@@ -4,8 +4,10 @@
 {{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}
 
 {{ define "content" }}
+<h1 class="d-none d-print-block">{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
+<hr class="d-none d-print-block">
 <h2>{{ .Title }}</h2>
-<div id="content" class="clearfix">
+<div class="clearfix">
 {{- if .Content -}}{{- .Content -}}<hr>{{- end -}}
     <ul>
     {{- $p := . -}}

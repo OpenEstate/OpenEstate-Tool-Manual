@@ -10,7 +10,9 @@
 {{ end }}
 
 {{ define "content" }}
-<h1>{{ .Title }}</h1>
+<h1 class="d-none d-print-block">{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
+<hr class="d-none d-print-block">
+<h2>{{ .Title }}</h2>
 <hr>
 <div id="content" class="clearfix">
   <div id="search-empty" class="alert alert-warning" role="alert" style="display:none;">

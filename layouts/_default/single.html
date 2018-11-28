@@ -10,8 +10,10 @@
 {{- end -}}
 
 {{ define "content" }}
+<h1 class="d-none d-print-block">{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
+<hr class="d-none d-print-block">
 <div class="row">
-    <div id="content" class="col-lg-8 col-xl-9 order-last order-lg-first clearfix">
+    <div id="content-col" class="col-lg-8 col-xl-9 order-last order-lg-first clearfix hyphens text-justify">
         {{- .Content -}}
     </div>
     <div id="toc" class="col-lg-4 col-xl-3 order-first order-lg-last d-print-none">
