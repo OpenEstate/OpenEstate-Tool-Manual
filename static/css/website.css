@@ -102,3 +102,17 @@ nav.navbar {
     width: 1.3em;
     display: inline-block;
 }
+
+/**
+ * scroll button
+ */
+
+#scroll-up {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    line-height: 1 !important;
+    font-size: 1.25em;
+    z-index: 98;
+    display: none;
+}

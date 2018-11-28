@@ -14,33 +14,73 @@
  * limitations under the License.
  */
 
-$( document ).ready(function() {
+function updateScrollButton() {
+    //var documentHeight = $(document).height();
+    //var windowHeight = $(window).height();
+    var scrollTop = $(window).scrollTop();
+    //var diff = documentHeight - windowHeight;
+
+    //console.info( 'document height : ' + documentHeight );
+    //console.info( 'window height   : ' + windowHeight );
+    //console.info( 'scroll position : ' + scrollTop );
+
+    if (scrollTop > 50) {
+        if (!$('#scroll-up').is(':visible')) {
+            //console.info( 'SHOW SCROLLER' );
+            $('#scroll-up').fadeIn();
+        }
+    }
+    else {
+        if ($('#scroll-up').is(':visible')) {
+            //console.info( 'HIDE SCROLLER' );
+            $('#scroll-up').hide();
+        }
+    }
+}
+
+$(document).ready(function () {
 
     // leere Tabellen-Kopfzeilen ausblenden
-    $( '#content table thead' ).each(function( index ) {
-        var thead = $( this );
+    $('#content table thead').each(function (index) {
+        var thead = $(this);
 
         var empty = true;
-        thead.find( 'th' ).each(function( index ) {
-            var th = $( this );
-            if (th.text()!='') {
+        thead.find('th').each(function (index) {
+            var th = $(this);
+            if (th.text() != '') {
                 empty = false;
             }
         });
 
-        if (empty===true) {
-            thead.addClass( 'd-none' );
+        if (empty === true) {
+            thead.addClass('d-none');
         }
     });
 
     // CSS-Klassen für Tabellen setzen
     $('#content table')
-        .addClass( 'table table-striped table-bordered table-hover' )
-        .wrap( '<div class="table-responsive"></div>' );
+        .addClass('table table-striped table-bordered table-hover')
+        .wrap('<div class="table-responsive"></div>');
 
     // CSS-Klassen für Figure setzen
     $('#content figure')
-        .wrap( '<div class="figure-container text-center"></div>' );
+        .wrap('<div class="figure-container text-center"></div>');
     $('#content figure > img')
         .addClass('img-fluid');
+
+    // ggf. Scroll-Button einblenden / ausblenden
+    updateScrollButton();
+    $( window ).resize(function() {
+        updateScrollButton();
+    });
+    $( window ).scroll(function() {
+        updateScrollButton();
+    });
+
+    // Klick auf den Scroll-Button verarbeiten
+    $('#scroll-up').click(function(){
+        $('html, body').animate({ scrollTop: 0 }, 600);
+        $('#scroll-up').blur();
+        return false;
+    });
 });
