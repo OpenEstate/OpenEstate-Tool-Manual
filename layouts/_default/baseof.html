@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ block "metaTitle" . }}{{- .Site.Title -}}{{ end }}</title>
+    <title>{{ block "metaTitle" . }}{{- .Site.Title -}} {{- .Site.Params.version -}}{{ end }}</title>
     <meta name="author" content="{{ block "metaAuthor" . }}{{- .Site.Params.Author -}}{{ end }}"/>
     <meta name="description" content="{{ block "metaDescription" . }}{{ end }}"/>
     <meta name="keywords" content="{{ block "metaKeywords" . }}{{ end }}"/>

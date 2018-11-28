@@ -1,4 +1,4 @@
-{{ define "metaTitle" }}{{ .Title }} ({{ .Site.Title }}){{ end }}
+{{ define "metaTitle" }}{{ .Title }} ({{ .Site.Title }} {{ .Site.Params.version }}){{ end }}
 {{ define "metaDescription" }}{{- .Description -}}{{ end }}
 {{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
 {{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}

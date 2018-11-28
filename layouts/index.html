@@ -1,9 +1,9 @@
-{{ define "metaTitle" }}{{- .Site.Title -}}{{ end }}
+{{ define "metaTitle" }}{{ .Site.Title }} {{ .Site.Params.version }}{{ end }}
 {{ define "metaDescription" }}{{- .Description -}}{{ end }}
 {{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
 
 {{ define "content" }}
-<h1>{{- .Site.Title -}}</h1>
+<h1>{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
 <hr>
 <div id="content" class="clearfix">
 {{- .Content -}}
