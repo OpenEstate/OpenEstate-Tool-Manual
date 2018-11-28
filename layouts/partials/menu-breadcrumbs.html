@@ -1,4 +1,4 @@
-<nav aria-label="breadcrumb" class="container">
+<nav aria-label="breadcrumb" class="container d-print-none">
     <ol class="breadcrumb">
         {{- $p := . -}}
         {{- range where .Site.Pages ".Parent" "==" nil -}}
