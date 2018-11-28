@@ -12,22 +12,22 @@ menu:
 
 ---
 
-## *ImmoTool-Server* konfigurieren {#admin_server_setup}
+## ImmoTool-Server konfigurieren {#admin_server_setup}
 
-Die Dateien zur Konfiguration des *ImmoTool-Servers* sind im Unterverzeichnis `etc` des Programmverzeichnisses abgelegt, z.B.: `C:\Programme\OpenEstate-ImmoServer\etc`
+Die Dateien zur Konfiguration des ImmoTool-Servers sind im Unterverzeichnis `etc` des Programmverzeichnisses abgelegt, z.B.: `C:\Programme\OpenEstate-ImmoServer\etc`
 
 Im Einzelfall kann es hilfreich sein, die Konfiguration des ImmoTool-Servers auf die eigenen Bedürfnisse hin anzupassen. Für die meisten Fälle sollte die ausgelieferte Standard-Konfiguration jedoch ausreichend sein.
 
 
 ### Datenbanken konfigurieren {#admin_server_setup_databases}
 
-In der Datei `etc/server.properties` können die vom *ImmoTool-Server* bereitgestellten Datenbanken konfiguriert werden. Standardmäßig stellt der *ImmoTool-Server* exakt eine Datenbank mit dem Namen *immotool* bereit.
+In der Datei `etc/server.properties` können die vom ImmoTool-Server bereitgestellten Datenbanken konfiguriert werden. Standardmäßig stellt der ImmoTool-Server exakt eine Datenbank mit dem Namen *immotool* bereit.
 
-Bei Bedarf können über diese Datei noch weitere Datenbanken eingerichtet werden, die ebenfalls von *ImmoTool-Server* bereitgestellt werden sollen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/guide/listeners-chapt.html#listeners_server_props-sect).
+Bei Bedarf können über diese Datei noch weitere Datenbanken eingerichtet werden, die ebenfalls von ImmoTool-Server bereitgestellt werden sollen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/guide/listeners-chapt.html#listeners_server_props-sect).
 
 Im Folgenden wird die Vorgehensweise beschrieben, um eine weitere Datenbank namens `immotool2` im ImmoTool-Server zu registrieren.
 
-1.  Beenden Sie den *ImmoTool-Server*, sollte dieser aktuell in Betrieb sein.
+1.  Beenden Sie den ImmoTool-Server, sollte dieser aktuell in Betrieb sein.
 
 2.  Öffnen Sie die Datei `etc/server.properties` mit einem Texteditor und tragen Sie am Ende der Datei Folgendes ein:
 
@@ -37,11 +37,11 @@ Im Folgenden wird die Vorgehensweise beschrieben, um eine weitere Datenbank name
     server.dbname.1=immotool2
     ```
 
-    Damit wird eine zweite Datenbank mit der Bezeichnung `immotool2` registriert, deren Daten im Unterverzeichnis `var/data/immotool2` des *ImmoTool-Servers* abgelegt werden.
+    Damit wird eine zweite Datenbank mit der Bezeichnung `immotool2` registriert, deren Daten im Unterverzeichnis `var/data/immotool2` des ImmoTool-Servers abgelegt werden.
 
-3.  Speichern Sie die geänderte Datei `etc/server.properties` ab und starten Sie den *ImmoTool-Server* neu.
+3.  Speichern Sie die geänderte Datei `etc/server.properties` ab und starten Sie den ImmoTool-Server neu.
 
-4.  Via *AdminTool* & *ImmoTool* kann man nun eine Verbindung zur zweiten Datenbank herstellen. Beim Verbindungsaufbau muss dabei der neue Datenbankname `immotool2` angegeben werden.
+4.  Via AdminTool & ImmoTool kann man nun eine Verbindung zur zweiten Datenbank herstellen. Beim Verbindungsaufbau muss dabei der neue Datenbankname `immotool2` angegeben werden.
 
 Allgemein können in der Datei `etc/server.properties` beliebig viele Datenbanken mit frei wählbarem Namen registriert werden. Für jede weitere Datenbank muss der Zähler erhöht werden - z.B.:
 
@@ -62,7 +62,7 @@ server.dbname.2=anotherdb
 
 ### Protokollierungen konfigurieren {#admin_server_setup_logging}
 
-Über die Datei `etc/log4j.properties` kann die Erzeugung der Protokolldateien konfiguriert werden. Standardmäßig werden die Protokolle des *ImmoTool-Servers* im Verzeichnis `var/log` als `hsqldb.log.*` abgelegt.
+Über die Datei `etc/log4j.properties` kann die Erzeugung der Protokolldateien konfiguriert werden. Standardmäßig werden die Protokolle des ImmoTool-Servers im Verzeichnis `var/log` als `hsqldb.log.*` abgelegt.
 
 Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von log4j](http://logging.apache.org/log4j/1.2/manual.html).
 
@@ -76,27 +76,27 @@ Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumenta
 
 ### Wrapper konfigurieren {#admin_server_setup_wrapper}
 
-In der Datei `etc/wrapper.conf` wird der YAJSW-Wrapper konfiguriert. Diese Komponente wird nur verwendet, wenn der *ImmoTool-Server* über Startskripte `bin/server-*` betrieben wird.
+In der Datei `etc/wrapper.conf` wird der YAJSW-Wrapper konfiguriert. Diese Komponente wird nur verwendet, wenn der ImmoTool-Server über Startskripte `bin/server-*` betrieben wird.
 
 Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der Dokumentation von [YAJSW](http://yajsw.sourceforge.net/YAJSW%20Configuration%20Parameters.html).
 
 
 ### SSL-Verschlüsselung konfigurieren {#admin_server_setup_ssl}
 
-Wenn sich der *ImmoTool-Server* außerhalb des lokalen Firmen-Netzwerkes befindet oder Verbindungen über das Internet zulässt, empfiehlt es sich die Kommunikation zwischen *ImmoTool* & *ImmoTool-Server* zu verschlüsseln.
+Wenn sich der ImmoTool-Server außerhalb des lokalen Firmen-Netzwerkes befindet oder Verbindungen über das Internet zulässt, empfiehlt es sich die Kommunikation zwischen ImmoTool & ImmoTool-Server zu verschlüsseln.
 
 Es ist aber auch in anderen Fällen grundsätzlich sinnvoll eine Verschlüsselung durchzuführen, da es hierbei zu einem Gewinn an Sicherheit und Integrität bei der Datenübertragung kommt. Jedoch ist damit zu rechen, dass die Kommunikation geringfügig länger als bei einer unverschlüsselten Verbindung dauern wird.
 
 > **Hinweis**
 >
-> Der *ImmoTool-Server* erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle *ImmoTools* in Ihrem Netzwerk konfigurieren](#admins.server.ssl.client).
+> Der ImmoTool-Server erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle ImmoTools in Ihrem Netzwerk konfigurieren](#admins.server.ssl.client).
 
 
 #### SSL-Zertifikat erzeugen {#admin_server_setup_ssl_cert}
 
 Um eine verschlüsselte Datenübertragung zu realisieren, muss auf dem ImmoTool-Server ein SSL-Zertifikat bereit liegen. Dieses stellt die Vertrauenswürdigkeit des ImmoTool-Servers gegenüber den darauf zugreifenden ImmoTools sicher.
 
-Im Programmverzeichnis des *ImmoTool-Servers* finden Sie das Verzeichnis `etc/ssh`. Darin ist ein Skript `init_ssl.bat` / `init_ssl.sh` enthalten. Mit Hilfe dieses Skripts kann ein SSL-Schlüsselpaar und SSL-Zertifikat für den ImmoTool-Server erstellt werden.
+Im Programmverzeichnis des ImmoTool-Servers finden Sie das Verzeichnis `etc/ssh`. Darin ist ein Skript `init_ssl.bat` / `init_ssl.sh` enthalten. Mit Hilfe dieses Skripts kann ein SSL-Schlüsselpaar und SSL-Zertifikat für den ImmoTool-Server erstellt werden.
 
 Starten Sie das Skript `init_ssl.bat` (unter Windows) bzw. `init_ssl.sh` (unter Mac/Linux) via Doppelklick oder per Eingabeaufforderung / Terminal.
 
@@ -162,7 +162,7 @@ keytool -export \
 
 #### SSL-Verschlüsselung aktivieren {#admin_server_setup_ssl_enable}
 
-Dem *ImmoTool-Server* muss mitgeteilt werden, dass eine verschlüsselte Kommunikation erfolgen soll. Öffnen Sie dafür die Datei `etc/server.properties` aus dem Programmverzeichnis des *ImmoTool-Servers* mit einem Texteditor. Die folgenden Einträge müssen vorgenommen werden:
+Dem ImmoTool-Server muss mitgeteilt werden, dass eine verschlüsselte Kommunikation erfolgen soll. Öffnen Sie dafür die Datei `etc/server.properties` aus dem Programmverzeichnis des ImmoTool-Servers mit einem Texteditor. Die folgenden Einträge müssen vorgenommen werden:
 
 ```
 # TLS/SSL (secure) sockets
@@ -180,7 +180,7 @@ system.javax.net.ssl.keyStorePassword=MEIN-SSL-PASSWORT
 -   `system.javax.net.ssl.keyStorePassword`
     Hier muss das Passwort eingetragen werden, dass Sie während der Erzeugung des SSL-Schlüsselpaares gewählt haben.
 
-Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss der *ImmoTool-Server* neu gestartet werden.
+Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss der ImmoTool-Server neu gestartet werden.
 
 > **Hinweis**
 >
@@ -191,18 +191,18 @@ Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss 
 > ```
 
 
-#### SSL-Verschlüsselung in *ImmoTool* / *AdminTool* aktivieren {#admin_server_setup_ssl_client}
+#### SSL-Verschlüsselung in ImmoTool / AdminTool aktivieren {#admin_server_setup_ssl_client}
 
-Beim Aufbau der Verbindung muss als Protokoll `hsqls` ausgewählt werden, damit das *ImmoTool* / *AdminTool* eine verschlüsselte Verbindung zum *ImmoTool-Server* herstellen kann.
+Beim Aufbau der Verbindung muss als Protokoll `hsqls` ausgewählt werden, damit das ImmoTool / AdminTool eine verschlüsselte Verbindung zum ImmoTool-Server herstellen kann.
 
-Beim Erzeugen eines neuen Projekts kann im [Projektassistenten](usage_general_projects.md#usage_general_projects_wizard) das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum *ImmoTool-Server* herzustellen.
+Beim Erzeugen eines neuen Projekts kann im [Projektassistenten](usage_general_projects.md#usage_general_projects_wizard) das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
 
 {{< figure src="setup_ssl_immotool-01.jpg" caption="SSL-Verschlüsselung via Projektassistent aktivieren" >}}
 
-Beim Öffnen eines bestehenden Projekts kann bei der Anmeldung zusätzlich das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum *ImmoTool-Server* herzustellen.
+Beim Öffnen eines bestehenden Projekts kann bei der Anmeldung zusätzlich das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
 
 {{< figure src="setup_ssl_immotool-02.jpg" caption="SSL-Verschlüsselung bei der Anmeldung am Projekt aktivieren" >}}
 
-Beim Verbindungsaufbau mit dem *AdminTool* kann das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum *ImmoTool-Server* herzustellen.
+Beim Verbindungsaufbau mit dem AdminTool kann das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
 
 {{< figure src="setup_ssl_admintool-01.jpg" caption="SSL-Verschlüsselung beim Verbindungsaufbau via AdminTool aktivieren" >}}

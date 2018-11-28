@@ -35,7 +35,7 @@ Lizensieren Sie Ihre ImmoTool-Installation und nehmen Sie aktiv an der Weiterent
 > Inhalte einfügen
 
 
-### Lizenzschlüssel im *ImmoTool* eintragen {#usage_general_license_setup}
+### Lizenzschlüssel im ImmoTool eintragen {#usage_general_license_setup}
 
 Klicken Sie im Hauptmenü auf `Extras` → `Lizenz`, um die Lizenzverwaltung zu öffnen.
 

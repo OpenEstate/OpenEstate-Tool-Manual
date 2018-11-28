@@ -14,7 +14,7 @@ menu:
 
 ## Über das CRM Add-On {#usage_crm_addon}
 
-Die Funktionen zur Verwaltung von Aktivitäten und Marketing-Maßnahmen werden vom "CRM Add-On" in das *ImmoTool* integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
+Die Funktionen zur Verwaltung von Aktivitäten und Marketing-Maßnahmen werden vom "CRM Add-On" in das ImmoTool integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
 
 Die folgenden Bestandteile werden in das Programm integriert, wenn das "CRM Add-On" installiert und aktiviert wurde:
 

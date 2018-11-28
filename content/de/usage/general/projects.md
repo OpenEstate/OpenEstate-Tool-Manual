@@ -17,7 +17,7 @@ menu:
 
 ### Was sind Projekte? {#usage_general_projects_info}
 
-Im *ImmoTool* können mehrere Projekte parallel verwaltet werden. Jedes verwaltete Projekt besitzt eine eigenständige Datenbank und wird in separaten Verzeichnissen auf der Festplatte abgespeichert.
+Im ImmoTool können mehrere Projekte parallel verwaltet werden. Jedes verwaltete Projekt besitzt eine eigenständige Datenbank und wird in separaten Verzeichnissen auf der Festplatte abgespeichert.
 
 Abhängig vom Anwendungsfall kann es sinnvoll sein, die Immobilien nach Tätigkeit (Makler und / oder Vermittler) oder nach Kunden in getrennten Projekten zu verwalten. In diesen Fällen können mehrere Projekte parallel, z.B. ein Projekt als Verwalter und eines als Makler, eingerichtet werden.
 

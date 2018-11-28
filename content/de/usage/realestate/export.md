@@ -14,11 +14,11 @@ menu:
 
 ## Immobilien exportieren {#usage_realestate_export}
 
-Die im *ImmoTool* erfassten Immobiliendaten können als Export zusammengestellt und an externe Partner versendet werden (z.B. Immmobilienportale). Für jeden zu beliefernden Empfänger muss eine **Export-Schnittstelle** im Programm eingerichtet werden.
+Die im ImmoTool erfassten Immobiliendaten können als Export zusammengestellt und an externe Partner versendet werden (z.B. Immmobilienportale). Für jeden zu beliefernden Empfänger muss eine **Export-Schnittstelle** im Programm eingerichtet werden.
 
 > **Hinweis**
 >
-> Zu den uns bekannten funktionierenden Immobilienportalen finden Sie [Hilfestellungen und Anleitungen im OpenEstate-Wiki](http://wiki.openestate.org/Kategorie:ImmoTool_Portalexport). Berücksichtigt sind hier Portale, welche von uns getestet wurden oder zu welchen *ImmoTool*-Benutzer erfolgreich senden konnten.
+> Zu den uns bekannten funktionierenden Immobilienportalen finden Sie [Hilfestellungen und Anleitungen im OpenEstate-Wiki](http://wiki.openestate.org/Kategorie:ImmoTool_Portalexport). Berücksichtigt sind hier Portale, welche von uns getestet wurden oder zu welchen ImmoTool-Benutzer erfolgreich senden konnten.
 
 
 ### Übersicht der Export-Schnittstellen {#usage_realestate_export_summary}
@@ -219,7 +219,7 @@ Wenn im Feld `Transport` die Übertragungsart `lokal auf die Festplatte` gewähl
     Wählen Sie hier das lokale Verzeichnis auf Ihrer Festplatte aus, in welches die exportierten Immobiliendaten abgelegt werden soll.
 
 
-#### Einstellungen zum *OpenImmo-XML*-Format {#usage_realestate_export_form_openimmo}
+#### Einstellungen zum OpenImmo-XML-Format {#usage_realestate_export_form_openimmo}
 
 Wenn im Feld `Format` die Übertragungsart `OpenImmo-XML` gewählt wurde, wird das folgende Formular im Karteireiter `Format` dargestellt:
 

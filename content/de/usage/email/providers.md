@@ -14,9 +14,9 @@ menu:
 
 ## E-Mailanbieter {#usage_email_providers}
 
-Im Folgenden finden Sie die technischen Eckdaten verschiedener E-Mailanbieter, die zur Einrichtung eines E-Mailkontos im *ImmoTool* verwendet werden können.
+Im Folgenden finden Sie die technischen Eckdaten verschiedener E-Mailanbieter, die zur Einrichtung eines E-Mailkontos im ImmoTool verwendet werden können.
 
-Selbstverständlich können auch beliebige andere E-Mailanbieter mit dem *ImmoTool* verwendet werden, wenn diese die üblichen Protokolle ([IMAP](http://de.wikipedia.org/wiki/Internet_Message_Access_Protocol), [POP3](http://de.wikipedia.org/wiki/Post_Office_Protocol), [SMTP](http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)) unterstützen.
+Selbstverständlich können auch beliebige andere E-Mailanbieter mit dem ImmoTool verwendet werden, wenn diese die üblichen Protokolle ([IMAP](http://de.wikipedia.org/wiki/Internet_Message_Access_Protocol), [POP3](http://de.wikipedia.org/wiki/Post_Office_Protocol), [SMTP](http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)) unterstützen.
 
 
 ### E-Mailempfang via IMAP {#usage_email_providers_imap}

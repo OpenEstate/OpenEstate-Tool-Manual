@@ -14,7 +14,7 @@ menu:
 
 ## Über das Kalender Add-On {#usage_calendar_addon}
 
-Die Funktionen zur Verwaltung von Terminen und Aufgaben werden vom "Kalender Add-On" in das *ImmoTool* integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
+Die Funktionen zur Verwaltung von Terminen und Aufgaben werden vom "Kalender Add-On" in das ImmoTool integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
 
 Die folgenden Bestandteile werden in das Programm integriert, wenn das "Kalender Add-On" installiert und aktiviert wurde:
 

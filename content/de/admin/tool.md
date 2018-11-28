@@ -12,38 +12,38 @@ menu:
 
 ---
 
-## *AdminTool* {#admin_tool}
+## AdminTool {#admin_tool}
 
-Das *AdminTool* ist ein Hilfsprogramm zur Administration von ImmoTool-Datenbanken. Das Programm ist Bestandteil der *ImmoTool*-Installation und kann im `bin`-Verzeichnis durch Ausführung der Dateien `AdminTool.exe` / `AdminTool.bat` / `AdminTool.sh` gestartet werden.
+Das AdminTool ist ein Hilfsprogramm zur Administration von ImmoTool-Datenbanken. Das Programm ist Bestandteil der ImmoTool-Installation und kann im `bin`-Verzeichnis durch Ausführung der Dateien `AdminTool.exe` / `AdminTool.bat` / `AdminTool.sh` gestartet werden.
 
 
-### *AdminTool* starten {#admin_tool_startup}
+### AdminTool starten {#admin_tool_startup}
 
-Das *AdminTool* ist Bestandteil der *ImmoTool*-Installation und kann im `bin`-Verzeichnis durch Ausführung der Dateien `AdminTool.exe` / `AdminTool.bat` / `AdminTool.sh` gestartet werden.
+Das AdminTool ist Bestandteil der ImmoTool-Installation und kann im `bin`-Verzeichnis durch Ausführung der Dateien `AdminTool.exe` / `AdminTool.bat` / `AdminTool.sh` gestartet werden.
 
 
 ### Verbindung zur Datenbank herstellen {#admin_tool_connect}
 
-Um eine Verbindung mit einer *ImmoTool*-Datenbank herzustellen, wird zum Start des *AdminTools* das folgende Fenster dargestellt.
+Um eine Verbindung mit einer ImmoTool-Datenbank herzustellen, wird zum Start des AdminTools das folgende Fenster dargestellt.
 
 {{< figure src="tool_login.jpg" caption="Verbindung zu einer Datenbank mit dem AdminTool herstellen." >}}
 
-Es gibt zwei Möglichkeiten, eine Datenbankverbindung mit dem *AdminTool* herzustellen:
+Es gibt zwei Möglichkeiten, eine Datenbankverbindung mit dem AdminTool herzustellen:
 
 1.  Die Datenbank eines bestehenden Projektes (Einzelplatz oder Mehrplatz) kann geöffnet werden. Dafür muss dem Programm lediglich das Projektverzeichnis auf der Festplatte mitgeteilt werden. Klicken Sie dafür auf den Button `Auswahl`.
 
-    {{< figure src="tool_login_local.jpg" caption="Verbindungsaufbau via *AdminTool* durch Auswahl eines Projektes" >}}
+    {{< figure src="tool_login_local.jpg" caption="Verbindungsaufbau via AdminTool durch Auswahl eines Projektes" >}}
 
     Sollte es sich um ein Mehrplatz-Projekt handeln, muss zusätzlich `Benutzer` und `Passwort` des Administrators (in der Regel Benutzer `SA`) eingegeben werden.
 
-2.  Es kann eine direkte Verbindung zu einem *ImmoTool-Server* hergestellt werden, indem dessen Verbindungsdaten sowie die Zugangsdaten des Administrators eingegeben werden.
+2.  Es kann eine direkte Verbindung zu einem ImmoTool-Server hergestellt werden, indem dessen Verbindungsdaten sowie die Zugangsdaten des Administrators eingegeben werden.
 
-    {{< figure src="tool_login_remote.jpg" caption="Verbindungsaufbau via *AdminTool* durch direkte Eingabe der Serverdaten" >}}
+    {{< figure src="tool_login_remote.jpg" caption="Verbindungsaufbau via AdminTool durch direkte Eingabe der Serverdaten" >}}
 
 
 ### Wekzeugleiste {#admin_tool_toolbar}
 
-Das *AdminTool* stellt verschiedene Funktionen in der Werkzeugleiste zur Verfügung.
+Das AdminTool stellt verschiedene Funktionen in der Werkzeugleiste zur Verfügung.
 
 {{< figure src="tool_toolbar.jpg" caption="Werkzeugleiste im AdminTool" >}}
 
@@ -104,8 +104,8 @@ Markieren Sie ein Add-On in der Tabelle und klicken Sie auf `Deinstallieren` um 
 
 Im Karteireiter `Add-Ons` wird unter `Aktualisierungen` eine tabellarische Übersicht der Add-Ons dargestellt,
 
--   die vom *AdminTool* beim Programmstart gefunden wurden aber noch nicht in der Datenbank installiert sind.
--   die vom *AdminTool* beim Programmstart gefunden wurden und in der Datenbank in einer älteren Version installiert sind.
+-   die vom AdminTool beim Programmstart gefunden wurden aber noch nicht in der Datenbank installiert sind.
+-   die vom AdminTool beim Programmstart gefunden wurden und in der Datenbank in einer älteren Version installiert sind.
 
 {{< figure src="tool_addons-02.jpg" caption="Übersicht der aktualisierbaren Add-Ons" >}}
 

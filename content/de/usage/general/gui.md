@@ -18,7 +18,7 @@ menu:
 
 ### Das Programmfenster {#usage_general_gui_window}
 
-Nachdem ein Projekt erstellt und im *ImmoTool* geöffnet wurde wird ein Programmfenster dargestellt, das ungefähr wie folgt aussieht:
+Nachdem ein Projekt erstellt und im ImmoTool geöffnet wurde wird ein Programmfenster dargestellt, das ungefähr wie folgt aussieht:
 
 {{< figure src="gui.jpg" caption="Programmfenster des ImmoTools" >}}
 

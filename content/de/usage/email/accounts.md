@@ -19,7 +19,7 @@ menu:
 
 Um E-Mails mit dem ImmoTool empfangen und versenden zu können, muss dem Programm mitgeteilt werden über welchen E-Mailserver dies stattfinden soll. Der E-Mailserver wird in der Regel von Ihrem E-Mailanbieter bereitgestellt (z.B. GMX / GMail / Hotmail).
 
-Für jede E-Mailadresse, die mit dem *ImmoTool* genutzt werden soll, können Sie im Programm ein sogenanntes "E-Mailkonto" einrichten. Es können beliebig viele solcher E-Mailkonten im Programm erfasst werden.
+Für jede E-Mailadresse, die mit dem ImmoTool genutzt werden soll, können Sie im Programm ein sogenanntes "E-Mailkonto" einrichten. Es können beliebig viele solcher E-Mailkonten im Programm erfasst werden.
 
 > **Hinweis**
 >

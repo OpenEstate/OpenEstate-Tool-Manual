@@ -14,12 +14,12 @@ menu:
 
 ## Systemanforderungen {#intro_requirements}
 
-*ImmoTool* und *ImmoTool-Server* können auf verschiedensten Systemen betrieben werden. Kurz gefasst ist die einzige Voraussetzung, dass auf einem einigermaßen aktuellen Rechner ein möglichst aktuelles *Java* (ab Version 6) installiert sein muss.
+ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werden. Kurz gefasst ist die einzige Voraussetzung, dass auf einem einigermaßen aktuellen Rechner ein möglichst aktuelles Java (ab Version 6) installiert sein muss.
 
 Etwas konkreter sehen die Systemanforderungen wie folgt aus:
 
 
-### Anforderungen von *ImmoTool* {#intro_requirements_client}
+### Anforderungen von ImmoTool {#intro_requirements_client}
 
 | Eigenschaft                | Wert |
 | -------------------------- | ---- |
@@ -31,7 +31,7 @@ Etwas konkreter sehen die Systemanforderungen wie folgt aus:
 | Internetzugang             | nicht nötig, aber hilfreich |
 
 
-### Anforderungen von *ImmoTool-Server* {#intro_requirements_server}
+### Anforderungen von ImmoTool-Server {#intro_requirements_server}
 
 | Eigenschaft                | Wert |
 | -------------------------- | ---- |
@@ -45,5 +45,5 @@ Etwas konkreter sehen die Systemanforderungen wie folgt aus:
 
 > **Hinweis**
 >
-> Die Betriebssysteme **FreeBSD** & **Solaris** konnten bis dato nicht getestet werden. Grundsätzlich sollten die Programme aber auch hier funktionieren, wenn ein aktuelles *Java* installiert werden kann.
+> Die Betriebssysteme **FreeBSD** & **Solaris** konnten bis dato nicht getestet werden. Grundsätzlich sollten die Programme aber auch hier funktionieren, wenn ein aktuelles Java installiert werden kann.
 

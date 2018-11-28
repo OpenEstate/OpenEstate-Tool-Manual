@@ -17,7 +17,7 @@ menu:
 
 ### Was sind Zertifikate? {#usage_general_certificates_info}
 
-*ImmoTool* unterstützt an verschiedenen Stellen [SSL-Verschlüsselung](http://de.wikipedia.org/wiki/Transport_Layer_Security) (z.B. beim Immobilienexport oder E-Mailabruf). Ein wesentlicher Bestandteil der Verschlüsselung sind [digitale Zertifikate](http://de.wikipedia.org/wiki/Digitales_Zertifikat). Damit wird die [Authentizität](http://de.wikipedia.org/wiki/Authentizit%C3%A4t) und [Integrität](http://de.wikipedia.org/wiki/Integrit%C3%A4t_%28Informationssicherheit%29) der jeweiligen Gegenstelle sichergestellt.
+ImmoTool unterstützt an verschiedenen Stellen [SSL-Verschlüsselung](http://de.wikipedia.org/wiki/Transport_Layer_Security) (z.B. beim Immobilienexport oder E-Mailabruf). Ein wesentlicher Bestandteil der Verschlüsselung sind [digitale Zertifikate](http://de.wikipedia.org/wiki/Digitales_Zertifikat). Damit wird die [Authentizität](http://de.wikipedia.org/wiki/Authentizit%C3%A4t) und [Integrität](http://de.wikipedia.org/wiki/Integrit%C3%A4t_%28Informationssicherheit%29) der jeweiligen Gegenstelle sichergestellt.
 
 > **Hinweis**
 >
@@ -32,9 +32,9 @@ Sobald das Programm **erstmals** mit einer Gegenstelle verschlüsselt kommunizie
 
 Dieses Fenster stellt verschiedene Informationen dar, mit der die Gegenstelle (in diesem Falle `google.com`) identifiziert werden kann. An dieser Stelle muss der Anwender die Angaben prüfen und kann entscheiden, ob er der Gegenstelle sein Vertrauen aussprechen möchte.
 
-- Um der Gegenstelle das Vertrauen auszusprechen, kann auf `Übernehmen` geklickt werden. Danach beginnt das *ImmoTool* die verschlüsselte Kommunikation mit der jeweiligen Gegenstelle.
+- Um der Gegenstelle das Vertrauen auszusprechen, kann auf `Übernehmen` geklickt werden. Danach beginnt das ImmoTool die verschlüsselte Kommunikation mit der jeweiligen Gegenstelle.
 
-- Um der Gegenstelle kein Vertrauen auszusprechen, kann auf `Abbrechen` geklickt werden. Das *ImmoTool* wird in diesem Falle die verschlüsselte Kommunikation abbrechen.
+- Um der Gegenstelle kein Vertrauen auszusprechen, kann auf `Abbrechen` geklickt werden. Das ImmoTool wird in diesem Falle die verschlüsselte Kommunikation abbrechen.
 
 > **Achtung**
 >

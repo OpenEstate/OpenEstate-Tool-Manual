@@ -12,7 +12,7 @@ menu:
 
 ---
 
-## Sicherung eines Einzelplatz-Projekts im *ImmoTool* {#admin_client_backup}
+## Sicherung eines Einzelplatz-Projekts im ImmoTool {#admin_client_backup}
 
 > **TODO**
 >

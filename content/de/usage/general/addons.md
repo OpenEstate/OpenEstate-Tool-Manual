@@ -40,7 +40,7 @@ menu:
 
 - Wenn die Installation des Add-Ons erfolgreich durchgeführt wurde, wird dieses in der Übersicht eingefügt. Im Fehlerfall wird in einem weiteren Fenster das Fehlerprotokoll angezeigt. Dieses können Sie ggf. speichern und uns z.B. via Ticketsystem zur Fehleranalyse zusenden.
 
-- Die Standard-Add-Ons des *ImmoTools* werden bei der Installation automatisch aktiviert.
+- Die Standard-Add-Ons des ImmoTools werden bei der Installation automatisch aktiviert.
 
 > **Hinweis**
 >

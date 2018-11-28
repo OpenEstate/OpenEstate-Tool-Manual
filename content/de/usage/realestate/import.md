@@ -14,7 +14,7 @@ menu:
 
 ## Immobilien importieren {#usage_realestate_import}
 
-Das *ImmoTool* kann externe Immobiliendaten in verschiedenen Formaten einlesen und in die Datenbenk speichern. Derzeit unterstützt das Programm die folgenden Formate zum Import von Immobiliendaten:
+Das ImmoTool kann externe Immobiliendaten in verschiedenen Formaten einlesen und in die Datenbenk speichern. Derzeit unterstützt das Programm die folgenden Formate zum Import von Immobiliendaten:
 
 -   OpenEstate-XML
 -   Openimmo-XML 1.1 & 1.2
@@ -44,7 +44,7 @@ Wenn bei der Innitialisierung des Imports kein Fehler auftritt öffnet sich ein 
 
 Moderne Softwarelösungen für Immobilienmakler bieten in der Regel eine Funktion zum Datenexport via `FTP` und im Format `OpenImmo-XML`. In der Regel wird diese Funktion in der Maklersoftware genutzt, um Immobilien an verschiedene Immobilienportale zu versenden.
 
-Statt aus einer anderen Maklersoftware heraus ein Immobilienportal zu beliefern, kann ein Export direkt zum *ImmoTool* durchgeführt werden. Für diesen Zweck liefert das *ImmoTool* einen eigenen minimalen FTP-Server mit, zu dem die Immobiliendaten aus einer anderen Maklersoftware gesendet werden können - als wäre das *ImmoTool* ein Immobilienportal.
+Statt aus einer anderen Maklersoftware heraus ein Immobilienportal zu beliefern, kann ein Export direkt zum ImmoTool durchgeführt werden. Für diesen Zweck liefert das ImmoTool einen eigenen minimalen FTP-Server mit, zu dem die Immobiliendaten aus einer anderen Maklersoftware gesendet werden können - als wäre das ImmoTool ein Immobilienportal.
 
 > **Achtung**
 >
@@ -58,7 +58,7 @@ Klicken Sie im Hauptmenü auf `Immobilien` → `Immobilien importieren` → `via
 
 {{< figure src="import_ftp.jpg" caption="Immobilien via FTP importieren" >}}
 
-Gehen Sie wie folgt vor, um die Immobilien aus einer externen Maklersoftware zum *ImmoTool* zu übertragen:
+Gehen Sie wie folgt vor, um die Immobilien aus einer externen Maklersoftware zum ImmoTool zu übertragen:
 
 1.  Installieren Sie in Ihrer externen Maklersoftware eine Export-Schnittstelle. Beachten Sie dabei:
 
@@ -66,15 +66,15 @@ Gehen Sie wie folgt vor, um die Immobilien aus einer externen Maklersoftware zum
 
     -   Die Adresse des FTP-Servers entspricht in der Regel `127.0.0.1`. Alternativ können Sie die IP-Adresse Ihres Rechners in Ihrem Netzwerk eintragen.
 
-    -   Tragen Sie als Port des FTP-Servers den gleichen Wert ein, der im Import-Fenster des *ImmoTools* angezeigt wird.
+    -   Tragen Sie als Port des FTP-Servers den gleichen Wert ein, der im Import-Fenster des ImmoTools angezeigt wird.
 
     -   Die Zugangsdaten für den FTP-Server können frei gewählt werden.
 
-2.  Klicken Sie im Import-Fenster des *ImmoTools* auf `FTP-Server starten` um den FTP-Server auf dem gewählten Port zu starten.
+2.  Klicken Sie im Import-Fenster des ImmoTools auf `FTP-Server starten` um den FTP-Server auf dem gewählten Port zu starten.
 
-3.  Exportieren Sie nun mit Ihrer externen Maklersoftware Ihre Inserate. Sobald Aktivitäten stattfinden werden diese im Import-Fenster des *ImmoTools* protokolliert.
+3.  Exportieren Sie nun mit Ihrer externen Maklersoftware Ihre Inserate. Sobald Aktivitäten stattfinden werden diese im Import-Fenster des ImmoTools protokolliert.
 
-4.  Nachdem Sie Ihre Daten aus der externen Maklersoftware übertragen haben, klicken Sie im Import-Fenster des *ImmoTools* auf `FTP-Server stoppen`. Das Programm ermittelt daraufhin, ob es während der FTP-Sitzung zu Dateiübertragungen kam.
+4.  Nachdem Sie Ihre Daten aus der externen Maklersoftware übertragen haben, klicken Sie im Import-Fenster des ImmoTools auf `FTP-Server stoppen`. Das Programm ermittelt daraufhin, ob es während der FTP-Sitzung zu Dateiübertragungen kam.
 
 5.  Sollten importierbare Dateien empfangen worden sein, werden Sie gefragt, ob diese importiert werden sollen. Beantworten Sie diese Frage mit `Ja`  und das Programm wird versuchen die übertragenen Dateien zu importieren.
 

@@ -14,11 +14,11 @@ menu:
 
 ## Passwort des Datenbank-Administrators zurücksetzen {#admin_server_resetpwd}
 
-Im Falle, dass der Administrator sein Passwort vergessen hat und sich nicht mehr auf die vom *ImmoTool-Server* bereitgestellte Datenbank zugreifen kann, kann auf folgendem Wege ein neues Passwort zugewiesen werden.
+Im Falle, dass der Administrator sein Passwort vergessen hat und sich nicht mehr auf die vom ImmoTool-Server bereitgestellte Datenbank zugreifen kann, kann auf folgendem Wege ein neues Passwort zugewiesen werden.
 
-1.  Beenden Sie den *ImmoTool-Server*, wenn dieser aktuell in Betrieb sein sollte.
+1.  Beenden Sie den ImmoTool-Server, wenn dieser aktuell in Betrieb sein sollte.
 
-2.  Öffnen Sie die Datei `db.script` aus dem Verzeichnis `var/data/immotool` des *ImmoTool-Servers* mit einem Texteditor.
+2.  Öffnen Sie die Datei `db.script` aus dem Verzeichnis `var/data/immotool` des ImmoTool-Servers mit einem Texteditor.
 
     > **Wichtig**
     >
@@ -40,4 +40,4 @@ Im Falle, dass der Administrator sein Passwort vergessen hat und sich nicht mehr
 
     > **Wichtig**
     >
-    > Das geänderte Administrator-Passwort sollte mit Hilfe der *AdminTools* wieder auf ein geheimes Passwort geändert werden.
+    > Das geänderte Administrator-Passwort sollte mit Hilfe der AdminTools wieder auf ein geheimes Passwort geändert werden.

@@ -12,29 +12,29 @@ menu:
 
 ---
 
-## *ImmoTool-Server* starten {#admin_server_startup}
+## ImmoTool-Server starten {#admin_server_startup}
 
-Die Dateien zum Start des *ImmoTool-Servers* sind im Unterverzeichnis `bin` des Programmverzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoServer\bin`.
-
-
-### *ImmoTool-Server* unter Windows starten {#admin_server_startup_windows}
-
-Starten Sie den *ImmoTool-Server* unter **Windows** durch Doppelklick auf die Datei `start.exe` oder `start.bat` im Unterordner `bin`.
+Die Dateien zum Start des ImmoTool-Servers sind im Unterverzeichnis `bin` des Programmverzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoServer\bin`.
 
 
-### *ImmoTool-Server* unter Mac OS X starten {#admin_server_startup_mac}
+### ImmoTool-Server unter Windows starten {#admin_server_startup_windows}
 
-Starten Sie den *ImmoTool-Server* unter **Mac OS X** durch Doppelklick auf das *Datenbank*-Symbol im Unterordner `bin`.
-
-
-### *ImmoTool-Server* unter Linux / Unix starten {#admin_server_startup_unix}
-
-Starten Sie den *ImmoTool-Server* unter **Linux**, **Unix** oder **Mac OS X** durch Ausführung der Datei `start.sh` im Unterordner `bin`.
+Starten Sie den ImmoTool-Server unter **Windows** durch Doppelklick auf die Datei `start.exe` oder `start.bat` im Unterordner `bin`.
 
 
-### Startdateien des *ImmoTool-Servers* {#admin_server_startup_files}
+### ImmoTool-Server unter Mac OS X starten {#admin_server_startup_mac}
 
-Das `bin`-Verzeichnis des *ImmoTool-Servers* enthält diverse Startdateien für verschiedene Zwecke und Betriebssysteme.
+Starten Sie den ImmoTool-Server unter **Mac OS X** durch Doppelklick auf das *Datenbank*-Symbol im Unterordner `bin`.
+
+
+### ImmoTool-Server unter Linux / Unix starten {#admin_server_startup_unix}
+
+Starten Sie den ImmoTool-Server unter **Linux**, **Unix** oder **Mac OS X** durch Ausführung der Datei `start.sh` im Unterordner `bin`.
+
+
+### Startdateien des ImmoTool-Servers {#admin_server_startup_files}
+
+Das `bin`-Verzeichnis des ImmoTool-Servers enthält diverse Startdateien für verschiedene Zwecke und Betriebssysteme.
 
 -   **manager-backup.bat** (Windows)
     **manager-backup.app** (Mac OS X)

@@ -12,7 +12,7 @@ menu:
 
 ---
 
-## *ImmoTool-Server* als Dienst einrichten {#admin_server_daemon}
+## ImmoTool-Server als Dienst einrichten {#admin_server_daemon}
 
 In der alltäglichen Praxis ist es hilfreich, den ImmoTool-Server als Dienst in das Betriebssystem zu integrieren. Der ImmoTool-Server kann damit automatisch beim Booten des Betriebssystems gestartet werden. Ebenso kann der Administrator den Dienst von außen unkompliziert steuern (Start / Stopp / Neustart).
 
@@ -22,9 +22,9 @@ In der alltäglichen Praxis ist es hilfreich, den ImmoTool-Server als Dienst in 
 
 #### Dienst unter Windows installieren {#admin_server_daemon_windows_install}
 
-Um den *ImmoTool-Server* im Betriebssystem als Dienst zu registrieren, kann die Datei `server-daemon-install.bat` im Explorer mit einem Doppelklick gestartet werden.
+Um den ImmoTool-Server im Betriebssystem als Dienst zu registrieren, kann die Datei `server-daemon-install.bat` im Explorer mit einem Doppelklick gestartet werden.
 
-Alternativ kann das `bin`-Verzeichnis des *ImmoTool-Servers* in der Eingabeaufforderung geöffnet werden - z.B.
+Alternativ kann das `bin`-Verzeichnis des ImmoTool-Servers in der Eingabeaufforderung geöffnet werden - z.B.
 
 ```
 cd C:\Programme\OpenEstate-ImmoServer\bin
@@ -41,9 +41,9 @@ wird die Installation des Dienstes im Betriebssystem durchgeführt.
 
 #### Dienst unter Windows deinstallieren {#admin_server_daemon_windows_uninstall}
 
-Um den Dienst des *ImmoTool-Servers* aus dem Betriebssystem zu entfernen, kann die Datei `server-daemon-uninstall.bat` im Explorer mit einem Doppelklick gestartet werden.
+Um den Dienst des ImmoTool-Servers aus dem Betriebssystem zu entfernen, kann die Datei `server-daemon-uninstall.bat` im Explorer mit einem Doppelklick gestartet werden.
 
-Alternativ kann das `bin`-Verzeichnis des *ImmoTool-Servers* in der Eingabeaufforderung geöffnet werden - z.B.
+Alternativ kann das `bin`-Verzeichnis des ImmoTool-Servers in der Eingabeaufforderung geöffnet werden - z.B.
 
 ```
 cd C:\Programme\OpenEstate-ImmoServer\bin
@@ -60,7 +60,7 @@ wird der Dienst aus dem Betriebssystem entfernt.
 
 #### Dienst unter Windows verwalten {#admin_server_daemon_windows_manage}
 
-Nachdem der Dienst installiert wurde finden Sie einen Eintrag zum *ImmoTool-Server* in der Dienstverwaltung des Betriebssystems.
+Nachdem der Dienst installiert wurde finden Sie einen Eintrag zum ImmoTool-Server in der Dienstverwaltung des Betriebssystems.
 
 1.  Öffnen Sie die Systemsteuerung und klicken Sie auf `Verwaltung`.
 
@@ -70,11 +70,11 @@ Nachdem der Dienst installiert wurde finden Sie einen Eintrag zum *ImmoTool-Serv
 
     {{< figure src="daemon_windows-02.jpg" caption="Dienste in der Systemsteuerung" >}}
 
-Aus der Dienstverwaltung des Betriebssystems kann der *ImmoTool-Server* manuell gestartet werden:
+Aus der Dienstverwaltung des Betriebssystems kann der ImmoTool-Server manuell gestartet werden:
 
 {{< figure src="daemon_windows-03.jpg" caption="Den Dienst manuell starten." >}}
 
-Aus der Dienstverwaltung des Betriebssystems kann der *ImmoTool-Server* manuell beendet werden:
+Aus der Dienstverwaltung des Betriebssystems kann der ImmoTool-Server manuell beendet werden:
 
 {{< figure src="daemon_windows-04.jpg" caption="Den Dienst manuell neu starten / stoppen." >}}
 
@@ -84,16 +84,16 @@ Aus der Dienstverwaltung des Betriebssystems kann der *ImmoTool-Server* manuell 
 
 > **Hinweis**
 >
-> Auf neueren Windows-Systemen muss eventuell muss ein Systembenutzer gewählt werden, der zum Start des *ImmoTool-Servers* verwendet werden soll. Klicken Sie dafür mit rechter Maustaste auf den Dienst, wählen Sie `Eigenschaften` und wählen Sie im folgenden Fenster den Reiter `Anmelden` aus. Aktivieren Sie die Option `Dieses Konto` und tragen Sie Namen und das Passwort des zu verwendenden Systembenutzers ein.
+> Auf neueren Windows-Systemen muss eventuell muss ein Systembenutzer gewählt werden, der zum Start des ImmoTool-Servers verwendet werden soll. Klicken Sie dafür mit rechter Maustaste auf den Dienst, wählen Sie `Eigenschaften` und wählen Sie im folgenden Fenster den Reiter `Anmelden` aus. Aktivieren Sie die Option `Dieses Konto` und tragen Sie Namen und das Passwort des zu verwendenden Systembenutzers ein.
 >
 > {{< figure src="daemon_windows-05.jpg" caption="Systembenutzer für den Dienst auswählen" >}}
 
 
 #### Dienst unter Windows mit Hilfsskript starten {#admin_server_daemon_windows_start}
 
-Um den *ImmoTool-Server* im Betriebssystem als Dienst zu starten, kann die Datei `server-daemon-start.bat` im Explorer mit einem Doppelklick gestartet werden.
+Um den ImmoTool-Server im Betriebssystem als Dienst zu starten, kann die Datei `server-daemon-start.bat` im Explorer mit einem Doppelklick gestartet werden.
 
-Alternativ kann das `bin`-Verzeichnis des *ImmoTool-Servers* in der Eingabeaufforderung geöffnet werden - z.B.
+Alternativ kann das `bin`-Verzeichnis des ImmoTool-Servers in der Eingabeaufforderung geöffnet werden - z.B.
 
 ```
 cd C:\Programme\OpenEstate-ImmoServer\bin
@@ -110,9 +110,9 @@ wird der Dienst im Betriebssystem gestartet.
 
 #### Dienst unter Windows mit Hilfsskript beenden {#admin_server_daemon_windows_stop}
 
-Um den *ImmoTool-Server* im Betriebssystem als Dienst zu stoppen, kann die Datei `server-daemon-stop.bat` im Explorer mit einem Doppelklick gestartet werden.
+Um den ImmoTool-Server im Betriebssystem als Dienst zu stoppen, kann die Datei `server-daemon-stop.bat` im Explorer mit einem Doppelklick gestartet werden.
 
-Alternativ kann das `bin`-Verzeichnis des *ImmoTool-Servers* in der Eingabeaufforderung geöffnet werden - z.B.
+Alternativ kann das `bin`-Verzeichnis des ImmoTool-Servers in der Eingabeaufforderung geöffnet werden - z.B.
 
 ```
 cd C:\Programme\OpenEstate-ImmoServer\bin
@@ -148,7 +148,7 @@ wird der Dienst im Betriebssystem beendet.
 
 #### Dienst unter Mac OS X installieren {#admin_server_daemon_mac_install}
 
-Öffnen Sie das `bin`-Verzeichnis des *ImmoTool-Servers* im Terminal, z.B.:
+Öffnen Sie das `bin`-Verzeichnis des ImmoTool-Servers im Terminal, z.B.:
 
 ```
 cd /Applications/OpenEstate-Server/bin
@@ -183,7 +183,7 @@ Nachdem der Dienst installiert wurde, kann dieser mit dem Hilfsprogramm `launchc
 sudo launchctl unload /Library/LaunchDaemons/wrapper.OpenEstate-Server
 ```
 
-Alternativ kann der installierte Dienst aus dem Programmverzeichnis des *ImmoTool-Servers* heraus deinstalliert werden. Wählen Sie dieses über das Terminal aus:
+Alternativ kann der installierte Dienst aus dem Programmverzeichnis des ImmoTool-Servers heraus deinstalliert werden. Wählen Sie dieses über das Terminal aus:
 
 ```
 cd /Applications/OpenEstate-Server/bin
@@ -209,13 +209,13 @@ Nachdem der Dienst installiert wurde, kann dieser mit dem Hilfsprogramm `launchc
 sudo launchctl start wrapper.OpenEstate-Server
 ```
 
-Alternativ kann der installierte Dienst aus dem Programmverzeichnis des *ImmoTool-Servers* heraus gestartet werden. Wählen Sie dieses über das Terminal aus:
+Alternativ kann der installierte Dienst aus dem Programmverzeichnis des ImmoTool-Servers heraus gestartet werden. Wählen Sie dieses über das Terminal aus:
 
 ```
 cd /Applications/OpenEstate-Server/bin
 ```
 
-Und starten Sie den *ImmoTool-Server* mit folgendem Befehl:
+Und starten Sie den ImmoTool-Server mit folgendem Befehl:
 
 ```
 sudo ./server-daemon-start.sh
@@ -236,13 +236,13 @@ Nachdem der Dienst installiert wurde, kann dieser mit dem Hilfsprogramm `launchc
 sudo launchctl start wrapper.OpenEstate-Server
 ```
 
-Alternativ kann der installierte Dienst aus dem Programmverzeichnis des *ImmoTool-Servers* heraus gestoppt werden. Wählen Sie dieses über das Terminal aus:
+Alternativ kann der installierte Dienst aus dem Programmverzeichnis des ImmoTool-Servers heraus gestoppt werden. Wählen Sie dieses über das Terminal aus:
 
 ```
 cd /Applications/OpenEstate-Server/bin
 ```
 
-Und beenden Sie den gestarteten *ImmoTool-Server* mit folgendem Befehl:
+Und beenden Sie den gestarteten ImmoTool-Server mit folgendem Befehl:
 
 ```
 sudo ./server-daemon-stop.sh

@@ -14,7 +14,7 @@ menu:
 
 ## Über das Adressbuch Add-On {#usage_addressbook_addon}
 
-Die Funktionen zur Adressverwaltung werden vom "Adressbuch Add-On" in das *ImmoTool* integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
+Die Funktionen zur Adressverwaltung werden vom "Adressbuch Add-On" in das ImmoTool integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
 
 Die folgenden Bestandteile werden in das Programm integriert, wenn das "Adressbuch Add-On" installiert und aktiviert wurde:
 

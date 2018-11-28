@@ -14,7 +14,7 @@ menu:
 
 ## Aktualisierungen {#usage_general_updates}
 
-In regelmäßigen Abständen werden Aktualisierungen für das *ImmoTool* und die Add-Ons bereitgestellt.
+In regelmäßigen Abständen werden Aktualisierungen für das ImmoTool und die Add-Ons bereitgestellt.
 
 
 ### Aktualisierung aus dem Programm heraus starten {#usage_general_updates_execute}

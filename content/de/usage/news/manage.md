@@ -19,7 +19,7 @@ menu:
 
 In vielen Fällen stellen Betreiber von Webseiten / Blogs / Foren ihre aktuellen Ankündigungen / Nachrichten als "Nachrichten-Feed" im [RSS-Format](http://de.wikipedia.org/wiki/RSS) oder [Atom-Format](http://de.wikipedia.org/wiki/Atom_%28Format%29) bereit.
 
-Solche Nachrichtenquellen können vom *ImmoTool* automatisch in regelmäßigen Abständen abgerufen werden. Wenn es dabei neue Nachrichten findet, wird eine Information dargestellt.
+Solche Nachrichtenquellen können vom ImmoTool automatisch in regelmäßigen Abständen abgerufen werden. Wenn es dabei neue Nachrichten findet, wird eine Information dargestellt.
 
 
 ### Aktuelle Nachrichten anzeigen {#usage_news_manage_view}

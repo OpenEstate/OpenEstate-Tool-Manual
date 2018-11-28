@@ -12,21 +12,21 @@ menu:
 
 ---
 
-## *ImmoTool* aktualisieren {#admin_client_update}
+## ImmoTool aktualisieren {#admin_client_update}
 
 > **TODO**
 >
 > Allgemeine Hinweise zur Vorgehensweise einfügen.
 
 
-### *ImmoTool* automatisch aktualisieren {#admin_client_update_automatic}
+### ImmoTool automatisch aktualisieren {#admin_client_update_automatic}
 
 > **TODO**
 >
 > Hinweise zur Vorgehensweise einfügen.
 
 
-### *ImmoTool* manuell aktualisieren {#admin_client_update_manual}
+### ImmoTool manuell aktualisieren {#admin_client_update_manual}
 
 > **TODO**
 >

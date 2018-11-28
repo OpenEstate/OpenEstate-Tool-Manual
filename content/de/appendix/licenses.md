@@ -17,7 +17,7 @@ menu:
 
 ### Nutzungslizenz für OpenEstate-ImmoTool {#appendix_support_licenses_immotool}
 
-Die folgenden Lizenzbedingungen gelten für die Nutzung von *OpenEstate-ImmoTool* und *OpenEstate-AdminTool*.
+Die folgenden Lizenzbedingungen gelten für die Nutzung von OpenEstate-ImmoTool und OpenEstate-AdminTool.
 
 > Zwischen den OpenEstate-Entwicklerrn (nachfolgend als Lizenzgeber bezeichnet) und dem Lizenznehmer wird folgende Nutzungsvereinbarung abgeschlossen.
 >
@@ -70,7 +70,7 @@ Die folgenden Lizenzbedingungen gelten für die Nutzung von *OpenEstate-ImmoTool
 
 ### Nutzungslizenz für OpenEstate-ImmoTool-Server {#appendix_support_licenses_server}
 
-Die folgenden Lizenzbedingungen gelten für die Nutzung von *OpenEstate-ImmoTool-Server*. Da dieses Programm in weiten Teilen auf "HSQLDB" basiert, übernehmen wir die Lizenzbedingungen dieses Projekts entsprechend für den *OpenEstate-ImmoTool-Server*.
+Die folgenden Lizenzbedingungen gelten für die Nutzung von OpenEstate-ImmoTool-Server. Da dieses Programm in weiten Teilen auf "HSQLDB" basiert, übernehmen wir die Lizenzbedingungen dieses Projekts entsprechend für den OpenEstate-ImmoTool-Server.
 
 ```
 Copyright (c) 2001-2010, The HSQL Development Group

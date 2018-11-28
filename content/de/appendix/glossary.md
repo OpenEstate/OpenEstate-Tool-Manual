@@ -158,7 +158,7 @@ ist ein verbreitetes Format für den Austausch von Nachrichten. Viele Webseiten 
 
 ist eine weit vebreitete Form der Verschlüsselung und wird vom ImmoTool an verschiedenen Stellen unterstützt:
 
--   Die Kommunikation zwischen *ImmoTool* & *ImmoTool-Server* kann bei Bedarf mit Hilfe von SSL verschlüsselt werden.
+-   Die Kommunikation zwischen ImmoTool & ImmoTool-Server kann bei Bedarf mit Hilfe von SSL verschlüsselt werden.
 
 -   Der Zugriff auf Internet-Adressen kann bei Bedarf über SSL-Verschlüsselung erfolgen - zumindest wenn der jeweilige Webseiten-Betreiber auch einen Zugriff über Adressen mit `https://` gestattet.
 

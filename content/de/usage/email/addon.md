@@ -14,7 +14,7 @@ menu:
 
 ## Über das E-Mail Add-On {#usage_email_addon}
 
-Die Funktionen zum Empfang und Versand von E-Mails werden vom "E-Mail Add-On" in das *ImmoTool* integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
+Die Funktionen zum Empfang und Versand von E-Mails werden vom "E-Mail Add-On" in das ImmoTool integriert. In diesem Kapitel werden diese Funktionen dokumentiert.
 
 Die folgenden Bestandteile werden in das Programm integriert, wenn das "E-Mail Add-On" installiert und aktiviert wurde:
 
