@@ -23,7 +23,7 @@ Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Kopfmenü auf
 > Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst durch betätigen des Buttons `Speichern` übernommen werden.
 
 
-### Allgemeine Programmeinstellungen {#usage_general_settings}
+### Allgemeine Programmeinstellungen {#usage_general_settings_general}
 
 {{< figure src="settings_general.jpg" caption="Allgemeine Einstellungen" >}}
 
