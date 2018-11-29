@@ -1,0 +1,77 @@
+---
+title: Manual for OpenEstate-ImmoTool 1.0
+lang: english
+author:
+- Walter Wagner
+- Andreas Rudolph
+tags:
+- OpenEstate
+- ImmoTool
+- Manual
+---
+
+
+# About this manual {#start}
+
+...
+
+
+# Introduction {#intro}
+
+...
+
+
+# General usage notes {#usage_general}
+
+...
+
+
+# Real Estate Add-On {#usage_realestate}
+
+...
+
+
+# Addressbook Add-On {#usage_addressbook}
+
+...
+
+
+# Calendar Add-On {#usage_calendar}
+
+...
+
+
+# CRM Add-On {#usage_crm}
+
+...
+
+
+# E-Mail Add-On {#usage_email}
+
+...
+
+
+# News Add-On {#usage_news}
+
+...
+
+
+# Administrate *ImmoTool* {#admin_client}
+
+...
+
+
+# Administrate *ImmoTool-Server*  {#admin_server}
+
+...
+
+
+# Further notes about administration {#admin_howtos}
+
+...
+
+
+# Appendix {#appendix}
+
+...
+

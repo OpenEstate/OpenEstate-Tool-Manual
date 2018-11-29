@@ -1,0 +1,119 @@
+---
+title: Handbuch für OpenEstate-ImmoTool 1.0-SNAPSHOT
+lang: de-DE
+documentclass: book
+links-as-notes: 1
+toc: 1
+toc-depth: 2
+author:
+- Walter Wagner
+- Andreas Rudolph
+tags:
+- OpenEstate
+- ImmoTool
+- Handbuch
+---
+
+
+# Über dieses Handbuch {#start}
+
+!INCLUDE "_index.md"
+
+
+# Einführung {#intro}
+
+!INCLUDE "intro/about.md"
+!INCLUDE "intro/requirements.md"
+!INCLUDE "intro/java.md"
+!INCLUDE "intro/download.md"
+!INCLUDE "intro/install_local.md"
+!INCLUDE "intro/install_network.md"
+
+
+# Allgemeine Hinweise zur Benutzung {#usage_general}
+
+!INCLUDE "usage/general/gui.md"
+!INCLUDE "usage/general/projects.md"
+!INCLUDE "usage/general/company.md"
+!INCLUDE "usage/general/settings.md"
+!INCLUDE "usage/general/addons.md"
+!INCLUDE "usage/general/certificates.md"
+!INCLUDE "usage/general/protocols.md"
+!INCLUDE "usage/general/updates.md"
+!INCLUDE "usage/general/license.md"
+
+
+# Immobilien Add-On {#usage_realestate}
+
+!INCLUDE "usage/realestate/addon.md"
+!INCLUDE "usage/realestate/manage.md"
+!INCLUDE "usage/realestate/export.md"
+!INCLUDE "usage/realestate/import.md"
+!INCLUDE "usage/realestate/contacts.md"
+!INCLUDE "usage/realestate/exposes.md"
+
+
+# Adressbuch Add-On {#usage_addressbook}
+
+!INCLUDE "usage/addressbook/addon.md"
+!INCLUDE "usage/addressbook/manage.md"
+!INCLUDE "usage/addressbook/interests.md"
+!INCLUDE "usage/addressbook/brokerings.md"
+
+
+# Kalender Add-On {#usage_calendar}
+
+!INCLUDE "usage/calendar/addon.md"
+!INCLUDE "usage/calendar/manage.md"
+
+
+# CRM Add-On {#usage_crm}
+
+!INCLUDE "usage/crm/addon.md"
+!INCLUDE "usage/crm/manage.md"
+!INCLUDE "usage/crm/activities.md"
+!INCLUDE "usage/crm/marketings.md"
+
+
+# E-Mail Add-On {#usage_email}
+
+!INCLUDE "usage/email/addon.md"
+!INCLUDE "usage/email/manage.md"
+!INCLUDE "usage/email/accounts.md"
+!INCLUDE "usage/email/providers.md"
+
+
+# Nachrichten Add-On {#usage_news}
+
+!INCLUDE "usage/news/addon.md"
+!INCLUDE "usage/news/manage.md"
+
+
+# *ImmoTool* administrieren {#admin_client}
+
+!INCLUDE "admin/client/startup.md"
+!INCLUDE "admin/client/update.md"
+!INCLUDE "admin/client/backup.md"
+
+
+# *ImmoTool-Server* administrieren {#admin_server}
+
+!INCLUDE "admin/server/startup.md"
+!INCLUDE "admin/server/setup.md"
+!INCLUDE "admin/server/daemon.md"
+!INCLUDE "admin/server/update.md"
+!INCLUDE "admin/server/backup.md"
+!INCLUDE "admin/server/resetpwd.md"
+
+
+# Anleitungen zur Administration {#admin_howtos}
+
+!INCLUDE "admin/tool.md"
+!INCLUDE "admin/migration.md"
+
+
+# Anhänge {#appendix}
+
+!INCLUDE "appendix/glossary.md"
+!INCLUDE "appendix/support.md"
+!INCLUDE "appendix/licenses.md"

@@ -1,7 +1,10 @@
 apps/downloads
 apps/licenses
 apps/linux
+apps/virtualenv
 apps/windows
+book/*
+!book/*.mdpp
 bundle
 public
 resources
