@@ -33,6 +33,8 @@ pandoc -o "$DIR/book/de/book.epub" "$DIR/book/de/book.md"
 
 echo "Creating $DIR/book/de/book.pdf…"
 pandoc -o "$DIR/book/de/book.pdf" "$DIR/book/de/book.md"
+#pandoc -o "$DIR/book/de/book.pdf" --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" "$DIR/book/de/book.md"
+#pandoc -o "$DIR/book/de/book.pdf" --pdf-engine=xelatex -V mainfont="DejaVu Serif" "$DIR/book/de/book.md"
 
 echo "Creating $DIR/book/de/book.odt…"
 pandoc -o "$DIR/book/de/book.odt" "$DIR/book/de/book.md"
