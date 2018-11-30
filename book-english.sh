@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Create book in German language.
+# Create book in English language.
 #
 # Copyright 2009-2018 OpenEstate.org.
 #
@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-LANG="de"
+LANG="en"
 VERSION="1.0-SNAPSHOT"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -30,7 +30,7 @@ cd "$DIR/content/$LANG"
 
 echo "Merging files into $DIR/book/$LANG.md…"
 "$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$DIR/book/$LANG.md"
-sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$DIR/book/$LANG.md"
+sed -i -e "s/\${date}/$(date "+%m\/%d\/%Y")/g" "$DIR/book/$LANG.md"
 sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
 
 echo "Creating $DIR/book/$LANG/book.epub…"

@@ -1,13 +1,13 @@
 ---
-title: Manual for OpenEstate-ImmoTool 1.0
-lang: english
+title: Manual for OpenEstate-ImmoTool ${version}
+date: ${date}
+lang: en-US
+documentclass: book
+links-as-notes: 1
+toc: 1
+toc-depth: 2
 author:
-- Walter Wagner
-- Andreas Rudolph
-tags:
-- OpenEstate
-- ImmoTool
-- Manual
+- OpenEstate.org
 ---
 
 
@@ -56,12 +56,12 @@ tags:
 ...
 
 
-# Administrate *ImmoTool* {#admin_client}
+# Administrate ImmoTool {#admin_client}
 
 ...
 
 
-# Administrate *ImmoTool-Server*  {#admin_server}
+# Administrate ImmoTool-Server {#admin_server}
 
 ...
 

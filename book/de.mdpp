@@ -1,17 +1,13 @@
 ---
-title: Handbuch für OpenEstate-ImmoTool 1.0-SNAPSHOT
+title: Handbuch für OpenEstate-ImmoTool ${version}
+date: ${date}
 lang: de-DE
 documentclass: book
 links-as-notes: 1
 toc: 1
 toc-depth: 2
 author:
-- Walter Wagner
-- Andreas Rudolph
-tags:
-- OpenEstate
-- ImmoTool
-- Handbuch
+- OpenEstate.org
 ---
 
 
@@ -89,14 +85,14 @@ tags:
 !INCLUDE "usage/news/manage.md"
 
 
-# *ImmoTool* administrieren {#admin_client}
+# ImmoTool administrieren {#admin_client}
 
 !INCLUDE "admin/client/startup.md"
 !INCLUDE "admin/client/update.md"
 !INCLUDE "admin/client/backup.md"
 
 
-# *ImmoTool-Server* administrieren {#admin_server}
+# ImmoTool-Server administrieren {#admin_server}
 
 !INCLUDE "admin/server/startup.md"
 !INCLUDE "admin/server/setup.md"
