@@ -75,8 +75,8 @@ Die folgenden Lizenzbedingungen gelten für die Nutzung von OpenEstate-ImmoTool 
 
 Der OpenEstate-ImmoTool-Server stehen unter den Bedingungen der [Apache License 2.0](https://apache.org/licenses/LICENSE-2.0) zur Verfügung.
 
-> Apache License<br>
-> Version 2.0, January 2004<br>
+> Apache License<br/>
+> Version 2.0, January 2004<br/>
 > http://www.apache.org/licenses/
 > 
 > TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
