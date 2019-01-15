@@ -21,8 +21,5 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source "$DIR/virtualenv/bin/activate"
-#"$DIR/virtualenv/bin/markdown-pp" "$@"
-#PYTHONPATH="$DIR/python"
-#echo "$PYTHONPATH"
 python "$DIR/markdown-pp.py" "$@"
 deactivate
