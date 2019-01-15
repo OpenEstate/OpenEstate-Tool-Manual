@@ -3,7 +3,7 @@
 title: Einstellungen des Programms bearbeiten
 linktitle: Einstellungen
 description: Einstellungen von OpenEstate-ImmoTool bearbeiten…
-weight: 40
+weight: 50
 
 menu:
   main:

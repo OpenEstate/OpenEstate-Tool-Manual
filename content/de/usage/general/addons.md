@@ -3,7 +3,7 @@
 title: Addons des Programms bearbeiten
 linktitle: Addons
 description: Addons von OpenEstate-ImmoTool bearbeiten…
-weight: 50
+weight: 60
 
 menu:
   main:

@@ -3,7 +3,7 @@
 title: Aktualisierungen des Programms
 linktitle: Aktualisierungen
 description: Aktualisierungen von OpenEstate-ImmoTool…
-weight: 60
+weight: 90
 
 menu:
   main:
