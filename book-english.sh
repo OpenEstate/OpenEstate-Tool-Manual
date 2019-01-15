@@ -34,7 +34,7 @@ sed -i -e "s/\${date}/$(date "+%m\/%d\/%Y")/g" "$DIR/book/$LANG.md"
 sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
 
 echo "Creating $DIR/book/$LANG/book.epub…"
-pandoc -o "$DIR/book/$LANG/book.epub" --epub-embed-font "$DIR/share/*.ttf" --css "$DIR/share/epub.css" "$DIR/book/$LANG.md"
+pandoc -o "$DIR/book/$LANG/book.epub" --epub-embed-font "$DIR/share/fonts/*.ttf" --css "$DIR/share/epub.css" "$DIR/book/$LANG.md"
 
 echo "Creating $DIR/book/$LANG/book.pdf…"
 pandoc -o "$DIR/book/$LANG/book.pdf" "$DIR/book/$LANG.md"
