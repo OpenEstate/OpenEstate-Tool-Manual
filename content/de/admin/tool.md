@@ -28,7 +28,7 @@ Um eine Verbindung mit einer ImmoTool-Datenbank herzustellen, wird zum Start des
 
 {{< figure src="tool_login.jpg" caption="Verbindung zu einer Datenbank mit dem AdminTool herstellen." >}}
 
-Es gibt zwei Möglichkeiten, eine Datenbankverbindung mit dem AdminTool herzustellen:
+Es gibt zwei Möglichkeiten, eine Verbindung zur Datenbank mit dem AdminTool herzustellen:
 
 1.  Die Datenbank eines bestehenden Projektes (Einzelplatz oder Mehrplatz) kann geöffnet werden. Dafür muss dem Programm lediglich das Projektverzeichnis auf der Festplatte mitgeteilt werden. Klicken Sie dafür auf den Button `Auswahl`.
 
@@ -38,10 +38,10 @@ Es gibt zwei Möglichkeiten, eine Datenbankverbindung mit dem AdminTool herzuste
 
 2.  Es kann eine direkte Verbindung zu einem ImmoTool-Server hergestellt werden, indem dessen Verbindungsdaten sowie die Zugangsdaten des Administrators eingegeben werden.
 
-    {{< figure src="tool_login_remote.jpg" caption="Verbindungsaufbau via AdminTool durch direkte Eingabe der Serverdaten" >}}
+    {{< figure src="tool_login_remote.jpg" caption="Verbindungsaufbau via AdminTool durch direkte Eingabe der Verbindungsdaten" >}}
 
 
-### Wekzeugleiste {#admin_tool_toolbar}
+### Werkzeugleiste {#admin_tool_toolbar}
 
 Das AdminTool stellt verschiedene Funktionen in der Werkzeugleiste zur Verfügung.
 
@@ -80,7 +80,7 @@ Im Karteireiter `Add-Ons` wird unter `Installierte Add-Ons` eine tabellarische �
 {{< figure src="tool_addons-01.jpg" caption="Übersicht der installierten Add-Ons" >}}
 
 -   In der Spalte `Add-On` wird der interne Name des jeweiligen Add-Ons dargestellt.
--   In der Spalte `Version` wird die akutell in der Datenbank installierte Version des Add-Ons dargestellt.
+-   In der Spalte `Version` wird die aktuell in der Datenbank installierte Version des Add-Ons dargestellt.
 -   In der Spalte `Aktiv` wird dargestellt, ob das jeweilige Add-On in der Datenbank installiert wurde.
 
 
@@ -114,7 +114,7 @@ Im Karteireiter `Add-Ons` wird unter `Aktualisierungen` eine tabellarische Über
 -   In der Spalte `neue Version` wird die lokal verfügbare Version des Add-Ons dargestellt.
 -   In der Spalte `Installation` kann markiert werden, dass die Installation / Aktualisierung des jeweiligen Add-Ons durchgeführt werden soll.
 
-Klicken Sie in der Tabellenspalte `Installation` auf die jeweilige Zeile um ein Add-On zu installieren / aktualisieren. Der Vorgang wirde durch Klick auf `Installation` gestartet.
+Klicken Sie in der Tabellenspalte `Installation` auf die jeweilige Zeile um ein Add-On zu installieren / aktualisieren. Der Vorgang wird durch Klick auf `Installation` gestartet.
 
 > **Hinweis**
 >
@@ -129,7 +129,7 @@ Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter 
 
 Auf der linken Seite eine Liste der aktuell vorhandenen Benutzerkonten dargestellt. Klicken Sie auf einen der Benutzer um diesen zur Bearbeitung auszuwählen.
 
-Auf der rechten Seite der Benutzeransicht werden Informationen zu dem aktuell ausgewählten Benutzer dargestellt.
+Auf der rechten Seite der Ansicht werden Informationen zu dem aktuell ausgewählten Benutzer dargestellt.
 
 Folgende Aktionen können über die Buttons oberhalb der Benutzeransicht ausgeführt werden:
 
@@ -140,7 +140,7 @@ Folgende Aktionen können über die Buttons oberhalb der Benutzeransicht ausgef�
 
 > **Hinweis**
 >
-> Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitige Änderung nicht gespeichert und geht verloren.
+> Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitliche Änderung nicht gespeichert und geht verloren.
 
 
 #### Eckdaten des Benutzers {#admin_tool_users_general}
@@ -150,7 +150,7 @@ Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten
 {{< figure src="tool_users-02.jpg" caption="Eckdaten eines Benutzers" >}}
 
 -   **Login des Benutzers**
-    Mit diesem Namen meldet sich der Benutzer an der Datenbank an. Der gewöhlte Name darf nicht doppelt vergeben werden.
+    Mit diesem Namen meldet sich der Benutzer an der Datenbank an. Der gewählte Name darf nicht doppelt vergeben werden.
 
 -   **Passwort des Benutzers**
     Mit diesem Passwort meldet sich der Benutzer beim Start des ImmoTools auf der Datenbank an. Markieren Sie das Feld ändern, um nachträglich ein neues Passwort zuzuordnen.
@@ -209,7 +209,7 @@ Allgemein können die Benutzer können in mehrere Gruppen zusammengefasst werden
 
 {{< figure src="tool_groups-01.jpg" caption="Benutzergruppen bearbeiten" >}}
 
-In der Gruppenansicht wird auf der linken Seite eine Liste der aktuell vorhandenen Gruppen dargestellt. Klicken Sie auf eine der Gruppen um diese zur Bearbeitung auszuwählen.
+In der Ansicht wird auf der linken Seite eine Liste der aktuell vorhandenen Gruppen dargestellt. Klicken Sie auf eine der Gruppen um diese zur Bearbeitung auszuwählen.
 
 Auf der rechten Seite der Gruppenansicht werden Informationen zu der aktuell ausgewählten Gruppe dargestellt.
 
@@ -222,7 +222,7 @@ Folgende Aktionen können über die Buttons oberhalb der Gruppenansicht ausgefü
 
 > **Hinweis**
 >
-> Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitige Änderung nicht gespeichert und geht verloren.
+> Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitliche Änderung nicht gespeichert und geht verloren.
 
 
 #### Eckdaten der Gruppe {#admin_tool_groups_general}
@@ -261,14 +261,14 @@ In der Tabelle werden die von den Add-Ons bereitgestellten Berechtigungen darges
 
 > **Hinweis**
 >
-> Jeder Benutzer, der einer Gruppe als Mitglied zugewiesen wurde, erhält automatisch alle Berechtigungen der Gruppe.
+> Jeder Benutzer, der einer Gruppe als Mitglied zugewiesen wurde, erhält automatisch alle Berechtigungen dieser Gruppe.
 
 
-### Rohinhalte der Datenbank anzeigen {#admin_tool_browser}
+### Inhalte der Datenbank anzeigen {#admin_tool_browser}
 
 Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `SQL-Browser` die rohen Inhalte der Datenbank eingesehen werden ("Tabellen", "Views" & "Stored Procedures").
 
-{{< figure src="tool_browser-01.jpg" caption="Rohinhalte anzeigen" >}}
+{{< figure src="tool_browser-01.jpg" caption="Inhalte der Datenbank anzeigen" >}}
 
 
 ### SQL-Befehle auf der Datenbank ausführen {#admin_tool_console}
