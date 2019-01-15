@@ -31,12 +31,12 @@ author:
 !INCLUDE "usage/general/gui.md"
 !INCLUDE "usage/general/projects.md"
 !INCLUDE "usage/general/company.md"
+!INCLUDE "usage/general/account.md"
 !INCLUDE "usage/general/settings.md"
 !INCLUDE "usage/general/addons.md"
 !INCLUDE "usage/general/certificates.md"
 !INCLUDE "usage/general/protocols.md"
 !INCLUDE "usage/general/updates.md"
-!INCLUDE "usage/general/license.md"
 
 
 # Immobilien Add-On {#usage_realestate}
@@ -45,8 +45,8 @@ author:
 !INCLUDE "usage/realestate/manage.md"
 !INCLUDE "usage/realestate/export.md"
 !INCLUDE "usage/realestate/import.md"
-!INCLUDE "usage/realestate/contacts.md"
-!INCLUDE "usage/realestate/exposes.md"
+!INCLUDE "usage/realestate/contact.md"
+!INCLUDE "usage/realestate/expose.md"
 
 
 # Adressbuch Add-On {#usage_addressbook}
@@ -75,7 +75,7 @@ author:
 
 !INCLUDE "usage/email/addon.md"
 !INCLUDE "usage/email/manage.md"
-!INCLUDE "usage/email/accounts.md"
+!INCLUDE "usage/email/account.md"
 !INCLUDE "usage/email/providers.md"
 
 
