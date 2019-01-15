@@ -24,7 +24,7 @@
 # https://github.com/gohugoio/hugo/releases
 #
 
-HUGO_VERSION="0.51"
+HUGO_VERSION="0.53"
 HUGO_DOWNLOAD_LINUX="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
 HUGO_DOWNLOAD_WINDOWS="https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_${HUGO_VERSION}_Windows-32bit.zip"
 
