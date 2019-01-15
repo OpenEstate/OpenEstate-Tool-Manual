@@ -123,6 +123,7 @@ figure {
 
 figure img {
   display: block;
+  border: 1px solid black;
 }
 
 figure figcaption {
@@ -142,5 +143,4 @@ blockquote {
 }
 
 blockquote p {
-
 }
