@@ -3,7 +3,7 @@
 - Button = Schaltfläche
 - Textfeld
 - Radiobutton
-- Chekbox
+- Checkbox
 - Selectbox
 - Spinner
-- Busylable
+- Busylabel
