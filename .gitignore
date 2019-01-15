@@ -13,5 +13,15 @@ resources
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
-.idea/**/dictionaries/*
+#.idea/**/dictionaries/*
 .idea/**/shelf
+
+#
+# Modifications to the default entries.
+#
+
+# Ignore Bash Support settings
+.idea/bashsupport_project.xml
+
+# Keep a global dictionary in repository.
+!.idea/**/dictionaries/global.xml
