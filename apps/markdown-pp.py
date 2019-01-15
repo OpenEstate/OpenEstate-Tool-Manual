@@ -25,8 +25,8 @@ from MarkdownPP.Modules.Include import Include
 from MarkdownPP.Processor import Processor
 from MarkdownPP.Transform import Transform
 
-class CustomInclude(Include):
 
+class CustomInclude(Include):
     # Pattern to extract internal links (relref shortcode).
     # example: {{< relref "settings.md#usage_general_settings_updates" >}}
     pattern_relref = re.compile("{{<\s+relref\s+\"([^\"]*)\"\s+>}}")
@@ -39,11 +39,11 @@ class CustomInclude(Include):
 
     def include_file(self, filename, pwd="", shift=0):
 
-        #print 'INCLUDE FILE %s at %s' % (filename, pwd,)
-        #return super(CustomInclude).include_file(filename, pwd, shift)
+        # print 'INCLUDE FILE %s at %s' % (filename, pwd,)
+        # return super(CustomInclude).include_file(filename, pwd, shift)
 
         fileDir = os.path.dirname(os.path.join(os.getcwd(), filename))
-        #print fileDir
+        # print fileDir
 
         tempPath = tempfile.mktemp()
         try:
@@ -61,8 +61,8 @@ class CustomInclude(Include):
                         # Replace any relref shortcodes.
                         relrefs = self.pattern_relref.finditer(line)
                         for relref in relrefs:
-                            #print(relref.group(0))
-                            #print(relref.group(1))
+                            # print(relref.group(0))
+                            # print(relref.group(1))
                             link = relref.group(1).split('#', 2)
                             if not len(link) == 2:
                                 print 'WARNING: Invalid relref link "%s" in %s' % (relref.group(1), filename,)
@@ -72,13 +72,13 @@ class CustomInclude(Include):
                         # Replace any figure shortcodes.
                         figures = self.pattern_figure.finditer(line)
                         for figure in figures:
-                            #print(figure.group(0))
-                            #print(figure.group(1))
+                            # print(figure.group(0))
+                            # print(figure.group(1))
 
-                            #args = figure_parser.parse_args(figure.group(1).replace('=', ' ').split(' '))
-                            #print(args)
+                            # args = figure_parser.parse_args(figure.group(1).replace('=', ' ').split(' '))
+                            # print(args)
 
-                            #figure_src = self.pattern_figure_src.finditer(figure.group(1)).next().group(1)
+                            # figure_src = self.pattern_figure_src.finditer(figure.group(1)).next().group(1)
                             try:
                                 figure_src = self.pattern_figure_src.finditer(figure.group(0)).next().group(1)
                             except StopIteration:
@@ -90,19 +90,20 @@ class CustomInclude(Include):
                             except StopIteration:
                                 figure_caption = ''
 
-                            #print('%s / %s' % (figure_src, figure_caption))
+                            # print('%s / %s' % (figure_src, figure_caption))
 
                             figure_src_absolute = os.path.join(fileDir, figure_src)
                             line = line.replace(figure.group(0), '![%s](%s)' % (figure_caption, figure_src_absolute,))
 
                         tempFile.write(line)
-                        #tempFile.write('\n')
+                        # tempFile.write('\n')
 
             return Include.include_file(self, tempPath, pwd, shift)
 
         finally:
             if os.path.isfile(tempPath):
                 os.remove(tempPath)
+
 
 """
 class BookLinks(Module):
@@ -136,26 +137,25 @@ class BookLinks(Module):
     return transforms
 """
 
-
 if len(sys.argv) > 2:
-	mdpp = open(sys.argv[1], "r")
-	md = open(sys.argv[2], "w")
+    mdpp = open(sys.argv[1], "r")
+    md = open(sys.argv[2], "w")
 
 elif len(sys.argv) > 1:
-	mdpp = open(sys.argv[1], "r")
-	md = sys.stdout
+    mdpp = open(sys.argv[1], "r")
+    md = sys.stdout
 
 else:
-	sys.exit(1)
+    sys.exit(1)
 
 try:
-  pp = Processor()
-  pp.register(CustomInclude())
-  #pp.register(Include())
-  #pp.register(BookLinks())
-  pp.input(mdpp)
-  pp.process()
-  pp.output(md)
+    pp = Processor()
+    pp.register(CustomInclude())
+    # pp.register(Include())
+    # pp.register(BookLinks())
+    pp.input(mdpp)
+    pp.process()
+    pp.output(md)
 finally:
-  mdpp.close()
-  md.close()
+    mdpp.close()
+    md.close()

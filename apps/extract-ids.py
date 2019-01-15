@@ -22,37 +22,36 @@ import sys
 
 
 def parse(filePath, basePath):
-  title = '//\n// ID\'s from \'%s\'\n//' % filePath[len(contentDir)+1:]
-  with open(filePath, 'r') as myfile:
-    data = myfile.read()
-    for line in data.split('\n'):
-      if parseLine(line, title):
-        title = None
-  if title is None: print
+    title = '//\n// ID\'s from \'%s\'\n//' % filePath[len(contentDir) + 1:]
+    with open(filePath, 'r') as myfile:
+        data = myfile.read()
+        for line in data.split('\n'):
+            if parseLine(line, title):
+                title = None
+    if title is None: print
 
 
 def parseLine(line, title):
-  #print line
-  match = re.search( '^#{1,3} (.*) \{#([\w]*)\}$', line)
-  if match:
-    if title:
-      print
-      print title
-      print
+    # print line
+    match = re.search('^#{1,3} (.*) \{#([\w]*)\}$', line)
+    if match:
+        if title:
+            print
+            print title
+            print
 
-    title = match.group(1)
-    key = match.group(2)
-    print '/** %s */' % title.strip()
-    #print 'String %s = "%s";' % (key.upper(), key)
-    print  '%s,' % key.upper()
-    return True
-  return False
+        title = match.group(1)
+        key = match.group(2)
+        print '/** %s */' % title.strip()
+        # print 'String %s = "%s";' % (key.upper(), key)
+        print  '%s,' % key.upper()
+        return True
+    return False
 
 
 if len(sys.argv) < 2:
-  print 'No directory was specified as parameter!'
-  sys.exit(1)
-
+    print 'No directory was specified as parameter!'
+    sys.exit(1)
 
 contentDir = os.path.abspath(sys.argv[1])
 print 'Searching for markdown files in \'%s\'...' % contentDir
@@ -60,11 +59,11 @@ print 'Searching for markdown files in \'%s\'...' % contentDir
 pathes = []
 for root, dirs, files in os.walk(contentDir):
     path = root.split(os.sep)
-    #print((len(path) - 1) * '---', os.path.basename(root))
+    # print((len(path) - 1) * '---', os.path.basename(root))
     for file in files:
-      if not file.endswith('.md'): continue
-      pathes.append(os.path.join(root, file))
+        if not file.endswith('.md'): continue
+        pathes.append(os.path.join(root, file))
 
 pathes.sort()
 for path in pathes:
-  parse(path, contentDir)
+    parse(path, contentDir)
