@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# Create the website bundle.
+# Create a bundle, that contains all required development files.
 #
-# Copyright 2009-2018 OpenEstate.org.
+# Copyright 2009-2019 OpenEstate.org.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
