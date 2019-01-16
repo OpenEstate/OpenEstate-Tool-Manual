@@ -55,6 +55,29 @@
                 </div>
             </div>
         </form>
+        <div class="navbar-text d-block d-md-none p-0"><hr></div>
+        <ul id="nav-download" class="nav navbar-nav">
+            <li class="nav-item dropdown">
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-md-1" title="{{ i18n "Download the manual." }}" data-toggle="dropdown"><i class="fa fa-download"></i><span class="d-md-none"> {{ i18n "Download manual" }}</span></button>
+                <ul class="dropdown-menu dropdown-menu-md-right">
+                    <li>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.pdf" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "PDF" }}</a>
+                    </li>
+                    <li>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.epub" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "ePub" }}</a>
+                    </li>
+                    <li>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.odt" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "ODT" }}</a>
+                    </li>
+                    <li>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.docx" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "DOCX" }}</a>
+                    </li>
+                    <li>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.html" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "HTML" }}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </nav>
 
