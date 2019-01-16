@@ -18,7 +18,6 @@
 #
 
 LANG="de"
-VERSION="1.0-SNAPSHOT"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 set -e
@@ -31,7 +30,7 @@ cd "$DIR/content/$LANG"
 echo "Merging files into $DIR/book/$LANG.md…"
 "$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$DIR/book/$LANG.md"
 sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$DIR/book/$LANG.md"
-sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
+#sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
 
 echo "Creating $DIR/book/$LANG/book.epub…"
 pandoc -o "$DIR/book/$LANG/book.epub" --epub-embed-font "$DIR/share/fonts/*.ttf" --css "$DIR/share/epub.css" "$DIR/book/$LANG.md"

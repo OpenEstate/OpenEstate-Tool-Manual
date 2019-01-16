@@ -5,9 +5,6 @@ uglyURLs: true
 enableGitInfo: true
 metaDataFormat: yaml
 
-params:
-  version: 1.0-SNAPSHOT
-
 languages:
   en:
     title: Manual for OpenEstate-ImmoTool
