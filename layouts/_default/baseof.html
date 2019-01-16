@@ -27,11 +27,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarMain">
         {{ partial "menu-main.html" . -}}
-        <ul id="nav-search" class="nav navbar-nav d-lg-none" data-sm-options="{ showTimeout:0 }">
-            <li class="nav-item dropdown d-none d-md-block">
-                <a href="#" title="Diese Webseite durchsuchen." class="nav-link dropdown-toggle">
-                    <i class="fas fa-search"></i>
-                </a>
+        <ul id="nav-search" class="nav navbar-nav d-none d-md-block d-lg-none" data-sm-skip="true">
+            <li class="nav-item dropdown">
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-md-1" title="{{ i18n "Search in this manual." }}" data-toggle="dropdown">
+                    <i class="fa fa-search"></i>
+                </button>
                 <ul class="dropdown-menu dropdown-menu-right p-0">
                     <li id="search-dropdown" class="p-0">
                         <form action="{{ partial "relative-root-path.html" . }}search.html" method="get">
@@ -49,31 +49,36 @@
         <div class="navbar-text d-block d-md-none p-0"><hr></div>
         <form id="search-form" action="{{ partial "relative-root-path.html" . }}search.html" method="get" class="form-inline d-md-none d-lg-inline">
             <div class="input-group">
-                <input class="form-control mr-sm-2" type="text" name="q" placeholder="{{ i18n "Your search term…" }}" aria-label="{{ i18n "Your search term…" }}">
+                <input class="form-control" type="text" name="q" placeholder="{{ i18n "Your search term…" }}" aria-label="{{ i18n "Your search term…" }}" title="{{ i18n "Search in this manual." }}">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" title="{{ i18n "Search" }}"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-success" type="submit" title="{{ i18n "Search" }}"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </form>
         <div class="navbar-text d-block d-md-none p-0"><hr></div>
-        <ul id="nav-download" class="nav navbar-nav">
+        <ul id="nav-download" class="nav navbar-nav" data-sm-skip="true">
             <li class="nav-item dropdown">
-                <button class="btn btn-outline-success my-2 my-sm-0 ml-md-1" title="{{ i18n "Download the manual." }}" data-toggle="dropdown"><i class="fa fa-download"></i><span class="d-md-none"> {{ i18n "Download manual" }}</span></button>
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-md-1" title="{{ i18n "Download the manual." }}" data-toggle="dropdown">
+                    <i class="fa fa-download"></i>
+                    <span class="d-md-none"> {{ i18n "Download the manual." }}</span>
+                </button>
                 <ul class="dropdown-menu dropdown-menu-md-right">
+                    <li class="dropdown-header d-none d-md-block"><i class="fa fa-download"></i> {{ i18n "Download manual" }}</li>
+                    <li class="dropdown-divider d-none d-md-block"></li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.pdf" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "PDF" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.pdf" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "PDF" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.epub" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "ePub" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.epub" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "ePub" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.odt" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "ODT" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.odt" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "ODT" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.docx" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "DOCX" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.docx" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "DOCX" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.html" class="dropdown-item">{{ replace (i18n "Download as {0}.") "{0}" "HTML" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.html" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "HTML" }}</a>
                     </li>
                 </ul>
             </li>
