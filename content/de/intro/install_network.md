@@ -33,8 +33,8 @@ Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Rechner d
 ### Vorteile einer Netzwerk-Installation {#intro_install_network_pro}
 
 -   Beliebig viele Mitarbeiter können zeitgleich auf einem gemeinsamen Datenbestand arbeiten.
--   Jeder Mitarbeiter erhält seinen eigenen Zugang zur Datenbank (eigener Benutzername und eigenes Passwort), mit denen dieser sich bei jedem Programmstart authentifizieren muss.
--   Für jeden Mitarbeiter können Zugriffsrechte vergeben werden - sodass z.B. nur bestimmte Programmfunktionen verwendet werden können.
+-   Jeder Mitarbeiter erhält seinen eigenen Zugang zur Datenbank (eigener Benutzer-Name und eigenes Passwort), mit denen dieser sich bei jedem Programmstart authentifizieren muss.
+-   Für jeden Mitarbeiter können Zugriffsrechte vergeben werden - sodass z.B. nur bestimmte Funktionen des Programms verwendet werden können.
 -   Der ImmoTool-Server kann auch auf einem im Rechenzentrum angemieteten Server betrieben werden - sodass auch Mitarbeiter an verschiedenen Standorten auf den gemeinsamen Datenbestand zugreifen können. Alternativ ist auch ein Zugriff von außen per [Virtual Private Network](http://de.wikipedia.org/wiki/Virtual_Private_Network) realisierbar.
 
 
@@ -59,7 +59,7 @@ Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Rechner d
 
 > **Hinweis**
 >
-> Um mit dem ImmoTool-Server über das Netzwerk kommunizieren zu können, muss eventuell eine Zugriffsregel in der Firewall hinterlegt werden. Benötigt wird in der Standardeinstellung eine Freigabe für Verbindungen auf Port-Nr `9001`.
+> Um mit dem ImmoTool-Server über das Netzwerk kommunizieren zu können, muss eventuell eine Regel für den Zugriff in der Firewall hinterlegt werden. Benötigt wird in der Standardeinstellung eine Freigabe für Verbindungen auf Port-Nr `9001`.
 
 
 ### Datenbank im ImmoTool-Server einrichten {#intro_install_network_admintool_init}

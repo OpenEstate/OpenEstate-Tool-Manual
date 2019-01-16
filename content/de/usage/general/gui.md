@@ -1,8 +1,8 @@
 ---
 
-title: Die grafische Programmoberfläche
+title: Die grafische Oberfläche des Programms
 linktitle: Grafische Oberfläche
-description: Die grafische Programmoberfläche von OpenEstate-ImmoTool…
+description: Die grafische Oberfläche von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
@@ -13,16 +13,16 @@ menu:
 ---
 
 
-## Die grafische Programmoberfläche {#usage_general_gui}
+## Die grafische Oberfläche des Programms {#usage_general_gui}
 
 
-### Das Programmfenster {#usage_general_gui_window}
+### Das Programm-Fenster {#usage_general_gui_window}
 
-Nachdem ein Projekt erstellt und im ImmoTool geöffnet wurde wird ein Programmfenster dargestellt, das ungefähr wie folgt aussieht:
+Nachdem ein Projekt erstellt und im ImmoTool geöffnet wurde wird ein Programm-Fenster dargestellt, das ungefähr wie folgt aussieht:
 
-{{< figure src="gui.jpg" caption="Programmfenster des ImmoTools" >}}
+{{< figure src="gui.jpg" caption="Programm-Fenster des ImmoTools" >}}
 
-Das Programmfenster besteht aus den folgenden Elementen:
+Das Programm-Fenster besteht aus den folgenden Elementen:
 
 1.  **Hauptmenü**
 
@@ -68,11 +68,11 @@ Das Programmfenster besteht aus den folgenden Elementen:
 
     Während eine Aufgabe im Hintergrund ausgeführt wird, findet an dieser eine optische Rückmeldung statt.
 
-9.  **Infomeldung / Balloon-Message**
+9.  **Benachrichtigung / Balloon-Message**
 
-    Eine ausgeführte Aufgabe kann Rückmeldungen liefern, die im Programm als Infomeldung dargestellt werden.
+    Eine ausgeführte Aufgabe kann Rückmeldungen liefern, die im Programm als Information dargestellt werden.
 
-    Nach einer Zeitspanne von 30 Sekunden wird die Infomeldung automatisch ausgeblendet. Es werden die letzten fünf Infomeldungen angezeigt. Wenn man die Infomeldung explizit schließt (durch Klick auf das *rote X*), werden die fünf zuletzt dargestellten Infomeldungen geleert.
+    Nach einer Zeitspanne von 30 Sekunden wird die Benachrichtigung automatisch ausgeblendet. Es werden die letzten fünf Benachrichtigungen angezeigt. Wenn man die Benachrichtigung explizit schließt (durch Klick auf das *rote X*), werden die fünf zuletzt dargestellten Benachrichtigungen geleert.
 
 
 ### Verwendung von Tabellen {#usage_general_gui_tables}
@@ -85,18 +85,18 @@ An verschiedenen Stellen werden Tabellen innerhalb des Programmes dargestellt.
 
 Verschiedene Standardfunktionen sind in den Tabellen enthalten.
 
-*   **Zeilen umsortieren**
-    Durch einen Klick mit der linken Maustaste auf einen Spaltentitel in der Tabelle, kann nach dieser Spalte auf- oder absteigend sortiert werden. Ein kleiner Pfeil neben dem Spaltemntitel zeigt die aktuelle Sortierungsrichtung an.
+-   **Zeilen umsortieren**
+    Durch einen Klick mit der linken Maustaste auf einen Spalten-Titel in der Tabelle, kann nach dieser Spalte auf- oder absteigend sortiert werden. Ein kleiner Pfeil neben dem Spalten-Titel zeigt die aktuelle Richtung der Sortierung an.
 
-*   **Spalten umsortieren**
-    Wenn mit der linken Maustaste auf einen Spaltentitel in der Tabelle geklickt und die Taste gehalten wird, kann die Spalte innerhalb der Tabelle verschoben werden (Drag & Drop).
+-   **Spalten umsortieren**
+    Wenn mit der linken Maustaste auf einen Spalten-Titel in der Tabelle geklickt und die Taste gehalten wird, kann die Spalte innerhalb der Tabelle verschoben werden (Drag & Drop).
 
-*   **Spalten ein- & ausblenden**
-    Zum Ein- oder Ausblenden einer Spalte klicken Sie rechts von den Spaltentiteln auf das Tabellensymbol um das Tabellenmenü zu öffnen. Aktivieren oder deaktivieren Sie die entsprechende Spalte durch Klick auf den gewünschten Spaltentitel.
+-   **Spalten ein- & ausblenden**
+    Zum Ein- oder Ausblenden einer Spalte klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol um das Menü der Tabelle zu öffnen. Aktivieren oder deaktivieren Sie die entsprechende Spalte durch Klick auf den gewünschten Spalten-Titel.
 
 > **Hinweis**
 >
-> Die beschriebenen Tabellenfunktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
+> Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
 
 
 ### Verwendung von Formularen {#usage_general_gui_forms}
@@ -109,12 +109,12 @@ Um Eingaben zu tätigen, werden an verschiedenen Stellen im Programm Formulare d
 
 Die folgenden Standardfunktionen werden dabei verwendet.
 
-*   **Pflichtfelder**
+-   **Pflichtfelder**
     Eingaben, die für eine weitere Verarbeitung zwingend notwendig sind, werden gelb hervorgehoben.
 
-*   **Ungültige Eingaben**
+-   **Ungültige Eingaben**
     Ungültige Eingaben in einem Pflichtfeld werden rot hervorgehoben.
 
-*   **Gültige Eingaben**
+-   **Gültige Eingaben**
     Gültige Eingaben in einem Pflichtfeld werden grün hervorgehoben.
 

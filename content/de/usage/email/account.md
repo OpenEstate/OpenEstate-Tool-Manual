@@ -47,7 +47,7 @@ Klicken Sie im Hauptmenü auf `E-Mails` → `E-Mailkonten verwalten` um das [Dia
 Wählen Sie auf der linken Seite des Fensters das zu bearbeitende E-Mailkonto aus. Klicken Sie unten links auf den Button `Aktionen` → `Entfernen` um ein neues Mailkonto zu entfernen und klicken Sie abschließend auf `Übernehmen`.
 
 
-### E-Mailkontoverwaltung {#usage_email_accounts_setup}
+### E-Mailkonten verwalten {#usage_email_accounts_setup}
 
 Klicken Sie im Hauptmenü auf `E-Mails` → `E-Mailkonten verwalten` um das Dialogfenster zur Bearbeitung der Mailkonten zu öffnen.
 
@@ -63,7 +63,7 @@ Verschiedene allgemeine Angaben können zu jedem E-Mailkonto hinterlegt werden.
 {{< figure src="account_general.jpg" caption="Allgemeine Einstellungen eines E-Mailkontos" >}}
 
 -   **Bezeichnung**
-    Die Bezeichng wird innerhalb des Programmes an verschiedenen Stellen verwendet. Wählen Sie hier einen möglichst prägnanten und kurzen Namen aus.
+    Die Bezeichnung wird innerhalb des Programmes an verschiedenen Stellen verwendet. Wählen Sie hier einen möglichst prägnanten und kurzen Namen aus.
 
 -   **Ihr Name**
     Dieser Name wird bei versendeten E-Mails als Absender übermittelt.
@@ -96,7 +96,7 @@ Um eingehende Nachrichten über das **IMAP**-Protokoll vom E-Mailserver abholen 
 -   **Benutzer**
     Tragen Sie hier Ihren IMAP-Benutzernamen ein, wenn eine Anmeldung am IMAP-Mailserver stattfindet.
 
--   **Paswort**
+-   **Passwort**
     Tragen Sie hier Ihr IMAP-Passwort ein, wenn eine Anmeldung am IMAP-Mailserver stattfindet.
 
 -   **Krypto**
@@ -108,7 +108,7 @@ Um eingehende Nachrichten über das **IMAP**-Protokoll vom E-Mailserver abholen 
 > Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die IMAP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_imap" >}}).
 
 
-Folgende Port-Nummern werden bei IMAP meist für die verschiedenen Verschlüsselungsverfahren verwendet:
+Folgende Port-Nummern werden bei IMAP meist für die verschiedenen Verfahren zur Verschlüsselung verwendet:
 
 | Verschlüsselung | Port-Nr |
 | --------------- | -------:|
@@ -135,7 +135,7 @@ Um eingehende Mails über das **POP3**-Protokoll vom E-Mailserver abholen zu kö
 -   **Benutzer**
     Tragen Sie hier Ihren POP3-Benutzernamen ein, wenn eine Anmeldung am POP3-Mailserver stattfindet.
 
--   **Paswort**
+-   **Passwort**
     Tragen Sie hier Ihr POP3-Passwort ein, wenn eine Anmeldung am POP3-Mailserver stattfindet.
 
 -   **Krypto**
@@ -145,7 +145,7 @@ Um eingehende Mails über das **POP3**-Protokoll vom E-Mailserver abholen zu kö
 >
 > Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die POP3-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_pop3" >}}).
 
-Folgende Port-Nummern werden bei POP3 meist für die verschiedenen Verschlüsselungsverfahren verwendet:
+Folgende Port-Nummern werden bei POP3 meist für die verschiedenen Verfahren zur Verschlüsselung verwendet:
 
 | Verschlüsselung | Port-Nr |
 | --------------- | -------:|
@@ -172,7 +172,7 @@ Um ausgehende Mails über das **SMTP**-Protokoll versenden zu können, öffnen S
 -   **Benutzer**
     Tragen Sie hier Ihren SMTP-Benutzernamen ein, wenn eine Anmeldung am SMTP-Mailserver stattfindet.
 
--   **Paswort**
+-   **Passwort**
     Tragen Sie hier Ihr SMTP-Passwort ein, wenn eine Anmeldung am SMTP-Mailserver stattfindet.
 
 -   **Krypto**
@@ -182,7 +182,7 @@ Um ausgehende Mails über das **SMTP**-Protokoll versenden zu können, öffnen S
 >
 > Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die SMTP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_smtp" >}}).
 
-Folgende Port-Nummern werden bei SMTP meist für die verschiedenen Verschlüsselungsverfahren verwendet:
+Folgende Port-Nummern werden bei SMTP meist für die verschiedenen Verfahren zur Verschlüsselung verwendet:
 
 | Verschlüsselung | Port-Nr       |
 | --------------- | -------------:|

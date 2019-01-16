@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des Kalender-Addons
+title: Verwendung des Kalender Add-Ons
 linktitle: Kalender
-description: Hinweise zur Verwendung des Kalender-Addons von OpenEstate-ImmoTool…
+description: Hinweise zur Verwendung des Kalender Add-Ons von OpenEstate-ImmoTool…
 weight: 40
 
 menu:

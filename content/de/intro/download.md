@@ -14,7 +14,7 @@ menu:
 
 ## ImmoTool herunterladen {#intro_download}
 
-Das ImmoTool kann im [öffentlichen Downloadbereich](http://de.openestate.org/downloads/) in verschiedenen Paketen heruntergeladen werden. Ältere Programmversionen können darüber hinaus nach erfolgter kostenloser Anmeldung im [geschützten Anwenderbereich](http://dev.openestate.org/applications/) heruntergeladen werden.
+Das ImmoTool kann im [öffentlichen Download-Bereich](http://de.openestate.org/downloads/) in verschiedenen Paketen heruntergeladen werden. Ältere Programmversionen können darüber hinaus nach erfolgter kostenloser Anmeldung im [geschützten Anwender-Bereich](http://dev.openestate.org/applications/) heruntergeladen werden.
 
 
 ### Pakete für ImmoTool {#intro_download_client}

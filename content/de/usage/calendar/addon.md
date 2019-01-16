@@ -1,8 +1,8 @@
 ---
 
-title: Allgemeines zum Kalender-Addon
+title: Allgemeines zum Kalender Add-On
 linktitle: Allgemeines
-description: Allgemeine Hinweise zum Kalender-Addon von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zum Kalender Add-On von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
@@ -22,7 +22,7 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "Kalender
 
 {{< figure src="menu_add.jpg" caption="Untermenü zum Erzeugen neuer Einträge im Kalender" >}}
 
-{{< figure src="sidebar.jpg" caption="Ansichtsbereich des Kalenders" >}}
+{{< figure src="sidebar.jpg" caption="Ansicht des Kalenders" >}}
 
 
 ### Einstellungen {#usage_calendar_addon_settings}

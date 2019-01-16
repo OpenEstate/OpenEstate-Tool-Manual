@@ -14,10 +14,10 @@ menu:
 
 ## Support & Hilfestellungen {#appendix_support}
 
-Jeder Anwender mit freigeschaltetem Zugang zum [Anwenderbereich](http://dev.openestate.org/) kann einen kostenlosen technischen Support zum OpenEstate-ImmoTool und den weiteren OpenEstate-Projekten in Anspruch nehmen.
+Jeder Anwender mit freigeschaltetem Zugang zum [Anwender-Bereich](http://dev.openestate.org/) kann einen kostenlosen technischen Support zum OpenEstate-ImmoTool und den weiteren OpenEstate-Projekten in Anspruch nehmen.
 
 
-### Supportfälle
+### Umfang des Supports
 
 Der Support umfasst Hilfestellungen bei:
 
@@ -32,9 +32,9 @@ Der Support umfasst Hilfestellungen bei:
 
 ### Support via Forum
 
-Das [OpenEstate-Forum](http://board.openestate.org/) ist eine Plattform zur Kommunikation zwischen den OpenEstate-Anwendern & -Entwicklern. Dies ist das bevorzugte Kommunikationsmedium, da hier auch andere ImmoTool-Benutzer sich ggf. zu Ihrem Anliegen äußern können.
+Das [OpenEstate-Forum](http://board.openestate.org/) ist eine Plattform zur Kommunikation zwischen den OpenEstate-Anwendern & -Entwicklern. Dies ist das bevorzugte Medium zur Kommunikation, da hier auch andere ImmoTool-Benutzer sich ggf. zu Ihrem Anliegen äußern können.
 
-Eine Teilnahme am Forum ist mit und ohne Anmeldung möglich. Mit einer Anmeldung stehen Ihnen weitere Komfortfunktionen zur Verfügung.
+Eine Teilnahme am Forum ist mit und ohne Anmeldung möglich. Mit einer Anmeldung stehen Ihnen weitere Komfort-Funktionen zur Verfügung.
 
 > **Achtung**
 >
@@ -43,5 +43,5 @@ Eine Teilnahme am Forum ist mit und ohne Anmeldung möglich. Mit einer Anmeldung
 
 ### Support via Ticketsystem
 
-Das Ticketsystem befindet sich im [Loginbereich für OpenEstate-Anwender](http://dev.openestate.org/) unter dem Menüpunkt `Ticketsystem`. Hier können Sie vertrauliche Probleme oder Wünsche mit den Entwicklern diskutieren.
+Das Ticketsystem befindet sich im [Anwender-Bereich](http://dev.openestate.org/) unter dem Menüpunkt `Ticketsystem`. Hier können Sie vertrauliche Probleme oder Wünsche mit den Entwicklern diskutieren.
 

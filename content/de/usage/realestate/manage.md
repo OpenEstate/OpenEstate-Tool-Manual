@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des Immobilien-Addons
+title: Verwendung des Immobilien Add-Ons
 linktitle: Verwaltung
-description: Allgemeine Hinweise zur Verwendung des Immobilien-Addons von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zur Verwendung des Immobilien Add-Ons von OpenEstate-ImmoTool…
 weight: 20
 
 menu:
@@ -19,31 +19,32 @@ menu:
 
 Innerhalb eines Projektes können beliebig viele Immobilien verwaltet werden. Die Übersicht der gespeicherten Immobilien kann auf zweierlei Wegen geöffnet werden:
 
-1.  Klicken Sie im Hauptmenü auf den Eintrag `Immobilien` → `Immobilienansicht öffnen` um die Immobilienübersicht zu öffnen.
+1.  Klicken Sie im Hauptmenü auf den Eintrag `Immobilien` → `Immobilienansicht öffnen` um die Übersicht der Immobilien zu öffnen.
 
-    {{< figure src="menu.jpg" caption="Immobilienübersicht über das Hauptmenü öffnen" >}}
+    {{< figure src="menu.jpg" caption="Übersicht der Immobilien über das Hauptmenü öffnen" >}}
 
-2.  Öffnen Sie die Immobilienansicht und klicken Sie in der Sidebar auf den Eintrag `Immobilien`.
+2.  Öffnen Sie die Immobilien-Ansicht und klicken Sie in der Sidebar auf den Eintrag `Immobilien`.
 
-    {{< figure src="sidebar.jpg" caption="Immobilienübersicht über die Sidebar öffnen" >}}
+    {{< figure src="sidebar.jpg" caption="Übersicht der Immobilien über die Sidebar öffnen" >}}
 
 
 Daraufhin wird eine tabellarische Übersicht der erfassten Immobilien dargestellt:
 
-{{< figure src="realestate_table.jpg" caption="Immobilienübersicht" >}}
+{{< figure src="realestate_table.jpg" caption="Übersicht der Immobilien" >}}
 
 
 #### Filterkriterien verwenden {#usage_realestate_manage_table_filter}
 
 Oberhalb der Tabelle werden verschiedene Eingabefelder dargestellt, um den Immobilienbestand eingrenzen zu können. Die Ansicht der Tabelle wird automatisch aktualisiert sobald ein Kriterium geändert wurde.
-Unter Adresse können Sie entweder eine Postleitzahl oder einen Ort entragen.
+
+Unter Adresse können Sie entweder eine Postleitzahl oder einen Ort eintragen.
 
 
 #### Aktionen ausführen {#usage_realestate_manage_table_actions}
 
 Markieren Sie in der Tabelle eine oder mehrere Immobilien. Klicken Sie danach auf den Button `Aktionen` oder mit der rechten Maustaste in die Tabelle um das Aktionsmenü darzustellen.
 
-{{< figure src="realestate_table_actions.jpg" caption="Aktionsmenü in der Immobilienübersicht" >}}
+{{< figure src="realestate_table_actions.jpg" caption="Aktionsmenü in der Übersicht der Immobilien" >}}
 
 Folgende Aktionen stehen zur Verfügung:
 
@@ -89,15 +90,15 @@ Folgende Aktionen stehen zur Verfügung:
 
 #### Immobilien durchsuchen {#usage_realestate_manage_table_search}
 
-Hierbei handelt es sich nicht um Suchanfragen eines Interessenten, sondern um eine frei definierbare Schnellsuche im Immobilienbestand um z.B. häufig gesuchte Immobilien schnell zu finden.
+Hierbei handelt es sich nicht um Suchaufträge eines Interessenten, sondern um eine frei definierbare Suche im Immobilienbestand um z.B. häufig gesuchte Immobilien schnell zu finden.
 
-Alle bereits gespeicherten und aktiven Suchanfragen werden in der Selectbox Suche oder in der Sidbare dargestellt. Wählen Sie eine der Suchanfragen aus, um die Suche auf dem Immobilienbestand durchzuführen.
+Alle bereits gespeicherten und aktiven Suchanfragen werden in der Selectbox Suche oder in der Sidebar dargestellt. Wählen Sie eine der Suchanfragen aus, um die Suche auf dem Immobilienbestand durchzuführen.
 
 Um eine neue Suchanfrage zu erzeugen, klicken Sie auf den Button mit der Lupe neben der Selectbox für die Suchanfragen. Es öffnet sich daraufhin ein Dialogfenster zur Erstellung einer Suchanfrage.
 
 {{< figure src="realestate_search.jpg" caption="Aktionsmenü in der Immobilienbestand durchsuchen" >}}
 
-Folgende Angaben können im Suchformular hinterlegt werden:
+Folgende Angaben können im Formular hinterlegt werden:
 
 -   **Name**
     Wenn die Suchanfrage dauerhaft gespeichert werden soll, wählen Sie eine möglichst passende Bezeichnung um diese später leicht wieder erkennen zu können.
@@ -108,7 +109,7 @@ Folgende Angaben können im Suchformular hinterlegt werden:
     >
     > Vorlage wählen beschreiben
 
--   **Suchanfrage dauerhaft seichern**
+-   **Suchanfrage dauerhaft speichern**
 
     Aktivieren Sie diese Option, wenn die Suchanfrage dauerhaft gespeichert werden soll. Andernfalls wird die Suchanfrage einmal ausgeführt und verworfen.
 
@@ -122,25 +123,25 @@ Folgende Angaben können im Suchformular hinterlegt werden:
     
 Durch betätigen eines roten Kreuzes können Sie ein Kriterium abwählen - es wird immer der letzte Eintrag dieses Kriterium gelöscht - und mit dem grünen Minus einem Kriterium einen weiteren Wert hinzufügen.
 
-Klicken Sie abschließend auf `Übernehmen` um die Suchanfrage auf dem Immobilienbestand auszuführen. Das Resultat der Suche wird in der Immobilienübersicht dargestellt.
+Klicken Sie abschließend auf `Übernehmen` um die Suchanfrage auf dem Immobilienbestand auszuführen. Das Resultat der Suche wird in der Übersicht der Immobilien dargestellt.
 
 
 ### Immobilie erfassen {#usage_realestate_manage_add}
 
 Das Formular zum Anlegen einer Immobilie können Sie auf folgenden Wegen öffnen.
 
-1. Klicken Sie im Kopfmenü auf `Immobilien` → `Neuer Eintrag` → `neue Immobilie`.
+1. Klicken Sie im Hauptmenü auf `Immobilien` → `Neuer Eintrag` → `neue Immobilie`.
 
 2. Klicken Sie in der Sidebar mit der rechten Maustaste auf Immobilien und wählen `Immobilien` → `Neuer Eintrag` → `neue Immobilie`.
 
-3. Klicken Sie im Kopfbereich der Immobilienübersicht auf den Button mit dem grünen Kreuz `Neu`.
+3. Klicken Sie im Kopfbereich der Übersicht der Immobilien auf den Button mit dem grünen Kreuz `Neu`.
 
 Nehmen Sie die gewünschten Einträge im [Immobilienformular](#usage_realestate_manage_form) vor und klicken Sie abschließend auf den Button `Speichern`.
 
 
 ### Immobilie bearbeiten {#usage_realestate_manage_edit}
 
-Öffnen Sie die [Immobilienübersicht](#usage_realestate_manage_table) und suchen Sie die zu bearbeitende Immobilie in der Tabelle.
+Öffnen Sie die [Übersicht der Immobilien](#usage_realestate_manage_table) und suchen Sie die zu bearbeitende Immobilie in der Tabelle.
 
 Eine Immobilie können Sie auf drei Wegen öffnen.
 
@@ -155,30 +156,30 @@ Nehmen Sie die gewünschten Änderungen im [Immobilienformular](#usage_realestat
 
 ### Immobilie duplizieren {#usage_realestate_manage_copy}
 
-Öffnen Sie die [Immobilienübersicht](#usage_realestate_manage_table) und suchen Sie die zu duplizierende Immobilie in der Tabelle.
+Öffnen Sie die [Übersicht der Immobilien](#usage_realestate_manage_table) und suchen Sie die zu duplizierende Immobilie in der Tabelle.
 
 Eine Immobilie können Sie auf zwei Wegen öffnen.
 
 1. Klicken Sie mit der rechten Maustaste auf die betreffende Immobilie und wählen Sie im dargestellten Menü die Aktion `Immobilie duplizieren`.
 
-2. Klicken Sie im oberen Bereich der Immobilienübersicht auf `Anktionen → Immobilie duplizieren`.
+2. Klicken Sie im oberen Bereich der Übersicht der Immobilien auf `Anktionen → Immobilie duplizieren`.
 
 > **Hinweis**
 >
-> Die Originalimmobilie bleibt bei dieser Verfahrensweise unangetastet!
+> Die originale Immobilie bleibt bei dieser Verfahrensweise unangetastet!
 
-Nehmen Sie an der duplizierten Immobilie die gewünschten Änderunge vor und speichern diese. Es wird eine neue Immobilie in der Datenbank angelegt.
+Nehmen Sie an der duplizierten Immobilie die gewünschten Änderungen vor und speichern diese. Es wird eine neue Immobilie in der Datenbank angelegt.
 
 
 ### Immobilie löschen {#usage_realestate_manage_remove}
 
-Öffnen Sie die [Immobilienübersicht](#usage_realestate_manage_table) und suchen Sie die zu löschende Immobilie in der Tabelle.
+Öffnen Sie die [Übersicht der Immobilien](#usage_realestate_manage_table) und suchen Sie die zu löschende Immobilie in der Tabelle.
 
 Eine Immobilie können Sie auf zwei Wegen löschen.
 
 1. Klicken Sie mit der rechten Maustaste auf die betreffende Immobilie und wählen Sie im dargestellten Menü die Aktion `Entfernen`.
 
-2. Klicken Sie im oberen Bereich der Immobilienübersicht auf `Anktionen → Entfernen`.
+2. Klicken Sie im oberen Bereich der Übersicht der Immobilien auf `Anktionen → Entfernen`.
 
 
 > **Achtung**
@@ -190,18 +191,18 @@ Eine Immobilie können Sie auf zwei Wegen löschen.
 
 #### Eckdaten {#usage_realestate_manage_form_general}
 
-Im Karteireiter `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammengefasst.
+Im Tab `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammengefasst.
 
 {{< figure src="realestate_form.jpg" caption="Immobilienformular mit Eckdaten" >}}
 
 -   **Titel**
     Hinterlegen Sie einen aussagekräftigen und nicht zu langen Titel für diese Immobilie.
 
-    Der Titel wird in allen Sprachen angezeigt, welche in den Spracheinstellungen aktiviert wurden. Durch einen Mausklick auf die Checkbox neben der Landesflagge können Sie für diese Immobilie eine oder mehrere Sprachen aktivieren. Eine Sprache muss mindestens aktiviert werden.
+    Der Titel wird in allen Sprachen angezeigt, welche in den Sprach-Einstellungen aktiviert wurden. Durch einen Mausklick auf die Checkbox neben der Landesflagge können Sie für diese Immobilie eine oder mehrere Sprachen aktivieren. Eine Sprache muss mindestens aktiviert werden.
 
     > **Hinweis**
     >
-    > Der Titel kann in allen Sprachen abgelegt werden, welche in den Spracheinstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+    > Der Titel kann in allen Sprachen abgelegt werden, welche in den Sprach-Einstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
 
 -   **Objekt-Nr**
     Dieses Feld ist für von Ihnen selbst vergebene interne Objektnummer vorgesehen. Von Portalen kann die Objekt-Nr zur Identifikation Ihrer Inserate verwendet werden.
@@ -224,7 +225,7 @@ Im Karteireiter `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammen
     Wählen Sie einen Status für diese Immobilie.
 
 -   **Gültig von / Gültig bis**
-    Wählen Sie ggf. je ein Datum für den Beginn und das Ende des Vermittlungszeitraumes dieser Immobilie.
+    Wählen Sie ggf. je ein Datum für den Beginn und das Ende des Zeitraums der Vermittlung dieser Immobilie.
 
 -   **Gruppennummer**
     Vergeben Sie ggf. eine Gruppennummer damit diese Immobilie mit anderen Immobilien des Bestands z.B. bei ImmobilienScout24 gruppiert dargestellt wird.
@@ -232,13 +233,13 @@ Im Karteireiter `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammen
 -   **Adresseingabe**
     Geben Sie hier die Adresse der Immobilie ein und wählen ein Land.
     
-    Manche Portale, wie z.B. Immobiliare.it und ImmobilienScout24, benötigen spezifische regionale Angaben bei Auslandsobjekten. Wenn Sie an ein solches Portal ausländische Inseratsdaten senden, wählen Sie in der Selectbox `Immobilien-Adresse` das jeweilige Portal und ordnen Sie es der entsprechenden Region zu bis keine weitere Zuordnung in den Unterregionen mehr möglich ist.
+    Manche Portale, wie z.B. Immobiliare.it und ImmobilienScout24, benötigen spezifische regionale Angaben für Immobilien. Wenn Sie ein solches Portal beliefern, wählen Sie in der Selectbox `Immobilien-Adresse` das jeweilige Portal und ordnen Sie es der entsprechenden Region zu bis keine weitere Zuordnung in den Unter-Regionen mehr möglich ist.
 
 -   **Geokoordinaten**
     Geben Sie die Geokoordinaten der Immobilie ein, falls diese Ihnen bekannt sein sollten.
 
 -   **Geokoordinaten ermitteln**
-    Um die Geokoordinaten zu einer Immobilie zu ermitteln betätigen Sie den Butten `Geokoordinaten ermitteln`. Im folgenden Fenster können Sie nach betätigen des Buttons `Suchen` angeben ob Sie nach einem Ort oder einer Postleitzahl suchen. Gemäß Ihrer Auswahl öffnet sich in der Karte das entsprechende Suchformular. Geben Sie Suchkriterien ein und starten Sie die Suche über den Button `Ausführen`. Mit dem Button `Abbrechen` im Suchformular können Sie das Suchformular schließen. Im Suchergebniss wählen Sie ein passendes Ergebnis. Es wird Ihnen dann ein  Kartenausschnitt gezeigt. Diesen können Sie mit dem Mausrad vergrößern oder verkleinern und mit der linken Maustaste verschieben. Wenn Sie die gewünschte Adresse gefunden haben markieren Sie diese und betätigen den Button `Koordinaten übernehmen`. Die Koordinaten werden in das Immobilienformular übernommen.
+    Um die Geokoordinaten zu einer Immobilie zu ermitteln betätigen Sie den Button `Geokoordinaten ermitteln`. Im folgenden Fenster können Sie nach betätigen des Buttons `Suchen` angeben ob Sie nach einem Ort oder einer Postleitzahl suchen. Gemäß Ihrer Auswahl öffnet sich in der Karte das entsprechende Suchformular. Geben Sie Suchkriterien ein und starten Sie die Suche über den Button `Ausführen`. Mit dem Button `Abbrechen` im Suchformular können Sie das Suchformular schließen. Im Suchergebnis wählen Sie ein passendes Ergebnis. Es wird Ihnen dann ein Ausschnitt einer Karte gezeigt. Diesen können Sie mit dem Mausrad vergrößern oder verkleinern und mit der linken Maustaste verschieben. Wenn Sie die gewünschte Adresse gefunden haben markieren Sie diese und betätigen den Button `Koordinaten übernehmen`. Die Koordinaten werden in das Immobilienformular übernommen.
 
 > **Hinweis**
 >
@@ -250,7 +251,7 @@ Im Karteireiter `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammen
 
 > **Hinweis**
 >
-> Um die spezifischen Regionen eines Immobilienportals verfügbar zu haben, müssen die jeweiligen Erweiterung in die Datenbank instaliert werden. Diese finden Sie unter [dev.openestate.org](http://dev.openestate.org/applications/1/#download) im Abschnitt **Geodaten**.
+> Um die spezifischen Regionen eines Immobilienportals verfügbar zu haben, müssen die jeweiligen Erweiterung in die Datenbank installiert werden. Diese finden Sie unter [dev.openestate.org](http://dev.openestate.org/applications/1/#download) im Abschnitt **Geodaten**.
 
 
 > **TODO**
@@ -261,7 +262,7 @@ Im Karteireiter `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammen
 
 #### Spezifikation {#usage_realestate_manage_form_attributes}
 
-Im Karteireiter `Immobilie` werden spezifische Eigenschaften der Immobilie zusammengefasst.
+Im Tab `Immobilie` werden spezifische Eigenschaften der Immobilie zusammengefasst.
 
 1.  Spezifizieren Sie zuerst die Immobilienart so genau wie es ihnen möglich ist - z.B. `Wohnimmobilie` → `Wohnung` → `Erdgeschosswohnung`.
 
@@ -269,7 +270,7 @@ Im Karteireiter `Immobilie` werden spezifische Eigenschaften der Immobilie zusam
 
 2.  Wählen Sie danach die passende Vermarktungsart - z.B. `Miete`
 
-3.  Nach der Eingabe dieser Informationen werden weitere Eigenschaften / Attribute zu diesem Immobilientyp in der unteren Tabelle dargestellt.
+3.  Nach der Eingabe dieser Informationen werden weitere Eigenschaften / Attribute zu dieser Auswahl in der unteren Tabelle dargestellt.
 
     {{< figure src="realestate_form_attributes.jpg" caption="Attribute zur Immobilie erfassen" >}}
 
@@ -277,24 +278,24 @@ Im Karteireiter `Immobilie` werden spezifische Eigenschaften der Immobilie zusam
 
     -   Bei Eingaben der Art Länge und Fläche können Sie rechts in diesem Feld mit den Pfeiltasten die Einheit wählen.
 
-        {{< figure src="realestate_form_attributes_unit.jpg" caption="Einheit eines Flächenattributs ändern" >}}
+        {{< figure src="realestate_form_attributes_unit.jpg" caption="Einheit eines Flächen-Attributs ändern" >}}
     
-    -   Datumsfelder müssen das Format `TT.MM.JJJJ` haben.
+    -   In Feldern zur Eingabe eines Datums muss das Datum im Format `TT.MM.JJJJ` eingetragen werden.
     
-    -   Bei Feldern mit Mehrfachauswahl öffnet sich nach dem Anklicken des Feldes eine Liste, in welcher Sie Angaben wählen und abwählen können.
+    -   Bei Feldern mit mehrfacher Auswahl öffnet sich nach dem Anklicken des Feldes eine Liste, in welcher Sie Angaben wählen und abwählen können.
 
         {{< figure src="realestate_form_attributes_multiple.jpg" caption="Attribute mit mehreren Optionen" >}}
 
-    -   Bei Feldern mit Einfachauswahl wird nur eine Angabe übernommen. Wird ein Zweite aktiviert wird die Erste deaktiviert.
+    -   Bei Feldern mit einfacher Auswahl wird nur eine Angabe übernommen. Wird ein Zweite aktiviert wird die Erste deaktiviert.
     
-5.  Attribute mit freier Texteingabe befinden sich unter den Karteireitern mit den Landesflaggen.
+5.  Attribute mit freier Texteingabe befinden sich unter den Tabs mit den Landesflaggen.
 
 
 #### Beschreibungstext {#usage_realestate_manage_form_descriptions}
 
-Nachdem eine Immobilien- & Vermarktungsart gewählt wurde können zusätzliche Beschreibungstexte zur Immobilie hinterlegt werden.
+Nachdem eine Immobilien- & Vermarktungsart gewählt wurde können zusätzliche beschreibende Texte zur Immobilie hinterlegt werden.
 
-1.  Wählen Sie dafür die Karteireiter mit den Landesflaggen, und füllen die gewünschten Felder mit den entsprechenden Inhalten aus.
+Wählen Sie dafür die Tabs mit den Landesflaggen und füllen die gewünschten Felder mit den entsprechenden Inhalten aus.
 
 Mit den blauen Pfeilen können Sie die Gruppen ausblenden / einblenden bzw. die Textfelder vergrößern / verkleinern.
 
@@ -302,7 +303,7 @@ Bei der Eingabe wird Ihnen die Anzahl der noch möglichen Zeichen angezeigt.
 
 > **Hinweis**
 >
-> Die Freitexte und frei belegbaren Attribute können in allen Sprachen abgelegt werden, welche in den Spracheinstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+> Es können Texte in allen Sprachen eingetragen werden, die in den Sprach-Einstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
 
 
 #### Energieausweis {#usage_realestate_manage_form_energy-performance-certificate}
@@ -311,12 +312,12 @@ Bei der Eingabe wird Ihnen die Anzahl der noch möglichen Zeichen angezeigt.
 
 Wenn ein Energieausweis vorhanden ist aktivieren Sie das entsprechende Feld.
 
-Danach wählen Sie den Ausweistyp und tragen die Daten in die jeweiligen Felder ein.
+Danach wählen Sie die Art des Ausweises und tragen die Daten in die jeweiligen Felder ein.
 
 
 #### Fotos & Dateien {#usage_realestate_manage_form_media}
 
-Im Karteireiter `Medien` können beliebig viele Bilder und Dateien zur Immobilie hinterlegt werden.
+Im Tab `Medien` können beliebig viele Bilder und Dateien zur Immobilie hinterlegt werden.
 
 {{< figure src="realestate_form_images.jpg" caption="Bilder zur Immobilie erfassen" >}}
 
@@ -325,36 +326,36 @@ Im Karteireiter `Medien` können beliebig viele Bilder und Dateien zur Immobilie
 
 Klicken Sie auf den Button `Importieren` um eine Bild oder andere Dateien von Ihrer Festplatte in das ImmoTool zu laden und mit der Immobilie zuzuordnen.
 
+Beim Import der Dateien erkennt das Programm automatisch, ob es sich um Bilder oder andere Anhänge handelt.
+
 > **Tipp**
 >
-> Wenn mehrere Bilddateien im Importfenster markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste und der linken Maustaste), können diese Bilder auf einmal importiert werden.
+> Sie können mehrere Bilder auf einmal importieren, wenn Sie bei der Datei-Auswahl die `STRG` / `Shift` Taste gedrückt halten und mit der Maus die gewählten Bilder anklicken.
 
 > **Hinweis**
 >
-> Beim Import der Dateien erkennt das Programm automatisch Bilder oder sonstigen Dateien und stellt diese entsprechend dar.
+> Es werden die gängigen Bildformate (JPG, PNG, GIF, TIF, BMP) abhängig von der verwendeten Java-Version unterstützt.
 
 > **Hinweis**
 >
-> 1.  Es werden die gängigen Bildformate (JPG, PNG, GIF, TIF, BMP) abhängig von der verwendeten Java-Version unterstützt.
->
-> 2.  Importierte Fotos werden in der Datenbank gespeichert und die Originale müssen nicht dauerhaft auf der Festplatte verfügbar bleiben. Es empfiehlt sich aber die Originale auch außerhalb des ImmoTool gespeichert zu halten.
+> Importierte Fotos werden in der Datenbank gespeichert und die Originale müssen nicht dauerhaft auf der Festplatte verfügbar bleiben. Es empfiehlt sich jedoch dennoch, die importierten Dateien auch außerhalb des ImmoTools gespeichert zu halten.
 
 
 ##### Fotos & Dateien bearbeiten {#usage_realestate_manage_form_media_files_edit}
 
 Nach dem Import können Sie jedes Foto einzeln durch Anklicken in der Übersicht aufrufen und weiter bearbeiten.
 
-1.  Geben Sie zum Foto einen kurzen Beschreibungstext im Feld Titel in den gewünschten Sprachen ein. Dieser Titel wird als Bildtitel zu den Portalen gesendet.
+1.  Geben Sie zum Foto einen kurzen Beschreibungstext im Feld Titel in den gewünschten Sprachen ein. Dieser Bild-Titel wird z.B. zu Immobilienportalen gesendet und in Exposés dargestellt.
 
-2.  Wählen Sie unter Dateityp eine Dateiart, z.B. "Innenansicht" aus.
+2.  Wählen Sie unter `Dateityp` die Art des Bildes - z.B. "Innenansicht" - aus.
 
-3.  Legen Sie unter Bild veröffentlichen fest, ob das jeweilige Bild in den Portalexporten und Exposés verfügbar sein soll.
+3.  Legen Sie unter `Bild veröffentlichen` fest, ob das jeweilige Bild zu Immobilienportalen exportiert oder in Exposés dargestellt werden kann.
 
-4.  Unter `Aktionen`  können Sie mit den rötlichen Pfeiltasten  das gewählte Bild horizontal bzw. vertikal Spiegel und nach rechts oder links in 90 Grad-Schritten drehen.
+4.  Unter `Aktionen` können Sie mit den rötlichen Pfeiltasten das gewählte Bild horizontal / vertikal spiegeln bzw. nach rechts / links um 90 Grad drehen.
 
 > **Hinweis**
 >
-> Die Bildtitel können in allen Sprachen abgelegt werden, welche in den Spracheinstellungen aktiviert wurden. `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+> Die Titel der Bilder können in allen Sprachen abgelegt werden, welche in den Sprach-Einstellungen aktiviert wurden. `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
 
 
 ##### Fotos & Dateien entfernen {#usage_realestate_manage_form_media_files_remove}
@@ -370,7 +371,7 @@ Eine Positionsänderung können Sie auch vornehmen indem Sie das Bild mit der Ma
 
 ##### Fotos & Dateien exportieren {#usage_realestate_manage_form_media_files_export}
 
-Sollten Sie ein Bilder für eine andere Anwendung benötigen, so klicken Sie oberhalb der großen Bildvorschau auf `Aktionen` →  `Exportieren`, wählen im erscheinenden Dialogfenster das Ziel aus, vergeben einen Dateinamen und speichern das Bild.
+Sollten Sie ein Bilder für eine andere Anwendung benötigen, so klicken Sie oberhalb der großen Bild-Vorschau auf `Aktionen` →  `Exportieren`, wählen im erscheinenden Dialogfenster das Ziel aus, vergeben einen Dateinamen und speichern das Bild.
 
 
 ##### Fotos & Dateien austauschen {#usage_realestate_manage_form_media_files_change}
@@ -385,7 +386,7 @@ Das ImmoTool erkennt das Format der importierten Datei und fügt dieses unter `F
 
 #### Ansprechpartner {#usage_realestate_manage_form_contact}
 
-Im Karteireiter `Adressen` → `Ansprechpartner` kann der Ansprechpartner (Sie oder ein Mitarbeiter) zur Immobilie hinterlegt werden.
+Im Tab `Adressen` → `Ansprechpartner` kann der Ansprechpartner (Sie oder ein Mitarbeiter) zur Immobilie hinterlegt werden.
 
 Der Ansprechpartner wird beim Export an Immobilienportale bzw. bei Exposé-Darstellungen für die Interessenten veröffentlicht. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten unter `Extras` → `Anbieterprofil` zurückgegriffen.
 
@@ -399,7 +400,7 @@ Markieren Sie das Optionsfeld `Ansprechpartner auswählen`. Im daneben stehenden
 
 ##### Einen neuen Ansprechpartner erfassen {#usage_realestate_manage_form_contact_add}
 
-Markieren Sie das Optionsfeld `neuer Ansprechpartner`. Im darunter stehenden Formular können die Daten des neuen Ansprechpartners eingegeben werden. Beim Speichern der Immobilie wird auch der hier eventuell neu angelgte Ansprechpartner gespeichert. 
+Markieren Sie das Optionsfeld `neuer Ansprechpartner`. Im darunter stehenden Formular können die Daten des neuen Ansprechpartners eingegeben werden. Beim Speichern der Immobilie wird auch der hier eventuell neu angelegte Ansprechpartner gespeichert. 
 
 
 ##### Keinen Ansprechpartner angeben {#usage_realestate_manage_form_contact_nobody}
@@ -413,7 +414,7 @@ Markieren Sie das Optionsfeld `Keinen Ansprechpartner verwenden`. Sollte keine A
 
 #### Adressen {#usage_realestate_manage_form_addresses}
 
-Im Karteireiter `Adressen` können zu der Immobilie beliebig viele Adressen als Kontakte verknüpft werden.
+Im Tab `Adressen` können zu der Immobilie beliebig viele Adressen als Kontakte verknüpft werden.
 
 {{< figure src="realestate_form_addresses.jpg" caption="Zugewiesene Adressen einer Immobilie" >}}
 
@@ -434,25 +435,25 @@ Ist die gewünschte Adresse noch nicht vorhanden, so klicken Sie auf den Reiter 
 {{< figure src="realestate_form_addresses_add.jpg" caption="Neue Adresse erfassen und zuweisen" >}}
 
 
-##### Adressverknüpfung bearbeiten {#usage_realestate_manage_form_addresses_edit}
+##### Verknüpfung zur Adresse bearbeiten {#usage_realestate_manage_form_addresses_edit}
 
-Um die Verknüpfung zu bearbeiten markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Sie `Zuordnung bearbeiten`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button `Aktionen` und wählen Sie `Zuordnung bearbeiten`aus.
+Um die Verknüpfung zu bearbeiten markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Sie `Zuordnung bearbeiten`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button `Aktionen` und wählen Sie `Zuordnung bearbeiten` aus.
 
 Es öffnet sich daraufhin ein Fenster, über welches die Verknüpfung bearbeitet werden kann. Bestätigen Sie Ihre Änderungen abschließend durch Klick auf den Button `Übernehmen`.
 
 
-##### Adressverknüpfung löschen {#usage_realestate_manage_form_addresses_remove}
+##### Verknüpfung zur Adresse löschen {#usage_realestate_manage_form_addresses_remove}
 
-Um eine Adress-Verknüpfung zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Sie `Zuordnung entfernen`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken Sie auf den Button `Aktionen` und wählen Sie `Zuordnung entfernen` aus.
+Um eine Verknüpfung mit einer Adresse zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Sie `Zuordnung entfernen`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken Sie auf den Button `Aktionen` und wählen Sie `Zuordnung entfernen` aus.
 
 > **TODO**
 >
-> Karteireiter Vermittlungsauftrag, Suchaufträge, Adresse und neu Adressen beschreiben. Ehemals Adressen.
+> Tab Vermittlungsauftrag, Suchaufträge, Adresse und neu Adressen beschreiben. Ehemals Adressen.
 
 
 #### Exporte {#usage_realestate_manage_form_export}
 
-Im Karteireiter `Exporte` → `Schnittstellen` können Einstellungen zum Export für eine Immobilie hinterlegt werden.
+Im Tab `Exporte` → `Schnittstellen` können Einstellungen zum Export für eine Immobilie hinterlegt werden.
 
 {{< figure src="realestate_form_exports.jpg" caption="Schnittstellen zum Export zuweisen" >}}
 
@@ -478,7 +479,7 @@ Hier können Sie diese Immobilie den vorhandenen Schnittstelle zuordnen. Wählen
     Diese Immobilie wird bei keinem Export berücksichtigt.
 
 
-##### Exporthistorie {#usage_realestate_manage_form_export_history}
+##### Historie der Exporte {#usage_realestate_manage_form_export_history}
 
 An dieser Stelle wird die Historie der bereits durchgeführten Exporte für die Immobilie dargestellt.
 
@@ -487,14 +488,14 @@ An dieser Stelle wird die Historie der bereits durchgeführten Exporte für die 
 
 #### Kalender {#usage_realestate_manage_form_calendars}
 
-Im Karteireiter `Kalender` können zu der Immobilie beliebig viele Kalendereinträge verknüpft werden.
+Im Tab `Kalender` können zu der Immobilie beliebig viele Kalendereinträge verknüpft werden.
 
 {{< figure src="realestate_form_calendar.jpg" caption="Zugewiesene Termine der Immobilie" >}}
 
 
 ##### Bestehenden Kalendereintrag zuordnen / verknüpfen {#usage_realestate_manage_form_calendars_assign}
 
-Sollte der gewünschte Kalendereintrag bereits im Kalender verfügbar sein klicken Sie auf `Neue Zuordnung` und wählen im sich öffnenden Fenster die Kalendergruppe, in welcher sich der Kalendereintrag befindet, und anschließend den Eintrag selbst. Nach Betätigung des Buttons `Übernehmen` wird dieser Kalendereintrag der Immobilie zugeordnet, und erscheint nun im Fenster zugeordnete Kalendereinträge.
+Sollte der gewünschte Kalendereintrag bereits im Kalender verfügbar sein klicken Sie auf `Neue Zuordnung` und wählen im sich öffnenden Fenster den Kalender, in welchem sich der Kalendereintrag befindet, und anschließend den Eintrag selbst. Nach Betätigung des Buttons `Übernehmen` wird dieser Kalendereintrag der Immobilie zugeordnet, und erscheint nun im Fenster zugeordnete Kalendereinträge.
 
 {{< figure src="realestate_form_calendar_assign.jpg" caption="Vorhandenen Kalendereintrag der Immobilie zuweisen" >}}
 
@@ -521,16 +522,16 @@ Um die Verknüpfung zu löschen, markieren Sie den Eintrag in der Liste mit der 
 
 > **TODO**
 >
-> Karteireiter Kalender beschreiben.
+> Tab Kalender beschreiben.
 
 > **TODO**
 >
-> Karteireiter Aktionen beschreiben.
+> Tab Aktionen beschreiben.
 
 
 #### Notizen {#usage_realestate_manage_form_notes}
 
-Im Karteireiter `Notizen` können zu der Immobilie beliebige    Notizen hinterlegt werden.
+Im Tab `Notizen` können zu der Immobilie beliebige    Notizen hinterlegt werden.
 
 {{< figure src="realestate_form_notes.jpg" caption="Notizen zur Immobilie hinterlegen" >}}
 

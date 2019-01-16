@@ -1,8 +1,8 @@
 ---
 
-title: Allgemeines zum CRM-Addon
+title: Allgemeines zum CRM Add-On
 linktitle: Allgemeines
-description: Allgemeine Hinweise zum CRM-Addon von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zum CRM Add-On von OpenEstate-ImmoTool…
 weight: 10
 
 menu:

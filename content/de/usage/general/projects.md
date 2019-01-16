@@ -28,46 +28,46 @@ Mindestens ein Projekt muss angelegt werden, um mit dem Programm arbeiten zu kö
 
 Der Projektassistent hilft Ihnen bei der Erstellung eines neuen Projektes.
 
-**Erster Start**
+#### Erster Start
 
 Beim ersten Start des Programmes öffnet sich der Projektassistent, und Sie werden aufgefordert ein Projekt anzulegen.
 
-**Ein neues Projekt erzeugen**
+#### Ein neues Projekt erzeugen
 
-Wenn Sie die Angaben in allen Karteireitern vorgenommen haben, speichern Sie Ihr Projekt mit dem Button Projekt erzeugen. Das erzeugte Projekt wird daraufhin automatisch geöffnet.
+Wenn Sie die Angaben in allen Tabs vorgenommen haben, speichern Sie Ihr Projekt mit dem Button Projekt erzeugen. Das erzeugte Projekt wird daraufhin automatisch geöffnet.
 
-**Folgende Starts**
+#### Folgende Starts
 
 Bei folgenden Starts wird das zuletzt verwendete Projekt automatisch geladen.
 
 
 ### Ein neues Projekt erzeugen {#usage_general_projects_create}
 
-**Projektdaten bearbeiten**
 
-**Projekt-Name**
+#### Projektdaten bearbeiten
 
-Tragen Sie hier den Namen Ihres Projektes ein. Verwenden Sie möglichst keine Umlaute oder Sonderzeichen.
+-   **Projekt-Name**
+    Tragen Sie hier den Namen Ihres Projektes ein. Verwenden Sie möglichst keine Umlaute oder Sonderzeichen.
 
-**Verzeichnis**
+-   **Verzeichnis**
+    Es ist standardmäßig ein Pfad voreingestellt. Diesen können Sie im Regelfall einfach beibehalten. Bei Bedarf kann ein anderer Pfad gewählt werden, z.B. eine externe Datenquelle in Ihrem System.
 
-Es ist standardmäßig ein Pfad voreingestellt. Diesen können Sie im Regelfall einfach beibehalten. Bei Bedarf kann ein anderer Pfad gewählt werden, z.B. eine externe Datenquelle in Ihrem System.
+-   **Lizenz bestätigen**
+    Bitte bestätigen Sie die Nutzungslizenz des ImmoTools, bevor Sie Ihr Projekt erzeugen.
 
-**Lizenz bestätigen**
+{{< figure src="projects_wizard_general.jpg" caption="Projekt-Assistent / Eigenschaften des Projekts" >}}
 
-Bitte bestätigen Sie die Nutzungslizenz des ImmoTools, bevor Sie Ihr Projekt erzeugen.
 
-{{< figure src="projects_wizard_general.jpg" caption="Projekt-Asssistent / Eigenschaften des Projekts" >}}
+#### Firmendaten bearbeiten
 
-**Firmendaten bearbeiten**
+Tragen Sie hier Ihre Firmendaten ein. Die installierten Add-Ons greifen an verschiedenen Stellen auf diese Eingaben zurück. Farblich hinterlegte Felder sind Pflichtangaben.
 
-Tragen Sie hier Ihre Unternehmensdaten ein. Die installierten Add-Ons greifen an verschiedenen Stellen auf diese Eingaben zurück. Farblich hinterlegte Felder sind Pflichtangaben.
+{{< figure src="projects_wizard_company.jpg" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
 
-{{< figure src="projects_wizard_company.jpg" caption="Projekt-Asssistent / Firmendaten des Projekts" >}}
 
-**Add-Ons auswählen**
+#### Add-Ons auswählen
 
-{{< figure src="projects_wizard_addons.jpg" caption="Projekt-Asssistent / Aktivierte Addons" >}}
+{{< figure src="projects_wizard_addons.jpg" caption="Projekt-Assistent / Aktivierte Add-Ons" >}}
 
 Hier befindet sich die Übersicht der aktuell verfügbaren Add-Ons. Standardmäßig sind alle bei der Installation verfügbare Add-Ons aktiviert. Deaktivieren Sie die Add-Ons, welche Sie nicht in Ihrem Projekt verwenden möchten.
 
@@ -75,7 +75,8 @@ Hier befindet sich die Übersicht der aktuell verfügbaren Add-Ons. Standardmä�
 >
 > Eine nachträgliche Änderung dieser Einstellungen ist jederzeit möglich, siehe Add-Ons / Module.
 
-**Das neue Projekt speichern & öffnen**
+
+#### Das neue Projekt speichern & öffnen
 
 Speichern Sie das neu angelegte Projekt mit dem Button Projekt erzeugen.
 
@@ -99,7 +100,7 @@ Speichern Sie das neu angelegte Projekt mit dem Button Projekt erzeugen.
 
 #### Wo wird mein Projekt gespeichert? {#usage_general_projects_faq_location}
 
-Der Speicherort des Projektes kann im Projektassistenten gewählt werden (siehe Projektdaten bearbeiten). Wenn nichts Anderes eingestellt wurde, wird das Projekt im Unterordner `projects` des Programmverzeichnisses abgelegt.
+Der Speicherort des Projektes kann im Projektassistenten gewählt werden (siehe Projektdaten bearbeiten). Wenn nichts anderes eingestellt wurde, wird das Projekt im Unterordner `projects` des Programm-Verzeichnisses abgelegt.
 
 Wenn das Programm z.B. in Windows unter `C:\Programme\OpenEstate-ImmoTool` installiert ist, wird ein Projekt mit dem Namen test standardmäßig im Ordner `C:\Programme\OpenEstate-ImmoTool\projects\test` abgelegt.
 

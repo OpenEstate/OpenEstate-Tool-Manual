@@ -14,7 +14,7 @@ menu:
 
 ## Immobilien importieren {#usage_realestate_import}
 
-Das ImmoTool kann externe Immobiliendaten in verschiedenen Formaten einlesen und in die Datenbenk speichern. Derzeit unterstützt das Programm die folgenden Formate zum Import von Immobiliendaten:
+Das ImmoTool kann externe Immobiliendaten in verschiedenen Formaten einlesen und in die Datenbank speichern. Derzeit unterstützt das Programm die folgenden Formate zum Import von Immobiliendaten:
 
 -   OpenEstate-XML
 -   Openimmo-XML 1.1 & 1.2
@@ -29,26 +29,26 @@ Klicken Sie im Hauptmenü auf `Immobilien` → `Immobilien importieren` und wäh
 
 {{< figure src="menu_import.jpg" caption="Import über das Hauptmenü starten" >}}
 
-Wählen Sie im folgenden Dialogfenster die zu importierende Datei aus. Die Datei kann eine XML- oder CSV-Datei sein. Oder es kann ein ein ZIP-Archiv gewählt werden, welches eine XML- oder CSV-Datei enthält. Mit einem Klick auf `Datei importieren` wird der Importvorgang gestartet.
+Wählen Sie im folgenden Dialogfenster die zu importierende Datei aus. Die Datei kann eine XML- oder CSV-Datei sein. Oder es kann ein ein ZIP-Archiv gewählt werden, welches eine XML- oder CSV-Datei enthält. Mit einem Klick auf `Datei importieren` wird der Import-Vorgang gestartet.
 
-Es öffnet sich ein Infofenster, in welchem Ausgaben zum Importvorgang zu sehen sind. Sollte die zu importierende Datei einen Fehler auslösen, so wird dies hier protokolliert.
+Es öffnet sich ein Dialogfenster, in welchem Ausgaben zum Import-Vorgang zu sehen sind. Sollte die zu importierende Datei einen Fehler auslösen, so wird dies hier protokolliert.
 
-Wenn bei der Innitialisierung des Imports kein Fehler auftritt öffnet sich ein weiteres Dialogfenster, in welchem Sie aufgefordert werden den Status der zu importierenden Immobilien zu wählen. Treffen Sie eine Auswahl und klicken Sie auf den Button `Übernehmen`.
+Wenn bei der Initialisierung des Imports kein Fehler auftritt öffnet sich ein weiteres Dialogfenster, in welchem Sie aufgefordert werden den Status der zu importierenden Immobilien zu wählen. Treffen Sie eine Auswahl und klicken Sie auf den Button `Übernehmen`.
 
 > **Hinweis**
 >
-> Prüfen Sie nach erfolgtem Datenimport Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
+> Prüfen Sie nach erfolgtem Import Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
 
 
 ### Immobilien aus vorhandener Maklersoftware importieren {#usage_realestate_import_ftp}
 
-Moderne Softwarelösungen für Immobilienmakler bieten in der Regel eine Funktion zum Datenexport via `FTP` und im Format `OpenImmo-XML`. In der Regel wird diese Funktion in der Maklersoftware genutzt, um Immobilien an verschiedene Immobilienportale zu versenden.
+Moderne Softwarelösungen für Immobilienmakler bieten in der Regel eine Funktion zum Export via `FTP` und im Format `OpenImmo-XML`. In der Regel wird diese Funktion in der Maklersoftware genutzt, um Immobilien an verschiedene Immobilienportale zu versenden.
 
 Statt aus einer anderen Maklersoftware heraus ein Immobilienportal zu beliefern, kann ein Export direkt zum ImmoTool durchgeführt werden. Für diesen Zweck liefert das ImmoTool einen eigenen minimalen FTP-Server mit, zu dem die Immobiliendaten aus einer anderen Maklersoftware gesendet werden können - als wäre das ImmoTool ein Immobilienportal.
 
 > **Achtung**
 >
-> Diese Programmfunktion befindet sich noch in einem experimentellen Status! Bitte teilen Sie uns Ihre Erfahrungen mit.
+> Diese Funktion befindet sich noch in einem experimentellen Status! Bitte teilen Sie uns Ihre Erfahrungen mit.
 
 > **Hinweis**
 >
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um die Immobilien aus einer externen Maklersoftware zum
 
 3.  Exportieren Sie nun mit Ihrer externen Maklersoftware Ihre Inserate. Sobald Aktivitäten stattfinden werden diese im Import-Fenster des ImmoTools protokolliert.
 
-4.  Nachdem Sie Ihre Daten aus der externen Maklersoftware übertragen haben, klicken Sie im Import-Fenster des ImmoTools auf `FTP-Server stoppen`. Das Programm ermittelt daraufhin, ob es während der FTP-Sitzung zu Dateiübertragungen kam.
+4.  Nachdem Sie Ihre Daten aus der externen Maklersoftware übertragen haben, klicken Sie im Import-Fenster des ImmoTools auf `FTP-Server stoppen`. Das Programm ermittelt daraufhin, ob es während der FTP-Sitzung zu Datei-Übertragungen kam.
 
 5.  Sollten importierbare Dateien empfangen worden sein, werden Sie gefragt, ob diese importiert werden sollen. Beantworten Sie diese Frage mit `Ja`  und das Programm wird versuchen die übertragenen Dateien zu importieren.
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um die Immobilien aus einer externen Maklersoftware zum
 
 > **Hinweis**
 >
-> Um eine Port-Nr kleiner als `1000` verwenden zu können, muss das Programm mit Administratorrechten gestartet werden. Dabei handelt es sich um eine Sicherheitsbeschränkung von Java.
+> Um eine Port-Nr kleiner als `1000` verwenden zu können, muss das Programm mit Administrator-Rechten gestartet werden. Dabei handelt es sich um eine Sicherheitsbeschränkung von Java.
 
 > **Hinweis**
-> Prüfen Sie nach erfolgtem Datenimport Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
+> Prüfen Sie nach erfolgtem Import Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.

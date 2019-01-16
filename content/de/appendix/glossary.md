@@ -121,17 +121,17 @@ ist das vom ImmoTool verwendete Format um Immobiliendaten zu erfassen. Weitere I
 
 ### OpenImmo-XML {#appendix_glossary_openimmo_xml}
 
-ist ein vebreitetes Format für den Austausch von Immobiliendaten. Weitere Informationen finden Sie bei [openimmo.de](http://openimmo.de/).
+ist ein verbreitetes Format für den Austausch von Immobiliendaten. Weitere Informationen finden Sie bei [openimmo.de](http://openimmo.de/).
 
 
 ### OpenJDK {#appendix_glossary_java_openjdk}
 
-ist eine Java-Laufzeitumgebung unter einer "Open Source Lizenz" auf deren Grundlage Oracle Java erstellt wird. Diese Variante von Java ist besonders verbreitet unter Linux und wird von den meisten Distributionen als Installationspaket bereitgestellt. Weitere Informationen finden Sie bei [openjdk.java.net](http://openjdk.java.net).
+ist eine Java-Laufzeitumgebung unter einer "Open Source Lizenz" auf deren Grundlage Oracle Java erstellt wird. Diese Variante von Java ist besonders verbreitet unter Linux und wird von den meisten Distributionen als Installations-Paket bereitgestellt. Weitere Informationen finden Sie bei [openjdk.java.net](http://openjdk.java.net).
 
 
 ### Oracle Java {#appendix_glossary_java_oracle}
 
-ist eine Java-Laufzeitumgebung, die ursprünglich von [Sun Microsystems](http://de.wikipedia.org/wiki/Sun_Microsystems) entwickelt wurde und mittlerweile von [Oracle](http://www.oracle.com/de/) betreut wird. Die Installationspakete von Oracle Java können bei [java.com](http://www.java.com/de/download/manual.jsp) heruntergeladen werden.
+ist eine Java-Laufzeitumgebung, die ursprünglich von [Sun Microsystems](http://de.wikipedia.org/wiki/Sun_Microsystems) entwickelt wurde und mittlerweile von [Oracle](http://www.oracle.com/de/) betreut wird. Die Installations-Pakete von Oracle Java können bei [java.com](http://www.java.com/de/download/manual.jsp) heruntergeladen werden.
 
 
 ### PDF-Dokument {#appendix_glossary_pdf}
@@ -141,7 +141,7 @@ ist ein verbreitetes Format zur Speicherung und Weitergabe von Dokumenten. Das I
 
 ### PDF-Reader {#appendix_glossary_pdf_reader}
 
-ist ein Programm um PDF-Dokumente auf einem Computer betrachten oder ausdrucken zu können. Eine Übersicht von verschiedenen frei verfügbaren PDF-Readern finden Sie bei [pdfreaders.org](http://pdfreaders.org/).
+ist ein Programm um PDF-Dokumente auf einem Computer betrachten oder ausdrucken zu können. Eine Übersicht verschiedener frei verfügbarer PDF-Reader finden Sie bei [pdfreaders.org](http://pdfreaders.org/).
 
 
 ### Projekt {#appendix_glossary_project}
@@ -156,7 +156,7 @@ ist ein verbreitetes Format für den Austausch von Nachrichten. Viele Webseiten 
 
 ### SSL {#appendix_glossary_ssl}
 
-ist eine weit vebreitete Form der Verschlüsselung und wird vom ImmoTool an verschiedenen Stellen unterstützt:
+ist eine weit verbreitete Form der Verschlüsselung und wird vom ImmoTool an verschiedenen Stellen unterstützt:
 
 -   Die Kommunikation zwischen ImmoTool & ImmoTool-Server kann bei Bedarf mit Hilfe von SSL verschlüsselt werden.
 
@@ -212,7 +212,7 @@ ist ein Format zur Komprimierung von Dateien. Mehrere Dateien werden dabei zu ei
 
 ### Teilabgleich {#appendix_glossary_transfer_incremental}
 
-ist ein Exportmodus für Immobiliendaten bei dem nur die zwischenzeitig geänderten Immobilien exportiert werden. Für zwischenzeitig gelöschte Immobilien wird ein expliziter Löschauftrag exportiert.
+ist ein Export-Modus für Immobiliendaten bei dem nur die zwischenzeitlich geänderten Immobilien exportiert werden. Für zwischenzeitlich gelöschte Immobilien wird ein expliziter Auftrag zur Löschung exportiert.
 
 Bei Exporten im Teilabgleich besteht der Vorteil, dass weniger Daten zum Empfänger gesendet werden müssen. In der Regel sind Exporte im Teilabgleich deshalb schneller als beim Vollabgleich.
 
@@ -230,9 +230,9 @@ Das ImmoTool unterstützt die weit verbreitete [SSL-Verschlüsselung](#glossary.
 
 ### Vollabgleich {#appendix_glossary_transfer_full}
 
-ist ein Exportmodus für Immobiliendaten bei dem alle aktuell veröffentlichten Immobilien exportiert werden. Der Empfänger löscht dabei alle Immobiliendaten, die nicht in der Exportdatei vorhanden sind.
+ist ein Export-Modus für Immobiliendaten bei dem alle aktuell veröffentlichten Immobilien exportiert werden. Der Empfänger löscht dabei alle Immobiliendaten, die nicht in der Export-Datei vorhanden sind.
 
-Bei Exporten im Vollabgleich besteht der Vorteil, dass bei jedem Exportvorgang alle Daten mit dem Empfänger synchronisiert werden. Das Risiko von Synchronisationsproblemen zwischen Absender und Empfänger ist bei Exporten im Vollabgleich geringer, da grundsätzlich alle Daten übermittelt werden.
+Bei Exporten im Vollabgleich besteht der Vorteil, dass bei jedem Exportvorgang alle Daten mit dem Empfänger synchronisiert werden. Das Risiko von Problemen bei der Synchronisation zwischen Absender und Empfänger ist bei Exporten im Vollabgleich geringer, da grundsätzlich alle Daten übermittelt werden.
 
 
 ### Web-Browser

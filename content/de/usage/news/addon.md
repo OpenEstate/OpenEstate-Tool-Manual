@@ -1,8 +1,8 @@
 ---
 
-title: Allgemeines zum Nachrichten-Addon
+title: Allgemeines zum Nachrichten Add-On
 linktitle: Allgemeines
-description: Allgemeine Hinweise zum Nachrichten-Addon von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zum Nachrichten Add-On von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
@@ -19,7 +19,7 @@ Das "Nachrichten Add-On" ermöglicht den Abruf von Nachrichten beliebiger Quelle
 
 Die folgenden Bestandteile werden in das Programm integriert, wenn das "Nachrichten Add-On" installiert und aktiviert wurde:
 
-{{< figure src="sidebar.jpg" caption="Ansichtsbereich der Nachrichtenverwaltung" >}}
+{{< figure src="sidebar.jpg" caption="Ansicht der Nachrichten" >}}
 
 
 ### Einstellungen {#usage_news_addon_settings}

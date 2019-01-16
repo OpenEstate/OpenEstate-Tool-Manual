@@ -28,15 +28,15 @@ Beim Programmstart wird automatisch eine Datenbank auf dem Rechner des Anwenders
 
 #### Vorteile einer Einzelplatz-Installation {#intro_install_local_pro}
 
-* Dies ist die einfachst mögliche Form, das ImmoTool in Betrieb zu nehmen, da nur ein einziges Programm installiert und gestartet werden muss.
-* Beim ersten Programmstart wird automatisch die Datenbank auf der Festplatte erzeugt und man kann sofort und ohne weiteren Aufwand mit der Arbeit beginnen.
-* Wenn Sie sich erst mal mit den Funktionen von ImmoTool vertraut machen möchen, ist eine Einzelplatz-Installation wegen der unkomplizierten Installation die beste Wahl. Im späteren Verlauf kann eine Einzelplatz-Installation jederzeit in eine Netzwerk-Installation umgewandelt werden.
+-   Dies ist die einfachst mögliche Form, das ImmoTool in Betrieb zu nehmen, da nur ein einziges Programm installiert und gestartet werden muss.
+-   Beim ersten Programmstart wird automatisch die Datenbank auf der Festplatte erzeugt und man kann sofort und ohne weiteren Aufwand mit der Arbeit beginnen.
+-   Wenn Sie sich erst mal mit den Funktionen von ImmoTool vertraut machen möchten, ist eine Einzelplatz-Installation wegen der unkomplizierten Installation die beste Wahl. Im späteren Verlauf kann eine Einzelplatz-Installation jederzeit in eine Netzwerk-Installation umgewandelt werden.
 
 
 #### Nachteile einer Einzelplatz-Installation {#intro_install_local_contra}
 
-* Die Datenbank einer Einzelplatz-Installation kann nicht von mehreren Benutzern / Mitarbeitern gleichzeitig geöffnet werden.
-* Es gibt keine Möglichkeiten zur Rechtevergabe für verschiedene Benutzer. Bei einer Einzelplatz-Installation hat man grundsätzlich immer alle Berechtigungen.
+-   Die Datenbank einer Einzelplatz-Installation kann nicht von mehreren Benutzern / Mitarbeitern gleichzeitig geöffnet werden.
+-   Es gibt keine Möglichkeiten zur Vergabe von Berechtigungen für verschiedene Benutzer. Bei einer Einzelplatz-Installation hat man grundsätzlich immer alle Berechtigungen.
 
 
 ### Programmpaket installieren
@@ -93,7 +93,7 @@ Beachten Sie bitte, dass hier nur Sprachen zur Auswahl gestellt werden, für die
 
 ### Lizenzschlüssel eintragen
 
-Beim ersten Programmstart werden Sie darüber hinaus darum gebeten, dass Ihren Lizenzschlüssel einzutragen. Sie erhalten einen persönlichen Lizenzschlüssel durch eine kostenlose Registrierung im [Anwenderbereich von OpenEstate](http://dev.openestate.org/).
+Beim ersten Programmstart werden Sie darüber hinaus darum gebeten, dass Ihren Lizenzschlüssel einzutragen. Sie erhalten einen persönlichen Lizenzschlüssel durch eine kostenlose Registrierung im [Anwender-Bereich von OpenEstate](http://dev.openestate.org/).
 
 > **TODO**
 >

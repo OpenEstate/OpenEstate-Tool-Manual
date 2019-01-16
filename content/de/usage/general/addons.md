@@ -1,8 +1,8 @@
 ---
 
-title: Addons des Programms bearbeiten
-linktitle: Addons
-description: Addons von OpenEstate-ImmoTool bearbeiten…
+title: Add-Ons des Programms bearbeiten
+linktitle: Add-Ons
+description: Add-Ons von OpenEstate-ImmoTool bearbeiten…
 weight: 60
 
 menu:
@@ -26,8 +26,8 @@ menu:
 
 Über die Add-On-Verwaltung können Sie Add-Ons installieren / deinstallieren, aktivieren / deaktivieren und aktualisieren. Zur Add-On-Verwaltung gelangen Sie über den Menüpunkt Extras Add-Ons.
 
-{{< figure src="menu_extras.jpg" caption="Addon-Verwaltung im Extras-Menü aufrufen" >}}
-{{< figure src="addons_dialog.jpg" caption="Dialog zur Addon-Verwaltung" >}}
+{{< figure src="menu_extras.jpg" caption="Add-On Verwaltung im Extras-Menü aufrufen" >}}
+{{< figure src="addons_dialog.jpg" caption="Dialog zur Add-On Verwaltung" >}}
 
 
 ### Add-Ons installieren {#usage_general_addons_install}
@@ -36,7 +36,7 @@ menu:
 
 - Klicken Sie zur Installation auf dem Button `Add-On hinzufügen`.
 
-- Es öffent sich ein Dialogfenster, in welchem Sie die heruntergeladene ZIP-Datei des Add-Ons auswählen können.
+- Es öffnet sich ein Dialogfenster, in welchem Sie die heruntergeladene ZIP-Datei des Add-Ons auswählen können.
 
 - Wenn die Installation des Add-Ons erfolgreich durchgeführt wurde, wird dieses in der Übersicht eingefügt. Im Fehlerfall wird in einem weiteren Fenster das Fehlerprotokoll angezeigt. Dieses können Sie ggf. speichern und uns z.B. via Ticketsystem zur Fehleranalyse zusenden.
 

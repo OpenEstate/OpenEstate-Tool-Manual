@@ -14,14 +14,14 @@ menu:
 
 ## ImmoTool-Server konfigurieren {#admin_server_setup}
 
-Die Dateien zur Konfiguration des ImmoTool-Servers sind im Unterverzeichnis `etc` des Programmverzeichnisses abgelegt, z.B.: `C:\Programme\OpenEstate-ImmoServer\etc`
+Die Dateien zur Konfiguration des ImmoTool-Servers sind im Unterverzeichnis `etc` des Programm-Verzeichnisses abgelegt, z.B.: `C:\Programme\OpenEstate-ImmoServer\etc`
 
 Im Einzelfall kann es hilfreich sein, die Konfiguration des ImmoTool-Servers auf die eigenen Bedürfnisse hin anzupassen. Für die meisten Fälle sollte die ausgelieferte Standard-Konfiguration jedoch ausreichend sein.
 
 
 ### Datenbanken konfigurieren {#admin_server_setup_databases}
 
-In der Datei `etc/server.properties` können die vom ImmoTool-Server bereitgestellten Datenbanken konfiguriert werden. Standardmäßig stellt der ImmoTool-Server exakt eine Datenbank mit dem Namen *immotool* bereit.
+In der Datei `etc/server.properties` können die vom ImmoTool-Server bereitgestellten Datenbanken konfiguriert werden. Standardmäßig stellt der ImmoTool-Server exakt eine Datenbank mit dem Namen `immotool` bereit.
 
 Bei Bedarf können über diese Datei noch weitere Datenbanken eingerichtet werden, die ebenfalls von ImmoTool-Server bereitgestellt werden sollen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/guide/listeners-chapt.html#listeners_server_props-sect).
 
@@ -41,7 +41,7 @@ Im Folgenden wird die Vorgehensweise beschrieben, um eine weitere Datenbank name
 
 3.  Speichern Sie die geänderte Datei `etc/server.properties` ab und starten Sie den ImmoTool-Server neu.
 
-4.  Via AdminTool & ImmoTool kann man nun eine Verbindung zur zweiten Datenbank herstellen. Beim Verbindungsaufbau muss dabei der neue Datenbankname `immotool2` angegeben werden.
+4.  Via AdminTool & ImmoTool kann man nun eine Verbindung zur zweiten Datenbank herstellen. Beim Verbindungsaufbau muss dabei der neue Datenbank-Name `immotool2` angegeben werden.
 
 Allgemein können in der Datei `etc/server.properties` beliebig viele Datenbanken mit frei wählbarem Namen registriert werden. Für jede weitere Datenbank muss der Zähler erhöht werden - z.B.:
 
@@ -62,21 +62,21 @@ server.dbname.2=anotherdb
 
 ### Protokollierungen konfigurieren {#admin_server_setup_logging}
 
-Über die Datei `etc/log4j.properties` kann die Erzeugung der Protokolldateien konfiguriert werden. Standardmäßig werden die Protokolle des ImmoTool-Servers im Verzeichnis `var/log` als `hsqldb.log.*` abgelegt.
+Über die Datei `etc/log4j.properties` kann die Erzeugung der Protokoll-Dateien konfiguriert werden. Standardmäßig werden die Protokolle des ImmoTool-Servers im Verzeichnis `var/log` als `hsqldb.log.*` abgelegt.
 
 Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von log4j](http://logging.apache.org/log4j/1.2/manual.html).
 
 
 ### Manager-Skripte konfigurieren {#admin_server_setup_manager}
 
-In der Datei `etc/manager.conf` können die administrativen Zugangsdaten zur Datenbank hinterlegt werden, die von den Startdateien `bin/manager-*` verwendet werden.
+In der Datei `etc/manager.conf` können die administrativen Zugangsdaten zur Datenbank hinterlegt werden, die von den Start-Dateien `bin/manager-*` verwendet werden.
 
 Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/util-guide/sqltool-chapt.html#sqltool_auth-sect).
 
 
 ### Wrapper konfigurieren {#admin_server_setup_wrapper}
 
-In der Datei `etc/wrapper.conf` wird der YAJSW-Wrapper konfiguriert. Diese Komponente wird nur verwendet, wenn der ImmoTool-Server über Startskripte `bin/server-*` betrieben wird.
+In der Datei `etc/wrapper.conf` wird der YAJSW-Wrapper konfiguriert. Diese Komponente wird nur verwendet, wenn der ImmoTool-Server über Start-Skripte `bin/server-*` betrieben wird.
 
 Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der Dokumentation von [YAJSW](http://yajsw.sourceforge.net/YAJSW%20Configuration%20Parameters.html).
 
@@ -124,7 +124,7 @@ Nachdem das Skript (`init_ssl.bat` / `init_ssl.sh`) gestartet wurde sind folgend
 
     {{< figure src="setup_ssl_cert-03.jpg" caption="Weitere Details zum SSL-Schlüssel angeben" >}}
 
-4.  Es sollte **kein Schlüsselkennwort** eingegeben werden. Bestätigen Sie die Eingabe einfach mit `ENTER`.
+4.  Es sollte **kein Schlüssel-Kennwort** eingegeben werden. Bestätigen Sie die Eingabe einfach mit `ENTER`.
 
     {{< figure src="setup_ssl_cert-04.jpg" caption="Passwort zur Absicherung der SSL-Schlüssels angeben" >}}
 
@@ -175,10 +175,10 @@ system.javax.net.ssl.keyStorePassword=MEIN-SSL-PASSWORT
     Durch den Wert `true` wird die SSL-Verschlüsselung im ImmoTool-Server aktiviert.
 
 -   `system.javax.net.ssl.keyStore`
-    Hier muss der Pfad zur JKS-Datei angegeben werden. Die Datei wurde zuvor mit dem Hilfsskript (`init_ssl.bat` / `init_ssl.sh`) erstellt und enthält die zur SSL-Verschlüsselung nötigen Daten.
+    Hier muss der Pfad zur JKS-Datei angegeben werden. Die Datei wurde zuvor mit dem Skript (`init_ssl.bat` / `init_ssl.sh`) erstellt und enthält die zur SSL-Verschlüsselung nötigen Daten.
 
 -   `system.javax.net.ssl.keyStorePassword`
-    Hier muss das Passwort eingetragen werden, dass Sie während der Erzeugung des SSL-Schlüsselpaares gewählt haben.
+    Hier muss das Passwort eingetragen werden, dass Sie während der Erzeugung des SSL-Schlüsselpaars gewählt haben.
 
 Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss der ImmoTool-Server neu gestartet werden.
 

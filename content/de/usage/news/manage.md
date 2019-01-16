@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des Nachrichten-Addons
+title: Verwendung des Nachrichten Add-Ons
 linktitle: Verwaltung
-description: Allgemeine Hinweise zur Verwendung des Nachrichten-Addons von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zur Verwendung des Nachrichten Add-Ons von OpenEstate-ImmoTool…
 weight: 20
 
 menu:
@@ -64,7 +64,7 @@ Solche Nachrichtenquellen können vom ImmoTool automatisch in regelmäßigen Abs
 > Inhalte einfügen
 
 
-### Nachrichtenquellenformular {#usage_news_manage_form}
+### Formular für Nachrichtenquellen {#usage_news_manage_form}
 
 > **TODO**
 >

@@ -15,21 +15,21 @@ menu:
 ## Marketing organisieren {#usage_crm_marketings}
 
 
-### Was sind Marketing-Maßnahmen? {#usage_crm_marketings_info}
+### Was sind Marketingmaßnahmen? {#usage_crm_marketings_info}
 
 > **TODO**
 >
 > Inhalte einfügen
 
 
-### Marketingübersicht {#usage_crm_marketings_table}
+### Übersicht der Marketingmaßnahmen {#usage_crm_marketings_table}
 
 > **TODO**
 >
 > Inhalte einfügen
 
 
-### Marketingformular {#usage_crm_marketings_form}
+### Formular für Marketingmaßnahmen {#usage_crm_marketings_form}
 
 > **TODO**
 >

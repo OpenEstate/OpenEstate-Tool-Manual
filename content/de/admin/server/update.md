@@ -20,7 +20,7 @@ Gelegentlich werden Aktualisierungen für den ImmoTool-Server veröffentlicht. I
 >
 > Um einen Datenverlust im Falle eines Fehlers zu vermeiden, empfehlen wir das Programmverzeichnis des ImmoTool-Servers vor der Aktualisierung zu sichern.
 
-1.  Laden Sie sich die aktuelle Version des ImmoTool-Servers aus dem [Downloadbereich von OpenEstate.org](http://de.openestate.org/downloads/) herunter.
+1.  Laden Sie sich die aktuelle Version des ImmoTool-Servers aus dem [Download-Bereich von OpenEstate.org](http://de.openestate.org/downloads/) herunter.
 
 2.  Entpacken Sie das heruntergeladene ZIP-Archiv (oder TAR.GZ-Archiv) in ein neues Verzeichnis auf Ihrem Computer.
 

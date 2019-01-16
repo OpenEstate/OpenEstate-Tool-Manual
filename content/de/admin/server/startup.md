@@ -14,7 +14,7 @@ menu:
 
 ## ImmoTool-Server starten {#admin_server_startup}
 
-Die Dateien zum Start des ImmoTool-Servers sind im Unterverzeichnis `bin` des Programmverzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoServer\bin`.
+Die Dateien zum Start des ImmoTool-Servers sind im Unterverzeichnis `bin` des Programm-Verzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoServer\bin`.
 
 
 ### ImmoTool-Server unter Windows starten {#admin_server_startup_windows}
@@ -32,9 +32,9 @@ Starten Sie den ImmoTool-Server unter **Mac OS X** durch Doppelklick auf das *Da
 Starten Sie den ImmoTool-Server unter **Linux**, **Unix** oder **Mac OS X** durch Ausführung der Datei `start.sh` im Unterordner `bin`.
 
 
-### Startdateien des ImmoTool-Servers {#admin_server_startup_files}
+### Start-Dateien des ImmoTool-Servers {#admin_server_startup_files}
 
-Das `bin`-Verzeichnis des ImmoTool-Servers enthält diverse Startdateien für verschiedene Zwecke und Betriebssysteme.
+Das `bin`-Verzeichnis des ImmoTool-Servers enthält diverse Start-Dateien für verschiedene Zwecke und Betriebssysteme.
 
 -   **manager-backup.bat** (Windows)
     **manager-backup.app** (Mac OS X)

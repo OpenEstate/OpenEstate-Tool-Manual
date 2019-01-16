@@ -1,35 +1,225 @@
 <component name="ProjectDictionaryState">
   <dictionary name="global">
     <words>
-      <w>addons</w>
+      <w>addressbook</w>
+      <w>admintool</w>
+      <w>adresseingabe</w>
+      <w>adressformular</w>
+      <w>adressgruppe</w>
+      <w>adressgruppen</w>
+      <w>aktionsmenü</w>
+      <w>anbieterprofil</w>
+      <w>anwendungsfall</w>
+      <w>außenstehenden</w>
       <w>benutzergruppe</w>
       <w>benutzergruppen</w>
       <w>benutzerkonten</w>
       <w>benutzerkonto</w>
+      <w>benutzernamen</w>
+      <w>bilddatei</w>
+      <w>bildformate</w>
+      <w>blindkopie</w>
+      <w>creativecommons</w>
+      <w>daemonverwaltung</w>
+      <w>datenverluste</w>
+      <w>dekompilierung</w>
+      <w>dialogfenster</w>
+      <w>dialogfensters</w>
+      <w>dienstverwaltung</w>
+      <w>disassemblierung</w>
       <w>eckdaten</w>
+      <w>eingabebereich</w>
+      <w>eingabefelds</w>
       <w>einzelplatz</w>
+      <w>energieausweis</w>
       <w>erscheinungsbild</w>
+      <w>exportvorgang</w>
+      <w>exportvorgangs</w>
+      <w>fehleingaben</w>
+      <w>fehlerprotokoll</w>
+      <w>filterkriterien</w>
       <w>firmendaten</w>
       <w>firmenlogo</w>
+      <w>fußbereich</w>
+      <w>fußbereichs</w>
+      <w>garantieausschluss</w>
+      <w>generis</w>
+      <w>geodaten</w>
+      <w>geokoordinaten</w>
+      <w>gruppennummer</w>
+      <w>haftungsausschluss</w>
+      <w>hostnamens</w>
+      <w>hotmail</w>
       <w>höflichkeitsform</w>
+      <w>imaps</w>
+      <w>immmobilienportale</w>
       <w>immo</w>
+      <w>immobiliare</w>
+      <w>immobilienart</w>
+      <w>immobilienbestand</w>
+      <w>immobiliendaten</w>
+      <w>immobilienexport</w>
+      <w>immobilienformular</w>
+      <w>immobilienmakler</w>
+      <w>immobilienportal</w>
+      <w>immobilienportale</w>
+      <w>immobilienportalen</w>
+      <w>immobilienportals</w>
+      <w>immobilienscout</w>
+      <w>immobiliensoftware</w>
+      <w>immobilienverwaltung</w>
+      <w>immobilienwirtschaft</w>
+      <w>immotool</w>
+      <w>immoxml</w>
+      <w>importierbare</w>
+      <w>inhaltsbereich</w>
+      <w>inkl</w>
+      <w>innenansicht</w>
+      <w>installationsdatei</w>
+      <w>installationsdateien</w>
       <w>installationsschritte</w>
+      <w>internetzugang</w>
+      <w>javamail</w>
+      <w>kalendereintrag</w>
+      <w>kalendereintrags</w>
+      <w>kalendereinträge</w>
+      <w>kontaktdaten</w>
+      <w>kopfbereich</w>
+      <w>kopfbereichs</w>
+      <w>krypto</w>
+      <w>kundennummer</w>
+      <w>kurzexposé</w>
+      <w>landesflagge</w>
+      <w>landesflaggen</w>
+      <w>langexposé</w>
+      <w>laufzeitumgebung</w>
+      <w>laufzeitumgebungen</w>
+      <w>launchctl</w>
+      <w>launchd</w>
+      <w>libre</w>
+      <w>licensable</w>
+      <w>licensors</w>
+      <w>linksklick</w>
       <w>linktitle</w>
+      <w>lizenzgebers</w>
+      <w>lizenzkosten</w>
+      <w>lizenzschlüssel</w>
+      <w>lizenzschlüssels</w>
+      <w>lizenztext</w>
+      <w>lizenztexte</w>
+      <w>lizenzvereinbarung</w>
+      <w>mailabruf</w>
+      <w>mailadresse</w>
+      <w>mailanbieter</w>
+      <w>mailanbietern</w>
+      <w>mailempfang</w>
+      <w>mailempfangs</w>
+      <w>mailkonten</w>
+      <w>mailkonto</w>
+      <w>mailkontos</w>
+      <w>mailordner</w>
+      <w>mailordners</w>
+      <w>mailprogramm</w>
+      <w>mailprogramme</w>
+      <w>mailversand</w>
+      <w>mailversands</w>
+      <w>mailverwaltung</w>
+      <w>maklersoftware</w>
+      <w>maklerunternehmens</w>
+      <w>marketingmaßnahmen</w>
+      <w>mausrad</w>
+      <w>menüeintrag</w>
       <w>metadaten</w>
+      <w>microsystems</w>
+      <w>nachrichtenquelle</w>
+      <w>nachrichtenquellen</w>
+      <w>netzwerkkarte</w>
+      <w>notiztext</w>
+      <w>nutzungslizenz</w>
+      <w>nutzungslizenzen</w>
+      <w>nutzungsvereinbarung</w>
+      <w>objektnummer</w>
+      <w>openestate</w>
+      <w>openimmo</w>
+      <w>openindex</w>
+      <w>paketsystem</w>
+      <w>pdfreaders</w>
       <w>personendaten</w>
+      <w>pflichtangaben</w>
+      <w>pflichtfeld</w>
+      <w>pflichtfelder</w>
+      <w>postausgang</w>
+      <w>posteingang</w>
+      <w>posteingangs</w>
+      <w>programmverzeichnis</w>
       <w>projektassistent</w>
       <w>projektassistenten</w>
+      <w>projektdaten</w>
       <w>projektverzeichnis</w>
+      <w>realestate</w>
+      <w>realestates</w>
+      <w>rechtsklick</w>
       <w>relref</w>
+      <w>resetpwd</w>
+      <w>schlüsselpaar</w>
+      <w>schlüsselpaars</w>
+      <w>schriftfarbe</w>
+      <w>serverpfad</w>
+      <w>sicherheitsabfrage</w>
+      <w>sicherheitsbeschränkung</w>
       <w>sicherungsdatei</w>
+      <w>skripte</w>
+      <w>smtps</w>
       <w>speicherort</w>
+      <w>sprachpaket</w>
+      <w>sprachpakete</w>
+      <w>startmenü</w>
+      <w>starttls</w>
+      <w>strg</w>
+      <w>sublicensable</w>
+      <w>suchanfrage</w>
+      <w>suchanfragen</w>
+      <w>suchaufträge</w>
+      <w>suchaufträgen</w>
+      <w>suchergebnis</w>
+      <w>suchformular</w>
+      <w>suchkriterien</w>
+      <w>suchvorlage</w>
+      <w>suchvorlagen</w>
+      <w>synched</w>
+      <w>systemanforderungen</w>
+      <w>systemd</w>
+      <w>systemsteuerung</w>
       <w>tabellenspalte</w>
+      <w>tagesansicht</w>
+      <w>taskplaners</w>
+      <w>teilabgleich</w>
+      <w>textfeld</w>
+      <w>textfelds</w>
+      <w>ticketsystem</w>
+      <w>unarchiver</w>
+      <w>unbenutzbarkeit</w>
+      <w>unternehmensprofil</w>
       <w>unterordner</w>
+      <w>unterordners</w>
+      <w>urheberrechtshinweise</w>
       <w>verbindungsaufbau</w>
       <w>verbindungsdaten</w>
+      <w>vermarktungsart</w>
+      <w>vermittlungsauftrag</w>
+      <w>vermittlungsaufträge</w>
+      <w>vermittlungsaufträgen</w>
+      <w>verwaltungs</w>
+      <w>vollabgleich</w>
+      <w>waivable</w>
       <w>werkzeugleiste</w>
+      <w>wipo</w>
+      <w>zeilenumbruchs</w>
       <w>zeilenumbrüche</w>
+      <w>zielordner</w>
+      <w>zielverzeichnis</w>
       <w>zugangsdaten</w>
+      <w>übertragungs</w>
     </words>
   </dictionary>
 </component>

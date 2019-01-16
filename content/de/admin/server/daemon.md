@@ -66,7 +66,7 @@ Nachdem der Dienst installiert wurde finden Sie einen Eintrag zum ImmoTool-Serve
 
     {{< figure src="daemon_windows-01.jpg" caption="Verwaltung in der Systemsteuerung" >}}
 
-2.  Klicken Sie im Verwaltungsfenster auf `Dienste`.
+2.  Klicken Sie im Verwaltungs-Fenster auf `Dienste`.
 
     {{< figure src="daemon_windows-02.jpg" caption="Dienste in der Systemsteuerung" >}}
 
@@ -80,16 +80,16 @@ Aus der Dienstverwaltung des Betriebssystems kann der ImmoTool-Server manuell be
 
 > **Hinweis**
 >
-> In der Standardinstallation wird der Dienst beim Hochfahren des Betriebssystems automatisch gestartet. Wenn kein automatischer Start gewünscht ist, klicken Sie mit rechter Maustaste auf den Dienst und wählen Sie `Eigenschaften`. Im darauf geöffneten Fenster kann der gewünschte `Starttyp` festgelegt werden.
+> In der Standard-Installation wird der Dienst beim Hochfahren des Betriebssystems automatisch gestartet. Wenn kein automatischer Start gewünscht ist, klicken Sie mit rechter Maustaste auf den Dienst und wählen Sie `Eigenschaften`. Im darauf geöffneten Fenster kann der gewünschte `Starttyp` festgelegt werden.
 
 > **Hinweis**
 >
-> Auf neueren Windows-Systemen muss eventuell muss ein Systembenutzer gewählt werden, der zum Start des ImmoTool-Servers verwendet werden soll. Klicken Sie dafür mit rechter Maustaste auf den Dienst, wählen Sie `Eigenschaften` und wählen Sie im folgenden Fenster den Reiter `Anmelden` aus. Aktivieren Sie die Option `Dieses Konto` und tragen Sie Namen und das Passwort des zu verwendenden Systembenutzers ein.
+> Auf neueren Windows-Systemen muss eventuell muss ein System-Benutzer gewählt werden, der zum Start des ImmoTool-Servers verwendet werden soll. Klicken Sie dafür mit rechter Maustaste auf den Dienst, wählen Sie `Eigenschaften` und wählen Sie im folgenden Fenster den Reiter `Anmelden` aus. Aktivieren Sie die Option `Dieses Konto` und tragen Sie Namen und das Passwort des zu verwendenden System-Benutzers ein.
 >
-> {{< figure src="daemon_windows-05.jpg" caption="Systembenutzer für den Dienst auswählen" >}}
+> {{< figure src="daemon_windows-05.jpg" caption="System-Benutzer für den Dienst auswählen" >}}
 
 
-#### Dienst unter Windows mit Hilfsskript starten {#admin_server_daemon_windows_start}
+#### Dienst unter Windows mit Skript starten {#admin_server_daemon_windows_start}
 
 Um den ImmoTool-Server im Betriebssystem als Dienst zu starten, kann die Datei `server-daemon-start.bat` im Explorer mit einem Doppelklick gestartet werden.
 
@@ -108,7 +108,7 @@ server-daemon-start.bat
 wird der Dienst im Betriebssystem gestartet.
 
 
-#### Dienst unter Windows mit Hilfsskript beenden {#admin_server_daemon_windows_stop}
+#### Dienst unter Windows mit Skript beenden {#admin_server_daemon_windows_stop}
 
 Um den ImmoTool-Server im Betriebssystem als Dienst zu stoppen, kann die Datei `server-daemon-stop.bat` im Explorer mit einem Doppelklick gestartet werden.
 
@@ -135,7 +135,7 @@ wird der Dienst im Betriebssystem beendet.
 
 > **Hinweis**
 >
-> In den folgenden Beispielen wird davon ausgegangen, dass der ImmoTool-Server im Verzeichnis `/Applications/OpenEstate-Server` installiert wurde. Sollte Sie ein anderes Installationsverzeichnis verwenden, müssen die folgenden Befehle entsprechend angepasst werden.
+> In den folgenden Beispielen wird davon ausgegangen, dass der ImmoTool-Server im Verzeichnis `/Applications/OpenEstate-Server` installiert wurde. Sollte Sie ein anderes Installations-Verzeichnis verwenden, müssen die folgenden Befehle entsprechend angepasst werden.
 
 > **Hinweis**
 >
@@ -166,7 +166,7 @@ Oder alternativ:
 sudo sh server-daemon-install.sh
 ```
 
-Mit folgendem Befehel können Sie prüfen, ob der Dienst im Betriebssystem installiert wurde:
+Mit folgendem Befehl können Sie prüfen, ob der Dienst im Betriebssystem installiert wurde:
 
 ```
 sudo launchctl list
@@ -201,7 +201,7 @@ Oder alternativ:
 sudo sh server-daemon-uninstall.sh
 ```
 
-#### Dienst unter Mac OS X mit Hilfsskript starten {#admin_server_daemon_mac_start}
+#### Dienst unter Mac OS X mit Skript starten {#admin_server_daemon_mac_start}
 
 Nachdem der Dienst installiert wurde, kann dieser mit dem Hilfsprogramm `launchctl` aus dem Terminal heraus gestartet werden:
 
@@ -228,7 +228,7 @@ sudo sh server-daemon-start.sh
 ```
 
 
-#### Dienst unter Mac OS X mit Hilfsskript beenden {#admin_server_daemon_mac_stop}
+#### Dienst unter Mac OS X mit Skript beenden {#admin_server_daemon_mac_stop}
 
 Nachdem der Dienst installiert wurde, kann dieser mit dem Hilfsprogramm `launchctl` aus dem Terminal heraus gestoppt werden:
 
@@ -259,16 +259,16 @@ sudo sh server-daemon-stop.sh
 
 > **TODO**
 >
-> Anleitung für Linux muss überarbeitet und überprüft werden. Darüber hinaus ist zu berücksichtigen, dass unter Linux verschiedene Init-Systeme berücksichtigt werden müssen (inbesondere SysVInit, Upstart, Systemd).
+> Anleitung für Linux muss überarbeitet und überprüft werden. Darüber hinaus ist zu berücksichtigen, dass unter Linux verschiedene Init-Systeme berücksichtigt werden müssen (insbesondere SysVInit, Upstart, Systemd).
 
 > **Hinweis**
 >
-> In den folgenden Beispielen wird davon ausgegangen, dass der ImmoTool-Server im Verzeichnis `/opt/OpenEstate-Server` installiert wurde. Sollte Sie ein anderes Installationsverzeichnis verwenden, müssen die folgenden Befehle entsprechend angepasst werden.
+> In den folgenden Beispielen wird davon ausgegangen, dass der ImmoTool-Server im Verzeichnis `/opt/OpenEstate-Server` installiert wurde. Sollte Sie ein anderes Installations-Verzeichnis verwenden, müssen die folgenden Befehle entsprechend angepasst werden.
 
 
 #### Vorbereitungen zur Einrichtung des Dienstes unter Linux {#admin_server_daemon_linux_preparation}
 
-Auf unixoiden Betriebssystemen werden die Dienste in einem zentralen Verzeichnis hinterlegt. Normalerweise sind diese Skripte unter einem der folgenden Verzeichnissen zu finden:
+Auf Unix-basierten Betriebssystemen werden die Dienste in einem zentralen Verzeichnis hinterlegt. Normalerweise sind diese Skripte unter einem der folgenden Verzeichnissen zu finden:
 
 -   `/etc/init.d`
 -   `/etc/rc.d`

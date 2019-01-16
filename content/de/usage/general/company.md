@@ -17,7 +17,7 @@ menu:
 
 ### Unternehmensprofil verwalten {#usage_general_company_profile}
 
-In der Datenbank werden grundlegende Unternehmensdaten sowie ein Firmenlogo gespeichert. Zur Verwaltung des hinterlegten Unternehmensprofil gelangen Sie auf zweierlei Wegen:
+In der Datenbank werden grundlegende Firmendaten sowie ein Firmenlogo gespeichert. Zur Verwaltung des hinterlegten Unternehmensprofil gelangen Sie auf zweierlei Wegen:
 
 - Klicken Sie im Hauptmenü auf `Extras` → `Anbieterprofil`.
 - Klicken Sie in der Sidebar auf den Eintrag `Anbieterprofil`.
@@ -26,10 +26,10 @@ Daraufhin öffnet sich ein Fenster, das ungefähr wie folgt aussieht:
 
 {{< figure src="company_form.jpg" caption="Formular zur Bearbeitung der Firmendaten" >}}
 
-Im sich öffnenden Fenster finden Sie alle Unternehmensdaten übersichtlich zusammengefasst.
+Im sich öffnenden Fenster finden Sie alle Firmendaten übersichtlich zusammengefasst.
 
-- Im Karteireiter `Firma` können die allgemeinen Firemendaten eingetragen werden.
-- Im Karteireiter `Logo` kann eine Grafikdatei als Firmenlogo im Programm hinterlegt werden.
+- Im Tab `Firma` können die allgemeinen Firmendaten eingetragen werden.
+- Im Tab `Logo` kann eine Bilddatei als Firmenlogo im Programm hinterlegt werden.
 
 > **Hinweis**
 >
@@ -40,7 +40,7 @@ Im sich öffnenden Fenster finden Sie alle Unternehmensdaten übersichtlich zusa
 
 Das hinterlegte Firmenlogo wird an verschiedenen Stellen in der Software dargestellt und kann ggf. bei der Generierung von Exposés berücksichtigt werden.
 
-Öffnen Sie das Anbieterprofil und wählen Sie den Karteireiter `Logo` um das hinterlegte Unternehmenslogo einzusehen bzw. zu ändern.
+Öffnen Sie das Anbieterprofil und wählen Sie den Tab `Logo` um das hinterlegte Firmenlogo einzusehen bzw. zu ändern.
 
 > **Hinweis**
 >

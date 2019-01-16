@@ -57,14 +57,14 @@ Folgende Aktionen stehen zur Verfügung:
 
 Klicken Sie im Hauptmenü auf `Immobilien` → `Neu` → `Ansprechpartner`. Alternativ können Sie die [Übersicht der Ansprechpartner](#usage_realestate_contact_table) öffnen und oben rechts auf den Button `Neu` klicken.
 
-Nehmen Sie die gewünschten Einträge im [Ansprechpartnerformular](#usage_realestate_contact_form) vor und klicken Sie abschließend auf den Button `Speichern`.
+Nehmen Sie die gewünschten Einträge im [Formular für Ansprechpartner](#usage_realestate_contact_form) vor und klicken Sie abschließend auf den Button `Speichern`.
 
 
 ### Ansprechpartner bearbeiten {#usage_realestate_contact_edit}
 
-Öffnen Sie die [Übersicht der Ansprechpartner](#usage_realestate_contact_table) und suchen Sie den zu bearbeitenden Ansprechpartner in der Tabelle. Durch einen Doppelklick auf den betreffenden Ansprechpartner wird das [Ansprechpartnerformular](#usage_realestate_contact_form) zur Bearbeitung des Ansprechpartners geöffnet.
+Öffnen Sie die [Übersicht der Ansprechpartner](#usage_realestate_contact_table) und suchen Sie den zu bearbeitenden Ansprechpartner in der Tabelle. Durch einen Doppelklick auf den betreffenden Ansprechpartner wird das [Formular für Ansprechpartner](#usage_realestate_contact_form) zur Bearbeitung des Ansprechpartners geöffnet.
 
-Nehmen Sie die gewünschten Änderungen im [Ansprechpartnerformular](#usage_realestate_contact_form) vor und klicken Sie abschließend auf den Button `Speichern`.
+Nehmen Sie die gewünschten Änderungen im [Formular für Ansprechpartner](#usage_realestate_contact_form) vor und klicken Sie abschließend auf den Button `Speichern`.
 
 
 ### Ansprechpartner löschen {#usage_realestate_contact_remove}
@@ -76,19 +76,19 @@ Nehmen Sie die gewünschten Änderungen im [Ansprechpartnerformular](#usage_real
 > Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
 
 
-### Ansprechpartnerformular {#usage_realestate_contact_form}
+### Formular für Ansprechpartner {#usage_realestate_contact_form}
 
 
 #### Personendaten {#usage_realestate_contact_form_person}
 
-Im Karteireiter `Person` können die allgemeinen Kontaktdaten des Ansprechpartners hinterlegt werden.
+Im Tab `Person` können die allgemeinen Kontaktdaten des Ansprechpartners hinterlegt werden.
 
 {{< figure src="contact_form.jpg" caption="Personendaten des Ansprechpartners" >}}
 
 
 #### Betreute Immobilien {#usage_realestate_contact_form_realestate}
 
-Im Karteireiter `Inserate` finden Sie eine tabellarische Übersicht aller Immobilien, die aktuell vom gewählten Ansprechpartner betreut werden.
+Im Tab `Inserate` finden Sie eine tabellarische Übersicht aller Immobilien, die aktuell vom gewählten Ansprechpartner betreut werden.
 
 Dieser Bereich ist erst verfügbar, wenn der Ansprechpartner bereits in die Datenbank gespeichert wurde.
 
@@ -97,7 +97,7 @@ Dieser Bereich ist erst verfügbar, wenn der Ansprechpartner bereits in die Date
 
 #### Notizen {#usage_realestate_contact_form_notes}
 
-Im Karteireiter `Notizen` kann zu dem Ansprechpartner ein beliebiger Notiztext hinterlegt werden. Dieser Text wird an keiner Stelle veröffentlicht.
+Im Tab `Notizen` kann zu dem Ansprechpartner ein beliebiger Notiztext hinterlegt werden. Dieser Text wird an keiner Stelle veröffentlicht.
 
 {{< figure src="contact_form_notes.jpg" caption="Notizen zum Ansprechpartner" >}}
 
@@ -105,7 +105,7 @@ Im Karteireiter `Notizen` kann zu dem Ansprechpartner ein beliebiger Notiztext h
 
 #### Änderungen speichern {#usage_realestate_contact_form_submit}
 
-Um die Änderungen im Ansprechpartnerformular dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
+Um die Änderungen im Formular für Ansprechpartner dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
 
 > **Hinweis**
 >

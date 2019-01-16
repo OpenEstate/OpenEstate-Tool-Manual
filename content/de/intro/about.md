@@ -24,8 +24,8 @@ OpenEstate-ImmoTool (im Folgenden kurz als ImmoTool bezeichnet) ist eine kostenf
 Die Immobiliensoftware steht allen Anwendern unter einer [Freeware-Lizenz](http://de.wikipedia.org/wiki/Freeware) zur Verfügung. Grundsätzlich gilt für das ImmoTool:
 
 - Jeder darf die Software kostenfrei herunterladen und verwenden.
-- Jeder darf sich an der Weitentwicklung beteiligen.
-- Jeder darf die Software um eigene Module (sogenannte Add-Ons) erweitern und diese unter freier Lizenzwahl vermarkten.
+- Jeder darf sich an der Weiterentwicklung beteiligen.
+- Jeder darf die Software um eigene Module (sogenannte Add-Ons) erweitern und diese unter freier Wahl einer Nutzungslizenz vermarkten.
 - Jeder registrierte Anwender erhält kostenlos Hilfestellungen bei technischen Problemen mit der Software durch die Betreiber des OpenEstate-Projekts.
 - Es entstehen keinerlei Lizenzkosten.
 
@@ -39,7 +39,7 @@ OpenEstate-ImmoTool-Server (im Folgenden kurz als ImmoTool-Server bezeichnet) st
 Der ImmoTool-Server steht unter einer [Open Source Lizenz](http://de.wikipedia.org/wiki/Open_Source) zur Verfügung (siehe [Lizenztext von HSQLDB](http://hsqldb.org/web/hsqlLicense.html)). Grundsätzlich gilt damit für den ImmoTool-Server:
 
 - Jeder darf die Software herunterladen und verwenden.
-- Jeder darf sich an der Weitentwicklung beteiligen.
+- Jeder darf sich an der Weiterentwicklung beteiligen.
 - Jeder darf den Quelltext der Software einsehen und frei verändern (auch für kommerzielle Zwecke).
 - Jeder registrierte Anwender erhält kostenlos Hilfestellungen bei technischen Problemen mit der Software durch die Betreiber des OpenEstate-Projekts.
 - Es entstehen keinerlei Lizenzkosten.

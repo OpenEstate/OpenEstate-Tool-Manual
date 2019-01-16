@@ -25,7 +25,7 @@ Die im ImmoTool erfassten Immobiliendaten können als Export zusammengestellt un
 
 Zur Verwaltung der Export-Schnittstelle gelangen Sie auf zweierlei Wegen:
 
-1.  Klicken Sie im Kopfmenü auf `Immobilien` → `Schnittstellen anzeigen`.
+1.  Klicken Sie im Hauptmenü auf `Immobilien` → `Schnittstellen anzeigen`.
 
     {{< figure src="menu.jpg" caption="Schnittstellen über das Hauptmenü auflisten" >}}
 
@@ -41,7 +41,7 @@ Es öffnet sich daraufhin ein Fenster mit den registrierten Export-Schnittstelle
 
 ### Exportvorgang starten {#usage_realestate_export_start}
 
-Öffnen Sie die [Exportübersicht](#usage_realestate_export_summary) und [aktivieren](#usage_realestate_export_enable) bzw. [deaktivieren](#usage_realestate_export_enable) Sie die Schnittstellen, welche für den Export verwendet / nicht verwendet werden sollen. Diese Einstellung können Sie aber auch nach der Exportzusammenstellung entscheiden und temporär (nur für den folgenden Export) ändern.Bei den aktivierten Schnittstellen ist die Schrift schwarz und bei den deaktivierten ist sie grau.
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und [aktivieren](#usage_realestate_export_enable) bzw. [deaktivieren](#usage_realestate_export_enable) Sie die Schnittstellen, welche für den Export verwendet / nicht verwendet werden sollen. Diese Einstellung können Sie aber auch nach der Zusammenstellung des Exports entscheiden und temporär (nur für den folgenden Export) ändern.Bei den aktivierten Schnittstellen ist die Schrift schwarz und bei den deaktivierten ist sie grau.
 
 Klicken Sie auf `Export starten` um den Exportvorgang anzustoßen.
 
@@ -54,17 +54,17 @@ Nach Bedarf können einzelne Immobilien vom Export ausgeschlossen werden. Klicke
 
 ### Export-Schnittstelle erstellen {#usage_realestate_export_add}
 
-Öffnen Sie die [Exportübersicht](#usage_realestate_export_summary) und klicken Sie oben rechts auf den Button `Neu`. Es öffnet sich danach ein [Formular zur Erfassung einer neuen Export-Schnittstelle](#usage_realestate_export_form).
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und klicken Sie oben rechts auf den Button `Neu`. Es öffnet sich danach ein [Formular zur Erfassung einer neuen Export-Schnittstelle](#usage_realestate_export_form).
 
 
 ### Export-Schnittstelle bearbeiten {#usage_realestate_export_edit}
 
-Öffnen Sie die [Exportübersicht](#usage_realestate_export_summary). Per Doppelklick auf eine der zuvor erfassten Export-Schnittstellen öffnet sich ein [Formular zur Bearbeitung der gewählten Export-Schnittstelle](#usage_realestate_export_form).
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary). Per Doppelklick auf eine der zuvor erfassten Export-Schnittstellen öffnet sich ein [Formular zur Bearbeitung der gewählten Export-Schnittstelle](#usage_realestate_export_form).
 
 
 ### Export-Schnittstelle löschen {#usage_realestate_export_remove}
 
-Öffnen Sie die [Exportübersicht](#usage_realestate_export_summary).
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary).
 
 Bei Rechtsklick auf die betreffende Export-Schnittstelle in der Tabelle öffnet sich ein Menü, in dem Sie die Aktion `Entfernen` auswählen können um die Export-Schnittstelle zu entfernen.
 
@@ -77,7 +77,7 @@ Alternativ kann die betreffende Export-Schnittstelle in der Tabelle per Linkskli
 
 ### Export-Schnittstelle (de)aktivieren {#usage_realestate_export_enable}
 
-Öffnen Sie die [Exportübersicht](#usage_realestate_export_summary).
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary).
 
 
 #### Export-Schnittstelle permanent (de)aktivieren {#usage_realestate_export_enable_permanent}
@@ -89,23 +89,23 @@ Nachdem die Änderung durch Klick auf den Button `Speichern` übernommen wurde, 
 
 #### Export-Schnittstelle für einen Exportvorgang (de)aktivieren  {#usage_realestate_export_enable_temporarily}
 
-Links in der Schnittstellenübersicht können Sie eine oder mehrere Schnittstelle(n) für einen Exportvorgang (de)aktivieren. Diese Einstellung wird nicht dauerhaft gespeichert, sondern gilt nur solange die Schnittstellenübersicht geöffnet ist.
+Links in der Übersicht der Schnittstellen können Sie eine oder mehrere Schnittstelle(n) für einen Exportvorgang (de)aktivieren. Diese Einstellung wird nicht dauerhaft gespeichert, sondern gilt nur solange die Übersicht der Schnittstellen geöffnet ist.
 
 
 ### Export-Schnittstelle importieren {#usage_realestate_export_import}
 
-Um die Einrichtung der Schnittstelle zu erleichtern unterstützt das Programm den Import von Schnittstellenkonfigurationen. Sie können von teilnehmenden Partnern eine XML-Datei beziehen, die Sie direkt ins Programm importieren können. Dadurch können eventuelle Fehleingaben bei der Einrichtung einer Schnittstelle vermieden werden.
+Um die Einrichtung der Schnittstelle zu erleichtern unterstützt das Programm den Import von Schnittstellen. Sie können von teilnehmenden Partnern eine XML-Datei beziehen, die Sie direkt ins Programm importieren können. Dadurch können eventuelle Fehleingaben bei der Einrichtung einer Schnittstelle vermieden werden.
 
-Öffnen Sie die [Exportübersicht](#usage_realestate_export_summary) und klicken Sie oben rechts auf den Button `Import`. Es öffnet sich ein Fenster, in dem die zuvor heruntergeladene Schnittstellen-Datei ausgewählt werden kann.
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und klicken Sie oben rechts auf den Button `Import`. Es öffnet sich ein Fenster, in dem die zuvor heruntergeladene Schnittstellen-Datei ausgewählt werden kann.
 
 Nach Auswahl der Schnittstellen-Datei wird automatisch eine Export-Schnittstelle im Programm mit den jeweiligen Vorgaben des Empfängers erzeugt.
 
 
-### Export-Schnittstellenformular {#usage_realestate_export_form}
+### Formular für Export-Schnittstellen {#usage_realestate_export_form}
 
 #### Allgemeine Einstellungen {#usage_realestate_export_form_general}
 
-Die allgemeinen Einstellungen können im oberen Bereich des Schnittstellenformulars eingetragen werden:
+Die allgemeinen Einstellungen können im oberen Bereich des Formulars eingetragen werden:
 
 {{< figure src="export_form_general.jpg" caption="Allgemeine Einstellungen der Export-Schnittstelle" >}}
 
@@ -115,7 +115,7 @@ Die allgemeinen Einstellungen können im oberen Bereich des Schnittstellenformul
 
 -   **Transport**
 
-    Wählen Sie die vom jeweiligen Empfänger geforderte Transportart aus. Die gebräuchlichste ist extern auf einen FTP-Server.
+    Wählen Sie die vom jeweiligen Empfänger geforderte Transport-Art aus. Die gebräuchlichste ist extern auf einen FTP-Server.
 
 -   **Format**
 
@@ -127,16 +127,16 @@ Die allgemeinen Einstellungen können im oberen Bereich des Schnittstellenformul
 
 -   **Schnittstelle aktivieren**
 
-    Standartmäßig ist diese Option auf `aktiv` gesetzt. Wenn Sie diese Schnittstelle noch nicht aktivieren möchten, so entfernen Sie den Haken. Sie können diese Schnittstelle ggf. auch in der Schnittstellenübersicht temporär für einen einzelnen Exportvorgang aktivieren.
+    Standardmäßig ist diese Option auf `aktiv` gesetzt. Wenn Sie diese Schnittstelle noch nicht aktivieren möchten, so entfernen Sie den Haken. Sie können diese Schnittstelle ggf. auch in der Übersicht der Schnittstellen temporär für einen einzelnen Exportvorgang aktivieren.
 
 > **Achtung**
 >
-> Die Option zur Limitierung schützt Sie nicht zwangsläufig vor der Überschreitung Ihres Inseratskontingents bei dem Empfänger. Prüfen Sie bitte dennoch in regelmäßigen Abständen beim Empfänger, ob das Limit korrekt eingehalten wird.
+> Die Option zur Limitierung schützt Sie nicht zwangsläufig vor der Überschreitung Ihres Kontingents bei dem Empfänger. Prüfen Sie bitte dennoch in regelmäßigen Abständen beim Empfänger, ob das Limit korrekt eingehalten wird.
 
 
 #### Transport via FTP {#usage_realestate_export_form_ftp}
 
-Wenn im Feld `Transport` die Übertragungsart `FTP` gewählt wurde, wird das folgende Formular im Karteireiter `Transport` dargestellt:
+Wenn im Feld `Transport` die Übertragungs-Art `FTP` gewählt wurde, wird das folgende Formular im Tab `Transport` dargestellt:
 
 {{< figure src="export_form_ftp.jpg" caption="FTP-Einstellungen der Export-Schnittstelle" >}}
 
@@ -171,7 +171,7 @@ Wenn im Feld `Transport` die Übertragungsart `FTP` gewählt wurde, wird das fol
 
 #### Transport via HTTP {#usage_realestate_export_form_http}
 
-Wenn im Feld `Transport` die Übertragungsart `HTTP` gewählt wurde, wird das folgende Formular im Karteireiter `Transport` dargestellt:
+Wenn im Feld `Transport` die Übertragungs-Art `HTTP` gewählt wurde, wird das folgende Formular im Tab `Transport` dargestellt:
 
 {{< figure src="export_form_http.jpg" caption="HTTP-Einstellungen der Export-Schnittstelle" >}}
 
@@ -201,15 +201,15 @@ Wenn im Feld `Transport` die Übertragungsart `HTTP` gewählt wurde, wird das fo
 
     -   **via POST-Anfrage, als Formular (multipart/form-data)**
     
-        In diesem Falle werden die exportierten Dateien durch eine `HTTP POST`-Anfrage zum Empfänger gesendet (siehe [HTTP-Request-Methoden](http://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP-Request-Methoden)). Dieser Mechanismus ist identisch zu einem Datei-Upload aus einem Webformular.
+        In diesem Falle werden die exportierten Dateien durch eine `HTTP POST`-Anfrage zum Empfänger gesendet (siehe [HTTP-Request-Methoden](http://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP-Request-Methoden)). Dieser Mechanismus ist identisch zu einem Datei-Upload aus einem Web-Formular.
 
 -   **Form-Variable**
-    Wenn bei der `Übertragung` die Option `via POST-Anfrage, als Formular (multipart/form-data)` gewählt wurde, kann in diesem Eingabefeld der Name der Formular-Variablen eingetragen werden, unter dem die übermittelte Datei zum Empfänger gesendet wird. Beim Upload aus einem Webformular entspricht dies dem Namen des Datei-Eingabefelds.
+    Wenn bei der `Übertragung` die Option `via POST-Anfrage, als Formular (multipart/form-data)` gewählt wurde, kann in diesem Eingabefeld der Name der Formular-Variablen eingetragen werden, unter dem die übermittelte Datei zum Empfänger gesendet wird. Beim Upload aus einem Web-Formular entspricht dies dem Namen des Datei-Eingabefelds.
 
 
 #### Transport auf die Festplatte {#usage_realestate_export_form_local}
 
-Wenn im Feld `Transport` die Übertragungsart `lokal auf die Festplatte` gewählt wurde, wird das folgende Formular im Karteireiter `Transport` dargestellt:
+Wenn im Feld `Transport` die Übertragungs-Art `lokal auf die Festplatte` gewählt wurde, wird das folgende Formular im Tab`Transport` dargestellt:
 
 > **TODO**
 >
@@ -221,7 +221,7 @@ Wenn im Feld `Transport` die Übertragungsart `lokal auf die Festplatte` gewähl
 
 #### Einstellungen zum OpenImmo-XML-Format {#usage_realestate_export_form_openimmo}
 
-Wenn im Feld `Format` die Übertragungsart `OpenImmo-XML` gewählt wurde, wird das folgende Formular im Karteireiter `Format` dargestellt:
+Wenn im Feld `Format` die Übertragungs-Art `OpenImmo-XML` gewählt wurde, wird das folgende Formular im Tab `Format` dargestellt:
 
 {{< figure src="export_form_openimmo.jpg" caption="Einstellungen in Export-Schnittstelle zum OpenImmo-Format" >}}
 
@@ -235,7 +235,7 @@ Wenn im Feld `Format` die Übertragungsart `OpenImmo-XML` gewählt wurde, wird d
 
 -   **Technik Mail**
 
-    Tragen Sie hier die E-Mailadresse der Person ein, welche ggf. die Importmeldungen erhält.
+    Tragen Sie hier die E-Mailadresse der Person ein, welche ggf. die Import-Meldungen erhält.
 
 -   **Modus**
 
@@ -268,13 +268,13 @@ Wenn im Feld `Format` die Übertragungsart `OpenImmo-XML` gewählt wurde, wird d
 
 #### Einstellungen zu exportierten Bildern {#usage_realestate_export_form_images}
 
-Wählen Sie im unteren Bereich des Formulars den Karteireiter `Bilder` um Einstellungen für exportierte Bilder anzupassen.
+Wählen Sie im unteren Bereich des Formulars den Tab `Bilder` um Einstellungen für exportierte Bilder anzupassen.
 
 -   Zur Immobilie können Bilder gespeichert werden, welche nicht auf den Portalen veröffentlicht werden sollen, weil z.B. eine Begrenzung der Anzahl der Bilder vorgegeben ist. Wenn Sie diese aber auf Ihrer Website darstellen wollen, so aktivieren Sie die Option Allgemein.
 
--   Es kann sinnvoll sein, die Bilder für den Websiteexport zu verkleinern. Wenn Sie dies wünschen, so aktivieren Sie die Option `Skalierung` und tragen Sie die Maximalwerte für die Breite und Höhe (in Pixeln) ein.
+-   Es kann sinnvoll sein, die Bilder für den Website-Export zu verkleinern. Wenn Sie dies wünschen, so aktivieren Sie die Option `Skalierung` und tragen Sie die Maximalwerte für die Breite und Höhe (in Pixeln) ein.
 
--   Wenn Sie Ihr Firmenlogo als Wasserzeichen in die Bilder einfügen möchten, so aktivieren Sie die Option `Wasserzeichen`. Tragen Sie die Größe des Wasserzeichens ein, wählen die Position innerhalb der Bilder und den gewünschten Transparenzwert.
+-   Wenn Sie Ihr Firmenlogo als Wasserzeichen in die Bilder einfügen möchten, so aktivieren Sie die Option `Wasserzeichen`. Tragen Sie die Größe des Wasserzeichens ein, wählen die Position innerhalb der Bilder und den gewünschten Transparenz-Wert.
 
 
 #### Änderungen speichern {#usage_realestate_export_form_submit}

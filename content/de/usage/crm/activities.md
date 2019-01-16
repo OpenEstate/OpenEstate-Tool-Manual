@@ -22,14 +22,14 @@ menu:
 > Inhalte einfügen
 
 
-### Aktivitätenübersicht {#usage_crm_activities_table}
+### Übersicht der Aktivitäten {#usage_crm_activities_table}
 
 > **TODO**
 >
 > Inhalte einfügen
 
 
-### Aktivitätenformular {#usage_crm_activities_form}
+### Formular für Aktivitäten {#usage_crm_activities_form}
 
 > **TODO**
 >

@@ -1,8 +1,8 @@
 ---
 
-title: Allgemeines zum Immobilien-Addon
+title: Allgemeines zum Immobilien Add-On
 linktitle: Allgemeines
-description: Allgemeine Hinweise zum Immobilien-Addon von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zum Immobilien Add-On von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
@@ -15,15 +15,15 @@ menu:
 
 ## Über das Immobilien Add-On {#usage_realestate_addon}
 
-Das Immobilien-Add-On stellt die Immobilien-, Schnittstellen-, Suchauftrags- und Vermittlungsauftragverwaltung zur Verfügung, sofern das Immobilien-Add-On installiert und aktiviert ist.
+Das Immobilien-Add-On stellt die Immobilien-, Schnittstellen-, Suchauftrags- und Vermittlungsauftragverwaltung zur Verfügung, sofern das Immobilien Add-On installiert und aktiviert ist.
 
-Die jeweiligen Funktionalitäten erreichen Sie über die Sidebar oder das Kopfmenmü.
+Die jeweiligen Funktionalitäten erreichen Sie über die Sidebar oder das Hauptmenü.
 
 {{< figure src="menu.jpg" caption="Menüeintrag der Immobilienverwaltung" >}}
 
 {{< figure src="menu_add.jpg" caption="Untermenü zum Erzeugen neuer Einträge in der Immobilienverwaltung" >}}
 
-{{< figure src="sidebar.jpg" caption="Ansichtsbereich der Immobilienverwaltung" >}}
+{{< figure src="sidebar.jpg" caption="Ansicht der Immobilienverwaltung" >}}
 
 
 ### Einstellungen {#usage_realestate_addon_settings}

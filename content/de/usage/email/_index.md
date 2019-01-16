@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des E-Mail-Addons
+title: Verwendung des E-Mail Add-Ons
 linktitle: E-Mail
-description: Hinweise zur Verwendung des E-Mail-Addons von OpenEstate-ImmoTool…
+description: Hinweise zur Verwendung des E-Mail Add-Ons von OpenEstate-ImmoTool…
 weight: 60
 
 menu:

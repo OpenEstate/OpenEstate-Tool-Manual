@@ -14,7 +14,7 @@ menu:
 
 ## Einstellungen am Programm anpassen {#usage_general_settings}
 
-Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Kopfmenü auf `Extras` → `Einstellungen`.
+Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Hauptmenü auf `Extras` → `Einstellungen`.
 
 {{< figure src="menu_extras.jpg" caption="Einstellungen im Extras-Menü aufrufen" >}}
 
@@ -23,7 +23,7 @@ Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Kopfmenü auf
 > Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst durch betätigen des Buttons `Speichern` übernommen werden.
 
 
-### Allgemeine Programmeinstellungen {#usage_general_settings_general}
+### Allgemeine Einstellungen {#usage_general_settings_general}
 
 {{< figure src="settings_general.jpg" caption="Allgemeine Einstellungen" >}}
 
@@ -31,13 +31,13 @@ Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Kopfmenü auf
 
 Der bevorzugte Web-Browser kann hier eingetragen werden. Im ImmoTool angezeigte URL's werden im hinterlegten Web-Browser geöffnet. Wenn kein Web-Browser eingetragen wurde, versucht das Programm den Standard-Browser des Betriebssystems zu starten.
 
-Um den bevorzugten Webbrowser auszuwählen klicken Sie auf das Ordnersysmbol rechts neben der entsprechenden Zeile und navigieren im fogenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
+Um den bevorzugten Webbrowser auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
 
 #### PDF-Reader {#usage_general_settings_pdfreader}
 
 Der bevorzugte PDF-Reader kann hier eingetragen werden. Erzeugte PDF-Dokumente können aus dem ImmoTool heraus mit der hinterlegten Anwendung geöffnet werden.
 
-Um den bevorzugten PDF-Reader auszuwählen klicken Sie auf das Ordnersysmbol rechts neben der entsprechenden Zeile und navigieren im fogenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
+Um den bevorzugten PDF-Reader auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
 
 #### Sonstiges
 
@@ -48,7 +48,7 @@ Hier können Sie einstellen, ob das zu letzt verwendete Projekt beim Start des P
 
 {{< figure src="settings_general_network.jpg" caption="Einstellungen zum Netzwerk" >}}
 
-Wenn Sie für HTTP- und / oder FTP-Verbindungen ins Internet einen Proxyserver verwenden, können Sie dies hier der Software mitteilen.
+Wenn Sie für HTTP- und / oder FTP-Verbindungen ins Internet einen Proxy-Server verwenden, können Sie dies hier der Software mitteilen.
 
 Sollte dies der Fall sein, entfernen Sie den Haken bei `Keinen HTTP/FTP-Proxy verwenden` und tragen Sie `Hostname / IP-Adresse` sowie die `Port-Nr` des Proxy-Servers ein.
 
@@ -61,25 +61,27 @@ Sollte dies der Fall sein, entfernen Sie den Haken bei `Keinen HTTP/FTP-Proxy ve
 
 {{< figure src="settings_general_database.jpg" caption="Einstellungen zur Datenbank" >}}
 
-Hier können Sie festlegen, wo und wann die automatische Datensicherung vollzogen wird. Standardmäßig ist bereits ein Verzeichnis eingetragen, welches Sie bei Bedarf ändern können. Dies sollten Sie aber nur machen, wenn es zwingend notwwendig ist, weil Sie z.B. die Sicherung auf einem externen Datenträger speichern möchten.
+Hier können Sie festlegen, wo und wann die automatische Datensicherung vollzogen wird. Standardmäßig ist bereits ein Verzeichnis eingetragen, welches Sie bei Bedarf ändern können. Dies sollten Sie aber nur machen, wenn es zwingend notwendig ist, weil Sie z.B. die Sicherung auf einem externen Datenträger speichern möchten.
 
 Für den Zeitpunkt der Datensicherung werden Ihnen mehrere Optionen angeboten. Wählen Sie eine Einstellung, die Ihren Anforderungen entspricht. Die Standardeinstellung ist `an jedem Tag`.
 
-Die Ziffer unter Limit gibt an, wieviele Datenbanksicherungen angelegt werden. Der voreingestellte Standardwert ist 5. Dies bedeutet z.B., dass - unabhängig von den Einstellungen unter `Automatische Sicherung` - fünf Sicherungen angelegt werden. Wenn die sechste Sicherung angelgt wird wird die erste gelöscht, so dass immer die fünf letzten Sicherungen verfügbar sind.
-Wenn Sie diesen Wert erhöhen, beachten Sie, dass jede Sicherung die gesammte Datenbank enthält. Diese können je nach Datenbestand recht groß werden.
+Die Ziffer unter Limit gibt an, wie viele Sicherungen der Datenbank angelegt werden. Der voreingestellte Standardwert ist 5. Dies bedeutet z.B., dass - unabhängig von den Einstellungen unter `Automatische Sicherung` - fünf Sicherungen angelegt werden. Wenn die sechste Sicherung angelegt wird wird die erste gelöscht, so dass immer die fünf letzten Sicherungen verfügbar sind.
+Wenn Sie diesen Wert erhöhen, beachten Sie, dass jede Sicherung die gesamte Datenbank enthält. Diese können je nach Datenbestand recht groß werden.
 
 
 ### Immobilien Add-On {#usage_general_settings_realestate_addon}
 
+
 #### Allgemein
 
-{{< figure src="settings_realestate.jpg" caption="Einstellungen zum Immobilien-Addon" >}}
+{{< figure src="settings_realestate.jpg" caption="Einstellungen zum Immobilien Add-On" >}}
 
-Hier können Sie die maximale Bildgröße (Höhe und Breite in Pixel) einstellen, mit welcher die Immobilienbilder in das ImmoTool importiert werden. Voreigestellt ist eine Größ von 1000 Pixel x 1000 Pixel. Sollte ein kleineres Bild importiert werden bleibt dieses unagetastet und wird nicht auf die eingestellte Größe vergrößert.
+Hier können Sie die maximale Größe (Höhe und Breite in Pixel) einstellen, mit welcher die Bilder von Immobilien in das ImmoTool importiert werden. Voreingestellt ist eine Größe von 1000 x 1000 Pixeln. Sollte ein kleineres Bild importiert werden, bleibt dieses unangetastet und wird nicht auf die eingestellte Größe vergrößert.
 
-Um die Datenbank nicht unnötig groß werden zu lassen, sollten Sie die Bilder der Immobilien auf die maximal benötigte Größe verkleinern. Zur Oientierung könnte hierbei die maximale Bildgröße auf den Portalen diehnen, auf welchen Sie inserieren.
+Um die Datenbank nicht unnötig groß werden zu lassen, sollten Sie die Bilder der Immobilien auf die maximal benötigte Größe verkleinern. Zur Orientierung könnte hierbei die maximale Bild-Größe auf den Portalen dienen, auf welchen Sie inserieren.
 
-Weitere Optionen
+
+#### Weitere Optionen
 
 Hier können Sie angeben, ob beim Export der Immobilie nummerischen Attributen der Text 'ca.' vorangestellt wird.
 
@@ -90,14 +92,14 @@ Manche Portale benötigen eigene Geodaten um Immobilien regional präzise zuordn
 
 {{< figure src="settings_realestate_geo.jpg" caption="Geodaten verwalten" >}}
 
-Für IS24 können Sie die benötigte Datei unter http://wiki.openestate.org/mediawiki/images/0/0d/Geo_is24.xml herunterladen. Speichern SIe diese Datei auf Ihrem Rechner und betätigen in den ImmoTool-Einsstellungen Immobilien » Geodaten den Button Importieren. Wählen Sie im folgenden Dialogfenster die entsprechende Datei auf Ihrem Rechenr und starten den Import durch den button 'Geo-Datei wählen'.
+Für IS24 können Sie die benötigte Datei unter http://wiki.openestate.org/mediawiki/images/0/0d/Geo_is24.xml herunterladen. Speichern SIe diese Datei auf Ihrem Rechner und betätigen in den ImmoTool-Einstellungen Immobilien » Geodaten den Button Importieren. Wählen Sie im folgenden Dialogfenster die entsprechende Datei auf Ihrem Rechner und starten den Import durch den button 'Geo-Datei wählen'.
 
 
 #### Sprachen {#usage_general_settings_realestate_languages}
 
 {{< figure src="settings_realestate_languages.jpg" caption="Sprachen der Immobiliendaten verwalten" >}}
 
-Hier können Sie die Sprachen wählen, in welchen Sie Freitexte zu den Immobilien ablegen möchten. Aktivieren Sie die gewünschten Sprachen durch anklicken der Checkboxen. Weitere Infonrmationen erhalten Sie im Kapitel 'Immobilie anlegen / verwalten'.
+Hier können Sie die Sprachen wählen, in welchen Texte zu den Immobilien erfasst werden sollen. Aktivieren Sie die gewünschten Sprachen durch Anklicken der Checkboxen. Weitere Informationen erhalten Sie im Kapitel 'Immobilie anlegen / verwalten'.
 
 > **Hinweis**
 >
@@ -115,21 +117,6 @@ Häufig verwendete Suchanfragen können als Suchvorlage abgelegt und bei Bedarf
 
 ### Kalender Add-On {#usage_general_settings_calendar_addon}
 
-{{< figure src="settings_calendar.jpg" caption="Einstellungen zum Kalender-Addon" >}}
+{{< figure src="settings_calendar.jpg" caption="Einstellungen zum Kalender Add-On" >}}
 
-Hier können Sie Ihre Arbeitszeit eingrenzen. In der Tagesansicht des Kalenders wird diese Einstellung in der Anzeige berücksichtigt und Zeiten davor und danch nicht angezeigt.
-
-
-### Programm- / Addons-Aktualiserung {#usage_general_settings_updates}
-
-Deaktivieren Sie bei Bedarf die automatische Aktualisierung des Programms und der Add-Ons bei Programmstart. Sind diese Otionen aktiviert wird beim Start des Programms in einem Hintergrundprozess nach Aktualisierungen gesucht. Werden Aktualisierungen gefunden, so werden Sie darauf hingewiesen und können selbst entscheiden, ob diese installiert werden sollen.
-
-> **Hinweis**
->
-> Standardmäßig ist das Programm so eingestellt, dass beim Start vorhandene Aktualisierungen gesucht und zum herunterladen angeboten werden!
->
-> Diese Funktion sucht ausschließlich nach aktuelleren Versionen des ImmoTools und der bereits installierten Add-Ons. Weitere zur Installation verfügbare Add-Ons werden hier nicht angezeigt. Diese finden Sie ggf. im [Anwenderbereich](http://dev.openestate.org) oder bei einem externen Anbieter.
-
-> **TODO**
->
-> Funktion nicht gegeben
+Hier können Sie Ihre Arbeitszeit eingrenzen. In der Tagesansicht des Kalenders wird diese Einstellung in der Anzeige berücksichtigt und Zeiten davor und danach nicht angezeigt.

@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des Immobilien-Addons
+title: Verwendung des Immobilien Add-Ons
 linktitle: Immobilien
-description: Hinweise zur Verwendung des Immobilien-Addons von OpenEstate-ImmoTool…
+description: Hinweise zur Verwendung des Immobilien Add-Ons von OpenEstate-ImmoTool…
 weight: 20
 
 menu:

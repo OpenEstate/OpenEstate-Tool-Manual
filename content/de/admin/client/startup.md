@@ -14,7 +14,7 @@ menu:
 
 ## ImmoTool starten {#admin_client_startup}
 
-Die Dateien zum Start des ImmoTools sind im Unterverzeichnis `bin` des Programmverzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoTool\bin`.
+Die Dateien zum Start des ImmoTools sind im Unterverzeichnis `bin` des Programm-Verzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoTool\bin`.
 
 
 ### ImmoTool unter Windows starten {#admin_client_startup_windows}

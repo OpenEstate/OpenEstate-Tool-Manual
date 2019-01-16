@@ -12,9 +12,8 @@ menu:
 
 ---
 
-## Benutzerkonzo bearbeiten {#usage_general_account}
+## Benutzerkonto bearbeiten {#usage_general_account}
 
 > **TODO**
 >
 > Inhalte einfügen
-

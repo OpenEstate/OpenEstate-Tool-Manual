@@ -52,7 +52,7 @@ Damit das Hilfsprogramm sich mit der Datenbank verbinden kann, sind folgende Kon
 
 4.  Starten Sie das Hilfsprogramm `manager-backup.bat` (unter Windows), `manager-backup.sh` (unter Unix/Linux) oder `manager-backup` (unter Mac OS X) aus dem `bin`-Verzeichnis des ImmoTool-Servers.
 
-Nach erfolgreicher Ausführung des Hilfsprogrammes finden Sie im Verzeichnis `var/backup/immotool` des ImmoTool-Servers ein TAR.GZ-Archiv mit der Sicherung der aktuellen Datenbank.
+Nach erfolgreicher Ausführung des Hilfsprogramms finden Sie im Verzeichnis `var/backup/immotool` des ImmoTool-Servers ein TAR.GZ-Archiv mit der Sicherung der aktuellen Datenbank.
 
 > **Tipp**
 >

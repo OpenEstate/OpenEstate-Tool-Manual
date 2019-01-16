@@ -59,23 +59,23 @@ Das AdminTool stellt verschiedene Funktionen in der Werkzeugleiste zur Verfügun
 
 ### Firmendaten bearbeiten {#admin_tool_company}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `Anbieter` die Firmendaten und das Firmenlogo des Projekts eingesehen und bearbeitet werden.
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `Anbieter` die Firmendaten und das Firmenlogo des Projekts eingesehen und bearbeitet werden.
 
 {{< figure src="tool_company-01.jpg" caption="Firmendaten im AdminTool bearbeiten" >}}
 
--   Klicken Sie im Karteireiter auf `Aktualisieren` um die Firmendaten aus der Datenbank erneut zu ermitteln.
--   Klicken Sie im Karteireiter auf `Übernehmen` um geänderte Firmendaten dauerhaft in der Datenbank zu speichern.
+-   Klicken Sie im Tab auf `Aktualisieren` um die Firmendaten aus der Datenbank erneut zu ermitteln.
+-   Klicken Sie im Tab auf `Übernehmen` um geänderte Firmendaten dauerhaft in der Datenbank zu speichern.
 
 
 ### Add-Ons bearbeiten {#admin_tool_addons}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `Add-Ons` die verfügbaren und im Projekt installierten Add-Ons eingesehen und bearbeitet werden.
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `Add-Ons` die verfügbaren und im Projekt installierten Add-Ons eingesehen und bearbeitet werden.
 
--   Klicken Sie im Karteireiter auf `Aktualisieren` um die Add-Ons aus der Datenbank erneut zu ermitteln.
+-   Klicken Sie im Tab auf `Aktualisieren` um die Add-Ons aus der Datenbank erneut zu ermitteln.
 
 #### Installierte Add-Ons verwalten {#admin_tool_addons_installed}
 
-Im Karteireiter `Add-Ons` wird unter `Installierte Add-Ons` eine tabellarische Übersicht der aktuell installierten Add-Ons dargestellt.
+Im Tab `Add-Ons` wird unter `Installierte Add-Ons` eine tabellarische Übersicht der aktuell installierten Add-Ons dargestellt.
 
 {{< figure src="tool_addons-01.jpg" caption="Übersicht der installierten Add-Ons" >}}
 
@@ -102,7 +102,7 @@ Markieren Sie ein Add-On in der Tabelle und klicken Sie auf `Deinstallieren` um 
 
 #### Aktualisierbare Add-Ons verwalten {#admin_tool_addons_updates}
 
-Im Karteireiter `Add-Ons` wird unter `Aktualisierungen` eine tabellarische Übersicht der Add-Ons dargestellt,
+Im Tab `Add-Ons` wird unter `Aktualisierungen` eine tabellarische Übersicht der Add-Ons dargestellt,
 
 -   die vom AdminTool beim Programmstart gefunden wurden aber noch nicht in der Datenbank installiert sind.
 -   die vom AdminTool beim Programmstart gefunden wurden und in der Datenbank in einer älteren Version installiert sind.
@@ -123,7 +123,7 @@ Klicken Sie in der Tabellenspalte `Installation` auf die jeweilige Zeile um ein 
 
 ### Benutzer bearbeiten {#admin_tool_users}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `Benutzer` die Benutzerkonten der Datenbank eingesehen / bearbeitet werden. Allgemein können beliebig viele Benutzer können auf die Datenbank zugreifen und gemeinsam an einem Projekt arbeiten.
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `Benutzer` die Benutzerkonten der Datenbank eingesehen / bearbeitet werden. Allgemein können beliebig viele Benutzer können auf die Datenbank zugreifen und gemeinsam an einem Projekt arbeiten.
 
 {{< figure src="tool_users-01.jpg" caption="Benutzerkonten bearbeiten" >}}
 
@@ -131,12 +131,12 @@ Auf der linken Seite eine Liste der aktuell vorhandenen Benutzerkonten dargestel
 
 Auf der rechten Seite der Ansicht werden Informationen zu dem aktuell ausgewählten Benutzer dargestellt.
 
-Folgende Aktionen können über die Buttons oberhalb der Benutzeransicht ausgeführt werden:
+Folgende Aktionen können über die Buttons oberhalb der Benutzer-Ansicht ausgeführt werden:
 
--   Klicken Sie im Karteireiter auf `Aktualisieren` um die aktuelle Ansicht aktualisieren.
--   Klicken Sie im Karteireiter auf `Neuer Benutzer` um einen neuen Benutzer zu erfassen.
--   Klicken Sie im Karteireiter auf `Entfernen` um den aktuell gewählten Benutzer zu entfernen.
--   Klicken Sie im Karteireiter auf `Übernehmen` um die vorgenommenen Änderungen in der Benutzeransicht dauerhaft speichern.
+-   Klicken Sie im Tab auf `Aktualisieren` um die aktuelle Ansicht aktualisieren.
+-   Klicken Sie im Tab auf `Neuer Benutzer` um einen neuen Benutzer zu erfassen.
+-   Klicken Sie im Tab auf `Entfernen` um den aktuell gewählten Benutzer zu entfernen.
+-   Klicken Sie im Tab auf `Übernehmen` um die vorgenommenen Änderungen in der Benutzer-Ansicht dauerhaft speichern.
 
 > **Hinweis**
 >
@@ -145,7 +145,7 @@ Folgende Aktionen können über die Buttons oberhalb der Benutzeransicht ausgef�
 
 #### Eckdaten des Benutzers {#admin_tool_users_general}
 
-Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten auf der rechten Seite im Karteireiter `Benutzer` dargestellt.
+Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten auf der rechten Seite im Tab `Benutzer` dargestellt.
 
 {{< figure src="tool_users-02.jpg" caption="Eckdaten eines Benutzers" >}}
 
@@ -170,7 +170,7 @@ Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten
 
 #### Personendaten des Benutzers {#admin_tool_users_person}
 
-Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Personendaten auf der rechten Seite im Karteireiter `Person` dargestellt.
+Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Personendaten auf der rechten Seite im Tab `Person` dargestellt.
 
 {{< figure src="tool_users-03.jpg" caption="Personendaten eines Benutzers" >}}
 
@@ -181,7 +181,7 @@ Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Personen
 
 #### Gruppen des Benutzers {#admin_tool_users_groups}
 
-Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Gruppen-Mitgliedschaften auf der rechten Seite im Karteireiter `Gruppen` dargestellt.
+Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Gruppen-Mitgliedschaften auf der rechten Seite im Tab `Gruppen` dargestellt.
 
 {{< figure src="tool_users-04.jpg" caption="Gruppen eines Benutzers" >}}
 
@@ -194,7 +194,7 @@ In der Tabelle werden die aktuell in der Datenbank registrierten Gruppen dargest
 
 #### Berechtigungen des Benutzers {#admin_tool_users_permissions}
 
-Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Berechtigungen auf der rechten Seite im Karteireiter `Berechtigungen` dargestellt.
+Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Berechtigungen auf der rechten Seite im Tab `Berechtigungen` dargestellt.
 
 {{< figure src="tool_users-05.jpg" caption="Berechtigungen eines Benutzers" >}}
 
@@ -203,7 +203,7 @@ In der Tabelle werden die von den Add-Ons bereitgestellten Berechtigungen darges
 
 ### Gruppen bearbeiten {#admin_tool_groups}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `Gruppen` die Benutzergruppen der Datenbank eingesehen / bearbeitet werden.
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `Gruppen` die Benutzergruppen der Datenbank eingesehen / bearbeitet werden.
 
 Allgemein können die Benutzer können in mehrere Gruppen zusammengefasst werden. Durch die Mitgliedschaft eines Benutzers in einer Gruppe erbt dieser die in der Gruppe hinterlegten Berechtigungen.
 
@@ -211,14 +211,14 @@ Allgemein können die Benutzer können in mehrere Gruppen zusammengefasst werden
 
 In der Ansicht wird auf der linken Seite eine Liste der aktuell vorhandenen Gruppen dargestellt. Klicken Sie auf eine der Gruppen um diese zur Bearbeitung auszuwählen.
 
-Auf der rechten Seite der Gruppenansicht werden Informationen zu der aktuell ausgewählten Gruppe dargestellt.
+Auf der rechten Seite der Gruppen-Ansicht werden Informationen zu der aktuell ausgewählten Gruppe dargestellt.
 
-Folgende Aktionen können über die Buttons oberhalb der Gruppenansicht ausgeführt werden:
+Folgende Aktionen können über die Buttons oberhalb der Gruppen-Ansicht ausgeführt werden:
 
--   Klicken Sie im Karteireiter auf `Aktualisieren` um die aktuelle Ansicht aktualisieren.
--   Klicken Sie im Karteireiter auf `Neuer Gruppe` um einen neue Gruppe zu erfassen.
--   Klicken Sie im Karteireiter auf `Entfernen` um die aktuell gewählte Gruppe zu entfernen.
--   Klicken Sie im Karteireiter auf `Übernehmen` um die vorgenommenen Änderungen in der Gruppenansicht dauerhaft speichern.
+-   Klicken Sie im Tab auf `Aktualisieren` um die aktuelle Ansicht aktualisieren.
+-   Klicken Sie im Tab auf `Neuer Gruppe` um einen neue Gruppe zu erfassen.
+-   Klicken Sie im Tab auf `Entfernen` um die aktuell gewählte Gruppe zu entfernen.
+-   Klicken Sie im Tab auf `Übernehmen` um die vorgenommenen Änderungen in der Gruppen-Ansicht dauerhaft speichern.
 
 > **Hinweis**
 >
@@ -227,7 +227,7 @@ Folgende Aktionen können über die Buttons oberhalb der Gruppenansicht ausgefü
 
 #### Eckdaten der Gruppe {#admin_tool_groups_general}
 
-Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten auf der rechten Seite im Karteireiter `Gruppe` dargestellt.
+Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten auf der rechten Seite im Tab `Gruppe` dargestellt.
 
 {{< figure src="tool_groups-02.jpg" caption="Eckdaten einer Benutzergruppe" >}}
 
@@ -240,7 +240,7 @@ Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden dessen Eckdat
 
 #### Benutzer zuweisen {#admin_tool_groups_users}
 
-Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden die zugewiesenen Benutzerkonten auf der rechten Seite im Karteireiter `Mitglieder` dargestellt.
+Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden die zugewiesenen Benutzerkonten auf der rechten Seite im Tab `Mitglieder` dargestellt.
 
 {{< figure src="tool_groups-03.jpg" caption="Mitglieder einer Benutzergruppe" >}}
 
@@ -253,7 +253,7 @@ In der Tabelle werden die aktuell in der Datenbank registrierten Benutzer darges
 
 #### Berechtigungen erteilen {#admin_tool_groups_permissions}
 
-Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden die Berechtigungen auf der rechten Seite im Karteireiter `Berechtigungen` dargestellt.
+Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden die Berechtigungen auf der rechten Seite im Tab `Berechtigungen` dargestellt.
 
 {{< figure src="tool_groups-04.jpg" caption="Berechtigungen einer Benutzergruppe" >}}
 
@@ -266,14 +266,14 @@ In der Tabelle werden die von den Add-Ons bereitgestellten Berechtigungen darges
 
 ### Inhalte der Datenbank anzeigen {#admin_tool_browser}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `SQL-Browser` die rohen Inhalte der Datenbank eingesehen werden ("Tabellen", "Views" & "Stored Procedures").
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `SQL-Browser` die rohen Inhalte der Datenbank eingesehen werden ("Tabellen", "Views" & "Stored Procedures").
 
 {{< figure src="tool_browser-01.jpg" caption="Inhalte der Datenbank anzeigen" >}}
 
 
 ### SQL-Befehle auf der Datenbank ausführen {#admin_tool_console}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Karteireiter `SQL-Konsole` beliebige SQL-Anfragen auf der Datenbank ausgeführt werden.
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `SQL-Konsole` beliebige SQL-Anfragen auf der Datenbank ausgeführt werden.
 
 {{< figure src="tool_console-01.jpg" caption="SQL-Befehle im AdminTool ausführen" >}}
 

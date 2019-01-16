@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des CRM-Addons
+title: Verwendung des CRM Add-Ons
 linktitle: CRM
-description: Hinweise zur Verwendung des CRM-Addons von OpenEstate-ImmoTool…
+description: Hinweise zur Verwendung des CRM Add-Ons von OpenEstate-ImmoTool…
 weight: 50
 
 menu:

@@ -23,7 +23,7 @@ menu:
 
 > **TODO**
 >
-> Vorgehensweise zur manuellen Datensicherung einfügen. Datensicherung kann manuell aus dem ImmoTool heraus erfolgen oder manuell durch Dateioperationen auf der Festplatte erfolgen.
+> Vorgehensweise zur manuellen Datensicherung einfügen. Datensicherung kann manuell aus dem ImmoTool heraus erfolgen oder manuell durch Datei-Operationen auf der Festplatte erfolgen.
 
 
 ### Automatische Sicherung eines Einzelplatz-Projekts {#admin_client_backup_automatic}

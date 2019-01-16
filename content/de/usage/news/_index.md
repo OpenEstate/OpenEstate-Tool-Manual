@@ -1,8 +1,8 @@
 ---
 
-title: Verwendung des Nachrichten-Addons
+title: Verwendung des Nachrichten Add-Ons
 linktitle: Nachrichten
-description: Hinweise zur Verwendung des Nachrichten-Addons von OpenEstate-ImmoTool…
+description: Hinweise zur Verwendung des Nachrichten Add-Ons von OpenEstate-ImmoTool…
 weight: 70
 
 menu:

@@ -1,8 +1,8 @@
 ---
 
-title: Allgemeines zum Adressbuch-Addon
+title: Allgemeines zum Adressbuch Add-On
 linktitle: Allgemeines
-description: Allgemeine Hinweise zum Adressbuch-Addon von OpenEstate-ImmoTool…
+description: Allgemeine Hinweise zum Adressbuch Add-On von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
@@ -22,7 +22,7 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "Adressbu
 
 {{< figure src="menu_add.jpg" caption="Untermenü zum Erzeugen neuer Einträge im Adressbuch" >}}
 
-{{< figure src="sidebar.jpg" caption="Ansichtsbereich des Adressbuchs" >}}
+{{< figure src="sidebar.jpg" caption="Ansicht des Adressbuchs" >}}
 
 
 ### Einstellungen {#usage_addressbook_addon_settings}

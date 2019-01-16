@@ -25,7 +25,7 @@ Abhängig vom verwendeten Betriebssystem sind unterschiedliche Vorgehensweisen n
 
 ### Java unter Windows installieren {#intro_java_install_windows}
 
-Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie Oracle Java kostenlos für Ihr **Windows**-Betriebssystem herunterladen. Es ist empfohlen, das Paket **Windows Offline** herunterzuladen. Starten Sie die heruntergeladene EXE-Datei mit einem Doppelklick um den Installationsvorgang zu beginnen.
+Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie Oracle Java kostenlos für Ihr **Windows**-Betriebssystem herunterladen. Es ist empfohlen, das Paket **Windows Offline** herunterzuladen. Starten Sie die heruntergeladene EXE-Datei mit einem Doppelklick um die Installation zu beginnen.
 
 > **Hinweis**
 >
@@ -34,7 +34,7 @@ Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie 
 
 ### Java unter Mac OS X installieren {#intro_java_install_mac}
 
-Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie Oracle Java kostenlos für Ihr **Mac**-Betriebssystem herunterladen. Nachdem die Datei heruntergeladen wurde, öffnet sich in den meisten Fällen automatisch ein Fenster mit dem Inhalt der DMG-Datei. Andernfalls können Sie per Doppelklick die DMG-Datei als Laufwerk einbinden und aus dem Finder heraus die Installationsroutine starten.
+Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie Oracle Java kostenlos für Ihr **Mac**-Betriebssystem herunterladen. Nachdem die Datei heruntergeladen wurde, öffnet sich in den meisten Fällen automatisch ein Fenster mit dem Inhalt der DMG-Datei. Andernfalls können Sie per Doppelklick die DMG-Datei als Laufwerk einbinden und aus dem Finder heraus die Installation starten.
 
 > **Hinweis**
 >
