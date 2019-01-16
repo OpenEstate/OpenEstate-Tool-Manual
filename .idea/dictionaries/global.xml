@@ -8,11 +8,14 @@
       <w>benutzerkonto</w>
       <w>eckdaten</w>
       <w>einzelplatz</w>
+      <w>erscheinungsbild</w>
       <w>firmendaten</w>
       <w>firmenlogo</w>
+      <w>höflichkeitsform</w>
       <w>immo</w>
       <w>installationsschritte</w>
       <w>linktitle</w>
+      <w>metadaten</w>
       <w>personendaten</w>
       <w>projektassistent</w>
       <w>projektassistenten</w>
@@ -25,6 +28,7 @@
       <w>verbindungsaufbau</w>
       <w>verbindungsdaten</w>
       <w>werkzeugleiste</w>
+      <w>zeilenumbrüche</w>
       <w>zugangsdaten</w>
     </words>
   </dictionary>
