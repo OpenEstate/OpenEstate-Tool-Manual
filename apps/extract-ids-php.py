@@ -1,5 +1,5 @@
 #
-# Extract ID's from available contents.
+# Extract ID's from available contents in PHP format.
 #
 # Copyright 2009-2019 OpenEstate.org.
 #
@@ -21,32 +21,21 @@ import re
 import sys
 
 
-def parse(filePath, basePath):
-    title = '//\n// ID\'s from \'%s\'\n//' % filePath[len(contentDir) + 1:]
+def parse(filePath, contentDir):
+    basePath = '%s.html' % filePath[len(contentDir) + 1:-3]
     with open(filePath, 'r') as myfile:
         data = myfile.read()
         for line in data.split('\n'):
-            if parseLine(line, title):
-                title = None
-    if title is None: print
+            parseLine(line, basePath)
 
 
-def parseLine(line, title):
+def parseLine(line, basePath):
     # print line
     match = re.search('^#{1,3} (.*) \{#([\w]*)\}$', line)
     if match:
-        if title:
-            print
-            print title
-            print
-
         title = match.group(1)
         key = match.group(2)
-        print '/** %s */' % title.strip()
-        # print 'String %s = "%s";' % (key.upper(), key)
-        print  '%s,' % key.upper()
-        return True
-    return False
+        print '\'%s\' => \'%s\',' % (key, basePath)
 
 
 if len(sys.argv) < 2:
@@ -54,16 +43,20 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 contentDir = os.path.abspath(sys.argv[1])
-print 'Searching for markdown files in \'%s\'...' % contentDir
+# print 'Searching for markdown files in \'%s\'...' % contentDir
+print '<?php'
+print 'return array('
 
-pathes = []
+paths = []
 for root, dirs, files in os.walk(contentDir):
     path = root.split(os.sep)
     # print((len(path) - 1) * '---', os.path.basename(root))
     for file in files:
         if not file.endswith('.md'): continue
-        pathes.append(os.path.join(root, file))
+        paths.append(os.path.join(root, file))
 
-pathes.sort()
-for path in pathes:
+paths.sort()
+for path in paths:
     parse(path, contentDir)
+
+print ');'

@@ -21,5 +21,5 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source "$DIR/virtualenv/bin/activate"
-python "$DIR/extract-ids.py" "$@"
+python "$DIR/extract-ids-java.py" "$@"
 deactivate
