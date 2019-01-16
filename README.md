@@ -34,6 +34,20 @@ Follow the [instructions provided by *Pandoc*](https://pandoc.org/installing.htm
 
 You also need to install [*Python*](https://www.python.org/) and the [*virtualenv*](https://virtualenv.pypa.io/) package on your system. Most *Linux* distributions provide packages for both dependencies. Afterwards you can create a virtual environment for *Python* by executing the `app/init-virtualenv.sh` script.
 
+On *Debian GNU/Linux* you can install the dependencies via:
+
+```
+apt install \
+  virtualenv \
+  pandoc \
+  texlive-latex-base \
+  texlive-lang-german \
+  texlive-lang-english \
+  texlive-fonts-recommended \
+  texlive-latex-recommended \
+  texlive-latex-extra
+```
+
 After all dependencies are installed you can use the following scripts on your *Linux* system in order to generate the manual in other target formats:
 
 -   The `book-english.sh` script generates the manual into the `book/en` folder.
