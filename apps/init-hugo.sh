@@ -18,9 +18,9 @@
 #
 
 #
-# Hugo für Linux & Windows
+# Hugo downloads for Linux & Windows
 #
-# bereitgestellt von
+# provided by
 # https://github.com/gohugoio/hugo/releases
 #
 
@@ -30,7 +30,7 @@ HUGO_DOWNLOAD_WINDOWS="https://github.com/gohugoio/hugo/releases/download/v$HUGO
 
 
 #
-# Start der Verarbeitung
+# Start initialization…
 #
 
 set -e
@@ -41,29 +41,29 @@ TEMP_DIR="$DIR/downloads"
 mkdir -p "$TEMP_DIR"
 
 TEMP_HUGO_LINUX="$TEMP_DIR/hugo-${HUGO_VERSION}-linux.tar.gz"
-if [ ! -f "$TEMP_HUGO_LINUX" ]; then
+if [[ ! -f "$TEMP_HUGO_LINUX" ]]; then
   echo ""
-  echo "Downloading Hugo ${HUGO_VERSION} for Linux …"
+  echo "Downloading Hugo ${HUGO_VERSION} for Linux…"
   wget -O "$TEMP_HUGO_LINUX" "$HUGO_DOWNLOAD_LINUX"
 fi
 
 TEMP_HUGO_WINDOWS="$TEMP_DIR/hugo-${HUGO_VERSION}-windows.zip"
-if [ ! -f "$TEMP_HUGO_WINDOWS" ]; then
+if [[ ! -f "$TEMP_HUGO_WINDOWS" ]]; then
   echo ""
-  echo "Downloading Hugo ${HUGO_VERSION} for Windows …"
+  echo "Downloading Hugo ${HUGO_VERSION} for Windows…"
   wget -O "$TEMP_HUGO_WINDOWS" "$HUGO_DOWNLOAD_WINDOWS"
 fi
 
 echo ""
-echo "Extracting Linux software …"
+echo "Extracting Hugo for Linux…"
 LINUX_DIR="$DIR/linux"
 rm -Rf "$LINUX_DIR"
 mkdir -p "${LINUX_DIR}/bin"
-tar xvfz "$TEMP_HUGO_LINUX" -C "${LINUX_DIR}/bin" "hugo"
+tar xfz "$TEMP_HUGO_LINUX" -C "${LINUX_DIR}/bin" "hugo"
 find "${LINUX_DIR}/bin" -type f -exec chmod ugo+x {} \;
 
 echo ""
-echo "Extracting Windows software …"
+echo "Extracting Hugo for Windows…"
 WINDOWS_DIR="$DIR/windows"
 rm -Rf "$WINDOWS_DIR"
 mkdir -p "$WINDOWS_DIR"
@@ -71,9 +71,14 @@ unzip "$TEMP_HUGO_WINDOWS" "hugo.exe" -d "${WINDOWS_DIR}/bin"
 find "$WINDOWS_DIR" -type f -exec chmod ugo-x {} \;
 
 echo ""
-echo "Extracting licenses …"
+echo "Extracting licenses…"
 LICENSES_DIR="$DIR/licenses"
 rm -Rf "$LICENSES_DIR"
 mkdir -p "$LICENSES_DIR"
 unzip -p "$TEMP_HUGO_WINDOWS" "LICENSE" > "${LICENSES_DIR}/hugo.txt"
-unix2dos "${LICENSES_DIR}/hugo.txt"
+if [[ -x "unix2dos" ]]; then
+    unix2dos "${LICENSES_DIR}/hugo.txt"
+fi
+
+echo ""
+echo "Hugo was successfully downloaded."

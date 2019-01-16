@@ -30,7 +30,7 @@ set PUBLIC_DIR="%DIR%\public"
 
 echo.
 echo ----------------------------------------
-echo  Erzeugung der Webseite.
+echo  Creating the website...
 echo ----------------------------------------
 echo.
 
@@ -42,9 +42,7 @@ cmd /c "apps\hugo.bat %OPTIONS%"
 
 echo.
 echo ----------------------------------------
-echo  Die Webseite wurde erzeugt.
-echo.
-echo  Im Verzeichnis:
+echo  The website was created at:
 echo  %PUBLIC_DIR%
 echo ----------------------------------------
 echo.

@@ -26,7 +26,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo ""
 echo "----------------------------------------"
-echo " Test-Server für die Webseite starten."
+echo " Starting Hugo server…"
 echo "----------------------------------------"
 
 cd "$DIR"
@@ -34,6 +34,6 @@ cd "$DIR"
 
 echo ""
 echo "----------------------------------------"
-echo " Der Test-Server wurde beendet."
+echo " Hugo server was stopped."
 echo "----------------------------------------"
 echo ""

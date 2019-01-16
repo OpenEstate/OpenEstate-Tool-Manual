@@ -31,7 +31,7 @@ set DIR=%DIR:~0,-1%
 
 echo.
 echo ----------------------------------------
-echo  Den Test-Server starten.
+echo  Starting Hugo server.
 echo ----------------------------------------
 echo.
 
@@ -40,7 +40,7 @@ cmd /c "apps\hugo.bat server %OPTIONS%"
 
 echo.
 echo ----------------------------------------
-echo  Der Test-Server wurde beendet.
+echo  Hugo server was stopped.
 echo ----------------------------------------
 echo.
 

@@ -22,16 +22,15 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NAME="$( basename "$DIR" )"
 
-# Anwendungen ggf. herunterladen.
 #"$DIR/apps/init.sh"
 
-# Leeres Ausgabeverzeichnis erzeugen.
+# Create empty bundle directory.
 BUNDLE_DIR="$DIR/bundle"
 rm -Rf "$BUNDLE_DIR"
 mkdir -p "$BUNDLE_DIR"
 cd "$DIR/.."
 
-# ZIP-Archiv erzeugen.
+# Create a ZIP archive.
 zip -9 -r \
   --exclude=$NAME/.git/\* \
   --exclude=$NAME/.gitattributes \
@@ -46,7 +45,7 @@ zip -9 -r \
   --exclude=$NAME/README.md \
   "$BUNDLE_DIR/$NAME.zip" "$NAME"
 
-# TAR.GZ-Archiv erzeugen.
+# Create a TAR.GZ archive.
 tar cvfz "$BUNDLE_DIR/$NAME.tar.gz" \
   --exclude=$NAME/.git \
   --exclude=$NAME/.gitattributes \
