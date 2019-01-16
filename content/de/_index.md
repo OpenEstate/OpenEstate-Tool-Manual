@@ -21,7 +21,7 @@ Die genauen Bedingungen zur Nutzung dieses Handbuchs können Sie der Lizenz [CC-
 
 > **Hinweis**
 >
-> Die Rohdaten dieses Handbuchs sowie die Skripte zur Umwandlung in verschiedene Formate (HTML, PDF, ePub, etc.) können bei [GitHub](https://github.com/OpenEstate/OpenEstate-ImmoTool-Manual/) eingesehen werden. Über diese Plattform können darüber hinaus Änderungen am Handbuch diskutiert und eingebracht werden.
+> Die Rohdaten dieses Handbuchs sowie die Skripte zur Umwandlung in verschiedene Formate (HTML, PDF, ePub, etc.) können bei [GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual/) eingesehen werden. Über diese Plattform können darüber hinaus Änderungen am Handbuch diskutiert und eingebracht werden.
 
 
 ## Dieses Handbuch ist unvollständig
@@ -33,4 +33,4 @@ Im Laufe der weiteren Entwicklung für die 1.0-Version soll das Handbuch vervoll
 
 ## Beteiligung erwünscht
 
-Wenn Sie Anmerkungen, Hinweise oder Verbesserungsvorschläge zu diesem Handbuch haben, können Sie diese gern via [GitHub](https://github.com/OpenEstate/OpenEstate-ImmoTool-Manual/) oder [Ticketsystem](http://dev.openestate.org/tickets/) einbringen.
+Wenn Sie Anmerkungen, Hinweise oder Verbesserungsvorschläge zu diesem Handbuch haben, können Sie diese gern via [GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual/) oder [Ticketsystem](http://dev.openestate.org/tickets/) einbringen.

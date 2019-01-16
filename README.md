@@ -89,5 +89,5 @@ The provided development scripts (*Bash*, *Batch* & *Python* files) and *JavaScr
 Further information
 -------------------
 
--   [*OpenEstate-Manual* at GitHub](https://github.com/OpenEstate/OpenEstate-Manual)
--   [Releases of *OpenEstate-Manual*](https://github.com/OpenEstate/OpenEstate-Manual/releases)
+-   [*OpenEstate-Tool-Manual* at GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual)
+-   [Releases of *OpenEstate-Tool-Manual*](https://github.com/OpenEstate/OpenEstate-Tool-Manual/releases)

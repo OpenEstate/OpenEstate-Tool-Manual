@@ -46,6 +46,4 @@ Der ImmoTool-Server steht unter einer [Open Source Lizenz](http://de.wikipedia.o
 
 > **Hinweis**
 >
-> Der Quelltext des vom OpenEstate-Projekt zusammengestellten ImmoTool-Servers kann bei [GitHub](https://github.com/OpenEstate/OpenEstate-ImmoTool-Server/) eingesehen werden.
-
-
+> Der Quelltext des vom OpenEstate-Projekt zusammengestellten ImmoTool-Servers kann bei [GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Server/) eingesehen werden.
