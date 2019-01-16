@@ -1,0 +1,23 @@
+{{- if or .IsHome .IsSection (and .IsPage (not (strings.HasSuffix .URL "/search.html"))) -}}
+<div id="info" class="container clearfix text-muted">
+    <hr>
+    <div>
+        <div class="text-nowrap">
+        {{- $fullUrl := "" -}}
+        {{- if .IsHome -}}
+            {{- $fullUrl = .Site.BaseURL -}}
+        {{- else -}}
+            {{- $fullUrl = printf "%s%s" .Site.BaseURL ( substr .URL 4 ) -}}
+        {{- end -}}
+        <i class="fas fa-fw fa-link"></i>
+        <a href="{{ $fullUrl }}" target="_blank">{{ $fullUrl }}</a>
+    </div>
+    {{- if .Lastmod -}}
+        <div class="text-right text-nowrap">
+            <i class="fas fa-fw fa-info-circle"></i>
+            <span>{{- i18n "last modified at" -}}&nbsp;{{- .Lastmod.Format .Site.Params.dateTimeFormat -}}</span>
+        </div>
+    {{- end -}}
+    </div>
+</div>
+{{- end -}}

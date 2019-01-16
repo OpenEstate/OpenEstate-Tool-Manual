@@ -1,0 +1,21 @@
+{{ define "metaTitle" }}{{ .Title }} ({{ .Site.Title }} {{ .Site.Params.version }}){{ end }}
+{{ define "metaDescription" }}{{- .Description -}}{{ end }}
+{{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
+{{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}
+
+{{ define "content" }}
+<h1 class="d-none d-print-block">{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
+<hr class="d-none d-print-block">
+<h2>{{ .Title }}</h2>
+<div class="clearfix">
+{{- if .Content -}}{{- .Content -}}<hr>{{- end -}}
+    <ul>
+    {{- $p := . -}}
+    {{- range where .Site.Pages ".Parent" "!=" nil -}}
+      {{- if eq $p.UniqueID .Parent.UniqueID -}}
+          <li><a href="{{.URL}}">{{.Title}}</a><!--({{ .Weight }})--></li>
+      {{- end -}}
+    {{- end -}}
+    </ul>
+</div>
+{{ end }}

@@ -1,0 +1,155 @@
+/**
+ * Stylesheet for the users manual in ePub format.
+ * Copyright 2009-2019 OpenEstate.org.
+ *
+ * Licensed under the terms of
+ * Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ * see https://creativecommons.org/licenses/by-nc-sa/4.0/deed
+ */
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/DejaVuSerif.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/DejaVuSerif-Bold.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: italic;
+  font-weight: normal;
+  src: url(../fonts/DejaVuSerif-Italic.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  font-style: italic;
+  font-weight: bold;
+  src: url(../fonts/DejaVuSerif-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/DejaVuSansMono.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  font-style: normal;
+  font-weight: bold;
+  src: url(../fonts/DejaVuSansMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  font-style: italic;
+  font-weight: normal;
+  src: url(../fonts/DejaVuSansMono-Italic.ttf);
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  font-style: italic;
+  font-weight: bold;
+  src: url(../fonts/DejaVuSansMono-BoldItalic.ttf);
+}
+
+body {
+  margin: 5%;
+  text-align: justify;
+  font-size: medium;
+  font-family: DejaVuSerif;
+}
+
+pre, code {
+  font-family: DejaVuSansMono;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+h1.title { }
+
+h2.author { }
+
+h3.date { }
+
+nav#toc ol,
+nav#landmarks ol {
+  padding: 0;
+  margin-left: 1em;
+}
+
+nav#toc ol li,
+nav#landmarks ol li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.footnote-ref {
+  vertical-align: super;
+}
+
+em, em em em, em em em em em {
+  font-style: italic;
+}
+
+em em, em em em em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: underline;
+}
+
+a[href^="http://"]:after,
+a[href^="https://"]:after{
+  /*content: " (EXTERNAL)"*/
+  content: "\2934";
+  font-family: DejaVuSerif;
+}
+
+figure {
+}
+
+figure img {
+  display: block;
+  border: 1px solid black;
+}
+
+figure figcaption {
+  display: block;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+blockquote p {
+}

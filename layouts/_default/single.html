@@ -1,0 +1,27 @@
+{{ define "metaTitle" }}{{ .Title }} ({{ .Site.Title }} {{ .Site.Params.version }}){{ end }}
+{{ define "metaDescription" }}{{- .Description -}}{{ end }}
+{{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
+{{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}
+
+{{- define "head" -}}
+{{ partialCached "include-scrolltofixed.html" . -}}
+{{ partialCached "include-scrollspy.html" . -}}
+{{ partialCached "include-website-toc.html" . -}}
+{{- end -}}
+
+{{ define "content" }}
+<h1 class="d-none d-print-block">{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
+<hr class="d-none d-print-block">
+<div class="row">
+    <div id="content-col" class="col-lg-8 col-xl-9 order-last order-lg-first clearfix hyphens text-justify">
+        {{- .Content -}}
+    </div>
+    <div id="toc" class="col-lg-4 col-xl-3 order-first order-lg-last d-print-none">
+        <div id="toc-card" class="card mb-3">
+            <div class="card-header">{{ i18n "Table of contents" }}</div>
+            <div id="toc-nav" class="list-group" style="font-size:0.9em;">
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

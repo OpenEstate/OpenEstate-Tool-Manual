@@ -1,0 +1,47 @@
+defaultContentLanguage: en
+enableRobotsTXT: false
+relativeURLs: true
+uglyURLs: true
+enableGitInfo: true
+metaDataFormat: yaml
+
+params:
+  version: 1.0-SNAPSHOT
+
+languages:
+  en:
+    title: Manual for OpenEstate-ImmoTool
+    baseURL: https://manual.openestate.org/en/
+    contentDir: content/en
+    languageName: English
+    weight: 10
+    params:
+      dateTimeFormat: "1/2/2006 at 3:4 PM (MST)"
+
+  de:
+    title: Handbuch für OpenEstate-ImmoTool
+    baseURL: https://manual.openestate.org/de/
+    contentDir: content/de
+    languageName: Deutsch
+    weight: 20
+    params:
+      dateTimeFormat: "2.1.2006 um 15:4 Uhr (MST)"
+
+blackfriday:
+  taskLists: false
+  smartypants: false
+  angledQuotes: true
+  smartDashes: true
+
+disableKinds:
+- sitemap
+- RSS
+- taxonomy
+- taxonomyTerm
+
+outputs:
+  home:
+  - HTML
+  - JSON
+  page:
+  - HTML

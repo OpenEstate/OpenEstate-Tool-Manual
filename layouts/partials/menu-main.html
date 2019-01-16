@@ -1,0 +1,38 @@
+{{- $p := . -}}
+<ul class="navbar-nav mr-auto">
+    {{- range .Site.Menus.main -}}
+        {{- $active := "" -}}
+        {{- if or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) -}}{{ $active = "active" }}{{- end -}}
+        {{- if .HasChildren -}}
+            <li class="nav-item dropdown {{ $active }}">
+                <a href="{{ .URL }}" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ .Name }}</a>
+                <ul class="dropdown-menu">
+                {{- range .Children -}}
+                    {{- template "menu-main-entry" (dict "currentPage" $p "menuItem" .) -}}
+                {{- end -}}
+                </ul>
+            </li>
+        {{- else -}}
+            <li class="nav-item {{ $active }}">
+                <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+            </li>
+        {{- end -}}
+    {{- end -}}
+</ul>
+
+{{- define "menu-main-entry" -}}
+    {{- $p := .currentPage -}}
+    {{- $m := .menuItem -}}
+    {{- $active := "" -}}
+    {{- if or ($p.IsMenuCurrent "main" $m) ($p.HasMenuCurrent "main" $m) -}}{{ $active = "active" }}{{- end -}}
+    <li class="{{ if $m.HasChildren }}dropdown{{ end }}">
+        <a class="dropdown-item {{ $active }}" href="{{ $m.URL }}">{{ $m.Name }}</a>
+        {{- if $m.HasChildren -}}
+            <ul class="dropdown-menu">
+            {{- range $m.Children -}}
+                {{- template "menu-main-entry" (dict "currentPage" $p "menuItem" .) -}}
+            {{- end -}}
+            </ul>
+        {{- end -}}
+    </li>
+{{- end -}}

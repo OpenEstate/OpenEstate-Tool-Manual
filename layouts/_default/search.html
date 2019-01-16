@@ -1,0 +1,41 @@
+{{ define "metaTitle" }}{{ .Title }} ({{ .Site.Title }} {{ .Site.Params.version }}){{ end }}
+{{ define "metaDescription" }}{{- .Description -}}{{ end }}
+{{ define "metaKeywords" }}{{- delimit .Keywords ", " -}}{{ end }}
+{{ define "metaRobots" }}{{- if .Params.robots -}}{{- delimit .Params.robots ", " -}}{{ else }}index, follow{{- end -}}{{ end }}
+
+{{ define "head" }}
+{{ partialCached "include-lunr.html" . -}}
+{{- partialCached "include-url.html" . -}}
+<script src="{{ "js/website-search.js" | relURL }}?v={{ now.Format "20060102150405" }}" defer onload="installSearch('index.json');"></script>
+{{ end }}
+
+{{ define "content" }}
+<h1 class="d-none d-print-block">{{- .Site.Title -}} <small class="text-muted">&nbsp;{{ .Site.Params.version }}</small></h1>
+<hr class="d-none d-print-block">
+<h2>{{ .Title }}</h2>
+<hr>
+<div id="content" class="clearfix">
+  <div id="search-empty" class="alert alert-warning" role="alert" style="display:none;">
+    <i class="fas fa-fw fa-lg fa-exclamation-triangle"></i>
+    <span>&nbsp;{{ i18n "You did not enter a search term." }}</span>
+  </div>
+
+  <div id="search-progress" class="alert alert-info" role="alert" style="display:none;">
+    <i class="fas fa-fw fa-lg fa-spinner fa-spin"></i>
+    <span>&nbsp;{{ i18n "The search is running. Please wait for a moment…" }}</span>
+  </div>
+
+  <div id="search-error" class="alert alert-danger" role="alert" style="display:none;">
+    <i class="fas fa-fw fa-lg fa-exclamation-triangle"></i>
+    <span>&nbsp;{{ safeHTML (replace (i18n "An error occurred during the search for the term {0}.") "{0}" "<q class=\"search-term font-weight-bold\"></q>") }}</span>
+  </div>
+
+  <div id="search-result" style="display:none;">
+    <div class="alert alert-success" role="alert">
+      <i class="fas fa-fw fa-lg fa-thumbs-up"></i>
+      <span>&nbsp;{{ safeHTML (replace (replace (i18n "{0} results were found for your search term {1}.") "{0}" "<span id=\"search-result-count\" class=\"font-weight-bold\"></span>") "{1}" "<q class=\"search-term font-weight-bold\"></q>") }}</span>
+    </div>
+    <ul id="search-result-container"></ul>
+  </div>
+</div>
+{{ end }}

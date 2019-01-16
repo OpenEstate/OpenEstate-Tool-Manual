@@ -1,0 +1,32 @@
+<nav aria-label="breadcrumb" class="container d-print-none">
+    <ol class="breadcrumb">
+        {{- $p := . -}}
+        {{- range where .Site.Pages ".Parent" "==" nil -}}
+            {{- if eq .UniqueID $p.UniqueID -}}
+                <li class="breadcrumb-item active" aria-current="page">{{ .LinkTitle }}</li>
+            {{- else -}}
+                <li class="breadcrumb-item"><a href="{{ .URL }}index.html">{{ .LinkTitle }}</a></li>
+            {{- end -}}
+        {{- end -}}
+        {{- range .Site.Menus.main -}}
+            {{- if or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) -}}
+                {{- template "menu-breadcrumbs-entry" (dict "currentPage" $p "menuItem" .) -}}
+            {{- end -}}
+        {{- end -}}
+    </ol>
+</nav>
+
+{{- define "menu-breadcrumbs-entry" -}}
+    {{- $p := .currentPage -}}
+    {{- $m := .menuItem -}}
+    {{- if $p.IsMenuCurrent "main" $m -}}
+        <li class="breadcrumb-item active" aria-current="page">{{ $m.Name }}</li>
+    {{- else if $p.HasMenuCurrent "main" $m -}}
+        <li class="breadcrumb-item"><a href="{{ $m.URL }}">{{ $m.Name }}</a></li>
+        {{- range $m.Children -}}
+            {{- if or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) -}}
+                {{- template "menu-breadcrumbs-entry" (dict "currentPage" $p "menuItem" .) -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}

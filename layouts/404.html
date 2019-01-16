@@ -1,0 +1,14 @@
+{{ define "metaTitle" }}Seite nicht gefunden&nbsp;&bull;&nbsp;{{- .Site.Title -}}{{ end }}
+{{ define "metaAuthor" }}{{- .Params.author -}}{{ end }}
+{{ define "metaDescription" }}{{ end }}
+{{ define "metaKeywords" }}{{ end }}
+{{ define "metaRobots" }}noindex, nofollow{{ end }}
+
+{{ define "title" }}Seite nicht gefunden{{ end }}
+{{ define "content" }}
+<h2>{{ i18n "Page not found" }}</h2>
+<hr>
+<div id="content" class="clearfix">
+    {{ i18n "Your requested page was not found. Maybe the link you've clicked is not valid anymore." }}
+</div>
+{{ end }}
