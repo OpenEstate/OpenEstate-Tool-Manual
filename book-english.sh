@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
+NAME="OpenEstate-ImmoTool-Manual"
 LANG="en"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -27,24 +28,30 @@ mkdir "$DIR/book/$LANG"
 
 cd "$DIR/content/$LANG"
 
-echo "Merging files into $DIR/book/$LANG.md…"
+echo "Merging Markdown files…"
 "$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$DIR/book/$LANG.md"
-sed -i -e "s/\${date}/$(date "+%m\/%d\/%Y")/g" "$DIR/book/$LANG.md"
+sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$DIR/book/$LANG.md"
 #sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
 
-echo "Creating $DIR/book/$LANG/book.epub…"
-pandoc -o "$DIR/book/$LANG/book.epub" --epub-embed-font "$DIR/share/fonts/*.ttf" --css "$DIR/share/epub.css" "$DIR/book/$LANG.md"
+echo "Creating $NAME.$LANG.epub…"
+pandoc -o "$DIR/book/$LANG/$NAME.$LANG.epub" \
+  --epub-embed-font "$DIR/share/fonts/*.ttf" \
+  --css "$DIR/share/epub.css" \
+  "$DIR/book/$LANG.md"
 
-echo "Creating $DIR/book/$LANG/book.pdf…"
-pandoc -o "$DIR/book/$LANG/book.pdf" "$DIR/book/$LANG.md"
-#pandoc -o "$DIR/book/$LANG/book.pdf" --pdf-engine=xelatex -V CJKmainfont="DejaVu Sans" "$DIR/book/$LANG.md"
-#pandoc -o "$DIR/book/$LANG/book.pdf" --pdf-engine=xelatex -V mainfont="DejaVu Serif" "$DIR/book/$LANG.md"
+echo "Creating $NAME.$LANG.pdf…"
+pandoc -o "$DIR/book/$LANG/$NAME.$LANG.pdf" \
+  "$DIR/book/$LANG.md"
 
-echo "Creating $DIR/book/$LANG/book.odt…"
-pandoc -o "$DIR/book/$LANG/book.odt" "$DIR/book/$LANG.md"
+echo "Creating $NAME.$LANG.odt…"
+pandoc -o "$DIR/book/$LANG/$NAME.$LANG.odt" \
+  "$DIR/book/$LANG.md"
 
-echo "Creating $DIR/book/$LANG/book.docx…"
-pandoc -o "$DIR/book/$LANG/book.docx" "$DIR/book/$LANG.md"
+echo "Creating $NAME.$LANG.docx…"
+pandoc -o "$DIR/book/$LANG/$NAME.$LANG.docx" \
+  "$DIR/book/$LANG.md"
 
-echo "Creating $DIR/book/$LANG/book.html…"
-pandoc --self-contained -o "$DIR/book/$LANG/book.html" "$DIR/book/$LANG.md"
+echo "Creating $NAME.$LANG.html…"
+pandoc -o "$DIR/book/$LANG/$NAME.$LANG.html" \
+  --self-contained \
+  "$DIR/book/$LANG.md"
