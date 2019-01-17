@@ -66,7 +66,7 @@ Open the Markdown files (ending with `.md`) in your preferred text editor and ma
 
 ### Notes about the Markdown format, standards & conventions
 
-In order to provide a consistent users manual we've established some standards and conventions. Please read the following documents before you modify the contents and provide a pull pull request:
+In order to provide a consistent users manual we've established some standards and conventions. Please read the following documents before you modify the contents and provide a pull request:
 
 -   The [`NOTES.en.md`](NOTES.en.md) file contains information & conventions about the English users manual.
 -   The [`NOTES.de.md`](NOTES.de.md) file contains information & conventions about the German users manual.
@@ -105,3 +105,6 @@ Further information
 
 -   [*OpenEstate-Tool-Manual* at GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual)
 -   [Releases of *OpenEstate-Tool-Manual*](https://github.com/OpenEstate/OpenEstate-Tool-Manual/releases)
+-   [*OpenEstate-Tool-Manual* website in English](https://manual.openestate.org/en/)
+-   [*OpenEstate-Tool-Manual* website in German](https://manual.openestate.org/de/)
+-   [Download *OpenEstate-Tool-Manual* in other formats](https://manual.openestate.org/download/)
