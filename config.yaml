@@ -14,6 +14,7 @@ languages:
     weight: 10
     params:
       dateTimeFormat: "1/2/2006 at 3:4 PM (MST)"
+      licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed"
 
   de:
     title: Handbuch für OpenEstate-ImmoTool
@@ -23,6 +24,7 @@ languages:
     weight: 20
     params:
       dateTimeFormat: "2.1.2006 um 15:4 Uhr (MST)"
+      licenseUrl: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de"
 
 blackfriday:
   taskLists: false
