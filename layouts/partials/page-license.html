@@ -1,7 +1,7 @@
 <div id="license" class="container clearfix text-muted">
     <hr>
     <div>
-        <a class="float-left mr-3" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ "/img/license.png" | relURL }}" /></a>
-        {{ safeHTML (replace (i18n "This documentation is licensed under the terms of {0}.") "{0}" "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\">Creative Commons Attribution-NonCommercial 4.0 International License</a>") }}
+        <a class="float-left mr-3" rel="license" href="{{ .Site.Params.licenseUrl }}"><img alt="Creative Commons License" style="border-width:0" src="{{ "/img/license.png" | relURL }}" /></a>
+        {{ safeHTML (replace (replace (i18n "This documentation is licensed under the terms of {0}.") "{0}" "<a rel=\"license\" href=\"{URL}\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License</a>") "{URL}" .Site.Params.licenseUrl) }}
     </div>
 </div>
