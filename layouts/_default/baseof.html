@@ -56,29 +56,32 @@
             </div>
         </form>
         <div class="navbar-text d-block d-md-none p-0"><hr></div>
-        <ul id="nav-download" class="nav navbar-nav" data-sm-skip="true">
+        <ul id="nav-other" class="nav navbar-nav" data-sm-skip="true">
             <li class="nav-item dropdown">
-                <button class="btn btn-outline-success my-2 my-sm-0 ml-md-1" title="{{ i18n "Download the manual." }}" data-toggle="dropdown">
-                    <i class="fa fa-download"></i>
-                    <span class="d-md-none">&nbsp;{{ i18n "Download manual" }}</span>
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-md-1" title="{{ i18n "Show further options." }}" data-toggle="dropdown">
+                    <i class="fas fa-cog"></i>
+                    <span class="d-md-none">&nbsp;{{ i18n "Further options" }}</span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-md-right">
-                    <li class="dropdown-header d-none d-md-block"><i class="fa fa-download"></i>&nbsp;{{ i18n "Download the manual." }}</li>
-                    <li class="dropdown-divider d-none d-md-block"></li>
+                    <li class="dropdown-header"><i class="fa fa-download"></i>&nbsp;{{ i18n "Download manual" }}</li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.pdf" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "PDF" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.pdf" class="dropdown-item">{{ replace (i18n "as {0} file") "{0}" "PDF" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.epub" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "ePub" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.epub" class="dropdown-item">{{ replace (i18n "as {0} file") "{0}" "EPUB" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.odt" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "ODT" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.odt" class="dropdown-item">{{ replace (i18n "as {0} file") "{0}" "ODT" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.docx" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "DOCX" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.docx" class="dropdown-item">{{ replace (i18n "as {0} file") "{0}" "DOCX" }}</a>
                     </li>
                     <li>
-                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.html" class="dropdown-item">{{ replace (i18n "Download as {0} file.") "{0}" "HTML" }}</a>
+                        <a href="/download/OpenEstate-ImmoTool-Manual.{{ .Site.Language.Lang }}.html" class="dropdown-item">{{ replace (i18n "as {0} file") "{0}" "HTML" }}</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="https://github.com/OpenEstate/OpenEstate-Tool-Manual" class="dropdown-item" title="{{ i18n "Visit GitHub project page of this manual." }}"><i class="fab fa-github"></i>&nbsp;{{ i18n "visit GitHub" }}</a>
                     </li>
                 </ul>
             </li>
