@@ -96,7 +96,7 @@ Alle bereits gespeicherten und aktiven Suchanfragen werden in der Selectbox Such
 
 Um eine neue Suchanfrage zu erzeugen, klicken Sie auf den Button mit der Lupe neben der Selectbox für die Suchanfragen. Es öffnet sich daraufhin ein Dialogfenster zur Erstellung einer Suchanfrage.
 
-{{< figure src="realestate_search.jpg" caption="Aktionsmenü in der Immobilienbestand durchsuchen" >}}
+{{< figure src="realestate_search.jpg" caption="Immobilienbestand durchsuchen" >}}
 
 Folgende Angaben können im Formular hinterlegt werden:
 
@@ -122,6 +122,8 @@ Folgende Angaben können im Formular hinterlegt werden:
     Betätigen Sie den Button `Kriterium hinzufügen` um weiteren Kriterien für die Suche zu definieren. Es erscheint dann ein weiteres Feld mit der Bezeichnung `Kriterium wählen. Wenn Sie dieses Feld markieren werden Ihnen weitere Kriterien zu Auswahl gestellt.
     
 Durch betätigen eines roten Kreuzes können Sie ein Kriterium abwählen - es wird immer der letzte Eintrag dieses Kriterium gelöscht - und mit dem grünen Minus einem Kriterium einen weiteren Wert hinzufügen.
+
+Markieren Sie die Checkbox `Suchanfrage dauerhaft speichern.`, wenn diese Suchanfrage dauerhaft fespeicherrt werden soll.
 
 Klicken Sie abschließend auf `Übernehmen` um die Suchanfrage auf dem Immobilienbestand auszuführen. Das Resultat der Suche wird in der Übersicht der Immobilien dargestellt.
 
@@ -349,7 +351,7 @@ Nach dem Import können Sie jedes Foto einzeln durch Anklicken in der Übersicht
 
 2.  Wählen Sie unter `Dateityp` die Art des Bildes - z.B. "Innenansicht" - aus.
 
-3.  Legen Sie unter `Bild veröffentlichen` fest, ob das jeweilige Bild zu Immobilienportalen exportiert oder in Exposés dargestellt werden kann.
+3.  Legen Sie unter `Datei veröffentlichen` fest, ob die jeweilige Datei zu Immobilienportalen exportiert oder in Exposés dargestellt werden darf.
 
 4.  Unter `Aktionen` können Sie mit den rötlichen Pfeiltasten das gewählte Bild horizontal / vertikal spiegeln bzw. nach rechts / links um 90 Grad drehen.
 
@@ -371,7 +373,7 @@ Eine Positionsänderung können Sie auch vornehmen indem Sie das Bild mit der Ma
 
 ##### Fotos & Dateien exportieren {#usage_realestate_manage_form_media_files_export}
 
-Sollten Sie ein Bilder für eine andere Anwendung benötigen, so klicken Sie oberhalb der großen Bild-Vorschau auf `Aktionen` →  `Exportieren`, wählen im erscheinenden Dialogfenster das Ziel aus, vergeben einen Dateinamen und speichern das Bild.
+Sollten Sie ein Bilder für eine andere Anwendung benötigen, so klicken Sie oberhalb der großen Bild-Vorschau auf `Aktionen` →  `Speichern unter`, wählen im erscheinenden Dialogfenster das Ziel aus, vergeben einen Dateinamen und speichern das Bild.
 
 
 ##### Fotos & Dateien austauschen {#usage_realestate_manage_form_media_files_change}
@@ -384,51 +386,107 @@ Einzelne Bilder können Sie gegen ein Anderes austauschen indem Sie es markieren
 Das ImmoTool erkennt das Format der importierten Datei und fügt dieses unter `Format` ein. Dieses Feld sollte nur bearbeitet werden, wenn dies zwingend notwendig ist. Markieren Sie hierfür die Checkbox `Format bearbeiten` und tragen die entsprechende Angabe ein. 
 
 
-#### Ansprechpartner {#usage_realestate_manage_form_contact}
+#### Adressen {#usage_realestate_manage_form_addresses}
 
-Im Tab `Adressen` → `Ansprechpartner` kann der Ansprechpartner (Sie oder ein Mitarbeiter) zur Immobilie hinterlegt werden.
+Im Tab `Adressen` können zu der Immobilie beliebig viele Adressen als Kontakte verknüpft werden.
 
-Der Ansprechpartner wird beim Export an Immobilienportale bzw. bei Exposé-Darstellungen für die Interessenten veröffentlicht. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten unter `Extras` → `Anbieterprofil` zurückgegriffen.
+
+##### Ansprechpartner {#usage_realestate_manage_form_contact}
+
+Im Tab `Adressen` → `Ansprechpartner` kann der Ansprechpartner (Sie oder ein Mitarbeiter) zur Immobilie hinterlegt werden. Der Ansprechpartner wird beim Export an Immobilienportale bzw. bei Exposé-Darstellungen für die Interessenten veröffentlicht. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten unter `Extras` → `Anbieterprofil` zurückgegriffen.
 
 {{< figure src="realestate_form_contact.jpg" caption="Kontaktperson zur Immobilie zuweisen" >}}
 
 
 ##### Einen Ansprechpartner zuweisen  {#usage_realestate_manage_form_contact_select}
 
-Markieren Sie das Optionsfeld `Ansprechpartner auswählen`. Im daneben stehenden Auswahlfeld kann der gewünschte Ansprechpartner ausgewählt werden. Die Daten des gewählten Ansprechpartners werden im darunter stehenden Formular angezeigt und können hier bearbeitet werden.
+Wählen Sie in der Selectbox `Ansprechpartner` die Option `Ansprechpartner auswählen`. Im daneben stehenden Auswahlfeld kann der gewünschte Ansprechpartner ausgewählt werden. Die Daten des gewählten Ansprechpartners werden im darunter stehenden Formular angezeigt und können hier bearbeitet werden.
 
 
 ##### Einen neuen Ansprechpartner erfassen {#usage_realestate_manage_form_contact_add}
 
-Markieren Sie das Optionsfeld `neuer Ansprechpartner`. Im darunter stehenden Formular können die Daten des neuen Ansprechpartners eingegeben werden. Beim Speichern der Immobilie wird auch der hier eventuell neu angelegte Ansprechpartner gespeichert. 
+Wählen Sie in der Selectbox `Ansprechpartner` die Option `neuer Ansprechpartner`. Im darunter stehenden Formular können die Daten des neuen Ansprechpartners eingegeben werden.  
 
 
 ##### Keinen Ansprechpartner angeben {#usage_realestate_manage_form_contact_nobody}
 
-Markieren Sie das Optionsfeld `Keinen Ansprechpartner verwenden`. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten zurückgegriffen. `Extras` → `Anbieterprofil`
+Wählen Sie in der Selectbox `Ansprechpartner` die Option `Keinen Ansprechpartner`. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten zurückgegriffen. `Extras` → `Anbieterprofil`
 
 > **Hinweis**
 >
 > Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei einem neu angelegte Ansprechpartner dauerhaft gespeichert. 
 
 
-#### Adressen {#usage_realestate_manage_form_addresses}
+##### Vermittlungsauftrag {#usage_realestate_manage_form_owner}
+
+Im Tab `Adressen` → `Vermittlungsauftrag` kann der Eigentümer der Immobilie hinterlegt werden.
+
+{{< figure src="realestate_form_owner.jpg" caption="Eigentümer zur Immobilie zuweisen" >}}
+
+
+##### Einen Vermittlungsauftrag zuweisen  {#usage_realestate_manage_form_owner_select}
+
+Wählen Sie in der Selectbox `Adresse` die Option `Adresse wählen`. In der daneben stehenden Selectbox wählen Sie das Adressbuch, in welchem sich die Adresse befindet. Schreiben Sie den Namen des Eigentümers in das rechts befindliche Suchfeld. Sobald eine oder mehrere Namen angezeigt werden, wählen Sie den gewünschten aus. Die Daten des gewählten Eigentümers werden im darunter stehenden Formular angezeigt und können hier ggf. bearbeitet werden.
+
+
+##### Einen neuen Vermittlungsauftrag erfassen {#usage_realestate_manage_form_owner_add}
+
+Wählen Sie in der Selectbox `Adresse` die Option `neuer Adresse eingeben`.  In der daneben stehenden Selectbox wählen Sie das Adressbuch, in welchem die Adresse gespeichert werden soll. Im darunter stehenden Formular können die Daten des Eigentümers eingegeben werden.
+
+
+##### Keinen Vermittlungsauftrag angeben {#usage_realestate_manage_form_owner_nobody}
+
+Wählen Sie in der Selectbox `Adresse` die Option `Keinen Adresse`.
+
+> **Hinweis**
+>
+> Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei einem neu angelegte Vermittlungsauftrag dauerhaft gespeichert. 
+
+
+##### Suchaufträge {#usage_realestate_manage_form_seeker}
+
+Im Tab `Adressen` → `Suchaufträge` können Interessenten zur der Immobilie hinterlegt werden.
+
+{{< figure src="realestate_form_seeker.jpg" caption="Suchauftrag zur Immobilie zuweisen" >}}
+
+> **Hinweis**
+>
+> Suchaufträge können mit einer Immobilie nur dann verknüpft werden, wenn diese bereits angelegt wurden.
+
+##### Einen Suchauftrag zuweisen  {#usage_realestate_manage_form_seeker_select}
+
+Wenn ein vorhandener Suchauftrag zu einer Immobilie passt, wird dies unterhalb des Immobilienformulars mit einem Link angezeigt. Beim anklicken des Links gelangen Sie auf das Formular für die Suchaufträge.
+
+Um alle gespeicherten Suchaufträge anzuzeigen, aktivieren Sie die Checkbox `alle Suchaufträge`. Nach klicken auf den Button `Suchen` werden alle Suchaufträge angezeigt. Um die Anzeige einzuschränken wählen Sie einen Status und klicken auf den Button `Suchen`. Nun wird die Anzeige gemäß der gewählten Angaben eingeschränkt.
+
+Um einen Suchauftrag dieser Immobilie zuzuweisen markieren Sie diesen in der Liste und klicken auf den Button `Aktionen` → `Suchauftrag zuweisen` → `passendes Attribut`. Der betreffende Suchauftrag wird nun der Immobilie zugewiesen und erscheint in der Tabelle `Zugewiesene Suchaufträge`.
+
+##### Einen neuen Suchauftrag erfassen {#usage_realestate_manage_form_seeker_add}
+
+> **TODO**
+>
+> Link zu Suchaufträgen erfassen einfügen.
+
+> **Hinweis**
+>
+> Beim Speichern der Immobilie werden die Zuweisungen dauerhaft gespeichert.
+
+
+##### Adressen {#usage_realestate_manage_form_addresses_addresses}
 
 Im Tab `Adressen` können zu der Immobilie beliebig viele Adressen als Kontakte verknüpft werden.
 
-{{< figure src="realestate_form_addresses.jpg" caption="Zugewiesene Adressen einer Immobilie" >}}
+{{< figure src="realestate_form_addresses_addresses.jpg" caption="Zugewiesene Adressen einer Immobilie" >}}
 
 
-##### Bestehende Adresse zuordnen / verknüpfen {#usage_realestate_manage_form_addresses_assign}
+##### Bestehende Adresse zuweisen {#usage_realestate_manage_form_addresses_addresses_assign}
 
-Sollte die gewünschte Adresse bereits im Adressbuch verfügbar sein klicken Sie auf `Neue Zuordnung` und wählen im sich öffnenden Fenster die Adressgruppe, in welcher sich die Adresse befindet, und anschließend die Adresse selbst. Im Feld `Zuordnung` kann die Art des zugewiesenen Kontakts gewählt werden.
+Sollte die gewünschte Adresse bereits im Adressbuch verfügbar sein klicken Sie auf `Neue Zuweisung` und wählen in der Selectbox unter `Zuweisung hinzufügen` → `Adresse` das Adressbuch, in dem sich die Adresse befindet und geben den Namen in dem Feld daneben ein. 
 
-Nach Betätigung des Button `Übernehmen` wird diese Adresse der Immobilie zugeordnet und erscheint nun in der Tabelle `Bereits zugeordnete Adressen`.
-
-{{< figure src="realestate_form_addresses_assign.jpg" caption="Adressen einer Immobilie zuweisen" >}}
+Nach Betätigung des Button `Übernehmen` wird diese Adresse der Immobilie zugeordnet und erscheint nun in der Tabelle `Zugewiesene Adressen`.
 
 
-##### Adresse anlegen {#usage_realestate_manage_form_addresses_add}
+##### Einen neuen Adresse erfassen  {#usage_realestate_manage_form_addresses_addresses_add}
 
 Ist die gewünschte Adresse noch nicht vorhanden, so klicken Sie auf den Reiter neue Adresse, und belegen die gewünschten Felder mit Einträgen. Danach klicken Sie auf den Button `Adresse zuordnen & speichern` um die Adresse in die Datenbank zu speichern und der Immobilie zuzuordnen.
 
