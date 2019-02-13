@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Content" pattern="file[OpenEstate-Tool-Manual]:content//*" />
+</component>
