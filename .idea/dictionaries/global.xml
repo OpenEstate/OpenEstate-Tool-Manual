@@ -16,6 +16,7 @@
       <w>benutzerkonten</w>
       <w>benutzerkonto</w>
       <w>benutzernamen</w>
+      <w>benutzerverzeichnis</w>
       <w>bilddatei</w>
       <w>bildformate</w>
       <w>blindkopie</w>
@@ -77,7 +78,11 @@
       <w>innenansicht</w>
       <w>installationsdatei</w>
       <w>installationsdateien</w>
+      <w>installationspaket</w>
+      <w>installationspakete</w>
+      <w>installationspaketen</w>
       <w>installationsschritte</w>
+      <w>installationsvorgang</w>
       <w>internetzugang</w>
       <w>javamail</w>
       <w>kalendereintrag</w>
@@ -142,6 +147,7 @@
       <w>openestate</w>
       <w>openimmo</w>
       <w>openindex</w>
+      <w>paketliste</w>
       <w>paketsystem</w>
       <w>pdfreaders</w>
       <w>personendaten</w>
@@ -151,6 +157,8 @@
       <w>postausgang</w>
       <w>posteingang</w>
       <w>posteingangs</w>
+      <w>programmordner</w>
+      <w>programmsymbol</w>
       <w>programmverzeichnis</w>
       <w>projektassistent</w>
       <w>projektassistenten</w>
