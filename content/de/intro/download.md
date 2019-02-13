@@ -12,28 +12,65 @@ menu:
 
 ---
 
-## ImmoTool herunterladen {#intro_download}
-
-Das ImmoTool kann im [öffentlichen Download-Bereich](http://de.openestate.org/downloads/) in verschiedenen Paketen heruntergeladen werden. Ältere Programmversionen können darüber hinaus nach erfolgter kostenloser Anmeldung im [geschützten Anwender-Bereich](http://dev.openestate.org/applications/) heruntergeladen werden.
+## Programme herunterladen {#intro_download}
 
 
-### Pakete für ImmoTool {#intro_download_client}
+### Pakete von der Webseite beziehen {#intro_download_website}
 
-Die Programmdateien von ImmoTool in Version 1.0-beta stehen derzeit als [ZIP-Archiv](http://de.wikipedia.org/wiki/ZIP-Dateiformat) und [TAR.GZ-Archiv](http://de.wikipedia.org/wiki/Tar) zur Verfügung. Beide Archive enthalten
+ImmoTool & ImmoTool-Server können auf der OpenEstate-Webseite in verschiedenen Paketen heruntergeladen werden. Ältere Versionen der Programme sind ebenfalls an dieser Stelle verfügbar.
 
-- sämtliche Programmdateien von ImmoTool,
-- alle derzeit entwickelten Erweiterungen / Add-Ons,
-- alle derzeit vollständig übersetzten Sprachpakete
-- sowie das AdminTool für eventuelle administrative Eingriffe.
+Für beide Programme stehen folgende Pakete im zur Verfügung: 
 
-
-### Pakete für ImmoTool-Server {#intro_download_server}
-
-Neben dem ImmoTool stellen wir ein separates Paket für den ImmoTool-Server bereit. Dieses separate Programm wird nur benötigt, wenn mehrere Mitarbeiter von ihrem Arbeitsplatz aus **gemeinsam auf dem gleichen Datenbestand arbeiten** sollen. Nur in diesem Falle müssen Sie dieses Programm zusätzlich zum ImmoTool herunterladen.
-
-Auch für den ImmoTool-Server steht ein [ZIP-Archiv](http://de.wikipedia.org/wiki/ZIP-Dateiformat) und [TAR.GZ-Archiv](http://de.wikipedia.org/wiki/Tar) zur Verfügung, welches alle relevanten Dateien zum Betrieb der Software enthält.
+-   Für Windows 64bit & 32bit stehen separate **EXE**-Installationsdateien zur Verfügung.
+-   Für macOS steht eine **DMG**-Installationsdatei zur Verfügung.
+-   Für Debian-basierte Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) steht eine **DEB**-Installationsdatei zur Verfügung.
+-   Für andere Linux-Distributionen steht eine **TAR.GZ**-Datei zur Verfügung.
 
 
-> **Hinweis**
+### Pakete aus Debian-Repository beziehen {#intro_download_debian}
+
+Anwender von Debian-basierten Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) können alternativ zum direkten Download auch das [bereitgestellte Repository](https://debian.openestate.org/) in ihr Betriebssystem integrieren. Dies erleichtert die Installation und Aktualisierungen können gemeinsam mit den Betriebssystem-Aktualisierungen installiert werden.
+
+Zur Integration des Repositories ins Betriebssystem ist wie folgt vorzugehen:
+
+1.  PGP-Schlüssel importieren via
+
+    ```bash
+    wget -qO - \
+      https://debian.openestate.org/conf/debian.gpg.key \ 
+      | sudo apt-key add -
+    ```
+
+2.  Folgende Zeile am Ende der Datei `/etc/apt/sources.list` eintragen:
+
+    ```
+    deb [arch=amd64] https://debian.openestate.org/ openestate main
+    ```
+    
+3.  Pakete aktualisieren via:
+
+    ```bash
+    sudo apt update
+    ```
+    
+4.  Danach kann das ImmoTool installiert werden mit dem Befehl:
+
+    ```bash
+    sudo apt install openestate-immotool
+    ```
+    
+    Bzw. der ImmoTool-Server kann installiert werden mit dem Befehl: 
+    
+    ```bash
+    sudo apt install openestate-immoserver
+    ```
+
+---
+
+> **Hinweis:**
 >
-> Verwenden Sie unter **Windows**-Betriebssystemen das [ZIP-Archiv](http://de.wikipedia.org/wiki/ZIP-Dateiformat) - unter **Linux** und **Mac OS X** empfiehlt sich die Verwendung des [TAR.GZ-Archivs](http://de.wikipedia.org/wiki/Tar). Die Betriebssysteme stellen in der Regel bereits Programme bereit um die Archive zu entpacken.
+> Sollte es bei der Paket-Aktualisierung in Schritt 3 zu einer Fehlermeldung kommen, muss ggf. noch das Paket `apt-transport-https` über folgenden Befehl installiert werden:
+>
+> ```bash
+> sudo apt install apt-transport-https
+> ```

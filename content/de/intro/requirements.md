@@ -14,53 +14,48 @@ menu:
 
 ## Systemanforderungen {#intro_requirements}
 
-ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werden. Kurz gefasst ist die einzige Voraussetzung, dass auf einem einigermaßen aktuellen Rechner ein möglichst aktuelles Java (ab Version 6) installiert sein muss.
-
-Etwas konkreter sehen die Systemanforderungen wie folgt aus:
+ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werden solange diese einigermaßen aktuell sind und Java 11 / OpenJDK 11 dafür zur Verfügung steht.
 
 
 ### Anforderungen von ImmoTool {#intro_requirements_client}
 
-Betriebssystem:
-: Windows 8 / 7 / Vista / XP / 2003 / 2000, Linux, MacOS (ab 10.7.3), FreeBSD (?), Solaris (?)
+-   **Betriebssystem:**
+    -   Windows (ab Vista; 64bit & 32bit)
+    -   macOS (ab 10.9)
+    -   Linux (x86-64 bzw. amd64)
+-   **Prozessor:**
+    2 GHZ (je mehr desto besser)
+-   **Arbeitsspeicher:**
+    512 MB werden vom Programm maximal belegt
+-   **Festplattenspeicher:**
+    ca. 150 MB nach Installation; abhängig vom Datenbestand wird weiterer Speicherplatz benötigt
+-   **Internetzugang:**
+    nicht nötig, aber hilfreich
 
-Java:
-: mindestens Oracle Java 6, empfohlen Oracle Java 7 / OpenJDK 7
+---
 
-Prozessor:
-: mindestens 800 MHZ, empfohlen 1,5 GHZ
-
-freier Arbeitsspeicher:
-: mindestens 256 MB, empfohlen 512 MB
-
-freier Festplattenspeicher:
-: mindestens 100 MB, empfohlen 1 GB (abhängig vom Datenbestand)
-
-Internetzugang:
-: nicht nötig, aber hilfreich
+> **Hinweis:**
+>
+> Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})). 
 
 
 ### Anforderungen von ImmoTool-Server {#intro_requirements_server}
 
-Betriebssystem:
-: Windows 8 / 7 / Vista / XP / 2003 / 2000, Linux, MacOS (ab 10.7.3), FreeBSD (?), Solaris (?)
+-   **Betriebssystem:**
+    -   Windows (ab Version 7; 64bit & 32bit)
+    -   macOS (ab Version 10.9)
+    -   Linux (x86-64 bzw. amd64)
+-   **Prozessor:**
+    1 GHZ (je mehr desto besser)
+-   **Arbeitsspeicher:**
+    512 MB werden vom Programm maximal belegt
+-   **Festplattenspeicher:**
+    ca. 150 MB nach Installation; abhängig vom Datenbestand wird weiterer Speicherplatz benötigt
+-   **Internetzugang:**
+    nicht benötigt
 
-Java:
-: mindestens Oracle Java 6, empfohlen Oracle Java 7 / OpenJDK 7
+---
 
-Prozessor:
-: mindestens 800 MHZ, empfohlen 2 GHZ
-
-freier Arbeitsspeicher:
-: mindestens 256 MB empfohlen 1024 MB
-
-freier Festplattenspeicher:
-: mindestens 100 MB, empfohlen 1 GB (abhängig vom Datenbestand)
-
-Internetzugang:
-: nicht nötig
-
-
-> **Hinweis**
+> **Hinweis:**
 >
-> Die Betriebssysteme **FreeBSD** & **Solaris** konnten bis dato nicht getestet werden. Grundsätzlich sollten die Programme aber auch hier funktionieren, wenn ein aktuelles Java installiert werden kann.
+> Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})).

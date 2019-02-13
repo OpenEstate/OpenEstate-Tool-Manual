@@ -17,7 +17,9 @@ menu:
 
 ### Nutzungslizenz für OpenEstate-ImmoTool {#appendix_support_licenses_immotool}
 
-Die folgenden Lizenzbedingungen gelten für die Nutzung von OpenEstate-ImmoTool und OpenEstate-AdminTool.
+Die folgenden Lizenzbedingungen gelten für OpenEstate-ImmoTool.
+
+---
 
 > Zwischen den OpenEstate-Entwicklern (nachfolgend als „Lizenzgeber“ bezeichnet) und dem Lizenznehmer wird folgende Nutzungsvereinbarung abgeschlossen.
 > 
@@ -71,12 +73,14 @@ Die folgenden Lizenzbedingungen gelten für die Nutzung von OpenEstate-ImmoTool 
 > Stand vom 25.05.2018
 
 
-### Nutzungslizenz für OpenEstate-ImmoTool-Server {#appendix_support_licenses_server}
+### Nutzungslizenz für OpenEstate-ImmoServer {#appendix_support_licenses_server}
 
-Der OpenEstate-ImmoTool-Server stehen unter den Bedingungen der [Apache License 2.0](https://apache.org/licenses/LICENSE-2.0) zur Verfügung.
+Der OpenEstate-ImmoServer steht unter den Bedingungen der [Apache License 2.0](https://apache.org/licenses/LICENSE-2.0) zur Verfügung.
 
-> Apache License<br/>
-> Version 2.0, January 2004<br/>
+---
+
+> Apache License \
+> Version 2.0, January 2004 \
 > http://www.apache.org/licenses/
 > 
 > TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
@@ -281,9 +285,11 @@ Der OpenEstate-ImmoTool-Server stehen unter den Bedingungen der [Apache License 
 
 Die Inhalte dieses Handbuchs (Texte & Bilder) stehen unter den Bedingungen der Lizenz [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de) zur Verfügung.
 
+---
+
 > Attribution-NonCommercial 4.0 International
 > 
-> =======================================================================
+> ---
 > 
 > Creative Commons Corporation ("Creative Commons") is not a law firm and
 > does not provide legal services or legal advice. Distribution of
@@ -335,7 +341,7 @@ Die Inhalte dieses Handbuchs (Texte & Bilder) stehen unter den Bedingungen der L
 > for the public: 
 > wiki.creativecommons.org/Considerations_for_licensees
 > 
-> =======================================================================
+> ---
 > 
 > Creative Commons Attribution-NonCommercial 4.0 International Public
 > License
@@ -668,7 +674,7 @@ Die Inhalte dieses Handbuchs (Texte & Bilder) stehen unter den Bedingungen der L
 >    that apply to the Licensor or You, including from the legal
 >    processes of any jurisdiction or authority.
 > 
-> =======================================================================
+> ---
 > 
 > Creative Commons is not a party to its public
 > licenses. Notwithstanding, Creative Commons may elect to apply one of

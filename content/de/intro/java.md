@@ -14,91 +14,54 @@ menu:
 
 ## Java installieren {#intro_java_install}
 
-Java wird sowohl für das ImmoTool als auch für den ImmoTool-Server benötigt und muss vorab auf allen verwendeten Rechnern installiert werden.
+ImmoTool und ImmoTool-Server wurden in der Programmiersprache Java entwickelt. Um die Software nutzen zu können, muss eine Java-Laufzeitumgebung (kurz JRE) vorhanden sein.
 
-> **Hinweis**
+> **Achtung:**
 >
-> Die Programme können entweder mit **Oracle Java** oder **OpenJDK** betrieben werden. Wir raten von der Verwendung anderer Java-Laufzeitumgebungen ab.
-
-Abhängig vom verwendeten Betriebssystem sind unterschiedliche Vorgehensweisen nötig um Java zu installieren.
+> Die Installationspakete von ImmoTool und ImmoTool-Server enthalten bereits die benötigte Java-Laufzeitumgebung. Im Normalfall muss daher Java **nicht** zusätzlich auf dem Rechner installiert werden.
 
 
 ### Java unter Windows installieren {#intro_java_install_windows}
 
-Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie Oracle Java kostenlos für Ihr **Windows**-Betriebssystem herunterladen. Es ist empfohlen, das Paket **Windows Offline** herunterzuladen. Starten Sie die heruntergeladene EXE-Datei mit einem Doppelklick um die Installation zu beginnen.
+In den Installationspaketen für Windows ist Java bereits enthalten. Es ist daher in der Regel **nicht** nötig, die Java-Laufzeitumgebung (JRE) manuell zu installieren. 
 
-> **Hinweis**
->
-> Unter [java.com](http://java.com/de/download/help/windows_offline_download.xml) wird die Installation von Oracle Java unter Windows etwas ausführlicher beschrieben.
+Sollten Sie dennoch Java manuell installieren wollen, so können Sie das JRE-Paket von [AdoptOpenJDK](https://adoptopenjdk.net/) beziehen und [dieser Anleitung](https://adoptopenjdk.net/installation.html?variant=openjdk11&jvmVariant=hotspot) folgen.
 
 
-### Java unter Mac OS X installieren {#intro_java_install_mac}
+### Java unter macOS installieren {#intro_java_install_mac}
 
-Von der Webseite [java.com](http://java.com/de/download/manual.jsp) können Sie Oracle Java kostenlos für Ihr **Mac**-Betriebssystem herunterladen. Nachdem die Datei heruntergeladen wurde, öffnet sich in den meisten Fällen automatisch ein Fenster mit dem Inhalt der DMG-Datei. Andernfalls können Sie per Doppelklick die DMG-Datei als Laufwerk einbinden und aus dem Finder heraus die Installation starten.
+Im Installationspaket für macOS ist Java bereits enthalten. Es ist daher in der Regel **nicht** nötig, die Java-Laufzeitumgebung (JRE) manuell zu installieren.
 
-> **Hinweis**
->
-> Unter [java.com](http://java.com/de/download/help/mac_install.xml) wird die Installation von Oracle Java unter Mac OS X etwas ausführlicher beschrieben.
+Sollten Sie dennoch Java manuell installieren wollen, so können Sie das JRE-Paket von [AdoptOpenJDK](https://adoptopenjdk.net/) beziehen und [dieser Anleitung](https://adoptopenjdk.net/installation.html?variant=openjdk11&jvmVariant=hotspot) folgen.
 
 
 ### Java unter Linux installieren {#intro_java_install_linux}
 
-In der Regel stellen die Distributoren eigene Pakete für OpenJDK 7 zur Verfügung. Es ist ratsam diese Pakete zu installieren, da sich Java auf diesem Wege besser in das Betriebssystem integriert, Aktualisierungen können über das Paketsystem installiert werden und keine weiteren Anpassungen an den Pfaden sind nötig.
+In den Installationspaketen für Linux (x86-64 bzw. amd64) ist Java bereits enthalten. Es ist daher in der Regel **nicht** nötig, die Java-Laufzeitumgebung (JRE) manuell zu installieren. 
+
+Sollten Sie eine andere Architektur als x86-64 (bzw. amd64) nutzen oder aus anderen Gründen ein eigenes Java nutzen wollen, so können Sie entweder
+
+-   das Paket von OpenJDK 11 aus dem Paketsystem Ihrer Linux-Distribution heraus installieren oder
+-   das JRE-Paket von [AdoptOpenJDK](https://adoptopenjdk.net/) beziehen und [dieser Anleitung](https://adoptopenjdk.net/installation.html?variant=openjdk11&jvmVariant=hotspot) folgen.
 
 
-#### OpenJDK 7 unter Debian, Ubuntu, Linux Mint, etc. {#intro_java_install_linux_debian}
+## Eigenes Java verwenden {#intro_java_custom}
 
-Öffnen Sie die Konsole und führen Sie den folgenden Befehl aus:
-
-```
-sudo apt-get install openjdk-7-jre
-```
+Standardmäßig wird beim Programmstart im Programmverzeichnis nach einem Ordner namens `jre` gesucht. In diesem Ordner sollte die Java-Laufzeitumgebung enthalten sein.
 
 
-#### OpenJDK 7 unter Fedora, Oracle Linux, Red Hat Enterprise Linux, etc. {#intro_java_install_linux_fedora}
+### Java von AdoptOpenJDK verwenden {#intro_java_custom_extern}
 
-Öffnen Sie die Konsole und führen Sie den folgenden Befehl aus:
-
-```
-su -c "yum install java-1.7.0-openjdk"
-```
-
-#### OpenJDK 7 unter Arch Linux {#intro_java_install_linux_arch}
-
-Öffnen Sie die Konsole und führen Sie den folgenden Befehl aus:
-
-```
-sudo pacman -S jre7-openjdk
-```
+-   Löschen Sie den Ordner `jre` aus dem Programmverzeichnis von ImmoTool / ImmoTool-Server.
+-   Entpacken Sie das von [AdoptOpenJDK](https://adoptopenjdk.net/) heruntergeladene Archiv.
+-   Kopieren Sie den entpackten Ordner unter dem Namen `jre` ins Programmverzeichnis. 
 
 
-## Java-Installation testen {#intro_java_test}
+### Java aus Linux-Paketsystem verwenden {#intro_java_custom_linux}
 
+-   Löschen Sie den Ordner `jre` aus dem Programmverzeichnis von ImmoTool / ImmoTool-Server.
+-   Installieren Sie das OpenJDK 11 Paket von Ihrer Distribution im Betriebssystem - z.B. via:
 
-### Java per Eingabeaufforderung testen {#intro_java_test_shell}
-
-Öffnen Sie im Betriebssystem die Eingabeaufforderung / die Konsole / das Terminal und führen Sie den folgenden Befehl aus:
-
-```
-java -version
-```
-
-Nach Ausführung des Befehls sollte die Version der Java-Installation wie folgt dargestellt werden:
-
-{{< figure src="java_check_terminal-01.jpg" caption="Ausgabe der Java-Version" >}}
-
-
-### Java per Systemsteuerung testen {#intro_java_test_controlpanel}
-
-Nachdem Java auf Ihrem **Windows**-Betriebssystem installiert wurde, finden Sie in der Systemsteuerung dieses zusätzliche Symbol:
-
-{{< figure src="java_check_windows-01.jpg" caption="Java-Symbol in der Systemsteuerung" >}}
-
-
-Bei Doppelklick auf das Java-Symbol in der Systemsteuerung öffnet sich ein Fenster mit diversen Informationen zur aktuellen Java-Installation:
-
-{{< figure src="java_check_windows-02.jpg" caption="Informationen zur Java-Installation" >}}
-
-Klicken Sie in diesem Fenster auf `Anwendungsinfo...` um ausführlichere Informationen zur aktuell installierten Java-Version dargestellt zu bekommen. Daraufhin öffnet sich das folgende Fenster, aus dem Sie die Version des aktuell installierten Java entnehmen können:
-
-{{< figure src="java_check_windows-03.jpg" caption="Version der Java-Installation" >}}
+    ```bash
+    sudo apt install openjdk-11-jre
+    ```   
