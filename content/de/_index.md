@@ -19,9 +19,9 @@ Dieses Handbuch (sowohl dessen Texte als auch enthaltenes Bildmaterial) wird im 
 
 Die genauen Bedingungen zur Nutzung dieses Handbuchs können Sie der Lizenz [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de) entnehmen. Durch Dritte vorgenommene Änderungen am Handbuch sind ebenfalls unter den Bedingungen dieser Lizenz weiter zu verbreiten.
 
-> **Hinweis**
->
-> Die Rohdaten dieses Handbuchs sowie die Skripte zur Umwandlung in verschiedene Formate (HTML, PDF, ePub, etc.) können bei [GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual/) eingesehen werden. Über diese Plattform können darüber hinaus Änderungen am Handbuch diskutiert und eingebracht werden.
+{{< info >}}
+Die Rohdaten dieses Handbuchs sowie die Skripte zur Umwandlung in verschiedene Formate (HTML, PDF, ePub, etc.) können bei [GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual/) eingesehen werden. Über diese Plattform können darüber hinaus Änderungen am Handbuch diskutiert und eingebracht werden.
+{{< /info >}}
 
 
 ## Dieses Handbuch ist unvollständig

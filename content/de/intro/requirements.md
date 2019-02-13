@@ -32,11 +32,9 @@ ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werd
 -   **Internetzugang:**
     nicht nötig, aber hilfreich
 
----
-
-> **Hinweis:**
->
-> Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})). 
+{{< info >}}
+Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})).
+{{< /info >}} 
 
 
 ### Anforderungen von ImmoTool-Server {#intro_requirements_server}
@@ -54,8 +52,6 @@ ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werd
 -   **Internetzugang:**
     nicht benötigt
 
----
-
-> **Hinweis:**
->
-> Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})).
+{{< info >}}
+Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})).
+{{< /info >}}

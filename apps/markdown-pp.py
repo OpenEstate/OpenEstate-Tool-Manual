@@ -27,73 +27,60 @@ from MarkdownPP.Transform import Transform
 
 
 class CustomInclude(Include):
+    mode = None
+    lang = None
+
     # Pattern to extract internal links (relref shortcode).
     # example: {{< relref "settings.md#usage_general_settings_updates" >}}
-    pattern_relref = re.compile("{{<\s+relref\s+\"([^\"]*)\"\s+>}}")
+    pattern_relref = re.compile(r'{{<\s+relref\s+\"([^\"]*)\"\s+>}}')
 
     # Pattern to extract images (figure shortcode).
     # example: {{< figure src="java_check_terminal-01.jpg" caption="Ausgabe der Java-Version" >}}
-    pattern_figure = re.compile("{{<\s+([^>]*)\s+>}}")
-    pattern_figure_src = re.compile("src\s*=\s*\"([^\"]*)\"")
-    pattern_figure_caption = re.compile("caption\s*=\s*\"([^\"]*)\"")
+    pattern_figure = re.compile(r'{{<\s+figure\s+([^>]*)\s+>}}')
+    pattern_figure_src = re.compile(r'src\s*=\s*\"([^\"]*)\"')
+    pattern_figure_caption = re.compile(r'caption\s*=\s*\"([^\"]*)\"')
+    pattern_figure_width = re.compile(r'width\s*=\s*\"([^\"]*)\"')
+    pattern_figure_height = re.compile(r'height\s*=\s*\"([^\"]*)\"')
+
+    # Pattern to extract info messages (info shortcode).
+    # example: {{< info >}}My message.{{< /info >}}
+    pattern_info = re.compile(r'{{<\s+info\s+>}}(.*?){{<\s+/info\s+>}}', re.MULTILINE | re.DOTALL)
+
+    # Pattern to extract warning messages (warning shortcode).
+    # example: {{< warning >}}My message.{{< /warning >}}
+    pattern_warning = re.compile(r'{{<\s+warning\s+>}}(.*?){{<\s+/warning\s+>}}', re.MULTILINE | re.DOTALL)
+
+    # Pattern to extract open tasks (todo shortcode).
+    # example: {{< todo >}}My message.{{< /todo >}}
+    pattern_todo = re.compile(r'{{<\s+todo\s+>}}(.*?){{<\s+/todo\s+>}}', re.MULTILINE | re.DOTALL)
+
+    def __init__(self, mode, lang):
+        self.mode = mode
+        self.lang = lang
 
     def include_file(self, filename, pwd="", shift=0):
-
-        # print 'INCLUDE FILE %s at %s' % (filename, pwd,)
-        # return super(CustomInclude).include_file(filename, pwd, shift)
-
+        # print('INCLUDE FILE %s at %s' % (filename, pwd,))
         fileDir = os.path.dirname(os.path.join(os.getcwd(), filename))
-        # print fileDir
-
         tempPath = tempfile.mktemp()
         try:
-
             with open(tempPath, 'w') as tempFile:
                 with open(filename, 'r') as mdFile:
+                    data = mdFile.read()
+                    data = self.replace_info(data)
+                    data = self.replace_warning(data)
+                    data = self.replace_todo(data)
+
                     state = 0
-                    for line in mdFile:
+                    for line in data.splitlines(True):
 
                         # Ignore any lines until the YAML header of the file was passed.
                         if state < 2:
-                            if line.strip() == '---': state = state + 1
+                            if line.strip() == '---':
+                                state = state + 1
                             continue
 
-                        # Replace any relref shortcodes.
-                        relrefs = self.pattern_relref.finditer(line)
-                        for relref in relrefs:
-                            # print(relref.group(0))
-                            # print(relref.group(1))
-                            link = relref.group(1).split('#', 2)
-                            if not len(link) == 2:
-                                print 'WARNING: Invalid relref link "%s" in %s' % (relref.group(1), filename,)
-                                continue
-                            line = line.replace(relref.group(0), '#%s' % link[1])
-
-                        # Replace any figure shortcodes.
-                        figures = self.pattern_figure.finditer(line)
-                        for figure in figures:
-                            # print(figure.group(0))
-                            # print(figure.group(1))
-
-                            # args = figure_parser.parse_args(figure.group(1).replace('=', ' ').split(' '))
-                            # print(args)
-
-                            # figure_src = self.pattern_figure_src.finditer(figure.group(1)).next().group(1)
-                            try:
-                                figure_src = self.pattern_figure_src.finditer(figure.group(0)).next().group(1)
-                            except StopIteration:
-                                print 'WARNING: Figure "%s" without src attribute in %s' % (figure.group(0), filename,)
-                                continue
-
-                            try:
-                                figure_caption = self.pattern_figure_caption.finditer(figure.group(0)).next().group(1)
-                            except StopIteration:
-                                figure_caption = ''
-
-                            # print('%s / %s' % (figure_src, figure_caption))
-
-                            figure_src_absolute = os.path.join(fileDir, figure_src)
-                            line = line.replace(figure.group(0), '![%s](%s)' % (figure_caption, figure_src_absolute,))
+                        line = self.replace_relref(line)
+                        line = self.replace_figure(line, fileDir)
 
                         tempFile.write(line)
                         # tempFile.write('\n')
@@ -104,58 +91,165 @@ class CustomInclude(Include):
             if os.path.isfile(tempPath):
                 os.remove(tempPath)
 
+    # Replace info shortcodes.
+    def replace_info(self, data):
+        if self.lang == 'de':
+            title = 'Hinweis'
+        else:
+            title = 'Notice'
 
-"""
-class BookLinks(Module):
+        for info in self.pattern_info.finditer(data):
+            # print(info.group(0))
+            # print(info.group(1))
+            body = info.group(1).strip()
+            if mode == 'pdf':
+                content = '::: info :::\n%s\n::::::::::::' % body
+            else:
+                content = '> **%s**\n>' % title
+                for i in body.splitlines():
+                    content = content + '\n%s' % i
+            data = data.replace(info.group(0), content)
 
-  linkre = re.compile("\[([^\]]*)\]\([\w]*\.md#(\w*)\)")
+        return data
 
-  def transform(self, data):
-    transforms = []
+    # Replace warning shortcodes.
+    def replace_warning(self, data):
+        if self.lang == 'de':
+            title = 'Achtung'
+        else:
+            title = 'Warning'
 
-    linenum = 0
-    for line in data:
+        for warning in self.pattern_warning.finditer(data):
+            # print(info.group(0))
+            # print(info.group(1))
+            body = warning.group(1).strip()
+            if mode == 'pdf':
+                content = '::: warning :::\n%s\n:::::::::::::::' % body
+            else:
+                content = '> **%s**\n>' % title
+                for i in body.splitlines():
+                    content = content + '\n%s' % i
+            data = data.replace(warning.group(0), content)
 
-      new_line = line
-      results = self.linkre.finditer(line)
-      for result in results:
-        old_link = result.group(0)
-        new_link = '[%s](#%s)' % (result.group(1), result.group(2),)
-        #print 'REPLACE LINK'
-        #print '> old: %s' % old_link
-        #print '> new: %s' % new_link
-        new_line = new_line.replace(old_link, new_link, 1)
+        return data
 
-      if not line == new_line:
-        print 'LINE : %s' % line
-        print 'CONV : %s' % line
-        transform = Transform(linenum=linenum, oper="swap", data=new_line)
-        transforms.append(transform)
+    # Replace todo shortcodes.
+    def replace_todo(self, data):
+        if self.lang == 'de':
+            title = 'Zu erledigen'
+        else:
+            title = 'To-Do'
 
-      linenum += 1
+        for todo in self.pattern_todo.finditer(data):
+            # print(info.group(0))
+            # print(info.group(1))
+            body = todo.group(1).strip()
+            if mode == 'pdf':
+                content = '::: todo :::\n%s\n::::::::::::' % body
+            else:
+                content = '> **%s**\n>' % title
+                for i in body.splitlines():
+                    content = content + '\n%s' % i
+            data = data.replace(todo.group(0), content)
 
-    return transforms
-"""
+        return data
 
-if len(sys.argv) > 2:
-    mdpp = open(sys.argv[1], "r")
-    md = open(sys.argv[2], "w")
+    # Replace relref shortcodes.
+    def replace_relref(self, data):
+        for relref in self.pattern_relref.finditer(data):
+            # print(relref.group(0))
+            # print(relref.group(1))
+            link = relref.group(1).split('#', 2)
+            if not len(link) == 2:
+                print('WARNING: Invalid relref link "%s" in %s' % (relref.group(1), filename,))
+                continue
+            data = data.replace(relref.group(0), '#%s' % link[1])
 
-elif len(sys.argv) > 1:
-    mdpp = open(sys.argv[1], "r")
-    md = sys.stdout
+        return data
 
-else:
-    sys.exit(1)
+    # Replace figure shortcodes.
+    def replace_figure(self, data, fileDir):
+        for figure in self.pattern_figure.finditer(data):
+            # print(figure.group(0))
+            # print(figure.group(1))
 
-try:
-    pp = Processor()
-    pp.register(CustomInclude())
-    # pp.register(Include())
-    # pp.register(BookLinks())
-    pp.input(mdpp)
-    pp.process()
-    pp.output(md)
-finally:
-    mdpp.close()
-    md.close()
+            # args = figure_parser.parse_args(figure.group(1).replace('=', ' ').split(' '))
+            # print(args)
+
+            # figure_src = self.pattern_figure_src.finditer(figure.group(1)).next().group(1)
+            try:
+                figure_src = next(self.pattern_figure_src.finditer(figure.group(0))).group(1)
+            except StopIteration:
+                print('WARNING: Figure "%s" without src attribute in %s' % (figure.group(0), filename,))
+                continue
+
+            try:
+                figure_caption = next(self.pattern_figure_caption.finditer(figure.group(0))).group(1)
+            except StopIteration:
+                figure_caption = ''
+
+            try:
+                figure_width = next(self.pattern_figure_width.finditer(figure.group(0))).group(
+                    1)
+            except StopIteration:
+                figure_width = False
+
+            try:
+                figure_height = next(self.pattern_figure_height.finditer(figure.group(0))).group(
+                    1)
+            except StopIteration:
+                figure_height = False
+
+            figure_attribs = []
+            if self.mode == 'pdf':
+                if figure_width:
+                    figure_attribs.append('width=%s' % figure_width)
+                if figure_height:
+                    figure_attribs.append('height=%s' % figure_height)
+
+            # print('%s / %s' % (figure_src, figure_caption))
+            figure_src_absolute = os.path.join(fileDir, figure_src)
+            replacement = '![%s](%s){%s}' % (
+                figure_caption,
+                figure_src_absolute,
+                ' '.join(figure_attribs),
+            )
+            replacement = '%s' % replacement
+            data = data.replace(figure.group(0), replacement)
+
+        return data
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 2:
+        mdpp = open(sys.argv[1], "r")
+        md = open(sys.argv[2], "w")
+
+    elif len(sys.argv) > 1:
+        mdpp = open(sys.argv[1], "r")
+        md = sys.stdout
+
+    else:
+        sys.exit(1)
+
+    if len(sys.argv) > 3:
+        mode = sys.argv[3]
+    else:
+        mode = None
+
+    if len(sys.argv) > 4:
+        lang = sys.argv[4]
+    else:
+        lang = None
+
+    try:
+        pp = Processor()
+        pp.register(CustomInclude(mode, lang))
+        # pp.register(Include())
+        # pp.register(BookLinks())
+        pp.input(mdpp)
+        pp.process()
+        pp.output(md)
+    finally:
+        mdpp.close()
+        md.close()

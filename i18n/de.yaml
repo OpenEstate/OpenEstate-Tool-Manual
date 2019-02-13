@@ -38,3 +38,10 @@
   translation: "GitHub besuchen"
 - id: "Visit GitHub project page of this manual."
   translation: "Die GitHub-Projektseite dieses Handbuchs besuchen."
+- id: "Notice"
+  translation: "Hinweis"
+- id: "Warning"
+  translation: "Achtung"
+- id: "To-Do"
+  translation: "Zu erledigen"
+

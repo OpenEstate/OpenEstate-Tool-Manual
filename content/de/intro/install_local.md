@@ -21,11 +21,9 @@ Bei einer Einzelplatz-Installation stellt das ImmoTool selbst alle nötigen Funk
 
 Beim Programmstart wird automatisch eine Datenbank auf dem Rechner des Anwenders erstellt, in der alle erfassten Daten (Immobilien, Kunden, etc.) gespeichert werden.
 
----
-
-> **Hinweis*
->
-> Wenn Sie ImmoTool mit mehreren Mitarbeitern nutzen wollen, führen Sie bitte statt dessen eine [Netzwerk-Installation]({{< relref "install_network.md#intro_install_network" >}}) durch.
+{{< info >}}
+Wenn Sie ImmoTool mit mehreren Mitarbeitern nutzen wollen, führen Sie bitte statt dessen eine [Netzwerk-Installation]({{< relref "install_network.md#intro_install_network" >}}) durch.
+{{< /info >}}
 
 
 #### Vorteile einer Einzelplatz-Installation {#intro_install_local_pro}
@@ -33,11 +31,9 @@ Beim Programmstart wird automatisch eine Datenbank auf dem Rechner des Anwenders
 -   Dies ist die einfachst mögliche Form das ImmoTool in Betrieb zu nehmen, da nur ein einziges Programm installiert und gestartet werden muss.
 -   Beim ersten Programmstart wird automatisch die Datenbank auf der Festplatte erzeugt und man kann sofort und ohne weiteren Aufwand mit der Arbeit beginnen.
 
----
-
-> [**Hinweis**]{.info}
->
-> Wenn Sie sich erst mal mit den Funktionen des ImmoTools vertraut machen möchten, ist eine Einzelplatz-Installation wegen der unkomplizierten Installation die beste Wahl. Im späteren Verlauf kann eine Einzelplatz-Installation jederzeit in eine Netzwerk-Installation umgewandelt werden (siehe [Einzelplatz- in Mehrplatz-Projekt umwandeln]({{< relref "../admin/migration.md#admin_migration_project_local" >}})).
+{{< info >}}
+Wenn Sie sich erst mal mit den Funktionen des ImmoTools vertraut machen möchten, ist eine Einzelplatz-Installation wegen der unkomplizierten Installation die beste Wahl. Im späteren Verlauf kann eine Einzelplatz-Installation jederzeit in eine Netzwerk-Installation umgewandelt werden (siehe [Einzelplatz- in Mehrplatz-Projekt umwandeln]({{< relref "../admin/migration.md#admin_migration_project_local" >}})).
+{{< /info >}}
 
 
 #### Nachteile einer Einzelplatz-Installation {#intro_install_local_contra}
@@ -93,11 +89,9 @@ sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
 
 Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
 
----
-
-> [**Hinweis**]{.info}
->
-> Bei der Installation des Debian-Pakets werden automatisch die nötigen Einträge im Startmenü für alle Benutzer des Betriebssystems erzeugt.
+{{< info >}}
+Bei der Installation des Debian-Pakets werden automatisch die nötigen Einträge im Startmenü für alle Benutzer des Betriebssystems erzeugt.
+{{< /info >}}
 
 
 #### Installation unter Linux {#intro_install_local_linux} 
@@ -106,11 +100,9 @@ Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nic
 
 Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben, finden Sie einen Ordner namens `OpenEstate-ImmoTool`. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach `/opt/OpenEstate-ImmoTool`).
 
----
-
-> [**Hinweis**]{.info}
->
-> Bei Bedarf können Sie im Verzeichnis `bin` das Skript `StartMenuAdd.sh` ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt. 
+{{< info >}}
+Bei Bedarf können Sie im Verzeichnis `bin` das Skript `StartMenuAdd.sh` ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt.
+{{< /info >}} 
 
 
 ### ImmoTool starten
@@ -129,9 +121,9 @@ Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung OpenEst
 
 {{< figure src="../admin/client/startup_mac.jpg" caption="Programmverzeichnis mit dem ImmoTool-Starter" >}}
 
-> [**Hinweis**]{.info}
->
-> Bei Bedarf können Sie das ImmoTool-Symbol ins Dock integrieren, um das Programm später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](https://support.apple.com/de-de/HT201730)).
+{{< info >}}
+Bei Bedarf können Sie das ImmoTool-Symbol ins Dock integrieren, um das Programm später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](https://support.apple.com/de-de/HT201730)).
+{{< /info >}}
 
 
 #### ImmoTool unter Linux starten
@@ -147,9 +139,9 @@ Alternativ zum Startmenü kann das Programm über die Datei `ImmoTool.sh` im `bi
 
 Beim ersten Programmstart prüft das `ImmoTool` ob eine Übersetzung zu der im Betriebssystem eingestellten Sprache vorliegt. Sollte dies nicht der Fall sein, erscheint das folgende Fenster, in dem Sie die im ImmoTool verwendete Sprache auswählen können:
 
-> **TODO**
->
-> Bild einfügen
+{{< todo >}}
+Bild einfügen
+{{< /todo >}}
 
 Beachten Sie bitte, dass hier nur Sprachen zur Auswahl gestellt werden, für die aktuell eine Übersetzung vorliegt und für die ein Sprachpaket im Programm enthalten ist.
 
@@ -158,6 +150,6 @@ Beachten Sie bitte, dass hier nur Sprachen zur Auswahl gestellt werden, für die
 
 Der Projektassistent wird geöffnet und Sie können eine Datenbank für Ihre Arbeit mit dem ImmoTool erzeugen. Im Folgenden und innerhalb des Programms werden solche Datenbanken als **Projekt** bezeichnet.
 
-> **TODO**
->
-> Bild einfügen. Weitere Anmerkungen zum Projektassistenten einfügen
+{{< todo >}}
+Bild einfügen. Weitere Anmerkungen zum Projektassistenten einfügen
+{{< /todo >}}

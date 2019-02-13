@@ -8,6 +8,20 @@ toc: 1
 toc-depth: 2
 author:
 - OpenEstate.org
+pandoc-latex-admonition:
+- classes: [info]
+  color: navy
+- classes: [warning]
+  color: firebrick
+pandoc-latex-tip:
+- classes: [info]
+  icons: [{name: info-circle, collection: fontawesome, version: 5.x, variant: solid}]
+  color: navy
+  size: 25
+- classes: [warning]
+  icons: [{name: exclamation, collection: fontawesome, version: 5.x, variant: solid}]
+  color: firebrick
+  size: 25
 ---
 
 

@@ -65,12 +65,10 @@ Zur Integration des Repositories ins Betriebssystem ist wie folgt vorzugehen:
     sudo apt install openestate-immoserver
     ```
 
----
+{{< info >}}
+Sollte es bei der Paket-Aktualisierung in Schritt 3 zu einer Fehlermeldung kommen, muss ggf. noch das Paket `apt-transport-https` über folgenden Befehl installiert werden:
 
-> **Hinweis:**
->
-> Sollte es bei der Paket-Aktualisierung in Schritt 3 zu einer Fehlermeldung kommen, muss ggf. noch das Paket `apt-transport-https` über folgenden Befehl installiert werden:
->
-> ```bash
-> sudo apt install apt-transport-https
-> ```
+```bash
+sudo apt install apt-transport-https
+```
+{{< /info >}}

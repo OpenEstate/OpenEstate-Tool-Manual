@@ -20,7 +20,7 @@ $(document).ready(function () {
     var rootLevel = null;
     var multipleRootLevels = false;
     var headlines = [];
-    $('#content h2, #content h3, #content h4, #content h5').each(function (index) {
+    $('#content h2, #content h3, #content h4').each(function (index) {
         var element = $(this);
         var level = parseInt(element.prop('tagName').substring(1));
         //console.info('element at ' + index + ' (' + element.prop('tagName').substring(1) + ')');

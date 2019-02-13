@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Init virtual environment for Python.
+# Launch customized markdown preprocessor.
 #
 # Copyright 2009-2019 OpenEstate.org.
 #
@@ -19,11 +19,7 @@
 
 set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PYTHON3=$(which python3)
-
-rm -Rf "$DIR/virtualenv"
-virtualenv -p "$PYTHON3" "$DIR/virtualenv"
 
 source "$DIR/virtualenv/bin/activate"
-pip install MarkdownPP pandoc-latex-admonition pandoc-latex-tip
+python "$DIR/virtualenv/bin/pandoc-latex-tip" "$@"
 deactivate

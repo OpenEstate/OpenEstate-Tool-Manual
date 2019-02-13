@@ -29,29 +29,37 @@ mkdir "$DIR/book/$LANG"
 cd "$DIR/content/$LANG"
 
 echo "Merging Markdown files…"
-"$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$DIR/book/$LANG.md"
-sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$DIR/book/$LANG.md"
-#sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
+
+PDF_MD="$DIR/book/$LANG.pdf.md"
+"$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$PDF_MD" "pdf" "$LANG"
+sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$PDF_MD"
+
+OTHER_MD="$DIR/book/$LANG.other.md"
+"$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$OTHER_MD" "other" "$LANG"
+sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$OTHER_MD"
+
+echo "Creating $NAME.$LANG.pdf…"
+pandoc \
+    -F "$DIR/apps/pandoc-latex-admonition.sh" \
+    -F "$DIR/apps/pandoc-latex-tip.sh" \
+    -o "$DIR/book/$LANG/$NAME.$LANG.pdf" \
+    "$PDF_MD"
 
 echo "Creating $NAME.$LANG.epub…"
 pandoc -o "$DIR/book/$LANG/$NAME.$LANG.epub" \
-  --epub-embed-font "$DIR/share/fonts/*.ttf" \
-  --css "$DIR/share/epub.css" \
-  "$DIR/book/$LANG.md"
-
-echo "Creating $NAME.$LANG.pdf…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.pdf" \
-  "$DIR/book/$LANG.md"
+    --epub-embed-font "$DIR/share/fonts/*.ttf" \
+    --css "$DIR/share/epub.css" \
+    "$OTHER_MD"
 
 echo "Creating $NAME.$LANG.odt…"
 pandoc -o "$DIR/book/$LANG/$NAME.$LANG.odt" \
-  "$DIR/book/$LANG.md"
+    "$OTHER_MD"
 
 echo "Creating $NAME.$LANG.docx…"
 pandoc -o "$DIR/book/$LANG/$NAME.$LANG.docx" \
-  "$DIR/book/$LANG.md"
+    "$OTHER_MD"
 
 echo "Creating $NAME.$LANG.html…"
 pandoc -o "$DIR/book/$LANG/$NAME.$LANG.html" \
-  --self-contained \
-  "$DIR/book/$LANG.md"
+    --self-contained \
+    "$OTHER_MD"

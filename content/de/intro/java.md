@@ -16,9 +16,9 @@ menu:
 
 ImmoTool und ImmoTool-Server wurden in der Programmiersprache Java entwickelt. Um die Software nutzen zu können, muss eine Java-Laufzeitumgebung (kurz JRE) vorhanden sein.
 
-> **Achtung:**
->
-> Die Installationspakete von ImmoTool und ImmoTool-Server enthalten bereits die benötigte Java-Laufzeitumgebung. Im Normalfall muss daher Java **nicht** zusätzlich auf dem Rechner installiert werden.
+{{< warning >}}
+Die Installationspakete von ImmoTool und ImmoTool-Server enthalten bereits die benötigte Java-Laufzeitumgebung. Im Normalfall muss daher Java **nicht** zusätzlich auf dem Rechner installiert werden.
+{{< /warning >}}
 
 
 ### Java unter Windows installieren {#intro_java_install_windows}
