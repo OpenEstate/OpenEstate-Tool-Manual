@@ -63,28 +63,29 @@ class CustomInclude(Include):
         fileDir = os.path.dirname(os.path.join(os.getcwd(), filename))
         tempPath = tempfile.mktemp()
         try:
+            # Extract file contents below the YAML header.
+            data = ''
+            with open(filename, 'r') as mdFile:
+                state = 0
+                for line in mdFile.readlines():
+                    if state < 2:
+                        if line.strip() == '---':
+                            state = state + 1
+                    else:
+                        data += line
+
+            # Replace Hugo shortcodes to make it work with pandoc.
+            data = self.replace_info(data)
+            data = self.replace_warning(data)
+            data = self.replace_todo(data)
+            data = self.replace_relref(data)
+            data = self.replace_figure(data, fileDir)
+
+            # Write data into a temporary file.
             with open(tempPath, 'w') as tempFile:
-                with open(filename, 'r') as mdFile:
-                    data = mdFile.read()
-                    data = self.replace_info(data)
-                    data = self.replace_warning(data)
-                    data = self.replace_todo(data)
+                tempFile.write(data)
 
-                    state = 0
-                    for line in data.splitlines(True):
-
-                        # Ignore any lines until the YAML header of the file was passed.
-                        if state < 2:
-                            if line.strip() == '---':
-                                state = state + 1
-                            continue
-
-                        line = self.replace_relref(line)
-                        line = self.replace_figure(line, fileDir)
-
-                        tempFile.write(line)
-                        # tempFile.write('\n')
-
+            # Include temporary file.
             return Include.include_file(self, tempPath, pwd, shift)
 
         finally:
@@ -99,8 +100,6 @@ class CustomInclude(Include):
             title = 'Notice'
 
         for info in self.pattern_info.finditer(data):
-            # print(info.group(0))
-            # print(info.group(1))
             body = info.group(1).strip()
             if mode == 'pdf':
                 content = '::: info :::\n%s\n::::::::::::' % body
@@ -120,8 +119,6 @@ class CustomInclude(Include):
             title = 'Warning'
 
         for warning in self.pattern_warning.finditer(data):
-            # print(info.group(0))
-            # print(info.group(1))
             body = warning.group(1).strip()
             if mode == 'pdf':
                 content = '::: warning :::\n%s\n:::::::::::::::' % body
@@ -141,8 +138,6 @@ class CustomInclude(Include):
             title = 'To-Do'
 
         for todo in self.pattern_todo.finditer(data):
-            # print(info.group(0))
-            # print(info.group(1))
             body = todo.group(1).strip()
             if mode == 'pdf':
                 content = '::: todo :::\n%s\n::::::::::::' % body
@@ -157,8 +152,6 @@ class CustomInclude(Include):
     # Replace relref shortcodes.
     def replace_relref(self, data):
         for relref in self.pattern_relref.finditer(data):
-            # print(relref.group(0))
-            # print(relref.group(1))
             link = relref.group(1).split('#', 2)
             if not len(link) == 2:
                 print('WARNING: Invalid relref link "%s" in %s' % (relref.group(1), filename,))
@@ -170,13 +163,6 @@ class CustomInclude(Include):
     # Replace figure shortcodes.
     def replace_figure(self, data, fileDir):
         for figure in self.pattern_figure.finditer(data):
-            # print(figure.group(0))
-            # print(figure.group(1))
-
-            # args = figure_parser.parse_args(figure.group(1).replace('=', ' ').split(' '))
-            # print(args)
-
-            # figure_src = self.pattern_figure_src.finditer(figure.group(1)).next().group(1)
             try:
                 figure_src = next(self.pattern_figure_src.finditer(figure.group(0))).group(1)
             except StopIteration:
@@ -207,7 +193,6 @@ class CustomInclude(Include):
                 if figure_height:
                     figure_attribs.append('height=%s' % figure_height)
 
-            # print('%s / %s' % (figure_src, figure_caption))
             figure_src_absolute = os.path.join(fileDir, figure_src)
             replacement = '![%s](%s){%s}' % (
                 figure_caption,
