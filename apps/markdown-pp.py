@@ -78,8 +78,8 @@ class CustomInclude(Include):
             data = self.replace_info(data)
             data = self.replace_warning(data)
             data = self.replace_todo(data)
-            data = self.replace_relref(data)
-            data = self.replace_figure(data, fileDir)
+            data = self.replace_relref(data, filename)
+            data = self.replace_figure(data, filename, fileDir)
 
             # Write data into a temporary file.
             with open(tempPath, 'w') as tempFile:
@@ -150,23 +150,23 @@ class CustomInclude(Include):
         return data
 
     # Replace relref shortcodes.
-    def replace_relref(self, data):
+    def replace_relref(self, data, fileName):
         for relref in self.pattern_relref.finditer(data):
             link = relref.group(1).split('#', 2)
             if not len(link) == 2:
-                print('WARNING: Invalid relref link "%s" in %s' % (relref.group(1), filename,))
+                print('WARNING: Invalid relref link "%s" in %s' % (relref.group(1), fileName,))
                 continue
             data = data.replace(relref.group(0), '#%s' % link[1])
 
         return data
 
     # Replace figure shortcodes.
-    def replace_figure(self, data, fileDir):
+    def replace_figure(self, data, fileName, fileDir):
         for figure in self.pattern_figure.finditer(data):
             try:
                 figure_src = next(self.pattern_figure_src.finditer(figure.group(0))).group(1)
             except StopIteration:
-                print('WARNING: Figure "%s" without src attribute in %s' % (figure.group(0), filename,))
+                print('WARNING: Figure "%s" without src attribute in %s' % (figure.group(0), fileName,))
                 continue
 
             try:

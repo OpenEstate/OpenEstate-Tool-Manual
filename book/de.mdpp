@@ -44,10 +44,11 @@ pandoc-latex-tip:
 
 !INCLUDE "intro/about.md"
 !INCLUDE "intro/requirements.md"
-!INCLUDE "intro/java.md"
 !INCLUDE "intro/download.md"
-!INCLUDE "intro/install_local.md"
-!INCLUDE "intro/install_network.md"
+!INCLUDE "intro/install_types.md"
+!INCLUDE "intro/install_client.md"
+!INCLUDE "intro/install_server.md"
+!INCLUDE "intro/java.md"
 
 
 # Allgemeine Hinweise zur Benutzung {#usage_general}

@@ -27,7 +27,7 @@ Im Folgenden wird die Vorgehensweise beschrieben, um ein bestehendes Einzelplatz
 
 5.  Starten Sie den ImmoTool-Server neu und melden Sie sich mit dem AdminTool auf dem Server an (Benutzer "SA" mit leerem Passwort). Bei der ersten Anmeldung wird das AdminTool Sie bitten ein Administrator-Passwort festzulegen.
 
-Ab diesem Zeitpunkt kann mit dem ImmoTool & AdminTool auf die Datenbank als Mehrplatz-Projekt zugegriffen werden. Der Verbindungsaufbau auf das Mehrplatz-Projekt via ImmoTool wird im Handbuch-Kapitel zur [Installation im Netzwerk]({{< relref "../intro/install_network.md#intro_install_network_immotool_project" >}}) beschrieben.
+Ab diesem Zeitpunkt kann mit dem ImmoTool & AdminTool auf die Datenbank als Mehrplatz-Projekt zugegriffen werden. Der Verbindungsaufbau auf das Mehrplatz-Projekt via ImmoTool wird im Handbuch-Kapitel zur [Installation im Netzwerk]({{< relref "../intro/install_server.md#intro_install_server_immotool_project" >}}) beschrieben.
 
 
 ## Mehrplatz- in Einzelplatz-Projekt umwandeln {#admin_migration_project_remote}
@@ -97,7 +97,7 @@ Die Vorgehensweise zur Übernahme der unter (2) exportierten Daten hängt davon 
 
 ### Projekt als Einzelplatz-Installation übernehmen {#admin_migration_project_0_9_local}
 
-Wenn des Projekt in ImmoTool 1.0 als **Einzelplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version. Die Installationsschritte sind im Kapitel ["ImmoTool als Einzelplatz-Version installieren"]({{< relref "../intro/install_local.md#intro_install_local" >}}) dokumentiert.
+Wenn des Projekt in ImmoTool 1.0 als **Einzelplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version. Die Installationsschritte sind im Kapitel ["ImmoTool als Einzelplatz-Version installieren"]({{< relref "../intro/install_client.md#intro_install_client" >}}) dokumentiert.
 
 > **Wichtig**
 >
@@ -116,7 +116,7 @@ Prüfen Sie sicherheitshalber die Firmendaten & Add-Ons und klicken Sie abschlie
 
 ### Projekt als Mehrplatz-Installation übernehmen {#admin_migration_project_0_9_remote}
 
-Wenn des Projekt in ImmoTool 1.0 als **Mehrplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version sowie den ImmoTool-Server. Die Installationsschritte sind im Kapitel ["ImmoTool als Netzwerk-Version installieren"]({{< relref "../intro/install_network.md#intro_install_network" >}}) dokumentiert.
+Wenn des Projekt in ImmoTool 1.0 als **Mehrplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version sowie den ImmoTool-Server. Die Installationsschritte sind im Kapitel ["ImmoTool als Netzwerk-Version installieren"]({{< relref "../intro/install_server.md#intro_install_server" >}}) dokumentiert.
 
 > **Wichtig**
 >
@@ -132,4 +132,4 @@ Nachdem der ImmoTool-Server erfolgreich in Betrieb genommen wurde, kann die gesi
 
     {{< figure src="migration_upgrade_0_9_remote-02.jpg" caption="Datensicherung nachträglich importieren" >}}
 
-Nachdem die Datenübernahme ins Mehrplatz-Projekt abgeschlossen wurde, kann die Verbindung zur Datenbank über das ImmoTool hergestellt werden, wie im Kapitel ["ImmoTool mit dem ImmoTool-Server verbinden"]({{< relref "../intro/install_network.md#intro_install_network_immotool_project" >}}) beschrieben.
+Nachdem die Datenübernahme ins Mehrplatz-Projekt abgeschlossen wurde, kann die Verbindung zur Datenbank über das ImmoTool hergestellt werden, wie im Kapitel ["ImmoTool mit dem ImmoTool-Server verbinden"]({{< relref "../intro/install_server.md#intro_install_server_immotool_project" >}}) beschrieben.

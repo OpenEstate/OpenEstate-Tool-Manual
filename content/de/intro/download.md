@@ -1,6 +1,6 @@
 ---
 
-title: ImmoTool herunterladen
+title: Programme herunterladen
 linktitle: Herunterladen
 description: Wie OpenEstate-ImmoTool heruntergeladen werden kann…
 weight: 30
@@ -21,7 +21,7 @@ ImmoTool & ImmoTool-Server können auf der OpenEstate-Webseite in verschiedenen 
 
 Für beide Programme stehen folgende Pakete im zur Verfügung: 
 
--   Für Windows 64bit & 32bit stehen separate **EXE**-Installationsdateien zur Verfügung.
+-   Für Windows stehen separate **EXE**-Installationsdateien zur Verfügung (32bit & 64bit).
 -   Für macOS steht eine **DMG**-Installationsdatei zur Verfügung.
 -   Für Debian-basierte Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) steht eine **DEB**-Installationsdatei zur Verfügung.
 -   Für andere Linux-Distributionen steht eine **TAR.GZ**-Datei zur Verfügung.
