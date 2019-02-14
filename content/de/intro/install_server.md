@@ -176,7 +176,7 @@ Verweis auf die Dokumentation zum AdminTool
 Wenn eventuelle Nacharbeiten abgeschlossen wurden, kann das AdminTool geschlossen werden. Ab diesem Zeitpunkt können sich Anwender über das ImmoTool mit dem ImmoTool-Server verbinden.
 
 
-### Verbindung zum ImmoTool herstellen {#intro_install_server_immotool}
+### Verbindung zum ImmoTool-Server herstellen {#intro_install_server_immotool}
 
 Nachdem der ImmoTool-Server erfolgreich vorbereitet wurde (siehe ["ImmoTool-Server vorbereiten"]({{< relref "install_server.md#intro_install_server_prepare" >}})) kann über das ImmoTool auf die Datenbank zugegriffen werden.
 
