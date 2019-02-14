@@ -78,7 +78,7 @@ Dependencies
 
 The generated HTML5 website bundles the following dependencies:
 
--   [*Bootstrap*](https://getbootstrap.com/) v4.2.1 ([MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE))
+-   [*Bootstrap*](https://getbootstrap.com/) v4.3.1 ([MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE))
 -   [*jQuery*](https://jquery.com/) v3.3.1 ([MIT](https://jquery.org/license/))
 -   [*SmartMenus*](https://www.smartmenus.org/) v1.1.0 ([MIT](https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT))
 -   [*Lunr*](https://lunrjs.com/) v2.3.5 ([MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE))
