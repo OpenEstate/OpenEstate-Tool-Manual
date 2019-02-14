@@ -3,6 +3,7 @@ title: Manual for OpenEstate-ImmoTool
 date: ${date}
 lang: en-US
 documentclass: book
+classoption: oneside
 links-as-notes: 1
 toc: 1
 toc-depth: 2
@@ -13,15 +14,24 @@ pandoc-latex-admonition:
   color: navy
 - classes: [warning]
   color: firebrick
+- classes: [todo]
+  color: dimgray
 pandoc-latex-tip:
 - classes: [info]
-  icons: [{name: info-circle, collection: fontawesome, version: 5.x, variant: solid}]
+  icons: [info-circle]
   color: navy
-  size: 25
+  size: 20
+  position: left
 - classes: [warning]
-  icons: [{name: exclamation, collection: fontawesome, version: 5.x, variant: solid}]
+  icons: [exclamation-triangle]
   color: firebrick
-  size: 25
+  size: 20
+  position: left
+- classes: [todo]
+  icons: [ambulance]
+  color: dimgray
+  size: 20
+  position: left
 ---
 
 

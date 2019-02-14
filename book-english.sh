@@ -19,6 +19,7 @@
 
 NAME="OpenEstate-ImmoTool-Manual"
 LANG="en"
+DATE_FORMAT="+%Y-%m-%d"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 set -e
@@ -32,11 +33,11 @@ echo "Merging Markdown files…"
 
 PDF_MD="$DIR/book/$LANG.pdf.md"
 "$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$PDF_MD" "pdf" "$LANG"
-sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$PDF_MD"
+sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$PDF_MD"
 
 OTHER_MD="$DIR/book/$LANG.other.md"
 "$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$OTHER_MD" "other" "$LANG"
-sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$OTHER_MD"
+sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$OTHER_MD"
 
 echo "Creating $NAME.$LANG.pdf…"
 pandoc \

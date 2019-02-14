@@ -8,6 +8,7 @@ book/*
 bundle
 public
 resources
+temp
 
 #
 # Default entries for IntelliJ IDEA
