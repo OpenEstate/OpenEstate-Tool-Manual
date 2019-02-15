@@ -55,17 +55,17 @@ ist ein Format für den Austausch von Immobiliendaten. Die Spezifikation basiert
 
 wird zur Identifikation eines einzelnen Computers im Netzwerk / Internet verwendet. Weitere Informationen finden Sie bei [wikipedia.org](http://de.wikipedia.org/wiki/IP-Adresse).
 
-> **Tipp**
-> 
-> {{< figure src="ip_windows-01.jpg" caption="Klicken Sie auf `Start` → `Einstellungen` → `Netzwerkverbindungen`." >}}
->
-> {{< figure src="ip_windows-02.jpg" caption="Wählen Sie in der Übersicht die verwendete LAN-Verbindung mit Doppelklick aus." >}}
->
-> {{< figure src="ip_windows-03.jpg" caption="Im Reiter `Netzwerkunterstützung` wird die IP-Adresse der Netzwerkkarte dargestellt." >}}
+{{< tip >}}
+{{< figure src="ip_windows-01.jpg" caption="Klicken Sie auf `Start` → `Einstellungen` → `Netzwerkverbindungen`." >}}
 
-> **Tipp**
->
-> {{< figure src="ip_unix-01.jpg" caption="Öffnen Sie eine Kommandozeile und geben Sie den Befehl `ifconfig` ein. Darauf werden Informationen zu den installierten Netzwerk-Schnittstellen (inkl. der IP-Adressen) dargestellt. In der Regel ist die verwendete Netzwerkkarte mit `eth0` benannt." >}}
+{{< figure src="ip_windows-02.jpg" caption="Wählen Sie in der Übersicht die verwendete LAN-Verbindung mit Doppelklick aus." >}}
+
+{{< figure src="ip_windows-03.jpg" caption="Im Reiter `Netzwerkunterstützung` wird die IP-Adresse der Netzwerkkarte dargestellt." >}}
+{{< /tip >}}
+
+{{< tip >}}
+{{< figure src="ip_unix-01.jpg" caption="Öffnen Sie eine Kommandozeile und geben Sie den Befehl `ifconfig` ein. Darauf werden Informationen zu den installierten Netzwerk-Schnittstellen (inkl. der IP-Adressen) dargestellt. In der Regel ist die verwendete Netzwerkkarte mit `eth0` benannt." >}}
+{{< /tip >}}
 
 
 ### IS24-CSV {#appendix_glossary_is24_csv}
@@ -92,19 +92,19 @@ ist eine Sammlung verschiedener Programme & Bibliotheken, um Anwendungen ausfüh
 
 ist ein Eingabebereich für die Steuerung des Betriebssystems. Weitere Informationen finden Sie bei [wikipedia.org](http://de.wikipedia.org/wiki/Kommandozeile).
 
-> **Tipp**
->
-> {{< figure src="terminal_windows-01.jpg" caption="Klicken Sie auf `Start` → `Ausführen...`." >}}
->
-> {{< figure src="terminal_windows-02.jpg" caption="Tragen Sie den Befehl `cmd` ein und klicken Sie auf `OK`." >}}
->
-> {{< figure src="terminal_windows-03.jpg" caption="Die geöffnete Kommandozeile." >}}
+{{< tip >}}
+{{< figure src="terminal_windows-01.jpg" caption="Klicken Sie auf `Start` → `Ausführen...`." >}}
 
-> **Tipp**
->
-> {{< figure src="terminal_mac-01.jpg" caption="Aus dem `Finder` (im Bereich `Dienstprogramme`) heraus kann das Programm `Terminal` gestartet werden." >}}
->
-> {{< figure src="terminal_mac-02.jpg" caption="Eine in Mac OS X geöffnete Kommandozeile." >}}
+{{< figure src="terminal_windows-02.jpg" caption="Tragen Sie den Befehl `cmd` ein und klicken Sie auf `OK`." >}}
+
+{{< figure src="terminal_windows-03.jpg" caption="Die geöffnete Kommandozeile." >}}
+{{< /tip >}}
+
+{{< tip >}}
+{{< figure src="terminal_mac-01.jpg" caption="Aus dem `Finder` (im Bereich `Dienstprogramme`) heraus kann das Programm `Terminal` gestartet werden." >}}
+
+{{< figure src="terminal_mac-02.jpg" caption="Eine in Mac OS X geöffnete Kommandozeile." >}}
+{{< /tip >}}
 
 
 ### Mehrplatz-Projekt {#appendix_glossary_project_remote}
@@ -183,31 +183,31 @@ wird bei einer SSL-Verschlüsselung verwendet, um die Authentizität und Integri
 
 ist ein Format zur Komprimierung von Dateien. Mehrere Dateien werden dabei zu einer platzsparenden TAR.GZ-Datei zusammengefasst. Das Format wird hauptsächlich unter Mac, Linux & Unix verwendet. Weitere Informationen finden Sie bei [wikipedia.org](http://de.wikipedia.org/wiki/Tar).
 
-> **Tipp**
->
-> Windows kann TAR.GZ-Dateien nicht direkt entpacken. Hier sind externe Programme nötig, wie z.B.: [7-Zip](http://www.7-zip.de/), [WinZIP](http://www.winzip.de/) oder [WinRAR](http://www.winrar.de/).
+{{< tip >}}
+Windows kann TAR.GZ-Dateien nicht direkt entpacken. Hier sind externe Programme nötig, wie z.B.: [7-Zip](http://www.7-zip.de/), [WinZIP](http://www.winzip.de/) oder [WinRAR](http://www.winrar.de/).
+{{< /tip >}}
 
-> **Tipp**
->
-> Nachdem ein TAR-GZ-Archiv heruntergeladen wurden, entpackt Mac OS X dies in der Regel automatisch.
->
-> Um eine TAR.GZ-Datei zu entpacken, klicken Sie im `Finder` mit der rechten Maustaste auf die Datei und wählen Sie `Öffnen mit Archivprogramm / BOMArchiveHelper`.
->
-> {{< figure src="extract_archive_mac-01.jpg" caption="Hilfsprogramm zum Entpacken einer TAR.GZ-Datei" >}}
->
-> Alternativ kann auf externe Programme wie [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html) zurückgegriffen werden.
+{{< tip >}}
+Nachdem ein TAR-GZ-Archiv heruntergeladen wurden, entpackt Mac OS X dies in der Regel automatisch.
 
-> **Tipp**
->
-> Die grafischen Oberflächen (KDE, Gnome, etc.) stellen in der Regel Programme zum Entpacken von TAR.GZ-Dateien bereit. Meist können die Dateien über das Kontextmenü (rechte Maustaste) entpackt werden. Alternativ kann ein TAR.GZ-Archiv (z.B. OpenEstate-ImmoTool-1.0.tar.gz) über die Kommandozeile mit folgendem Befehl entpackt werden:
->
-> ```
-> tar xfvz OpenEstate-ImmoTool-1.0.tar.gz
-> ```
+Um eine TAR.GZ-Datei zu entpacken, klicken Sie im `Finder` mit der rechten Maustaste auf die Datei und wählen Sie `Öffnen mit Archivprogramm / BOMArchiveHelper`.
 
-> **Hinweis**
->
-> Ältere Version des TAR-Programmes unterstützen aus historischen Gründen keine Pfadnamen mit mehr als 100 Zeichen. Die im OpenEstate-Projekt bereitgestellten TAR.GZ-Archive können dieses Limit jedoch überschreiten. Neuere Versionen des TAR-Programmes (z.B. [GNU Tar](http://www.gnu.org/software/tar/)) sind nicht von dem Problem betroffen.
+{{< figure src="extract_archive_mac-01.jpg" caption="Hilfsprogramm zum Entpacken einer TAR.GZ-Datei" >}}
+
+Alternativ kann auf externe Programme wie [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html) zurückgegriffen werden.
+{{< /tip >}}
+
+{{< tip >}}
+Die grafischen Oberflächen (KDE, Gnome, etc.) stellen in der Regel Programme zum Entpacken von TAR.GZ-Dateien bereit. Meist können die Dateien über das Kontextmenü (rechte Maustaste) entpackt werden. Alternativ kann ein TAR.GZ-Archiv (z.B. OpenEstate-ImmoTool-1.0.tar.gz) über die Kommandozeile mit folgendem Befehl entpackt werden:
+
+```bash
+tar xfvz OpenEstate-ImmoTool-1.0.tar.gz
+```
+{{< /tip >}}
+
+{{< info >}}
+Ältere Version des TAR-Programmes unterstützen aus historischen Gründen keine Pfadnamen mit mehr als 100 Zeichen. Die im OpenEstate-Projekt bereitgestellten TAR.GZ-Archive können dieses Limit jedoch überschreiten. Neuere Versionen des TAR-Programmes (z.B. [GNU Tar](http://www.gnu.org/software/tar/)) sind nicht von dem Problem betroffen.
+{{< /info >}}
 
 
 ### Teilabgleich {#appendix_glossary_transfer_incremental}
@@ -244,24 +244,24 @@ ist ein Programm zur Darstellung von Internetseiten. Auf den meisten Betriebssys
 
 ist ein Format zur Komprimierung von Dateien. Mehrere Dateien werden dabei zu einer platzsparenden ZIP-Datei zusammengefasst. Das Format wird unter Windows-Betriebssystemen verwendet. Weitere Informationen finden Sie bei [wikipedia.org](http://de.wikipedia.org/wiki/ZIP_%28Dateiformat%29).
 
-> **Tipp**
->
-> Neuere Windows-Versionen liefern bereits Funktionen zum Entpacken von ZIP-Dateien mit. Alternativ kann auf Programme wie [7-Zip](http://www.7-zip.de/), [WinZIP](http://www.winzip.de/) oder [WinRAR](http://www.winrar.de/) zurückgegriffen werden.
+{{< tip >}}
+Neuere Windows-Versionen liefern bereits Funktionen zum Entpacken von ZIP-Dateien mit. Alternativ kann auf Programme wie [7-Zip](http://www.7-zip.de/), [WinZIP](http://www.winzip.de/) oder [WinRAR](http://www.winrar.de/) zurückgegriffen werden.
+{{< /tip >}}
 
-> **Tipp**
->
-> Nachdem ein ZIP-Archiv heruntergeladen wurden, entpackt Mac OS X dies in der Regel automatisch.
->
-> Um eine ZIP-Datei von Hand zu entpacken, klicken Sie im `Finder` mit der rechten Maustaste auf die ZIP-Datei und wählen Sie `Öffnen mit Archivprogramm / BOMArchiveHelper`.
->
-> {{< figure src="extract_archive_mac-01.jpg" caption="Hilfsprogramm zum Entpacken einer ZIP-Datei" >}}
->
-> Alternativ kann auf externe Programme wie [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html) zurückgegriffen werden.
+{{< tip >}}
+Nachdem ein ZIP-Archiv heruntergeladen wurden, entpackt Mac OS X dies in der Regel automatisch.
 
-> **Tipp**
->
-> Die grafischen Oberflächen (KDE, Gnome, etc.) stellen in der Regel Programme zum Entpacken von ZIP-Dateien bereit. Meist können die Dateien über das Kontextmenü (rechte Maustaste) entpackt werden. Alternativ kann ein ZIP-Archiv (z.B. OpenEstate-ImmoTool-1.0.zip) über die Kommandozeile mit folgendem Befehl entpackt werden:
->
-> ```
-> unzip OpenEstate-ImmoTool-1.0.zip
-> ```
+Um eine ZIP-Datei von Hand zu entpacken, klicken Sie im `Finder` mit der rechten Maustaste auf die ZIP-Datei und wählen Sie `Öffnen mit Archivprogramm / BOMArchiveHelper`.
+
+{{< figure src="extract_archive_mac-01.jpg" caption="Hilfsprogramm zum Entpacken einer ZIP-Datei" >}}
+
+Alternativ kann auf externe Programme wie [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver.html) zurückgegriffen werden.
+{{< /tip >}}
+
+{{< tip >}}
+Die grafischen Oberflächen (KDE, Gnome, etc.) stellen in der Regel Programme zum Entpacken von ZIP-Dateien bereit. Meist können die Dateien über das Kontextmenü (rechte Maustaste) entpackt werden. Alternativ kann ein ZIP-Archiv (z.B. OpenEstate-ImmoTool-1.0.zip) über die Kommandozeile mit folgendem Befehl entpackt werden:
+
+```bash
+unzip OpenEstate-ImmoTool-1.0.zip
+```
+{{< /tip >}}

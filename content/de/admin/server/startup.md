@@ -96,7 +96,6 @@ Das `bin`-Verzeichnis des ImmoTool-Servers enthält diverse Start-Dateien für v
     ImmoTool-Server im Vordergrund ausführen.
 
 
-> **Hinweis**
->
-> Die Skripte beginnend mit `server-*` werden mit Hilfe des Projektes [YAJSW](http://yajsw.sourceforge.net/) bereitgestellt. Weitere Informationen zur Konfiguration dieser Skripte finden Sie auf der Webseite dieses Projektes.
-
+{{< info >}}
+Die Skripte beginnend mit `server-*` werden mit Hilfe des Projektes [YAJSW](http://yajsw.sourceforge.net/) bereitgestellt. Weitere Informationen zur Konfiguration dieser Skripte finden Sie auf der Webseite dieses Projektes.
+{{< /info >}}

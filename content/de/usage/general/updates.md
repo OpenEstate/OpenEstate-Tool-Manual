@@ -35,13 +35,13 @@ Wenn in den Programm-Einstellungen die [automatische Aktualisierung]({{< relref 
 
 ### Aktualisierung von Hand durchführen {#usage_general_updates_manual}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Vorgehensweise bei fehlgeschlagener Aktualisierung {#usage_general_updates_problems}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

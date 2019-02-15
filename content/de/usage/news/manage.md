@@ -24,48 +24,48 @@ Solche Nachrichtenquellen können vom ImmoTool automatisch in regelmäßigen Abs
 
 ### Aktuelle Nachrichten anzeigen {#usage_news_manage_view}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Nachrichten automatisch abrufen {#usage_news_manage_update_automatic}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Nachrichten manuell abrufen {#usage_news_manage_update_manual}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Nachrichtenquelle erfassen {#usage_news_manage_add}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Nachrichtenquelle bearbeiten {#usage_news_manage_edit}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Nachrichtenquelle löschen {#usage_news_manage_remove}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Formular für Nachrichtenquellen {#usage_news_manage_form}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

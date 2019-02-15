@@ -33,10 +33,10 @@ Für das "Immobilien-Add-On" können diverse Einstellungen in den [Programm-Eins
 
 ### Fragen & Antworten zum Immobilien Add-On {#usage_realestate_addon_faq}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
-> **TODO**
->
-> Inhalte aktualisieren
+{{< todo >}}
+Inhalte aktualisieren
+{{< /todo >}}

@@ -79,9 +79,9 @@ Das Programm-Fenster besteht aus den folgenden Elementen:
 
 An verschiedenen Stellen werden Tabellen innerhalb des Programmes dargestellt.
 
-> **TODO**
->
-> Bild einfügen
+{{< todo >}}
+Bild einfügen
+{{< /todo >}}
 
 Verschiedene Standardfunktionen sind in den Tabellen enthalten.
 
@@ -94,18 +94,18 @@ Verschiedene Standardfunktionen sind in den Tabellen enthalten.
 -   **Spalten ein- & ausblenden**
     Zum Ein- oder Ausblenden einer Spalte klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol um das Menü der Tabelle zu öffnen. Aktivieren oder deaktivieren Sie die entsprechende Spalte durch Klick auf den gewünschten Spalten-Titel.
 
-> **Hinweis**
->
-> Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
+{{< info >}}
+Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
+{{< /info >}}
 
 
 ### Verwendung von Formularen {#usage_general_gui_forms}
 
 Um Eingaben zu tätigen, werden an verschiedenen Stellen im Programm Formulare dargestellt.
 
-> **TODO**
->
-> Bild einfügen
+{{< todo >}}
+Bild einfügen
+{{< /todo >}}
 
 Die folgenden Standardfunktionen werden dabei verwendet.
 

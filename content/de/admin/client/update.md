@@ -14,41 +14,41 @@ menu:
 
 ## ImmoTool aktualisieren {#admin_client_update}
 
-> **TODO**
->
-> Allgemeine Hinweise zur Vorgehensweise einfügen.
+{{< todo >}}
+Allgemeine Hinweise zur Vorgehensweise einfügen.
+{{< /todo >}}
 
 
 ### ImmoTool automatisch aktualisieren {#admin_client_update_automatic}
 
-> **TODO**
->
-> Hinweise zur Vorgehensweise einfügen.
+{{< todo >}}
+Hinweise zur Vorgehensweise einfügen.
+{{< /todo >}}
 
 
 ### ImmoTool manuell aktualisieren {#admin_client_update_manual}
 
-> **TODO**
->
-> Hinweise zur Vorgehensweise einfügen.
+{{< todo >}}
+Hinweise zur Vorgehensweise einfügen.
+{{< /todo >}}
 
 
 ### Erster Neustart nach erfolgter Aktualisierung {#admin_client_update_restart}
 
-> **TODO**
->
-> Hinweise zum ersten Neustart nach der Aktualisierung einfügen.
+{{< todo >}}
+Hinweise zum ersten Neustart nach der Aktualisierung einfügen.
+{{< /todo >}}
 
 
 ### Besondere Anforderungen zur Aktualisierung von Mehrplatz-Projekten {#admin_client_update_remoteprojects}
 
-> **TODO**
->
-> Hinweise zur Vorgehensweise einfügen.
+{{< todo >}}
+Hinweise zur Vorgehensweise einfügen.
+{{< /todo >}}
 
 
 ### Vorgehensweise bei fehlgeschlagener Aktualisierung {#admin_client_update_troubleshooting}
 
-> **TODO**
->
-> Hinweise zur Vorgehensweise einfügen.
+{{< todo >}}
+Hinweise zur Vorgehensweise einfügen.
+{{< /todo >}}

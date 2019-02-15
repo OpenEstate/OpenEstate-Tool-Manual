@@ -21,9 +21,9 @@ Im alltäglichen Betrieb ist es zwingend empfohlen, regelmäßige Sicherungen vo
 
 Wenn der ImmoTool-Server nicht gestartet ist (oder kurzzeitig beendet wurde), genügt eine Sicherung des Unterordners `var/data` im Programmverzeichnis des ImmoTool-Servers. Dort werden standardmäßig alle Dateien der Datenbank abgelegt.
 
-> **Wichtig**
->
-> Es ist nicht empfehlenswert, das `var/data`-Verzeichnis im laufenden Betrieb des ImmoTool-Servers zu sichern. Dies kann zu einer fehlerhaften Datensicherung führen, die nicht wiederhergestellt werden kann.
+{{< warning >}}
+Es ist nicht empfehlenswert, das `var/data`-Verzeichnis im laufenden Betrieb des ImmoTool-Servers zu sichern. Dies kann zu einer fehlerhaften Datensicherung führen, die nicht wiederhergestellt werden kann.
+{{< /warning >}}
 
 
 ### Datensicherung eines laufenden ImmoTool-Servers {#admin_server_backup_live}
@@ -54,13 +54,13 @@ Damit das Hilfsprogramm sich mit der Datenbank verbinden kann, sind folgende Kon
 
 Nach erfolgreicher Ausführung des Hilfsprogramms finden Sie im Verzeichnis `var/backup/immotool` des ImmoTool-Servers ein TAR.GZ-Archiv mit der Sicherung der aktuellen Datenbank.
 
-> **Tipp**
->
-> Mit Hilfe des Taskplaners (unter Windows) oder eines Cron-Jobs (unter Unix) kann das Hilfsprogramm automatisch zu einem beliebigen Zeitpunkt geplant und ausgeführt werden.
+{{< tip >}}
+Mit Hilfe des Taskplaners (unter Windows) oder eines Cron-Jobs (unter Unix) kann das Hilfsprogramm automatisch zu einem beliebigen Zeitpunkt geplant und ausgeführt werden.
+{{< /tip >}}
 
-> **Hinweis**
->
-> Wenn mehr als eine Datenbank auf dem ImmoTool-Server hinterlegt wurden, müssen die Skripte `manager-backup.bat` / `manager-backup.sh` von Hand entsprechend angepasst und weitere Zugangsdaten müssen in `manager.conf` hinterlegt werden.
+{{< info >}}
+Wenn mehr als eine Datenbank auf dem ImmoTool-Server hinterlegt wurden, müssen die Skripte `manager-backup.bat` / `manager-backup.sh` von Hand entsprechend angepasst und weitere Zugangsdaten müssen in `manager.conf` hinterlegt werden.
+{{< /info >}}
 
 
 ### Wiederherstellung der gesicherten Datenbank {#admin_server_backup_restore}
@@ -73,9 +73,7 @@ Eine Datensicherung ist grundsätzlich eine Kopie der Datenbank-Dateien. Die Wie
 
 3.  Kopieren Sie die gesicherten Datenbank-Dateien `db.data`, `db.lobs`, `db.properties` & `db.script` in das Verzeichnis der jeweiligen Datenbank - z.B. in das Unterverzeichnis `var/data/immotool` des ImmoTool-Servers.
 
-    > **Hinweis**
-    >
-    > Stellen Sie sicher, dass das Datenbank-Verzeichnis vor dem Kopieren der Datenbank-Dateien komplett leer ist.
+    {{< info >}}Stellen Sie sicher, dass das Datenbank-Verzeichnis vor dem Kopieren der Datenbank-Dateien komplett leer ist.{{< /info >}}
 
 4.  Starten Sie den ImmoTool-Server neu, um mit der wiederhergestellten Datenbank weiterarbeiten zu können.
 

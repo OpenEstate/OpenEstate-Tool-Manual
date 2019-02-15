@@ -78,14 +78,12 @@ Folgende Aktionen stehen zur Verfügung:
 
 -   **Vermittlung öffnen**
 
-    > **TODO**
-    >
-    > Aktion Vermittlung öffnen beschreiben
+    {{< todo >}}Aktion Vermittlung öffnen beschreiben{{< /todo >}}
 
 
-> **Tipp**
->
-> Wenn mehrere Zeilen in der Tabelle markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste und der linken Maustaste), können Aktionen auf mehreren Immobilien auf einmal durchgeführt werden.
+{{< tip >}}
+Wenn mehrere Zeilen in der Tabelle markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste und der linken Maustaste), können Aktionen auf mehreren Immobilien auf einmal durchgeführt werden.
+{{< /tip >}}
 
 
 #### Immobilien durchsuchen {#usage_realestate_manage_table_search}
@@ -105,9 +103,7 @@ Folgende Angaben können im Formular hinterlegt werden:
 
 -   **Vorlage wählen**
 
-    > **TODO**
-    >
-    > Vorlage wählen beschreiben
+    {{< todo >}}Vorlage wählen beschreiben{{< /todo >}}
 
 -   **Suchanfrage dauerhaft speichern**
 
@@ -166,9 +162,9 @@ Eine Immobilie können Sie auf zwei Wegen öffnen.
 
 2. Klicken Sie im oberen Bereich der Übersicht der Immobilien auf `Anktionen → Immobilie duplizieren`.
 
-> **Hinweis**
->
-> Die originale Immobilie bleibt bei dieser Verfahrensweise unangetastet!
+{{< info >}}
+Die originale Immobilie bleibt bei dieser Verfahrensweise unangetastet!
+{{< /info >}}
 
 Nehmen Sie an der duplizierten Immobilie die gewünschten Änderungen vor und speichern diese. Es wird eine neue Immobilie in der Datenbank angelegt.
 
@@ -183,10 +179,9 @@ Eine Immobilie können Sie auf zwei Wegen löschen.
 
 2. Klicken Sie im oberen Bereich der Übersicht der Immobilien auf `Anktionen → Entfernen`.
 
-
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Immobilienformular {#usage_realestate_manage_form}
@@ -202,16 +197,12 @@ Im Tab `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammengefasst.
 
     Der Titel wird in allen Sprachen angezeigt, welche in den Sprach-Einstellungen aktiviert wurden. Durch einen Mausklick auf die Checkbox neben der Landesflagge können Sie für diese Immobilie eine oder mehrere Sprachen aktivieren. Eine Sprache muss mindestens aktiviert werden.
 
-    > **Hinweis**
-    >
-    > Der Titel kann in allen Sprachen abgelegt werden, welche in den Sprach-Einstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+    {{< info >}}Der Titel kann in allen Sprachen abgelegt werden, welche in den Sprach-Einstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`{{< /info >}}
 
 -   **Objekt-Nr**
     Dieses Feld ist für von Ihnen selbst vergebene interne Objektnummer vorgesehen. Von Portalen kann die Objekt-Nr zur Identifikation Ihrer Inserate verwendet werden.
 
-    > **Tipp**
-    >
-    > Wenn Sie wünschen, dass die Objektnummer statt der Datenbank-ID für den Export zu den Portalen verwendet wird, nehmen Sie in der Schnittstelle die entsprechende Einstellung vor.
+    {{< tip >}}Wenn Sie wünschen, dass die Objektnummer statt der Datenbank-ID für den Export zu den Portalen verwendet wird, nehmen Sie in der Schnittstelle die entsprechende Einstellung vor.{{< /tip >}}
 
 
 -   **Währung**
@@ -243,23 +234,21 @@ Im Tab `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammengefasst.
 -   **Geokoordinaten ermitteln**
     Um die Geokoordinaten zu einer Immobilie zu ermitteln betätigen Sie den Button `Geokoordinaten ermitteln`. Im folgenden Fenster können Sie nach betätigen des Buttons `Suchen` angeben ob Sie nach einem Ort oder einer Postleitzahl suchen. Gemäß Ihrer Auswahl öffnet sich in der Karte das entsprechende Suchformular. Geben Sie Suchkriterien ein und starten Sie die Suche über den Button `Ausführen`. Mit dem Button `Abbrechen` im Suchformular können Sie das Suchformular schließen. Im Suchergebnis wählen Sie ein passendes Ergebnis. Es wird Ihnen dann ein Ausschnitt einer Karte gezeigt. Diesen können Sie mit dem Mausrad vergrößern oder verkleinern und mit der linken Maustaste verschieben. Wenn Sie die gewünschte Adresse gefunden haben markieren Sie diese und betätigen den Button `Koordinaten übernehmen`. Die Koordinaten werden in das Immobilienformular übernommen.
 
-> **Hinweis**
->
-> Nach dem Versand der Immobilie an Portale sollten Sie die Objekt-Nr nicht mehr ändern, da dieses Inserat sonst in den Portalen ggf. neu angelegt wird, und dann doppelt vorhanden sein kann. Sollte eine neue Vergabe der Nummer notwendig sein, so löschen Sie diese Immobilie zuerst in den Portalen.
+{{< info >}}
+Nach dem Versand der Immobilie an Portale sollten Sie die Objekt-Nr nicht mehr ändern, da dieses Inserat sonst in den Portalen ggf. neu angelegt wird, und dann doppelt vorhanden sein kann. Sollte eine neue Vergabe der Nummer notwendig sein, so löschen Sie diese Immobilie zuerst in den Portalen.
+{{< /info >}}
 
-> **Hinweis**
->
-> Der Status einer Immobilie muss auf `in Vermittlung` gesetzt sein damit die Immobilie beim Export zu den Immobilienportalen berücksichtigt wird.
+{{< info >}}
+Der Status einer Immobilie muss auf `in Vermittlung` gesetzt sein damit die Immobilie beim Export zu den Immobilienportalen berücksichtigt wird.
+{{< /info >}}
 
-> **Hinweis**
->
-> Um die spezifischen Regionen eines Immobilienportals verfügbar zu haben, müssen die jeweiligen Erweiterung in die Datenbank installiert werden. Diese finden Sie unter [dev.openestate.org](http://dev.openestate.org/applications/1/#download) im Abschnitt **Geodaten**.
+{{< info >}}
+Um die spezifischen Regionen eines Immobilienportals verfügbar zu haben, müssen die jeweiligen Erweiterung in die Datenbank installiert werden. Diese finden Sie unter [dev.openestate.org](http://dev.openestate.org/applications/1/#download) im Abschnitt **Geodaten**.
+{{< /info >}}
 
-
-> **TODO**
->
-> Link zum Download der Geodaten korrigieren
-
+{{< todo >}}
+Link zum Download der Geodaten korrigieren
+{{< /todo >}}
 
 
 #### Spezifikation {#usage_realestate_manage_form_attributes}
@@ -303,9 +292,9 @@ Mit den blauen Pfeilen können Sie die Gruppen ausblenden / einblenden bzw. die 
 
 Bei der Eingabe wird Ihnen die Anzahl der noch möglichen Zeichen angezeigt.
 
-> **Hinweis**
->
-> Es können Texte in allen Sprachen eingetragen werden, die in den Sprach-Einstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+{{< info >}}
+Es können Texte in allen Sprachen eingetragen werden, die in den Sprach-Einstellungen aktiviert wurden. Hauptmenü `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+{{< /info >}}
 
 
 #### Energieausweis {#usage_realestate_manage_form_energy-performance-certificate}
@@ -330,17 +319,17 @@ Klicken Sie auf den Button `Importieren` um eine Bild oder andere Dateien von Ih
 
 Beim Import der Dateien erkennt das Programm automatisch, ob es sich um Bilder oder andere Anhänge handelt.
 
-> **Tipp**
->
-> Sie können mehrere Bilder auf einmal importieren, wenn Sie bei der Datei-Auswahl die `STRG` / `Shift` Taste gedrückt halten und mit der Maus die gewählten Bilder anklicken.
+{{< tip >}}
+Sie können mehrere Bilder auf einmal importieren, wenn Sie bei der Datei-Auswahl die `STRG` / `Shift` Taste gedrückt halten und mit der Maus die gewählten Bilder anklicken.
+{{< /tip >}}
 
-> **Hinweis**
->
-> Es werden die gängigen Bildformate (JPG, PNG, GIF, TIF, BMP) abhängig von der verwendeten Java-Version unterstützt.
+{{< info >}}
+Es werden die gängigen Bildformate (JPG, PNG, GIF, TIF, BMP) abhängig von der verwendeten Java-Version unterstützt.
+{{< /info >}}
 
-> **Hinweis**
->
-> Importierte Fotos werden in der Datenbank gespeichert und die Originale müssen nicht dauerhaft auf der Festplatte verfügbar bleiben. Es empfiehlt sich jedoch dennoch, die importierten Dateien auch außerhalb des ImmoTools gespeichert zu halten.
+{{< info >}}
+Importierte Fotos werden in der Datenbank gespeichert und die Originale müssen nicht dauerhaft auf der Festplatte verfügbar bleiben. Es empfiehlt sich jedoch dennoch, die importierten Dateien auch außerhalb des ImmoTools gespeichert zu halten.
+{{< /info >}}
 
 
 ##### Fotos & Dateien bearbeiten {#usage_realestate_manage_form_media_files_edit}
@@ -355,9 +344,9 @@ Nach dem Import können Sie jedes Foto einzeln durch Anklicken in der Übersicht
 
 4.  Unter `Aktionen` können Sie mit den rötlichen Pfeiltasten das gewählte Bild horizontal / vertikal spiegeln bzw. nach rechts / links um 90 Grad drehen.
 
-> **Hinweis**
->
-> Die Titel der Bilder können in allen Sprachen abgelegt werden, welche in den Sprach-Einstellungen aktiviert wurden. `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+{{< info >}}
+Die Titel der Bilder können in allen Sprachen abgelegt werden, welche in den Sprach-Einstellungen aktiviert wurden. `Extras` → `Einstellungen` → `Immobilien` → `Sprachen`
+{{< /info >}}
 
 
 ##### Fotos & Dateien entfernen {#usage_realestate_manage_form_media_files_remove}
@@ -412,9 +401,9 @@ Wählen Sie in der Selectbox `Ansprechpartner` die Option `neuer Ansprechpartner
 
 Wählen Sie in der Selectbox `Ansprechpartner` die Option `Keinen Ansprechpartner`. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten zurückgegriffen. `Extras` → `Anbieterprofil`
 
-> **Hinweis**
->
-> Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei einem neu angelegte Ansprechpartner dauerhaft gespeichert. 
+{{< info >}}
+Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei einem neu angelegte Ansprechpartner dauerhaft gespeichert.
+{{< /info >}} 
 
 
 ##### Vermittlungsauftrag {#usage_realestate_manage_form_owner}
@@ -438,9 +427,9 @@ Wählen Sie in der Selectbox `Adresse` die Option `neuer Adresse eingeben`.  In 
 
 Wählen Sie in der Selectbox `Adresse` die Option `Keinen Adresse`.
 
-> **Hinweis**
->
-> Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei einem neu angelegte Vermittlungsauftrag dauerhaft gespeichert. 
+{{< info >}}
+Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei einem neu angelegte Vermittlungsauftrag dauerhaft gespeichert. 
+{{< /info >}}
 
 
 ##### Suchaufträge {#usage_realestate_manage_form_seeker}
@@ -449,11 +438,11 @@ Im Tab `Adressen` → `Suchaufträge` können Interessenten zur der Immobilie hi
 
 {{< figure src="realestate_form_seeker.jpg" caption="Suchauftrag zur Immobilie zuweisen" >}}
 
-> **Hinweis**
->
-> Suchaufträge können mit einer Immobilie nur dann verknüpft werden, wenn diese bereits angelegt wurden.
+{{< info >}}
+Suchaufträge können mit einer Immobilie nur dann verknüpft werden, wenn diese bereits angelegt wurden.
+{{< /info >}}
 
-##### Einen Suchauftrag zuweisen  {#usage_realestate_manage_form_seeker_select}
+##### Einen Suchauftrag zuweisen {#usage_realestate_manage_form_seeker_select}
 
 Wenn ein vorhandener Suchauftrag zu einer Immobilie passt, wird dies unterhalb des Immobilienformulars mit einem Link angezeigt. Beim anklicken des Links gelangen Sie auf das Formular für die Suchaufträge.
 
@@ -463,13 +452,13 @@ Um einen Suchauftrag dieser Immobilie zuzuweisen markieren Sie diesen in der Lis
 
 ##### Einen neuen Suchauftrag erfassen {#usage_realestate_manage_form_seeker_add}
 
-> **TODO**
->
-> Link zu Suchaufträgen erfassen einfügen.
+{{< todo >}}
+Link zu Suchaufträgen erfassen einfügen.
+{{< /todo >}}
 
-> **Hinweis**
->
-> Beim Speichern der Immobilie werden die Zuweisungen dauerhaft gespeichert.
+{{< info >}}
+Beim Speichern der Immobilie werden die Zuweisungen dauerhaft gespeichert.
+{{< /info >}}
 
 
 ##### Adressen {#usage_realestate_manage_form_addresses_addresses}
@@ -504,9 +493,9 @@ Es öffnet sich daraufhin ein Fenster, über welches die Verknüpfung bearbeitet
 
 Um eine Verknüpfung mit einer Adresse zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Sie `Zuordnung entfernen`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken Sie auf den Button `Aktionen` und wählen Sie `Zuordnung entfernen` aus.
 
-> **TODO**
->
-> Tab Vermittlungsauftrag, Suchaufträge, Adresse und neu Adressen beschreiben. Ehemals Adressen.
+{{< todo >}}
+Tab Vermittlungsauftrag, Suchaufträge, Adresse und neu Adressen beschreiben. Ehemals Adressen.
+{{< /todo >}}
 
 
 #### Exporte {#usage_realestate_manage_form_export}
@@ -578,13 +567,13 @@ Bearbeiten Sie nun die Verknüpfung und speichern Sie diese mit dem Button `Übe
 
 Um die Verknüpfung zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen `Zuordnung entfernen`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button `Aktionen` und wählen Sie `Zuordnung entfernen` aus.
 
-> **TODO**
->
-> Tab Kalender beschreiben.
+{{< todo >}}
+Tab Kalender beschreiben.
+{{< /todo >}}
 
-> **TODO**
->
-> Tab Aktionen beschreiben.
+{{< todo >}}
+Tab Aktionen beschreiben.
+{{< /todo >}}
 
 
 #### Notizen {#usage_realestate_manage_form_notes}
@@ -593,19 +582,19 @@ Im Tab `Notizen` können zu der Immobilie beliebige    Notizen hinterlegt werden
 
 {{< figure src="realestate_form_notes.jpg" caption="Notizen zur Immobilie hinterlegen" >}}
 
-> **Hinweis**
->
-> Der hinterlegte Notiztext wird vom Programm  **nicht veröffentlicht** - z.B. an Immobilienportale exportiert oder in Exposés dargestellt.
+{{< info >}}
+Der hinterlegte Notiztext wird vom Programm  **nicht veröffentlicht** - z.B. an Immobilienportale exportiert oder in Exposés dargestellt.
+{{< /info >}}
 
 
 #### Änderungen speichern {#usage_realestate_manage_form_submit}
 
 Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
 
-> **Hinweis**
->
-> Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< info >}}
+Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< /info >}}
 
-> **Achtung**
->
-> Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< warning >}}
+Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< /warning >}}

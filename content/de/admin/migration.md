@@ -36,9 +36,7 @@ Im Folgenden wird die Vorgehensweise beschrieben, um ein bestehendes Mehrplatz-P
 
 1.  Starten Sie das ImmoTool und erstellen Sie ein neues / leeres Einzelplatz-Projekt. In dieses neu erstellte Projekt wird in den nächsten Schritten die Datenbank vom ImmoTool-Server übernommen.
 
-    > **Hinweis**
-    >
-    > Merken Sie sich den Speicherort des Projektes auf Ihrer Festplatte.
+    {{< info >}}Merken Sie sich den Speicherort des Projektes auf Ihrer Festplatte.{{< /info >}}
 
 2.  Beenden Sie das ImmoTool nachdem das neue Projekt erstellt und erstmals geöffnet wurde.
 
@@ -50,9 +48,7 @@ Im Folgenden wird die Vorgehensweise beschrieben, um ein bestehendes Mehrplatz-P
 
 6.  Bearbeiten Sie die Datei `immotool.script` aus dem `data`-Verzeichnis des Einzelplatz-Projektes mit einem Texteditor.
 
-    > **Achtung**
-    >
-    > Sichern Sie sich die `immotool.script`-Datei, bevor Sie daran Änderungen vornehmen. Eventuelle Fehler können zu einer kaputten Datenbank führen.
+    {{< warning >}}Sichern Sie sich die `immotool.script`-Datei, bevor Sie daran Änderungen vornehmen. Eventuelle Fehler können zu einer kaputten Datenbank führen.{{< /warning >}}
 
 7.  Suchen Sie in der `immotool.script`-Datei die Zeile, die wie folgt beginnt:
     ```
@@ -73,9 +69,9 @@ Ab diesem Zeitpunkt kann das Einzelplatz-Projekt mit ImmoTool geöffnet werden u
 
 Die folgende Anleitung beschreibt die Vorgehensweise, um ein Projekt aus ImmoTool 0.9.x in ImmoTool 1.0 zu übernehmen.
 
-> **Hinweis**
->
-> Die alte ImmoTool-Installation bei der Migration komplett unangetastet. Sollte die Umstellung auf Version 1.0 Probleme bereiten oder fehlschlagen, kann mit der alten Version normal weiter gearbeitet werden.
+{{< info >}}
+Die alte ImmoTool-Installation bei der Migration komplett unangetastet. Sollte die Umstellung auf Version 1.0 Probleme bereiten oder fehlschlagen, kann mit der alten Version normal weiter gearbeitet werden.
+{{</ info >}}
 
 
 ### Projekt aus "ImmoTool 0.9.x" sichern {#admin_migration_project_0_9_backup}
@@ -99,9 +95,9 @@ Die Vorgehensweise zur Übernahme der unter (2) exportierten Daten hängt davon 
 
 Wenn des Projekt in ImmoTool 1.0 als **Einzelplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version. Die Installationsschritte sind im Kapitel ["ImmoTool als Einzelplatz-Version installieren"]({{< relref "../intro/install_client.md#intro_install_client" >}}) dokumentiert.
 
-> **Wichtig**
->
-> Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten *nebeneinander* installiert werden.
+{{< warning >}}
+Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten *nebeneinander* installiert werden.
+{{< /warning >}}
 
 Beim ersten Start von ImmoTool 1.0 kann die zuvor gesicherte Datenbank mit Hilfe des [Projektassistenten]({{< relref "../usage/general/projects.md#usage_general_projects_wizard" >}}) importiert werden.
 
@@ -118,9 +114,9 @@ Prüfen Sie sicherheitshalber die Firmendaten & Add-Ons und klicken Sie abschlie
 
 Wenn des Projekt in ImmoTool 1.0 als **Mehrplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version sowie den ImmoTool-Server. Die Installationsschritte sind im Kapitel ["ImmoTool als Netzwerk-Version installieren"]({{< relref "../intro/install_server.md#intro_install_server" >}}) dokumentiert.
 
-> **Wichtig**
->
-> Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten *nebeneinander* installiert werden.
+{{< warning >}}
+Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten *nebeneinander* installiert werden.
+{{< /warning >}}
 
 Nachdem der ImmoTool-Server erfolgreich in Betrieb genommen wurde, kann die gesicherte Datenbank mit Hilfe des AdminTools auf den ImmoTool-Server übertragen werden. Die [zuvor erstellte Datensicherung](#admin_migration_project_0_9_backup) kann im AdminTool auf folgenden Wegen importiert werden:
 

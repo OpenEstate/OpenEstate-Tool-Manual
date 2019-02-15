@@ -16,9 +16,9 @@ menu:
 
 Die im ImmoTool erfassten Immobiliendaten können als Export zusammengestellt und an externe Partner versendet werden (z.B. Immmobilienportale). Für jeden zu beliefernden Empfänger muss eine **Export-Schnittstelle** im Programm eingerichtet werden.
 
-> **Hinweis**
->
-> Zu den uns bekannten funktionierenden Immobilienportalen finden Sie [Hilfestellungen und Anleitungen im OpenEstate-Wiki](http://wiki.openestate.org/Kategorie:ImmoTool_Portalexport). Berücksichtigt sind hier Portale, welche von uns getestet wurden oder zu welchen ImmoTool-Benutzer erfolgreich senden konnten.
+{{< info >}}
+Zu den uns bekannten funktionierenden Immobilienportalen finden Sie [Hilfestellungen und Anleitungen im OpenEstate-Wiki](http://wiki.openestate.org/Kategorie:ImmoTool_Portalexport). Berücksichtigt sind hier Portale, welche von uns getestet wurden oder zu welchen ImmoTool-Benutzer erfolgreich senden konnten.
+{{< /info >}}
 
 
 ### Übersicht der Export-Schnittstellen {#usage_realestate_export_summary}
@@ -70,9 +70,9 @@ Bei Rechtsklick auf die betreffende Export-Schnittstelle in der Tabelle öffnet 
 
 Alternativ kann die betreffende Export-Schnittstelle in der Tabelle per Linksklick markiert werden. Bei Klick auf den Button `Aktionen` wird ein Menü dargestellt, in dem Sie die Aktion `Entfernen` auswählen können um die Export-Schnittstelle zu entfernen.
 
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Export-Schnittstelle (de)aktivieren {#usage_realestate_export_enable}
@@ -129,9 +129,9 @@ Die allgemeinen Einstellungen können im oberen Bereich des Formulars eingetrage
 
     Standardmäßig ist diese Option auf `aktiv` gesetzt. Wenn Sie diese Schnittstelle noch nicht aktivieren möchten, so entfernen Sie den Haken. Sie können diese Schnittstelle ggf. auch in der Übersicht der Schnittstellen temporär für einen einzelnen Exportvorgang aktivieren.
 
-> **Achtung**
->
-> Die Option zur Limitierung schützt Sie nicht zwangsläufig vor der Überschreitung Ihres Kontingents bei dem Empfänger. Prüfen Sie bitte dennoch in regelmäßigen Abständen beim Empfänger, ob das Limit korrekt eingehalten wird.
+{{< warning >}}
+Die Option zur Limitierung schützt Sie nicht zwangsläufig vor der Überschreitung Ihres Kontingents bei dem Empfänger. Prüfen Sie bitte dennoch in regelmäßigen Abständen beim Empfänger, ob das Limit korrekt eingehalten wird.
+{{< /warning >}}
 
 
 #### Transport via FTP {#usage_realestate_export_form_ftp}
@@ -211,9 +211,9 @@ Wenn im Feld `Transport` die Übertragungs-Art `HTTP` gewählt wurde, wird das f
 
 Wenn im Feld `Transport` die Übertragungs-Art `lokal auf die Festplatte` gewählt wurde, wird das folgende Formular im Tab`Transport` dargestellt:
 
-> **TODO**
->
-> Bild einfügen
+{{< todo >}}
+Bild einfügen
+{{< /todo >}}
 
 -   **Zielverzeichnis**
     Wählen Sie hier das lokale Verzeichnis auf Ihrer Festplatte aus, in welches die exportierten Immobiliendaten abgelegt werden soll.
@@ -281,10 +281,10 @@ Wählen Sie im unteren Bereich des Formulars den Tab `Bilder` um Einstellungen f
 
 Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
 
-> **Hinweis**
->
-> Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< info >}}
+Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< /info >}}
 
-> **Achtung**
->
-> Jede Änderung im Immobilienformular muss mindestens am Ende der Bearbeitung durch Klick auf Speichern dauerhaft gespeichert werden.
+{{< warning >}}
+Jede Änderung im Immobilienformular muss mindestens am Ende der Bearbeitung durch Klick auf Speichern dauerhaft gespeichert werden.
+{{< /warning >}}

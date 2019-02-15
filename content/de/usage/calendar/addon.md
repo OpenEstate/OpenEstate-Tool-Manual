@@ -29,13 +29,13 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "Kalender
 
 Die folgenden Einstellungen werden vom "Kalender Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Fragen & Antworten zum Kalender Add-On {#usage_calendar_addon_faq}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

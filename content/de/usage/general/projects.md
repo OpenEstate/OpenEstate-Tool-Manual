@@ -71,9 +71,9 @@ Tragen Sie hier Ihre Firmendaten ein. Die installierten Add-Ons greifen an versc
 
 Hier befindet sich die Übersicht der aktuell verfügbaren Add-Ons. Standardmäßig sind alle bei der Installation verfügbare Add-Ons aktiviert. Deaktivieren Sie die Add-Ons, welche Sie nicht in Ihrem Projekt verwenden möchten.
 
-> **Hinweis**
->
-> Eine nachträgliche Änderung dieser Einstellungen ist jederzeit möglich, siehe Add-Ons / Module.
+{{< info >}}
+Eine nachträgliche Änderung dieser Einstellungen ist jederzeit möglich, siehe Add-Ons / Module.
+{{< /info >}}
 
 
 #### Das neue Projekt speichern & öffnen
@@ -83,16 +83,16 @@ Speichern Sie das neu angelegte Projekt mit dem Button Projekt erzeugen.
 
 ### Ein bereits existierendes Projekt öffnen {#usage_general_projects_open}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Das zuletzt verwendete Projekt öffnen {#usage_general_projects_recent}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Fragen & Antworten zu Projekten {#usage_general_projects_faq}

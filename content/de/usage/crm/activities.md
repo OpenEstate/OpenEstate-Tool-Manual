@@ -17,20 +17,20 @@ menu:
 
 ### Was sind Aktivitäten? {#usage_crm_activities_info}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Übersicht der Aktivitäten {#usage_crm_activities_table}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Formular für Aktivitäten {#usage_crm_activities_form}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

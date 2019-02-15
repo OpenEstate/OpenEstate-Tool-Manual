@@ -22,25 +22,25 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "E-Mail A
 
 {{< figure src="sidebar.jpg" caption="Ansicht der E-Mailverwaltung" >}}
 
-> **Hinweis**
->
-> Um das "E-Mail Add-On" verwenden zu können benötigen Sie eine E-Mailadresse, auf die über die Protokolle **POP3**, **IMAP** und/oder **SMTP** zugegriffen werden kann. Dies ist bei den meisten E-Mailanbietern der Fall. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers" >}}).
+{{< info >}}
+Um das "E-Mail Add-On" verwenden zu können benötigen Sie eine E-Mailadresse, auf die über die Protokolle **POP3**, **IMAP** und/oder **SMTP** zugegriffen werden kann. Dies ist bei den meisten E-Mailanbietern der Fall. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers" >}}).
+{{< /info >}}
 
 
 ### Einstellungen {#usage_email_addon_settings}
 
 Die folgenden Einstellungen werden vom "E-Mail Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Fragen & Antworten zum E-Mail Add-On {#usage_email_addon_faq}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 #### Soll ich IMAP oder POP3 für den Mailempfang verwenden?

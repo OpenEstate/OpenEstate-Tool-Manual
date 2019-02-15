@@ -18,9 +18,9 @@ Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Hauptmenü au
 
 {{< figure src="menu_extras.jpg" caption="Einstellungen im Extras-Menü aufrufen" >}}
 
-> **Hinweis**
->
-> Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst durch betätigen des Buttons `Speichern` übernommen werden.
+{{< info >}}
+Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst durch betätigen des Buttons `Speichern` übernommen werden.
+{{< /info >}}
 
 
 ### Allgemeine Einstellungen {#usage_general_settings_general}
@@ -52,9 +52,9 @@ Wenn Sie für HTTP- und / oder FTP-Verbindungen ins Internet einen Proxy-Server 
 
 Sollte dies der Fall sein, entfernen Sie den Haken bei `Keinen HTTP/FTP-Proxy verwenden` und tragen Sie `Hostname / IP-Adresse` sowie die `Port-Nr` des Proxy-Servers ein.
 
-> **Hinweis**
->
-> Auf der Webseite der Entwickler können Sie ggf. weitere Informationen zur Konfiguration der aktiven FTP-Übertragung erhalten.
+{{< info >}}
+Auf der Webseite der Entwickler können Sie ggf. weitere Informationen zur Konfiguration der aktiven FTP-Übertragung erhalten.
+{{< /info >}}
 
 
 #### Datenbank-Einstellungen {#usage_general_settings_database}
@@ -101,18 +101,18 @@ Für IS24 können Sie die benötigte Datei unter http://wiki.openestate.org/medi
 
 Hier können Sie die Sprachen wählen, in welchen Texte zu den Immobilien erfasst werden sollen. Aktivieren Sie die gewünschten Sprachen durch Anklicken der Checkboxen. Weitere Informationen erhalten Sie im Kapitel 'Immobilie anlegen / verwalten'.
 
-> **Hinweis**
->
-> Hierbei handelt es sich nicht um die Übersetzungen des ImmoTools. Diese werden im Kapitel Add_Ons behandelt.
+{{< info >}}
+Hierbei handelt es sich nicht um die Übersetzungen des ImmoTools. Diese werden im Kapitel Add_Ons behandelt.
+{{< /info >}}
 
 
 #### Suchvorlagen
 
 Häufig verwendete Suchanfragen können als Suchvorlage abgelegt und bei Bedarf 
 
-> **TODO**
->
-> Inhalte einfügen Funktion unklar
+{{< todo >}}
+Inhalte einfügen Funktion unklar
+{{< /todo >}}
 
 
 ### Kalender Add-On {#usage_general_settings_calendar_addon}

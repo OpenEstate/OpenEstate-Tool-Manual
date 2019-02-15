@@ -35,9 +35,9 @@ Es öffnet sich ein Dialogfenster, in welchem Ausgaben zum Import-Vorgang zu seh
 
 Wenn bei der Initialisierung des Imports kein Fehler auftritt öffnet sich ein weiteres Dialogfenster, in welchem Sie aufgefordert werden den Status der zu importierenden Immobilien zu wählen. Treffen Sie eine Auswahl und klicken Sie auf den Button `Übernehmen`.
 
-> **Hinweis**
->
-> Prüfen Sie nach erfolgtem Import Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
+{{< info >}}
+Prüfen Sie nach erfolgtem Import Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
+{{< /info >}}
 
 
 ### Immobilien aus vorhandener Maklersoftware importieren {#usage_realestate_import_ftp}
@@ -46,13 +46,13 @@ Moderne Softwarelösungen für Immobilienmakler bieten in der Regel eine Funktio
 
 Statt aus einer anderen Maklersoftware heraus ein Immobilienportal zu beliefern, kann ein Export direkt zum ImmoTool durchgeführt werden. Für diesen Zweck liefert das ImmoTool einen eigenen minimalen FTP-Server mit, zu dem die Immobiliendaten aus einer anderen Maklersoftware gesendet werden können - als wäre das ImmoTool ein Immobilienportal.
 
-> **Achtung**
->
-> Diese Funktion befindet sich noch in einem experimentellen Status! Bitte teilen Sie uns Ihre Erfahrungen mit.
+{{< warning >}}
+Diese Funktion befindet sich noch in einem experimentellen Status! Bitte teilen Sie uns Ihre Erfahrungen mit.
+{{< /warning >}}
 
-> **Hinweis**
->
-> Dieses Verfahren funktioniert nicht, wenn Sie eine Online-Software verwenden. Sowohl das ImmoTool als auch die andere Software müssen sich auf dem gleichen Rechner oder in Ihrem lokalen Netzwerk befinden.
+{{< info >}}
+Dieses Verfahren funktioniert nicht, wenn Sie eine Online-Software verwenden. Sowohl das ImmoTool als auch die andere Software müssen sich auf dem gleichen Rechner oder in Ihrem lokalen Netzwerk befinden.
+{{< /info >}}
 
 Klicken Sie im Hauptmenü auf `Immobilien` → `Immobilien importieren` → `via Maklersoftware-Export`. Darauf wird das folgende Fenster dargestellt:
 
@@ -78,13 +78,14 @@ Gehen Sie wie folgt vor, um die Immobilien aus einer externen Maklersoftware zum
 
 5.  Sollten importierbare Dateien empfangen worden sein, werden Sie gefragt, ob diese importiert werden sollen. Beantworten Sie diese Frage mit `Ja`  und das Programm wird versuchen die übertragenen Dateien zu importieren.
 
-> **Hinweis**
->
-> Beim Schließen des Import-Fensters werden nicht importierte Dateien gelöscht!
+{{< info >}}
+Beim Schließen des Import-Fensters werden nicht importierte Dateien gelöscht!
+{{< /info >}}
 
-> **Hinweis**
->
-> Um eine Port-Nr kleiner als `1000` verwenden zu können, muss das Programm mit Administrator-Rechten gestartet werden. Dabei handelt es sich um eine Sicherheitsbeschränkung von Java.
+{{< info >}}
+Um eine Port-Nr kleiner als `1000` verwenden zu können, muss das Programm mit Administrator-Rechten gestartet werden. Dabei handelt es sich um eine Sicherheitsbeschränkung von Java.
+{{< /info >}}
 
-> **Hinweis**
-> Prüfen Sie nach erfolgtem Import Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
+{{< info >}}
+Prüfen Sie nach erfolgtem Import Ihren Immobilienbestand auf Korrektheit und nehmen Sie ggf. nachträgliche Korrekturen vor.
+{{< /info >}}

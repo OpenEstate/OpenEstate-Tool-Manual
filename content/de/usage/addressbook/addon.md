@@ -29,14 +29,13 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "Adressbu
 
 Die folgenden Einstellungen werden vom "Adressbuch Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Fragen & Antworten zum Adressbuch Add-On {#usage_addressbook_addon_faq}
 
-> **TODO**
->
-> Inhalte einfügen
-
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

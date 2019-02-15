@@ -28,9 +28,9 @@ Es werden verschiedene Arten von Protokoll-Dateien erstellt.
 -   **Datenbank-Protokolle**
     Das Protokoll `exist.log` speichert Warnungen & Fehler der ImmoTool-Datenbank.
 
-> **Hinweis**
->
-> Die Protokoll-Dateien des aktuellen Tages haben kein Datum im Namen (z.B. `system.log`). Ältere Dateien tragen im Namen das jeweilige Datum der Erstellung (z.B. `system.log.2012-01-20`).
+{{< info >}}
+Die Protokoll-Dateien des aktuellen Tages haben kein Datum im Namen (z.B. `system.log`). Ältere Dateien tragen im Namen das jeweilige Datum der Erstellung (z.B. `system.log.2012-01-20`).
+{{< /info >}}
 
 
 ### Protokoll speichern {#usage_general_protocols_export}

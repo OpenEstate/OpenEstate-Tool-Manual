@@ -95,9 +95,9 @@ Klicken Sie dafür in der Tabellenspalte `Aktiv` auf die jeweilige Zeile um ein 
 
 Markieren Sie ein Add-On in der Tabelle und klicken Sie auf `Deinstallieren` um das gewählte Add-On komplett aus der Datenbank zu entfernen.
 
-> **Achtung**
->
-> Bei der Deinstallation gehen sämtliche Daten verloren, die eventuell bereits mit dem Add-On erfasst worden sind.
+{{< warning >}}
+Bei der Deinstallation gehen sämtliche Daten verloren, die eventuell bereits mit dem Add-On erfasst worden sind.
+{{< /warning >}}
 
 
 #### Aktualisierbare Add-Ons verwalten {#admin_tool_addons_updates}
@@ -116,9 +116,9 @@ Im Tab `Add-Ons` wird unter `Aktualisierungen` eine tabellarische Übersicht der
 
 Klicken Sie in der Tabellenspalte `Installation` auf die jeweilige Zeile um ein Add-On zu installieren / aktualisieren. Der Vorgang wird durch Klick auf `Installation` gestartet.
 
-> **Hinweis**
->
-> Ein Add-On kann im ImmoTool nur verwendet werden, wenn die in der Datenbank installierte Version mit der lokal verfügbaren Version übereinstimmt.
+{{< info >}}
+Ein Add-On kann im ImmoTool nur verwendet werden, wenn die in der Datenbank installierte Version mit der lokal verfügbaren Version übereinstimmt.
+{{< /info >}}
 
 
 ### Benutzer bearbeiten {#admin_tool_users}
@@ -138,9 +138,9 @@ Folgende Aktionen können über die Buttons oberhalb der Benutzer-Ansicht ausgef
 -   Klicken Sie im Tab auf `Entfernen` um den aktuell gewählten Benutzer zu entfernen.
 -   Klicken Sie im Tab auf `Übernehmen` um die vorgenommenen Änderungen in der Benutzer-Ansicht dauerhaft speichern.
 
-> **Hinweis**
->
-> Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitliche Änderung nicht gespeichert und geht verloren.
+{{< info >}}
+Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitliche Änderung nicht gespeichert und geht verloren.
+{{< /info >}}
 
 
 #### Eckdaten des Benutzers {#admin_tool_users_general}
@@ -174,9 +174,9 @@ Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Personen
 
 {{< figure src="tool_users-03.jpg" caption="Personendaten eines Benutzers" >}}
 
-> **Hinweis**
->
-> Die hier hinterlegten Personendaten kann der Benutzer nachträglich via ImmoTool bearbeiten (wenn die nötigen Rechte vorhanden sind).
+{{< info >}}
+Die hier hinterlegten Personendaten kann der Benutzer nachträglich via ImmoTool bearbeiten (wenn die nötigen Rechte vorhanden sind).
+{{< /info >}}
 
 
 #### Gruppen des Benutzers {#admin_tool_users_groups}
@@ -187,9 +187,9 @@ Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Gruppen-
 
 In der Tabelle werden die aktuell in der Datenbank registrierten Gruppen dargestellt. Durch Klick in die Spalte `Zuweisung` können dem Benutzer eine oder mehrere Gruppen zugewiesen werden.
 
-> **Hinweis**
->
-> Ein Benutzer erbt die Berechtigungen aus den ihm zugewiesenen Gruppen.
+{{< info >}}
+Ein Benutzer erbt die Berechtigungen aus den ihm zugewiesenen Gruppen.
+{{< /info >}}
 
 
 #### Berechtigungen des Benutzers {#admin_tool_users_permissions}
@@ -220,9 +220,9 @@ Folgende Aktionen können über die Buttons oberhalb der Gruppen-Ansicht ausgef�
 -   Klicken Sie im Tab auf `Entfernen` um die aktuell gewählte Gruppe zu entfernen.
 -   Klicken Sie im Tab auf `Übernehmen` um die vorgenommenen Änderungen in der Gruppen-Ansicht dauerhaft speichern.
 
-> **Hinweis**
->
-> Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitliche Änderung nicht gespeichert und geht verloren.
+{{< info >}}
+Bitte beachten Sie, dass Sie nach jeder Änderung abschließend auf `Übernehmen` klicken sollten. Andernfalls wird die zwischenzeitliche Änderung nicht gespeichert und geht verloren.
+{{< /info >}}
 
 
 #### Eckdaten der Gruppe {#admin_tool_groups_general}
@@ -246,9 +246,9 @@ Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden die zugewiese
 
 In der Tabelle werden die aktuell in der Datenbank registrierten Benutzer dargestellt. Durch Klick in die Spalte `Zuweisung` können der Gruppe eine oder mehrere Benutzer als Mitglied zugewiesen werden.
 
-> **Hinweis**
->
-> Jeder Benutzer, der einer Gruppe als Mitglied zugewiesen wurde, erhält automatisch alle Berechtigungen der Gruppe.
+{{< info >}}
+Jeder Benutzer, der einer Gruppe als Mitglied zugewiesen wurde, erhält automatisch alle Berechtigungen der Gruppe.
+{{< /info >}}
 
 
 #### Berechtigungen erteilen {#admin_tool_groups_permissions}
@@ -259,9 +259,9 @@ Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden die Berechtig
 
 In der Tabelle werden die von den Add-Ons bereitgestellten Berechtigungen dargestellt. Durch Klick in die Spalte `Aktiv` können der Gruppe eine oder mehrere Berechtigungen zugewiesen werden.
 
-> **Hinweis**
->
-> Jeder Benutzer, der einer Gruppe als Mitglied zugewiesen wurde, erhält automatisch alle Berechtigungen dieser Gruppe.
+{{< info >}}
+Jeder Benutzer, der einer Gruppe als Mitglied zugewiesen wurde, erhält automatisch alle Berechtigungen dieser Gruppe.
+{{< /info >}}
 
 
 ### Inhalte der Datenbank anzeigen {#admin_tool_browser}
@@ -277,6 +277,6 @@ Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab `SQL-Kons
 
 {{< figure src="tool_console-01.jpg" caption="SQL-Befehle im AdminTool ausführen" >}}
 
-> **Warnung**
->
-> Verwenden Sie diese Funktion mit Bedacht. Ein falscher Eingriff kann die Datenbank beschädigen.
+{{< warning >}}
+Verwenden Sie diese Funktion mit Bedacht. Ein falscher Eingriff kann die Datenbank beschädigen.
+{{< /warning >}}

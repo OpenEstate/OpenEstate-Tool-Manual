@@ -20,9 +20,7 @@ Im Falle, dass der Administrator sein Passwort vergessen hat und sich nicht mehr
 
 2.  Öffnen Sie die Datei `db.script` aus dem Verzeichnis `var/data/immotool` des ImmoTool-Servers mit einem Texteditor.
 
-    > **Wichtig**
-    >
-    > Sichern Sie sich die `db.script`-Datei, bevor Sie daran Änderungen vornehmen. Eventuelle Fehler können zu einer kaputten Datenbank führen.
+    {{< warning >}}Sichern Sie sich die `db.script`-Datei, bevor Sie daran Änderungen vornehmen. Eventuelle Fehler können zu einer kaputten Datenbank führen.{{< /warning >}}
 
 3.  Suchen Sie in der `db.script`-Datei die Zeile, die wie folgt beginnt:
     ```
@@ -38,6 +36,4 @@ Im Falle, dass der Administrator sein Passwort vergessen hat und sich nicht mehr
 
 5.  Das Passwort des Administrator-Benutzers `SA` sollte damit geändert worden sein auf `test1234`. Dieses Passwort kann ab sofort verwendet werden, um sich als Datenbank-Administrator anzumelden.
 
-    > **Wichtig**
-    >
-    > Das geänderte Administrator-Passwort sollte mit Hilfe der AdminTools wieder auf ein geheimes Passwort geändert werden.
+    {{< warning >}}Das geänderte Administrator-Passwort sollte mit Hilfe der AdminTools wieder auf ein geheimes Passwort geändert werden.{{< /warning >}}

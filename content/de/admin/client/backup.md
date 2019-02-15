@@ -14,28 +14,27 @@ menu:
 
 ## Sicherung eines Einzelplatz-Projekts im ImmoTool {#admin_client_backup}
 
-> **TODO**
->
-> Allgemeine Hinweise zur Vorgehensweise einfügen. Hinweis auf abweichende Vorgehensweise bei Mehrplatz-Projekten einfügen.
+{{< todo >}}
+Allgemeine Hinweise zur Vorgehensweise einfügen. Hinweis auf abweichende Vorgehensweise bei Mehrplatz-Projekten einfügen.
+{{< /todo >}}
 
 
 ### Manuelle Sicherung eines Einzelplatz-Projekts {#admin_client_backup_manual}
 
-> **TODO**
->
-> Vorgehensweise zur manuellen Datensicherung einfügen. Datensicherung kann manuell aus dem ImmoTool heraus erfolgen oder manuell durch Datei-Operationen auf der Festplatte erfolgen.
+{{< todo >}}
+Vorgehensweise zur manuellen Datensicherung einfügen. Datensicherung kann manuell aus dem ImmoTool heraus erfolgen oder manuell durch Datei-Operationen auf der Festplatte erfolgen.
+{{< /todo >}}
 
 
 ### Automatische Sicherung eines Einzelplatz-Projekts {#admin_client_backup_automatic}
 
-> **TODO**
->
-> Vorgehensweise zur automatischen Datensicherung einfügen.
+{{< todo >}}
+Vorgehensweise zur automatischen Datensicherung einfügen.
+{{< /todo >}}
 
 
 ### Gesichertes Einzelplatz-Projekt wiederherstellen {#admin_client_backup_restore}
 
-> **TODO**
->
-> Vorgehensweise zur Wiederherstellung eines gesicherten Einzelplatz-Projekts einfügen.
-
+{{< todo >}}
+Vorgehensweise zur Wiederherstellung eines gesicherten Einzelplatz-Projekts einfügen.
+{{< /todo >}}

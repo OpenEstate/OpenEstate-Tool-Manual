@@ -87,9 +87,9 @@ Wenn sich der ImmoTool-Server außerhalb des lokalen Firmen-Netzwerkes befindet 
 
 Es ist aber auch in anderen Fällen grundsätzlich sinnvoll eine Verschlüsselung durchzuführen, da es hierbei zu einem Gewinn an Sicherheit und Integrität bei der Datenübertragung kommt. Jedoch ist damit zu rechen, dass die Kommunikation geringfügig länger als bei einer unverschlüsselten Verbindung dauern wird.
 
-> **Hinweis**
->
-> Der ImmoTool-Server erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle ImmoTools in Ihrem Netzwerk konfigurieren](#admin_server_setup_ssl_client).
+{{< info >}}
+Der ImmoTool-Server erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle ImmoTools in Ihrem Netzwerk konfigurieren](#admin_server_setup_ssl_client).
+{{< /info >}}
 
 
 #### SSL-Zertifikat erzeugen {#admin_server_setup_ssl_cert}
@@ -112,13 +112,9 @@ Nachdem das Skript (`init_ssl.bat` / `init_ssl.sh`) gestartet wurde sind folgend
 
     Im SSL-Zertifikat wird diese Angabe als sogenannter "Common Name" (CN) verwendet.
 
-    > **Wichtig**
-    >
-    > Der gewählte "Common Name" **muss** in Ihrem Netzwerk auf den ImmoTool-Server verweisen. Beim Aufbau einer verschlüsselten Verbindung über das ImmoTool **muss** dieser Name als Hostname verwendet werden.
+    {{< warning >}}Der gewählte "Common Name" **muss** in Ihrem Netzwerk auf den ImmoTool-Server verweisen. Beim Aufbau einer verschlüsselten Verbindung über das ImmoTool **muss** dieser Name als Hostname verwendet werden.{{< /warning >}}
 
-    > **Hinweis**
-    >
-    > Wenn Sie statt eines Hostnamens eine IP-Adresse als "Common Name" verwenden, sollten Sie sicherstellen, dass die IP-Adresse in Ihrem Netzwerk permanent gleich bleibt. Mit jeder Änderung der IP-Adresse muss auch ein neues SSL-Zertifikat erzeugt werden.
+    {{< info >}}Wenn Sie statt eines Hostnamens eine IP-Adresse als "Common Name" verwenden, sollten Sie sicherstellen, dass die IP-Adresse in Ihrem Netzwerk permanent gleich bleibt. Mit jeder Änderung der IP-Adresse muss auch ein neues SSL-Zertifikat erzeugt werden.{{< /info >}}
 
 3.  Verschiedene weitere Angaben werden abgefragt. Hier können beliebige Eingaben vorgenommen werden - passend zur jeweiligen Firma.
 
@@ -182,13 +178,13 @@ system.javax.net.ssl.keyStorePassword=MEIN-SSL-PASSWORT
 
 Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss der ImmoTool-Server neu gestartet werden.
 
-> **Hinweis**
->
-> Wenn das Betriebssystem es ermöglicht, empfiehlt es sich die Zugriffsrechte auf die Datei `etc/server.properties` zu limitieren, sodass andere Benutzer des Betriebssystems nicht darauf zugreifen können. Unter Linux / Mac entspricht dies:
->
-> ```
-> chmod 600 server.properties
-> ```
+{{< info >}}
+Wenn das Betriebssystem es ermöglicht, empfiehlt es sich die Zugriffsrechte auf die Datei `etc/server.properties` zu limitieren, sodass andere Benutzer des Betriebssystems nicht darauf zugreifen können. Unter Linux / Mac entspricht dies:
+
+```bash
+chmod 600 server.properties
+```
+{{< /info >}}
 
 
 #### SSL-Verschlüsselung in ImmoTool / AdminTool aktivieren {#admin_server_setup_ssl_client}

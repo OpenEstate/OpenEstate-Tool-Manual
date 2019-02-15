@@ -36,12 +36,11 @@ Das [OpenEstate-Forum](http://board.openestate.org/) ist eine Plattform zur Komm
 
 Eine Teilnahme am Forum ist mit und ohne Anmeldung möglich. Mit einer Anmeldung stehen Ihnen weitere Komfort-Funktionen zur Verfügung.
 
-> **Achtung**
->
-> Bitte beachten Sie bei der Veröffentlichung von Protokoll-Dateien, dass diese vertrauliche Informationen (z.B. FTP-Zugangsdaten) enthalten können. Bitte prüfen Sie die daraufhin, bevor diese ins Forum hochgeladen werden oder übermitteln Sie das Protokoll als Privat-Mitteilung an einen der Moderatoren.
+{{< warning >}}
+Bitte beachten Sie bei der Veröffentlichung von Protokoll-Dateien, dass diese vertrauliche Informationen (z.B. FTP-Zugangsdaten) enthalten können. Bitte prüfen Sie die daraufhin, bevor diese ins Forum hochgeladen werden oder übermitteln Sie das Protokoll als Privat-Mitteilung an einen der Moderatoren.
+{{< /warning >}}
 
 
 ### Support via Ticketsystem
 
 Das Ticketsystem befindet sich im [Anwender-Bereich](http://dev.openestate.org/) unter dem Menüpunkt `Ticketsystem`. Hier können Sie vertrauliche Probleme oder Wünsche mit den Entwicklern diskutieren.
-

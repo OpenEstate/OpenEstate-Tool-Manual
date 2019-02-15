@@ -18,23 +18,22 @@ Die Funktionen zur Verwaltung von Aktivitäten und Marketing-Maßnahmen werden v
 
 Die folgenden Bestandteile werden in das Programm integriert, wenn das "CRM Add-On" installiert und aktiviert wurde:
 
-> **TODO**
->
-> Screenshots einfügen
+{{< todo >}}
+Screenshots einfügen
+{{< /todo >}}
 
 
 ### Einstellungen {#usage_crm_addon_settings}
 
 Die folgenden Einstellungen werden vom "CRM Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Fragen & Antworten zum CRM Add-On {#usage_crm_addon_faq}
 
-> **TODO**
->
-> Inhalte einfügen
-
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

@@ -17,9 +17,9 @@ menu:
 
 ### Was sind Add-Ons? {#usage_general_addons_info}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Add-Ons verwalten {#usage_general_addons_manage}
@@ -42,9 +42,9 @@ menu:
 
 - Die Standard-Add-Ons des ImmoTools werden bei der Installation automatisch aktiviert.
 
-> **Hinweis**
->
-> Sie erhalten die Installationsdateien von den jeweiligen Add-On-Entwicklern.
+{{< info >}}
+Sie erhalten die Installationsdateien von den jeweiligen Add-On-Entwicklern.
+{{< /info >}}
 
 
 ### Add-Ons deinstallieren {#usage_general_addons_uninstall}
@@ -55,13 +55,13 @@ Ein installiertes Add-On kann jederzeit wieder deinstalliert werden.
 
 - Klicken Sie in den Optionen auf `Deinstallieren` um das gewählte Add-On zu entfernen. Sie werden mit einer Sicherheitsabfrage gebeten die Löschung zu bestätigen.
 
-> **Achtung**
->
-> Die mit dem Add-On verbunden Funktionen stehen Ihnen nach der Deinstallation nicht mehr im Programm zur Verfügung.
+{{< warning >}}
+Die mit dem Add-On verbunden Funktionen stehen Ihnen nach der Deinstallation nicht mehr im Programm zur Verfügung.
+{{< /warning >}}
 
-> **Hinweis**
->
-> Wenn Sie sich nicht sicher sein sollten, ob Sie das Add-On ggf. zukünftig noch benötigen, sollten Sie es nur deaktivieren.
+{{< info >}}
+Wenn Sie sich nicht sicher sein sollten, ob Sie das Add-On ggf. zukünftig noch benötigen, sollten Sie es nur deaktivieren.
+{{< /info >}}
 
 
 ### Add-Ons aktualisieren {#usage_general_addons_update}

@@ -31,9 +31,9 @@ Im sich öffnenden Fenster finden Sie alle Firmendaten übersichtlich zusammenge
 - Im Tab `Firma` können die allgemeinen Firmendaten eingetragen werden.
 - Im Tab `Logo` kann eine Bilddatei als Firmenlogo im Programm hinterlegt werden.
 
-> **Hinweis**
->
-> Nach einer Änderung der Firmendaten muss abschließend auf `Übernehmen` geklickt werden, um diese dauerhaft in die Datenbank zu speichern.
+{{< info >}}
+Nach einer Änderung der Firmendaten muss abschließend auf `Übernehmen` geklickt werden, um diese dauerhaft in die Datenbank zu speichern.
+{{< /info >}}
 
 
 ### Firmenlogo bearbeiten {#usage_general_company_logo}
@@ -42,13 +42,13 @@ Das hinterlegte Firmenlogo wird an verschiedenen Stellen in der Software dargest
 
 Öffnen Sie das Anbieterprofil und wählen Sie den Tab `Logo` um das hinterlegte Firmenlogo einzusehen bzw. zu ändern.
 
-> **Hinweis**
->
-> Nach einer Änderung des Logos muss abschließend auf `Übernehmen` geklickt werden, um diese dauerhaft in die Datenbank zu speichern.
+{{< info >}}
+Nach einer Änderung des Logos muss abschließend auf `Übernehmen` geklickt werden, um diese dauerhaft in die Datenbank zu speichern.
+{{< /info >}}
 
-> **Hinweis**
->
-> Es werden die Bildformate `JPG`, `PNG`, `GIF`, `TIF` unterstützt.
+{{< info >}}
+Es werden die Bildformate `JPG`, `PNG`, `GIF`, `TIF` unterstützt.
+{{< /info >}}
 
 
 #### Neues Logo einfügen {#usage_general_company_logo_add}
