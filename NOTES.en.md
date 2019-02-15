@@ -105,13 +105,13 @@ This is [an example](#my_headline) for an internal link.
 Images should be placed in the same folder as the referencing Markdown file. In this case use the following notation to embed an image file:
 
 ```md
-{{< figure src="image.jpg" caption="subtitle of the image" >}}
+{{< figure src="image.png" caption="subtitle of the image" >}}
 ``` 
 
 In the rare case, that the embedded image is already placed in another folder, you can use a relative path: 
 
 ```md
-{{< figure src="../folder/image.jpg" caption="subtitle of the image" >}}
+{{< figure src="../folder/image.png" caption="subtitle of the image" >}}
 ``` 
 
 
@@ -166,13 +166,23 @@ The reader can be approached directly with "you". In case you're translating int
 
 ## Images
 
--   Images should always be provided in **JPEG format**.
+-   In most cases images should always be provided in **PNG format**.
 
--   Images should be saved with a compression level between **75% and 95%**. In order to reduce memory consumption a lower compression is preferred - as long as the image is well readable.
+    -   Always use **maximal compression** (level 9).
+    
+    -   Don't save a preview, EXIF data, XMP data und IPTC data into the PNG file. 
+    
+    -   In case the image contains transparency, always include a white background.
+
+-   In case a PNG image consumes relatively much disk space despite of the above conditions, you might also use the **JPEG format**.
+
+    -   Images in JPEG format should be saved with a quality level of **90%**.
+    
+    -   If the JPEG format does not save at least 20% compared to a PNG file, the PNG format should be preferred.
 
 -   Screenshots should be cropped, that only the necessary / documented elements are visible.  
 
--   Screenshots should not contain any window decoration of the operating system. 
+-   If a screenshot is relevant for multiple operating systems, it should not contain the window decoration of the operating system it was taken from. 
 
 
 ## Technical terms

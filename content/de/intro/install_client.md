@@ -26,7 +26,7 @@ Laden Sie die zu Ihrem Windows passende **EXE**-Installationsdatei herunter. Unt
 
 Öffnen Sie die heruntergeladene EXE-Datei mit einem Doppelklick. Es startet daraufhin ein Installationsprogramm, welches Sie durch die weiteren Schritte der Installation leitet.
 
-{{< figure src="install_client_windows.jpg" caption="Installation des ImmoTools unter Windows" >}}
+{{< figure src="install_client_windows.png" caption="Installation des ImmoTools unter Windows" >}}
 
 
 #### Installation unter macOS {#intro_install_client_setup_mac}
@@ -96,7 +96,7 @@ Darüber hinaus können Sie das Programm auch über die Datei `ImmoTool.exe` / `
 
 Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **OpenEstate-ImmoTool** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool bereitgestellten Programmen.
 
-{{< figure src="install_client_mac_startup.jpg" caption="Starter für ImmoTool im Finder" >}}
+{{< figure src="install_client_mac_startup.png" caption="Starter für ImmoTool im Finder" >}}
 
 Wenn Sie in diesem Fenster auf das **ImmoTool**-Symbol klicken, wird das Programm gestartet.
 
@@ -118,7 +118,7 @@ Alternativ zum Startmenü kann das Programm über die Datei `ImmoTool.sh` im `bi
 
 Beim ersten Programmstart prüft das ImmoTool ob eine Übersetzung zu der im Betriebssystem eingestellten Sprache vorliegt. Sollte dies nicht der Fall sein, erscheint das folgende Fenster, in dem Sie die im ImmoTool verwendete Sprache auswählen können:
 
-{{< figure src="install_client_language.jpg" caption="Auswahl der Sprache beim ersten Programmstart" >}}
+{{< figure src="install_client_language.png" caption="Auswahl der Sprache beim ersten Programmstart" >}}
 
 Es werden hier nur Sprachen zur Auswahl gestellt, für die aktuell eine Übersetzung vorliegt und für die ein Sprachpaket im Programm enthalten ist.
 
@@ -132,10 +132,10 @@ Das ImmoTool kann in beliebige Sprachen übersetzt werden. Wenn Sie sich an der 
 Der Projektassistent wird geöffnet und Sie können eine Datenbank für Ihre Arbeit mit dem ImmoTool erzeugen.
 
 {{< warning >}}
-Wenn Sie eine **Netzwerk-Installation** durchführen möchten (siehe ["Betrieb an mehreren Arbeitsplätzen"](install_types.md#intro_install_types_network)), folgen Sie bitte den Hinweisen im Kapitel ["ImmoTool-Server installieren"](install_server.md#intro_install_server). Ein Einzelplatz-Projekt muss in diesem Falle **nicht** erzeugt werden.
+Wenn Sie eine **Netzwerk-Installation** durchführen möchten (siehe ["Betrieb an mehreren Arbeitsplätzen"]({{< relref "install_types.md#intro_install_types_network" >}})), folgen Sie bitte den Hinweisen im Kapitel ["ImmoTool-Server installieren"]({{< relref "install_server.md#intro_install_server" >}}). Ein Einzelplatz-Projekt muss in diesem Falle **nicht** erzeugt werden.
 {{< /warning >}}
 
-{{< figure src="install_client_project.jpg" caption="Einzelplatz-Projekt beim ersten Programmstart erzeugen" >}}
+{{< figure src="install_client_project.png" caption="Einzelplatz-Projekt beim ersten Programmstart erzeugen" >}}
 
 Folgende Einstellungen sind im Projektassistenten zur Erstellung eines Einzelplatz-Projekts vorzunehmen:
 

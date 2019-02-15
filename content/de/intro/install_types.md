@@ -62,7 +62,7 @@ Wenn mehrere Mitarbeiter von Ihrem Arbeitsplatz aus mit dem ImmoTool auf einen g
 
 Schematisch wird dies in folgender Grafik dargestellt (Quelle [Wikipedia](http://de.wikipedia.org/wiki/Client-Server-Modell)):
 
-{{< figure src="install_types_network.jpg" caption="Client-/Server-Modell" >}}
+{{< figure src="install_types_network.png" caption="Client-/Server-Modell" >}}
 
 Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Rechner der Mitarbeiter, welche auf den ImmoTool-Server zugreifen, sind im Kreis angeordnet.
 

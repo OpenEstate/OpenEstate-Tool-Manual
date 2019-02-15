@@ -32,7 +32,7 @@ Laden Sie die zu Ihrem Windows passende **EXE**-Installationsdatei herunter. Unt
 
 Öffnen Sie die heruntergeladene EXE-Datei mit einem Doppelklick. Es startet daraufhin ein Installationsprogramm, welches Sie durch die weiteren Schritte der Installation leitet.
 
-{{< figure src="install_server_windows.jpg" caption="Installation des ImmoTool-Servers unter Windows" >}}
+{{< figure src="install_server_windows.png" caption="Installation des ImmoTool-Servers unter Windows" >}}
 
 
 #### Installation unter macOS {#intro_install_server_setup_mac}
@@ -110,7 +110,7 @@ Darüber hinaus können Sie das Programm auch über die Datei `Start.exe` / `Sta
 
 Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **OpenEstate-ImmoServer** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool-Server bereitgestellten Programmen.
 
-{{< figure src="install_server_mac_startup.jpg" caption="Starter für ImmoTool-Server im Finder" >}}
+{{< figure src="install_server_mac_startup.png" caption="Starter für ImmoTool-Server im Finder" >}}
 
 Wenn Sie in diesem Fenster auf das **Start**-Symbol klicken, wird das Programm gestartet.
 
@@ -132,7 +132,7 @@ Installieren Sie dafür das ImmoTool auf dem Server-Rechner oder einem anderen R
 Link einfügen, wie das AdminTool gestartet werden kann
 {{< /todo >}}
 
-{{< figure src="install_server_admintool_connect.jpg" caption="Verbindung zur Datenbank mit AdminTool herstellen" >}}
+{{< figure src="install_server_admintool_connect.png" caption="Verbindung zur Datenbank mit AdminTool herstellen" >}}
 
 Im dargestellten Fenster muss die Option **"Mit entfernter Datenbank verbinden (auf Server gespeichert)"** gewählt werden. Danach können die Verbindungsdaten des ImmoTool-Servers eingetragen werden: 
 
@@ -161,11 +161,11 @@ Nach einem Klick auf **"Verbinden"** verbindet sich das AdminTool mit dem ImmoTo
 
 Im ersten Schritt wird das Programm feststellen, dass der Administrator-Benutzer (**"SA"**) noch kein Passwort zugewiesen hat und um die Eingabe eines Passwortes bitten. Notieren Sie sich dieses Passwort!
 
-{{< figure src="install_server_admintool_password.jpg" caption="Passwort des Administrators im AdminTool festlegen" >}}
+{{< figure src="install_server_admintool_password.png" caption="Passwort des Administrators im AdminTool festlegen" >}}
 
 Im folgenden Schritt wird das Programm feststellen, dass die Datenbank noch nicht eingerichtet wurde. Klicken Sie im Dialogfenster **"Neues Projekt erzeugen""** auf **"Übernehmen""** um die Datenbank zur Verwendung für das ImmoTool vorzubereiten. 
 
-{{< figure src="install_server_admintool_setup.jpg" caption="Installation der Datenbank im ImmoTool-Server" >}}
+{{< figure src="install_server_admintool_setup.png" caption="Installation der Datenbank im ImmoTool-Server" >}}
 
 Nachdem diese Schritte abgeschlossen sind, können Sie bei Bedarf über das AdminTool weitere Benutzerkonten in der Datenbank anlegen. 
 
@@ -182,7 +182,7 @@ Nachdem der ImmoTool-Server erfolgreich vorbereitet wurde (siehe ["ImmoTool-Serv
 
 Auf **jedem Arbeitsplatz** muss dafür das ImmoTool installiert werden (siehe ["ImmoTool installieren"]({{< relref "install_client.md#intro_install_client" >}})). Nach dem Programmstart (siehe ["ImmoTool starten"]({{< relref "install_client.md#intro_install_client_startup" >}})) muss ein sogenanntes **Mehrplatz-Projekt** angelegt werden. Öffnen Sie dafür den Projekt-Assistenten (falls dieser nicht automatisch startet via **"Hauptmenü → Projekt → neues Projekt"**).
 
-{{< figure src="install_server_immotool_project.jpg" caption="Neues Mehrplatz-Projekt im Projekt-Assistenten einrichten" >}}
+{{< figure src="install_server_immotool_project.png" caption="Neues Mehrplatz-Projekt im Projekt-Assistenten einrichten" >}}
 
 Folgende Einstellungen sind im Projekt-Assistenten vorzunehmen:
 
@@ -217,4 +217,4 @@ Bevor das Projekt erzeugt werden kann, muss auf **"Anmelden"** geklickt werden. 
 
 Bei zukünftigen Programmstarts kann das erzeugte Mehrplatz-Projekt im Programm geöffnet werden. Der Benutzer muss sich dann nur noch mit seinem Benutzernamen und Passwort authentifizieren. 
 
-{{< figure src="install_server_immotool_login.jpg" caption="Anmeldung an einem bestehenden Mehrplatz-Projekt" >}}
+{{< figure src="install_server_immotool_login.png" caption="Anmeldung an einem bestehenden Mehrplatz-Projekt" >}}
