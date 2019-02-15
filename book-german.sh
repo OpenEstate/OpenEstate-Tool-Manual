@@ -17,50 +17,50 @@
 # limitations under the License.
 #
 
-NAME="OpenEstate-ImmoTool-Manual"
-LANG="de"
+BOOK_NAME="OpenEstate-ImmoTool-Manual"
+BOOK_LANG="de"
 DATE_FORMAT="+%d.%m.%Y"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 set -e
-rm -f "$DIR/$LANG.md"
-rm -Rf "$DIR/book/$LANG"
-mkdir "$DIR/book/$LANG"
+rm -f "$DIR/$BOOK_LANG.md"
+rm -Rf "$DIR/book/$BOOK_LANG"
+mkdir "$DIR/book/$BOOK_LANG"
 
-cd "$DIR/content/$LANG"
+cd "$DIR/content/$BOOK_LANG"
 
 echo "Merging Markdown files…"
 
-PDF_MD="$DIR/book/$LANG.pdf.md"
-"$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$PDF_MD" "pdf" "$LANG"
+PDF_MD="$DIR/book/$BOOK_LANG.pdf.md"
+"$DIR/apps/markdown-pp.sh" "$DIR/book/$BOOK_LANG.mdpp" "$PDF_MD" "pdf" "$BOOK_LANG"
 sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$PDF_MD"
 
-OTHER_MD="$DIR/book/$LANG.other.md"
-"$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$OTHER_MD" "other" "$LANG"
+OTHER_MD="$DIR/book/$BOOK_LANG.other.md"
+"$DIR/apps/markdown-pp.sh" "$DIR/book/$BOOK_LANG.mdpp" "$OTHER_MD" "other" "$BOOK_LANG"
 sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$OTHER_MD"
 
-echo "Creating $NAME.$LANG.pdf…"
+echo "Creating $BOOK_NAME.$BOOK_LANG.pdf…"
 pandoc \
     -F "$DIR/apps/pandoc-latex-admonition.sh" \
     -F "$DIR/apps/pandoc-latex-tip.sh" \
-    -o "$DIR/book/$LANG/$NAME.$LANG.pdf" \
+    -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.pdf" \
     "$PDF_MD"
 
-echo "Creating $NAME.$LANG.epub…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.epub" \
+echo "Creating $BOOK_NAME.$BOOK_LANG.epub…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.epub" \
     --epub-embed-font "$DIR/share/fonts/*.ttf" \
     --css "$DIR/share/epub.css" \
     "$OTHER_MD"
 
-echo "Creating $NAME.$LANG.odt…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.odt" \
+echo "Creating $BOOK_NAME.$BOOK_LANG.odt…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.odt" \
     "$OTHER_MD"
 
-echo "Creating $NAME.$LANG.docx…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.docx" \
+echo "Creating $BOOK_NAME.$BOOK_LANG.docx…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.docx" \
     "$OTHER_MD"
 
-echo "Creating $NAME.$LANG.html…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.html" \
+echo "Creating $BOOK_NAME.$BOOK_LANG.html…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.html" \
     --self-contained \
     "$OTHER_MD"
