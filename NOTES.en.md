@@ -154,6 +154,35 @@ You might align columns left, centered or right:
 ```
 
 
+## Special text blocks (notes, warnings, todo entries)
+
+You can mark one or more paragraphs as **"information"** with the following syntax:
+
+```md
+{{< info >}}
+This section is shown as information message.
+{{< /info >}}
+```
+
+You can mark one or more paragraphs as **"warning"** with the following syntax:
+
+```md
+{{< warning >}}
+This section is shown as warning message.
+{{< /warning >}}
+```
+
+You can mark one or more paragraphs as **"to-do"** with the following syntax:
+
+```md
+{{< todo >}}
+This section is shown as to-do message.
+{{< /todo >}}
+```
+
+You can use any Markdown code within those special text sections (e.g. links, images).
+
+
 # Conventions
 
 In order to have a consistent appearance, we've declared some further conventions.

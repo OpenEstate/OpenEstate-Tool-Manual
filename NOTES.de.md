@@ -158,6 +158,35 @@ Spalten können bei Bedarf linksbündig / mittig / rechtsbündig dargestellt wer
 ```
 
 
+## Spezielle Textblöcke (Information, Warnung, Zu erledigen)
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Information"** markiert werden:
+
+```md
+{{< info >}}
+Dieser Textblock wird als Information gesondert hervorgehoben.
+{{< /info >}}
+```
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Warnung"** markiert werden:
+
+```md
+{{< warning >}}
+Dieser Textblock wird als Warnung gesondert hervorgehoben.
+{{< /warning >}}
+```
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Zu erledigen"** markiert werden:
+
+```md
+{{< todo >}}
+Dieser Textblock wird als zu erledigender Eintrag gesondert hervorgehoben.
+{{< /todo >}}
+```
+
+Innerhalb dieser speziellen Textblöcke kann beliebiger Markdown-Code verwendet werden (z.B. Links, Bilder).
+
+
 # Konventionen
 
 Um ein einheitliches Erscheinungsbild des Handbuchs zu gewährleisten, wurden folgende Konventionen vereinbart.
