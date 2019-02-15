@@ -158,7 +158,7 @@ Spalten können bei Bedarf linksbündig / mittig / rechtsbündig dargestellt wer
 ```
 
 
-## Spezielle Textblöcke (Information, Warnung, Zu erledigen)
+## Spezielle Textblöcke (Information, Warnung, Tipp, Zu erledigen)
 
 Einer oder mehrere Absätze können durch folgende Syntax als **"Information"** markiert werden:
 
@@ -174,6 +174,14 @@ Einer oder mehrere Absätze können durch folgende Syntax als **"Warnung"** mark
 {{< warning >}}
 Dieser Textblock wird als Warnung gesondert hervorgehoben.
 {{< /warning >}}
+```
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Tipp"** markiert werden:
+
+```md
+{{< tip >}}
+Dieser Textblock wird als Tipp gesondert hervorgehoben.
+{{< /tip >}}
 ```
 
 Einer oder mehrere Absätze können durch folgende Syntax als **"Zu erledigen"** markiert werden:

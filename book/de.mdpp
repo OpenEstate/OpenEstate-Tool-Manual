@@ -14,6 +14,8 @@ pandoc-latex-admonition:
   color: navy
 - classes: [warning]
   color: firebrick
+- classes: [tip]
+  color: forestgreen
 - classes: [todo]
   color: dimgray
 pandoc-latex-tip:
@@ -25,6 +27,11 @@ pandoc-latex-tip:
 - classes: [warning]
   icons: [exclamation-triangle]
   color: firebrick
+  size: 20
+  position: left
+- classes: [tip]
+  icons: [lightbulb-o]
+  color: forestgreen
   size: 20
   position: left
 - classes: [todo]

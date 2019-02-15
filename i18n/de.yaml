@@ -42,6 +42,8 @@
   translation: "Hinweis"
 - id: "Warning"
   translation: "Achtung"
+- id: "Tip"
+  translation: "Tipp"
 - id: "To-Do"
   translation: "Zu erledigen"
 

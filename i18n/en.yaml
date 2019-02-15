@@ -42,5 +42,7 @@
   translation: "Notice"
 - id: "Warning"
   translation: "Warning"
+- id: "Tip"
+  translation: "Tip"
 - id: "To-Do"
   translation: "To-Do"

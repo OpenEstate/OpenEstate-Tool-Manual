@@ -42,6 +42,10 @@ class CustomInclude(Include):
     pattern_figure_width = re.compile(r'width\s*=\s*\"([^\"]*)\"')
     pattern_figure_height = re.compile(r'height\s*=\s*\"([^\"]*)\"')
 
+    # Pattern to extract tip messages (tip shortcode).
+    # example: {{< tip >}}My message.{{< /tip >}}
+    pattern_tip = re.compile(r'{{<\s+tip\s+>}}(.*?){{<\s+/tip\s+>}}', re.MULTILINE | re.DOTALL)
+
     # Pattern to extract info messages (info shortcode).
     # example: {{< info >}}My message.{{< /info >}}
     pattern_info = re.compile(r'{{<\s+info\s+>}}(.*?){{<\s+/info\s+>}}', re.MULTILINE | re.DOTALL)
@@ -75,6 +79,7 @@ class CustomInclude(Include):
                         data += line
 
             # Replace Hugo shortcodes to make it work with pandoc.
+            data = self.replace_tip(data)
             data = self.replace_info(data)
             data = self.replace_warning(data)
             data = self.replace_todo(data)
@@ -91,6 +96,25 @@ class CustomInclude(Include):
         finally:
             if os.path.isfile(tempPath):
                 os.remove(tempPath)
+
+    # Replace tip shortcodes.
+    def replace_tip(self, data):
+        if self.lang == 'de':
+            title = 'Tipp'
+        else:
+            title = 'Tip'
+
+        for info in self.pattern_tip.finditer(data):
+            body = info.group(1).strip()
+            if mode == 'pdf':
+                content = '::: tip :::\n%s\n:::::::::::' % body
+            else:
+                content = '> **%s**\n>' % title
+                for i in body.splitlines():
+                    content = content + '\n%s' % i
+            data = data.replace(info.group(0), content)
+
+        return data
 
     # Replace info shortcodes.
     def replace_info(self, data):

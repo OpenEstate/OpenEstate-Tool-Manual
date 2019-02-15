@@ -154,7 +154,7 @@ You might align columns left, centered or right:
 ```
 
 
-## Special text blocks (notes, warnings, todo entries)
+## Special text blocks (notes, warnings, tips, to-do)
 
 You can mark one or more paragraphs as **"information"** with the following syntax:
 
@@ -170,6 +170,14 @@ You can mark one or more paragraphs as **"warning"** with the following syntax:
 {{< warning >}}
 This section is shown as warning message.
 {{< /warning >}}
+```
+
+You can mark one or more paragraphs as **"tip"** with the following syntax:
+
+```md
+{{< tip >}}
+This section is shown as tip message.
+{{< /tip >}}
 ```
 
 You can mark one or more paragraphs as **"to-do"** with the following syntax:
