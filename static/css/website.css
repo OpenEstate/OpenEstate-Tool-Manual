@@ -148,6 +148,15 @@ nav.navbar {
 }
 
 /**
+ * table of contents
+ */
+
+#toc-nav .list-group-item {
+    border-radius: 0;
+}
+
+
+/**
  * scroll button
  */
 
