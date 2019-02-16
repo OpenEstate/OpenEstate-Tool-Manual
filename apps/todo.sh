@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Extract to-do entries from English contents.
+# Extract to-do entries from markdown files.
 #
 # Copyright 2009-2019 OpenEstate.org.
 #
@@ -17,7 +17,10 @@
 # limitations under the License.
 #
 
+set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd "$DIR"
-"$DIR/apps/todo.sh" "content/en"
+source "$DIR/virtualenv/bin/activate"
+python "$DIR/todo.py" "$@"
+deactivate
+
