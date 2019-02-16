@@ -78,22 +78,20 @@ def parse_file(path):
     if not path.endswith('.md'):
         return 0
 
-    # print('PARSE FILE: %s' % path)
     with open(path, 'r') as f:
         data = f.read()
 
     lengths = []
     for line in data.splitlines(True):
-        # print('line %s / %s' % (len(lengths) + 1, len(line)))
         lengths.append(len(line))
 
     count = 0
     for todo in pattern_todo.finditer(data):
         if count == 0:
             print('')
-            cprint_green('-------------------------------------------------------', True)
-            cprint_green('todo entries in %s' % path, True)
-            cprint_green('-------------------------------------------------------', True)
+            cprint_green('-' * 70, True)
+            cprint_green(' todo entries in %s' % path, True)
+            cprint_green('-' * 70, True)
 
         body = todo.group(1).strip()
         print('')
@@ -115,18 +113,16 @@ def get_line_number(pos, lengths):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        path = sys.argv[1]
-    else:
+    if len(sys.argv) < 2:
         print('ERROR: No file or directory was specified as first argument!')
         exit(1)
 
-    total_count = parse(path)
+    total_count = parse(sys.argv[1])
     if total_count < 0:
         exit(2)
     else:
         print('')
-        cprint_white('=======================================================', True)
-        cprint_white('Found %s todo entries in total.' % total_count, True)
-        cprint_white('=======================================================', True)
+        cprint_white('=' * 70, True)
+        cprint_white(' Found %s todo entries in total.' % total_count, True)
+        cprint_white('=' * 70, True)
         print('')
