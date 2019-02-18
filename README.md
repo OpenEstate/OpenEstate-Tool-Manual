@@ -85,7 +85,7 @@ The generated HTML5 website bundles the following dependencies:
 -   [*js-url*](https://github.com/websanova/js-url) v2.5.3 ([MIT](https://github.com/websanova/js-url/blob/master/README.md#license))
 -   [*jQuery ScrollSpy Plugin*](https://github.com/softwarespot/jquery-scrollspy) rev `801a603` ([MIT](https://github.com/softwarespot/jquery-scrollspy#jquery-scrollspy))
 -   [*ScrollToFixed*](http://bigspotteddog.github.io/ScrollToFixed/) v1.0.8 ([MIT](https://github.com/bigspotteddog/ScrollToFixed/blob/master/license.txt))
--   [*Font Awesome Free*](https://fontawesome.com/) v5.6.3 ([Font Awesome Free License](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt))
+-   [*Font Awesome Free*](https://fontawesome.com/) v5.7.2 ([Font Awesome Free License](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt))
 
 The generated users manual in ePub format bundles the following dependencies:
 
