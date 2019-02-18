@@ -217,6 +217,8 @@ The reader can be approached directly with "you". In case you're translating int
     
     -   If the JPEG format does not save at least 20% compared to a PNG file, the PNG format should be preferred.
 
+-   Images should be saved with a print resolution of at least 144 pixel per inch (bzw. 144 dpi).
+
 -   Screenshots should be cropped, that only the necessary / documented elements are visible.  
 
 -   If a screenshot is relevant for multiple operating systems, it should not contain the window decoration of the operating system it was taken from. 

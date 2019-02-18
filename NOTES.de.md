@@ -221,6 +221,8 @@ Um einen persönlichen Bezug zum Leser des Handbuchs herzustellen, kann der Lese
     
     -   Wenn die Speicherung im JPEG-Format weniger als 20% Speicherplatz gegenüber dem PNG-Format einspart, ist das PNG-Format zu bevorzugen.
 
+-   Bilder sollten mindestens mit einer Druck-Auflösung von 144 Pixel pro Inch (bzw. 144 dpi) gespeichert werden.
+
 -   Bei Screenshots sollte ein möglichst passender Bildausschnitt gewählt werden, sodass nur dir relevanten (zu dokumentierenden) Elemente sichtbar sind.
 
 -   Wenn ein Screenshot für verschiedene Betriebssysteme relevant ist, sollten darin grundsätzlich keine Fenster-Dekorationen enthalten sein. 
