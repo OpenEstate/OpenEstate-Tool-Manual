@@ -39,6 +39,12 @@ pandoc-latex-tip:
   color: dimgray
   size: 20
   position: left
+header-includes:
+- |
+  ```{=latex}
+  \usepackage{float}
+  \floatplacement{figure}{H}
+  ```
 ---
 
 
