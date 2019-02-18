@@ -1,8 +1,8 @@
 ---
 
-title: AdminTool
+title: Verwendung von AdminTool
 linktitle: AdminTool
-description: Dokumentation zum von OpenEstate-AdminTool…
+description: Dokumentation von OpenEstate-AdminTool…
 weight: 30
 
 menu:

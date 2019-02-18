@@ -3,7 +3,7 @@
 title: Projekt migrieren
 linktitle: Migration
 description: Migration eines Projekts von OpenEstate-ImmoTool…
-weight: 40
+weight: 50
 
 menu:
   main:

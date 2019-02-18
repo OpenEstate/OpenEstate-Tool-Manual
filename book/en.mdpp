@@ -3,7 +3,7 @@ title: Manual for OpenEstate-ImmoTool
 date: ${date}
 lang: en-US
 documentclass: book
-classoption: oneside
+classoption: twoside
 links-as-notes: 1
 toc: 1
 toc-depth: 2
@@ -97,7 +97,7 @@ pandoc-latex-tip:
 ...
 
 
-# Further notes about administration {#admin_howtos}
+# Further notes about administration {#admin_misc}
 
 ...
 
@@ -105,4 +105,3 @@ pandoc-latex-tip:
 # Appendix {#appendix}
 
 ...
-

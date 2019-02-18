@@ -1,6 +1,6 @@
 ---
 
-title: Art der Installationen von OpenEstate-ImmoTool
+title: Art der Installationen von ImmoTool
 linktitle: Art der Installation
 description: Wie OpenEstate-ImmoTool installiert werden kann…
 weight: 40
@@ -16,11 +16,11 @@ menu:
 
 Das ImmoTool kann auf zweierlei Arten betrieben werden. Bevor Sie das Programm in Betrieb nehmen, sollten Sie sich für eines der beiden Szenarien entscheiden.
 
-{{< info >}}
-Es ist allgemein jederzeit möglich, von einer Einzelplatz-Installation in eine Mehrplatz-Installation umzusteigen (oder anders herum). 
+{{< tip >}}
+Es ist allgemein jederzeit möglich von einer Einzelplatz-Installation in eine Mehrplatz-Installation umzusteigen (oder anders herum). 
 
 Wenn Sie sich mit dem Programm vertraut machen möchten, empfehlen wir daher erst mal eine **Einzelplatz-Installation** durchzuführen und später ggf. umzusteigen (siehe ["Einzelplatz- in Mehrplatz-Projekt umwandeln"]({{< relref "../admin/migration.md#admin_migration_project_local" >}})). 
-{{< /info >}}  
+{{< /tip >}}  
 
 
 ### Betrieb an einem einzelnen Arbeitsplatz {#intro_install_types_local}

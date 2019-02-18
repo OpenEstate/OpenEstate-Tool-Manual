@@ -2,8 +2,8 @@
 
 title: Aktualisierung durchführen
 linktitle: Aktualisierung
-description: Administration von OpenEstate-ImmoTool…
-weight: 30
+description: Wie OpenEstate-ImmoTool aktualisiert werden kann…
+weight: 20
 
 menu:
   main:
@@ -14,41 +14,60 @@ menu:
 
 ## ImmoTool aktualisieren {#admin_client_update}
 
-{{< todo >}}
-Allgemeine Hinweise zur Vorgehensweise einfügen.
-{{< /todo >}}
+Einmal am Tag prüft das ImmoTool beim ersten Programmstart automatisch ob Aktualisierungen vorliegen. Im Falle das Aktualisierungen vorhanden sind wird eine Information dargestellt.
+
+{{< figure src="update_notification.png" caption="Information über eine verfügbare Aktualisierung" >}}
+
+Bei Klick auf **"Installationspaket herunterladen."** wird im Web-Browser der Link zum Download des Installationspakets für das verwendete Betriebssystem geöffnet.
+
+Bei Klick auf **"Webseite mit Downloads."** wird im Web-Browser der [Download-Bereich](https://openestate.org/downloads/openestate-immotool) auf der Webseite von OpenEstate.org mit der aktuellen Programm-Version geöffnet.
+
+Laden Sie das Installationspaket für Ihr Betriebssystem herunter und starten Sie den Installationsvorgang (siehe ["ImmoTool installieren"]({{< relref "../../intro/install_client.md#intro_install_client" >}})).
+
+{{< warning >}}
+Beenden Sie das ImmoTool bevor die Aktualisierung durchgeführt wird.
+{{< /warning >}}
+
+{{< info >}}
+Wenn ImmoTool in einer Netzwerk-Installation betrieben wird (siehe ["Betrieb an mehreren Arbeitsplätzen"]({{< relref "../../intro/install_types.md#intro_install_types_network" >}})), sollten die ImmoTool-Installationen **bei allen Arbeitsplätzen** aktualisiert werden. Es kann Situationen geben, in denen unterschiedliche ImmoTool-Versionen nicht gemeinsam im Netzwerk genutzt werden können. 
+{{< /info >}}
 
 
-### ImmoTool automatisch aktualisieren {#admin_client_update_automatic}
+### Aktualisierung unter Windows {#admin_client_update_windows}
 
-{{< todo >}}
-Hinweise zur Vorgehensweise einfügen.
-{{< /todo >}}
+Das **EXE**-Installationsprogramm erkennt automatisch den Speicherort der ImmoTool-Installation und führt die Aktualisierung für Sie durch.
 
 
-### ImmoTool manuell aktualisieren {#admin_client_update_manual}
+### Aktualisierung unter macOS {#admin_client_update_mac}
 
-{{< todo >}}
-Hinweise zur Vorgehensweise einfügen.
-{{< /todo >}}
+Verschieben Sie den Programm-Starter **"OpenEstate-ImmoTool"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Bestätigen Sie die Rückfrage, ob die alte Version des Programms überschrieben werden soll.
 
 
-### Erster Neustart nach erfolgter Aktualisierung {#admin_client_update_restart}
+### Aktualisierung unter Debian, Ubuntu & Co. {#admin_client_update_debian}
 
-{{< todo >}}
-Hinweise zum ersten Neustart nach der Aktualisierung einfügen.
-{{< /todo >}}
+Wenn Sie das Debian-Repository in Ihrem Betriebssystem eingerichtet haben (siehe ["Installation unter Debian, Ubuntu & Co."]({{< relref "../../intro/install_client.md#intro_install_client_setup_debian" >}})), müssen Sie das Programm **nicht** von der OpenEstate-Webseite herunterladen. Statt dessen genügt es folgende Befehle im Terminal auszuführen:
+
+```bash
+sudo apt update
+sudo apt install openestate-immotool
+```
+
+Wenn Sie das Debian-Repository **nicht** nutzen aber das **DEB**-Installationspaket bei der Installation verwendet haben, können Sie die **DEB**-Installationsdatei herunterladen und per Doppelklick starten. Alternativ kann die Datei über folgenden Befehl im Terminal installiert werden:
+
+```bash
+sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
+```
+
+Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
 
 
-### Besondere Anforderungen zur Aktualisierung von Mehrplatz-Projekten {#admin_client_update_remoteprojects}
+### Aktualisierung unter Linux {#admin_client_update_linux}
 
-{{< todo >}}
-Hinweise zur Vorgehensweise einfügen.
-{{< /todo >}}
+1.  Bringen Sie in Erfahrung in welchem Verzeichnis ImmoTool installiert wurde.
+2.  Laden Sie die **TAR.GZ**-Installationsdatei für Linux herunter und entpacken Sie die Datei auf Ihrem Rechner. 
+3.  Benennen Sie das in Schritt 1 ermittelte Programmverzeichnis des ImmoTools um - z.B. in `OpenEstate-ImmoTool-ALT`.
+4.  Erzeugen Sie ein neues / leeres Verzeichnis unter dem in Schritt 1 festgestellten Namen - z.B. `OpenEstate-ImmoTool`.
+5.  Kopieren Sie die in Schritt 2 entpackten Dateien in das neue / leere Programmverzeichnis.
 
+Nachdem das Programm in der neuen Version erfolgreich gestartet werden konnte, kann das in Schritt 3 erzeugte alte Programmverzeichnis bei Bedarf gelöscht werden.
 
-### Vorgehensweise bei fehlgeschlagener Aktualisierung {#admin_client_update_troubleshooting}
-
-{{< todo >}}
-Hinweise zur Vorgehensweise einfügen.
-{{< /todo >}}

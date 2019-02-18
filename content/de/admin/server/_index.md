@@ -1,8 +1,8 @@
 ---
 
-title: ImmoTool-Server administrieren
-linktitle: Server
-description: Administration von OpenEstate-ImmoTool-Servers…
+title: Administration von ImmoTool-Server
+linktitle: ImmoTool-Server
+description: Hinweise zur Administration von OpenEstate-ImmoServer…
 weight: 20
 
 menu:

@@ -77,9 +77,9 @@ Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nic
 
 Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben, finden Sie einen Ordner namens `OpenEstate-ImmoTool`. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach `/opt/OpenEstate-ImmoTool`).
 
-{{< info >}}
+{{< tip >}}
 Bei Bedarf können Sie im Verzeichnis `bin` das Skript `StartMenuAdd.sh` ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt.
-{{< /info >}} 
+{{< /tip >}} 
 
 
 ### ImmoTool starten {#intro_install_client_startup}
@@ -96,13 +96,13 @@ Darüber hinaus können Sie das Programm auch über die Datei `ImmoTool.exe` / `
 
 Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **OpenEstate-ImmoTool** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool bereitgestellten Programmen.
 
-{{< figure src="install_client_mac_startup.png" caption="Starter für ImmoTool im Finder" >}}
+{{< figure src="../admin/client/startup_mac.png" caption="Starter für ImmoTool im Finder" >}}
 
 Wenn Sie in diesem Fenster auf das **ImmoTool**-Symbol klicken, wird das Programm gestartet.
 
-{{< info >}}
+{{< tip >}}
 Bei Bedarf können Sie das ImmoTool-Symbol ins Dock integrieren, um das Programm später schnell und unkompliziert starten zu können (siehe ["Anleitung bei Apple"](https://support.apple.com/de-de/HT201730)).
-{{< /info >}}
+{{< /tip >}}
 
 
 #### ImmoTool unter Linux starten {#intro_install_client_startup_linux}

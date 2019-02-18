@@ -3,7 +3,7 @@
 title: Passwort zurücksetzen
 linktitle: Passwort zurücksetzen
 description: Administration von OpenEstate-ImmoTool…
-weight: 60
+weight: 50
 
 menu:
   main:

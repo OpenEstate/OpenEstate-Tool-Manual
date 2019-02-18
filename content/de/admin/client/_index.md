@@ -1,8 +1,8 @@
 ---
 
-title: ImmoTool-Client administrieren
-linktitle: Client
-description: Administration von OpenEstate-ImmoTool…
+title: Administration von ImmoTool
+linktitle: ImmoTool
+description: Hinweise zur Administration von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
