@@ -71,7 +71,7 @@ Die folgende Anleitung beschreibt die Vorgehensweise, um ein Projekt aus ImmoToo
 
 {{< info >}}
 Die alte ImmoTool-Installation bei der Migration komplett unangetastet. Sollte die Umstellung auf Version 1.0 Probleme bereiten oder fehlschlagen, kann mit der alten Version normal weiter gearbeitet werden.
-{{</ info >}}
+{{< /info >}}
 
 
 ### Projekt aus "ImmoTool 0.9.x" sichern {#admin_migration_project_0_9_backup}
