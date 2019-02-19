@@ -46,6 +46,7 @@ pandoc \
     -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.pdf" \
     --template "$DIR/share/latex/eisvogel.tex" \
     --top-level-division=chapter \
+    --number-sections \
     -V book \
     -V documentclass=book \
     -V classoption=twoside \
@@ -57,6 +58,7 @@ echo "Creating $BOOK_NAME.$BOOK_LANG.epub…"
 pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.epub" \
     --epub-embed-font "$DIR/share/fonts/*.ttf" \
     --css "$DIR/share/epub.css" \
+    --number-sections \
     "$OTHER_MD"
 
 echo "Creating $BOOK_NAME.$BOOK_LANG.odt…"
@@ -70,4 +72,5 @@ pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.docx" \
 echo "Creating $BOOK_NAME.$BOOK_LANG.html…"
 pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.html" \
     --self-contained \
+    --number-sections \
     "$OTHER_MD"
