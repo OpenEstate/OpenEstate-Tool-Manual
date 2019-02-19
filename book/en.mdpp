@@ -2,8 +2,6 @@
 title: Manual for OpenEstate-ImmoTool
 date: ${date}
 lang: en-US
-documentclass: book
-classoption: twoside
 links-as-notes: 1
 toc: 1
 toc-depth: 2
@@ -39,12 +37,6 @@ pandoc-latex-tip:
   color: dimgray
   size: 20
   position: left
-header-includes:
-- |
-  ```{=latex}
-  \usepackage{float}
-  \floatplacement{figure}{H}
-  ```
 ---
 
 

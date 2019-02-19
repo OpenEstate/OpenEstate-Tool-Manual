@@ -44,6 +44,13 @@ pandoc \
     -F "$DIR/apps/pandoc-latex-admonition.sh" \
     -F "$DIR/apps/pandoc-latex-tip.sh" \
     -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.pdf" \
+    --template "$DIR/share/latex/eisvogel.tex" \
+    --top-level-division=chapter \
+    -V book \
+    -V documentclass=book \
+    -V classoption=twoside \
+    -V titlepage \
+    -V caption-justification=centering \
     "$PDF_MD"
 
 echo "Creating $BOOK_NAME.$BOOK_LANG.epub…"

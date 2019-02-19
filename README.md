@@ -4,7 +4,7 @@ Users manual for OpenEstate-ImmoTool
 This repository contains the development files for the *OpenEstate-ImmoTool* users manual in English and German language. These files are used in order to generate the manual in different target formats.
 
 -   A **HTML5 website** is generated with [*Hugo*](https://gohugo.io/).
--   A **PDF** / **ODT** / **DOCX** / **XHTML (single page)** file is generated with [*Pandoc*](https://pandoc.org/).
+-   A **PDF** / **EPUB** / **ODT** / **DOCX** / **XHTML (single page)** file is generated with [*Pandoc*](https://pandoc.org/).
 
 
 Documentation
@@ -44,6 +44,7 @@ apt install \
   texlive-lang-german \
   texlive-lang-english \
   texlive-fonts-recommended \
+  texlive-fonts-extra \
   texlive-latex-recommended \
   texlive-latex-extra
 ```
@@ -87,9 +88,15 @@ The generated HTML5 website bundles the following dependencies:
 -   [*ScrollToFixed*](http://bigspotteddog.github.io/ScrollToFixed/) v1.0.8 ([MIT](https://github.com/bigspotteddog/ScrollToFixed/blob/master/license.txt))
 -   [*Font Awesome Free*](https://fontawesome.com/) v5.7.2 ([Font Awesome Free License](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt))
 
-The generated users manual in ePub format bundles the following dependencies:
+The users manual in ePub format bundles the following dependencies:
 
 -   [*DejaVu Fonts*](https://dejavu-fonts.github.io/) v2.37 ([Public Domain, Bitstream Vera Fonts Copyright & Arev Fonts Copyright](https://dejavu-fonts.github.io/License.html))
+
+The users manual in PDF format is created with:
+
+-   [Eisvogel template](https://github.com/Wandmalfarbe/pandoc-latex-template) v1.1 ([BSD](https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/LICENSE))
+-   [pandoc-latex-tip](https://github.com/chdemko/pandoc-latex-tip) ([BSD](https://github.com/chdemko/pandoc-latex-tip/blob/master/LICENSE))
+-   [pandoc-latex-admonition](https://github.com/chdemko/pandoc-latex-admonition) ([BSD](https://github.com/chdemko/pandoc-latex-admonition/blob/master/LICENSE))
 
 
 License
