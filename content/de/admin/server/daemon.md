@@ -3,7 +3,7 @@
 title: Einrichtung als Dienst
 linktitle: Dienst
 description: Administration von OpenEstate-ImmoTool…
-weight: 30
+weight: 40
 
 menu:
   main:

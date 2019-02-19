@@ -1,9 +1,9 @@
 ---
 
-title: Einrichtung des Servers
-linktitle: Einrichtung
-description: Administration von OpenEstate-ImmoTool…
-weight: 20
+title: Konfiguration des ImmoTool-Servers
+linktitle: Konfiguration
+description: Konfiguration von OpenEstate-ImmoServer…
+weight: 30
 
 menu:
   main:

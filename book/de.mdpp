@@ -118,12 +118,14 @@ pandoc-latex-tip:
 # Administration des ImmoTools {#admin_client}
 
 !INCLUDE "admin/client/startup.md"
+!INCLUDE "admin/client/directories.md"
 !INCLUDE "admin/client/update.md"
 
 
 # Administration des ImmoTool-Servers {#admin_server}
 
 !INCLUDE "admin/server/startup.md"
+!INCLUDE "admin/server/directories.md"
 !INCLUDE "admin/server/setup.md"
 !INCLUDE "admin/server/daemon.md"
 !INCLUDE "admin/server/update.md"

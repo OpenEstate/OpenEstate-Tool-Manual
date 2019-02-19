@@ -3,7 +3,7 @@
 title: Aktualisierung durchführen
 linktitle: Aktualisierung
 description: Wie OpenEstate-ImmoTool aktualisiert werden kann…
-weight: 20
+weight: 30
 
 menu:
   main:

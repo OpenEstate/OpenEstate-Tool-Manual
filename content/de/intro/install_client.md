@@ -87,14 +87,14 @@ Bei Bedarf können Sie im Verzeichnis `bin` das Skript `StartMenuAdd.sh` ausfüh
 
 #### ImmoTool unter Windows starten {#intro_install_client_startup_windows}
 
-Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens `OpenEstate-ImmoTool` mit verschiedenen Verknüpfungen.
+Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"** mit verschiedenen Verknüpfungen.
 
 Darüber hinaus können Sie das Programm auch über die Datei `ImmoTool.exe` / `ImmoTool.bat` im Verzeichnis `bin` des Programm-Verzeichnisses starten.
 
 
 #### ImmoTool unter macOS starten {#intro_install_client_startup_mac}
 
-Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **OpenEstate-ImmoTool** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool bereitgestellten Programmen.
+Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"OpenEstate-ImmoTool"** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool bereitgestellten Programmen.
 
 {{< figure src="../admin/client/startup_mac.png" caption="Starter für ImmoTool im Finder" >}}
 

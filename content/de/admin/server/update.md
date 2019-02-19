@@ -3,7 +3,7 @@
 title: ImmoTool-Server aktualisieren
 linktitle: Server aktualisieren
 description: Administration von OpenEstate-ImmoTool…
-weight: 40
+weight: 50
 
 menu:
   main:
