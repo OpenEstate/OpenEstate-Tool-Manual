@@ -94,9 +94,9 @@ The users manual in ePub format bundles the following dependencies:
 
 The users manual in PDF format is created with:
 
--   [Eisvogel template](https://github.com/Wandmalfarbe/pandoc-latex-template) v1.1 ([BSD](https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/LICENSE))
--   [pandoc-latex-tip](https://github.com/chdemko/pandoc-latex-tip) ([BSD](https://github.com/chdemko/pandoc-latex-tip/blob/master/LICENSE))
--   [pandoc-latex-admonition](https://github.com/chdemko/pandoc-latex-admonition) ([BSD](https://github.com/chdemko/pandoc-latex-admonition/blob/master/LICENSE))
+-   [*Eisvogel* template](https://github.com/Wandmalfarbe/pandoc-latex-template) v1.1 ([BSD](https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/LICENSE))
+-   [*pandoc-latex-tip*](https://github.com/chdemko/pandoc-latex-tip) ([BSD](https://github.com/chdemko/pandoc-latex-tip/blob/master/LICENSE))
+-   [*pandoc-latex-admonition*](https://github.com/chdemko/pandoc-latex-admonition) ([BSD](https://github.com/chdemko/pandoc-latex-admonition/blob/master/LICENSE))
 
 
 License
