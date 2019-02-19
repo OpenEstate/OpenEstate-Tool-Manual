@@ -52,6 +52,8 @@ pandoc \
     -V classoption=twoside \
     -V titlepage \
     -V caption-justification=centering \
+    -V linkcolor=firebrick \
+    -V urlcolor=navy \
     "$PDF_MD"
 
 echo "Creating $BOOK_NAME.$BOOK_LANG.epub…"
