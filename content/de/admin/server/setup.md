@@ -14,191 +14,250 @@ menu:
 
 ## ImmoTool-Server konfigurieren {#admin_server_setup}
 
-Die Dateien zur Konfiguration des ImmoTool-Servers sind im Unterverzeichnis `etc` des Programm-Verzeichnisses abgelegt, z.B.: `C:\Programme\OpenEstate-ImmoServer\etc`
+Im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers finden Sie diverse Dateien, über welche das Verhalten des ImmoTool-Servers auf Ihre Bedürfnisse hin angepasst werden kann.
 
-Im Einzelfall kann es hilfreich sein, die Konfiguration des ImmoTool-Servers auf die eigenen Bedürfnisse hin anzupassen. Für die meisten Fälle sollte die ausgelieferte Standard-Konfiguration jedoch ausreichend sein.
+{{< info >}}
+Für die meisten Anwendungsfälle sollte die ausgelieferte Standard-Konfiguration des ImmoTool-Servers ausreichend sein. Änderungen an der Konfiguration sollten nur vorgenommen werden, wenn dies unbedingt nötig ist.
+{{< /info >}}
 
 
 ### Datenbanken konfigurieren {#admin_server_setup_databases}
 
-In der Datei `etc/server.properties` können die vom ImmoTool-Server bereitgestellten Datenbanken konfiguriert werden. Standardmäßig stellt der ImmoTool-Server exakt eine Datenbank mit dem Namen `immotool` bereit.
+Im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers finden Sie eine Datei namens `server.properties`. Über diese Datei können die vom ImmoTool-Server bereitgestellten Datenbanken konfiguriert werden.
 
-Bei Bedarf können über diese Datei noch weitere Datenbanken eingerichtet werden, die ebenfalls von ImmoTool-Server bereitgestellt werden sollen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/guide/listeners-chapt.html#listeners_server_props-sect).
+Standardmäßig stellt der ImmoTool-Server exakt eine Datenbank mit dem Namen `immotool` bereit. Bei Bedarf können über `server.properties` Datei noch weitere Datenbanken eingerichtet werden, die ebenfalls von ImmoTool-Server bereitgestellt werden. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/guide/listeners-chapt.html#lsc_server_props).
 
-Im Folgenden wird die Vorgehensweise beschrieben, um eine weitere Datenbank namens `immotool2` im ImmoTool-Server zu registrieren.
+Um zum Beispiel eine weitere Datenbank namens `immotool2` im ImmoTool-Server zu registrieren, kann wie folgt vorgegangen werden:
 
 1.  Beenden Sie den ImmoTool-Server, sollte dieser aktuell in Betrieb sein.
 
-2.  Öffnen Sie die Datei `etc/server.properties` mit einem Texteditor und tragen Sie am Ende der Datei Folgendes ein:
+2.  Öffnen Sie die Datei `server.properties` mit einem Texteditor und tragen Sie am Ende der Datei Folgendes ein:
 
-    ```
+    ```ini
     # database #1
-    server.database.1=file:./var/data/immotool2/db
+    server.database.1=file:${openestate.server.varDir}/data/immotool2/db
     server.dbname.1=immotool2
     ```
 
-    Damit wird eine zweite Datenbank mit der Bezeichnung `immotool2` registriert, deren Daten im Unterverzeichnis `var/data/immotool2` des ImmoTool-Servers abgelegt werden.
+    Damit wird eine zweite Datenbank mit der Bezeichnung `immotool2` registriert, deren Daten im [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) des ImmoTool-Servers im Ordner `data/immotool2` abgelegt werden.
 
-3.  Speichern Sie die geänderte Datei `etc/server.properties` ab und starten Sie den ImmoTool-Server neu.
+3.  Speichern Sie die geänderte Datei `server.properties` ab und starten Sie den ImmoTool-Server neu.
 
-4.  Via AdminTool & ImmoTool kann man nun eine Verbindung zur zweiten Datenbank herstellen. Beim Verbindungsaufbau muss dabei der neue Datenbank-Name `immotool2` angegeben werden.
+4.  Via AdminTool kann man nun eine Verbindung zur zweiten Datenbank herstellen und die nötigen Einrichtungen vornehmen (siehe ["ImmoTool-Server vorbereiten"]({{< relref "../../intro/install_server.md#intro_install_server_prepare" >}})). Beim Verbindungsaufbau mit dem AdminTool muss dabei der neue Datenbank-Name `immotool2` angegeben werden.
 
-Allgemein können in der Datei `etc/server.properties` beliebig viele Datenbanken mit frei wählbarem Namen registriert werden. Für jede weitere Datenbank muss der Zähler erhöht werden - z.B.:
+5.  Nachdem die Datenbank via AdminTool vorbereitet wurde, kann über das ImmoTool darauf zugegriffen werden (siehe ["Verbindung zum ImmoTool-Server herstellen"]({{< relref "../../intro/install_server.md#intro_install_server_immotool" >}})). Beim Verbindungsaufbau mit dem ImmoTool muss dabei der neue Datenbank-Name `immotool2` angegeben werden.
 
-```
+Allgemein können in der Datei `server.properties` **beliebig viele Datenbanken** mit frei wählbarem Namen registriert werden. Für jede weitere Datenbank muss der Zähler erhöht werden - z.B.:
+
+```ini
 # database #0
-server.database.0=file:./var/data/immotool/db
+server.database.0=file:${openestate.server.varDir}/data/immotool/db
 server.dbname.0=immotool
 
 # database #1
-server.database.1=file:./var/data/mydb/db
+server.database.1=file:${openestate.server.varDir}/data/mydb/db
 server.dbname.1=mydb
 
 # database #2
-server.database.2=file:./var/data/anotherdb/db
+server.database.2=file:${openestate.server.varDir}/data/anotherdb/db
 server.dbname.2=anotherdb
 ```
 
-
-### Protokollierungen konfigurieren {#admin_server_setup_logging}
-
-Über die Datei `etc/log4j.properties` kann die Erzeugung der Protokoll-Dateien konfiguriert werden. Standardmäßig werden die Protokolle des ImmoTool-Servers im Verzeichnis `var/log` als `hsqldb.log.*` abgelegt.
-
-Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von log4j](http://logging.apache.org/log4j/1.2/manual.html).
+{{< info >}}
+Die Zeichenkette `${openestate.server.varDir}` wird automatisch durch den Pfad zum aktuell konfigurierten [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) ersetzt.
+{{< /info >}}
 
 
-### Manager-Skripte konfigurieren {#admin_server_setup_manager}
+### Protokollierung konfigurieren {#admin_server_setup_logging}
 
-In der Datei `etc/manager.conf` können die administrativen Zugangsdaten zur Datenbank hinterlegt werden, die von den Start-Dateien `bin/manager-*` verwendet werden.
+Im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers finden Sie eine Datei namens `log4j.properties`. Über diese Datei kann die Protokollierung des ImmoTool-Servers konfiguriert werden.
+
+Standardmäßig werden die Protokolle im [Protokoll-Verzeichnis]({{< relref "directories.md#admin_server_directories_log" >}}) abgelegt. In der Regel ist es nicht nötig, die Protokollierung des ImmoTool-Servers individuell anzupassen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von log4j](https://logging.apache.org/log4j/1.2/manual.html).
+
+{{< info >}}
+Die Zeichenkette `${openestate.server.logDir}` in der Datei `log4j.properties` wird automatisch durch den Pfad zum [Protokoll-Verzeichnis]({{< relref "directories.md#admin_server_directories_log" >}}) ersetzt.
+{{< /info >}}
+
+{{< info >}}
+Die Zeichenkette `${openestate.server.app}` in der Datei `log4j.properties` wird automatisch durch den Namen der aktuellen Anwendung ersetzt. Somit können für verschiedene Anwendungen unterschiedliche Protokoll-Dateien erzeugt werden.
+{{< /info >}}
+
+
+### Manager-Programme konfigurieren {#admin_server_setup_manager}
+
+Der ImmoTool-Server stellt verschiedene Hilfsprogramme zur Verwaltung der Datenbanken bereit (sogenannte "Manager-Programme"). Diese Manager-Programme verbinden sich mit den Datenbanken des ImmoTool-Servers, um bestimmte administrative Aufgaben durchzuführen (z.B. ["Datensicherung eines laufenden ImmoTool-Servers"]({{< relref "../backup.md#admin_backup_network_live" >}})).
+
+Damit die Manager-Programme ihre Aufgabe erfüllen können, müssen diese sich auf den Datenbanken des ImmoTool-Servers als Benutzer mit administrativen Rechten anmelden. Die dafür benötigten Zugangsdaten werden im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) in der Datei `manager.conf` hinterlegt.
+
+Für jede vom ImmoTool-Server verwaltete Datenbank sind folgende Zeilen in der Datei `manager.conf` zu hinterlegen:
+
+```ini
+urlid immotool
+url jdbc:hsqldb:hsql://localhost/immotool
+username SA
+password test1234
+```
+
+-   Der Wert hinter **urlid** gibt einen eindeutigen Namen für die Datenbank-Verbindung an. Verwenden Sie der Einfachheit halber am besten den gleichen Namen, der auch im ImmoTool-Server für die Datenbank verwendet wird.
+
+-   Der Wert hinter **url** gibt die Adresse an, über welche eine Verbindung zur Datenbank hergestellt werden kann. 
+
+    -   Da das Manager-Programm in der Regel über den gleichen Rechner ausgeführt wird, auf dem auch der ImmoTool-Server betrieben wird, kann als Adresse `localhost` verwendet werden.
+    
+    -   Hinter der Adresse `localhost` folgt ein Schrägstrich mit dem Namen der zu verwaltenden Datenbank (wie er als `server.dbname` in der Datei `server.properties` konfiguriert wurde).
+    
+    -   Sollte der ImmoTool-Server mit SSL-Verschlüsselung betrieben werden, muss `hsql://` durch `hsqls://` ersetzt werden.
+
+-   Der Wert hinter **username** gibt den Namen des in der Datenbank konfigurierten Administrators an. Standardmäßig enthält jede verwaltete Datenbank einen Administrator-Benutzer mit dem Namen `SA`. Insofern ist hier in der Regel keine Änderung nötig.
+
+-   Der Wert hinter **password** gibt das Passwort des als **username** angegebenen Benutzers an. Tragen Sie hier das Passwort ein, das Sie für den Administrator bei der Einrichtung der Datenbank im AdminTool vergeben haben (siehe ["ImmoTool-Server vorbereiten"]({{< relref "../../intro/install_server.md#intro_install_server_prepare" >}})).
+
+Für die drei im Kapitel ["Datenbanken konfigurieren"]({{< relref "setup.md#admin_server_setup_databases" >}}) beschriebenen Beispiel-Datenbanken wären folgende Einträge in der Datei `manager.conf` zu hinterlegen:
+
+```ini
+urlid immotool
+url jdbc:hsqldb:hsql://localhost/immotool
+username SA
+password test1234
+
+urlid mydb
+url jdbc:hsqldb:hsql://localhost/mydb
+username SA
+password test2345
+
+urlid anotherdb
+url jdbc:hsqldb:hsql://localhost/anotherdb
+username SA
+password test3456
+```
+
+(Die Passwörter müssten entsprechend ersetzt werden.)
 
 Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von HSQLDB](http://hsqldb.org/doc/2.0/util-guide/sqltool-chapt.html#sqltool_auth-sect).
 
-
-### Wrapper konfigurieren {#admin_server_setup_wrapper}
-
-In der Datei `etc/wrapper.conf` wird der YAJSW-Wrapper konfiguriert. Diese Komponente wird nur verwendet, wenn der ImmoTool-Server über Start-Skripte `bin/server-*` betrieben wird.
-
-Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der Dokumentation von [YAJSW](http://yajsw.sourceforge.net/YAJSW%20Configuration%20Parameters.html).
+{{< warning >}}
+Die Datei `manager.conf` enthält sensible Zugangsdaten. Sie sollten daher die Berechtigungen im Betriebssystem für diese Datei anpassen. Es sollten nur Betriebssystem-Benutzer diese Datei lesen können, die auch die Manager-Programme ausführen.
+{{< /warning >}}
 
 
-### SSL-Verschlüsselung konfigurieren {#admin_server_setup_ssl}
+### SSL-Verschlüsselung einrichten {#admin_server_setup_ssl}
 
 Wenn sich der ImmoTool-Server außerhalb des lokalen Firmen-Netzwerkes befindet oder Verbindungen über das Internet zulässt, empfiehlt es sich die Kommunikation zwischen ImmoTool & ImmoTool-Server zu verschlüsseln.
 
-Es ist aber auch in anderen Fällen grundsätzlich sinnvoll eine Verschlüsselung durchzuführen, da es hierbei zu einem Gewinn an Sicherheit und Integrität bei der Datenübertragung kommt. Jedoch ist damit zu rechen, dass die Kommunikation geringfügig länger als bei einer unverschlüsselten Verbindung dauern wird.
+Es kann auch in anderen Fällen grundsätzlich sinnvoll sein eine Verschlüsselung durchzuführen, da es hierbei zu einem Gewinn an Sicherheit und Integrität bei der Datenübertragung kommt. Jedoch ist damit zu rechen, dass die Kommunikation geringfügig länger als bei einer unverschlüsselten Verbindung dauern wird.
 
 {{< info >}}
-Der ImmoTool-Server erlaubt **keine gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen**. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend [alle ImmoTools in Ihrem Netzwerk konfigurieren](#admin_server_setup_ssl_client).
+Der ImmoTool-Server erlaubt **keine** gleichzeitige Verwendung von verschlüsselten und unverschlüsselten Verbindungen. Sie müssen sich für einen der beiden Wege entscheiden und entsprechend **alle** ImmoTool-Installationen in Ihrem Netzwerk konfigurieren (siehe ["SSL-Verschlüsselung in ImmoTool aktivieren"]({{< relref "setup.md#admin_server_setup_ssl_immotool" >}})).
 {{< /info >}}
 
 
 #### SSL-Zertifikat erzeugen {#admin_server_setup_ssl_cert}
 
-Um eine verschlüsselte Datenübertragung zu realisieren, muss auf dem ImmoTool-Server ein SSL-Zertifikat bereit liegen. Dieses stellt die Vertrauenswürdigkeit des ImmoTool-Servers gegenüber den darauf zugreifenden ImmoTools sicher.
+Um eine verschlüsselte Datenübertragung zu realisieren, muss auf dem ImmoTool-Server ein SSL-Zertifikat vorhanden sein. Dieses stellt die Vertrauenswürdigkeit des ImmoTool-Servers gegenüber den darauf zugreifenden Programmen sicher.
 
-Im Programmverzeichnis des ImmoTool-Servers finden Sie das Verzeichnis `etc/ssh`. Darin ist ein Skript `init_ssl.bat` / `init_ssl.sh` enthalten. Mit Hilfe dieses Skripts kann ein SSL-Schlüsselpaar und SSL-Zertifikat für den ImmoTool-Server erstellt werden.
+Der ImmoTool-Server stellt ein Programm bereit, über welches das benötigte SSL-Zertifikat erzeugt werden kann.
 
-Starten Sie das Skript `init_ssl.bat` (unter Windows) bzw. `init_ssl.sh` (unter Mac/Linux) via Doppelklick oder per Eingabeaufforderung / Terminal.
+-   Unter Windows können Sie im Startmenü auf **"OpenEstate-ImmoServer → Verwaltung → SSL-Zertifikat erzeugen"** klicken, um das Programm zur Erzeugung des SSL-Zertifikats zu starten.
 
-Nachdem das Skript (`init_ssl.bat` / `init_ssl.sh`) gestartet wurde sind folgende Eingaben vorzunehmen:
+-   Unter macOS finden Sie das Programm nach Doppelklick auf das Programmsymbol **"OpenEstate-ImmoServer"** unter dem Namen **"SslInit"**.
 
-1.  Wählen Sie ein Passwort aus, mit welchem das erzeugte SSL-Schlüsselpaar vor unberechtigtem Zugriff abgesichert werden soll. Das gewählte Passwort wird zu einem späteren Zeitpunkt noch benötigt.
+-   Alternativ können Sie im [Programm-Verzeichnis]({{< relref "directories.md#admin_server_directories_application" >}}) den Ordner `bin` öffnen. Dort finden Sie das Programm unter dem Namen `SslInit.exe` / `SslInit.bat` / `SslInit.sh`.
 
-    {{< figure src="setup_ssl_cert-01.jpg" caption="Passwort zur Absicherung der SSL-Schlüssel wählen" >}}
+Nachdem das Programm gestartet wurde, öffnet sich eine Konsole / ein Terminal. 
 
-2.  Tragen Sie als `Vor- und Nachname` den Hostnamen oder die IP-Adresse Ihres Servers ein.
+{{< figure src="setup_ssl_cert_settings.png" caption="Einstellungen zum SSL-Zertifikat vornehmen" >}}
 
-    {{< figure src="setup_ssl_cert-02.jpg" caption="Name des abzusichernden Servers angeben (“Common Name”)" >}}
+1.  Tragen Sie die **IP-Adresse** (bzw. den Hostnamen) ein, über welche eine Verbindung vom ImmoTool mit dem ImmoTool-Server erfolgt. Das SSL-Zertifikat wird für exakt diese IP-Adresse (bzw. exakt diesen Hostnamen) erzeugt. In allen Programmen muss dann diese IP-Adresse (bzw. dieser Hostname) für den Verbindungsaufbau verwendet werden.
 
-    Im SSL-Zertifikat wird diese Angabe als sogenannter "Common Name" (CN) verwendet.
+2.  Im folgenden Schritt ist ein **Keystore-Passwort** einzutragen, über welches das Zertifikat abgesichert wird. Notieren Sie sich das verwendete Passwort für die spätere Verwendung.
 
-    {{< warning >}}Der gewählte "Common Name" **muss** in Ihrem Netzwerk auf den ImmoTool-Server verweisen. Beim Aufbau einer verschlüsselten Verbindung über das ImmoTool **muss** dieser Name als Hostname verwendet werden.{{< /warning >}}
+Nachdem diese Eingaben vorgenommen wurden erstellt das Programm im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) einen Ordner namens `ssl` und hinterlegt dort die erzeugten Dateien. Abschließend wird folgende Zusammenfassung dargestellt: 
 
-    {{< info >}}Wenn Sie statt eines Hostnamens eine IP-Adresse als "Common Name" verwenden, sollten Sie sicherstellen, dass die IP-Adresse in Ihrem Netzwerk permanent gleich bleibt. Mit jeder Änderung der IP-Adresse muss auch ein neues SSL-Zertifikat erzeugt werden.{{< /info >}}
+{{< figure src="setup_ssl_cert_summary.png" caption="Zusammenfassung zum SSL-Zertifikat" >}}
 
-3.  Verschiedene weitere Angaben werden abgefragt. Hier können beliebige Eingaben vorgenommen werden - passend zur jeweiligen Firma.
+{{< warning >}}
+Der Ordner `ssl` im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) enthält sensible Daten. Sie sollten daher die Berechtigungen im Betriebssystem für diesen Ordner anpassen. Es sollten nur Betriebssystem-Benutzer auf diesen Ordner zugreifen können, die auch den ImmoTool-Server ausführen.
+{{< /warning >}}
 
-    {{< figure src="setup_ssl_cert-03.jpg" caption="Weitere Details zum SSL-Schlüssel angeben" >}}
+{{< info >}}
+Sollte das Programm zur Erzeugung des SSL-Zertifikats nicht gestartet werden können, können die benötigten Dateien alternativ über die folgenden Befehle erzeugt werden:
 
-4.  Es sollte **kein Schlüssel-Kennwort** eingegeben werden. Bestätigen Sie die Eingabe einfach mit `ENTER`.
-
-    {{< figure src="setup_ssl_cert-04.jpg" caption="Passwort zur Absicherung der SSL-Schlüssels angeben" >}}
-
-5.  Damit im letzten Schritt das SSL-Zertifikat zu dem SSL-Schlüsselpaar exportiert werden kann, tragen Sie nochmals das im ersten Schritt gewählte Passwort ein.
-
-    {{< figure src="setup_ssl_cert-05.jpg" caption="Zertifikat zum SSL-Schlüssel exportieren" >}}
-
-Nachdem das Skript erfolgreich ausgeführt wurde finden Sie im Verzeichnis `etc/ssl` zwei weitere Dateien.
-
--   `OpenEstate-ImmoServer.jks`
-    Die Datei enthält das erzeugte SSL-Schlüsselpaar des ImmoTool-Servers.
-
--   `OpenEstate-ImmoServer.crt`
-    Die Datei enthält das erzeugte SSL-Zertifikat des ImmoTool-Servers.
-
-Das erzeugte SSL-Zertifikat des ImmoTool-Servers ist *für 999 Tage gültig*. Nach Ablauf dieser Zeit muss ein neues SSL-Zertifikat erzeugt werden. Führen Sie das Skript (`init_ssl.bat` / `init_ssl.sh`) erneut aus, um ein neues SSL-Zertifikat für die nächsten 999 Tage zu erzeugen. Nach der Neu-Erzeugung muss der ImmoTool-Server neu gestartet werden.
-
-Sollte das Skript (`init_ssl.bat` / `init_ssl.sh`) nicht gestartet werden können, kann die Erzeugung der SSL-Daten alternativ über die folgenden Befehle auf der Eingabeaufforderung / Terminal erfolgen:
-
-```
+```bash
 keytool -genkey \
   -alias OpenEstate-ImmoServer \
   -keyalg RSA -validity 999 \
-  -keystore OpenEstate-ImmoServer.jks \
+  -keystore keystore.jks \
   -storetype JKS
-```
 
-```
 keytool -export \
   -alias OpenEstate-ImmoServer \
-  -keystore OpenEstate-ImmoServer.jks \
-  -rfc -file OpenEstate-ImmoServer.crt
+  -keystore keystore.jks \
+  -rfc -file private.crt
 ```
+
+Das dafür verwendete keytool-Programm befindet sich im `bin`-Verzeichnis der Java-Laufzeitumgebung.
+
+Die nach Ausführung des keytool-Programms erzeugten Dateien sind entsprechend in den Unterordner `ssl` des [Konfigurations-Verzeichnisses]({{< relref "directories.md#admin_server_directories_etc" >}}) zu kopieren.
+{{< /info >}}
 
 
 #### SSL-Verschlüsselung aktivieren {#admin_server_setup_ssl_enable}
 
-Dem ImmoTool-Server muss mitgeteilt werden, dass eine verschlüsselte Kommunikation erfolgen soll. Öffnen Sie dafür die Datei `etc/server.properties` aus dem Programmverzeichnis des ImmoTool-Servers mit einem Texteditor. Die folgenden Einträge müssen vorgenommen werden:
+Dem ImmoTool-Server muss mitgeteilt werden, dass eine verschlüsselte Kommunikation erfolgen soll. Öffnen Sie dafür die Datei `server.properties` im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) mit einem Texteditor. Die folgenden Zeilen müssen bearbeitet werden:
 
 ```
 # TLS/SSL (secure) sockets
 server.tls=true
-system.javax.net.ssl.keyStore=./etc/ssl/OpenEstate-ImmoServer.jks
-system.javax.net.ssl.keyStorePassword=MEIN-SSL-PASSWORT
+system.javax.net.ssl.keyStore=${openestate.server.etcDir}/ssl/keystore.jks
+system.javax.net.ssl.keyStorePassword=test1234
 ```
 
--   `server.tls`
-    Durch den Wert `true` wird die SSL-Verschlüsselung im ImmoTool-Server aktiviert.
+-   Der Wert hinter **server.tls** muss auf `true` gesetzt werden um SSL-Verschlüsselung im ImmoTool-Server zu aktivieren.
 
--   `system.javax.net.ssl.keyStore`
-    Hier muss der Pfad zur JKS-Datei angegeben werden. Die Datei wurde zuvor mit dem Skript (`init_ssl.bat` / `init_ssl.sh`) erstellt und enthält die zur SSL-Verschlüsselung nötigen Daten.
+-   Hinter **system.javax.net.ssl.keyStore** ist der Pfad anzugeben, unter dem die Keystore-Datei (`keystore.jks`) zu finden ist. In der Regel muss dieser Wert **nicht** verändert werden.
 
--   `system.javax.net.ssl.keyStorePassword`
-    Hier muss das Passwort eingetragen werden, dass Sie während der Erzeugung des SSL-Schlüsselpaars gewählt haben.
+-   Hinter **system.javax.net.ssl.keyStorePassword** muss das Passwort eingetragen werden, dass Sie während der Erzeugung des SSL-Zertifikats gewählt haben.
 
-Damit die Änderungen an der Datei `etc/server.properties` wirksam werden, muss der ImmoTool-Server neu gestartet werden.
+Damit die Änderungen an der Konfiguration wirksam werden, muss der ImmoTool-Server neu gestartet werden.
 
-{{< info >}}
-Wenn das Betriebssystem es ermöglicht, empfiehlt es sich die Zugriffsrechte auf die Datei `etc/server.properties` zu limitieren, sodass andere Benutzer des Betriebssystems nicht darauf zugreifen können. Unter Linux / Mac entspricht dies:
 
-```bash
-chmod 600 server.properties
+#### SSL-Verschlüsselung im ImmoTool nutzen {#admin_server_setup_ssl_immotool}
+
+Beim Erzeugen eines neuen Projekts im ImmoTool muss im [Projektassistenten]({{< relref "../../usage/general/projects.md#usage_general_projects_wizard" >}}) das **Protokoll "hsqls"** gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
+
+{{< figure src="setup_ssl_immotool_project.png" caption="SSL-Verschlüsselung via Projektassistent aktivieren" >}}
+
+Beim Öffnen eines bestehenden Projekts kann auch nachträglich die Verschlüsselung aktiviert werden. Klicken Sie dafür auf **"Verbindungsdaten des Servers bearbeiten""** und wählen Sie als **Protokoll "hsqls"** aus. Diese Einstellung wird dauerhaft für das Projekt gespeichert und muss später nicht erneut vorgenommen werden.
+
+{{< figure src="setup_ssl_immotool_login.png" caption="SSL-Verschlüsselung bei Anmeldung am Projekt aktivieren" >}}
+
+
+#### SSL-Verschlüsselung im AdminTool nutzen {#admin_server_setup_ssl_admintool}
+
+Beim Verbindungsaufbau mit dem AdminTool muss das **Protokoll "hsqls"** gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
+
+{{< figure src="setup_ssl_admintool.png" caption="SSL-Verschlüsselung im AdminTool aktivieren" >}}
+
+
+#### SSL-Verschlüsselung in Manager-Programmen nutzen {#admin_server_setup_ssl_manager}
+
+Die Manager-Programme werden über die Datei `manager.conf` im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers konfiguriert.
+
+Bearbeiten Sie diese Datei mit einem Texteditor und ändern Sie die Werte hinter **url** für alle konfigurierten Datenbanken. Statt `hsql://` muss `hsqls://` verwendet werden. Im Beispiel aus Kapitel ["Manager-Programme konfigurieren"]({{< relref "setup.md#admin_server_setup_manager" >}}) wären z.B. folgende Anpassungen vorzunehmen:
+
+```ini
+urlid immotool
+url jdbc:hsqldb:hsqls://localhost/immotool
+username SA
+password test1234
+
+urlid mydb
+url jdbc:hsqldb:hsqls://localhost/mydb
+username SA
+password test2345
+
+urlid anotherdb
+url jdbc:hsqldb:hsqls://localhost/anotherdb
+username SA
+password test3456
 ```
-{{< /info >}}
-
-
-#### SSL-Verschlüsselung in ImmoTool / AdminTool aktivieren {#admin_server_setup_ssl_client}
-
-Beim Aufbau der Verbindung muss als Protokoll `hsqls` ausgewählt werden, damit das ImmoTool / AdminTool eine verschlüsselte Verbindung zum ImmoTool-Server herstellen kann.
-
-Beim Erzeugen eines neuen Projekts kann im [Projektassistenten]({{< relref "../../usage/general/projects.md#usage_general_projects_wizard" >}}) das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
-
-{{< figure src="setup_ssl_immotool-01.jpg" caption="SSL-Verschlüsselung via Projektassistent aktivieren" >}}
-
-Beim Öffnen eines bestehenden Projekts kann bei der Anmeldung zusätzlich das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
-
-{{< figure src="setup_ssl_immotool-02.jpg" caption="SSL-Verschlüsselung bei der Anmeldung am Projekt aktivieren" >}}
-
-Beim Verbindungsaufbau mit dem AdminTool kann das Protokoll `hsqls` gewählt werden, um eine verschlüsselte Verbindung zum ImmoTool-Server herzustellen.
-
-{{< figure src="setup_ssl_admintool-01.jpg" caption="SSL-Verschlüsselung beim Verbindungsaufbau via AdminTool aktivieren" >}}

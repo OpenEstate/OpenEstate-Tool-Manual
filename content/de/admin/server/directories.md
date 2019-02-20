@@ -68,6 +68,8 @@ Aus dem Konfigurations-Verzeichnis lädt ImmoTool-Server seine Konfigurationen.
 
 -   Wenn unter Linux das **TAR.GZ**-Installationspaket zur Installation verwendet wurde, werden die Konfigurationen aus dem `etc` Unterordner des Programm-Verzeichnisses geladen.
 
+Im Kapitel ["ImmoTool-Server konfigurieren"]({{< relref "setup.md#admin_server_setup" >}}) finden Sie weitere Informationen, wie der ImmoTool-Server auf Ihre Bedürfnisse hin konfiguriert werden kann.
+
 
 ### Verzeichnisse konfigurieren {#admin_server_directories_setup}
 
