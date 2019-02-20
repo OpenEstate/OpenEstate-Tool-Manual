@@ -127,7 +127,7 @@ pandoc-latex-tip:
 !INCLUDE "admin/server/startup.md"
 !INCLUDE "admin/server/directories.md"
 !INCLUDE "admin/server/setup.md"
-!INCLUDE "admin/server/daemon.md"
+!INCLUDE "admin/server/service.md"
 !INCLUDE "admin/server/update.md"
 !INCLUDE "admin/server/resetpwd.md"
 

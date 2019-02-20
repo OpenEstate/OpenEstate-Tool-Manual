@@ -25,7 +25,7 @@ Darüber hinaus können Sie das Programm auch über die Datei `ImmoTool.exe` / `
 
 Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **OpenEstate-ImmoTool** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool bereitgestellten Programmen.
 
-{{< figure src="startup_mac.png" caption="Starter für ImmoTool im Finder" >}}
+{{< figure src="startup_mac_folder.png" caption="Starter für ImmoTool im Finder" >}}
 
 Wenn Sie in diesem Fenster auf das **ImmoTool**-Symbol klicken, wird das Programm gestartet.
 

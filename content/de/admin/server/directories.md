@@ -2,7 +2,7 @@
 
 title: Verzeichnisse des ImmoTool-Servers
 linktitle: Verzeichnisse
-description: Wo OpenEstate-ImmoServer seine Daten speichert…
+description: Welche Verzeichnisse von OpenEstate-ImmoServer verwendet werden…
 weight: 20
 
 menu:
@@ -128,8 +128,13 @@ Unter Windows hängt es davon ab, wie die einzelnen Programme des ImmoTool-Serve
     set "SERVER_VAR_DIR=D:\OpenEstate-ImmoServer"
     ```
     
--   Falls ein Dienst unter Windows eingerichtet wurde, können die Pfade über die Dienst-Verwaltung angepasst werden.
+-   Falls ein Dienst unter Windows eingerichtet wurde, können die Pfade über die Dienst-Verwaltung angepasst werden (siehe ["Dienst unter Windows verwalten"]({{< relref "service.md#admin_server_service_windows_manage" >}})).
 
-{{< todo >}}
-Screenshot von der Dienste-Verwaltung einfügen, aus dem die Änderung der Pfade ersichtlich ist.
-{{< /todo >}}
+    {{< figure src="directories_setup_windows_service.png" caption="Pfade in der Dienst-Verwaltung von Windows konfigurieren" >}}
+    
+    Wählen Sie in der Dienst-Verwaltung den Tab **"Java"** und tragen Sie im Textfeld **"Java Options"** die gewünschten Pfade hinter den folgenden Variablen ein:
+    
+    -   Hinter `-Dopenestate.server.etcDir=` kann der Pfad des [Konfigurations-Verzeichnisses]({{ relref "directories.md#admin_server_directories_etc" }}) eingetragen werden.
+    -   Hinter `-Dopenestate.server.logDir=` kann der Pfad des [Protokoll-Verzeichnisses]({{ relref "directories.md#admin_server_directories_log" }}) eingetragen werden.
+    -   Hinter `-Dopenestate.server.varDir=` kann der Pfad des [Daten-Verzeichnisses]({{ relref "directories.md#admin_server_directories_data" }}) eingetragen werden.
+

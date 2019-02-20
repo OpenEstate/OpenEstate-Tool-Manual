@@ -114,7 +114,7 @@ Darüber hinaus können Sie das Programm auch über die Datei `Start.exe` / `Sta
 
 Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"OpenEstate-ImmoServer"** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool-Server bereitgestellten Programmen.
 
-{{< figure src="../admin/server/startup_mac.png" caption="Starter für ImmoTool-Server im Finder" >}}
+{{< figure src="../admin/server/startup_mac_folder.png" caption="Starter für ImmoTool-Server im Finder" >}}
 
 Wenn Sie in diesem Fenster auf das **Start**-Symbol klicken, wird das Programm gestartet.
 

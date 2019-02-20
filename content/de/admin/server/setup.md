@@ -2,7 +2,7 @@
 
 title: Konfiguration des ImmoTool-Servers
 linktitle: Konfiguration
-description: Konfiguration von OpenEstate-ImmoServer…
+description: Wie OpenEstate-ImmoServer konfiguriert werden kann…
 weight: 30
 
 menu:

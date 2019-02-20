@@ -142,7 +142,7 @@ Verweis auf die Dokumentation von `manager.conf` einfügen.
 Wenn **ManagerBackup** gestartet wird, wird für alle in `manager.conf` konfigurierten Datenbanken eine Sicherung erzeugt. Das Programm speichert die Sicherungen standardmäßig im Datenverzeichnis des ImmoTool-Servers in einem Unterordner namens `backups`. 
 
 
-##### Automatische Datensicherung unter Windows
+##### Automatische Datensicherung unter Windows {#admin_backup_network_live_windows}
 
 Mit Hilfe des Taskplaners kann das Hilfsprogramm automatisch zu einem beliebigen Zeitpunkt geplant und ausgeführt werden.
 
@@ -151,7 +151,7 @@ ggf. weitere Präzisierung und Screenshots zur Nutzung des Taskplaners einfügen
 {{< /todo >}}
 
 
-##### Automatische Datensicherung unter macOS
+##### Automatische Datensicherung unter macOS {#admin_backup_network_live_mac}
 
 Wenn der ImmoTool-Server unter macOS über die bereitgestellten Skripte als Dienst eingerichtet wurde, kann dabei auch eine tägliche automatische Datensicherung konfiguriert werden.
 
@@ -166,7 +166,7 @@ Sie sind nicht gezwungen die bereitgestellten Funktionen zur automatischen Daten
 {{< /info >}}
 
 
-##### Automatische Datensicherung unter Linux
+##### Automatische Datensicherung unter Linux {#admin_backup_network_live_linux}
 
 Wenn der ImmoTool-Server unter Linux über das bereitgestellte Debian-Paket installiert wurde (siehe ["Installation unter Debian, Ubuntu & Co."]({{< relref "../intro/install_server.md#intro_install_server_setup_debian" >}})), wird automatisch die tägliche Datensicherung eingerichtet.
 
@@ -183,7 +183,7 @@ Sie sind nicht gezwungen die bereitgestellten Funktionen zur automatischen Daten
 {{< /info >}}
 
 
-##### Parameter zur Ausführung von ManagerBackup
+##### Parameter zur Ausführung von ManagerBackup {#admin_backup_network_live_options}
 
 Das Hilfsprogramm **ManagerBackup** kann über Kommandozeilen-Parameter bei Bedarf präziser gesteuert werden.
 

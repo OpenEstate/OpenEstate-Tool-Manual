@@ -2,7 +2,7 @@
 
 title: ImmoTool-Server starten
 linktitle: Server starten
-description: Administration von OpenEstate-ImmoTool…
+description: Wie OpenEstate-ImmoServer gestartet werden kann…
 weight: 10
 
 menu:
@@ -16,11 +16,7 @@ menu:
 
 Die einfachste Form den ImmoTool-Server zu starten ist die manuelle Ausführung **im "Vordergrund"**. 
 
-Wenn das Programm erfolgreich eingerichtet wurde und von den Arbeitsplätzen erfolgreich auf den ImmoTool-Server zugegriffen werden kann, empfiehlt sich die Einrichtung eines Dienstes, sodass der ImmoTool-Server automatisch beim Hochfahren des Rechners **im "Hintergrund"** gestartet wird.
-
-{{< todo >}}
-Link zur Einrichtung als Dienst hinterlegen.
-{{< /todo >}}
+Wenn das Programm erfolgreich eingerichtet wurde und von den Arbeitsplätzen erfolgreich auf den ImmoTool-Server zugegriffen werden kann, empfiehlt sich die Einrichtung eines Dienstes, sodass der ImmoTool-Server automatisch beim Hochfahren des Rechners **im "Hintergrund"** gestartet wird (siehe ["ImmoTool-Server als Dienst einrichten"]({{< relref "service.md#admin_server_service" >}})).
 
 
 ### ImmoTool-Server unter Windows starten {#admin_server_startup_windows}
@@ -29,14 +25,22 @@ Bei der Installation unter Windows wird automatisch im Startmenü einen Ordner n
 
 Darüber hinaus können Sie das Programm auch über die Datei `Start.exe` / `Start.bat` im Verzeichnis `bin` des Programm-Verzeichnisses manuell starten.
 
+Beim ersten Start des ImmoTool-Servers werden Sie vom Betriebssystem eventuell gefragt, ob eingehende Verbindungen akzeptiert werden sollen. Diese Frage sollte mit **"Zugriff zulassen"** beantwortet werden.
+
+{{< figure src="startup_windows_firewall.png" caption="Freigabe in der Firewall unter Windows erteilen" >}}
+
 
 ### ImmoTool-Server unter macOS starten {#admin_server_startup_mac}
 
 Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **OpenEstate-ImmoServer** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool-Server bereitgestellten Programmen.
 
-{{< figure src="startup_mac.png" caption="Starter für ImmoTool-Server im Finder" >}}
+{{< figure src="startup_mac_folder.png" caption="Starter für ImmoTool-Server im Finder" >}}
 
 Wenn Sie in diesem Fenster auf das **Start**-Symbol klicken, wird das Programm gestartet.
+
+Beim ersten Start des ImmoTool-Servers werden Sie vom Betriebssystem eventuell gefragt, ob eingehende Verbindungen akzeptiert werden sollen. Diese Frage sollte mit **"Erlauben"** beantwortet werden.
+
+{{< figure src="startup_mac_firewall.png" caption="Freigabe in der Firewall unter macOS erteilen" >}}
 
 
 ### ImmoTool-Server unter Linux starten {#admin_server_startup_linux}
