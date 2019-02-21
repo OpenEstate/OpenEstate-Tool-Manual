@@ -84,19 +84,17 @@ Im ersten Schritt muss das Projekt in ImmoTool 0.9.x auf dem folgenden Wege gesi
 
 1.  Aktualisieren Sie Ihre bestehende ImmoTool-Installation auf die aktuellste verfügbare Version (mindestens **0.9.15** bzw. **1.0-beta10f**). Klicken Sie dafür im Hauptmenü auf **"Extras → Aktualisierung"**.
 
-    {{< figure src="migration_upgrade_0_9-01.jpg" caption="ImmoTool 0.9.x aktualisieren" >}}
+    {{< figure src="migration_update.png" caption="Aktualisierung in ImmoTool 0.9.x starten" >}}
+    
+    Alternativ können Sie Version 0.9.33 (die letzte 0.9.x Version) von der [Webseite des OpenEstate-Projekts](https://openestate.org/downloads/openestate-immotool/0.9.33) herunterladen.
 
 2.  Öffnen Sie das zu übernehmende Projekt im alten ImmoTool und erzeugen Sie eine Datensicherung, durch Klick im Hauptmenü auf **"Extras → Datenbank → Sicherung für Version 1.x"**.
 
-    {{< figure src="migration_upgrade_0_9-02.jpg" caption="Datensicherung für ImmoTool 1.x erzeugen" >}}
+    {{< figure src="migration_export.png" caption="Datensicherung für ImmoTool 1.x erzeugen" >}}
 
     Bei diesem Vorgang wird ein ZIP-Archiv mit den Inhalten der Projekt-Datenbank auf der Festplatte gespeichert, welches Sie in den folgenden Schritten benötigen werden.
 
 Die Vorgehensweise zur Übernahme der exportierten Daten hängt davon ab, ob das Projekt in ImmoTool 1.x als [Einzelplatz-Installation]({{< relref "../intro/install_types.md#intro_install_types_local" >}}) oder [Netzwerk-Installation]({{< relref "../intro/install_types.md#intro_install_types_network" >}}) fortgeführt werden soll.
-
-{{< todo >}}
-Screenshots aktualisieren
-{{< /todo >}}
 
 
 ### Projekt als Einzelplatz-Installation übernehmen {#admin_migration_legacy_local}
@@ -109,17 +107,11 @@ Wenn des Projekt in ImmoTool 1.x als [**Einzelplatz-Installation**]({{< relref "
 
 Beim ersten Start von ImmoTool 1.x kann die zuvor gesicherte Datenbank mit Hilfe des [Projektassistenten]({{< relref "../usage/general/projects.md#usage_general_projects_wizard" >}}) importiert werden.
 
-{{< figure src="migration_upgrade_0_9_local-01.jpg" caption="Datensicherung via Projektassistent importieren" >}}
+{{< figure src="migration_import_local.png" caption="Datensicherung via Projektassistent importieren" >}}
 
-Wählen Sie als **"Art des Projektes"** die Option **"Neues Einzelplatz-Projekt aus ImmoTool 0.9.x übernehmen"**. Im daraufhin dargestellten Formular, können Sie die [zuvor erstellte Sicherungsdatei]({{< relref "migration.md#admin_migration_legacy_backup" >}}) auswählen, indem Sie auf den Button **"Auswahl"** klicken. Das ZIP-Archiv wird daraufhin vom Programm geprüft und die Firmendaten automatisch übernommen.
-
-{{< figure src="migration_upgrade_0_9_local-02.jpg" caption="Sicherungsdatei zum Import ausgewählt" >}}
+Wählen Sie als **"Art des Projektes"** die Option **"Einzelplatz-Projekt von ImmoTool 0.9.x migrieren"**. Im daraufhin dargestellten Formular, können Sie die [zuvor erstellte Sicherungsdatei]({{< relref "migration.md#admin_migration_legacy_backup" >}}) auswählen, indem Sie auf den Button **"Auswahl"** klicken. Das ZIP-Archiv wird daraufhin vom Programm geprüft und die Firmendaten automatisch übernommen.
 
 Prüfen Sie sicherheitshalber die Firmendaten & Add-Ons und klicken Sie abschließend auf **"Projekt erzeugen"**. Während der Erzeugung des neuen Projekts wird die Sicherungsdatei automatisch in die Datenbank importiert.
-
-{{< todo >}}
-Screenshots aktualisieren
-{{< /todo >}}
 
 
 ### Projekt als Netzwerk-Installation übernehmen {#admin_migration_legacy_remote}
@@ -130,18 +122,14 @@ Wenn des Projekt in ImmoTool 1.x als [**Netzwerk-Installation**]({{< relref "../
 Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten **nebeneinander** installiert werden.
 {{< /warning >}}
 
-Nachdem der ImmoTool-Server erfolgreich in Betrieb genommen wurde, kann die gesicherte Datenbank mit Hilfe des [AdminTools]({{< relref "tool.md#admin_tool" >}}) auf den ImmoTool-Server übertragen werden. Die [zuvor erstellte Sicherungsdatei]({{< relref "migration.md#admin_migration_legacy_backup" >}}) kann im [AdminTool]({{< relref "tool.md#admin_tool" >}}) auf folgenden Wegen importiert werden:
+Nachdem der ImmoTool-Server erfolgreich in Betrieb genommen wurde kann die gesicherte Datenbank mit Hilfe des [AdminTools]({{< relref "tool.md#admin_tool" >}}) auf den ImmoTool-Server übertragen werden. Die [zuvor erstellte Sicherungsdatei]({{< relref "migration.md#admin_migration_legacy_backup" >}}) kann im [AdminTool]({{< relref "tool.md#admin_tool" >}}) auf folgenden Wegen importiert werden:
 
 -   Bei der **erstmaligen Anmeldung** am ImmoTool-Server wird ein Fenster dargestellt, über welches die Datenbank installiert werden kann. Dabei kann zusätzlich die zuvor erzeugte Sicherungsdatei angegeben werden.
 
-    {{< figure src="migration_upgrade_0_9_remote-01.jpg" caption="Datensicherung beim Erzeugen eines Projekts importieren" >}}
+    {{< figure src="migration_import_remote_new.png" caption="Datensicherung beim Erzeugen eines Projekts importieren" >}}
 
--   Wenn die Datenstrukturen bereits mit dem [AdminTool]({{< relref "tool.md#admin_tool" >}}) erzeugt wurden, kann die Datensicherung **nachträglich** durch Klick ins Hauptmenü auf **"Werkzeuge → Migration aus früherer Version"** importiert werden.
+-   Wenn die Datenbank vorher bereits mit dem [AdminTool]({{< relref "tool.md#admin_tool" >}}) erzeugt wurden, kann die Datensicherung **nachträglich** durch Klick ins Hauptmenü auf **"Extras → Migration aus ImmoTool 0.9.x"** importiert werden.
 
-    {{< figure src="migration_upgrade_0_9_remote-02.jpg" caption="Datensicherung nachträglich importieren" >}}
+    {{< figure src="migration_import_remote_existing.png" caption="Datensicherung nachträglich importieren" >}}
 
-Nachdem die Datenübernahme ins Mehrplatz-Projekt abgeschlossen wurde, kann die Verbindung zur Datenbank über das ImmoTool hergestellt werden (siehe ["Verbindung zum ImmoTool-Server herstellen"]({{< relref "../intro/install_server.md#intro_install_server_immotool" >}})).
-
-{{< todo >}}
-Screenshots aktualisieren
-{{< /todo >}}
+Nachdem die Datenübernahme ins Mehrplatz-Projekt abgeschlossen wurde kann die Verbindung zur Datenbank über das ImmoTool hergestellt werden (siehe ["Verbindung zum ImmoTool-Server herstellen"]({{< relref "../intro/install_server.md#intro_install_server_immotool" >}})).
