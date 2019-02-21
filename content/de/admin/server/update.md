@@ -2,7 +2,7 @@
 
 title: ImmoTool-Server aktualisieren
 linktitle: Server aktualisieren
-description: Administration von OpenEstate-ImmoTool…
+description: Wie OpenEstate-ImmoServer aktualisiert werden kann…
 weight: 50
 
 menu:
