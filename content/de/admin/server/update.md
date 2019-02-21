@@ -14,24 +14,65 @@ menu:
 
 ## ImmoTool-Server aktualisieren {#admin_server_update}
 
-Gelegentlich werden Aktualisierungen für den ImmoTool-Server veröffentlicht. Im Unterschied zum ImmoTool können diese Aktualisierungen jedoch nicht automatisch heruntergeladen und installiert werden. Im folgenden Abschnitt wird die Vorgehensweise beschrieben, um eine Aktualisierung des ImmoTool-Servers in Betrieb zu nehmen.
+Weitaus seltener als beim ImmoTool werden Aktualisierungen für den ImmoTool-Server veröffentlicht. Im Unterschied zum ImmoTool findet **keine automatische Prüfung auf Aktualisierungen** statt. Sie sollten daher gelegentlich die [Webseite des OpenEstate-Projekts](https://openestate.org/) besuchen oder den [RSS-Feed](https://openestate.org/news/feed/de/rss/) abonnieren um über Aktualisierungen informiert zu werden.
+
+Laden Sie das Installationspaket für Ihr Betriebssystem herunter und starten Sie den Installationsvorgang (siehe ["ImmoTool-Server installieren"]({{< relref "../../intro/install_server.md#intro_install_server" >}})). Beachten Sie dabei die folgenden Anmerkungen für Ihr Betriebssystem.
+
+{{< warning >}}
+Sollte der ImmoTool-Server aktuell gestartet sein, sollten Sie diesen vor der Aktualisierung beenden / stoppen.
+{{< /warning >}}
 
 {{< tip >}}
-Um einen Datenverlust im Falle eines Fehlers zu vermeiden, empfehlen wir das Programmverzeichnis des ImmoTool-Servers vor der Aktualisierung zu sichern.
+Um einen Datenverlust im Falle eines Fehlers zu vermeiden, empfehlen wir das [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) des ImmoTool-Servers vor der Aktualisierung zu sichern.
 {{< /tip >}}
 
-1.  Laden Sie sich die aktuelle Version des ImmoTool-Servers aus dem [Download-Bereich von OpenEstate.org](http://de.openestate.org/downloads/) herunter.
 
-2.  Entpacken Sie das heruntergeladene ZIP-Archiv (oder TAR.GZ-Archiv) in ein neues Verzeichnis auf Ihrem Computer.
+### Aktualisierung unter Windows {#admin_server_update_windows}
 
-3.  Beenden Sie den ImmoTool-Server auf Ihrem Rechner, sollte dieser aktuell noch gestartet sein. Sollte der ImmoTool-Server als Dienst auf Ihrem Rechner installiert worden sein, deinstallieren Sie den Dienst bevor Sie mit der Aktualisierung fortfahren.
+Das **EXE**-Installationsprogramm erkennt automatisch den Speicherort der ImmoTool-Server-Installation und führt die Aktualisierung für Sie durch.
 
-4.  Kopieren Sie alle Dateien aus dem in Schritt 2 erzeugten `bin`-Verzeichnis in das gleichnamige Verzeichnis des aktuell installierten ImmoTool-Servers. Bereits vorhandene Dateien im `bin`-Verzeichnis können dabei überschrieben werden.
+{{< warning >}}
+Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) vorgenommen, sichern Sie die betreffende Dateien vor der Aktualisierung. Nach der Aktualisierung können Sie die betreffenden Dateien wieder zurück kopieren.
+{{< /warning >}}
 
-5.  Kopieren Sie alle Dateien aus dem in Schritt 2 erzeugten `etc`-Verzeichnis in das gleichnamige Verzeichnis des aktuell installierten ImmoTool-Servers. Bereits vorhandene Dateien im `etc`-Verzeichnis sollten dabei **nicht** überschrieben werden.
 
-6.  Entfernen Sie alle Dateien und Ordner im `lib`-Verzeichnis des aktuell installierten ImmoTool-Servers. Kopieren Sie dorthin alle Dateien aus dem in Schritt 2 erzeugten gleichnamigen Verzeichnis.
+### Aktualisierung unter macOS {#admin_server_update_mac}
 
-7.  Entfernen Sie alle Dateien und Ordner im `doc`-Verzeichnis des aktuell installierten ImmoTool-Servers. Kopieren Sie dorthin alle Dateien aus dem in Schritt 2 erzeugten gleichnamigen Verzeichnis.
+Verschieben Sie den Programm-Starter **"OpenEstate-ImmoServer"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Bestätigen Sie die Rückfrage, ob die alte Version des Programms überschrieben werden soll.
 
-8.  Der ImmoTool-Server kann nun wieder neu gestartet werden. Bei Bedarf kann nun wieder der ImmoTool-Server als Dienst im Betriebssystem installiert werden.
+
+### Aktualisierung unter Debian, Ubuntu & Co. {#admin_server_update_debian}
+
+Wenn Sie das Debian-Repository in Ihrem Betriebssystem eingerichtet haben (siehe ["Installation unter Debian, Ubuntu & Co."]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}})), müssen Sie das Programm **nicht** von der OpenEstate-Webseite herunterladen. Statt dessen genügt es folgende Befehle im Terminal auszuführen:
+
+```bash
+sudo apt update
+sudo apt install openestate-immoserver
+```
+
+Wenn Sie das Debian-Repository **nicht** nutzen aber das **DEB**-Installationspaket bei der Installation verwendet haben, können Sie die **DEB**-Installationsdatei herunterladen und per Doppelklick starten. Alternativ kann die Datei über folgenden Befehl im Terminal installiert werden:
+
+```bash
+sudo dpkg -i openestate-immoserver_x.y.z_amd64.deb
+```
+
+Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
+
+{{< warning >}}
+Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) vorgenommen, sichern Sie die betreffende Dateien vor der Aktualisierung. Nach der Aktualisierung können Sie die betreffenden Dateien wieder zurück kopieren.
+{{< /warning >}}
+
+
+### Aktualisierung unter Linux {#admin_server_update_linux}
+
+1.  Bringen Sie in Erfahrung in welchem Verzeichnis der ImmoTool-Server installiert wurde.
+2.  Laden Sie die **TAR.GZ**-Installationsdatei für Linux herunter und entpacken Sie die Datei auf Ihrem Rechner. 
+3.  Benennen Sie das in Schritt 1 ermittelte Programmverzeichnis des ImmoTool-Servers um - z.B. in `OpenEstate-ImmoServer-ALT`.
+4.  Erzeugen Sie ein neues / leeres Verzeichnis unter dem in Schritt 1 festgestellten Namen - z.B. `OpenEstate-ImmoServer`.
+5.  Kopieren Sie die in Schritt 2 entpackten Dateien in das neue / leere Programmverzeichnis.
+
+Nachdem das Programm in der neuen Version erfolgreich gestartet werden konnte, kann das in Schritt 3 erzeugte alte Programmverzeichnis bei Bedarf gelöscht werden.
+
+{{< warning >}}
+Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) vorgenommen, sichern Sie die betreffende Dateien vor der Aktualisierung. Nach der Aktualisierung können Sie die betreffenden Dateien wieder zurück kopieren.
+{{< /warning >}}
