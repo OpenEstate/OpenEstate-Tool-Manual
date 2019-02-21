@@ -114,7 +114,7 @@ Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "install_client.md#intro
 Alternativ zum Startmenü kann das Programm über die Datei `ImmoTool.sh` im `bin`-Verzeichnis des Programms gestartet werden.
 
 
-### Sprache wählen
+### Sprache wählen {#intro_install_client_language}
 
 Beim ersten Programmstart prüft das ImmoTool ob eine Übersetzung zu der im Betriebssystem eingestellten Sprache vorliegt. Sollte dies nicht der Fall sein, erscheint das folgende Fenster, in dem Sie die im ImmoTool verwendete Sprache auswählen können:
 
@@ -127,7 +127,7 @@ Das ImmoTool kann in beliebige Sprachen übersetzt werden. Wenn Sie sich an der 
 {{< /info >}}
 
 
-### Einzelplatz-Projekt erzeugen
+### Einzelplatz-Projekt erzeugen {#intro_install_client_project}
 
 Der Projektassistent wird geöffnet und Sie können eine Datenbank für Ihre Arbeit mit dem ImmoTool erzeugen.
 
