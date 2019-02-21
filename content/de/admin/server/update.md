@@ -40,6 +40,10 @@ Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.
 
 Verschieben Sie den Programm-Starter **"OpenEstate-ImmoServer"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Bestätigen Sie die Rückfrage, ob die alte Version des Programms überschrieben werden soll.
 
+{{< todo >}}
+Testen, ob eine vorherige Löschung des Programm-Ordners nötig ist.
+{{< /todo >}}
+
 
 ### Aktualisierung unter Debian, Ubuntu & Co. {#admin_server_update_debian}
 

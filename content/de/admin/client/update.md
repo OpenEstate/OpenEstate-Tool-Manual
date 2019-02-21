@@ -42,6 +42,10 @@ Das **EXE**-Installationsprogramm erkennt automatisch den Speicherort der ImmoTo
 
 Verschieben Sie den Programm-Starter **"OpenEstate-ImmoTool"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Bestätigen Sie die Rückfrage, ob die alte Version des Programms überschrieben werden soll.
 
+{{< todo >}}
+Testen, ob eine vorherige Löschung des Programm-Ordners nötig ist.
+{{< /todo >}}
+
 
 ### Aktualisierung unter Debian, Ubuntu & Co. {#admin_client_update_debian}
 
