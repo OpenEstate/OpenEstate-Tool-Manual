@@ -22,7 +22,7 @@ Bei Klick auf **"Installationspaket herunterladen."** wird im Web-Browser der Li
 
 Bei Klick auf **"Webseite mit Downloads."** wird im Web-Browser der [Download-Bereich](https://openestate.org/downloads/openestate-immotool) auf der Webseite von OpenEstate.org mit der aktuellen Programm-Version geöffnet.
 
-Laden Sie das Installationspaket für Ihr Betriebssystem herunter und starten Sie den Installationsvorgang (siehe ["ImmoTool installieren"]({{< relref "../../intro/install_client.md#intro_install_client" >}})).
+Laden Sie das Installationspaket für Ihr Betriebssystem herunter und starten Sie den Installationsvorgang (siehe ["ImmoTool installieren"]({{< relref "../../intro/install_client.md#intro_install_client" >}})). Beachten Sie dabei die folgenden Anmerkungen für Ihr Betriebssystem.
 
 {{< warning >}}
 Beenden Sie das ImmoTool bevor die Aktualisierung durchgeführt wird.
