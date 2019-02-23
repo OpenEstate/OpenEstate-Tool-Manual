@@ -12,10 +12,10 @@ menu:
 
 ---
 
-## Nutzungslizenzen {#appendix_support_licenses}
+## Nutzungslizenzen {#appendix_licenses}
 
 
-### Nutzungslizenz für OpenEstate-ImmoTool {#appendix_support_licenses_immotool}
+### Nutzungslizenz für OpenEstate-ImmoTool {#appendix_licenses_immotool}
 
 Zwischen den OpenEstate-Entwicklern (nachfolgend als „Lizenzgeber“ bezeichnet) und dem Lizenznehmer wird folgende Nutzungsvereinbarung abgeschlossen.
 
@@ -69,7 +69,7 @@ Zwischen den OpenEstate-Entwicklern (nachfolgend als „Lizenzgeber“ bezeichne
 Stand vom 25.05.2018
 
 
-### Nutzungslizenz für OpenEstate-ImmoServer {#appendix_support_licenses_server}
+### Nutzungslizenz für OpenEstate-ImmoServer {#appendix_licenses_server}
 
 Apache License \
 Version 2.0, January 2004 \
@@ -247,7 +247,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
       of your accepting any such warranty or additional liability.
 
 
-### Nutzungslizenz für das Handbuch {#appendix_support_licenses_manual}
+### Nutzungslizenz für das Handbuch {#appendix_licenses_manual}
 
 Attribution-NonCommercial 4.0 International
 
