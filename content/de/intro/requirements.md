@@ -14,13 +14,13 @@ menu:
 
 ## Systemanforderungen {#intro_requirements}
 
-ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werden solange diese einigermaßen aktuell sind und Java 11 / OpenJDK 11 dafür zur Verfügung steht.
+ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werden solange diese einigermaßen aktuell sind und Java / OpenJDK in der jeweils benötigten Version dafür zur Verfügung steht.
 
 
 ### Anforderungen von ImmoTool {#intro_requirements_client}
 
 -   **Betriebssystem:**
-    -   Windows (ab Vista; 64bit & 32bit)
+    -   Windows (ab Version 7; 32bit / 64bit)
     -   macOS (ab 10.9)
     -   Linux (x86-64 bzw. amd64)
 -   **Prozessor:**
@@ -29,6 +29,8 @@ ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werd
     512 MB werden vom Programm maximal belegt
 -   **Festplattenspeicher:**
     ca. 150 MB nach Installation; abhängig vom Datenbestand wird weiterer Speicherplatz benötigt
+-   **Java:**
+    Version 11 (ist im Installationspaket bereits enthalten)
 -   **Internetzugang:**
     nicht nötig, aber hilfreich
 
@@ -40,7 +42,7 @@ Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekture
 ### Anforderungen von ImmoTool-Server {#intro_requirements_server}
 
 -   **Betriebssystem:**
-    -   Windows (ab Version 7; 64bit & 32bit)
+    -   Windows (ab Version 7; 32bit / 64bit)
     -   macOS (ab Version 10.9)
     -   Linux (x86-64 bzw. amd64)
 -   **Prozessor:**
@@ -49,6 +51,8 @@ Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekture
     512 MB werden vom Programm maximal belegt
 -   **Festplattenspeicher:**
     ca. 150 MB nach Installation; abhängig vom Datenbestand wird weiterer Speicherplatz benötigt
+-   **Java:**
+    Version 8 (ist im Installationspaket bereits enthalten)
 -   **Internetzugang:**
     nicht benötigt
 
