@@ -2,7 +2,7 @@
 
 title: ImmoTool-Server installieren
 linktitle: Server installieren
-description: OpenEstate-ImmoTool im Netzwerk installieren…
+description: Wie OpenEstate-ImmoTool im Netzwerk installiert und eingerichtet werden kann…
 weight: 60
 
 menu:
@@ -23,7 +23,7 @@ Wenn Sie das ImmoTool **nicht** im Netzwerk mit mehreren Mitarbeitern betreiben 
 
 ### Programmpaket installieren {#intro_install_server_setup}
 
-Laden Sie die zu Ihrem Betriebssystem passende Installationsdatei für den ImmoTool-Server aus dem [Download-Bereich](https://openestate.org/downloads/openestate-immoserver) herunter (siehe ["Programme herunterladen"]({{< relref "download.md#intro_download" >}})).
+Laden Sie die zu Ihrem Betriebssystem passende Installationsdatei für den ImmoTool-Server herunter (siehe ["Programme herunterladen"]({{< relref "download.md#intro_download" >}})).
 
 
 #### Installation unter Windows {#intro_install_server_setup_windows}
@@ -39,14 +39,16 @@ Laden Sie die zu Ihrem Windows passende **EXE**-Installationsdatei herunter. Unt
 
 Laden Sie die **DMG**-Installationsdatei herunter und öffnen Sie die Datei durch einen Doppelklick. Es öffnet sich daraufhin ein Fenster, über welches das Programm installiert werden kann.
 
-Ziehen Sie mit der Maus das ImmoTool-Server Programmsymbol in den Programmordner. Alternativ können Sie das Programmsymbol auch auf die Arbeitsfläche oder an eine andere beliebige Stelle auf Ihrer Festplatte ziehen.
-
 {{< figure src="install_server_mac.jpg" caption="Installation des ImmoTool-Servers unter macOS" >}}
+
+Ziehen Sie mit der Maus das Programmsymbol **"OpenEstate-ImmoServer"** in den Ordner **"Applications"**. Sie können das Programm dann zukünftig über den Finder im Ordner **"Programme"** öffnen.
+
+Alternativ können Sie das Programmsymbol auch aus dem Installationsprogramm heraus auf die Arbeitsfläche oder an eine andere beliebige Stelle auf Ihrer Festplatte ziehen.
 
 
 #### Installation unter Debian, Ubuntu & Co. {#intro_install_server_setup_debian}
 
-Wenn Sie eine Debian-basierte Linux-Distribution nutzen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**), empfehlen wir die Nutzung des Repositories (siehe ["Pakete aus Debian-Repository beziehen"]({{< relref "download.md#intro_download_debian" >}})). Nachdem das Repository erfolgreich eingerichtet wurde, kann das Programm über folgende Befehle installiert werden:
+Wenn Sie eine Debian-basierte Linux-Distribution nutzen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**), empfehlen wir die Nutzung des Repositories (siehe ["Pakete aus Debian-Repository beziehen"]({{< relref "download.md#intro_download_debian" >}})). Nachdem das Repository erfolgreich eingerichtet wurde, kann das **Debian-Paket** über folgende Befehle installiert werden:
 
 1.  Abruf der Paketliste:
     
@@ -60,7 +62,7 @@ Wenn Sie eine Debian-basierte Linux-Distribution nutzen (z.B. **Debian**, **Ubun
     sudo apt install openestate-immoserver
     ```
 
-Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* die **DEB**-Installationsdatei herunterladen und per Doppelklick oder durch folgenden Befehl installieren:
+Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* das **Debian-Paket** (bzw. die **DEB**-Installationsdatei) herunterladen und per Doppelklick oder durch folgenden Befehl installieren:
 
 ```bash
 sudo dpkg -i openestate-immoserver_x.y.z_amd64.deb
@@ -69,45 +71,39 @@ sudo dpkg -i openestate-immoserver_x.y.z_amd64.deb
 Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
 
 {{< info >}}
-Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis `/opt/OpenEstate-ImmoServer` installiert.
+Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **"/opt/OpenEstate-ImmoServer"** installiert.
 {{< /info >}}
 
 {{< info >}}
-Bei der Installation des Debian-Pakets wird der ImmoTool-Server automatisch als Dienst im Betriebssystem registriert. Der ImmoTool-Server startet damit automatisch beim Hochfahren des Rechners. Ebenso wird automatisch ein tägliche automatische Datensicherung eingerichtet.
-{{< /info >}}
+Bei der Installation des Debian-Pakets wird der ImmoTool-Server automatisch als Dienst im Betriebssystem registriert. Der ImmoTool-Server startet damit automatisch beim Hochfahren des Rechners (siehe ["ImmoTool-Server als Dienst einrichten"]({{< relref "../admin/server/service.md#admin_server_service" >}})). 
 
-{{< todo >}}
-Verlinkung auf die Beschreibung für Dienste und automatische Datensicherungen in der Admin-Sektion des Handbuchs.
-{{< /todo >}}
+Ebenso wird automatisch eine tägliche Datensicherung eingerichtet, die jedoch noch konfiguriert werden muss (siehe ["Datensicherung eines laufenden ImmoTool-Servers"]({{< relref "../admin/backup.md#admin_backup_network_live" >}})).
+{{< /info >}}
 
 
 #### Installation unter Linux {#intro_install_server_setup_linux}
 
 Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdatei herunterladen. 
 
-Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben, finden Sie einen Ordner namens `OpenEstate-ImmoServer`. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach `/opt/OpenEstate-ImmoServer`).
+Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **"OpenEstate-ImmoServer"**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **"/opt/OpenEstate-ImmoServer"**).
 
 
 ### ImmoTool-Server starten {#intro_install_server_server_startup}
 
-Für die erste Einrichtung bietet es sich an, den ImmoTool-Server von Hand zu starten. 
+Für die erste Einrichtung bietet es sich an den ImmoTool-Server von Hand zu starten. 
 
-Erst wenn das Programm soweit erfolgreich eingerichtet wurde und von den Arbeitsplätzen erfolgreich auf den ImmoTool-Server zugegriffen werden kann, empfiehlt sich im nächsten Schritt die Einrichtung eines Dienstes, sodass der ImmoTool-Server automatisch beim Hochfahren des Rechners gestartet wird.
-
-{{< todo >}}
-Link zur Einrichtung als Dienst hinterlegen.
-{{< /todo >}}
+Erst wenn das Programm soweit erfolgreich eingerichtet wurde und von den Arbeitsplätzen erfolgreich auf den ImmoTool-Server zugegriffen werden kann, empfiehlt sich im nächsten Schritt die Einrichtung eines Dienstes, sodass der ImmoTool-Server automatisch beim Hochfahren des Rechners gestartet wird (siehe ["ImmoTool-Server als Dienst einrichten"]({{< relref "../admin/server/service.md#admin_server_service" >}})). 
 
 {{< info >}}
-Um mit dem ImmoTool-Server über das Netzwerk kommunizieren zu können, muss eventuell eine Regel in der Firewall hinterlegt werden. Benötigt wird in der Standardeinstellung eine Freigabe für eingehende Verbindungen auf Port-Nr `9001`.
+Um mit dem ImmoTool-Server über das Netzwerk kommunizieren zu können, muss eventuell eine Regel in der Firewall hinterlegt werden. Benötigt wird in der Standardeinstellung eine Freigabe für eingehende Verbindungen auf Port-Nr **9001**.
 {{< /info >}}
 
 
 #### ImmoTool-Server unter Windows starten {#intro_install_server_startup_windows}
 
-Bei der Installation unter Windows wird automatisch im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"** mit verschiedenen Verknüpfungen erzeugt. Wählen Sie die Verknüpfung **"ImmoServer manuell starten"** aus dem Startmenü aus, um den ImmoTool-Server manuell zu starten.
+Bei der Installation unter Windows wird automatisch im Startmenü einen Ordner namens **"OpenEstate-ImmoServer"** mit verschiedenen Verknüpfungen erzeugt. Wählen Sie die Verknüpfung **"ImmoServer manuell starten"** aus dem Startmenü aus um den ImmoTool-Server von Hand zu starten.
 
-Darüber hinaus können Sie das Programm auch über die Datei `Start.exe` / `Start.bat` im Verzeichnis `bin` des Programm-Verzeichnisses manuell starten.
+Darüber hinaus können Sie das Programm auch über die Datei **"Start.exe"** (bzw. **"Start.bat"**) im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/server/directories.md#admin_server_directories_application" >}}) manuell starten.
 
 
 #### ImmoTool-Server unter macOS starten {#intro_install_server_startup_mac}
@@ -116,25 +112,21 @@ Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"Open
 
 {{< figure src="../admin/server/startup_mac_folder.png" caption="Starter für ImmoTool-Server im Finder" >}}
 
-Wenn Sie in diesem Fenster auf das **Start**-Symbol klicken, wird das Programm gestartet.
+Wenn Sie in diesem Fenster auf das Programmsymbol **"Start"** klicken, wird der ImmoTool-Server manuell gestartet.
 
 
 #### ImmoTool-Server unter Linux starten {#intro_install_server_startup_linux}
 
 Wenn der ImmoTool-Server mit dem [**Debian**-Paket]({{< relref "install_server.md#intro_install_server_setup_debian" >}}) installiert wurde, ist auf dem Betriebssystem bereits ein Dienst für den ImmoTool-Server eingerichtet und gestartet worden. Sie müssen in diesem Falle keine weiteren Schritte durchführen um das Programm zu starten.
 
-Bei allen Installations-Varianten für Linux kann der ImmoTool-Server über das Skript `Start.sh` im `bin`-Verzeichnis des Programms gestartet werden.
+Bei allen Installations-Varianten für Linux kann der ImmoTool-Server über die Datei **"Start.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/server/directories.md#admin_server_directories_application" >}}) manuell gestartet werden.
 
 
 ### ImmoTool-Server vorbereiten {#intro_install_server_prepare}
 
-Bevor der ImmoTool-Server genutzt werden kann, muss darauf eine Datenbank eingerichtet werden. Um diesen Schritt durchzuführen muss das **AdminTool** gestartet werden, welches gemeinsam mit dem ImmoTool-Paket installiert wird.
+Bevor der ImmoTool-Server genutzt werden kann, muss darauf eine Datenbank eingerichtet werden. Um diesen Schritt durchzuführen muss das [**AdminTool**]({{< relref "../admin/tool.md#admin_tool" >}}) gestartet werden, welches gemeinsam mit dem ImmoTool-Paket installiert wird.
 
-Installieren Sie dafür das ImmoTool auf dem Server-Rechner oder einem anderen Rechner in Ihrem Netzwerk (siehe ["ImmoTool installieren"]({{< relref "install_client.md#intro_install_client" >}})) und starten Sie danach das **AdminTool**.
-
-{{< todo >}}
-Link einfügen, wie das AdminTool gestartet werden kann
-{{< /todo >}}
+Installieren Sie dafür das ImmoTool auf dem Server-Rechner oder einem anderen Rechner in Ihrem Netzwerk (siehe ["ImmoTool installieren"]({{< relref "install_client.md#intro_install_client" >}})) und starten Sie danach das AdminTool (siehe ["AdminTool starten"]({{< relref "../admin/tool.md#admin_tool_startup" >}})).
 
 {{< figure src="install_server_admintool_connect.png" caption="Verbindung zur Datenbank mit AdminTool herstellen" >}}
 
@@ -171,11 +163,7 @@ Im folgenden Schritt wird das Programm feststellen, dass die Datenbank noch nich
 
 {{< figure src="install_server_admintool_setup.png" caption="Installation der Datenbank im ImmoTool-Server" >}}
 
-Nachdem diese Schritte abgeschlossen sind, können Sie bei Bedarf über das AdminTool weitere Benutzerkonten in der Datenbank anlegen. 
-
-{{< todo >}}
-Verweis auf die Dokumentation zum AdminTool
-{{< /todo >}}
+Nachdem diese Schritte abgeschlossen sind, können Sie bei Bedarf über das AdminTool weitere Benutzerkonten in der Datenbank anlegen (siehe ["Benutzer bearbeiten"]({{< relref "../admin/tool.md#admin_tool_users" >}})).
 
 Wenn eventuelle Nacharbeiten abgeschlossen wurden, kann das AdminTool geschlossen werden. Ab diesem Zeitpunkt können sich Anwender über das ImmoTool mit dem ImmoTool-Server verbinden.
 

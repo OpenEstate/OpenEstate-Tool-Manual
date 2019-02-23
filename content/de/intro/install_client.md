@@ -2,7 +2,7 @@
 
 title: ImmoTool installieren 
 linktitle: ImmoTool installieren
-description: OpenEstate-ImmoTool an einem Arbeitsplatz installieren…
+description: Wie OpenEstate-ImmoTool an einem Arbeitsplatz installiert werden kann…
 weight: 50
 
 menu:
@@ -17,7 +17,7 @@ menu:
 
 ### Programmpaket installieren {#intro_install_client_setup}
 
-Laden Sie die zu Ihrem Betriebssystem passende Installationsdatei für das ImmoTool aus dem [Download-Bereich](https://openestate.org/downloads/openestate-immotool) herunter (siehe ["Programme herunterladen"]({{< relref "download.md#intro_download" >}})).
+Laden Sie die zu Ihrem Betriebssystem passende Installationsdatei für das ImmoTool herunter (siehe ["Programme herunterladen"]({{< relref "download.md#intro_download" >}})).
 
 
 #### Installation unter Windows {#intro_install_client_setup_windows}
@@ -33,14 +33,16 @@ Laden Sie die zu Ihrem Windows passende **EXE**-Installationsdatei herunter. Unt
 
 Laden Sie die **DMG**-Installationsdatei herunter und öffnen Sie die Datei durch einen Doppelklick. Es öffnet sich daraufhin ein Fenster, über welches das Programm installiert werden kann.
 
-Ziehen Sie mit der Maus das ImmoTool Programmsymbol in den Programmordner. Alternativ können Sie das Programmsymbol auch auf die Arbeitsfläche oder an eine andere beliebige Stelle auf Ihrer Festplatte ziehen.  
-
 {{< figure src="install_client_mac.jpg" caption="Installation des ImmoTools unter macOS" >}}
+
+Ziehen Sie mit der Maus das Programmsymbol **"OpenEstate-ImmoTool"** in den Ordner **"Applications"**. Sie können das Programm dann zukünftig über den Finder im Ordner **"Programme"** öffnen.
+
+Alternativ können Sie das Programmsymbol auch aus dem Installationsprogramm heraus auf die Arbeitsfläche oder an eine andere beliebige Stelle auf Ihrer Festplatte ziehen.
 
 
 #### Installation unter Debian, Ubuntu & Co. {#intro_install_client_setup_debian}
 
-Wenn Sie eine Debian-basierte Linux-Distribution nutzen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**), empfehlen wir die Nutzung des Repositories (siehe ["Pakete aus Debian-Repository beziehen"]({{< relref "download.md#intro_download_debian" >}})). Nachdem das Repository erfolgreich eingerichtet wurde, kann das Programm über folgende Befehle installiert werden:
+Wenn Sie eine Debian-basierte Linux-Distribution nutzen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**), empfehlen wir die Nutzung des Repositories (siehe ["Pakete aus Debian-Repository beziehen"]({{< relref "download.md#intro_download_debian" >}})). Nachdem das Repository erfolgreich eingerichtet wurde, kann das **Debian-Paket** über folgende Befehle installiert werden:
 
 1.  Abruf der Paketliste:
     
@@ -54,7 +56,7 @@ Wenn Sie eine Debian-basierte Linux-Distribution nutzen (z.B. **Debian**, **Ubun
     sudo apt install openestate-immotool
     ```
 
-Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* die **DEB**-Installationsdatei herunterladen und per Doppelklick oder durch folgenden Befehl installieren:
+Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* das **Debian-Paket** (bzw. die **DEB**-Installationsdatei) herunterladen und per Doppelklick oder durch folgenden Befehl installieren:
 
 ```bash
 sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
@@ -63,7 +65,7 @@ sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
 Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
 
 {{< info >}}
-Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis `/opt/OpenEstate-ImmoTool` installiert.
+Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **"/opt/OpenEstate-ImmoTool"** installiert.
 {{< /info >}}
 
 {{< info >}}
@@ -75,10 +77,10 @@ Bei der Installation des Debian-Pakets werden automatisch die nötigen Einträge
 
 Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdatei herunterladen. 
 
-Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben, finden Sie einen Ordner namens `OpenEstate-ImmoTool`. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach `/opt/OpenEstate-ImmoTool`).
+Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **"OpenEstate-ImmoTool"**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **"/opt/OpenEstate-ImmoTool"**).
 
 {{< tip >}}
-Bei Bedarf können Sie im Verzeichnis `bin` das Skript `StartMenuAdd.sh` ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt.
+Bei Bedarf können Sie im Unterordner **"bin"** des entpackten Verzeichnisses das Skript **"StartMenuAdd.sh"** ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt.
 {{< /tip >}} 
 
 
@@ -87,9 +89,9 @@ Bei Bedarf können Sie im Verzeichnis `bin` das Skript `StartMenuAdd.sh` ausfüh
 
 #### ImmoTool unter Windows starten {#intro_install_client_startup_windows}
 
-Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"** mit verschiedenen Verknüpfungen.
+Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"**, der eine Verknüpfung zum Start des ImmoTools enthält.
 
-Darüber hinaus können Sie das Programm auch über die Datei `ImmoTool.exe` / `ImmoTool.bat` im Verzeichnis `bin` des Programm-Verzeichnisses starten.
+Darüber hinaus können Sie das Programm auch über die Datei **"ImmoTool.exe"** (bzw. **"ImmoTool.bat"**) im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) starten.
 
 
 #### ImmoTool unter macOS starten {#intro_install_client_startup_mac}
@@ -98,20 +100,20 @@ Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"Open
 
 {{< figure src="../admin/client/startup_mac_folder.png" caption="Starter für ImmoTool im Finder" >}}
 
-Wenn Sie in diesem Fenster auf das **ImmoTool**-Symbol klicken, wird das Programm gestartet.
+Wenn Sie in diesem Fenster auf das Programmsymbol **"ImmoTool"** klicken, wird das Programm gestartet.
 
 {{< tip >}}
-Bei Bedarf können Sie das ImmoTool-Symbol ins Dock integrieren, um das Programm später schnell und unkompliziert starten zu können (siehe ["Anleitung bei Apple"](https://support.apple.com/de-de/HT201730)).
+Bei Bedarf können Sie das Programmsymbol **"ImmoTool"** ins Dock integrieren, um dieses später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](https://support.apple.com/de-de/HT201730)).
 {{< /tip >}}
 
 
 #### ImmoTool unter Linux starten {#intro_install_client_startup_linux}
 
-Wenn das ImmoTool mit dem [**Debian**-Paket]({{< relref "install_client.md#intro_install_client_setup_debian" >}}) installiert wurde, finden Sie im Startmenü die Einträge für den Start des Programms.
+Wenn das ImmoTool mit dem [**Debian**-Paket]({{< relref "install_client.md#intro_install_client_setup_debian" >}}) installiert wurde, finden Sie im Startmenü einen Eintrag namens **"OpenEstate-ImmoTool"**, über den das Programm gestartet werden kann.
 
-Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei `StartMenuAdd.sh` im `bin`-Verzeichnis des Programms ausführen um die Einträge im Startmenü zu erzeugen.
+Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei **"StartMenuAdd.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) ausführen um die Einträge im Startmenü zu erzeugen.
 
-Alternativ zum Startmenü kann das Programm über die Datei `ImmoTool.sh` im `bin`-Verzeichnis des Programms gestartet werden.
+Alternativ zum Startmenü kann das Programm über die Datei **"ImmoTool.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) gestartet werden.
 
 
 ### Sprache wählen {#intro_install_client_language}
@@ -129,7 +131,11 @@ Das ImmoTool kann in beliebige Sprachen übersetzt werden. Wenn Sie sich an der 
 
 ### Einzelplatz-Projekt erzeugen {#intro_install_client_project}
 
-Der Projektassistent wird geöffnet und Sie können eine Datenbank für Ihre Arbeit mit dem ImmoTool erzeugen.
+Der Projektassistent wird geöffnet und Sie können ein Projekt für Ihre Arbeit mit dem ImmoTool erzeugen.
+
+{{< info >}}
+Unter einem Projekt verstehen wir im ImmoTool eine Datenbank in der alle erfassten Daten (Immobilien, Kunden, Anhänge, etc.) gespeichert werden. In der Regel muss nur beim ersten Programmstart ein Projekt erzeugt werden, welches bei späteren Programmstarts dann automatisch geöffnet wird. 
+{{< /info >}}
 
 {{< warning >}}
 Wenn Sie eine **Netzwerk-Installation** durchführen möchten (siehe ["Betrieb an mehreren Arbeitsplätzen"]({{< relref "install_types.md#intro_install_types_network" >}})), folgen Sie bitte den Hinweisen im Kapitel ["ImmoTool-Server installieren"]({{< relref "install_server.md#intro_install_server" >}}). Ein Einzelplatz-Projekt muss in diesem Falle **nicht** erzeugt werden.
@@ -149,6 +155,6 @@ Folgende Einstellungen sind im Projektassistenten zur Erstellung eines Einzelpla
 
 -   Bei Bedarf können im Tab **"Add-Ons"** einzelne Erweiterungen von der Installation ausgeschlossen werden.
 
-Nachdem die Lizenzbedingungen bestätigt wurden kann das Projekt durch Klick auf **"Projekt erzeugen"** erzeugt werden. Das erstellte Projekt wird danach automatisch geöffnet.
+Nachdem die Lizenzbedingungen bestätigt wurden kann das Projekt durch Klick auf **"Projekt erzeugen"** erstellt werden. Das neu erstellte Projekt wird danach automatisch geöffnet.
 
 Ab sofort können Sie mit dem Programm arbeiten. Wir wünschen viel Spaß und Erfolg!

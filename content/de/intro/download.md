@@ -2,7 +2,7 @@
 
 title: Programme herunterladen
 linktitle: Herunterladen
-description: Wie OpenEstate-ImmoTool heruntergeladen werden kann…
+description: Wie OpenEstate-ImmoTool & OpenEstate-ImmoServer heruntergeladen werden können…
 weight: 30
 
 menu:
@@ -17,13 +17,13 @@ menu:
 
 ### Pakete von der Webseite beziehen {#intro_download_website}
 
-ImmoTool & ImmoTool-Server können auf der OpenEstate-Webseite in verschiedenen Paketen heruntergeladen werden. Ältere Versionen der Programme sind ebenfalls an dieser Stelle verfügbar.
+ImmoTool und ImmoTool-Server können von der [Webseite des OpenEstate-Projekts](https://openestate.org/downloads/) in verschiedenen Paketen heruntergeladen werden. Ältere Versionen der Programme sind ebenfalls verfügbar.
 
 Für beide Programme stehen folgende Pakete im zur Verfügung: 
 
--   Für Windows stehen separate **EXE**-Installationsdateien zur Verfügung (32bit & 64bit).
+-   Für Windows stehen separate **EXE**-Installationsdateien zur Verfügung (32bit / 64bit).
 -   Für macOS steht eine **DMG**-Installationsdatei zur Verfügung.
--   Für Debian-basierte Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) steht eine **DEB**-Installationsdatei zur Verfügung.
+-   Für Debian-basierte Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) steht ein **Debian-Paket** zur Verfügung (**DEB**-Installationsdatei).
 -   Für andere Linux-Distributionen steht eine **TAR.GZ**-Datei zur Verfügung.
 
 
@@ -41,7 +41,7 @@ Zur Integration des Repositories ins Betriebssystem ist wie folgt vorzugehen:
       | sudo apt-key add -
     ```
 
-2.  Folgende Zeile am Ende der Datei `/etc/apt/sources.list` eintragen:
+2.  Folgende Zeile am Ende der Datei **"/etc/apt/sources.list"** eintragen:
 
     ```
     deb [arch=amd64] https://debian.openestate.org/ openestate main
@@ -66,7 +66,7 @@ Zur Integration des Repositories ins Betriebssystem ist wie folgt vorzugehen:
     ```
 
 {{< info >}}
-Sollte es bei der Paket-Aktualisierung in Schritt 3 zu einer Fehlermeldung kommen, muss ggf. noch das Paket `apt-transport-https` über folgenden Befehl installiert werden:
+Sollte es bei der Paket-Aktualisierung in Schritt 3 zu einer Fehlermeldung kommen, muss ggf. noch das Paket **"apt-transport-https"** über folgenden Befehl installiert werden:
 
 ```bash
 sudo apt install apt-transport-https

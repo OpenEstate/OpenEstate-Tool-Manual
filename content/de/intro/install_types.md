@@ -2,7 +2,7 @@
 
 title: Art der Installationen von ImmoTool
 linktitle: Art der Installation
-description: Wie OpenEstate-ImmoTool installiert werden kann…
+description: Wie OpenEstate-ImmoTool betrieben werden kann…
 weight: 40
 
 menu:
@@ -47,13 +47,9 @@ Beim Programmstart wird automatisch eine Datenbank auf dem Rechner des Anwenders
 Für eine Einzelplatz-Installation sind folgende Schritte durchzuführen:
 
 1.  [ImmoTool herunterladen.]({{< relref "download.md#intro_download" >}})
-2.  [ImmoTool installieren.]({{< relref "install_client.md#intro_install_client" >}})
+2.  [ImmoTool installieren.]({{< relref "install_client.md#intro_install_client_setup" >}})
 3.  [ImmoTool starten.]({{< relref "install_client.md#intro_install_client_startup" >}})
-4.  Beim ersten Programmstart ein Einzelplatz-Projekt anlegen. 
-
-{{< todo >}}
-Fehlende interne Links hinterlegen.
-{{< /todo >}}
+4.  [Beim ersten Programmstart ein Einzelplatz-Projekt anlegen.]({{< relref "install_client.md#intro_install_client_project" >}}) 
 
 
 ### Betrieb an mehreren Arbeitsplätzen {#intro_install_types_network}
@@ -64,13 +60,13 @@ Schematisch wird dies in folgender Grafik dargestellt (Quelle [Wikipedia](http:/
 
 {{< figure src="install_types_network.png" caption="Client-/Server-Modell" >}}
 
-Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Rechner der Mitarbeiter, welche auf den ImmoTool-Server zugreifen, sind im Kreis angeordnet.
+Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Arbeitsplätze der Mitarbeiter, welche auf den ImmoTool-Server zugreifen, sind im Kreis angeordnet.
 
 
 #### Vorteile einer Netzwerk-Installation {#intro_install_types_network_pros}
 
 -   Beliebig viele Mitarbeiter können zeitgleich auf einem gemeinsamen Datenbestand arbeiten.
--   Jeder Mitarbeiter erhält seinen eigenen Zugang zur Datenbank (eigener Benutzer-Name und eigenes Passwort), mit denen dieser sich bei jedem Programmstart authentifizieren muss.
+-   Jeder Mitarbeiter erhält seinen eigenen Zugang zur Datenbank (eigener Benutzer-Name und eigenes Passwort), mit denen dieser sich bei jedem Programmstart authentifiziert.
 -   Für jeden Mitarbeiter können Zugriffsrechte vergeben werden - sodass z.B. nur bestimmte Funktionen des Programms verwendet werden können.
 -   Der ImmoTool-Server kann auch auf einem im Rechenzentrum angemieteten Server betrieben werden - sodass auch Mitarbeiter an verschiedenen Standorten auf den gemeinsamen Datenbestand zugreifen können. Alternativ ist auch ein Zugriff von außen per [Virtual Private Network](http://de.wikipedia.org/wiki/Virtual_Private_Network) realisierbar.
 
@@ -88,27 +84,21 @@ Für eine Netzwerk-Installation sind mehrere Schritte nötig, die auf den versch
 Zu erst muss der ImmoTool-Server auf **einem** Rechner im Firmennetzwerk installiert werden:
 
 1.  [ImmoTool & ImmoTool-Server herunterladen.]({{< relref "download.md#intro_download" >}})
-2.  ImmoTool auf dem Server-Rechner installieren.
-3.  ImmoTool-Server auf dem Server-Rechner installieren.
-4.  ImmoTool-Server starten.
-5.  Das aus dem ImmoTool-Paket installierte AdminTool starten.
-6.  Verbindung mit dem AdminTool zum ImmoTool-Server herstellen und die Datenbank einrichten.
-7.  ImmoTool starten und ein Mehrplatz-Projekt mit den Zugangsdaten des ImmoTool-Servers anlegen.
-8.  Testweise das Mehrplatz-Projekt mit dem ImmoTool öffnen.
+2.  [ImmoTool auf dem Server-Rechner installieren.]({{< relref "install_client.md#intro_install_client_setup" >}})
+3.  [ImmoTool-Server auf dem Server-Rechner installieren.]({{< relref "install_server.md#intro_install_server_setup" >}})
+4.  [ImmoTool-Server starten.]({{< relref "install_server.md#intro_install_server_server_startup" >}})
+5.  [Das aus dem ImmoTool-Paket installierte AdminTool starten um die Datenbank einzurichten.]({{< relref "install_server.md#intro_install_server_prepare" >}})
+6.  [ImmoTool starten und ein Mehrplatz-Projekt mit den Zugangsdaten des ImmoTool-Servers anlegen.]({{< relref "install_server.md#intro_install_server_immotool" >}})
 
 {{< info >}}
-Das auf dem Server-Rechner installierte ImmoTool kann nach erfolgreicher Einrichtung bei Bedarf wieder entfernt werden. Es kann jedoch hilfreich sein, für administrative Zwecke direkt auf dem Server-Rechner immer das AdminTool vorliegen zu haben. 
+Das auf dem Server-Rechner installierte ImmoTool kann nach erfolgreicher Einrichtung bei Bedarf wieder entfernt werden. Es kann jedoch hilfreich sein, für administrative Zwecke direkt auf dem Server-Rechner immer das ImmoTool und AdminTool vorliegen zu haben. 
 {{< /info >}}
 
-Die grundlegende Einrichtung des ImmoTool-Servers ist damit abgeschlossen. Weitere Funktionen (z.B. Verschlüsselung oder automatische Datensicherung) können darüber hinaus noch konfiguriert werden.
+Die grundlegende Einrichtung des ImmoTool-Servers ist damit abgeschlossen. Weitere Funktionen (z.B. [Verschlüsselung]({{< relref "../admin/server/setup.md#admin_server_setup_ssl" >}}), [automatische Datensicherung]({{< relref "../admin/backup.md#admin_backup_network" >}}) oder [Einrichtung als Dienst]({{< relref "../admin/server/service.md#admin_server_service" >}})) können darüber hinaus noch konfiguriert werden.
 
-Im nächsten Schritt muss auf **jedem Arbeitsplatz** ein ImmoTool installiert werden:
+Im nächsten Schritt muss auf **jedem Arbeitsplatz** das ImmoTool installiert werden:
 
 1.  [ImmoTool herunterladen.]({{< relref "download.md#intro_download" >}})
 2.  [ImmoTool installieren.]({{< relref "install_client.md#intro_install_client" >}})
 3.  [ImmoTool starten.]({{< relref "install_client.md#intro_install_client_startup" >}})
-4.  Beim ersten Programmstart ein Mehrplatz-Projekt mit den Zugangsdaten des ImmoTool-Servers anlegen.
-
-{{< todo >}}
-Fehlende interne Links hinterlegen.
-{{< /todo >}}
+4.  [Beim ersten Programmstart ein Mehrplatz-Projekt mit den Zugangsdaten des ImmoTool-Servers anlegen.]({{< relref "install_server.md#intro_install_server_immotool" >}})

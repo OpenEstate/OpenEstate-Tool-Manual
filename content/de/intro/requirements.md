@@ -2,7 +2,7 @@
 
 title: Systemanforderungen
 linktitle: Anforderungen
-description: Die Systemanforderungen von OpenEstate-ImmoTool…
+description: Über die Systemanforderungen von OpenEstate-ImmoTool…
 weight: 20
 
 menu:
@@ -35,7 +35,7 @@ ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werd
     nicht nötig, aber hilfreich
 
 {{< info >}}
-Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})).
+Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe ["Java aus Linux-Paketsystem verwenden"]({{< relref "java.md#intro_java_linux" >}})).
 {{< /info >}} 
 
 
@@ -57,5 +57,5 @@ Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekture
     nicht benötigt
 
 {{< info >}}
-Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 11 von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe [Java unter Linux installieren]({{< relref "java.md#intro_java_install_linux" >}})).
+Für Linux auf **x86** (auch "i686" oder "i386" genannt) und andere Architekturen stehen keine Installationspakete zur Verfügung. Das Programm kann jedoch dennoch darunter betrieben werden, wenn OpenJDK 8 (oder neuer) von der Linux-Distribution für diese Architektur bereit gestellt wird (siehe ["Java aus Linux-Paketsystem verwenden]({{< relref "java.md#intro_java_linux" >}})).
 {{< /info >}}
