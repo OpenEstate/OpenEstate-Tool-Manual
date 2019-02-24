@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # Extract ID's from available contents in Java format.
 #
@@ -28,7 +29,8 @@ def parse(filePath, contentDir):
         for line in data.split('\n'):
             if parseLine(line, title):
                 title = None
-    if title is None: print
+    if title is None:
+        print()
 
 
 def parseLine(line, title):
@@ -36,34 +38,35 @@ def parseLine(line, title):
     match = re.search('^#{1,3} (.*) \{#([\w]*)\}$', line)
     if match:
         if title:
-            print
-            print title
-            print
+            print()
+            print(title)
+            print()
 
         title = match.group(1)
         key = match.group(2)
-        print '/** %s */' % title.strip()
-        # print 'String %s = "%s";' % (key.upper(), key)
-        print '%s,' % key.upper()
+        print('/** %s */' % title.strip())
+        # print('String %s = "%s";' % (key.upper(), key))
+        print('%s,' % key.upper())
         return True
     return False
 
 
-if len(sys.argv) < 2:
-    print 'No directory was specified as parameter!'
-    sys.exit(1)
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print('No directory was specified as parameter!')
+        sys.exit(1)
 
-contentDir = os.path.abspath(sys.argv[1])
-# print 'Searching for markdown files in \'%s\'...' % contentDir
+    contentDir = os.path.abspath(sys.argv[1])
+    # print 'Searching for markdown files in \'%s\'...' % contentDir
 
-paths = []
-for root, dirs, files in os.walk(contentDir):
-    path = root.split(os.sep)
-    # print((len(path) - 1) * '---', os.path.basename(root))
-    for file in files:
-        if not file.endswith('.md'): continue
-        paths.append(os.path.join(root, file))
+    paths = []
+    for root, dirs, files in os.walk(contentDir):
+        path = root.split(os.sep)
+        # print((len(path) - 1) * '---', os.path.basename(root))
+        for file in files:
+            if not file.endswith('.md'): continue
+            paths.append(os.path.join(root, file))
 
-paths.sort()
-for path in paths:
-    parse(path, contentDir)
+    paths.sort()
+    for path in paths:
+        parse(path, contentDir)

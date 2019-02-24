@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # Extract to-do entries from markdown files.
 #
@@ -23,6 +24,7 @@ import sys
 pattern_todo = re.compile(r'{{<\s+todo\s+>}}(.*?){{<\s+/todo\s+>}}', re.MULTILINE | re.DOTALL)
 
 
+# noinspection SpellCheckingInspection
 def cprint(msg, color=None, bold=False):
     output = msg
     if color is not None:
@@ -34,22 +36,27 @@ def cprint(msg, color=None, bold=False):
     print(output)
 
 
+# noinspection SpellCheckingInspection
 def cprint_blue(msg, bold=False):
     cprint(msg, '\033[94m', bold)
 
 
+# noinspection SpellCheckingInspection
 def cprint_green(msg, bold=False):
     cprint(msg, '\033[92m', bold)
 
 
+# noinspection SpellCheckingInspection
 def cprint_red(msg, bold=False):
     cprint(msg, '\033[91m', bold)
 
 
+# noinspection SpellCheckingInspection
 def cprint_yellow(msg, bold=False):
     cprint(msg, '\033[93m', bold)
 
 
+# noinspection SpellCheckingInspection
 def cprint_white(msg, bold=False):
     cprint(msg, '\033[97m', bold)
 
