@@ -29,9 +29,9 @@ Mit Installation des ImmoTools steht Ihnen auch das AdminTool zur Verfügung (si
 
 #### AdminTool unter Windows starten {#admin_tool_startup_windows}
 
-Bei der Installation unter Windows wird automatisch ein Startmenü-Eintrag namens **"AdminTool"** im Ordner **"OpenEstate-ImmoTool"** erzeugt, über welchen das Programm gestartet werden kann.
+Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"**, der eine Verknüpfung zum Start des AdminTools enthält.
 
-Darüber hinaus können Sie das Programm auch über die Datei **"AdminTool.exe"** bzw. **"AdminTool.bat"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) starten.
+Darüber hinaus können Sie das Programm auch über die Datei **`AdminTool.exe`** (bzw. **`AdminTool.bat`**) im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) starten.
 
 
 #### AdminTool unter macOS starten {#admin_tool_startup_mac}
@@ -42,20 +42,20 @@ Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"Open
 
 Wenn Sie in diesem Fenster auf das Symbol **"AdminTool"** klicken, wird das Programm gestartet.
 
-Um das AdminTool unter macOS via Terminal zu starten, kann das Skript **"AdminTool.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) verwendet werden.
-
 {{< tip >}}
-Bei Bedarf können Sie das Programmsymbol des AdminTools ins Dock integrieren, um das Programm später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](https://support.apple.com/de-de/HT201730)).
+Bei Bedarf können Sie das Programmsymbol **"AdminTool"** ins Dock integrieren, um dieses später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](https://support.apple.com/de-de/HT201730)).
 {{< /tip >}}
+
+Um das AdminTool unter macOS via Terminal zu starten, kann das Skript **`AdminTool.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) verwendet werden.
 
 
 #### AdminTool unter Linux starten {#admin_tool_startup_linux}
 
-Wenn das ImmoTool mit dem [**Debian**-Paket]({{< relref "../../intro/install_client.md#intro_install_client_setup_debian" >}}) installiert wurde, finden Sie im Startmenü die Einträge für den Start des Programms unter dem Namen **"OpenEstate-AdminTool"**.
+Wenn das ImmoTool mit dem [**Debian**-Paket]({{< relref "../intro/install_client.md#intro_install_client_setup_debian" >}}) installiert wurde, finden Sie im Startmenü die Einträge für den Start des Programms unter dem Namen **"OpenEstate-AdminTool"**.
 
-Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "../../intro/install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei **"StartMenuAdd.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) ausführen um die Einträge im Startmenü zu erzeugen.
+Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "../intro/install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei **`StartMenuAdd.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) ausführen um die Einträge im Startmenü zu erzeugen.
 
-Alternativ zum Startmenü kann das Programm über die Datei **"AdminTool.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) gestartet werden.
+Alternativ zum Startmenü kann das Programm über die Datei **`AdminTool.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) gestartet werden.
 
 
 ### Verbindung zur Datenbank herstellen {#admin_tool_connect}
@@ -334,7 +334,7 @@ In der Tabelle werden die von den Add-Ons bereitgestellten Berechtigungen darges
 
 ### Inhalte der Datenbank anzeigen {#admin_tool_browser}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab **"SQL-Browser"** die rohen Inhalte der Datenbank eingesehen werden ("Tabellen", "Views" & "Stored Procedures").
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab **"SQL-Browser"** die rohen Inhalte der Datenbank eingesehen werden (Tabellen, Views & Stored Procedures).
 
 {{< figure src="tool_browser.png" caption="Inhalte der Datenbank anzeigen" >}}
 

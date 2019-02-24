@@ -62,10 +62,10 @@ Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* das **D
 sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
 ```
 
-Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
+Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.
 
 {{< info >}}
-Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **"/opt/OpenEstate-ImmoTool"** installiert.
+Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **`/opt/OpenEstate-ImmoTool`** installiert.
 {{< /info >}}
 
 {{< info >}}
@@ -77,10 +77,10 @@ Bei der Installation des Debian-Pakets werden automatisch die nötigen Einträge
 
 Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdatei herunterladen. 
 
-Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **"OpenEstate-ImmoTool"**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **"/opt/OpenEstate-ImmoTool"**).
+Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **`OpenEstate-ImmoTool`**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **`/opt/OpenEstate-ImmoTool`**).
 
 {{< tip >}}
-Bei Bedarf können Sie im Unterordner **"bin"** des entpackten Verzeichnisses das Skript **"StartMenuAdd.sh"** ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt.
+Bei Bedarf können Sie im Unterordner **`bin`** des entpackten Verzeichnisses das Skript **`StartMenuAdd.sh`** ausführen. Es werden dadurch die Startmenü-Einträge des Programms für den aktuell angemeldeten Benutzer erzeugt.
 {{< /tip >}} 
 
 
@@ -91,7 +91,7 @@ Bei Bedarf können Sie im Unterordner **"bin"** des entpackten Verzeichnisses da
 
 Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"**, der eine Verknüpfung zum Start des ImmoTools enthält.
 
-Darüber hinaus können Sie das Programm auch über die Datei **"ImmoTool.exe"** (bzw. **"ImmoTool.bat"**) im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) starten.
+Darüber hinaus können Sie das Programm auch über die Datei **`ImmoTool.exe`** (bzw. **`ImmoTool.bat`**) im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) starten.
 
 
 #### ImmoTool unter macOS starten {#intro_install_client_startup_mac}
@@ -111,9 +111,9 @@ Bei Bedarf können Sie das Programmsymbol **"ImmoTool"** ins Dock integrieren, u
 
 Wenn das ImmoTool mit dem [**Debian**-Paket]({{< relref "install_client.md#intro_install_client_setup_debian" >}}) installiert wurde, finden Sie im Startmenü einen Eintrag namens **"OpenEstate-ImmoTool"**, über den das Programm gestartet werden kann.
 
-Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei **"StartMenuAdd.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) ausführen um die Einträge im Startmenü zu erzeugen.
+Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei **`StartMenuAdd.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) ausführen um die Einträge im Startmenü zu erzeugen.
 
-Alternativ zum Startmenü kann das Programm über die Datei **"ImmoTool.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) gestartet werden.
+Alternativ zum Startmenü kann das Programm über die Datei **`ImmoTool.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "../admin/client/directories.md#admin_client_directories_application" >}}) gestartet werden.
 
 
 ### Sprache wählen {#intro_install_client_language}

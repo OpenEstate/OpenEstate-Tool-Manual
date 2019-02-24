@@ -68,10 +68,10 @@ Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* das **D
 sudo dpkg -i openestate-immoserver_x.y.z_amd64.deb
 ```
 
-Wobei `x.y.z` durch die jeweilige Versions-Nummer zu ersetzen ist.
+Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.
 
 {{< info >}}
-Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **"/opt/OpenEstate-ImmoServer"** installiert.
+Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **`/opt/OpenEstate-ImmoServer`** installiert.
 {{< /info >}}
 
 {{< info >}}
@@ -85,7 +85,7 @@ Ebenso wird automatisch eine tägliche Datensicherung eingerichtet, die jedoch n
 
 Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdatei herunterladen. 
 
-Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **"OpenEstate-ImmoServer"**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **"/opt/OpenEstate-ImmoServer"**).
+Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **`OpenEstate-ImmoServer`**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **`/opt/OpenEstate-ImmoServer`**).
 
 
 ### ImmoTool-Server starten {#intro_install_server_server_startup}
@@ -103,7 +103,7 @@ Um mit dem ImmoTool-Server über das Netzwerk kommunizieren zu können, muss eve
 
 Bei der Installation unter Windows wird automatisch im Startmenü einen Ordner namens **"OpenEstate-ImmoServer"** mit verschiedenen Verknüpfungen erzeugt. Wählen Sie die Verknüpfung **"ImmoServer manuell starten"** aus dem Startmenü aus um den ImmoTool-Server von Hand zu starten.
 
-Darüber hinaus können Sie das Programm auch über die Datei **"Start.exe"** (bzw. **"Start.bat"**) im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/server/directories.md#admin_server_directories_application" >}}) manuell starten.
+Darüber hinaus können Sie das Programm auch über die Datei **`Start.exe`** (bzw. **`Start.bat`**) im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "../admin/server/directories.md#admin_server_directories_application" >}}) manuell starten.
 
 
 #### ImmoTool-Server unter macOS starten {#intro_install_server_startup_mac}
@@ -119,7 +119,7 @@ Wenn Sie in diesem Fenster auf das Programmsymbol **"Start"** klicken, wird der 
 
 Wenn der ImmoTool-Server mit dem [**Debian**-Paket]({{< relref "install_server.md#intro_install_server_setup_debian" >}}) installiert wurde, ist auf dem Betriebssystem bereits ein Dienst für den ImmoTool-Server eingerichtet und gestartet worden. Sie müssen in diesem Falle keine weiteren Schritte durchführen um das Programm zu starten.
 
-Bei allen Installations-Varianten für Linux kann der ImmoTool-Server über die Datei **"Start.sh"** im Unterordner **"bin"** des [Programm-Verzeichnisses]({{< relref "../admin/server/directories.md#admin_server_directories_application" >}}) manuell gestartet werden.
+Bei allen Installations-Varianten für Linux kann der ImmoTool-Server über die Datei **`Start.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "../admin/server/directories.md#admin_server_directories_application" >}}) manuell gestartet werden.
 
 
 ### ImmoTool-Server vorbereiten {#intro_install_server_prepare}
@@ -136,7 +136,7 @@ Im dargestellten Fenster muss die Option **"Mit entfernter Datenbank verbinden (
      Hier sollte die Option **"HSQL.remote"** gewählt werden.
 
 -   **Protokoll:** \
-     Im Normalfall muss hier **"hsql"** gewählt werden. Wenn eine Verschlüsselung auf dem Server eingerichtet wurde, muss hier **"hsqls"** gewählt werden.
+     Im Normalfall muss hier **"hsql"** gewählt werden. Wenn eine Verschlüsselung auf dem Server eingerichtet wurde, muss hier **"hsqls"** gewählt werden (siehe ["SSL-Verschlüsselung einrichten"]({{< relref "../admin/server/setup.md#admin_server_setup_ssl" >}})).
 
 -   **Hostname:** \
      Hier muss die IP-Adresse oder der Hostname des Rechners eingetragen werden, auf dem der ImmoTool-Server betrieben wird. Wenn das AdminTool vom gleichen Rechner gestartet wurde auf dem sich auch der ImmoTool-Server befindet, kann der Hostname **"localhost"** unverändert bleiben.
@@ -159,7 +159,7 @@ Im ersten Schritt wird das Programm feststellen, dass der Administrator-Benutzer
 
 {{< figure src="install_server_admintool_password.png" caption="Passwort des Administrators im AdminTool festlegen" >}}
 
-Im folgenden Schritt wird das Programm feststellen, dass die Datenbank noch nicht eingerichtet wurde. Klicken Sie im Dialogfenster **"Neues Projekt erzeugen""** auf **"Übernehmen""** um die Datenbank zur Verwendung für das ImmoTool vorzubereiten. 
+Im folgenden Schritt wird das Programm feststellen, dass die Datenbank noch nicht eingerichtet wurde. Klicken Sie im Dialogfenster **"Neues Projekt erzeugen"** auf **"Übernehmen"** um die Datenbank zur Verwendung für das ImmoTool vorzubereiten. 
 
 {{< figure src="install_server_admintool_setup.png" caption="Installation der Datenbank im ImmoTool-Server" >}}
 
@@ -188,7 +188,7 @@ Folgende Einstellungen sind im Projekt-Assistenten vorzunehmen:
     Hier sollte die Option **"HSQL.remote"** gewählt werden.
 
 -   **Protokoll:** \
-    Im Normalfall muss hier **"hsql"** gewählt werden. Wenn eine Verschlüsselung auf dem Server eingerichtet wurde, muss hier **"hsqls"** gewählt werden.
+    Im Normalfall muss hier **"hsql"** gewählt werden. Wenn eine Verschlüsselung auf dem Server eingerichtet wurde, muss hier **"hsqls"** gewählt werden (siehe ["SSL-Verschlüsselung einrichten"]({{< relref "../admin/server/setup.md#admin_server_setup_ssl" >}})).
     
 -   **Hostname:** \
     Hier muss die IP-Adresse oder der Hostname des Rechners eingetragen werden, auf dem der ImmoTool-Server betrieben wird. Wenn das ImmoTool vom gleichen Rechner gestartet wurde auf dem sich auch der ImmoTool-Server befindet, kann der Hostname **"localhost"** unverändert bleiben.

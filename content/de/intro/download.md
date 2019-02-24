@@ -41,7 +41,7 @@ Zur Integration des Repositories ins Betriebssystem ist wie folgt vorzugehen:
       | sudo apt-key add -
     ```
 
-2.  Folgende Zeile am Ende der Datei **"/etc/apt/sources.list"** eintragen:
+2.  Folgende Zeile am Ende der Datei **`/etc/apt/sources.list`** eintragen:
 
     ```
     deb [arch=amd64] https://debian.openestate.org/ openestate main
