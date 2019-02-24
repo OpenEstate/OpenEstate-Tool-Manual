@@ -64,22 +64,7 @@ Wenn Sie sich nicht sicher sein sollten, ob Sie das Add-On ggf. zukünftig noch 
 {{< /info >}}
 
 
-### Add-Ons aktualisieren {#usage_general_addons_update}
-
-Die verfügbaren Add-Ons können automatisch und manuell auf den neuesten Stand gebracht werden, sollten die Entwickler zwischenzeitlich Aktualisierungen veröffentlicht haben.
-
-
-#### Add-Ons automatisch aktualisieren {#usage_general_addons_update_automatic}
-
-Wenn in den Programm-Einstellungen die [automatische Aktualisierung]({{< relref "settings.md#usage_general_settings_updates" >}}) aktiviert wurde, wird beim Programmstart automatisch auf neue Versionen geprüft. Sollten dabei neue Versionen der Add-Ons gefunden werden, wird das Programm eine entsprechende Information darstellen.
-
-
-#### Add-Ons manuell aktualisieren {#usage_general_addons_update_manual}
-
-Klicken Sie im Hauptmenü auf `Extras` → `Aktualisierung`. In dem darauf daraufhin dargestellten Fenster können die einzelnen Add-Ons aktualisiert werden. Weitere Informationen dazu finden Sie im [Kapitel zur Aktualisierung]({{< relref "updates.md#usage_general_updates" >}}).
-
-
-### Add-Ons aktivieren / deaktivieren {#usage_general_addons_update_enable}
+### Add-Ons aktivieren / deaktivieren {#usage_general_addons_enable}
 
 
 Ein nicht benötigtes Add-On muss nicht zwingend aus dem Programm entfernt werden. Statt dessen kann das Add-On im Programm deaktiviert werden - somit stehen die Funktionen des Add-Ons nicht mehr im Programm zur Verfügung. Sollte man das Add-On im späteren Verlauf wieder benötigen, kann es wieder aktiviert werden.

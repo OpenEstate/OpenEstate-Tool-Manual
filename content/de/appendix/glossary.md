@@ -225,7 +225,7 @@ wird bei der Übertragung von Daten zwischen mehreren Computern verwendet um sic
 
 2.  dass die richtigen Computer miteinander kommunizieren (Schutz vor [Man-in-the-middle-Angriff](http://de.wikipedia.org/wiki/Man-in-the-middle-Angriff)).
 
-Das ImmoTool unterstützt die weit verbreitete [SSL-Verschlüsselung](#glossary.SSL).
+Das ImmoTool unterstützt die weit verbreitete [SSL-Verschlüsselung](#appendix_glossary_ssl).
 
 
 ### Vollabgleich {#appendix_glossary_transfer_full}
@@ -235,7 +235,7 @@ ist ein Export-Modus für Immobiliendaten bei dem alle aktuell veröffentlichten
 Bei Exporten im Vollabgleich besteht der Vorteil, dass bei jedem Exportvorgang alle Daten mit dem Empfänger synchronisiert werden. Das Risiko von Problemen bei der Synchronisation zwischen Absender und Empfänger ist bei Exporten im Vollabgleich geringer, da grundsätzlich alle Daten übermittelt werden.
 
 
-### Web-Browser
+### Web-Browser {#appendix_glossary_web_browser}
 
 ist ein Programm zur Darstellung von Internetseiten. Auf den meisten Betriebssystemen sollte bereits ein Web-Browser installiert sein. Verbreitete Web-Browser sind [Mozilla Firefox](http://www.mozilla.com/firefox), [Opera](http://www.opera.com/), [Safari](http://www.apple.com/de/safari/), [Google Chrome](http://www.google.com/chrome/) & [Internet Explorer](http://www.microsoft.com/germany/windows/internet-explorer/).
 

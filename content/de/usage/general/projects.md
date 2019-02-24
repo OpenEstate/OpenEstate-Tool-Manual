@@ -28,15 +28,15 @@ Mindestens ein Projekt muss angelegt werden, um mit dem Programm arbeiten zu kö
 
 Der Projektassistent hilft Ihnen bei der Erstellung eines neuen Projektes.
 
-#### Erster Start
+#### Erster Start {#usage_general_projects_wizard_startup_first}
 
 Beim ersten Start des Programmes öffnet sich der Projektassistent, und Sie werden aufgefordert ein Projekt anzulegen.
 
-#### Ein neues Projekt erzeugen
+#### Ein neues Projekt erzeugen {#usage_general_projects_wizard_create}
 
 Wenn Sie die Angaben in allen Tabs vorgenommen haben, speichern Sie Ihr Projekt mit dem Button Projekt erzeugen. Das erzeugte Projekt wird daraufhin automatisch geöffnet.
 
-#### Folgende Starts
+#### Folgende Starts {#usage_general_projects_wizard_startup_later}
 
 Bei folgenden Starts wird das zuletzt verwendete Projekt automatisch geladen.
 
@@ -44,7 +44,7 @@ Bei folgenden Starts wird das zuletzt verwendete Projekt automatisch geladen.
 ### Ein neues Projekt erzeugen {#usage_general_projects_create}
 
 
-#### Projektdaten bearbeiten
+#### Projektdaten bearbeiten {#usage_general_projects_create_settings}
 
 -   **Projekt-Name**
     Tragen Sie hier den Namen Ihres Projektes ein. Verwenden Sie möglichst keine Umlaute oder Sonderzeichen.
@@ -58,14 +58,14 @@ Bei folgenden Starts wird das zuletzt verwendete Projekt automatisch geladen.
 {{< figure src="projects_wizard_general.jpg" caption="Projekt-Assistent / Eigenschaften des Projekts" >}}
 
 
-#### Firmendaten bearbeiten
+#### Firmendaten bearbeiten {#usage_general_projects_create_company}
 
 Tragen Sie hier Ihre Firmendaten ein. Die installierten Add-Ons greifen an verschiedenen Stellen auf diese Eingaben zurück. Farblich hinterlegte Felder sind Pflichtangaben.
 
 {{< figure src="projects_wizard_company.jpg" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
 
 
-#### Add-Ons auswählen
+#### Add-Ons auswählen {#usage_general_projects_create_addons}
 
 {{< figure src="projects_wizard_addons.jpg" caption="Projekt-Assistent / Aktivierte Add-Ons" >}}
 
@@ -76,7 +76,7 @@ Eine nachträgliche Änderung dieser Einstellungen ist jederzeit möglich, siehe
 {{< /info >}}
 
 
-#### Das neue Projekt speichern & öffnen
+#### Das neue Projekt speichern & öffnen {#usage_general_projects_create_submit}
 
 Speichern Sie das neu angelegte Projekt mit dem Button Projekt erzeugen.
 

@@ -26,22 +26,3 @@ Klicken Sie im Hauptmenü auf `Extras` → `Aktualisierung` um die Aktualisierun
 Während der Suche nach Updates wird Ihnen ein Dialogfenster angezeigt, welches Sie über den Fortschritt informiert. Wenn Aktualisierungen gefunden wurden, werden Sie gefragt, ob die gefundenen Dateien installiert werden sollen. Wenn Sie auf `Ja` klicken, werden die Aktualisierungen heruntergeladen und installiert.
 
 Nach erfolgter Aktualisierung schließt sich das Programm selbstständig. Erst durch einem Neustart werden die Änderungen wirksam.
-
-
-### Automatische Aktualisierung {#usage_general_updates_automatic}
-
-Wenn in den Programm-Einstellungen die [automatische Aktualisierung]({{< relref "settings.md#usage_general_settings_updates" >}}) aktiviert wurde, wird beim Programmstart automatisch auf neue Versionen geprüft. Sollten dabei neue Versionen der Add-Ons gefunden werden, wird das Programm eine entsprechende Information darstellen.
-
-
-### Aktualisierung von Hand durchführen {#usage_general_updates_manual}
-
-{{< todo >}}
-Inhalte einfügen
-{{< /todo >}}
-
-
-### Vorgehensweise bei fehlgeschlagener Aktualisierung {#usage_general_updates_problems}
-
-{{< todo >}}
-Inhalte einfügen
-{{< /todo >}}

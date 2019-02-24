@@ -43,7 +43,7 @@ Inhalte einfügen
 {{< /todo >}}
 
 
-#### Soll ich IMAP oder POP3 für den Mailempfang verwenden?
+#### Soll ich IMAP oder POP3 für den Mailempfang verwenden? {#usage_email_addon_faq_pop3_vs_imap}
 
 Wenn Sie die Wahl haben, empfiehlt es sich das **IMAP**-Protokoll zu verwenden. Dieses Protokoll ermöglicht die Verwendung von Ordnern im Mailkonto und macht weniger Probleme bei der gleichzeitigen Verwendung unterschiedlicher Mailprogramme.
 

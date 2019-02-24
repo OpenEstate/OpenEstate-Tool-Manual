@@ -39,7 +39,7 @@ Der bevorzugte PDF-Reader kann hier eingetragen werden. Erzeugte PDF-Dokumente k
 
 Um den bevorzugten PDF-Reader auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
 
-#### Sonstiges
+#### Sonstiges {#usage_general_settings_other}
 
 Hier können Sie einstellen, ob das zu letzt verwendete Projekt beim Start des Programmes geöffnet werden soll. Wenn Sie nur ein Projekt verwalten empfiehlt sich die Aktivierung.
 
@@ -72,7 +72,7 @@ Wenn Sie diesen Wert erhöhen, beachten Sie, dass jede Sicherung die gesamte Dat
 ### Immobilien Add-On {#usage_general_settings_realestate_addon}
 
 
-#### Allgemein
+#### Allgemein {#usage_general_settings_realestate_addon_general}
 
 {{< figure src="settings_realestate.jpg" caption="Einstellungen zum Immobilien Add-On" >}}
 
@@ -81,7 +81,7 @@ Hier können Sie die maximale Größe (Höhe und Breite in Pixel) einstellen, mi
 Um die Datenbank nicht unnötig groß werden zu lassen, sollten Sie die Bilder der Immobilien auf die maximal benötigte Größe verkleinern. Zur Orientierung könnte hierbei die maximale Bild-Größe auf den Portalen dienen, auf welchen Sie inserieren.
 
 
-#### Weitere Optionen
+#### Weitere Optionen {#usage_general_settings_realestate_addon_other}
 
 Hier können Sie angeben, ob beim Export der Immobilie nummerischen Attributen der Text 'ca.' vorangestellt wird.
 
@@ -106,7 +106,7 @@ Hierbei handelt es sich nicht um die Übersetzungen des ImmoTools. Diese werden 
 {{< /info >}}
 
 
-#### Suchvorlagen
+#### Suchvorlagen {#usage_general_settings_realestate_addon_search}
 
 Häufig verwendete Suchanfragen können als Suchvorlage abgelegt und bei Bedarf 
 

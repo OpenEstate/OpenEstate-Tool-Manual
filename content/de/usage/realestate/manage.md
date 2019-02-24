@@ -297,7 +297,7 @@ Es können Texte in allen Sprachen eingetragen werden, die in den Sprach-Einstel
 {{< /info >}}
 
 
-#### Energieausweis {#usage_realestate_manage_form_energy-performance-certificate}
+#### Energieausweis {#usage_realestate_manage_form_energy}
 
 {{< figure src="realestate_form_energy.jpg" caption="Angaben zum Energieausweis erfassen" >}}
 
