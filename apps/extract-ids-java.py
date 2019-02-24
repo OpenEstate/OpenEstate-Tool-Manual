@@ -22,20 +22,20 @@ import re
 import sys
 
 
-def parse(filePath, contentDir):
-    title = '//\n// ID\'s from \'%s\'\n//' % filePath[len(contentDir) + 1:]
-    with open(filePath, 'r') as myfile:
-        data = myfile.read()
-        for line in data.split('\n'):
-            if parseLine(line, title):
-                title = None
+def parse(md_file, base_path):
+    title = '//\n// ID\'s from \'%s\'\n//' % md_file[len(base_path) + 1:]
+    with open(md_file, 'r') as md_content:
+        data = md_content.read()
+    for line in data.split('\n'):
+        if parse_line(line, title):
+            title = None
     if title is None:
         print()
 
 
-def parseLine(line, title):
+def parse_line(line, title):
     # print line
-    match = re.search('^#{1,3} (.*) \{#([\w]*)\}$', line)
+    match = re.search('^#{1,3}\s+(.*)\s*\{#([\w]*)\}\s*$', line)
     if match:
         if title:
             print()
@@ -51,22 +51,23 @@ def parseLine(line, title):
     return False
 
 
+def main(base_path):
+    # print('Searching for markdown files in \'%s\'...' % base_path)
+
+    md_files = []
+    for root, dirs, files in os.walk(base_path):
+        for file in files:
+            if file.endswith('.md'):
+                md_files.append(os.path.join(root, file))
+
+    md_files.sort()
+    for md_file in md_files:
+        parse(md_file, base_path)
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print('No directory was specified as parameter!')
         sys.exit(1)
 
-    contentDir = os.path.abspath(sys.argv[1])
-    # print 'Searching for markdown files in \'%s\'...' % contentDir
-
-    paths = []
-    for root, dirs, files in os.walk(contentDir):
-        path = root.split(os.sep)
-        # print((len(path) - 1) * '---', os.path.basename(root))
-        for file in files:
-            if not file.endswith('.md'): continue
-            paths.append(os.path.join(root, file))
-
-    paths.sort()
-    for path in paths:
-        parse(path, contentDir)
+    main(os.path.abspath(sys.argv[1]))

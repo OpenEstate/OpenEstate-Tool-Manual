@@ -119,12 +119,8 @@ def get_line_number(pos, lengths):
     return line + 1
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print('ERROR: No file or directory was specified as first argument!')
-        exit(1)
-
-    total_count = parse(sys.argv[1])
+def main(path):
+    total_count = parse(path)
     if total_count < 0:
         exit(2)
     else:
@@ -133,3 +129,11 @@ if __name__ == '__main__':
         cprint_white(' Found %s todo entries in total.' % total_count, True)
         cprint_white('=' * 70, True)
         print('')
+
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print('ERROR: No file or directory was specified as first argument!')
+        exit(1)
+
+    main(sys.argv[1])
