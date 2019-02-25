@@ -40,11 +40,11 @@ Das **EXE**-Installationsprogramm erkennt automatisch den Speicherort der ImmoTo
 
 ### Aktualisierung unter macOS {#admin_client_update_mac}
 
-Verschieben Sie den Programm-Starter **"OpenEstate-ImmoTool"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Bestätigen Sie die Rückfrage, ob die alte Version des Programms überschrieben werden soll.
+Verschieben Sie den Programm-Starter **"OpenEstate-ImmoTool"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Es erscheint eine Rückfrage, ob die bestehende Installation überschrieben werden soll:
 
-{{< todo >}}
-Testen, ob eine vorherige Löschung des Programm-Ordners nötig ist.
-{{< /todo >}}
+{{< figure src="update_mac.png" caption="Rückfrage zur Aktualisierung unter macOS" >}}
+
+Bestätigen Sie die Rückfrage in diesem Dialogfenster durch Klick auf **"Ersetzen"**.
 
 
 ### Aktualisierung unter Debian, Ubuntu & Co. {#admin_client_update_debian}

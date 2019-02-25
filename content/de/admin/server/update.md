@@ -38,11 +38,11 @@ Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.
 
 ### Aktualisierung unter macOS {#admin_server_update_mac}
 
-Verschieben Sie den Programm-Starter **"OpenEstate-ImmoServer"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Bestätigen Sie die Rückfrage, ob die alte Version des Programms überschrieben werden soll.
+Verschieben Sie den Programm-Starter **"OpenEstate-ImmoServer"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Es erscheint eine Rückfrage, ob die bestehende Installation überschrieben werden soll:
 
-{{< todo >}}
-Testen, ob eine vorherige Löschung des Programm-Ordners nötig ist.
-{{< /todo >}}
+{{< figure src="update_mac.png" caption="Rückfrage zur Aktualisierung unter macOS" >}}
+
+Bestätigen Sie die Rückfrage in diesem Dialogfenster durch Klick auf **"Ersetzen"**.
 
 
 ### Aktualisierung unter Debian, Ubuntu & Co. {#admin_server_update_debian}
