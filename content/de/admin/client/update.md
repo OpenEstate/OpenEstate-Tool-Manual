@@ -1,7 +1,7 @@
 ---
 
-title: Aktualisierung durchführen
-linktitle: Aktualisierung
+title: ImmoTool aktualisieren
+linktitle: ImmoTool aktualisieren
 description: Wie OpenEstate-ImmoTool aktualisiert werden kann…
 weight: 30
 
