@@ -132,18 +132,40 @@ Wenn **ManagerBackup** gestartet wird, wird für alle in **`manager.conf`** konf
 
 ##### Automatische Datensicherung unter Windows {#admin_backup_network_live_windows}
 
-Mit Hilfe des Taskplaners kann das Hilfsprogramm automatisch zu einem beliebigen Zeitpunkt geplant und ausgeführt werden.
+Mit Hilfe der Aufgabenplanung des Windows-Betriebssystems kann **ManagerBackup** automatisch zu einem beliebigen Zeitpunkt ausgeführt werden.
 
-{{< todo >}}
-ggf. weitere Präzisierung und Screenshots zur Nutzung des Taskplaners einfügen
-{{< /todo >}}
+Öffnen Sie die Aufgabenplanung von Windows:
+
+1.  Drücken Sie auf der Tastatur die **"Windows-Taste"** gemeinsam mit dem Buchstaben **"R"** um ein Fenster zur Ausführung von Programmen zu öffnen. Alternativ können Sie die Eingabeaufforderung öffnen.
+
+2.  Tragen Sie den Befehl **`taskschd.msc`** ein und bestätigen Sie die Eingabe mit **"ENTER"**.
+
+Klicken Sie im dargestellten Dialogfenster auf der rechten Seite im Bereich **"Aktionen"** auf **"Aufgabe erstellen"**.
+
+{{< figure src="backup_network_live_windows_task_add.png" caption="Aufgabe zur automatischen Datensicherung erstellen" >}}
+
+Es öffnet sich daraufhin ein weiteres Dialogfenster, über welches die Aufgabe eingerichtet werden kann. 
+
+{{< figure src="backup_network_live_windows_task_general.png" caption="Allgemeine Einstellungen zur Aufgabe" >}}
+
+Tragen Sie im Reiter **"Allgemein"** einen passenden Namen und eine passende Beschreibung für die Aufgabe ein. Darüber hinaus sollten Sie durch Klick auf **"Benutzer oder Gruppe ändern"** den Benutzer **"Lokaler Dienst"** auswählen. 
+
+{{< figure src="backup_network_live_windows_task_trigger.png" caption="Allgemeine Einstellungen zur Aufgabe" >}}
+
+Im Reiter **"Trigger"** können Sie nach Bedarf konfigurieren, wann die automatische Datensicherung ausgeführt werden soll.
+
+{{< figure src="backup_network_live_windows_task_action.png" caption="Allgemeine Einstellungen zur Aufgabe" >}} 
+
+Wählen Sie im Reiter **"Aktionen"** die Datei **`ManagerBackup.exe`** aus dem Unterordner **`bin`** im [Programm-Verzeichnisses]({{< relref "server/directories.md#admin_server_directories_application" >}}) des ImmoTool-Servers aus.
+
+Bei Bedarf können Sie weitere Einstellungen über diese Dialogfenster vornehmen. Klicken Sie abschließend auf **"OK"** um die Aufgabe im Betriebssystem zu registrieren.
 
 
 ##### Automatische Datensicherung unter macOS {#admin_backup_network_live_mac}
 
 Wenn der ImmoTool-Server unter macOS über die bereitgestellten Skripte als Dienst eingerichtet wurde, kann dabei auch eine tägliche automatische Datensicherung konfiguriert werden (siehe ["Dienst unter macOS einrichten"]({{< relref "server/service.md#admin_server_service_mac" >}})).
 
-Falls bei der Installation des Dienstes die Option zur automatischen Datensicherung aktiviert wurde, wird unter **`/Library/LaunchDaemons`** eine Datei namens **`org.openestate.tool.server.backup.plist`** abgelegt. Über diese Datei wird im Betriebssystem die tägliche automatische Ausführung von **ManagerBackup** konfiguriert.
+Falls bei der Installation des Dienstes die Option zur automatischen Datensicherung aktiviert wurde, wird eine Datei namens **`org.openestate.tool.server.backup.plist`** im Verzeichnis **`/Library/LaunchDaemons`** abgelegt. Über diese Datei wird im Betriebssystem die tägliche automatische Ausführung von **ManagerBackup** konfiguriert.
 
 {{< info >}}
 Sie sind nicht gezwungen die bereitgestellten Funktionen zur automatischen Datensicherung zu nutzen. Statt dessen können Sie auch einen eigenen Cronjob (oder Agent für launchd) konfigurieren um **ManagerBackup** auszuführen.
