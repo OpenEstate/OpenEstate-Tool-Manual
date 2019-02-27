@@ -20,7 +20,7 @@ ImmoTool und ImmoTool-Server wurden in der Programmiersprache Java entwickelt. U
 Die Installationspakete von ImmoTool und ImmoTool-Server enthalten bereits die benötigte Java-Laufzeitumgebung. Im Normalfall muss daher Java **nicht** zusätzlich auf dem Rechner installiert werden.
 {{< /info >}}
 
-Es gibt nur wenige Gründe, eine andere als die in den Installationspaketen bereitgestellte Java-Version zu verwenden. Derzeit ist dieser Schritt eigentlich nur nötig, wenn man die Software unter einem Linux-System auf einer anderen Architektur als x86-64 (bzw. amd64) nutzen will. Für diese seltenen Fälle werden die nötigen Schritte zur Verwendung einer eigenen Java-Version im Folgenden kurz dokumentiert. 
+Es gibt nur wenige Gründe, eine andere als die in den Installationspaketen bereitgestellte Java-Version zu verwenden. Derzeit ist dieser Schritt eigentlich nur nötig, wenn man die Software unter einem Linux-System auf einer nicht offiziell unterstützen Prozessor-Architektur nutzen will. Für diese seltenen Fälle werden die nötigen Schritte zur Verwendung einer eigenen Java-Version im Folgenden kurz dokumentiert. 
 
 {{< warning >}}
 Beachten Sie bitte, dass OpenEstate nur eingeschränkte Hilfestellungen geben kann, wenn ein eigenes / externes Java verwendet wird. Wir bemühen uns zwar nach bestem Wissen und Gewissen eine bestmögliche Kompatibilität herzustellen, können aber nicht ausschließen, dass vereinzelt Fehler oder Probleme auftreten.
