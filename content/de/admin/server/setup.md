@@ -93,7 +93,7 @@ Für jede vom ImmoTool-Server verwaltete Datenbank sind folgende Zeilen in der D
 
 ```ini
 urlid immotool
-url jdbc:hsqldb:hsql://localhost/immotool
+url jdbc:hsqldb:hsql://localhost:9001/immotool
 username SA
 password test1234
 ```
@@ -116,17 +116,17 @@ Für die drei im Kapitel ["Datenbanken konfigurieren"]({{< relref "setup.md#admi
 
 ```ini
 urlid immotool
-url jdbc:hsqldb:hsql://localhost/immotool
+url jdbc:hsqldb:hsql://localhost:9001/immotool
 username SA
 password test1234
 
 urlid mydb
-url jdbc:hsqldb:hsql://localhost/mydb
+url jdbc:hsqldb:hsql://localhost:9001/mydb
 username SA
 password test2345
 
 urlid anotherdb
-url jdbc:hsqldb:hsql://localhost/anotherdb
+url jdbc:hsqldb:hsql://localhost:9001/anotherdb
 username SA
 password test3456
 ```
@@ -251,17 +251,17 @@ Bearbeiten Sie diese Datei mit einem Texteditor und ändern Sie die Werte hinter
 
 ```ini
 urlid immotool
-url jdbc:hsqldb:hsqls://localhost/immotool
+url jdbc:hsqldb:hsqls://localhost:9001/immotool
 username SA
 password test1234
 
 urlid mydb
-url jdbc:hsqldb:hsqls://localhost/mydb
+url jdbc:hsqldb:hsqls://localhost:9001/mydb
 username SA
 password test2345
 
 urlid anotherdb
-url jdbc:hsqldb:hsqls://localhost/anotherdb
+url jdbc:hsqldb:hsqls://localhost:9001/anotherdb
 username SA
 password test3456
 ```

@@ -120,7 +120,7 @@ Das Hilfsprogramm muss eine Verbindung zu allen zu sichernden Datenbanken herste
 
 ```
 urlid immotool
-url jdbc:hsqldb:hsql://localhost/immotool
+url jdbc:hsqldb:hsql://localhost:9001/immotool
 username SA
 password
 ```
