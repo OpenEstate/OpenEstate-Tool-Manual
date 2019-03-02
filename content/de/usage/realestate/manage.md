@@ -465,7 +465,7 @@ Beim Speichern der Immobilie werden die Zuweisungen dauerhaft gespeichert.
 
 Im Tab `Adressen` können zu der Immobilie beliebig viele Adressen als Kontakte verknüpft werden.
 
-{{< figure src="realestate_form_addresses_addresses.jpg" caption="Zugewiesene Adressen einer Immobilie" >}}
+{{< figure src="realestate_form_addresses_addresses.png" caption="Zugewiesene Adressen einer Immobilie" >}}
 
 
 ##### Bestehende Adresse zuweisen {#usage_realestate_manage_form_addresses_addresses_assign}
@@ -479,7 +479,7 @@ Nach Betätigung des Button `Übernehmen` wird diese Adresse der Immobilie zugeo
 
 Ist die gewünschte Adresse noch nicht vorhanden, so klicken Sie auf den Reiter neue Adresse, und belegen die gewünschten Felder mit Einträgen. Danach klicken Sie auf den Button `Adresse zuordnen & speichern` um die Adresse in die Datenbank zu speichern und der Immobilie zuzuordnen.
 
-{{< figure src="realestate_form_addresses_add.jpg" caption="Neue Adresse erfassen und zuweisen" >}}
+{{< figure src="realestate_form_addresses_add.png" caption="Neue Adresse erfassen und zuweisen" >}}
 
 
 ##### Verknüpfung zur Adresse bearbeiten {#usage_realestate_manage_form_addresses_edit}
@@ -493,16 +493,12 @@ Es öffnet sich daraufhin ein Fenster, über welches die Verknüpfung bearbeitet
 
 Um eine Verknüpfung mit einer Adresse zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Sie `Zuordnung entfernen`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken Sie auf den Button `Aktionen` und wählen Sie `Zuordnung entfernen` aus.
 
-{{< todo >}}
-Tab Vermittlungsauftrag, Suchaufträge, Adresse und neu Adressen beschreiben. Ehemals Adressen.
-{{< /todo >}}
-
 
 #### Exporte {#usage_realestate_manage_form_export}
 
 Im Tab `Exporte` → `Schnittstellen` können Einstellungen zum Export für eine Immobilie hinterlegt werden.
 
-{{< figure src="realestate_form_exports.jpg" caption="Schnittstellen zum Export zuweisen" >}}
+{{< figure src="realestate_form_exports.png" caption="Schnittstellen zum Export zuweisen" >}}
 
 
 ##### Schnittstellen {#usage_realestate_manage_form_export_interfaces}
@@ -530,49 +526,57 @@ Hier können Sie diese Immobilie den vorhandenen Schnittstelle zuordnen. Wählen
 
 An dieser Stelle wird die Historie der bereits durchgeführten Exporte für die Immobilie dargestellt.
 
-{{< figure src="realestate_form_exports_history.jpg" caption="Historie der Exporte zur Immobilie" >}}
+{{< figure src="realestate_form_exports_history.png" caption="Historie der Exporte zur Immobilie" >}}
 
 
 #### Kalender {#usage_realestate_manage_form_calendars}
 
 Im Tab `Kalender` können zu der Immobilie beliebig viele Kalendereinträge verknüpft werden.
 
-{{< figure src="realestate_form_calendar.jpg" caption="Zugewiesene Termine der Immobilie" >}}
+{{< figure src="realestate_form_calendar.png" caption="Zugewiesene Termine der Immobilie" >}}
 
 
-##### Bestehenden Kalendereintrag zuordnen / verknüpfen {#usage_realestate_manage_form_calendars_assign}
+##### Bestehenden Kalendereintrag zuweisen / verknüpfen {#usage_realestate_manage_form_calendars_assign}
 
-Sollte der gewünschte Kalendereintrag bereits im Kalender verfügbar sein klicken Sie auf `Neue Zuordnung` und wählen im sich öffnenden Fenster den Kalender, in welchem sich der Kalendereintrag befindet, und anschließend den Eintrag selbst. Nach Betätigung des Buttons `Übernehmen` wird dieser Kalendereintrag der Immobilie zugeordnet, und erscheint nun im Fenster zugeordnete Kalendereinträge.
+Sollte der gewünschte Kalendereintrag bereits im Kalender verfügbar sein, klicken Sie auf `Neue Zuweisung`. Im sich erweiternden Formular wählen Sie den Kalender, in welchem sich der Kalendereintrag befindet, und geben anschließend Stichpunktartig den Titel des gesuchten Kalendereintrags an oder klicken in das Feld und scrollen mit den Pfeiltastetn (hoch/runter) zu dem gewünschten Termin. Nach Betätigung des Buttons `Übernehmen` wird dieser Kalendereintrag der Immobilie zugeordnet, und erscheint nun im Fenster zugewiesene Kalendereinträge.
 
-{{< figure src="realestate_form_calendar_assign.jpg" caption="Vorhandenen Kalendereintrag der Immobilie zuweisen" >}}
+{{< figure src="realestate_form_calendar_assign.png" caption="Vorhandenen Kalendereintrag der Immobilie zuweisen" >}}
 
 
 ##### Kalendereintrag anlegen {#usage_realestate_manage_form_calendars_add}
 
-Ist der gewünschte Kalendereintrag (Aufgabe / Termin) noch nicht vorhanden, so klicken Sie auf den Reiter `neue Aufgabe` oder `neuer Termin`, und belegen die gewünschten Felder mit Einträgen. Danach klicken Sie auf den Button `Aufgabe speichern & zuordnen` bzw. `Termin speichern & zuordnen` um den Kalendereintrag zu speichern und der Immobilie zuzuordnen.
+Ist der gewünschte Kalendereintrag (Aufgabe/Termin) noch nicht vorhanden, so klicken Sie auf den Reiter `neuer Eintrag`, und belegen die gewünschten Felder mit Einträgen. Danach klicken Sie auf den Button `übernehmen` um den Kalendereintrag der Immobilie zuzuordnen.
 
-{{< figure src="realestate_form_calendar_add_task.jpg" caption="Neue Aufgabe der Immobilie zuweisen" >}}
+{{< figure src="realestate_form_calendar_add_event.png" caption="Neuen Termin der Immobilie zuweisen" >}}
 
-{{< figure src="realestate_form_calendar_add_event.jpg" caption="Neuen Termin der Immobilie zuweisen" >}}
+{{< figure src="realestate_form_calendar_add_task.png" caption="Neue Aufgabe der Immobilie zuweisen" >}}
 
 
 ##### Kalendereintrag bearbeiten {#usage_realestate_manage_form_calendars_edit}
 
-Um die Verknüpfung zu bearbeiten, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen `Zuordnung bearbeiten`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button `Aktionen` und wählen Sie `Zuordnung bearbeiten`aus.
-
-Bearbeiten Sie nun die Verknüpfung und speichern Sie diese mit dem Button `Übernehmen`.
+Um die Verknüpfung zu bearbeiten, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Eintrag anzeigen. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button `Aktionen` und wählen `Eintrag anzeigen` aus. Es öffnet sich ein neuer Tab mit dem Kalendereintrag. Nehmen Sie die gewünschten Änderungen vor und Übernehmen diese mit dem Button `Speichern`.
 
 
 ##### Kalendereintrag löschen {#usage_realestate_manage_form_calendars_remove}
 
-Um die Verknüpfung zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen `Zuordnung entfernen`. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button `Aktionen` und wählen Sie `Zuordnung entfernen` aus.
+Um die Verknüpfung zu löschen, markieren Sie den Eintrag in der Liste mit der rechten Maustaste und wählen Eintrag anzeigen. Alternativ markieren Sie den entsprechenden Eintrag mit der Maus, klicken auf den Button Aktionen und wählen Eintrag anzeigen aus. Der Kalendereintrag öffnet sich in einem neuen Fenster. Wählen Sie unter dem Button `Aktionen` → `entfernen`
+
+#### Aktionen {#usage_realestate_manage_form_actions}
+
+
+##### Aktivitäten {#usage_realestate_manage_form_actions_activity}
+
+{{< figure src="realestate_form_actions_activity.png" caption="Bearbeitungshistorie einsehen" >}}
+
+
+##### Bearbeitungshistorie {#usage_realestate_manage_form_actions_activity_editinghistory}
+
+{{< figure src="realestate_form_actions_editinghistory.png" caption="Bearbeitungshistorie einsehen" >}}
+
+Unter dem Tab Bearbeitungshistorie können Sie einsehen welche Änderungen zu einem bestimmten Zeitpunkt vorgenommen wurden, wenn Sie einen Eintrag markieren.
 
 {{< todo >}}
-Tab Kalender beschreiben.
-{{< /todo >}}
-
-{{< todo >}}
-Tab Aktionen beschreiben.
+Tab Aktionen » Aktivitäten beschreiben.
 {{< /todo >}}
 
 
@@ -580,7 +584,7 @@ Tab Aktionen beschreiben.
 
 Im Tab `Notizen` können zu der Immobilie beliebige    Notizen hinterlegt werden.
 
-{{< figure src="realestate_form_notes.jpg" caption="Notizen zur Immobilie hinterlegen" >}}
+{{< figure src="realestate_form_notes.png" caption="Notizen zur Immobilie hinterlegen" >}}
 
 {{< info >}}
 Der hinterlegte Notiztext wird vom Programm  **nicht veröffentlicht** - z.B. an Immobilienportale exportiert oder in Exposés dargestellt.
