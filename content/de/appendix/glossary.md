@@ -4,6 +4,7 @@ title: Sammlung von Fachbegriffen
 linktitle: Fachbegriffe
 description: Fachbegriffe im OpenEstate-ImmoTool…
 weight: 10
+draft: true
 
 menu:
   main:

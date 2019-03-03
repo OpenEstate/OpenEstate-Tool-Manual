@@ -14,12 +14,12 @@ menu:
 
 ## ImmoTool-Server als Dienst einrichten {#admin_server_service}
 
-Für den alltäglichen Betrieb ist es sinnvoll, den ImmoTool-Server als Dienst in das Betriebssystem zu integrieren. Der ImmoTool-Server kann damit **automatisch** beim Hochfahren des Betriebssystems gestartet werden. Der Administrator den Dienst von außen unkompliziert steuern (Start / Stopp / Neustart).
+Für den alltäglichen Betrieb ist es sinnvoll, den ImmoTool-Server als Dienst in das Betriebssystem zu integrieren. Der ImmoTool-Server kann damit **automatisch** beim Hochfahren des Betriebssystems im Hintergrund gestartet werden. Der Administrator den Dienst von außen unkompliziert steuern (Start / Stopp / Neustart).
 
 
 ### Dienst unter Windows einrichten {#admin_server_service_windows}
 
-Zur Einrichtung des ImmoTool-Servers als Dienst unter Windows wird die Open Source Software [commons-daemon](https://commons.apache.org/daemon/) der [Apache Software Foundation](https://apache.org/) verwendet. Die Programme im Unterordner **`bin/service`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) stammen vom "commons-daemon" Projekt.
+Zur Einrichtung des ImmoTool-Servers als Dienst unter Windows wird die Open Source Software [commons-daemon](https://commons.apache.org/daemon/) der [Apache Software Foundation](https://apache.org/) verwendet. Die Programme im Unterordner **`bin\service`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) stammen vom "commons-daemon" Projekt.
 
 
 #### Dienst unter Windows installieren {#admin_server_service_windows_install}
@@ -36,7 +36,7 @@ Nach erfolgreicher Installation öffnet sich ein Dialogfenster, über welches de
 
 {{< figure src="service_windows_install.png" caption="Verwaltung des Dienstes unter Windows" >}}
 
-Bei Bedarf können z.B. im Tab **"Java"** die vom ImmoTool-Server verwendeten Verzeichnisse konfiguriert werden (siehe ["Verwendete Verzeichnisse"]({{< relref "directories.md#admin_server_directories" >}})):
+Bei Bedarf können z.B. im Tab **"Java"** die vom ImmoTool-Server verwendeten Verzeichnisse konfiguriert werden (siehe ["Verzeichnisse des ImmoTool-Servers"]({{< relref "directories.md#admin_server_directories" >}})):
 
 {{< figure src="directories_setup_windows_service.png" caption="Pfade in der Dienst-Verwaltung von Windows konfigurieren" >}}
 
@@ -45,12 +45,6 @@ Nachdem die Einstellungen vorgenommen wurden klicken Sie auf **"Übernehmen"**. 
 Beim ersten Start des ImmoTool-Servers werden Sie vom Betriebssystem eventuell gefragt, ob eingehende Verbindungen akzeptiert werden sollen. Diese Frage sollte mit **"Zugriff zulassen"** beantwortet werden.
 
 {{< figure src="startup_windows_firewall.png" caption="Freigabe in der Firewall unter Windows erteilen" >}}
-
-{{< warning >}}
-Nachdem der ImmoTool-Server als Dienst eingerichtet wurde, sollten Sie das [Programm-Verzeichnis]({{< relref "directories.md#admin_server_directories_application" >}}) unter keinen Umständen ändern (z.B. das Programm an eine andere Stelle verschieben). Der Dienst wird sonst nicht mehr korrekt funktionieren.
-
-Bevor Sie das Programm an eine andere Stelle verschieben, führen Sie zuerst eine Deinstallation des Dienstes durch (siehe ["Dienst unter Windows deinstallieren"]({{< relref "service.md#admin_server_service_windows_uninstall" >}})) und installieren Sie den Dienst danach neu.
-{{< /warning >}}
 
 
 #### Dienst unter Windows deinstallieren {#admin_server_service_windows_uninstall}
@@ -61,9 +55,11 @@ Der Dienst des ImmoTool-Servers kann auf folgenden Wegen entfernt werden:
 
 -   Öffnen Sie den Ordner **`bin`** im [Programm-Verzeichnis]({{< relref "directories.md#admin_server_directories_application" >}}) und starten Sie das Skript **`ServiceUninstall.bat`** per Doppelklick.
 
--   Führen Sie eine vollständige Deinstallation des ImmoTool-Servers durch. In diesem Falle wird auch der Dienst aus dem Betriebssystem entfernt.
-
 Es öffnet sich daraufhin ein Fenster mit der Eingabeaufforderung, über welches die Deinstallation durchgeführt wird. Sie sollten in diesem Fenster eine Erfolgsmeldung oder Fehlermeldung dargestellt bekommen.
+
+{{< info >}}
+Bei einer Deinstallation des ImmoTool-Servers wird auch ein zuvor installierter Dienst aus dem Betriebssystem entfernt.
+{{< /info >}}
 
 
 #### Dienst unter Windows verwalten {#admin_server_service_windows_manage}
@@ -152,12 +148,6 @@ Beim ersten Start des ImmoTool-Servers werden Sie vom Betriebssystem eventuell g
 
 {{< figure src="startup_mac_firewall.png" caption="Freigabe in der Firewall unter macOS erteilen" >}}
 
-{{< warning >}}
-Nachdem der ImmoTool-Server als Dienst eingerichtet wurde, sollten Sie das [Programm-Verzeichnis]({{< relref "directories.md#admin_server_directories_application" >}}) unter keinen Umständen ändern (z.B. das Programm an eine andere Stelle verschieben). Der Dienst wird sonst nicht mehr korrekt funktionieren.
-
-Bevor Sie das Programm an eine andere Stelle verschieben, führen Sie zuerst eine Deinstallation des Dienstes durch (siehe ["Dienst unter macOS deinstallieren"]({{< relref "service.md#admin_server_service_mac_uninstall" >}})) und installieren Sie den Dienst danach neu.
-{{< /warning >}}
-
 
 #### Dienst unter macOS deinstallieren {#admin_server_service_mac_uninstall}
 
@@ -231,12 +221,6 @@ Wenn alle Fragen beantwortet wurden, wird der Dienst im Verzeichnis **`/etc/syst
 
 {{< figure src="service_linux_install_summary.png" caption="Zusammenfassung nach Installation des Dienstes unter Linux" >}}
 
-{{< warning >}}
-Nachdem der ImmoTool-Server als Dienst eingerichtet wurde, sollten Sie das [Programm-Verzeichnis]({{< relref "directories.md#admin_server_directories_application" >}}) unter keinen Umständen ändern (z.B. das Programm an eine andere Stelle verschieben). Der Dienst wird sonst nicht mehr korrekt funktionieren.
-
-Bevor Sie das Programm an eine andere Stelle verschieben, führen Sie zuerst eine Deinstallation des Dienstes durch (siehe ["Dienst unter Linux deinstallieren"]({{< relref "service.md#admin_server_service_linux_uninstall" >}})) und installieren Sie den Dienst danach neu.
-{{< /warning >}}
-
 
 #### Dienst unter Linux deinstallieren {#admin_server_service_linux_uninstall}
 
@@ -247,7 +231,7 @@ Das Programm benötigt administrative Rechte. Während des Vorgangs werden Sie d
 
 #### Dienst unter Linux starten {#admin_server_service_linux_start}
 
-Nachdem der Dienst unter Linux installiert wurde (siehe ["Dienst unter macOS installieren"]({{< relref "service.md#admin_server_service_mac_install" >}})) kann dieser auf verschiedenen Wegen von Hand gestartet werden:
+Nachdem der Dienst unter Linux installiert wurde (siehe ["Dienst unter Linux installieren"]({{< relref "service.md#admin_server_service_linux_install" >}})) kann dieser auf verschiedenen Wegen von Hand gestartet werden:
 
 -   Starten Sie im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) das Skript **`ServiceStart.sh`**.
 
@@ -264,7 +248,7 @@ Standardmäßig wird der Dienst unter Linux **automatisch gestartet** sobald der
 
 #### Dienst unter Linux stoppen {#admin_server_service_linux_stop}
 
-Nachdem der Dienst unter Linux installiert wurde (siehe ["Dienst unter macOS installieren"]({{< relref "service.md#admin_server_service_mac_install" >}})) kann dieser auf verschiedenen Wegen gestoppt werden:
+Nachdem der Dienst unter Linux installiert wurde (siehe ["Dienst unter Linux installieren"]({{< relref "service.md#admin_server_service_linux_install" >}})) kann dieser auf verschiedenen Wegen gestoppt werden:
 
 -   Starten Sie im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) das Skript **`ServiceStop.sh`**.
 

@@ -15,9 +15,7 @@ Wir bedanken uns bei allen am OpenEstate-Projekt beteiligten Personen - sowie al
 
 ## Dieses Handbuch ist kostenfrei {#start_free}
 
-Dieses Handbuch (sowohl dessen Texte als auch enthaltenes Bildmaterial) wird im Rahmen des OpenEstate-Projekts erstellt und kann **kostenfrei zum persönlichen Gebrauch** heruntergeladen, verwendet, verändert und weiter gegeben werden. Eine gewerbliche Weitergabe des Handbuchs ist ohne Absprache und Genehmigung der Autoren untersagt (siehe ["Nutzungslizenz für das Handbuch"]({{< relref "appendix/licenses.md#appendix_licenses_manual" >}})). 
-
-Durch Dritte vorgenommene Änderungen am Handbuch sind ebenfalls unter den Bedingungen dieser Lizenz weiter zu verbreiten.
+Dieses Handbuch (sowohl dessen Texte als auch enthaltenes Bildmaterial) wird im Rahmen des OpenEstate-Projekts erstellt und kann **kostenfrei zum persönlichen Gebrauch** heruntergeladen, verwendet, verändert und weiter gegeben werden. Eine gewerbliche Weitergabe des Handbuchs ist ohne Absprache und Genehmigung der Autoren untersagt (siehe ["Nutzungslizenz für das Handbuch"]({{< relref "appendix/licenses.md#appendix_licenses_manual" >}})). Durch Dritte vorgenommene Änderungen am Handbuch sind ebenfalls unter den Bedingungen dieser Lizenz weiter zu verbreiten.
 
 {{< info >}}
 Die Rohdaten dieses Handbuchs sowie die Skripte zur Umwandlung in verschiedene Formate (HTML, PDF, ePub, etc.) können bei [GitHub](https://github.com/OpenEstate/OpenEstate-Tool-Manual/) eingesehen werden. Über diese Plattform können darüber hinaus Änderungen am Handbuch diskutiert und eingebracht werden.

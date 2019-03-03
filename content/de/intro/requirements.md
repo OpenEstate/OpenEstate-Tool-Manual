@@ -2,7 +2,7 @@
 
 title: Systemanforderungen
 linktitle: Anforderungen
-description: Über die Systemanforderungen von OpenEstate-ImmoTool…
+description: Über die Systemanforderungen von OpenEstate-ImmoTool & OpenEstate-ImmoServer…
 weight: 20
 
 menu:
@@ -24,7 +24,7 @@ ImmoTool und ImmoTool-Server können auf verschiedensten Systemen betrieben werd
     -   macOS (ab 10.9)
     -   Linux (x86 bzw. IA-32 / x86-64 bzw. amd64)
 -   **Prozessor:**
-    2 GHZ (je mehr desto besser)
+    2 GHZ (je mehr, desto besser)
 -   **Arbeitsspeicher:**
     512 MB werden vom Programm maximal belegt
 -   **Festplattenspeicher:**
@@ -46,7 +46,7 @@ Für Linux auf anderen Architekturen als **x86** oder **x86-64** stehen keine In
     -   macOS (ab Version 10.9)
     -   Linux (x86 bzw. IA-32 / x86-64 bzw. amd64)
 -   **Prozessor:**
-    1 GHZ (je mehr desto besser)
+    1 GHZ (je mehr, desto besser)
 -   **Arbeitsspeicher:**
     512 MB werden vom Programm maximal belegt
 -   **Festplattenspeicher:**

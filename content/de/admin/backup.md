@@ -19,7 +19,7 @@ Für den alltäglichen Betrieb ist es **unbedingt empfohlen** eine Strategie zur
 Es ist zu beachten, dass hier unterschiedliche Vorgehensweisen bei [Einzelplatz-Installationen]({{< relref "../intro/install_types.md#intro_install_types_local" >}}) und [Netzwerk-Installationen]({{< relref "../intro/install_types.md#intro_install_types_network" >}}) nötig sind (siehe ["Wie ImmoTool betrieben werden kann…"]({{< relref "../intro/install_types.md#intro_install_types" >}})).
 
 {{< warning >}}
-Verlassen Sie sich nicht allein auf die Sicherungsfunktionen des Betriebssystems. Die Praxis hat gezeigt, dass z.B. die Verwendung von Sicherungspunkten unter Windows zu einer fehlerhaft wiederhergestellten Datenbank führen kann.
+Verlassen Sie sich nicht allein auf die Sicherungsfunktionen des Betriebssystems. Die Praxis hat gezeigt, dass z.B. die Verwendung von Wiederherstellungspunkte unter Windows zu einer fehlerhaft wiederhergestellten Datenbank führen kann.
 {{< /warning >}}
 
 {{< info >}}
@@ -77,7 +77,7 @@ Wenn für die automatische Datensicherung eine externe USB-Festplatte oder ein O
 
 #### Wiederherstellung einer Sicherung {#admin_backup_local_restore}
 
-Wenn das [Projekt-Verzeichnis]({{< relref "client/directories.md#admin_client_directories_project" >}}) kopiert wurde (siehe ["Projekt-Verzeichnis kopieren"]({{< relref "backup.md#admin_backup_local_copy" >}})), kann das gesicherte Verzeichnis einfach an den ursprünglichen Speicherort zurück kopiert und mit dem ImmoTool geöffnet werden.
+Wenn das [Projekt-Verzeichnis]({{< relref "client/directories.md#admin_client_directories_project" >}}) kopiert wurde (siehe ["Projekt-Verzeichnis kopieren"]({{< relref "backup.md#admin_backup_local_copy" >}})), kann das gesicherte Verzeichnis einfach an den ursprünglichen Speicherort zurück kopiert und mit dem ImmoTool geöffnet werden. Weitere Schritte zur Wiederherstellung sind in diesem Falle **nicht** nötig.
 
 Sicherungen, die aus dem ImmoTool heraus erzeugt wurden, werden als **TAR.GZ**-Archiv gespeichert (siehe ["Manuelle Sicherung via ImmoTool"]({{< relref "backup.md#admin_backup_local_manual" >}}) und ["Automatische Sicherung via ImmoTool"]({{< relref "backup.md#admin_backup_local_automatic" >}})). Zur Wiederherstellung dieser Sicherungen können Sie wie folgt vorgehen:
 
@@ -90,6 +90,10 @@ Sicherungen, die aus dem ImmoTool heraus erzeugt wurden, werden als **TAR.GZ**-A
 7.  Starten Sie das ImmoTool und öffnen Sie das betreffende Projekt.
 
 Wenn das wiederhergestellte Projekt erfolgreich geöffnet werden kann, kann der in Schritt 4 erstellte Ordner **`data-alt`** bei Bedarf gelöscht werden.
+
+{{< tip >}}
+Wenn Sie kein Einzelplatz-Projekt auf dem Rechner vorliegen haben oder den Speicherort nicht mehr ausfindig machen können, können Sie ein neues / leeres Projekt mit dem ImmoTool erzeugen und danach den obigen Schritten zur Wiederherstellung folgen.
+{{< /tip >}}
 
 
 ### Sicherung einer Netzwerk-Installation {#admin_backup_network}
@@ -125,16 +129,20 @@ username SA
 password
 ```
 
-Hinter dem Wort **`password`** muss getrennt durch ein Leerzeichen das Passwort des Datenbank-Administrators (**`SA`**) eingetragen werden - z.B. **`password test1234`** (siehe auch ["Manager-Programme konfigurieren"]({{< relref "server/setup.md#admin_server_setup_manager" >}})).
+Hinter dem Wort **`password`** muss getrennt durch ein Leerzeichen das Passwort des Datenbank-Administrators (**`SA`**) eingetragen werden - z.B. **`password test1234`** (siehe ["Manager-Programme konfigurieren"]({{< relref "server/setup.md#admin_server_setup_manager" >}})).
 
-Wenn **ManagerBackup** gestartet wird, wird für alle in **`manager.conf`** konfigurierten Datenbanken eine Sicherung erzeugt. Das Programm speichert die Sicherungen standardmäßig im [Daten-Verzeichnis]({{< relref "server/directories.md#admin_server_directories_data" >}}) des ImmoTool-Servers in einem Unterordner namens **`backups`**. 
+Wenn **ManagerBackup** gestartet wird, wird für alle in **`manager.conf`** konfigurierten Datenbanken eine Sicherung erzeugt. Das Programm speichert die Sicherungen standardmäßig im [Daten-Verzeichnis]({{< relref "server/directories.md#admin_server_directories_data" >}}) des ImmoTool-Servers in einem Unterordner namens **`backups`**.
+
+{{< info >}}
+Bevor eine automatische Datensicherung eingerichtet wird sollten Sie prüfen, ob das **ManagerBackup**-Programm korrekt konfiguriert ist und erwartungsgemäß funktioniert.
+{{< /info >}} 
 
 
 ##### Automatische Datensicherung unter Windows {#admin_backup_network_live_windows}
 
 Mit Hilfe der Aufgabenplanung des Windows-Betriebssystems kann **ManagerBackup** automatisch zu einem beliebigen Zeitpunkt ausgeführt werden.
 
-Öffnen Sie die Aufgabenplanung von Windows:
+Öffnen Sie die [Aufgabenplanung von Windows](https://de.wikipedia.org/wiki/Aufgabenplanung):
 
 1.  Drücken Sie auf der Tastatur die **"Windows-Taste"** gemeinsam mit dem Buchstaben **"R"** um ein Fenster zur Ausführung von Programmen zu öffnen. Alternativ können Sie die Eingabeaufforderung öffnen.
 
@@ -150,11 +158,11 @@ Es öffnet sich daraufhin ein weiteres Dialogfenster, über welches die Aufgabe 
 
 Tragen Sie im Reiter **"Allgemein"** einen passenden Namen und eine passende Beschreibung für die Aufgabe ein. Darüber hinaus sollten Sie durch Klick auf **"Benutzer oder Gruppe ändern"** den Benutzer **"Lokaler Dienst"** auswählen. 
 
-{{< figure src="backup_network_live_windows_task_trigger.png" caption="Allgemeine Einstellungen zur Aufgabe" >}}
+{{< figure src="backup_network_live_windows_task_trigger.png" caption="Zeit der Ausführung wählen" >}}
 
 Im Reiter **"Trigger"** können Sie nach Bedarf konfigurieren, wann die automatische Datensicherung ausgeführt werden soll.
 
-{{< figure src="backup_network_live_windows_task_action.png" caption="Allgemeine Einstellungen zur Aufgabe" >}} 
+{{< figure src="backup_network_live_windows_task_action.png" caption="Auszuführendes Programm wählen" >}} 
 
 Wählen Sie im Reiter **"Aktionen"** die Datei **`ManagerBackup.exe`** aus dem Unterordner **`bin`** im [Programm-Verzeichnisses]({{< relref "server/directories.md#admin_server_directories_application" >}}) des ImmoTool-Servers aus.
 
@@ -208,7 +216,7 @@ Das Hilfsprogramm **ManagerBackup** kann über Kommandozeilen-Parameter bei Beda
     Die Datensicherung kann um die in **`<seconds>`** angegebenen Sekunden verzögert werden.
     
 -   **-wait** \
-    Nach erfolgter Ausführung wird das Programm nicht sofort beendet. Der Benutzer muss erst mit ENTER bestätigen, dass das Programm beendet werden soll.
+    Nach erfolgter Ausführung wird das Programm nicht sofort beendet. Der Benutzer muss erst mit **"ENTER"** bestätigen, dass das Programm beendet werden soll.
     
 -   **-dump** \
     Statt einer Kopie der Datenbank-Dateien wird ein Dump erzeugt.
@@ -220,7 +228,7 @@ Eine Datensicherung ist eine Kopie der Datenbank-Dateien. Die Wiederherstellung 
 
 1.  Beenden Sie den ImmoTool-Server, wenn dieser aktuell in Betrieb sein sollte.
 
-2.  Sollte die Sicherung als ZIP-Archiv oder TAR.GZ-Archiv vorliegen, entpacken Sie diese Dateien auf Ihrem Rechner.
+2.  Sollte die Sicherung als **ZIP**-Archiv oder **TAR.GZ**-Archiv vorliegen, entpacken Sie diese Dateien auf Ihrem Rechner.
 
 3.  Benennen Sie das betreffende Datenbank-Verzeichnis um und erstellen Sie ein neues / leeres Datenbank-Verzeichnis.
 

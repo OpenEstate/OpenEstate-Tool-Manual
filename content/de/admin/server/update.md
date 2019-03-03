@@ -1,7 +1,7 @@
 ---
 
 title: ImmoTool-Server aktualisieren
-linktitle: Server aktualisieren
+linktitle: Aktualisierung
 description: Wie OpenEstate-ImmoServer aktualisiert werden kann…
 weight: 50
 
@@ -38,7 +38,7 @@ Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.
 
 ### Aktualisierung unter macOS {#admin_server_update_mac}
 
-Verschieben Sie den Programm-Starter **"OpenEstate-ImmoServer"** an die gleiche Stelle, wo sich die alte ImmoTool-Installation befindet. Es erscheint eine Rückfrage, ob die bestehende Installation überschrieben werden soll:
+Verschieben Sie den Programm-Starter **"OpenEstate-ImmoServer"** an die gleiche Stelle, wo sich die alte Installation des ImmoTool-Servers befindet. Es erscheint eine Rückfrage, ob die bestehende Installation überschrieben werden soll:
 
 {{< figure src="update_mac.png" caption="Rückfrage zur Aktualisierung unter macOS" >}}
 

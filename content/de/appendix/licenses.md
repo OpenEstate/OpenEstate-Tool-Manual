@@ -2,7 +2,7 @@
 
 title: Nutzungslizenzen
 linktitle: Lizenztexte
-description: Nutzungslizenzen für OpenEstate-ImmoTool…
+description: Nutzungslizenzen für OpenEstate-ImmoTool, OpenEstate-ImmoServer & das Handbuch…
 weight: 30
 
 menu:
@@ -22,7 +22,7 @@ Zwischen den OpenEstate-Entwicklern (nachfolgend als „Lizenzgeber“ bezeichne
 
 **1. Gegenstand**
 
-(a) Gegenstand dieser Lizenz sind Programme und Bibliotheken (nachfolgend als Software bezeichnet), die vom Lizenzgeber im Rahmen des OpenEstate-Projektes erstellt und veröffentlicht wurden. Weitere Informationen zu den OpenEstate-Projekten sind verfügbar unter: https://openestate.org
+(a) Gegenstand dieser Lizenz sind Programme und Bibliotheken (nachfolgend als Software bezeichnet), die vom Lizenzgeber im Rahmen des OpenEstate-Projektes erstellt und veröffentlicht wurden. Weitere Informationen zu den OpenEstate-Projekten sind verfügbar unter: <https://openestate.org>
 
 
 **2. Rechte des Lizenznehmers**

@@ -75,7 +75,7 @@ Bei der Installation des Debian-Pakets werden automatisch die nötigen Einträge
 
 #### Installation unter Linux {#intro_install_client_setup_linux} 
 
-Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdatei herunterladen. 
+Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdateien herunterladen. Achten Sie darauf die richtige Installationsdatei für die verwendete Prozessor-Architektur zu verwenden (meist wird **x86-64** verwendet).
 
 Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **`OpenEstate-ImmoTool`**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **`/opt/OpenEstate-ImmoTool`**).
 

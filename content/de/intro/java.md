@@ -35,7 +35,7 @@ Java bzw. OpenJDK kann von verschiedenen Drittanbietern bezogen werden (z.B. [Ad
 
 -   Löschen Sie den Ordner **`jre`** aus dem Programmverzeichnis von ImmoTool / ImmoTool-Server.
 -   Entpacken Sie das vom Drittanbieter Ihrer Wahl heruntergeladene Archiv.
--   Kopieren Sie den entpackten Ordner unter dem Namen **`jre`** ins Programmverzeichnis. 
+-   Kopieren Sie den entpackten Ordner unter dem Namen **`jre`** ins Programmverzeichnis von ImmoTool / ImmoTool-Server. 
 
 
 ### Java aus Linux-Paketsystem verwenden {#intro_java_linux}
@@ -43,8 +43,10 @@ Java bzw. OpenJDK kann von verschiedenen Drittanbietern bezogen werden (z.B. [Ad
 Die meisten Linux-Distributionen stellen ebenfalls Java bzw. OpenJDK über ihr Paketsystem zur Verfügung. Die Vorgehensweise zur Verwendung dieser Java-Versionen ist wie folgt:
 
 -   Löschen Sie den Ordner **`jre`** aus dem Programmverzeichnis von ImmoTool / ImmoTool-Server.
--   Installieren Sie das OpenJDK-JRE Paket von Ihrer Linux-Distribution - z.B. via:
+-   Installieren Sie das OpenJDK-Paket von Ihrer Linux-Distribution - z.B. via:
 
     ```bash
-    sudo apt install openjdk-11-jre
+    sudo apt install openjdk-11-jdk
     ```   
+
+Wenn der Ordner **`jre`** im Programmverzeichnis nicht enthalten ist, wird beim Programmstart automatisch das im Betriebssystem installierte OpenJDK verwendet.

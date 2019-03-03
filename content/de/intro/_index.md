@@ -2,7 +2,7 @@
 
 title: Einführung
 linktitle: Einführung
-description: Einführungen zum OpenEstate-ImmoTool…
+description: Erste Schritte mit OpenEstate-ImmoTool & OpenEstate-ImmoServer…
 weight: 10
 
 menu:

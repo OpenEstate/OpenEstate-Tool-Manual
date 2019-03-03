@@ -2,7 +2,7 @@
 
 title: Verzeichnisse des ImmoTools
 linktitle: Verzeichnisse
-description: Wo OpenEstate-ImmoTool seine Daten speichert…
+description: Welche Verzeichnisse von OpenEstate-ImmoTool verwendet werden…
 weight: 20
 
 menu:

@@ -83,14 +83,14 @@ Ebenso wird automatisch eine tägliche Datensicherung eingerichtet, die jedoch n
 
 #### Installation unter Linux {#intro_install_server_setup_linux}
 
-Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdatei herunterladen. 
+Wenn Sie keine Debian-basierte Linux-Distribution nutzen oder das Repository nicht einbinden wollen, können Sie alternativ die **TAR.GZ**-Installationsdateien herunterladen. Achten Sie darauf die richtige Installationsdatei für die verwendete Prozessor-Architektur zu verwenden (meist wird **x86-64** verwendet).
 
 Nachdem Sie diese Datei auf Ihrem Rechner entpackt haben finden Sie einen Ordner namens **`OpenEstate-ImmoServer`**. Verschieben Sie diesen Ordner an eine Stelle Ihrer Wahl (z.B. ins Benutzerverzeichnis oder nach **`/opt/OpenEstate-ImmoServer`**).
 
 
 ### ImmoTool-Server starten {#intro_install_server_server_startup}
 
-Für die erste Einrichtung bietet es sich an den ImmoTool-Server von Hand zu starten. 
+Für die erste Einrichtung bietet es sich an den ImmoTool-Server von Hand zu starten.
 
 Erst wenn das Programm soweit erfolgreich eingerichtet wurde und von den Arbeitsplätzen erfolgreich auf den ImmoTool-Server zugegriffen werden kann, empfiehlt sich im nächsten Schritt die Einrichtung eines Dienstes, sodass der ImmoTool-Server automatisch beim Hochfahren des Rechners gestartet wird (siehe ["ImmoTool-Server als Dienst einrichten"]({{< relref "../admin/server/service.md#admin_server_service" >}})). 
 

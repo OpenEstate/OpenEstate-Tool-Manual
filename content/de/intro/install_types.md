@@ -17,9 +17,7 @@ menu:
 Das ImmoTool kann auf zweierlei Arten betrieben werden. Bevor Sie das Programm in Betrieb nehmen, sollten Sie sich für eines der beiden Szenarien entscheiden.
 
 {{< tip >}}
-Es ist allgemein jederzeit möglich von einer Einzelplatz-Installation in eine Mehrplatz-Installation umzusteigen (oder anders herum). 
-
-Wenn Sie sich mit dem Programm vertraut machen möchten, empfehlen wir daher erst mal eine **Einzelplatz-Installation** durchzuführen und später ggf. umzusteigen (siehe ["Einzelplatz- in Mehrplatz-Projekt umwandeln"]({{< relref "../admin/migration.md#admin_migration_project_local" >}})). 
+Wenn Sie sich mit dem Programm vertraut machen möchten, empfehlen wir mit einer **Einzelplatz-Installation** zu beginnen und später ggf. umzusteigen (siehe ["Einzelplatz- in Mehrplatz-Projekt umwandeln"]({{< relref "../admin/migration.md#admin_migration_project_local" >}})). 
 {{< /tip >}}  
 
 
@@ -56,7 +54,7 @@ Für eine Einzelplatz-Installation sind folgende Schritte durchzuführen:
 
 Wenn mehrere Mitarbeiter von Ihrem Arbeitsplatz aus mit dem ImmoTool auf einen gemeinsamen Datenbestand arbeiten sollen, ist eine sogenannte **Netzwerk-Installation** nötig. Die gemeinsam genutzte Datenbank muss in diesem Falle in ein separates Programm ausgelagert werden (ImmoTool-Server). 
 
-Schematisch wird dies in folgender Grafik dargestellt (Quelle [Wikipedia](http://de.wikipedia.org/wiki/Client-Server-Modell)):
+Schematisch wird dies in folgender Grafik dargestellt (Quelle [Wikipedia](https://de.wikipedia.org/wiki/Client-Server-Modell)):
 
 {{< figure src="install_types_network.png" caption="Client-/Server-Modell" >}}
 
@@ -68,7 +66,7 @@ Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Arbeitspl
 -   Beliebig viele Mitarbeiter können zeitgleich auf einem gemeinsamen Datenbestand arbeiten.
 -   Jeder Mitarbeiter erhält seinen eigenen Zugang zur Datenbank (eigener Benutzer-Name und eigenes Passwort), mit denen dieser sich bei jedem Programmstart authentifiziert.
 -   Für jeden Mitarbeiter können Zugriffsrechte vergeben werden - sodass z.B. nur bestimmte Funktionen des Programms verwendet werden können.
--   Der ImmoTool-Server kann auch auf einem im Rechenzentrum angemieteten Server betrieben werden - sodass auch Mitarbeiter an verschiedenen Standorten auf den gemeinsamen Datenbestand zugreifen können. Alternativ ist auch ein Zugriff von außen per [Virtual Private Network](http://de.wikipedia.org/wiki/Virtual_Private_Network) realisierbar.
+-   Der ImmoTool-Server kann auch auf einem im Rechenzentrum angemieteten Server betrieben werden - sodass auch Mitarbeiter an verschiedenen Standorten auf den gemeinsamen Datenbestand zugreifen können. Alternativ ist auch ein Zugriff von außen per [Virtual Private Network](https://de.wikipedia.org/wiki/Virtual_Private_Network) realisierbar.
 
 
 #### Nachteile einer Netzwerk-Installation {#intro_install_types_network_cons}
@@ -81,7 +79,7 @@ Der ImmoTool-Server befindet sich im Zentrum des Bildes. Die einzelnen Arbeitspl
 
 Für eine Netzwerk-Installation sind mehrere Schritte nötig, die auf den verschiedenen Rechnern / Arbeitsplätzen durchzuführen sind.
 
-Zu erst muss der ImmoTool-Server auf **einem** Rechner im Firmennetzwerk installiert werden:
+Zuerst muss der ImmoTool-Server auf **einem** Rechner im Firmennetzwerk installiert werden:
 
 1.  [ImmoTool & ImmoTool-Server herunterladen.]({{< relref "download.md#intro_download" >}})
 2.  [ImmoTool auf dem Server-Rechner installieren.]({{< relref "install_client.md#intro_install_client_setup" >}})

@@ -53,7 +53,7 @@ Im Protokoll-Verzeichnis speichert der ImmoTool-Server verschiedene Protokolle m
 
 -   Wenn unter Debian, Ubuntu, Linux Mint & Co. das [**Debian**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (bzw. Debian-Repository) zur Installation verwendet wurde, wird das Verzeichnis **`/var/log/OpenEstate-ImmoServer`** als Protokoll-Verzeichnis verwendet.
 
--   Bei allen anderen Installationen (Windows, macOS, Linux via [**TAR.GZ**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) wird im persönlichen Benutzer-Verzeichnis des ausführenden Benutzers im Ordner **`OpenEstate-ImmoServer`** ein Unterordner **`log`** erzeugt und als Protokoll-Verzeichnis verwendet.
+-   Bei allen anderen Installationen (Windows, macOS, Linux via [**TAR.GZ**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) wird der Unterordner **`log`** im [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) des ausführenden Benutzers verwendet.
 
 
 ### Konfigurations-Verzeichnis des ImmoTool-Servers {#admin_server_directories_etc}
@@ -62,7 +62,7 @@ Aus dem Konfigurations-Verzeichnis lädt der ImmoTool-Server seine Konfiguration
 
 -   Unter Windows wird der Unterordner **`etc`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) als Konfigurations-Verzeichnis verwendet.
 
--   Unter macOS wird beim ersten Programmstart im persönlichen Benutzer-Verzeichnis des ausführenden Benutzers im Ordner **`OpenEstate-ImmoServer`** ein Unterordner **`etc`** erzeugt. Die Konfigurations-Dateien werden in diesen Ordner kopiert. 
+-   Unter macOS wird beim ersten Programmstart im [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) des ausführenden Benutzers ein Unterordner **`etc`** erzeugt. Die Konfigurations-Dateien werden in diesen Ordner kopiert. 
 
 -   Wenn unter Debian, Ubuntu, Linux Mint & Co. das [**Debian**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (bzw. Debian-Repository) zur Installation verwendet wurde, wird das Verzeichnis **`/etc/OpenEstate-ImmoServer`** als Konfigurations-Verzeichnis verwendet.
 
@@ -82,7 +82,7 @@ Der Betriebssystem-Benutzer, welcher den ImmoTool-Server startet, muss Schreibre
 {{< /info >}}
 
 
-#### Verzeichnisse unter Linux und macOS konfigurieren {#admin_server_directories_setup_unix}
+#### Verzeichnisse unter Linux & macOS konfigurieren {#admin_server_directories_setup_unix}
 
 Unter Linux und macOS kann eine Datei **`/etc/default/OpenEstate-ImmoServer`** mit folgendem Inhalt angelegt werden:
 

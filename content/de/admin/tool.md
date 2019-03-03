@@ -29,7 +29,7 @@ Mit Installation des ImmoTools steht Ihnen auch das AdminTool zur Verfügung (si
 
 #### AdminTool unter Windows starten {#admin_tool_startup_windows}
 
-Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"**, der eine Verknüpfung zum Start des AdminTools enthält.
+Im Startmenü finden Sie einen Ordner namens **"OpenEstate-ImmoTool"**, der eine Verknüpfung zum Start des AdminTools enthält.
 
 Darüber hinaus können Sie das Programm auch über die Datei **`AdminTool.exe`** (bzw. **`AdminTool.bat`**) im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "client/directories.md#admin_client_directories_application" >}}) starten.
 
@@ -90,7 +90,7 @@ Folgende Einstellungen können vorgenommen werden:
      Hier sollte die Option **"HSQL.remote"** gewählt werden.
 
 -   **Protokoll:** \
-     Im Normalfall muss hier **"hsql"** gewählt werden. Wenn eine Verschlüsselung auf dem Server eingerichtet wurde, muss hier **"hsqls"** gewählt werden.
+     Im Normalfall muss hier **"hsql"** gewählt werden. Wenn eine Verschlüsselung auf dem Server eingerichtet wurde, muss hier **"hsqls"** gewählt werden (siehe ["SSL-Verschlüsselung einrichten"]({{< relref "server/setup.md#admin_server_setup_ssl" >}})).
 
 -   **Hostname:** \
      Hier muss die IP-Adresse oder der Hostname des Rechners eingetragen werden, auf dem der ImmoTool-Server betrieben wird. Wenn das AdminTool vom gleichen Rechner gestartet wurde auf dem sich auch der ImmoTool-Server befindet, kann der Hostname **"localhost"** unverändert bleiben.
@@ -217,7 +217,7 @@ Wenn ein Benutzerkonto zur Bearbeitung ausgewählt wurde, werden dessen Eckdaten
     Mit diesem Namen meldet sich der Benutzer an der Datenbank an. Der gewählte Name darf innerhalb eines Projekts nicht doppelt vergeben werden.
 
 -   **Passwort des Benutzers:** \
-    Mit diesem Passwort meldet sich der Benutzer beim Start des ImmoTools auf der Datenbank an. Aktivieren Sie die Check-Box **"ändern"** um nachträglich ein neues Passwort einzutragen.
+    Mit diesem Passwort meldet sich der Benutzer beim Start des ImmoTools auf der Datenbank an. Aktivieren Sie die Check-Box **"Passwort ändern."** um nachträglich ein neues Passwort einzutragen.
 
 -   **Benutzer ist freigeschaltet:** \
     Mit dieser Option kann dem Benutzer die Berechtigung zur Anmeldung auf der Datenbank erteilt oder entzogen werden. Freigeschaltete Benutzer werden automatisch zum Mitglied der Gruppe **"IMMOTOOL"**.
@@ -308,7 +308,7 @@ Wenn eine Benutzergruppe zur Bearbeitung ausgewählt wurde, werden deren Eckdate
 {{< figure src="tool_groups_general.png" caption="Eckdaten einer Benutzergruppe" >}}
 
 -   **Name der Gruppe:** \
-    Tragen Sie eine Bezeichnung für die Gruppe ein, sodass Sie diese später besser wiedererkennen.
+    Tragen Sie eine Bezeichnung für die Gruppe ein, sodass Sie diese später besser wiedererkennen. Der gewählte Name darf innerhalb eines Projekts nicht doppelt vergeben werden.
 
 -   **Notizen zur Gruppe:** \
     An dieser Stelle können bei Bedarf Anmerkungen und Notizen zu einer Gruppe hinterlegt werden.
@@ -334,7 +334,7 @@ In der Tabelle werden die von den Add-Ons bereitgestellten Berechtigungen darges
 
 ### Inhalte der Datenbank anzeigen {#admin_tool_browser}
 
-Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab **"SQL-Browser"** die rohen Inhalte der Datenbank eingesehen werden (Tabellen, Views & Stored Procedures).
+Nachdem eine Verbindung zur Datenbank hergestellt wurde können im Tab **"SQL-Browser"** die rohen Inhalte der Datenbank eingesehen werden (Tabellen, Views und Stored Procedures).
 
 {{< figure src="tool_browser.png" caption="Inhalte der Datenbank anzeigen" >}}
 

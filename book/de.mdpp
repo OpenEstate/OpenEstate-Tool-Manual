@@ -141,6 +141,5 @@ pandoc-latex-tip:
 
 # Anhänge {#appendix}
 
-!INCLUDE "appendix/glossary.md"
 !INCLUDE "appendix/support.md"
 !INCLUDE "appendix/licenses.md"

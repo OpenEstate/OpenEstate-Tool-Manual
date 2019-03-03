@@ -1,7 +1,7 @@
 ---
 
 title: ImmoTool-Server starten
-linktitle: Server starten
+linktitle: Programmstart
 description: Wie OpenEstate-ImmoServer gestartet werden kann…
 weight: 10
 

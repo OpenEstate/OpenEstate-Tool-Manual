@@ -21,10 +21,10 @@ ImmoTool und ImmoTool-Server können von der [Webseite des OpenEstate-Projekts](
 
 Für beide Programme stehen folgende Pakete im zur Verfügung: 
 
--   Für Windows stehen separate **EXE**-Installationsdateien zur Verfügung (32bit / 64bit).
+-   Für Windows stehen **EXE**-Installationsdateien zur Verfügung (32bit / 64bit).
 -   Für macOS steht eine **DMG**-Installationsdatei zur Verfügung.
--   Für Debian-basierte Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) steht ein **Debian-Paket** zur Verfügung (**DEB**-Installationsdatei).
--   Für andere Linux-Distributionen steht eine **TAR.GZ**-Datei zur Verfügung.
+-   Für Debian-basierte Linux-Distributionen (z.B. **Debian**, **Ubuntu** oder **Linux Mint**) stehen verschiedene **Debian-Pakete** zur Verfügung (**DEB**-Installationsdatei).
+-   Für andere Linux-Distributionen stehen verschiedene **TAR.GZ**-Dateien zur Verfügung.
 
 
 ### Pakete aus Debian-Repository beziehen {#intro_download_debian}

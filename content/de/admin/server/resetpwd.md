@@ -1,7 +1,7 @@
 ---
 
-title: Passwort Datenbank-Benutzers zurücksetzen
-linktitle: Passwort zurücksetzen
+title: Passwörter von Datenbank-Benutzern zurücksetzen
+linktitle: Passwort ändern
 description: Wie das Passwort eines Benutzers in OpenEstate-ImmoServer zurückgesetzt werden kann…
 weight: 60
 
@@ -17,16 +17,16 @@ menu:
 Dieses Kapitel beschreibt verschiedene Vorgehensweisen, wie das Passwort eines Datenbank-Benutzers geändert werden kann. 
 
 
-### Passwort eines regulären Benutzers zurücksetzen {#admin_server_resetpwd_user}
+### Passwort via AdminTool zurücksetzen {#admin_server_resetpwd_admintool}
 
-Falls das Passwort eines regulären Benutzers verloren gegangen ist, kann sich der Administrator über das [AdminTool]({{< relref "../tool.md#admin_tool" >}}) anmelden und in der Benutzer-Verwaltung ein neues Passwort für den betreffenden Benutzer zuweisen (siehe ["Benutzer bearbeiten"]({{< relref "../tool.md#admin_tool_users" >}})).
+Falls das Passwort eines Benutzers verloren gegangen ist, kann sich der Administrator über das [AdminTool]({{< relref "../tool.md#admin_tool" >}}) anmelden und in der Benutzer-Verwaltung ein neues Passwort für den betreffenden Benutzer zuweisen (siehe ["Benutzer bearbeiten"]({{< relref "../tool.md#admin_tool_users" >}})).
 
 {{< info >}}
 So lange das Passwort von mindestens einem Datenbank-Benutzer mit Administrator-Berechtigung bekannt ist, können auf diesem Wege die Passwörter aller Benutzer (auch anderer Administratoren) geändert werden. 
 {{< /info >}}
 
 
-### Passwort des Administrators zurücksetzen {#admin_server_resetpwd_admin}
+### Passwort ohne Administrator-Zugang zurücksetzen {#admin_server_resetpwd_script}
 
 Falls das Passwort keines Datenbank-Administrators mehr bekannt ist, kann das Passwort über folgenden Umweg zurückgesetzt werden.
 

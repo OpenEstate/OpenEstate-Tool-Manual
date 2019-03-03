@@ -102,9 +102,11 @@ password test1234
 
 -   Der Wert hinter **`url`** gibt die Adresse an, über welche eine Verbindung zur Datenbank hergestellt werden kann. 
 
-    -   Da das Manager-Programm in der Regel über den gleichen Rechner ausgeführt wird, auf dem auch der ImmoTool-Server betrieben wird, kann als Adresse **"localhost"** verwendet werden.
-    
-    -   Hinter der Adresse **"localhost"** folgt ein Schrägstrich mit dem Namen der zu verwaltenden Datenbank (wie er als **`server.dbname`** in der Datei **`server.properties`** konfiguriert wurde).
+    -   Da die Manager-Programme in der Regel über den gleichen Rechner ausgeführt wird, auf dem auch der ImmoTool-Server betrieben wird, kann als Adresse **"localhost"** verwendet werden. Sollte der ImmoTool-Server mit SSL-Verschlüsselung betrieben werden, muss der im SSL-Zertifikat verwendete Hostname eingetragen werden.
+
+    -   Hinter der Adresse **"localhost"** folgt ein Doppelpunkt und die für den ImmoTool-Server konfigurierte Port-Nummer. In den meisten Fällen kann der Wert **"9001"** unverändert bleiben.
+
+    -   Hinter der Port-Nummer **"9001"** folgt ein Schrägstrich mit dem Namen der zu verwaltenden Datenbank (wie er als **`server.dbname`** in der Datei **`server.properties`** konfiguriert wurde).
     
     -   Sollte der ImmoTool-Server mit SSL-Verschlüsselung betrieben werden, muss **`hsql://`** durch **`hsqls://`** ersetzt werden.
 
@@ -142,7 +144,7 @@ Die Datei **`manager.conf`** enthält sensible Zugangsdaten. Sie sollten daher d
 
 ### SSL-Verschlüsselung einrichten {#admin_server_setup_ssl}
 
-Wenn sich der ImmoTool-Server außerhalb des lokalen Firmen-Netzwerkes befindet oder Verbindungen über das Internet zulässt, empfiehlt es sich die Kommunikation zwischen ImmoTool & ImmoTool-Server zu verschlüsseln.
+Wenn sich der ImmoTool-Server außerhalb des lokalen Firmen-Netzwerkes befindet oder Verbindungen über das Internet zulässt, empfiehlt es sich die Kommunikation zwischen ImmoTool und ImmoTool-Server zu verschlüsseln.
 
 Es kann auch in anderen Fällen grundsätzlich sinnvoll sein eine Verschlüsselung durchzuführen, da es hierbei zu einem Gewinn an Sicherheit und Integrität bei der Datenübertragung kommt. Jedoch ist damit zu rechen, dass die Kommunikation geringfügig länger als bei einer unverschlüsselten Verbindung dauern wird.
 
@@ -247,21 +249,26 @@ Beim Verbindungsaufbau mit dem AdminTool muss das Protokoll **"hsqls"** gewählt
 
 Die Manager-Programme werden über die Datei **`manager.conf`** im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers konfiguriert.
 
-Bearbeiten Sie diese Datei mit einem Texteditor und ändern Sie die Werte hinter **`url`** für alle konfigurierten Datenbanken. Statt **`hsql://`** muss **`hsqls://`** verwendet werden. Im Beispiel aus Kapitel ["Manager-Programme konfigurieren"]({{< relref "setup.md#admin_server_setup_manager" >}}) wären z.B. folgende Anpassungen vorzunehmen:
+Bearbeiten Sie diese Datei mit einem Texteditor und ändern Sie die Werte hinter **`url`** für alle konfigurierten Datenbanken.
+
+-   Statt **`hsql://`** muss **`hsqls://`** verwendet werden. 
+-   Ebenso muss anstelle von  **`localhost`** der im SSL-Zertifikat gewählte Hostname eingetragen werden.
+
+Im Beispiel aus Kapitel ["Manager-Programme konfigurieren"]({{< relref "setup.md#admin_server_setup_manager" >}}) wären z.B. folgende Anpassungen vorzunehmen:
 
 ```ini
 urlid immotool
-url jdbc:hsqldb:hsqls://localhost:9001/immotool
+url jdbc:hsqldb:hsqls://192.168.178.123:9001/immotool
 username SA
 password test1234
 
 urlid mydb
-url jdbc:hsqldb:hsqls://localhost:9001/mydb
+url jdbc:hsqldb:hsqls://192.168.178.123:9001/mydb
 username SA
 password test2345
 
 urlid anotherdb
-url jdbc:hsqldb:hsqls://localhost:9001/anotherdb
+url jdbc:hsqldb:hsqls://192.168.178.123:9001/anotherdb
 username SA
 password test3456
 ```

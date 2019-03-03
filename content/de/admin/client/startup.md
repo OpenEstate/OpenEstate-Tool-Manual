@@ -1,7 +1,7 @@
 ---
 
 title: ImmoTool starten
-linktitle: ImmoTool starten
+linktitle: Programmstart
 description: Details zum Programmstart von OpenEstate-ImmoTool…
 weight: 10
 
