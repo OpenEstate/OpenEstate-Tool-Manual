@@ -27,6 +27,7 @@ Inhalte einfügen
 Über die Add-On-Verwaltung können Sie Add-Ons installieren / deinstallieren, aktivieren / deaktivieren und aktualisieren. Zur Add-On-Verwaltung gelangen Sie über den Menüpunkt Extras Add-Ons.
 
 {{< figure src="menu_extras.jpg" caption="Add-On Verwaltung im Extras-Menü aufrufen" >}}
+
 {{< figure src="addons_dialog.jpg" caption="Dialog zur Add-On Verwaltung" >}}
 
 
