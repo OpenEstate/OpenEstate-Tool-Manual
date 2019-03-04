@@ -39,6 +39,23 @@ OTHER_MD="$DIR/book/$BOOK_LANG.other.md"
 "$DIR/apps/markdown-pp.sh" "$DIR/book/$BOOK_LANG.mdpp" "$OTHER_MD" "other" "$BOOK_LANG"
 sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$OTHER_MD"
 
+#echo "Creating $BOOK_NAME.$BOOK_LANG.tex…"
+#pandoc \
+#    -F "$DIR/apps/pandoc-latex-admonition.sh" \
+#    -F "$DIR/apps/pandoc-latex-tip.sh" \
+#    -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.tex" \
+#    --template "$DIR/share/latex/eisvogel.tex" \
+#    --top-level-division=chapter \
+#    --number-sections \
+#    -V book \
+#    -V documentclass=book \
+#    -V classoption=twoside \
+#    -V titlepage \
+#    -V caption-justification=centering \
+#    -V linkcolor=firebrick \
+#    -V urlcolor=navy \
+#    "$PDF_MD"
+
 echo "Creating $BOOK_NAME.$BOOK_LANG.pdf…"
 pandoc \
     -F "$DIR/apps/pandoc-latex-admonition.sh" \
