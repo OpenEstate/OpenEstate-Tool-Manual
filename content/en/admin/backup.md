@@ -177,7 +177,7 @@ Provide English screenshots.
 
 While installing a service for ImmoTool-Server on macOS you can enable daily automatic backups (see ["Setup service on macOS"]({{< relref "server/service.md#admin_server_service_mac" >}})).  
 
-If automated backups were enabled while installing the service, a file **`org.openestate.tool.server.backup.plist`** was created in the **`/Library/LaunchDaemons`** directory. This file tells the operating system to start automated execution of **ManagerBackup** once in a day.
+If automated backups were enabled while installing the service, the script creates a file **`org.openestate.tool.server.backup.plist`** in the **`/Library/LaunchDaemons`** directory. This file tells the operating system to automatically execute **ManagerBackup** once in a day.
 
 {{< info >}}
 You are not forced to use the provided mechanism for automated backups. You might also create your own cronjob (or agent for launchd), that executes the **ManagerBackup** application.

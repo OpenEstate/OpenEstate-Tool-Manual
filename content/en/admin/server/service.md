@@ -129,7 +129,7 @@ Figure out the correct naming in the Windows service dialog.
 
 ### Setup service on macOS {#admin_server_service_mac}
 
-On macOS the service is controlled with the [launchd](https://en.wikipedia.org/wiki/Launchd) application, which is part of the operating system. The service is registered by creating a file called **`org.openestate.tool.server.service.plist`** in the **`/Library/LaunchDaemons`** directory.
+On macOS the service is controlled with the [launchd](https://en.wikipedia.org/wiki/Launchd) application, which is part of the operating system. The service is registered by creating a file **`org.openestate.tool.server.service.plist`** in the **`/Library/LaunchDaemons`** directory.
 
 {{< info >}}
 You might modify the created service file by yourself in order to make individual adjustments (see [tutorial for launchd](http://www.launchd.info/)). But in most cases this should not be necessary.
@@ -152,7 +152,7 @@ You can select the following options during the installation of the service:
 
 -   You might enable a timer for daily automatic backups (see ["Automatic backup on macOS"]({{< relref "../backup.md#admin_backup_network_live_mac" >}})). In order to make these backups work properly you also have to configure the manager applications properly (siehe ["Configure manager applications"]({{< relref "setup.md#admin_server_setup_manager" >}})).
 
-If all questions have been answered, the service file **`org.openestate.tool.server.service.plist`** is created in the **`/Library/LaunchDaemons`** directory.
+The service file **`org.openestate.tool.server.service.plist`** is created in the directory **`/Library/LaunchDaemons`** after all questions have been answered.
 
 {{< figure src="service_mac_install_summary.png" caption="Summary after the service was installed on macOS" >}}
 

@@ -38,7 +38,7 @@ The following usage agreement is concluded between the OpenEstate developers (su
 
 (f) The licensor may develop and publish his own extensions for the software (commonly called „Add-Ons“) as long as this license agreement is not undermined thereby.
 
-(g) The licensee may register for free at the OpenEstate website in order to get free technical support for the software by the licensor. The registration form is available at: <https://openestate.org/register>
+(g) The licensee may register for free at the OpenEstate website in order to get free technical support for the software by the licensor.
 
 
 **3. Duties of the licensee**
