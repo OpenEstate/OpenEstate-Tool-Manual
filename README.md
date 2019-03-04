@@ -82,7 +82,7 @@ The generated HTML5 website bundles the following dependencies:
 -   [*Bootstrap*](https://getbootstrap.com/) v4.3.1 ([MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE))
 -   [*jQuery*](https://jquery.com/) v3.3.1 ([MIT](https://jquery.org/license/))
 -   [*SmartMenus*](https://www.smartmenus.org/) v1.1.0 ([MIT](https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT))
--   [*Lunr*](https://lunrjs.com/) v2.3.5 ([MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE))
+-   [*Lunr*](https://lunrjs.com/) v2.3.6 ([MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE))
 -   [*js-url*](https://github.com/websanova/js-url) v2.5.3 ([MIT](https://github.com/websanova/js-url/blob/master/README.md#license))
 -   [*jQuery ScrollSpy Plugin*](https://github.com/softwarespot/jquery-scrollspy) rev `801a603` ([MIT](https://github.com/softwarespot/jquery-scrollspy#jquery-scrollspy))
 -   [*ScrollToFixed*](http://bigspotteddog.github.io/ScrollToFixed/) v1.0.8 ([MIT](https://github.com/bigspotteddog/ScrollToFixed/blob/master/license.txt))
