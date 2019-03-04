@@ -84,3 +84,77 @@ After you have been able to properly start the application in the updated versio
 {{< warning >}}
 If you made custom modifications to the [configuration directory]({{< relref "directories.md#admin_server_directories_etc" >}}), you should backup all files in this directory before installing the update. Afterwards you can copy the modified files back.
 {{< /warning >}}
+
+
+### Important advices for certain versions {#admin_server_update_advices}
+
+This section contains advices about updates to certain application versions.
+
+
+#### Update from version 1.0-beta to 1.x {#admin_server_update_advices_beta}
+
+ImmoTool-Server 1.0.0 introduced some major changes, that should be considered during an update from version 1.0-beta.
+
+
+##### New directories {#admin_server_update_advices_beta_directories}
+
+In contrast to the 1.0-beta version ImmoTool-Server does not save the databases in the application directory anymore. Before the old application directory is removed, you **absolutely should backup the contents of the `var/data` subfolder** from the old application directory.
+
+After the new version of ImmoTool-Server was installed, start the application for the first time and shutdown the application afterwards immediately. This will create the new [data directory]({{< relref "directories.md#admin_server_directories_data" >}}). Open this directory and copy the previously saved contents of the **`var/data`** subfolder into the newly created **`data`** subfolder of the [data directory]({{< relref "directories.md#admin_server_directories_data" >}}).
+
+You should find an already existing **`data`** subfolder. Remove or rename this folder before copying files into it.
+
+Future updates of ImmoTool-Server 1.x do not require these steps and should work flawlessly.
+
+
+##### New mechanism for services {#admin_server_update_advices_beta_services}
+
+Installation of services have been completely reworked with ImmoTool-Server 1.0.0. If you are using a service for the previous version, you should **remove the service from the operating system before starting the update**. In order to remove the service execute the **`ServiceUninstall.bat`** or **`ServiceUninstall.sh`** script in the **`bin`** directory of the old ImmoTool-Server installation.
+
+After the new version of ImmoTool-Server was installed you can reinstall its service (see ["Setup a service for ImmoTool-Server"]({{< relref "service.md#admin_server_service" >}})).
+
+Future updates of ImmoTool-Server 1.x do not require these steps and should work flawlessly. 
+
+
+##### New installation routine for Windows & macOS {#admin_server_update_advices_beta_installer}
+
+A **new installation routine** was implemented for **Windows** and **macOS** systems (EXE and DMG installation packages). The new installation packages are not compatible with the old update procedure. Please make sure, that you **do not overwrite** the previous ImmoTool-Server version while installing the update. Therefore we are recommending the following approach:
+
+-   Find out, in which folder ImmoTool-Server 1.0-beta is currently installed on your hard drive. 
+
+    -   If the application is located on Windows systems at **`C:\Programme\OpenEstate-ImmoServer`**, you should rename this folder - e.g. in **`C:\Programme\OpenEstate-ImmoServer-OLD`**.
+    
+    -   On macOS systems there should not be a problem with the naming of the folder. But nevertheless you should figure out, where the application is located.
+    
+-   On Windows you should remove of the application (from the Desktop or start menu). On macOS you might remove the application from the Dock.
+
+-   Start the installation procedure (see ["Installing ImmoTool-Server"]({{< relref "../../intro/install_server.md#intro_install_server" >}})).
+
+-   If the application was successfully updated and the database was copied (see ["New directories"]({{< relref "update.md#admin_server_update_advices_beta_directories" >}})), you can remove the installation folder of ImmoTool-Server 1.0-beta.
+
+Future updates of ImmoTool-Server 1.x do not require these steps and should work flawlessly. 
+
+
+##### Java can be removed {#admin_server_update_advices_beta_java}
+
+Since version 1.0.0 Java is bundled together with the ImmoTool-Server application. Therefore you can **remove Java from your operating system** as long as you do not need it for other applications.  
+
+-   On Windows you can open the system control panel and open the section for software removal. You should find an entry for **"Oracle Java"**, that can be removed.
+
+-   On macOS you can follow these steps in order to remove **"Oracle Java"**:
+
+    1.  Click on the **"Finder"** icon located in your dock.
+    2.  Click on **"Go"** in the Finder menu.
+    3.  Click on **"Utilities"**.
+    4.  Double-click on the **"Terminal"** icon.
+    5.  In the Terminal window copy and paste the commands below:
+    
+        ```bash
+        sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+        sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
+        sudo rm -fr ~/Library/Application\ Support/Oracle/Java
+        ```
+
+    (quoted from the [official instructions by Oracle](https://www.java.com/en/download/help/mac_uninstall_java.xml))
+
+-   On Linux you might remove **"OpenJDK"** via the package system of your distribution. Or if **"Oracle Java"** was installed, you might remove its installation folder manually.

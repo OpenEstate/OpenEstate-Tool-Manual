@@ -80,3 +80,77 @@ Nachdem das Programm in der neuen Version erfolgreich gestartet werden konnte, k
 {{< warning >}}
 Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) vorgenommen, sichern Sie die betreffende Dateien vor der Aktualisierung. Nach der Aktualisierung können Sie die betreffenden Dateien wieder zurück kopieren.
 {{< /warning >}}
+
+
+### Wichtige Hinweise für bestimmte Versionen {#admin_server_update_advices}
+
+Für den Umstieg auf verschiedene Versionen kann es eventuell besondere Hinweise geben. Diese werden im Folgenden dokumentiert.
+
+
+#### Umstieg von Version 1.0-beta auf 1.x {#admin_server_update_advices_beta}
+
+Mit der Umstellung von ImmoTool-Server 1.0-beta auf Version 1.0.0 gab es einige grundlegende Änderungen, die bei einer Aktualisierung zu beachten sind.
+
+
+##### Neue Verzeichnisse {#admin_server_update_advices_beta_directories}
+
+Im Unterschied zur 1.0-beta Version speichert der ImmoTool-Server die Datenbanken nicht mehr im Programmverzeichnis. Bevor das Programmverzeichnis des alten ImmoTool-Servers gelöscht wird, sollten Sie **unbedingt den Inhalt des Ordners `var/data` sichern**.
+
+Nachdem die neue Version des ImmoTool-Servers installiert wurde, starten Sie das Programm testweise und beenden Sie das Programm sofort wieder. Es wird dadurch das neue [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) erstellt. Öffnen Sie dieses Verzeichnis und kopieren Sie den Inhalt des zuvor gesicherten **`var/data`** Ordners in den neu erstellten Unterordner **`data`** des [Daten-Verzeichnisses]({{< relref "directories.md#admin_server_directories_data" >}}).
+
+Der bereits vorhandene Ordner **`data`** sollte dabei nicht überschrieben sondern vorher gelöscht (oder umbenannt) werden.
+
+Bei zukünftigen Aktualisierungen von ImmoTool-Server 1.x sind diese Schritte nicht mehr nötig.
+
+
+##### Neuer Mechanismus für Dienste {#admin_server_update_advices_beta_services}
+
+Die Einrichtung der Dienste wurde mit ImmoTool-Server 1.0.0 grundlegend überarbeitet. Sollten Sie einen Dienst für den ImmoTool-Server eingerichtet haben, sollten Sie **vor der Aktualisierung den Dienst aus dem Betriebssystem entfernen**. Führen Sie dafür im **`bin`** Verzeichnis des alten ImmoTool-Servers die Datei **`ServiceUninstall.bat`** bzw. **`ServiceUninstall.sh`** aus.
+
+Nachdem die neue Version des ImmoTool-Servers installiert wurde kann der Dienst neu eingerichtet werden (siehe ["ImmoTool-Server als Dienst einrichten"]({{< relref "service.md#admin_server_service" >}})).
+
+Bei zukünftigen Aktualisierungen von ImmoTool-Server 1.x sind diese Schritte nicht mehr nötig.
+
+
+##### Neue Installationsroutine für Windows & macOS {#admin_server_update_advices_beta_installer}
+
+Für **Windows** und **macOS** gibt es eine **neue Installationsroutine** (EXE und DMG Installationspakete). Die neuen Installationspakete sind nicht kompatibel mit der alten Vorgehensweise. Beachten Sie daher, dass Sie die alte Version des ImmoTool-Servers (1.0-beta) bei der Installation **nicht überschreiben**. Wir empfehlen die folgende Vorgehensweise:
+
+-   Prüfen Sie, wo ImmoTool-Server 1.0-beta auf der Festplatte installiert wurde. 
+
+    -   Sollte sich das Programm unter Windows im Ordner **`C:\Programme\OpenEstate-ImmoServer`** befinden, benennen Sie diesen Ordner um - z.B. in **`C:\Programme\OpenEstate-ImmoServer-ALT`**.
+    
+    -   Unter macOS sollte es keine Probleme mit der Benennung geben. Ermitteln Sie hier dennoch den Installationsordner des Programms.
+    
+-   Entfernen Sie unter Windows eventuell erstellte Verknüpfungen (auf dem Desktop oder im Startmenü). Unter macOS können Sie eventuell vorhandene Verknüpfungen aus dem Dock entfernen.
+
+-   Führen Sie eine Neuinstallation durch (siehe ["ImmoTool-Server installieren"]({{< relref "../../intro/install_server.md#intro_install_server" >}})).
+
+-   Wenn das Programm in der neuen Version erfolgreich in Betrieb genommen und die Datenbank übernommen wurde (siehe ["Neue Verzeichnisse"]({{< relref "update.md#admin_server_update_advices_beta_directories" >}})), kann der Installationsordner von ImmoTool-Server 1.0-beta entfernt werden.
+
+Bei zukünftigen Aktualisierungen unter Windows und macOS sind diese Schritte nicht mehr nötig.
+
+
+##### Java kann entfernt werden {#admin_server_update_advices_beta_java}
+
+Im Installationspaket des ImmoTool-Servers ist nun Java enthalten. Wenn Sie auf Ihrem Betriebssystem Java nicht anderweitig benötigen, können Sie nach der erfolgreichen Umstellung auf ImmoTool-Server 1.x **Java im Betriebssystem deinstallieren**.
+
+-   Unter Windows können Sie dafür die Systemsteuerung öffnen und im Bereich zur Deinstallation von Software **"Oracle Java"** entsprechend entfernen.
+
+-   Unter macOS können Sie **"Oracle Java"** wie folgt entfernen:
+
+    1.  Klicken Sie im Dock auf das **"Finder"**-Symbol.
+    2.  Klicken Sie im Suchmenü auf **"Los"**.
+    3.  Klicken Sie auf **"Dienstprogramme"**.
+    4.  Doppelklicken Sie auf das **"Terminal"**-Symbol.
+    5.  Kopieren und fügen Sie die folgenden Befehle im Terminalfenster ein:
+    
+        ```bash
+        sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+        sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
+        sudo rm -fr ~/Library/Application\ Support/Oracle/Java
+        ```
+
+    (zitiert aus der [offiziellen Anleitung von Oracle](https://www.java.com/de/download/help/mac_uninstall_java.xml))
+
+-   Unter Linux können Sie entweder **"OpenJDK"** über das Paketsystem des Betriebssystems entfernen. Oder falls Sie **"Oracle Java"** installiert haben kann der verwendete Installationsordner entfernt werden. 
