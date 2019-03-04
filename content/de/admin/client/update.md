@@ -81,16 +81,16 @@ Nachdem das Programm in der neuen Version erfolgreich gestartet werden konnte, k
 Für den Umstieg auf verschiedene Versionen kann es eventuell besondere Hinweise geben. Diese werden im Folgenden dokumentiert.
 
 
-#### Umstieg von Version 1.0-beta auf 1.x {#admin_client_update_advices_from_beta}
+#### Umstieg von Version 1.0-beta auf 1.x {#admin_client_update_advices_beta}
 
 Mit der Umstellung von ImmoTool 1.0-beta auf Version 1.0.0 gab es einige grundlegende Änderungen, die bei einer Aktualisierung zu beachten sind.
 
 
-##### Neue Installationsroutine für Windows & macOS {#admin_client_update_advices_from_beta_installer}
+##### Neue Installationsroutine für Windows & macOS {#admin_client_update_advices_beta_installer}
 
 Für **Windows** und **macOS** gibt es eine **neue Installationsroutine** (EXE und DMG Installationspakete). Die neuen Installationspakete sind nicht kompatibel mit der alten Vorgehensweise. Beachten Sie daher, dass Sie die alte ImmoTool-Version (1.0-beta) bei der Installation **nicht überschreiben**. Wir empfehlen die folgende Vorgehensweise:
 
--   Prüfen Sie, wo das ImmoTool auf der Festplatte installiert wurde. 
+-   Prüfen Sie, wo das ImmoTool 1.0-beta auf der Festplatte installiert wurde. 
 
     -   Sollte sich das Programm unter Windows im Ordner **`C:\Programme\OpenEstate-ImmoTool`** befinden, benennen Sie diesen Ordner um - z.B. in **`C:\Programme\OpenEstate-ImmoTool-ALT`**.
     
@@ -105,7 +105,7 @@ Für **Windows** und **macOS** gibt es eine **neue Installationsroutine** (EXE u
 Bei zukünftigen Aktualisierungen unter Windows und macOS sind diese Schritte nicht mehr nötig. 
 
 
-##### Java kann entfernt werden {#admin_client_update_advices_from_beta_java}
+##### Java kann entfernt werden {#admin_client_update_advices_beta_java}
 
 Im Installationspaket des ImmoTools ist nun Java enthalten. Wenn Sie auf Ihrem Betriebssystem Java nicht anderweitig benötigen, können Sie nach der erfolgreichen Umstellung auf ImmoTool 1.x **Java im Betriebssystem deinstallieren**.
 
@@ -130,6 +130,6 @@ Im Installationspaket des ImmoTools ist nun Java enthalten. Wenn Sie auf Ihrem B
 -   Unter Linux können Sie entweder **"OpenJDK"** über das Paketsystem des Betriebssystems entfernen. Oder falls Sie **"Oracle Java"** installiert haben kann der verwendete Installationsordner entfernt werden. 
 
 
-#### Umstieg von Version 0.9.x auf 1.x {#admin_client_update_advices_from_0_9}
+#### Umstieg von Version 0.9.x auf 1.x {#admin_client_update_advices_0_9}
 
-Für den Umstieg von ImmoTool 0.9.x auf 1.x gelten die gleichen Hinweise, wie beim [Umstieg von 1.0-beta auf 1.x]({{< relref "update.md#admin_client_update_advices_from_beta" >}}). Hier kann jedoch die Datenbank nicht automatisch übernommen werden. Beachten Sie daher ebenfalls die [Anleitung zur Migration des Projekts in ImmoTool 1.x]({{< relref "../migration.md#admin_migration_legacy" >}}).  
+Für den Umstieg von ImmoTool 0.9.x auf 1.x gelten die gleichen Hinweise, wie beim [Umstieg von 1.0-beta auf 1.x]({{< relref "update.md#admin_client_update_advices_beta" >}}). Hier kann jedoch die Datenbank nicht automatisch übernommen werden. Beachten Sie daher ebenfalls die [Anleitung zur Migration des Projekts in ImmoTool 1.x]({{< relref "../migration.md#admin_migration_legacy" >}}).  

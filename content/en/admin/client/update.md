@@ -85,12 +85,12 @@ After you have been able to properly start the application in the updated versio
 This section contains advices about updates to certain application versions.
 
 
-#### Update from version 1.0-beta to 1.x {#admin_client_update_advices_from_beta}
+#### Update from version 1.0-beta to 1.x {#admin_client_update_advices_beta}
 
 ImmoTool 1.0.0 introduced some major changes, that should be considered during an update from version 1.0-beta.
 
 
-##### New installation routine for Windows & macOS {#admin_client_update_advices_from_beta_installer}
+##### New installation routine for Windows & macOS {#admin_client_update_advices_beta_installer}
 
 A **new installation routine** was implemented for **Windows** and **macOS** systems (EXE and DMG installation packages). The new installation packages are not compatible with the old update procedure. Please make sure, that you **do not overwrite** the previous ImmoTool version while installing the update. Therefore we are recommending the following approach:
 
@@ -109,9 +109,9 @@ A **new installation routine** was implemented for **Windows** and **macOS** sys
 Future updates of ImmoTool 1.x do not require these steps and should work flawlessly. 
 
 
-##### Java can be removed {#admin_client_update_advices_from_beta_java}
+##### Java can be removed {#admin_client_update_advices_beta_java}
 
-Since version 1.0.0 Java is bundled together with the ImmoTool application. Therefore you can **remove Java** from your operating systems as long as you do not need it somewhere else.  
+Since version 1.0.0 Java is bundled together with the ImmoTool application. Therefore you can **remove Java from your operating system** as long as you do not need it for other applications.  
 
 -   On Windows you can open the system control panel and open the section for software removal. You should find an entry for **"Oracle Java"**, that can be removed.
 
@@ -134,6 +134,6 @@ Since version 1.0.0 Java is bundled together with the ImmoTool application. Ther
 -   On Linux you might remove **"OpenJDK"** via the package system of your distribution. Or if **"Oracle Java"** was installed, you might remove its installation folder manually. 
 
 
-#### Update from version 0.9.x to 1.x {#admin_client_update_advices_from_0_9}
+#### Update from version 0.9.x to 1.x {#admin_client_update_advices_0_9}
 
-For a migration from ImmoTool 0.9.x to 1.x the same advices apply as for the [migration from 1.0-beta to 1.x]({{< relref "update.md#admin_client_update_advices_from_beta" >}}). But in this case the project is not migrated automatically. Therefore you also need to follow the [instructions to migrate an old project into ImmoTool 1.x]({{< relref "../migration.md#admin_migration_legacy" >}}).
+For a migration from ImmoTool 0.9.x to 1.x the same advices apply as for the [migration from 1.0-beta to 1.x]({{< relref "update.md#admin_client_update_advices_beta" >}}). But in this case the project is not migrated automatically. Therefore you also need to follow the [instructions to migrate an old project into ImmoTool 1.x]({{< relref "../migration.md#admin_migration_legacy" >}}).
