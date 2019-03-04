@@ -25,7 +25,7 @@ The application directory contains the installed files necessary to run ImmoTool
 
 -   On macOS systems it depends, where the application bundle was copied to during the installation. By default the application bundle should be located at **`/Applications/OpenEstate-ImmoTool.app`**. The application directory itself is located inside the application bundle in the **`Contents/Resources`** subfolder.
 
--   If the [**Debian** package]({{< relref "../../intro/install_client.md#intro_install_client_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint & Co. for installation, the application is located at **`/opt/OpenEstate-ImmoTool`**.
+-   If the [**Debian** package]({{< relref "../../intro/install_client.md#intro_install_client_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the application is located at **`/opt/OpenEstate-ImmoTool`**.
 
 -   If the [**TAR.GZ** package]({{< relref "../../intro/install_client.md#intro_install_client_setup_linux" >}}) was used on Linux for installation, it depends where the extracted folder was moved to.
 

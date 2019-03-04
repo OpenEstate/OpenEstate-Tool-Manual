@@ -40,7 +40,7 @@ Click with your mouse on the application symbol of **"OpenEstate-ImmoTool"** and
 Alternatively you can drop the application symbol somewhere else - e.g. on your desktop or any other location on your hard drive.
 
 
-#### Installation on Debian, Ubuntu & Co. {#intro_install_client_setup_debian}
+#### Installation on Debian, Ubuntu or similar {#intro_install_client_setup_debian}
 
 For Debian based Linux distributions (e.g. **Debian**, **Ubuntu** or **Linux Mint**) there are different **Debian packages** it is recommended to use the Debian repository (see ["Obtain packages from the Debian repository"]({{< relref "download.md#intro_download_debian" >}})). After the repository was registered in the operating system you may install the **Debian package** with the following commands:
 
@@ -62,7 +62,7 @@ In case you do not like or want to use the repository, you may *alternatively* d
 sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
 ```
 
-Replace **`x.y.z`** with the version number of the downloaded file.
+(Replace **`x.y.z`** with the version number of the downloaded file.)
 
 {{< info >}}
 The Debian package installs the application into the **`/opt/OpenEstate-ImmoTool`** directory.

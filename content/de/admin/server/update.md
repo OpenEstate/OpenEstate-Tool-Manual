@@ -60,7 +60,7 @@ Wenn Sie das Debian-Repository **nicht** nutzen aber das [**Debian**-Paket]({{< 
 sudo dpkg -i openestate-immoserver_x.y.z_amd64.deb
 ```
 
-Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.
+(Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.)
 
 {{< warning >}}
 Sollten Sie Anpassungen im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) vorgenommen, sichern Sie die betreffende Dateien vor der Aktualisierung. Nach der Aktualisierung können Sie die betreffenden Dateien wieder zurück kopieren.

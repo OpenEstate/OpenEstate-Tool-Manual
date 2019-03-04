@@ -62,7 +62,7 @@ Wenn Sie das Debian-Repository **nicht** nutzen aber das [**Debian**-Paket]({{< 
 sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
 ```
 
-Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.
+(Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.)
 
 
 ### Aktualisierung unter Linux {#admin_client_update_linux}

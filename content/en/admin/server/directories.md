@@ -25,7 +25,7 @@ The application directory contains the installed files necessary to run ImmoTool
 
 -   On macOS systems it depends, where the application bundle was copied to during the installation. By default the application bundle should be located at **`/Applications/OpenEstate-ImmoServer.app`**. The application directory itself is located inside the application bundle in the **`Contents/Resources`** subfolder.
 
--   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint & Co. for installation, the application directory is located at **`/opt/OpenEstate-ImmoServer`**.
+-   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the application directory is located at **`/opt/OpenEstate-ImmoServer`**.
 
 -   If the [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}}) was used on Linux for installation, it depends where the extracted folder was moved to.
 
@@ -42,7 +42,7 @@ It is recommended to make sure, that regular users of the operating system only 
 
 All data, that is created and written by ImmoTool-Server, is stored in the data directory (e.g. databases, backups, log files).
 
--   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint & Co. for installation, the data directory is located at **`/var/lib/OpenEstate-ImmoServer`**.
+-   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the data directory is located at **`/var/lib/OpenEstate-ImmoServer`**.
 
 -   For all other types of installation (Windows, macOS, Linux via [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) the data directory is located at the subfolder **`OpenEstate-ImmoServer`** of the home directory by the user, who executed the application.
 
@@ -51,7 +51,7 @@ All data, that is created and written by ImmoTool-Server, is stored in the data 
 
 The protocol directory contains log files with messages created during the execution of ImmoTool-Server.
 
--   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint & Co. for installation, the protocol directory is located at **`/var/log/OpenEstate-ImmoServer`**.
+-   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the protocol directory is located at **`/var/log/OpenEstate-ImmoServer`**.
 
 -   For all other types of installation (Windows, macOS, Linux via [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) the protocol directory is located in the subfolder **`log`** of the [data directory]({{< relref "directories.md#admin_server_directories_data" >}}).
 
@@ -64,7 +64,7 @@ ImmoTool-Server uses the configuration directory to load its configurations.
 
 -   On macOS systems the application creates an **`etc`** subfolder in the [data directory]({{< relref "directories.md#admin_server_directories_data" >}}) of the executing user on the first startup. The program copies its default configuration files into this folder.
 
--   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint & Co. for installation, the configuration directory is located at **`/etc/OpenEstate-ImmoServer`**.
+-   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the configuration directory is located at **`/etc/OpenEstate-ImmoServer`**.
 
 -   If the [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}}) was used for installation on Linux, the **`etc`** subfolder of the [application directory]({{< relref "directories.md#admin_server_directories_application" >}}) is used as configuration directory.
 

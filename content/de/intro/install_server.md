@@ -68,7 +68,7 @@ Sollten Sie das Repository nicht nutzen wollen, können Sie *alternativ* das **D
 sudo dpkg -i openestate-immoserver_x.y.z_amd64.deb
 ```
 
-Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.
+(Wobei **`x.y.z`** durch die jeweilige Versions-Nummer zu ersetzen ist.)
 
 {{< info >}}
 Bei der Installation des Debian-Pakets wird das Programm im Verzeichnis **`/opt/OpenEstate-ImmoServer`** installiert.

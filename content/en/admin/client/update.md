@@ -51,7 +51,7 @@ Provide an English screenshot.
 Answer this question in the dialog window by clicking on **"Replace"**.
 
 
-### Update on Debian, Ubuntu & Co. {#admin_client_update_debian}
+### Update on Debian, Ubuntu or similar {#admin_client_update_debian}
 
 If the Debian repository was configured in your operating system (see ["Obtain packages from the Debian repository"]({{< relref "../../intro/download.md#intro_download_debian" >}})), you do **not** have to download the updated version from the OpenEstate website. Instead you can execute the following commands:
 
@@ -66,7 +66,7 @@ If you do **not** use the Debian repository but installed the program from the [
 sudo dpkg -i openestate-immotool_x.y.z_amd64.deb
 ```
 
-Replace **`x.y.z`** with the version number of the downloaded file.
+(Replace **`x.y.z`** with the version number of the downloaded file.)
 
 
 ### Update on Linux {#admin_client_update_linux}
