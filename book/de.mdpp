@@ -4,7 +4,7 @@ date: ${date}
 lang: de-DE
 links-as-notes: 1
 toc: 1
-toc-depth: 2
+toc-depth: 1
 author:
 - OpenEstate.org
 pandoc-latex-admonition:
