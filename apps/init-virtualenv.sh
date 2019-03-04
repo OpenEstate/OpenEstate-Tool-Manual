@@ -25,5 +25,5 @@ rm -Rf "$DIR/virtualenv"
 virtualenv -p "$PYTHON3" "$DIR/virtualenv"
 
 source "$DIR/virtualenv/bin/activate"
-pip install MarkdownPP pandoc-latex-admonition pandoc-latex-tip
+pip install MarkdownPP pandoc-latex-admonition pandoc-latex-tip pillow
 deactivate

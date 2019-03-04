@@ -20,6 +20,7 @@
 import os
 import re
 import sys
+from PIL import Image
 
 
 # noinspection SpellCheckingInspection
@@ -59,17 +60,58 @@ def cprint_white(msg, bold=False):
     cprint(msg, '\033[97m', bold)
 
 
+# Check image files.
+def check_images(image_files):
+    counter = 0
+    for image_file in image_files:
+        counter = counter + check_images_file(image_file)
+
+    return counter
+
+
+# Check image file.
+def check_images_file(image_file):
+    counter = 0
+    errors = []
+    try:
+        image = Image.open(image_file)
+        if 'dpi' not in image.info:
+            errors.append('can\'t extract resolution')
+        else:
+            dpi = image.info['dpi']
+            if dpi[0] <= 143 or dpi[0] >= 145 or dpi[1] <= 143 or dpi[1] >= 145:
+                errors.append('invalid resolution (%s x %s)' % (dpi[0], dpi[1]))
+
+    except IOError as e:
+        counter = counter + 1
+        errors.append('image not readable (%s)' % e)
+
+    # show errors for the current image
+    if len(errors) > 0:
+        print()
+        cprint_green('-' * 70, True)
+        cprint_green(' Invalid image at %s' % image_file, True)
+        cprint_green('-' * 70, True)
+
+        for error in errors:
+            print()
+            cprint_green(error)
+            counter = counter + 1
+
+    return counter
+
+
 # Check headlines in markdown files.
-def check_headlines(markdown_files):
+def check_markdown_headlines(markdown_files):
     counter = 0
     for markdown_file in markdown_files:
-        counter = counter + check_headlines_file(markdown_file)
+        counter = counter + check_markdown_headlines_file(markdown_file)
 
     return counter
 
 
 # Check headlines in a markdown file.
-def check_headlines_file(markdown_file):
+def check_markdown_headlines_file(markdown_file):
     with open(markdown_file, 'r') as md:
         data = md.read()
 
@@ -108,16 +150,16 @@ def check_headlines_file(markdown_file):
 
 
 # Check images in markdown files.
-def check_images(markdown_files):
+def check_markdown_images(markdown_files):
     counter = 0
     for markdown_file in markdown_files:
-        counter = counter + check_images_file(markdown_file)
+        counter = counter + check_markdown_images_file(markdown_file)
 
     return counter
 
 
 # Check images in a markdown file.
-def check_images_file(markdown_file):
+def check_markdown_images_file(markdown_file):
     with open(markdown_file, 'r') as md:
         data = md.read()
 
@@ -174,16 +216,16 @@ def check_images_file(markdown_file):
 
 
 # Check links in markdown files.
-def check_links(markdown_files):
+def check_markdown_links(markdown_files):
     counter = 0
     for markdown_file in markdown_files:
-        counter = counter + check_links_file(markdown_file)
+        counter = counter + check_markdown_links_file(markdown_file)
 
     return counter
 
 
 # Check links in a markdown file.
-def check_links_file(markdown_file):
+def check_markdown_links_file(markdown_file):
     with open(markdown_file, 'r') as md:
         data = md.read()
 
@@ -226,7 +268,7 @@ def check_links_file(markdown_file):
                     errors.append([group, 'invalid syntax'])
                 else:
                     reference = target[12:-5]
-                    reference_error = check_links_reference(reference, markdown_file)
+                    reference_error = check_markdown_links_reference(reference, markdown_file)
                     if reference_error is not None:
                         errors.append([group, reference_error])
 
@@ -253,7 +295,7 @@ def check_links_file(markdown_file):
 
 
 # Check internal reference link.
-def check_links_reference(reference, src_file):
+def check_markdown_links_reference(reference, src_file):
     # The reference should point to a headline.
     if '#' not in reference:
         return 'headline not specified'
@@ -277,32 +319,42 @@ def check_links_reference(reference, src_file):
 
 # Start application.
 def main(path):
-    # fetch available markdown files
+    # fetch available markdown and image files
     markdown_files = []
+    image_files = []
     for root, dirs, files in os.walk(path):
         for file in files:
-            if not file.endswith('.md'):
-                continue
-            markdown_files.append(os.path.join(root, file))
+            if file.lower().endswith('.md'):
+                markdown_files.append(os.path.join(root, file))
+            elif file.lower().endswith('.jpg') or file.lower().endswith('.png'):
+                image_files.append(os.path.join(root, file))
 
     markdown_files.sort()
+    image_files.sort()
 
     # Check headlines in markdown files.
-    count_headline_errors = check_headlines(markdown_files)
+    count_markdown_headline_errors = check_markdown_headlines(markdown_files)
 
     # Check images in markdown files.
-    count_image_errors = check_images(markdown_files)
+    count_markdown_image_errors = check_markdown_images(markdown_files)
 
     # Check links in markdown files.
-    count_link_errors = check_links(markdown_files)
+    count_markdown_link_errors = check_markdown_links(markdown_files)
+
+    # Check images.
+    count_image_errors = check_images(image_files)
 
     # Print summary.
-    count_total_errors = count_headline_errors + count_image_errors + count_link_errors
+    count_total_errors = count_markdown_headline_errors \
+                         + count_markdown_image_errors \
+                         + count_markdown_link_errors \
+                         + count_image_errors
     print('')
     cprint_white('=' * 70, True)
-    cprint_white(' Found %s errors in headlines.' % count_headline_errors, True)
+    cprint_white(' Found %s errors in markdown headlines.' % count_markdown_headline_errors, True)
+    cprint_white(' Found %s errors in markdown images.' % count_markdown_image_errors, True)
+    cprint_white(' Found %s errors in markdown links.' % count_markdown_link_errors, True)
     cprint_white(' Found %s errors in images.' % count_image_errors, True)
-    cprint_white(' Found %s errors in links.' % count_link_errors, True)
     cprint_white(' Found %s errors in total.' % count_total_errors, True)
     cprint_white('=' * 70, True)
     print('')
