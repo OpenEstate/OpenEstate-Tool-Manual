@@ -19,11 +19,11 @@ Das Immobilien-Add-On stellt die Immobilien-, Schnittstellen-, Suchauftrags- und
 
 Die jeweiligen Funktionalitäten erreichen Sie über die Sidebar oder das Hauptmenü.
 
-{{< figure src="menu.jpg" caption="Menüeintrag der Immobilienverwaltung" >}}
+{{< figure src="menu.png" caption="Menüeintrag der Immobilienverwaltung" >}}
 
-{{< figure src="menu_add.jpg" caption="Untermenü zum Erzeugen neuer Einträge in der Immobilienverwaltung" >}}
+{{< figure src="menu_add.png" caption="Untermenü zum Erzeugen neuer Einträge in der Immobilienverwaltung" >}}
 
-{{< figure src="sidebar.jpg" caption="Ansicht der Immobilienverwaltung" >}}
+{{< figure src="sidebar.png" caption="Ansicht der Immobilienverwaltung" >}}
 
 
 ### Einstellungen {#usage_realestate_addon_settings}

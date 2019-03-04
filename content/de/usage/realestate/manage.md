@@ -21,16 +21,16 @@ Innerhalb eines Projektes können beliebig viele Immobilien verwaltet werden. Di
 
 1.  Klicken Sie im Hauptmenü auf den Eintrag `Immobilien` → `Immobilienansicht öffnen` um die Übersicht der Immobilien zu öffnen.
 
-    {{< figure src="menu.jpg" caption="Übersicht der Immobilien über das Hauptmenü öffnen" >}}
+    {{< figure src="menu.png" caption="Übersicht der Immobilien über das Hauptmenü öffnen" >}}
 
 2.  Öffnen Sie die Immobilien-Ansicht und klicken Sie in der Sidebar auf den Eintrag `Immobilien`.
 
-    {{< figure src="sidebar.jpg" caption="Übersicht der Immobilien über die Sidebar öffnen" >}}
+    {{< figure src="sidebar.png" caption="Übersicht der Immobilien über die Sidebar öffnen" >}}
 
 
 Daraufhin wird eine tabellarische Übersicht der erfassten Immobilien dargestellt:
 
-{{< figure src="realestate_table.jpg" caption="Übersicht der Immobilien" >}}
+{{< figure src="realestate_table.png" caption="Übersicht der Immobilien" >}}
 
 
 #### Filterkriterien verwenden {#usage_realestate_manage_table_filter}
@@ -44,7 +44,7 @@ Unter Adresse können Sie entweder eine Postleitzahl oder einen Ort eintragen.
 
 Markieren Sie in der Tabelle eine oder mehrere Immobilien. Klicken Sie danach auf den Button `Aktionen` oder mit der rechten Maustaste in die Tabelle um das Aktionsmenü darzustellen.
 
-{{< figure src="realestate_table_actions.jpg" caption="Aktionsmenü in der Übersicht der Immobilien" >}}
+{{< figure src="realestate_table_actions.png" caption="Aktionsmenü in der Übersicht der Immobilien" >}}
 
 Folgende Aktionen stehen zur Verfügung:
 
@@ -94,7 +94,7 @@ Alle bereits gespeicherten und aktiven Suchanfragen werden in der Selectbox Such
 
 Um eine neue Suchanfrage zu erzeugen, klicken Sie auf den Button mit der Lupe neben der Selectbox für die Suchanfragen. Es öffnet sich daraufhin ein Dialogfenster zur Erstellung einer Suchanfrage.
 
-{{< figure src="realestate_search.jpg" caption="Immobilienbestand durchsuchen" >}}
+{{< figure src="realestate_search.png" caption="Immobilienbestand durchsuchen" >}}
 
 Folgende Angaben können im Formular hinterlegt werden:
 
@@ -190,7 +190,7 @@ Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gema
 
 Im Tab `Allgemein` werden allgemeinen Eckdaten einer Immobilie zusammengefasst.
 
-{{< figure src="realestate_form.jpg" caption="Immobilienformular mit Eckdaten" >}}
+{{< figure src="realestate_form.png" caption="Immobilienformular mit Eckdaten" >}}
 
 -   **Titel**
     Hinterlegen Sie einen aussagekräftigen und nicht zu langen Titel für diese Immobilie.
@@ -257,25 +257,25 @@ Im Tab `Immobilie` werden spezifische Eigenschaften der Immobilie zusammengefass
 
 1.  Spezifizieren Sie zuerst die Immobilienart so genau wie es ihnen möglich ist - z.B. `Wohnimmobilie` → `Wohnung` → `Erdgeschosswohnung`.
 
-    {{< figure src="realestate_form_type.jpg" caption="Auswahl der Immobilienart" >}}
+    {{< figure src="realestate_form_type.png" caption="Auswahl der Immobilienart" >}}
 
 2.  Wählen Sie danach die passende Vermarktungsart - z.B. `Miete`
 
 3.  Nach der Eingabe dieser Informationen werden weitere Eigenschaften / Attribute zu dieser Auswahl in der unteren Tabelle dargestellt.
 
-    {{< figure src="realestate_form_attributes.jpg" caption="Attribute zur Immobilie erfassen" >}}
+    {{< figure src="realestate_form_attributes.png" caption="Attribute zur Immobilie erfassen" >}}
 
 4.  Tragen Sie die ihnen bekannten Daten in die Tabelle ein. Klicken Sie für die Eingabe auf das jeweilige Feld in der Spalte Wert.
 
     -   Bei Eingaben der Art Länge und Fläche können Sie rechts in diesem Feld mit den Pfeiltasten die Einheit wählen.
 
-        {{< figure src="realestate_form_attributes_unit.jpg" caption="Einheit eines Flächen-Attributs ändern" >}}
+        {{< figure src="realestate_form_attributes_unit.png" caption="Einheit eines Flächen-Attributs ändern" >}}
     
     -   In Feldern zur Eingabe eines Datums muss das Datum im Format `TT.MM.JJJJ` eingetragen werden.
     
     -   Bei Feldern mit mehrfacher Auswahl öffnet sich nach dem Anklicken des Feldes eine Liste, in welcher Sie Angaben wählen und abwählen können.
 
-        {{< figure src="realestate_form_attributes_multiple.jpg" caption="Attribute mit mehreren Optionen" >}}
+        {{< figure src="realestate_form_attributes_multiple.png" caption="Attribute mit mehreren Optionen" >}}
 
     -   Bei Feldern mit einfacher Auswahl wird nur eine Angabe übernommen. Wird ein Zweite aktiviert wird die Erste deaktiviert.
     
@@ -299,7 +299,7 @@ Es können Texte in allen Sprachen eingetragen werden, die in den Sprach-Einstel
 
 #### Energieausweis {#usage_realestate_manage_form_energy}
 
-{{< figure src="realestate_form_energy.jpg" caption="Angaben zum Energieausweis erfassen" >}}
+{{< figure src="realestate_form_energy.png" caption="Angaben zum Energieausweis erfassen" >}}
 
 Wenn ein Energieausweis vorhanden ist aktivieren Sie das entsprechende Feld.
 
@@ -310,7 +310,7 @@ Danach wählen Sie die Art des Ausweises und tragen die Daten in die jeweiligen 
 
 Im Tab `Medien` können beliebig viele Bilder und Dateien zur Immobilie hinterlegt werden.
 
-{{< figure src="realestate_form_images.jpg" caption="Bilder zur Immobilie erfassen" >}}
+{{< figure src="realestate_form_images.png" caption="Bilder zur Immobilie erfassen" >}}
 
 
 ##### Fotos & Dateien hinzufügen {#usage_realestate_manage_form_media_files_add}
@@ -384,7 +384,7 @@ Im Tab `Adressen` können zu der Immobilie beliebig viele Adressen als Kontakte 
 
 Im Tab `Adressen` → `Ansprechpartner` kann der Ansprechpartner (Sie oder ein Mitarbeiter) zur Immobilie hinterlegt werden. Der Ansprechpartner wird beim Export an Immobilienportale bzw. bei Exposé-Darstellungen für die Interessenten veröffentlicht. Sollte keine Ansprechpartner ausgewählt werden, wird statt dessen auf die Firmendaten unter `Extras` → `Anbieterprofil` zurückgegriffen.
 
-{{< figure src="realestate_form_contact.jpg" caption="Kontaktperson zur Immobilie zuweisen" >}}
+{{< figure src="realestate_form_contact.png" caption="Kontaktperson zur Immobilie zuweisen" >}}
 
 
 ##### Einen Ansprechpartner zuweisen  {#usage_realestate_manage_form_contact_select}
@@ -410,7 +410,7 @@ Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei ei
 
 Im Tab `Adressen` → `Vermittlungsauftrag` kann der Eigentümer der Immobilie hinterlegt werden.
 
-{{< figure src="realestate_form_owner.jpg" caption="Eigentümer zur Immobilie zuweisen" >}}
+{{< figure src="realestate_form_owner.png" caption="Eigentümer zur Immobilie zuweisen" >}}
 
 
 ##### Einen Vermittlungsauftrag zuweisen  {#usage_realestate_manage_form_owner_select}
@@ -436,7 +436,7 @@ Beim Speichern der Immobilie werden Änderungen bei einem bestehenden und bei ei
 
 Im Tab `Adressen` → `Suchaufträge` können Interessenten zur der Immobilie hinterlegt werden.
 
-{{< figure src="realestate_form_seeker.jpg" caption="Suchauftrag zur Immobilie zuweisen" >}}
+{{< figure src="realestate_form_seeker.png" caption="Suchauftrag zur Immobilie zuweisen" >}}
 
 {{< info >}}
 Suchaufträge können mit einer Immobilie nur dann verknüpft werden, wenn diese bereits angelegt wurden.
