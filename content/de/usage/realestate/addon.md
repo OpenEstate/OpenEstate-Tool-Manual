@@ -36,7 +36,3 @@ Für das "Immobilien-Add-On" können diverse Einstellungen in den [Programm-Eins
 {{< todo >}}
 Inhalte einfügen
 {{< /todo >}}
-
-{{< todo >}}
-Inhalte aktualisieren
-{{< /todo >}}

@@ -17,9 +17,9 @@ menu:
 
 ### Was sind Projekte? {#usage_general_projects_info}
 
-Im ImmoTool können mehrere Projekte parallel verwaltet werden. Jedes verwaltete Projekt besitzt eine eigenständige Datenbank und wird in separaten Verzeichnissen auf der Festplatte abgespeichert.
+Ein Projekt ist im ImmoTool eine Datenbank. Im ImmoTool können mehrere Projekte parallel verwaltet werden. Jedes verwaltete Projekt besitzt eine eigenständige Datenbank und wird in separaten Verzeichnissen auf der Festplatte abgespeichert.
 
-Abhängig vom Anwendungsfall kann es sinnvoll sein, die Immobilien nach Tätigkeit (Makler und / oder Vermittler) oder nach Kunden in getrennten Projekten zu verwalten. In diesen Fällen können mehrere Projekte parallel, z.B. ein Projekt als Verwalter und eines als Makler, eingerichtet werden.
+Abhängig vom Anwendungsfall kann es sinnvoll sein, die Immobilien nach Tätigkeit (Makler und Verwalter in einer Person) oder nach Kunden in getrennten Projekten zu verwalten. In diesen Fällen können mehrere Projekte parallel, z.B. ein Projekt als Verwalter und eines als Makler, eingerichtet werden.
 
 Mindestens ein Projekt muss angelegt werden, um mit dem Programm arbeiten zu können.
 
@@ -32,10 +32,6 @@ Der Projektassistent hilft Ihnen bei der Erstellung eines neuen Projektes.
 
 Beim ersten Start des Programmes öffnet sich der Projektassistent, und Sie werden aufgefordert ein Projekt anzulegen.
 
-#### Ein neues Projekt erzeugen {#usage_general_projects_wizard_create}
-
-Wenn Sie die Angaben in allen Tabs vorgenommen haben, speichern Sie Ihr Projekt mit dem Button Projekt erzeugen. Das erzeugte Projekt wird daraufhin automatisch geöffnet.
-
 #### Folgende Starts {#usage_general_projects_wizard_startup_later}
 
 Bei folgenden Starts wird das zuletzt verwendete Projekt automatisch geladen.
@@ -47,48 +43,73 @@ Bei folgenden Starts wird das zuletzt verwendete Projekt automatisch geladen.
 #### Projektdaten bearbeiten {#usage_general_projects_create_settings}
 
 -   **Projekt-Name**
-    Tragen Sie hier den Namen Ihres Projektes ein. Verwenden Sie möglichst keine Umlaute oder Sonderzeichen.
+    Tragen Sie hier den Namen Ihres Projektes ein. Verwenden Sie keine Umlaute, Leerzeichen oder Sonderzeichen.
 
--   **Verzeichnis**
+-   **Projekt-Ordner**
     Es ist standardmäßig ein Pfad voreingestellt. Diesen können Sie im Regelfall einfach beibehalten. Bei Bedarf kann ein anderer Pfad gewählt werden, z.B. eine externe Datenquelle in Ihrem System.
 
 -   **Lizenz bestätigen**
     Bitte bestätigen Sie die Nutzungslizenz des ImmoTools, bevor Sie Ihr Projekt erzeugen.
 
-{{< figure src="projects_wizard_general.jpg" caption="Projekt-Assistent / Eigenschaften des Projekts" >}}
+-   **Das Projekt automatisch beim Programmstart öffnen**
+    Markieren sie die Checkbox, wenn Sie dieses Projekt bei jedem Programmstart automatisch öffnen möchten.
+
+{{< figure src="projects_wizard_general.png" caption="Projekt-Assistent / Eigenschaften des Projekts" >}}
 
 
 #### Firmendaten bearbeiten {#usage_general_projects_create_company}
 
-Tragen Sie hier Ihre Firmendaten ein. Die installierten Add-Ons greifen an verschiedenen Stellen auf diese Eingaben zurück. Farblich hinterlegte Felder sind Pflichtangaben.
+Tragen Sie hier Ihre Firmendaten ein. Die installierten Add-Ons greifen an verschiedenen Stellen auf diese Eingaben zurück.
 
-{{< figure src="projects_wizard_company.jpg" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
+{{< figure src="projects_wizard_company.png" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
 
 
 #### Add-Ons auswählen {#usage_general_projects_create_addons}
 
-{{< figure src="projects_wizard_addons.jpg" caption="Projekt-Assistent / Aktivierte Add-Ons" >}}
-
 Hier befindet sich die Übersicht der aktuell verfügbaren Add-Ons. Standardmäßig sind alle bei der Installation verfügbare Add-Ons aktiviert. Deaktivieren Sie die Add-Ons, welche Sie nicht in Ihrem Projekt verwenden möchten.
 
+{{< figure src="projects_wizard_addons.png" caption="Projekt-Assistent / Aktivierte Add-Ons" >}}
+
 {{< info >}}
-Eine nachträgliche Änderung dieser Einstellungen ist jederzeit möglich, siehe Add-Ons / Module.
+Eine nachträgliche Änderung der Auswahl der Add-Ons ist jederzeit möglich, siehe Add-Ons / Module.
 {{< /info >}}
+
+{{< todo >}}
+Link Add-Ons / Module in Info einfügen
+{{< /todo >}}
 
 
 #### Das neue Projekt speichern & öffnen {#usage_general_projects_create_submit}
 
-Speichern Sie das neu angelegte Projekt mit dem Button Projekt erzeugen.
+Wenn Sie die Angaben in allen Tabs vorgenommen haben, speichern Sie Ihr Projekt mit dem Button Projekt erzeugen. Das erzeugte Projekt wird daraufhin automatisch geöffnet.
 
 
-### Ein bereits existierendes Projekt öffnen {#usage_general_projects_open}
+### Ein Projekt öffnen {#usage_general_projects_open}
 
-{{< todo >}}
-Inhalte einfügen
-{{< /todo >}}
+Projekte können Sie entweder über den Projektassitenten oder direkt im Hauptmenü öffnen. Den Projektassisten öffnen Sie im Hauptmenü unter `Programm → Neues Projekt`. Direkt öffnen Sie Projekte im Hauptmenü unter `Programm → Projekt öffnen`. Zuletzt verwendete Projekte öffnen Sie im Hauptmenü unter  `Programm → zuletzt verwendet ...`.
 
 
-### Das zuletzt verwendete Projekt öffnen {#usage_general_projects_recent}
+#### Ein bereits existierendes Projekt öffnen {#usage_general_projects_open_exist}
+
+Über den Projektassistenten.
+
+{{< figure src="projects_wizard_open-project.png" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
+
+Oder direkt im Hauptmenü.
+
+{{< figure src="projects_open-project.png" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
+
+
+#### Das zuletzt verwendete Projekt öffnen {#usage_general_projects_open_recent}
+
+Über den Projektassistenten.
+
+{{< figure src="projects_wizard_open-recent-project.png" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
+
+Oder direkt im Hauptmenü.
+
+{{< figure src="projects_open-recent-project.png" caption="Projekt-Assistent / Firmendaten des Projekts" >}}
+
 
 {{< todo >}}
 Inhalte einfügen
@@ -100,18 +121,12 @@ Inhalte einfügen
 
 #### Wo wird mein Projekt gespeichert? {#usage_general_projects_faq_location}
 
-Der Speicherort des Projektes kann im Projektassistenten gewählt werden (siehe Projektdaten bearbeiten). Wenn nichts anderes eingestellt wurde, wird das Projekt im Unterordner `projects` des Programm-Verzeichnisses abgelegt.
-
-Wenn das Programm z.B. in Windows unter `C:\Programme\OpenEstate-ImmoTool` installiert ist, wird ein Projekt mit dem Namen test standardmäßig im Ordner `C:\Programme\OpenEstate-ImmoTool\projects\test` abgelegt.
+Standardmäßig werden Projekte in das Verzeichnis `OpenEstate-Files` im Benutzerverzeichnis des im Betriebssystem angemeldetetn Benutzer abgelegt. Sie können beim Anlegen eines Projekts ggf. eine beliebige andere Stelle angeben. Darauf sollten Sie aber verzichten, wenn dies nicht zwingend notwendig ist.
 
 
 #### Wie kann ich mein Projekt an eine andere Stelle verschieben? {#usage_general_projects_faq_move}
 
-Verschieben (oder kopieren) Sie das Projektverzeichnis mit dem Betriebssystem (z.B. Windows Explorer) an eine andere Stelle (z.B. auf einen USB-Stick).
+Verschieben oder kopieren Sie das Projektverzeichnis an eine beliebige Stelle, z.B. auf einen USB-Festplatte.
 
-Wenn das alte Projektverzeichnis nicht mehr existiert, sollte das Programm beim nächsten Start einen Fehler feststellen. Die Frage, ob ein neues Projekt erzeugt werden soll, kann mit `Ja` beantwortet werden. Darauf öffnet sich der [Projektassistent](#usage_general_projects_wizard).
-
-Klicken Sie im Projektassistenten unten rechts auf `Projekt öffnen` und wählen Sie das Projekt-Verzeichnis aus (z.B. auf dem USB-Stick). Damit wird das Projekt vom neuen Speicherort im Programm geöffnet.
-
-Beim nächsten Programmstart wird das Projekt dann automatisch vom neuen Speicherort geöffnet.
+Da nach dem verschieben das Projektverzeichnis nicht mehr an seiner alten Stelle existiert, wird das Programm beim nächsten Start eine Fehlermeldung ausgeben. Die Frage, ob ein neues Projekt erzeugt werden soll, beantwortet mit `Ja`. Darauf öffnet sich der [Projektassistent](#usage_general_projects_wizard). Klicken Sie im Projektassistenten auf den Tab `Projekt öffnen` und wählen das Projekt-Verzeichnis an seiner neuen Position aus und klicken auf Projekt öffnen. Dann wird das Projekt vom neuen Speicherort im Programm geöffnet. Beim nächsten Programmstart wird das Projekt automatisch vom neuen Speicherort geöffnet, wenn Sie zuvor bei der Projektwahl im Projektassistent die Checkbox `Das Projekt automatisch beim Programmstart öffnen` aktiviert hatten.
 

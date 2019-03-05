@@ -21,7 +21,7 @@ In regelmäßigen Abständen werden Aktualisierungen für das ImmoTool und die A
 
 Klicken Sie im Hauptmenü auf `Extras` → `Aktualisierung` um die Aktualisierung zu starten.
 
-{{< figure src="menu_extras.jpg" caption="Aktualisierungen im Extras-Menü aufrufen" >}}
+{{< figure src="menu_extras.png" caption="Aktualisierungen im Extras-Menü aufrufen" >}}
 
 Während der Suche nach Updates wird Ihnen ein Dialogfenster angezeigt, welches Sie über den Fortschritt informiert. Wenn Aktualisierungen gefunden wurden, werden Sie gefragt, ob die gefundenen Dateien installiert werden sollen. Wenn Sie auf `Ja` klicken, werden die Aktualisierungen heruntergeladen und installiert.
 
