@@ -27,11 +27,11 @@ Zur Verwaltung der Export-Schnittstelle gelangen Sie auf zweierlei Wegen:
 
 1.  Klicken Sie im Hauptmenü auf `Immobilien` → `Schnittstellen anzeigen`.
 
-    {{< figure src="menu.jpg" caption="Schnittstellen über das Hauptmenü auflisten" >}}
+    {{< figure src="menu.png" caption="Schnittstellen über das Hauptmenü auflisten" >}}
 
 2.  Klicken Sie in der Sidebar auf den Eintrag `Export-Schnittstellen`. Alternativ können Sie auch den Eintrag `Export-Schnittstellen` markieren und mit der rechten Maustaste `Schnittstellen anzeigen` betätigen.
 
-    {{< figure src="sidebar.jpg" caption="Schnittstellen über die Sidebar auflisten" >}}
+    {{< figure src="sidebar.png" caption="Schnittstellen über die Sidebar auflisten" >}}
 
 
 Es öffnet sich daraufhin ein Fenster mit den registrierten Export-Schnittstellen.
