@@ -66,6 +66,31 @@ def check_images(image_files):
     for image_file in image_files:
         counter = counter + check_images_file(image_file)
 
+    # look for duplicates
+    duplicates = []
+    image_names = {}
+    for image_file in image_files:
+        name = os.path.splitext(image_file)[0]
+        if name in image_names:
+            duplicates.append('%s\n%s' % (
+                image_names[name],
+                image_file,
+            ))
+        else:
+            image_names[name] = image_file
+
+    # show errors for duplicated image
+    if len(duplicates) > 0:
+        print()
+        cprint_green('-' * 70, True)
+        cprint_green(' Found %s duplicated images' % len(duplicates), True)
+        cprint_green('-' * 70, True)
+
+        for duplicate in duplicates:
+            print()
+            cprint_green(duplicate)
+            counter = counter + 1
+
     return counter
 
 
