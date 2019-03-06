@@ -27,11 +27,13 @@ Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst du
 
 {{< figure src="settings_general.png" caption="Allgemeine Einstellungen" >}}
 
+
 #### Browser {#usage_general_settings_webbrowser}
 
 Der bevorzugte Web-Browser kann hier eingetragen werden. Im ImmoTool angezeigte URL's werden im hinterlegten Web-Browser geöffnet. Wenn kein Web-Browser eingetragen wurde, versucht das Programm den Standard-Browser des Betriebssystems zu starten.
 
 Um den bevorzugten Webbrowser auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
+
 
 #### PDF-Reader {#usage_general_settings_pdfreader}
 
@@ -39,9 +41,11 @@ Der bevorzugte PDF-Reader kann hier eingetragen werden. Erzeugte PDF-Dokumente k
 
 Um den bevorzugten PDF-Reader auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
 
-#### Darstellung {#usage_general_settings_other}
 
-Hier können Sie die Schriftgröße im Programm einstellen. Vorgenommene Änderungen werden erst nach einem Neustart desProgramms wirksamm.
+#### Darstellung {#usage_general_settings_rendering}
+
+Hier können Sie die Schriftgröße im Programm einstellen. Vorgenommene Änderungen werden erst nach einem Neustart des Programms wirksam.
+
 
 #### Sonstiges {#usage_general_settings_other}
 

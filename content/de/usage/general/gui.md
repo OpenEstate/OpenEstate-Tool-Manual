@@ -100,7 +100,7 @@ Verschiedene Standardfunktionen sind in den Tabellen enthalten.
     Um Änderungen dauerhaft zu speichern klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol und klicken auf `Einstellungen zur Tabelle merken`.
 
 -   **Tabelle exportieren**
-    Um die aktuelle Tabelle als CSV-, Excel oder PDF-Tabelle zu speichern klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol und wählen unter `Tabelle exportieren` das gewünschte Format, wählen iḿ sich öffnenden Fenster den Speicherort und speichern die Datei.
+    Um die aktuelle Tabelle als CSV-, Excel oder PDF-Tabelle zu speichern klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol und wählen unter `Tabelle exportieren` das gewünschte Format, wählen im sich öffnenden Fenster den Speicherort und speichern die Datei.
     
 {{< info >}}
 Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
@@ -111,7 +111,7 @@ Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in alle
 
 Um Eingaben zu tätigen, werden an verschiedenen Stellen im Programm Formulare dargestellt.
 
-{{< figure src="form.png" caption="Farbliche Markierung der Formularfelder" >}}
+{{< figure src="form.png" caption="Farbliche Markierung der Eingabefelder" >}}
 
 {{< todo >}}
 Bild einfügen
@@ -127,4 +127,3 @@ Die folgenden Standardfunktionen werden dabei verwendet.
 
 -   **Gültige Eingaben**
     Gültige Eingaben in einem Pflichtfeld werden grün hervorgehoben.
-
