@@ -4,7 +4,7 @@ Users manual for OpenEstate-ImmoTool
 This repository contains the development files for the *OpenEstate-ImmoTool* users manual in English and German language. These files are used in order to generate the manual in different target formats.
 
 -   A **HTML5 website** is generated with [*Hugo*](https://gohugo.io/).
--   A **PDF** / **ODT** / **DOCX** / **XHTML (single page)** file is generated with [*Pandoc*](https://pandoc.org/).
+-   A **PDF** / **EPUB** / **ODT** / **DOCX** / **XHTML (single page)** file is generated with [*Pandoc*](https://pandoc.org/).
 
 
 Documentation
@@ -44,6 +44,7 @@ apt install \
   texlive-lang-german \
   texlive-lang-english \
   texlive-fonts-recommended \
+  texlive-fonts-extra \
   texlive-latex-recommended \
   texlive-latex-extra
 ```
@@ -78,18 +79,24 @@ Dependencies
 
 The generated HTML5 website bundles the following dependencies:
 
--   [*Bootstrap*](https://getbootstrap.com/) v4.2.1 ([MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE))
+-   [*Bootstrap*](https://getbootstrap.com/) v4.3.1 ([MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE))
 -   [*jQuery*](https://jquery.com/) v3.3.1 ([MIT](https://jquery.org/license/))
 -   [*SmartMenus*](https://www.smartmenus.org/) v1.1.0 ([MIT](https://github.com/vadikom/smartmenus/blob/master/LICENSE-MIT))
--   [*Lunr*](https://lunrjs.com/) v2.3.5 ([MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE))
+-   [*Lunr*](https://lunrjs.com/) v2.3.6 ([MIT](https://github.com/olivernn/lunr.js/blob/master/LICENSE))
 -   [*js-url*](https://github.com/websanova/js-url) v2.5.3 ([MIT](https://github.com/websanova/js-url/blob/master/README.md#license))
 -   [*jQuery ScrollSpy Plugin*](https://github.com/softwarespot/jquery-scrollspy) rev `801a603` ([MIT](https://github.com/softwarespot/jquery-scrollspy#jquery-scrollspy))
 -   [*ScrollToFixed*](http://bigspotteddog.github.io/ScrollToFixed/) v1.0.8 ([MIT](https://github.com/bigspotteddog/ScrollToFixed/blob/master/license.txt))
--   [*Font Awesome Free*](https://fontawesome.com/) v5.6.3 ([Font Awesome Free License](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt))
+-   [*Font Awesome Free*](https://fontawesome.com/) v5.7.2 ([Font Awesome Free License](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt))
 
-The generated users manual in ePub format bundles the following dependencies:
+The users manual in ePub format bundles the following dependencies:
 
 -   [*DejaVu Fonts*](https://dejavu-fonts.github.io/) v2.37 ([Public Domain, Bitstream Vera Fonts Copyright & Arev Fonts Copyright](https://dejavu-fonts.github.io/License.html))
+
+The users manual in PDF format is created with:
+
+-   [*Eisvogel* template](https://github.com/Wandmalfarbe/pandoc-latex-template) v1.1 ([BSD](https://github.com/Wandmalfarbe/pandoc-latex-template/blob/master/LICENSE))
+-   [*pandoc-latex-tip*](https://github.com/chdemko/pandoc-latex-tip) ([BSD](https://github.com/chdemko/pandoc-latex-tip/blob/master/LICENSE))
+-   [*pandoc-latex-admonition*](https://github.com/chdemko/pandoc-latex-admonition) ([BSD](https://github.com/chdemko/pandoc-latex-admonition/blob/master/LICENSE))
 
 
 License

@@ -26,13 +26,13 @@ Die folgenden Bestandteile werden in das Programm integriert, wenn das "Nachrich
 
 Die folgenden Einstellungen werden vom "Nachrichten Add-On" in die [Programm-Einstellungen]({{< relref "../general/settings.md#usage_general_settings" >}}) eingefügt.
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Fragen & Antworten zum Nachrichten Add-On {#usage_news_addon_faq}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

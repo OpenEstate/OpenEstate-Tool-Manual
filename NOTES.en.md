@@ -105,13 +105,13 @@ This is [an example](#my_headline) for an internal link.
 Images should be placed in the same folder as the referencing Markdown file. In this case use the following notation to embed an image file:
 
 ```md
-{{< figure src="image.jpg" caption="subtitle of the image" >}}
+{{< figure src="image.png" caption="subtitle of the image" >}}
 ``` 
 
 In the rare case, that the embedded image is already placed in another folder, you can use a relative path: 
 
 ```md
-{{< figure src="../folder/image.jpg" caption="subtitle of the image" >}}
+{{< figure src="../folder/image.png" caption="subtitle of the image" >}}
 ``` 
 
 
@@ -154,6 +154,43 @@ You might align columns left, centered or right:
 ```
 
 
+## Special text blocks (notes, warnings, tips, to-do)
+
+You can mark one or more paragraphs as **"information"** with the following syntax:
+
+```md
+{{< info >}}
+This section is shown as information message.
+{{< /info >}}
+```
+
+You can mark one or more paragraphs as **"warning"** with the following syntax:
+
+```md
+{{< warning >}}
+This section is shown as warning message.
+{{< /warning >}}
+```
+
+You can mark one or more paragraphs as **"tip"** with the following syntax:
+
+```md
+{{< tip >}}
+This section is shown as tip message.
+{{< /tip >}}
+```
+
+You can mark one or more paragraphs as **"to-do"** with the following syntax:
+
+```md
+{{< todo >}}
+This section is shown as to-do message.
+{{< /todo >}}
+```
+
+You can use any Markdown code within those special text sections (e.g. links, images).
+
+
 # Conventions
 
 In order to have a consistent appearance, we've declared some further conventions.
@@ -166,13 +203,25 @@ The reader can be approached directly with "you". In case you're translating int
 
 ## Images
 
--   Images should always be provided in **JPEG format**.
+-   In most cases images should always be provided in **PNG format**.
 
--   Images should be saved with a compression level between **75% and 95%**. In order to reduce memory consumption a lower compression is preferred - as long as the image is well readable.
+    -   Always use **maximal compression** (level 9).
+    
+    -   Don't save a preview, EXIF data, XMP data und IPTC data into the PNG file. 
+    
+    -   In case the image contains transparency, always include a white background.
+
+-   In case a PNG image consumes relatively much disk space despite of the above conditions, you might also use the **JPEG format**.
+
+    -   Images in JPEG format should be saved with a quality level of **90%**.
+    
+    -   If the JPEG format does not save at least 20% compared to a PNG file, the PNG format should be preferred.
+
+-   Images should be saved with a print resolution of at least 144 pixel per inch (bzw. 144 dpi).
 
 -   Screenshots should be cropped, that only the necessary / documented elements are visible.  
 
--   Screenshots should not contain any window decoration of the operating system. 
+-   If a screenshot is relevant for multiple operating systems, it should not contain the window decoration of the operating system it was taken from. 
 
 
 ## Technical terms

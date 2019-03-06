@@ -17,41 +17,79 @@
 # limitations under the License.
 #
 
-NAME="OpenEstate-ImmoTool-Manual"
-LANG="en"
+BOOK_NAME="OpenEstate-ImmoTool-Manual"
+BOOK_LANG="en"
+DATE_FORMAT="+%Y-%m-%d"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 set -e
-rm -f "$DIR/$LANG.md"
-rm -Rf "$DIR/book/$LANG"
-mkdir "$DIR/book/$LANG"
+rm -f "$DIR/$BOOK_LANG.md"
+rm -Rf "$DIR/book/$BOOK_LANG"
+mkdir "$DIR/book/$BOOK_LANG"
 
-cd "$DIR/content/$LANG"
+cd "$DIR/content/$BOOK_LANG"
 
 echo "Merging Markdown files…"
-"$DIR/apps/markdown-pp.sh" "$DIR/book/$LANG.mdpp" "$DIR/book/$LANG.md"
-sed -i -e "s/\${date}/$(date "+%d.%m.%Y")/g" "$DIR/book/$LANG.md"
-#sed -i -e "s/\${version}/$VERSION/g" "$DIR/book/$LANG.md"
 
-echo "Creating $NAME.$LANG.epub…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.epub" \
-  --epub-embed-font "$DIR/share/fonts/*.ttf" \
-  --css "$DIR/share/epub.css" \
-  "$DIR/book/$LANG.md"
+PDF_MD="$DIR/book/$BOOK_LANG.pdf.md"
+"$DIR/apps/markdown-pp.sh" "$DIR/book/$BOOK_LANG.mdpp" "$PDF_MD" "pdf" "$BOOK_LANG"
+sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$PDF_MD"
 
-echo "Creating $NAME.$LANG.pdf…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.pdf" \
-  "$DIR/book/$LANG.md"
+OTHER_MD="$DIR/book/$BOOK_LANG.other.md"
+"$DIR/apps/markdown-pp.sh" "$DIR/book/$BOOK_LANG.mdpp" "$OTHER_MD" "other" "$BOOK_LANG"
+sed -i -e "s/\${date}/$(date "$DATE_FORMAT")/g" "$OTHER_MD"
 
-echo "Creating $NAME.$LANG.odt…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.odt" \
-  "$DIR/book/$LANG.md"
+#echo "Creating $BOOK_NAME.$BOOK_LANG.tex…"
+#pandoc \
+#    -F "$DIR/apps/pandoc-latex-admonition.sh" \
+#    -F "$DIR/apps/pandoc-latex-tip.sh" \
+#    -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.tex" \
+#    --template "$DIR/share/latex/eisvogel.tex" \
+#    --top-level-division=chapter \
+#    --number-sections \
+#    -V book \
+#    -V documentclass=book \
+#    -V classoption=twoside \
+#    -V titlepage \
+#    -V caption-justification=centering \
+#    -V linkcolor=firebrick \
+#    -V urlcolor=navy \
+#    "$PDF_MD"
 
-echo "Creating $NAME.$LANG.docx…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.docx" \
-  "$DIR/book/$LANG.md"
+echo "Creating $BOOK_NAME.$BOOK_LANG.pdf…"
+pandoc \
+    -F "$DIR/apps/pandoc-latex-admonition.sh" \
+    -F "$DIR/apps/pandoc-latex-tip.sh" \
+    -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.pdf" \
+    --template "$DIR/share/latex/eisvogel.tex" \
+    --top-level-division=chapter \
+    --number-sections \
+    -V book \
+    -V documentclass=book \
+    -V classoption=twoside \
+    -V titlepage \
+    -V caption-justification=centering \
+    -V linkcolor=firebrick \
+    -V urlcolor=navy \
+    "$PDF_MD"
 
-echo "Creating $NAME.$LANG.html…"
-pandoc -o "$DIR/book/$LANG/$NAME.$LANG.html" \
-  --self-contained \
-  "$DIR/book/$LANG.md"
+echo "Creating $BOOK_NAME.$BOOK_LANG.epub…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.epub" \
+    --epub-embed-font "$DIR/share/fonts/*.ttf" \
+    --css "$DIR/share/epub.css" \
+    --number-sections \
+    "$OTHER_MD"
+
+echo "Creating $BOOK_NAME.$BOOK_LANG.odt…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.odt" \
+    "$OTHER_MD"
+
+echo "Creating $BOOK_NAME.$BOOK_LANG.docx…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.docx" \
+    "$OTHER_MD"
+
+echo "Creating $BOOK_NAME.$BOOK_LANG.html…"
+pandoc -o "$DIR/book/$BOOK_LANG/$BOOK_NAME.$BOOK_LANG.html" \
+    --self-contained \
+    --number-sections \
+    "$OTHER_MD"

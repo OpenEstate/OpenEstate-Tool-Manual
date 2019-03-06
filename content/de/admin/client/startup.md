@@ -1,8 +1,8 @@
 ---
 
-title: Programmstart
+title: ImmoTool starten
 linktitle: Programmstart
-description: Administration von OpenEstate-ImmoTool…
+description: Details zum Programmstart von OpenEstate-ImmoTool…
 weight: 10
 
 menu:
@@ -14,56 +14,52 @@ menu:
 
 ## ImmoTool starten {#admin_client_startup}
 
-Die Dateien zum Start des ImmoTools sind im Unterverzeichnis `bin` des Programm-Verzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoTool\bin`.
-
-
 ### ImmoTool unter Windows starten {#admin_client_startup_windows}
 
-Starten Sie das ImmoTool unter **Windows** durch Doppelklick auf die Datei `ImmoTool.exe` oder `ImmoTool.bat` im Unterordner `bin`.
+Bei der Installation unter Windows wird automatisch eine Verknüpfung auf dem Desktop erzeugt, über die das Programm gestartet werden kann. Alternativ finden Sie im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"**, der eine Verknüpfung zum Start des ImmoTools enthält.
 
-> **Hinweis**
->
-> Bei Bedarf können Sie sich eine Verknüpfung zur `ImmoTool.exe` / `ImmoTool.bat` auf dem Desktop oder ins Startmenü hinterlegen, um das Programm später schnell und unkompliziert starten zu können (siehe [Anleitung bei Microsoft](http://windows.microsoft.com/de-de/windows/create-delete-shortcut#1TC=windows-7)).
+Darüber hinaus können Sie das Programm auch über die Datei **`ImmoTool.exe`** (bzw. **`ImmoTool.bat`**) im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_client_directories_application" >}}) starten.
 
 
-### ImmoTool unter Mac OS X starten {#admin_client_startup_mac}
+### ImmoTool unter macOS starten {#admin_client_startup_mac}
 
-Starten Sie das ImmoTool unter **Mac OS X** durch Doppelklick auf das ImmoTool-Symbol.
+Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"OpenEstate-ImmoTool"** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool bereitgestellten Programmen.
 
-{{< figure src="startup_mac.jpg" caption="Programmverzeichnis mit dem ImmoTool-Starter" >}}
+{{< figure src="startup_mac_folder.png" caption="Starter für ImmoTool im Finder" >}}
 
-> **Hinweis**
->
-> Bei Bedarf können Sie das ImmoTool-Symbol ins Dock integrieren, um das Programm später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](http://support.apple.com/kb/HT2474?viewlocale=de_DE)).
+Wenn Sie in diesem Fenster auf das Programmsymbol **"ImmoTool"** klicken, wird das Programm gestartet.
+
+{{< tip >}}
+Bei Bedarf können Sie das Programmsymbol **"ImmoTool"** ins Dock integrieren, um dieses später schnell und unkompliziert starten zu können (siehe [Anleitung bei Apple](https://support.apple.com/de-de/HT201730)).
+{{< /tip >}}
+
+Um das ImmoTool unter macOS via Terminal zu starten, kann das Skript **`ImmoTool.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_client_directories_application" >}}) verwendet werden.
 
 
-### ImmoTool unter Linux / Unix starten {#admin_client_startup_unix}
+### ImmoTool unter Linux starten {#admin_client_startup_linux}
 
-Starten Sie das ImmoTool unter **Linux**, **Unix** oder **Mac OS X** durch Ausführung der Datei `ImmoTool.sh` im Unterordner `bin`.
+Wenn das ImmoTool mit dem [**Debian**-Paket]({{< relref "../../intro/install_client.md#intro_install_client_setup_debian" >}}) installiert wurde, finden Sie im Startmenü die Einträge für den Start des Programms unter dem Namen **"OpenEstate-ImmoTool"**.
 
-> **Hinweis**
->
-> Bei Bedarf können Sie die `ImmoTool.sh` ins Startmenü hinterlegen, um das Programm später schnell und unkompliziert starten zu können. Die Vorgehensweise hängt jedoch von der eingesetzten Linux-Distribution ab - erfragen Sie dies ggf. bitte beim Anbieter Ihrer Linux-Distribution oder probieren Sie dafür ein allgemeines Programm wie [MenuLibre](http://wiki.ubuntuusers.de/MenuLibre) oder [KMenuEdit](http://wiki.ubuntuusers.de/Men%C3%BCeditor#KDE).
+Wenn das ImmoTool mit dem [**TAR.GZ**-Paket]({{< relref "../../intro/install_client.md#intro_install_client_setup_linux" >}}) installiert wurde, müssen Sie ggf. vorher noch die Datei **`StartMenuAdd.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_client_directories_application" >}}) ausführen um die Einträge im Startmenü zu erzeugen.
+
+Alternativ zum Startmenü kann das Programm über die Datei **`ImmoTool.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_client_directories_application" >}}) gestartet werden.
 
 
 ### Parameter zum Start des ImmoTools {#admin_client_startup_params}
 
-Der Programmstart des ImmoTools via `ImmoTool.exe` / `ImmoTool.bat` / `ImmoTool.sh` kann durch verschiedene Parameter beeinflusst werden.
+Der Programmstart via **`ImmoTool.exe`** / **`ImmoTool.bat`** / **`ImmoTool.sh`** kann durch verschiedene Parameter beeinflusst werden.
 
--   **-help**
+-   **-help** \
     Stellt eine Zusammenfassung aller Parameter auf der Konsole dar und beendet das Programm.
 
--   **-noProject**
+-   **-noProject** \
     Startet das Programm ohne automatisch ein Projekt zu öffnen. Statt dessen wird der [Projektassistent]({{< relref "../../usage/general/projects.md#usage_general_projects_wizard" >}}) dargestellt.
 
--   **-noUpdate**
-    Deaktiviert die Funktion zur automatischen Aktualisierung im Programm.
+-   **-project `<PROJEKT>`** \
+    Das Projekt, welches im Ordner **`<PROJEKT>`** abgelegt ist, wird beim Programmstart automatisch geöffnet.
 
--   **-project `<PROJEKT>`**
-    Das Projekt, welches im Ordner `<PROJEKT>` abgelegt ist, wird beim Programmstart automatisch geöffnet.
+-   **-projectLogin `<BENUTZER>`** \
+    Wenn das unter **`-project`** angegebene Projekt ein Mehrplatz-Projekt ist, meldet sich das ImmoTool beim Programmstart automatisch mit dem Benutzernamen **`<BENUTZER>`** an.
 
--   **-projectLogin `<BENUTZER>`**
-    Wenn das unter `-project` angegebene Projekt ein Mehrplatz-Projekt ist, meldet sich das ImmoTool beim Programmstart automatisch mit dem Benutzernamen `<BENUTZER>` an.
-
--   **-projectPass `<PASSWORT>`**
-    Wenn das unter `-project` angegebene Projekt ein Mehrplatz-Projekt ist, meldet sich das ImmoTool beim Programmstart automatisch mit dem Passwort `<PASSWORT>` an.
+-   **-projectPass `<PASSWORT>`** \
+    Wenn das unter **`-project`** angegebene Projekt ein Mehrplatz-Projekt ist, meldet sich das ImmoTool beim Programmstart automatisch mit dem Passwort **`<PASSWORT>`** an.

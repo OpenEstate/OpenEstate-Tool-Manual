@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # Extract ID's from available contents in PHP format.
 #
@@ -21,42 +22,44 @@ import re
 import sys
 
 
-def parse(filePath, contentDir):
-    basePath = '%s.html' % filePath[len(contentDir) + 1:-3]
-    with open(filePath, 'r') as myfile:
-        data = myfile.read()
-        for line in data.split('\n'):
-            parseLine(line, basePath)
+def parse(md_file, base_path):
+    html_path = '%s.html' % md_file[len(base_path) + 1:-3]
+    with open(md_file, 'r') as md_content:
+        data = md_content.read()
+    for line in data.split('\n'):
+        parse_line(line, html_path)
 
 
-def parseLine(line, basePath):
+def parse_line(line, html_path):
     # print line
-    match = re.search('^#{1,3} (.*) \{#([\w]*)\}$', line)
+    match = re.search('^#{1,3}\s+(.*)\s*\{#([\w]*)\}\s*$', line)
     if match:
-        title = match.group(1)
+        # title = match.group(1)
         key = match.group(2)
-        print '\'%s\' => \'%s\',' % (key, basePath)
+        print('\'%s\' => \'%s\',' % (key, html_path))
 
 
-if len(sys.argv) < 2:
-    print 'No directory was specified as parameter!'
-    sys.exit(1)
+def main(base_path):
+    # print('Searching for markdown files in \'%s\'...' % contentDir)
+    print('<?php')
+    print('return array(')
 
-contentDir = os.path.abspath(sys.argv[1])
-# print 'Searching for markdown files in \'%s\'...' % contentDir
-print '<?php'
-print 'return array('
+    md_files = []
+    for root, dirs, files in os.walk(base_path):
+        for file in files:
+            if file.endswith('.md'):
+                md_files.append(os.path.join(root, file))
 
-paths = []
-for root, dirs, files in os.walk(contentDir):
-    path = root.split(os.sep)
-    # print((len(path) - 1) * '---', os.path.basename(root))
-    for file in files:
-        if not file.endswith('.md'): continue
-        paths.append(os.path.join(root, file))
+    md_files.sort()
+    for md_file in md_files:
+        parse(md_file, base_path)
 
-paths.sort()
-for path in paths:
-    parse(path, contentDir)
+    print(');')
 
-print ');'
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print('No directory was specified as parameter!')
+        sys.exit(1)
+
+    main(os.path.abspath(sys.argv[1]))

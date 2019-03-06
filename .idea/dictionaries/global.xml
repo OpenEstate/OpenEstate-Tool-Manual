@@ -10,23 +10,32 @@
       <w>aktionsmenü</w>
       <w>anbieterprofil</w>
       <w>anwendungsfall</w>
+      <w>anwendungsfälle</w>
+      <w>aufgabenplanung</w>
+      <w>ausfallsicherheit</w>
       <w>außenstehenden</w>
       <w>benutzergruppe</w>
       <w>benutzergruppen</w>
       <w>benutzerkonten</w>
       <w>benutzerkonto</w>
+      <w>benutzername</w>
       <w>benutzernamen</w>
+      <w>benutzerverzeichnis</w>
       <w>bilddatei</w>
       <w>bildformate</w>
       <w>blindkopie</w>
       <w>creativecommons</w>
+      <w>cronjob</w>
       <w>daemonverwaltung</w>
       <w>datenverluste</w>
+      <w>datenverzeichnis</w>
       <w>dekompilierung</w>
       <w>dialogfenster</w>
       <w>dialogfensters</w>
       <w>dienstverwaltung</w>
       <w>disassemblierung</w>
+      <w>drittanbieter</w>
+      <w>drittanbietern</w>
       <w>eckdaten</w>
       <w>eingabebereich</w>
       <w>eingabefelds</w>
@@ -40,6 +49,7 @@
       <w>filterkriterien</w>
       <w>firmendaten</w>
       <w>firmenlogo</w>
+      <w>firmennetzwerk</w>
       <w>fußbereich</w>
       <w>fußbereichs</w>
       <w>garantieausschluss</w>
@@ -77,12 +87,19 @@
       <w>innenansicht</w>
       <w>installationsdatei</w>
       <w>installationsdateien</w>
+      <w>installationspaket</w>
+      <w>installationspakete</w>
+      <w>installationspaketen</w>
+      <w>installationspakets</w>
       <w>installationsschritte</w>
+      <w>installationsvorgang</w>
       <w>internetzugang</w>
       <w>javamail</w>
       <w>kalendereintrag</w>
       <w>kalendereintrags</w>
       <w>kalendereinträge</w>
+      <w>konfigurations</w>
+      <w>konfigurationsverzeichnis</w>
       <w>kontaktdaten</w>
       <w>kopfbereich</w>
       <w>kopfbereichs</w>
@@ -96,6 +113,7 @@
       <w>laufzeitumgebungen</w>
       <w>launchctl</w>
       <w>launchd</w>
+      <w>leserechte</w>
       <w>libre</w>
       <w>licensable</w>
       <w>licensors</w>
@@ -133,6 +151,7 @@
       <w>microsystems</w>
       <w>nachrichtenquelle</w>
       <w>nachrichtenquellen</w>
+      <w>netzlaufwerk</w>
       <w>netzwerkkarte</w>
       <w>notiztext</w>
       <w>nutzungslizenz</w>
@@ -142,6 +161,7 @@
       <w>openestate</w>
       <w>openimmo</w>
       <w>openindex</w>
+      <w>paketliste</w>
       <w>paketsystem</w>
       <w>pdfreaders</w>
       <w>personendaten</w>
@@ -151,6 +171,9 @@
       <w>postausgang</w>
       <w>posteingang</w>
       <w>posteingangs</w>
+      <w>programmordner</w>
+      <w>programmstarts</w>
+      <w>programmsymbol</w>
       <w>programmverzeichnis</w>
       <w>projektassistent</w>
       <w>projektassistenten</w>
@@ -163,11 +186,16 @@
       <w>resetpwd</w>
       <w>schlüsselpaar</w>
       <w>schlüsselpaars</w>
+      <w>schreibrechte</w>
       <w>schriftfarbe</w>
       <w>serverpfad</w>
       <w>sicherheitsabfrage</w>
       <w>sicherheitsbeschränkung</w>
       <w>sicherungsdatei</w>
+      <w>sicherungsdateien</w>
+      <w>sicherungsfunktionen</w>
+      <w>sicherungspunkten</w>
+      <w>sicherungsverzeichnis</w>
       <w>skripte</w>
       <w>smtps</w>
       <w>speicherort</w>
@@ -179,6 +207,7 @@
       <w>sublicensable</w>
       <w>suchanfrage</w>
       <w>suchanfragen</w>
+      <w>suchauftrag</w>
       <w>suchaufträge</w>
       <w>suchaufträgen</w>
       <w>suchbegriff</w>
@@ -213,6 +242,7 @@
       <w>verwaltungs</w>
       <w>vollabgleich</w>
       <w>waivable</w>
+      <w>webspace</w>
       <w>werkzeugleiste</w>
       <w>wipo</w>
       <w>zeilenumbruchs</w>
@@ -220,6 +250,7 @@
       <w>zielordner</w>
       <w>zielverzeichnis</w>
       <w>zugangsdaten</w>
+      <w>übersetzungsarbeit</w>
       <w>übertragungs</w>
     </words>
   </dictionary>

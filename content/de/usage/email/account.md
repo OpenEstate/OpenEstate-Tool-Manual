@@ -21,9 +21,9 @@ Um E-Mails mit dem ImmoTool empfangen und versenden zu können, muss dem Program
 
 Für jede E-Mailadresse, die mit dem ImmoTool genutzt werden soll, können Sie im Programm ein sogenanntes "E-Mailkonto" einrichten. Es können beliebig viele solcher E-Mailkonten im Programm erfasst werden.
 
-> **Hinweis**
->
-> Die technischen Details zur Einrichtung des E-Mailkontos erfahren Sie von Ihrem E-Mailanbieter. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers" >}}).
+{{< info >}}
+Die technischen Details zur Einrichtung des E-Mailkontos erfahren Sie von Ihrem E-Mailanbieter. Die relevanten technischen Details einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers" >}}).
+{{< /info >}}
 
 
 ### E-Mailkonto hinzufügen {#usage_email_accounts_add}
@@ -103,9 +103,9 @@ Um eingehende Nachrichten über das **IMAP**-Protokoll vom E-Mailserver abholen 
     Wählen Sie aus, ob die Kommunikation mit dem IMAP-Mailserver verschlüsselt stattfindet.
 
 
-> **Hinweis**
->
-> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die IMAP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_imap" >}}).
+{{< info >}}
+Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die IMAP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_imap" >}}).
+{{< /info >}}
 
 
 Folgende Port-Nummern werden bei IMAP meist für die verschiedenen Verfahren zur Verschlüsselung verwendet:
@@ -141,9 +141,9 @@ Um eingehende Mails über das **POP3**-Protokoll vom E-Mailserver abholen zu kö
 -   **Krypto**
     Wählen Sie aus, ob die Kommunikation mit dem POP3-Mailserver verschlüsselt stattfindet.
 
-> **Hinweis**
->
-> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die POP3-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_pop3" >}}).
+{{< info >}}
+Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die POP3-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_pop3" >}}).
+{{< /info >}}
 
 Folgende Port-Nummern werden bei POP3 meist für die verschiedenen Verfahren zur Verschlüsselung verwendet:
 
@@ -178,9 +178,9 @@ Um ausgehende Mails über das **SMTP**-Protokoll versenden zu können, öffnen S
 -   **Krypto**
     Wählen Sie aus, ob die Kommunikation mit dem SMTP-Mailserver verschlüsselt stattfindet.
 
-> **Hinweis**
->
-> Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die SMTP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_smtp" >}}).
+{{< info >}}
+Die nötigen Einstellungen erfahren Sie von Ihrem E-Mailanbieter. Die SMTP-Einstellungen einiger E-Mailanbieter finden Sie im Kapitel über [E-Mailanbieter]({{< relref "providers.md#usage_email_providers_smtp" >}}).
+{{< /info >}}
 
 Folgende Port-Nummern werden bei SMTP meist für die verschiedenen Verfahren zur Verschlüsselung verwendet:
 

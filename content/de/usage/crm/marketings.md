@@ -17,20 +17,20 @@ menu:
 
 ### Was sind Marketingmaßnahmen? {#usage_crm_marketings_info}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Übersicht der Marketingmaßnahmen {#usage_crm_marketings_table}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Formular für Marketingmaßnahmen {#usage_crm_marketings_form}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

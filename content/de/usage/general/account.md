@@ -14,6 +14,6 @@ menu:
 
 ## Benutzerkonto bearbeiten {#usage_general_account}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

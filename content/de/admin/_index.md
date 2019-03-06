@@ -1,8 +1,8 @@
 ---
 
-title: Administration
+title: Hinweise zur Administration
 linktitle: Administration
-description: Administration von OpenEstate-ImmoTool…
+description: Hinweise zur Administration von OpenEstate-ImmoTool & OpenEstate-ImmoServer…
 weight: 30
 
 menu:

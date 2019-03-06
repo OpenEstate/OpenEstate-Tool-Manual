@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Extract todo entries from German contents.
+# Extract to-do entries from German contents.
 #
 # Copyright 2009-2019 OpenEstate.org.
 #
@@ -19,5 +19,5 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd "$DIR/content/de"
-git grep -n -A 2 TODO
+cd "$DIR"
+"$DIR/apps/todo.sh" "content/de"

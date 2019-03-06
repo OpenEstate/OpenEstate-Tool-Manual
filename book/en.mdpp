@@ -2,76 +2,90 @@
 title: Manual for OpenEstate-ImmoTool
 date: ${date}
 lang: en-US
-documentclass: book
 links-as-notes: 1
 toc: 1
-toc-depth: 2
+toc-depth: 1
 author:
 - OpenEstate.org
+pandoc-latex-admonition:
+- classes: [info]
+  color: navy
+- classes: [warning]
+  color: firebrick
+- classes: [tip]
+  color: forestgreen
+- classes: [todo]
+  color: dimgray
+pandoc-latex-tip:
+- classes: [info]
+  icons: [info-circle]
+  color: navy
+  size: 20
+  position: left
+- classes: [warning]
+  icons: [exclamation-triangle]
+  color: firebrick
+  size: 20
+  position: left
+- classes: [tip]
+  icons: [lightbulb-o]
+  color: forestgreen
+  size: 20
+  position: left
+- classes: [todo]
+  icons: [ambulance]
+  color: dimgray
+  size: 20
+  position: left
 ---
 
 
 # About this manual {#start}
 
-...
+!INCLUDE "_index.md"
 
 
 # Introduction {#intro}
 
-...
+!INCLUDE "intro/about.md"
+!INCLUDE "intro/requirements.md"
+!INCLUDE "intro/download.md"
+!INCLUDE "intro/install_types.md"
+!INCLUDE "intro/install_client.md"
+!INCLUDE "intro/install_server.md"
+!INCLUDE "intro/java.md"
 
 
 # General usage notes {#usage_general}
 
-...
-
-
-# Real Estate Add-On {#usage_realestate}
-
-...
-
-
-# Addressbook Add-On {#usage_addressbook}
-
-...
-
-
-# Calendar Add-On {#usage_calendar}
-
-...
-
-
-# CRM Add-On {#usage_crm}
-
-...
-
-
-# E-Mail Add-On {#usage_email}
-
-...
-
-
-# News Add-On {#usage_news}
-
-...
+!INCLUDE "usage/_index.md"
 
 
 # Administrate ImmoTool {#admin_client}
 
-...
+!INCLUDE "admin/client/startup.md"
+!INCLUDE "admin/client/directories.md"
+!INCLUDE "admin/client/update.md"
 
 
 # Administrate ImmoTool-Server {#admin_server}
 
-...
+!INCLUDE "admin/server/startup.md"
+!INCLUDE "admin/server/directories.md"
+!INCLUDE "admin/server/setup.md"
+!INCLUDE "admin/server/service.md"
+!INCLUDE "admin/server/update.md"
+!INCLUDE "admin/server/resetpwd.md"
 
 
-# Further notes about administration {#admin_howtos}
+# Further notes about administration {#admin_misc}
 
-...
+!INCLUDE "admin/tool.md"
+!INCLUDE "admin/backup.md"
+!INCLUDE "admin/migration.md"
 
 
 # Appendix {#appendix}
 
-...
-
+!INCLUDE "appendix/support.md"
+!INCLUDE "appendix/licenses.md"

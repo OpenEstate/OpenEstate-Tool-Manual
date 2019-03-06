@@ -14,13 +14,13 @@ menu:
 
 
 ## Die grafische Oberfläche des Programms {#usage_general_gui}
-
+  
 
 ### Das Programm-Fenster {#usage_general_gui_window}
 
 Nachdem ein Projekt erstellt und im ImmoTool geöffnet wurde wird ein Programm-Fenster dargestellt, das ungefähr wie folgt aussieht:
 
-{{< figure src="gui.jpg" caption="Programm-Fenster des ImmoTools" >}}
+{{< figure src="gui.png" caption="Programm-Fenster des ImmoTools" >}}
 
 Das Programm-Fenster besteht aus den folgenden Elementen:
 
@@ -74,14 +74,16 @@ Das Programm-Fenster besteht aus den folgenden Elementen:
 
     Nach einer Zeitspanne von 30 Sekunden wird die Benachrichtigung automatisch ausgeblendet. Es werden die letzten fünf Benachrichtigungen angezeigt. Wenn man die Benachrichtigung explizit schließt (durch Klick auf das *rote X*), werden die fünf zuletzt dargestellten Benachrichtigungen geleert.
 
+{{< todo >}}
+Bereiche beschreiben
+{{< /todo >}}
+
 
 ### Verwendung von Tabellen {#usage_general_gui_tables}
 
 An verschiedenen Stellen werden Tabellen innerhalb des Programmes dargestellt.
 
-> **TODO**
->
-> Bild einfügen
+{{< figure src="table.png" caption="Tabellenansicht einrichten" >}}
 
 Verschiedene Standardfunktionen sind in den Tabellen enthalten.
 
@@ -94,18 +96,26 @@ Verschiedene Standardfunktionen sind in den Tabellen enthalten.
 -   **Spalten ein- & ausblenden**
     Zum Ein- oder Ausblenden einer Spalte klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol um das Menü der Tabelle zu öffnen. Aktivieren oder deaktivieren Sie die entsprechende Spalte durch Klick auf den gewünschten Spalten-Titel.
 
-> **Hinweis**
->
-> Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
+-   **Einstellungen speichern**
+    Um Änderungen dauerhaft zu speichern klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol und klicken auf `Einstellungen zur Tabelle merken`.
+
+-   **Tabelle exportieren**
+    Um die aktuelle Tabelle als CSV-, Excel oder PDF-Tabelle zu speichern klicken Sie rechts von den Spalten-Titeln auf das Tabellen-Symbol und wählen unter `Tabelle exportieren` das gewünschte Format, wählen im sich öffnenden Fenster den Speicherort und speichern die Datei.
+    
+{{< info >}}
+Die beschriebenen Tabellen-Funktionen werden in den meisten - aber nicht in allen Tabellen - unterstützt.
+{{< /info >}}
 
 
 ### Verwendung von Formularen {#usage_general_gui_forms}
 
 Um Eingaben zu tätigen, werden an verschiedenen Stellen im Programm Formulare dargestellt.
 
-> **TODO**
->
-> Bild einfügen
+{{< figure src="form.png" caption="Farbliche Markierung der Eingabefelder" >}}
+
+{{< todo >}}
+Bild einfügen
+{{< /todo >}}
 
 Die folgenden Standardfunktionen werden dabei verwendet.
 
@@ -117,4 +127,3 @@ Die folgenden Standardfunktionen werden dabei verwendet.
 
 -   **Gültige Eingaben**
     Gültige Eingaben in einem Pflichtfeld werden grün hervorgehoben.
-

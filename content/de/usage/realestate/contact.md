@@ -48,9 +48,9 @@ Folgende Aktionen stehen zur Verfügung:
 
     Wählen Sie diese Aktion, um die markierten Ansprechpartner dauerhaft aus der Datenbank zu löschen.
 
-> **Tipp**
->
-> Wenn mehrere Zeilen in der Tabelle markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste), können Aktionen auf mehreren Ansprechpartnern durchgeführt werden.
+{{< info >}}
+Wenn mehrere Zeilen in der Tabelle markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste), können Aktionen auf mehreren Ansprechpartnern durchgeführt werden.
+{{< /info >}}
 
 
 ### Ansprechpartner erstellen {#usage_realestate_contact_add}
@@ -71,9 +71,9 @@ Nehmen Sie die gewünschten Änderungen im [Formular für Ansprechpartner](#usag
 
 Öffnen Sie die [Übersicht der Ansprechpartner](#usage_realestate_contact_table) und suchen Sie den zu löschenden Ansprechpartner in der Tabelle. Klicken Sie mit der rechten Maustaste auf den betreffenden Ansprechpartner und wählen Sie im dargestellten Menü die Aktion `Ansprechpartner löschen`.
 
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Formular für Ansprechpartner {#usage_realestate_contact_form}
@@ -107,11 +107,11 @@ Im Tab `Notizen` kann zu dem Ansprechpartner ein beliebiger Notiztext hinterlegt
 
 Um die Änderungen im Formular für Ansprechpartner dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
 
-> **Hinweis**
->
-> Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< info >}}
+Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< /info >}}
 
-> **Achtung**
->
-> Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< warning >}}
+Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< /warning >}}
 

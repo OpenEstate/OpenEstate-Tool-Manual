@@ -37,13 +37,13 @@ Oberhalb der Tabelle werden verschiedene Eingabefelder dargestellt, um die darge
 
 Markieren Sie in der Tabelle eine oder mehrere Adressen. Klicken Sie danach auf den Button `Aktionen` oder mit der rechten Maustaste in die Tabelle um das Aktionsmenü darzustellen.
 
-> **TODO**
->
-> Screenshot & Inhalte einfügen
+{{< todo >}}
+Screenshot & Inhalte einfügen
+{{< /todo >}}
 
-> **Tipp**
->
-> Wenn mehrere Zeilen in der Tabelle markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste), können Aktionen auf mehreren Adressen durchgeführt werden.
+{{< tip >}}
+Wenn mehrere Zeilen in der Tabelle markiert wurden (z.B. mit gedrückter STRG- / Shift-Taste), können Aktionen auf mehreren Adressen durchgeführt werden.
+{{< /tip >}}
 
 
 ### Adresse erfassen {#usage_addressbook_manage_add}
@@ -64,18 +64,18 @@ Nehmen Sie die gewünschten Änderungen im [Adressformular](#usage_addressbook_m
 
 Öffnen Sie die [Übersicht der Adressen](#usage_addressbook_manage_table) und suchen Sie die zu duplizierende Adresse in der Tabelle. Klicken Sie mit der rechten Maustaste auf die betreffende Adresse und wählen Sie im dargestellten Menü die Aktion `Adresse duplizieren`.
 
-> **Hinweis**
->
-> Die originale Adresse bleibt bei dieser Verfahrensweise unangetastet!
+{{< info >}}
+Die originale Adresse bleibt bei dieser Verfahrensweise unangetastet!
+{{< /info >}}
 
 
 ### Adresse löschen {#usage_addressbook_manage_remove}
 
 Öffnen Sie die [Übersicht der Adressen](#usage_addressbook_manage_table) und suchen Sie die zu löschende Adresse in der Tabelle. Klicken Sie mit der rechten Maustaste auf die betreffende Adresse und wählen Sie im dargestellten Menü die Aktion `Adresse löschen`.
 
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Adressformular {#usage_addressbook_manage_form}
@@ -134,13 +134,13 @@ Im Tab `Notizen` kann zu der Adresse ein beliebiger Notiztext hinterlegt werden.
 
 Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
 
-> **Hinweis**
->
-> Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< info >}}
+Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< /info >}}
 
-> **Achtung**
->
-> Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< warning >}}
+Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< /warning >}}
 
 
 ### Was sind Adressgruppen? {#usage_addressbook_manage_groups_info}
@@ -153,9 +153,9 @@ Die aktuell im Programm erfassten Adressgruppen werden in der Sidebar dargestell
 
 {{< figure src="group_table.jpg" caption="Übersicht der Adressgruppen" >}}
 
-> **TODO**
->
-> Screenshot aktualisieren
+{{< todo >}}
+Screenshot aktualisieren
+{{< /todo >}}
 
 
 ### Adressgruppe erfassen {#usage_addressbook_manage_groups_add}
@@ -176,18 +176,18 @@ Nehmen Sie die gewünschten Einträge im [Formular für Adressgruppen](#usage_ad
 
 Öffnen Sie die Adressbuch-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf die zu löschende Adressgruppe und wählen Sie im Menü die Aktion `Adressgruppe löschen`.
 
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Formular für Adressgruppen {#usage_addressbook_manage_groups_form}
 
 Im Formular für Adressgruppen können die Details zu einer Adressgruppe eingesehen und ggf. bearbeitet werden.
 
-> **TODO**
->
-> Screenshot einfügen
+{{< todo >}}
+Screenshot einfügen
+{{< /todo >}}
 
 
 #### Eckdaten {#usage_addressbook_manage_groups_form_general}

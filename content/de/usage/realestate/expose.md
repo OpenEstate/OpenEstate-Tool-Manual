@@ -19,16 +19,16 @@ Das Programm ermöglicht die Erzeugung von Exposés zu den erfassten Immobiliend
 
 ### Exposé erzeugen {#usage_realestate_exposes_generate}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Exposé-Einstellungen wiederverwenden {#usage_realestate_exposes_settings}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}
 
 
 ### Optionen zum PDF-Langexposé {#usage_realestate_exposes_settings_detailled}
@@ -125,7 +125,6 @@ Die Standard-Vorlage `PDF-Kurzexposé` erzeugt eine PDF-Datei, die auf einer ein
 
 ### Eigene Vorlage für PDF-Exposés erstellen {#usage_realestate_exposes_template_pdf}
 
-> **TODO**
->
-> Inhalte einfügen
-
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

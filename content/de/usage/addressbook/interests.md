@@ -14,6 +14,6 @@ menu:
 
 ## Suchaufträge {#usage_addressbook_interests}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

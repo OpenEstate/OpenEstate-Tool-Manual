@@ -109,13 +109,13 @@ Dies ist [ein Beispiel](#my_headline) für einen internen Link.
 Bilder sollten sich in der Regel im gleichen Ordner wie die Markdown-Datei befinden, welche sie einbindet. In diesem Fall kann ein das Bild durch folgende Syntax eingebunden werden:
 
 ```md
-{{< figure src="image.jpg" caption="Untertitel des Bildes" >}}
+{{< figure src="image.png" caption="Untertitel des Bildes" >}}
 ``` 
 
 Sollte ein Bild aus einem anderen Ordner geladen werden müssen, kann eine relative Verlinkung genutzt werden:
 
 ```md
-{{< figure src="../folder/image.jpg" caption="Untertitel des Bildes" >}}
+{{< figure src="../folder/image.png" caption="Untertitel des Bildes" >}}
 ``` 
 
 
@@ -158,6 +158,43 @@ Spalten können bei Bedarf linksbündig / mittig / rechtsbündig dargestellt wer
 ```
 
 
+## Spezielle Textblöcke (Information, Warnung, Tipp, Zu erledigen)
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Information"** markiert werden:
+
+```md
+{{< info >}}
+Dieser Textblock wird als Information gesondert hervorgehoben.
+{{< /info >}}
+```
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Warnung"** markiert werden:
+
+```md
+{{< warning >}}
+Dieser Textblock wird als Warnung gesondert hervorgehoben.
+{{< /warning >}}
+```
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Tipp"** markiert werden:
+
+```md
+{{< tip >}}
+Dieser Textblock wird als Tipp gesondert hervorgehoben.
+{{< /tip >}}
+```
+
+Einer oder mehrere Absätze können durch folgende Syntax als **"Zu erledigen"** markiert werden:
+
+```md
+{{< todo >}}
+Dieser Textblock wird als zu erledigender Eintrag gesondert hervorgehoben.
+{{< /todo >}}
+```
+
+Innerhalb dieser speziellen Textblöcke kann beliebiger Markdown-Code verwendet werden (z.B. Links, Bilder).
+
+
 # Konventionen
 
 Um ein einheitliches Erscheinungsbild des Handbuchs zu gewährleisten, wurden folgende Konventionen vereinbart.
@@ -170,13 +207,25 @@ Um einen persönlichen Bezug zum Leser des Handbuchs herzustellen, kann der Lese
 
 ## Bilder
 
--   Bilder sollten grundsätzlich im **JPEG-Format** gespeichert werden.
+-   Bilder sollten möglichst im **PNG-Format** gespeichert werden.
 
--   Bilder sollten mit einer Qualitätsstufe von **75% bis 95%** gespeichert werden. Wenn die Lesbarkeit nicht negativ beeinträchtigt wird, sollte eine **möglichst geringe Qualitätsstufe** verwendet werden um den Speicherbedarf zu minimieren.
+    -   Es sollte eine **maximale Kompression** verwendet werden (Stufe 9).
+    
+    -   Die Speicherung der Vorschau, EXIF-Daten, XMP-Daten und IPTC-Daten sollte **deaktiviert** werden. 
+    
+    -   Falls Transparenz im Bild vorhanden ist, sollte ein weißer Hintergrund hinterlegt werden.
+
+-   Nur wenn ein erzeugtes PNG-Bild trotz der genannten Vorgaben unverhältnismäßig groß ist (in der Regel mehr als 100 KB), kann das Bild als **JPEG-Format** gespeichert werden.
+
+    -   Bilder im JPEG-Format sollten mit einer Qualitätsstufe von **90%** gespeichert werden.
+    
+    -   Wenn die Speicherung im JPEG-Format weniger als 20% Speicherplatz gegenüber dem PNG-Format einspart, ist das PNG-Format zu bevorzugen.
+
+-   Bilder sollten mindestens mit einer Druck-Auflösung von 144 Pixel pro Inch (bzw. 144 dpi) gespeichert werden.
 
 -   Bei Screenshots sollte ein möglichst passender Bildausschnitt gewählt werden, sodass nur dir relevanten (zu dokumentierenden) Elemente sichtbar sind.
 
--   Bei Screenshots sollten keine Fenster-Dekorationen enthalten sein. 
+-   Wenn ein Screenshot für verschiedene Betriebssysteme relevant ist, sollten darin grundsätzlich keine Fenster-Dekorationen enthalten sein. 
 
 
 ## Fachbegriffe / Englische Bezeichnungen

@@ -19,10 +19,11 @@
 
 set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PYTHON3=$(which python3)
 
 rm -Rf "$DIR/virtualenv"
-virtualenv "$DIR/virtualenv"
+virtualenv -p "$PYTHON3" "$DIR/virtualenv"
 
 source "$DIR/virtualenv/bin/activate"
-pip install MarkdownPP
+pip install MarkdownPP pandoc-latex-admonition pandoc-latex-tip pillow
 deactivate

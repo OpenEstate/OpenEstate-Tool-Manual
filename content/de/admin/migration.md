@@ -3,7 +3,7 @@
 title: Projekt migrieren
 linktitle: Migration
 description: Migration eines Projekts von OpenEstate-ImmoTool…
-weight: 40
+weight: 50
 
 menu:
   main:
@@ -15,121 +15,131 @@ menu:
 
 ## Einzelplatz- in Mehrplatz-Projekt umwandeln {#admin_migration_project_local}
 
-Im Folgenden wird die Vorgehensweise beschrieben, um ein bestehendes Einzelplatz-Projekt nachträglich auf einen ImmoTool-Server zu migrieren. Die im Einzelplatz-Projekt erfassten Daten können auf diesem Wege für mehrere Benutzer im Netzwerk verfügbar gemacht werden.
+Eine [Einzelplatz-Installation]({{< relref "../intro/install_types.md#intro_install_types_local" >}}) kann bei Bedarf in eine [Netzwerk-Installation]({{< relref "../intro/install_types.md#intro_install_types_network" >}}) umgewandelt werden. Die Datenbank wird dabei aus dem Einzelplatz-Projekt zum ImmoTool-Server kopiert und geringfügig angepasst.
 
-1.  Beenden Sie den ImmoTool-Server, sollte dieser aktuell in Betrieb sein.
+1.  Installieren Sie den ImmoTool-Server, falls dies noch nicht geschehen ist (siehe ["ImmoTool-Server installieren"]({{< relref "../intro/install_server.md#intro_install_server" >}})).
 
-2.  Erzeugen Sie im Verzeichnis des ImmoTool-Servers den Ordner `var/data/immotool`, wenn dieser noch nicht existieren sollte. Sollte das Verzeichnis bereits vorhanden sein, entfernen Sie die darin enthaltenen Dateien.
+2.  Beenden Sie den ImmoTool-Server, sollte dieser aktuell in Betrieb sein.
 
-3.  Im Verzeichnis des Einzelplatz-Projektes sollten Sie ein Verzeichnis `data` finden. Darin befinden sich verschiedene Dateien der Einzelplatz-Datenbank: `immotool.data`, `immotool.lobs`, `immotool.properties` & `immotool.script`.
+3.  Erzeugen Sie im [Daten-Verzeichnis]({{< relref "server/directories.md#admin_server_directories_data" >}}) des ImmoTool-Servers den Ordner **`data/immotool`**, wenn dieser noch nicht existieren sollte. Sollte das Verzeichnis bereits vorhanden sein, entfernen Sie die darin enthaltenen Dateien.
 
-4.  Kopieren Sie die Dateien aus Schritt 3 ins Verzeichnis `var/data/immotool` des ImmoTool-Servers. Benennen Sie die Dateien jeweils um in `db.data`, `db.lobs`, `db.properties` & `db.script`.
+4.  Im [Verzeichnis des Einzelplatz-Projekts]({{< relref "client/directories.md#admin_client_directories_project" >}}) sollten Sie ein Verzeichnis **`data`** finden. Darin befinden sich verschiedene Dateien der Datenbank: **`immotool.data`**, **`immotool.lobs`**, **`immotool.properties`** und **`immotool.script`**.
 
-5.  Starten Sie den ImmoTool-Server neu und melden Sie sich mit dem AdminTool auf dem Server an (Benutzer "SA" mit leerem Passwort). Bei der ersten Anmeldung wird das AdminTool Sie bitten ein Administrator-Passwort festzulegen.
+5.  Kopieren Sie die Dateien aus Schritt 4 ins Verzeichnis des ImmoTool-Servers, das in Schritt 3 erzeugt wurde. Benennen Sie die Dateien jeweils um in **`db.data`**, **`db.lobs`**, **`db.properties`** und **`db.script`**.
 
-Ab diesem Zeitpunkt kann mit dem ImmoTool & AdminTool auf die Datenbank als Mehrplatz-Projekt zugegriffen werden. Der Verbindungsaufbau auf das Mehrplatz-Projekt via ImmoTool wird im Handbuch-Kapitel zur [Installation im Netzwerk]({{< relref "../intro/install_network.md#intro_install_network_immotool_project" >}}) beschrieben.
+6.  Starten Sie den ImmoTool-Server neu und melden Sie sich mit dem [AdminTool]({{< relref "tool.md#admin_tool" >}}) auf dem Server an. Verwenden Sie den Benutzer **"SA"** mit einem **leeren Passwort**. Bei der ersten Anmeldung wird das [AdminTool]({{< relref "tool.md#admin_tool" >}}) Sie bitten ein Administrator-Passwort festzulegen.
+
+Ab diesem Zeitpunkt kann mit dem ImmoTool und AdminTool auf die Datenbank als Mehrplatz-Projekt zugegriffen werden. Im ImmoTool muss abschließend noch ein Mehrplatz-Projekt erzeugt werden (siehe ["Verbindung zum ImmoTool-Server herstellen"]({{< relref "../intro/install_server.md#intro_install_server_immotool" >}})).
+
+Wenn die Umstellung erfolgreich durchgeführt wurde und die Anmeldung am ImmoTool-Server über das ImmoTool funktioniert, kann das alte [Verzeichnis des Einzelplatz-Projekts]({{< relref "client/directories.md#admin_client_directories_project" >}}) bei Bedarf gelöscht werden.
 
 
 ## Mehrplatz- in Einzelplatz-Projekt umwandeln {#admin_migration_project_remote}
 
-Im Folgenden wird die Vorgehensweise beschrieben, um ein bestehendes Mehrplatz-Projekt aus einem ImmoTool-Server in ein Einzelplatz-Projekt umzuwandeln.
+Eine [Netzwerk-Installation]({{< relref "../intro/install_types.md#intro_install_types_network" >}}) kann bei Bedarf in eine  [Einzelplatz-Installation]({{< relref "../intro/install_types.md#intro_install_types_local" >}}) umgewandelt werden. Die Datenbank wird dabei vom ImmoTool-Server in ein Einzelplatz-Projekt kopiert und geringfügig angepasst.
 
-1.  Starten Sie das ImmoTool und erstellen Sie ein neues / leeres Einzelplatz-Projekt. In dieses neu erstellte Projekt wird in den nächsten Schritten die Datenbank vom ImmoTool-Server übernommen.
+1.  Starten Sie das ImmoTool und erstellen Sie ein neues / leeres Einzelplatz-Projekt (siehe ["Einzelplatz-Projekt erzeugen"]({{< relref "../intro/install_client.md#intro_install_client_project" >}})). In dieses neu erstellte Projekt wird in den nächsten Schritten die Datenbank vom ImmoTool-Server übernommen.
 
-    > **Hinweis**
-    >
-    > Merken Sie sich den Speicherort des Projektes auf Ihrer Festplatte.
-
-2.  Beenden Sie das ImmoTool nachdem das neue Projekt erstellt und erstmals geöffnet wurde.
+2.  Beenden Sie das ImmoTool nachdem das neue / leere Einzelplatz-Projekt erstellt und erstmals geöffnet wurde.
 
 3.  Beenden Sie den ImmoTool-Server, sollte dieser aktuell in Betrieb sein.
 
-4.  Im Verzeichnis `data` des zuvor erstellten Einzelplatz-Projektes sollten verschiedene Dateien vorfinden: `immotool.data`, `immotool.lobs`, `immotool.properties` & `immotool.script`. Löschen Sie alle im `data`-Verzeichnis enthaltenen Dateien und Unterordner.
+4.  Öffnen Sie das in Schritt 1 erstellte [Verzeichnis des Einzelplatz-Projekts]({{< relref "client/directories.md#admin_client_directories_project" >}}). Im Unterverzeichnis **`data`** sollten Sie verschiedene Dateien vorfinden: **`immotool.data`**, **`immotool.lobs`**, **`immotool.properties`** und **`immotool.script`**. Löschen Sie alle im **`data`**-Verzeichnis enthaltenen Dateien und Unterordner.
 
-5.  Im Verzeichnis `var/data/immotool` des ImmoTool-Servers sollten Sie folgende Dateien vorfinden: `db.data`, `db.lobs`, `db.properties` & `db.script`. Kopieren Sie diese Dateien ins `data`-Verzeichnis des zuvor erstellten Einzelplatz-Projektes. Benennen Sie die Dateien jeweils um in `immotool.data`, `immotool.lobs`, `immotool.properties` & `immotool.script`.
+5.  Öffnen Sie das Datenbank-Verzeichnis des ImmoTool-Servers. Standardmäßig finden Sie dieses im Unterordner **`data/immotool`** des [Daten-Verzeichnisses]({{< relref "server/directories.md#admin_server_directories_data" >}}). Hier sollten Sie folgende Dateien vorfinden: **`db.data`**, **`db.lobs`**, **`db.properties`** und **`db.script`**. Kopieren Sie diese Dateien ins **`data`**-Verzeichnis des zuvor erstellten Einzelplatz-Projektes (siehe Schritt 4). Benennen Sie die Dateien jeweils um in **`immotool.data`**, **`immotool.lobs`**, **`immotool.properties`** und **`immotool.script`**.
 
-6.  Bearbeiten Sie die Datei `immotool.script` aus dem `data`-Verzeichnis des Einzelplatz-Projektes mit einem Texteditor.
+6.  Bearbeiten Sie die Datei **`immotool.script`** aus dem **`data`**-Verzeichnis des Einzelplatz-Projektes mit einem Texteditor.
 
-    > **Achtung**
-    >
-    > Sichern Sie sich die `immotool.script`-Datei, bevor Sie daran Änderungen vornehmen. Eventuelle Fehler können zu einer kaputten Datenbank führen.
+    {{< warning >}}Sichern Sie sich die **`immotool.script`**-Datei, bevor Sie daran Änderungen vornehmen. Eventuelle Fehler können zu einer kaputten Datenbank führen.{{< /warning >}}
 
-7.  Suchen Sie in der `immotool.script`-Datei die Zeile, die wie folgt beginnt:
+7.  Suchen Sie in der **`immotool.script`**-Datei die Zeile, die wie folgt beginnt:
+
     ```
     CREATE USER SA PASSWORD DIGEST
     ```
 
     Tauschen Sie die gefundene Zeile durch folgende Zeile aus:
+
     ```
     CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
     ```
 
-8.  Speichern Sie die geänderte `immotool.script`-Datei ab.
+8.  Speichern Sie die geänderte **`immotool.script`**-Datei ab.
 
-Ab diesem Zeitpunkt kann das Einzelplatz-Projekt mit ImmoTool geöffnet werden und alle Daten aus dem Mehrplatz-Projekt stehen zur Verfügung.
+Ab diesem Zeitpunkt kann das Einzelplatz-Projekt im ImmoTool geöffnet werden. Alle Daten aus dem Mehrplatz-Projekt stehen nun als Einzelplatz-Projekt zur Verfügung.
 
-
-## Altes Projekt aus ImmoTool 0.9.x übernehmen {#admin_migration_project_0_9}
-
-Die folgende Anleitung beschreibt die Vorgehensweise, um ein Projekt aus ImmoTool 0.9.x in ImmoTool 1.0 zu übernehmen.
-
-> **Hinweis**
->
-> Die alte ImmoTool-Installation bei der Migration komplett unangetastet. Sollte die Umstellung auf Version 1.0 Probleme bereiten oder fehlschlagen, kann mit der alten Version normal weiter gearbeitet werden.
+Im Falle, dass Sie den ImmoTool-Server nicht mehr benötigen, können Sie das Programm nach erfolgreicher Migration deinstallieren.
 
 
-### Projekt aus "ImmoTool 0.9.x" sichern {#admin_migration_project_0_9_backup}
+## Altes Projekt aus ImmoTool 0.9.x übernehmen {#admin_migration_legacy}
+
+ImmoTool 0.9.x ist mittlerweile sehr alt, wird seit Längerem nicht weiter entwickelt und kann von OpenEstate nicht mehr betreut werden. Wir raten daher **dringend** auf die aktuellste Version 1.x zu migrieren. Im Folgenden werden die dafür nötigen Schritte dokumentiert.
+
+{{< info >}}
+Die alte ImmoTool-Installation bleibt bei der Migration komplett unangetastet. Sollte die Umstellung auf Version 1.x Probleme bereiten oder fehlschlagen, kann mit der alten Version bis zur Klärung des Problems normal weiter gearbeitet werden.
+{{< /info >}}
+
+
+### Projekt aus ImmoTool 0.9.x sichern {#admin_migration_legacy_backup}
 
 Im ersten Schritt muss das Projekt in ImmoTool 0.9.x auf dem folgenden Wege gesichert werden.
 
-1.  Aktualisieren Sie Ihre bestehende ImmoTool-Installation auf die aktuellste Version (mindestens 0.9.15 bzw. 1.0-beta10f). Klicken Sie dafür im Hauptmenü auf `Extras` → `Aktualisierung`.
+1.  Aktualisieren Sie Ihre bestehende ImmoTool-Installation auf die aktuellste verfügbare Version (mindestens **0.9.15** bzw. **1.0-beta10f**). Klicken Sie dafür im Hauptmenü auf **"Extras → Aktualisierung"**.
 
-    {{< figure src="migration_upgrade_0_9-01.jpg" caption="ImmoTool 0.9.x aktualisieren" >}}
+    {{< figure src="migration_update.png" caption="Aktualisierung in ImmoTool 0.9.x starten" >}}
+    
+    Alternativ können Sie Version 0.9.33 (die letzte 0.9.x Version) von der [Webseite des OpenEstate-Projekts](https://openestate.org/downloads/openestate-immotool/0.9.33) herunterladen.
 
-2.  Öffnen Sie das zu übernehmende Projekt im alten ImmoTool und erzeugen Sie eine Datensicherung, durch Klick im Hauptmenü auf `Extras` → `Datenbank` → `Sicherung für Version 1.x`.
+2.  Öffnen Sie das zu übernehmende Projekt im alten ImmoTool und erzeugen Sie eine Datensicherung, durch Klick im Hauptmenü auf **"Extras → Datenbank → Sicherung für Version 1.x"**.
 
-    {{< figure src="migration_upgrade_0_9-02.jpg" caption="Datensicherung für ImmoTool 1.x erzeugen" >}}
+    {{< figure src="migration_export.png" caption="Datensicherung für ImmoTool 1.x erzeugen" >}}
 
-    Bei diesem Vorgang wird ein ZIP-Archiv mit den Inhalten der Projekt-Datenbank auf der Festplatte gespeichert, welches Sie unter Schritt (4) noch benötigen werden.
+    Bei diesem Vorgang wird ein ZIP-Archiv mit den Inhalten der Projekt-Datenbank auf der Festplatte gespeichert, welches Sie in den folgenden Schritten benötigen werden.
 
-Die Vorgehensweise zur Übernahme der unter (2) exportierten Daten hängt davon ab, ob das Projekt in ImmoTool 1.0 als Einzelplatz- oder Mehrplatz-Projekt fortgeführt werden soll.
-
-
-### Projekt als Einzelplatz-Installation übernehmen {#admin_migration_project_0_9_local}
-
-Wenn des Projekt in ImmoTool 1.0 als **Einzelplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version. Die Installationsschritte sind im Kapitel ["ImmoTool als Einzelplatz-Version installieren"]({{< relref "../intro/install_local.md#intro_install_local" >}}) dokumentiert.
-
-> **Wichtig**
->
-> Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten *nebeneinander* installiert werden.
-
-Beim ersten Start von ImmoTool 1.0 kann die zuvor gesicherte Datenbank mit Hilfe des [Projektassistenten]({{< relref "../usage/general/projects.md#usage_general_projects_wizard" >}}) importiert werden.
-
-{{< figure src="migration_upgrade_0_9_local-01.jpg" caption="Datensicherung via Projektassistent importieren" >}}
-
-Wählen Sie als `Art des Projektes` die Option `Neues Einzelplatz-Projekt aus ImmoTool 0.9.x übernehmen`. Im daraufhin dargestellten Formular, können Sie die [zuvor erstellte Sicherungsdatei](#admin_migration_project_0_9_backup) auswählen, indem Sie auf den Button `Auswahl` klicken. Das ZIP-Archiv wird daraufhin vom Programm geprüft und die Firmendaten automatisch übernommen.
-
-{{< figure src="migration_upgrade_0_9_local-02.jpg" caption="Sicherungsdatei zum Import ausgewählt" >}}
-
-Prüfen Sie sicherheitshalber die Firmendaten & Add-Ons und klicken Sie abschließend auf `Projekt erzeugen`. Während der Erzeugung des neuen Projekts wird die Sicherungsdatei automatisch in die Datenbank importiert.
+Die Vorgehensweise zur Übernahme der exportierten Daten hängt davon ab, ob das Projekt in ImmoTool 1.x als [Einzelplatz-Installation]({{< relref "../intro/install_types.md#intro_install_types_local" >}}) oder [Netzwerk-Installation]({{< relref "../intro/install_types.md#intro_install_types_network" >}}) fortgeführt werden soll.
 
 
-### Projekt als Mehrplatz-Installation übernehmen {#admin_migration_project_0_9_remote}
+### Projekt als Einzelplatz-Installation übernehmen {#admin_migration_legacy_local}
 
-Wenn des Projekt in ImmoTool 1.0 als **Mehrplatz-Installation** betrieben werden soll, installieren Sie ImmoTool 1.0 zusätzlich zur bereits vorhandenen alten ImmoTool-Version sowie den ImmoTool-Server. Die Installationsschritte sind im Kapitel ["ImmoTool als Netzwerk-Version installieren"]({{< relref "../intro/install_network.md#intro_install_network" >}}) dokumentiert.
+Wenn das Projekt in ImmoTool 1.x als [**Einzelplatz-Installation**]({{< relref "../intro/install_types.md#intro_install_types_local" >}}) betrieben werden soll, installieren Sie ImmoTool 1.x zusätzlich zur bereits vorhandenen alten ImmoTool-Version (siehe ["ImmoTool installieren"]({{< relref "../intro/install_client.md#intro_install_client" >}})).
 
-> **Wichtig**
->
-> Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten *nebeneinander* installiert werden.
+{{< warning >}}
+Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten **nebeneinander** installiert werden.
+{{< /warning >}}
 
-Nachdem der ImmoTool-Server erfolgreich in Betrieb genommen wurde, kann die gesicherte Datenbank mit Hilfe des AdminTools auf den ImmoTool-Server übertragen werden. Die [zuvor erstellte Datensicherung](#admin_migration_project_0_9_backup) kann im AdminTool auf folgenden Wegen importiert werden:
+Beim ersten Start von ImmoTool 1.x kann die zuvor gesicherte Datenbank mit Hilfe des [Projektassistenten]({{< relref "../usage/general/projects.md#usage_general_projects_wizard" >}}) importiert werden.
 
--   Bei der erstmaligen Anmeldung am ImmoTool-Server wird ein Fenster dargestellt, über welches die Datenbank installiert werden kann. Dabei kann zusätzlich die zuvor erzeugte Sicherungsdatei angegeben werden.
+{{< figure src="migration_import_local.png" caption="Datensicherung via Projektassistent importieren" >}}
 
-    {{< figure src="migration_upgrade_0_9_remote-01.jpg" caption="Datensicherung beim Erzeugen eines Projekts importieren" >}}
+Wählen Sie als **"Projekt-Art"** die Option **"Einzelplatz-Projekt von ImmoTool 0.9.x migrieren"**. Im daraufhin dargestellten Formular, können Sie die [zuvor erstellte Sicherungsdatei]({{< relref "migration.md#admin_migration_legacy_backup" >}}) auswählen, indem Sie auf den Button **"Auswählen"** klicken. Das ZIP-Archiv wird daraufhin vom Programm geprüft und die Firmendaten automatisch übernommen.
 
--   Wenn die Datenstrukturen bereits mit dem AdminTool erzeugt wurden, kann die Datensicherung nachträglich durch Klick ins Hauptmenü auf `Werkzeuge` → `Migration aus früherer Version` importiert werden.
+Prüfen Sie sicherheitshalber die Firmendaten und Add-Ons und klicken Sie abschließend auf **"Projekt erzeugen"**. Während der Erzeugung des neuen Projekts wird die Sicherungsdatei automatisch in die Datenbank importiert.
 
-    {{< figure src="migration_upgrade_0_9_remote-02.jpg" caption="Datensicherung nachträglich importieren" >}}
+{{< info >}}
+Nachdem die Migration erfolgreich durchgeführt wurde, können Sie bei Bedarf die alte Installation von ImmoTool 0.9.x löschen.
+{{< /info >}}
 
-Nachdem die Datenübernahme ins Mehrplatz-Projekt abgeschlossen wurde, kann die Verbindung zur Datenbank über das ImmoTool hergestellt werden, wie im Kapitel ["ImmoTool mit dem ImmoTool-Server verbinden"]({{< relref "../intro/install_network.md#intro_install_network_immotool_project" >}}) beschrieben.
+
+### Projekt als Netzwerk-Installation übernehmen {#admin_migration_legacy_remote}
+
+Wenn das Projekt in ImmoTool 1.x als [**Netzwerk-Installation**]({{< relref "../intro/install_types.md#intro_install_types_network" >}}) betrieben werden soll, installieren Sie ImmoTool 1.x zusätzlich zur bereits vorhandenen alten ImmoTool-Version (siehe ["ImmoTool installieren"]({{< relref "../intro/install_client.md#intro_install_client" >}})) sowie den ImmoTool-Server (siehe ["ImmoTool-Server installieren"]({{< relref "../intro/install_server.md#intro_install_server" >}})).
+
+{{< warning >}}
+Überschreiben oder entfernen Sie die alte ImmoTool-Installation unter keinen Umständen! Die neue und alte Version sollten **nebeneinander** installiert werden.
+{{< /warning >}}
+
+Nachdem der ImmoTool-Server erfolgreich in Betrieb genommen wurde kann die gesicherte Datenbank mit Hilfe des [AdminTools]({{< relref "tool.md#admin_tool" >}}) auf den ImmoTool-Server übertragen werden. Die [zuvor erstellte Sicherungsdatei]({{< relref "migration.md#admin_migration_legacy_backup" >}}) kann im [AdminTool]({{< relref "tool.md#admin_tool" >}}) auf folgenden Wegen importiert werden:
+
+-   Bei der **erstmaligen Anmeldung** am ImmoTool-Server wird ein Fenster dargestellt, über welches die Datenbank installiert werden kann. Dabei kann zusätzlich die zuvor erzeugte Sicherungsdatei angegeben werden.
+
+    {{< figure src="migration_import_remote_new.png" caption="Datensicherung beim Erzeugen eines Projekts importieren" >}}
+
+-   Wenn die Datenbank vorher bereits mit dem [AdminTool]({{< relref "tool.md#admin_tool" >}}) erzeugt wurden, kann die Datensicherung **nachträglich** durch Klick ins Hauptmenü auf **"Extras → Migration aus ImmoTool 0.9.x"** importiert werden.
+
+    {{< figure src="migration_import_remote_existing.png" caption="Datensicherung nachträglich importieren" >}}
+
+Nachdem die Datenübernahme ins Mehrplatz-Projekt abgeschlossen wurde kann die Verbindung zur Datenbank über das ImmoTool hergestellt werden (siehe ["Verbindung zum ImmoTool-Server herstellen"]({{< relref "../intro/install_server.md#intro_install_server_immotool" >}})).
+
+{{< info >}}
+Nachdem die Migration erfolgreich durchgeführt wurde, können Sie bei Bedarf die alte Installation von ImmoTool 0.9.x löschen.
+{{< /info >}}

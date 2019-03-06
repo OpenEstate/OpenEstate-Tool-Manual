@@ -1,8 +1,8 @@
 ---
 
 title: ImmoTool-Server starten
-linktitle: Server starten
-description: Administration von OpenEstate-ImmoTool…
+linktitle: Programmstart
+description: Wie OpenEstate-ImmoServer gestartet werden kann…
 weight: 10
 
 menu:
@@ -14,89 +14,37 @@ menu:
 
 ## ImmoTool-Server starten {#admin_server_startup}
 
-Die Dateien zum Start des ImmoTool-Servers sind im Unterverzeichnis `bin` des Programm-Verzeichnisses abgelegt - z.B.: `C:\Programme\OpenEstate-ImmoServer\bin`.
+Die einfachste Form den ImmoTool-Server zu starten ist die manuelle Ausführung **im Vordergrund**. 
+
+Wenn das Programm erfolgreich eingerichtet wurde und von den Arbeitsplätzen erfolgreich auf den ImmoTool-Server zugegriffen werden kann, empfiehlt sich die Einrichtung eines Dienstes, sodass der ImmoTool-Server automatisch beim Hochfahren des Rechners **im Hintergrund** gestartet wird (siehe ["ImmoTool-Server als Dienst einrichten"]({{< relref "service.md#admin_server_service" >}})).
 
 
 ### ImmoTool-Server unter Windows starten {#admin_server_startup_windows}
 
-Starten Sie den ImmoTool-Server unter **Windows** durch Doppelklick auf die Datei `start.exe` oder `start.bat` im Unterordner `bin`.
+Bei der Installation unter Windows wird automatisch im Startmenü einen Ordner namens **"OpenEstate-ImmoTool"** mit verschiedenen Verknüpfungen erzeugt. Wählen Sie die Verknüpfung **"ImmoServer manuell starten"** aus dem Startmenü aus, um den ImmoTool-Server manuell (bzw. im Vordergrund) zu starten.
+
+Darüber hinaus können Sie das Programm auch über die Datei **`Start.exe`** (bzw. **`Start.bat`**) im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) manuell (bzw. im Vordergrund) starten.
+
+Beim ersten Start des ImmoTool-Servers werden Sie vom Betriebssystem eventuell gefragt, ob eingehende Verbindungen akzeptiert werden sollen. Diese Frage sollte mit **"Zugriff zulassen"** beantwortet werden.
+
+{{< figure src="startup_windows_firewall.png" caption="Freigabe in der Firewall unter Windows erteilen" >}}
 
 
-### ImmoTool-Server unter Mac OS X starten {#admin_server_startup_mac}
+### ImmoTool-Server unter macOS starten {#admin_server_startup_mac}
 
-Starten Sie den ImmoTool-Server unter **Mac OS X** durch Doppelklick auf das *Datenbank*-Symbol im Unterordner `bin`.
+Führen Sie einen Doppelklick auf das Programmsymbol mit der Bezeichnung **"OpenEstate-ImmoServer"** aus. Es öffnet sich daraufhin der Finder mit den vom ImmoTool-Server bereitgestellten Programmen.
 
+{{< figure src="startup_mac_folder.png" caption="Starter für ImmoTool-Server im Finder" >}}
 
-### ImmoTool-Server unter Linux / Unix starten {#admin_server_startup_unix}
+Wenn Sie in diesem Fenster auf das Programmsymbol **"Start"** klicken, wird der ImmoTool-Server manuell (bzw. im Vordergrund) gestartet.
 
-Starten Sie den ImmoTool-Server unter **Linux**, **Unix** oder **Mac OS X** durch Ausführung der Datei `start.sh` im Unterordner `bin`.
+Beim ersten Start des ImmoTool-Servers werden Sie vom Betriebssystem eventuell gefragt, ob eingehende Verbindungen akzeptiert werden sollen. Diese Frage sollte mit **"Erlauben"** beantwortet werden.
 
-
-### Start-Dateien des ImmoTool-Servers {#admin_server_startup_files}
-
-Das `bin`-Verzeichnis des ImmoTool-Servers enthält diverse Start-Dateien für verschiedene Zwecke und Betriebssysteme.
-
--   **manager-backup.bat** (Windows)
-    **manager-backup.app** (Mac OS X)
-    **manager-backup.sh** (Linux / Unix / Mac OS X)
-    Öffnet eine Verbindung zu einem gestarteten ImmoTool-Server und führt einen Befehl zur Datensicherung aus. Die erzeugte Sicherungsdatei wird standardmäßig im Verzeichnis `var/backup` abgelegt.
-
--   **manager-console.bat** (Windows)
-    **manager-console.exe** (Windows)
-    **manager-console.sh** (Linux / Unix / Mac OS X)
-    Öffnet eine Administrator-Konsole, die Steuerbefehle oder SQL-Anfragen auf der Datenbank ausführen kann.
-
--   **manager-gui.bat** (Windows)
-    **manager-gui.exe** (Windows)
-    **manager-gui.app** (Mac OS X)
-    **manager-gui.sh** (Linux / Unix / Mac OS X)
-    Öffnet eine grafische Administrations-Anwendung, die Steuerbefehle oder SQL-Anfragen auf der Datenbank ausführen kann.
-
--   **manager-shutdown.bat** (Windows)
-    **manager-shutdown.app** (Mac OS X)
-    **manager-shutdown.sh** (Linux / Unix / Mac OS X)
-    Öffnet eine Verbindung zu einem gestarteten ImmoTool-Server und führt einen Befehl zum Herunterfahren der Datenbank aus.
-
--   **server-console.bat** (Windows)
-    **server-console.sh** (Linux / Unix / Mac OS X)
-    ImmoTool-Server im Vordergrund ausführen.
-
--   **server-daemon-install.bat** (Windows)
-    **server-daemon-install.sh** (Linux / Unix / Mac OS X)
-    ImmoTool-Server als Dienst im Betriebssystem installieren.
-
--   **server-daemon-query.bat** (Windows)
-    **server-daemon-query.sh** (Linux / Unix / Mac OS X)
-    Überprüfung ob der ImmoTool-Server-Dienst installiert und/oder gestartet ist.
-
--   **server-daemon-start.bat** (Windows)
-    **server-daemon-start.sh** (Linux / Unix / Mac OS X)
-    Installierten ImmoTool-Server als Dienst im Hintergrund starten.
-
--   **server-daemon-stop.bat** (Windows)
-    **server-daemon-stop.sh** (Linux / Unix / Mac OS X)
-    Gestarteten ImmoTool-Server-Dienst beenden.
-
--   **server-daemon-uninstall.bat** (Windows)
-    **server-daemon-uninstall.sh** (Linux / Unix / Mac OS X)
-    Installierten ImmoTool-Server-Dienst aus dem Betriebssystem entfernen.
-
--   **server-daemon-setenv.bat** (Windows)
-    **server-daemon-setenv.sh** (Linux / Unix / Mac OS X)
-    Diese Datei konfiguriert verschiedene Umgebungsvariablen für die `server-*`-Skripte und kann nicht direkt gestartet werden.
-
--   **server-daemon-wrapper.bat** (Windows)
-    **server-daemon-wrapper.sh** (Linux / Unix / Mac OS X)
-    Diese Datei wird von den `server-*`-Skripten verwendet um den ImmoTool-Server auszuführen und kann nicht direkt gestartet werden.
-
--   **start.bat** (Windows)
-    **start.exe** (Windows)
-    **start.app** (Mac OS X)
-    **start.sh** (Linux / Unix / Mac OS X)
-    ImmoTool-Server im Vordergrund ausführen.
+{{< figure src="startup_mac_firewall.png" caption="Freigabe in der Firewall unter macOS erteilen" >}}
 
 
-> **Hinweis**
->
-> Die Skripte beginnend mit `server-*` werden mit Hilfe des Projektes [YAJSW](http://yajsw.sourceforge.net/) bereitgestellt. Weitere Informationen zur Konfiguration dieser Skripte finden Sie auf der Webseite dieses Projektes.
+### ImmoTool-Server unter Linux starten {#admin_server_startup_linux}
 
+Wenn der ImmoTool-Server mit dem [**Debian**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) installiert wurde, ist auf dem Betriebssystem bereits ein Dienst für den ImmoTool-Server eingerichtet und gestartet worden. Sie müssen in diesem Falle keine weiteren Schritte durchführen um das Programm zu starten.
+
+Bei allen Installations-Varianten für Linux kann der ImmoTool-Server über das Skript **`Start.sh`** im Unterordner **`bin`** des [Programm-Verzeichnisses]({{< relref "directories.md#admin_server_directories_application" >}}) manuell (bzw. im Vordergrund) gestartet werden.

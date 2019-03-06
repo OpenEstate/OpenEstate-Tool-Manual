@@ -31,9 +31,9 @@ Nachdem ein E-Mailordner in der Sidebar angeklickt wurde, wird eine tabellarisch
 
 {{< figure src="inbox.jpg" caption="Inhalt eines E-Mailordners anzeigen" >}}
 
-> **TODO**
->
-> weitere Inhalte einfügen (z.B. Aktionen in der Tabelle)
+{{< todo >}}
+weitere Inhalte einfügen (z.B. Aktionen in der Tabelle)
+{{< /todo >}}
 
 
 ### Ansicht einer E-Mail {#usage_email_manage_message}
@@ -42,9 +42,9 @@ Klicken Sie in der [Ansicht des E-Mailordners](#usage_email_manage_folder) mit d
 
 {{< figure src="message.jpg" caption="E-Mail in HTML-Ansicht" >}}
 
-> **TODO**
->
-> weitere Inhalte einfügen (z.B. Zugriff auf Anhänge)
+{{< todo >}}
+weitere Inhalte einfügen (z.B. Zugriff auf Anhänge)
+{{< /todo >}}
 
 
 ### E-Mails aus Adressbuch versenden {#usage_email_manage_addressbook}
@@ -72,9 +72,9 @@ Im Auswahleld `Absender` werden alle E-Mailkonten dargestellt, für die ein Mail
 
 Im oberen Bereich des Formulars können beliebig viele Empfänger für die Nachricht eingetragen werden.
 
-> **TODO**
->
-> weitere Inhalte einfügen (Hinzufügen, Entfernen, Bearbeiten von Empfängern; Anbindung an das Adressbuch Add-On)
+{{< todo >}}
+weitere Inhalte einfügen (Hinzufügen, Entfernen, Bearbeiten von Empfängern; Anbindung an das Adressbuch Add-On)
+{{< /todo >}}
 
 Die folgenden Arten von Empfängern stehen zur Verfügung:
 
@@ -90,9 +90,9 @@ Die folgenden Arten von Empfängern stehen zur Verfügung:
 -   **REPLY_TO**
     An diesen Empfänger wird bevorzugt eine Antwort auf die Nachricht gesendet. Beachten Sie bitte, dass der Empfänger dieser Empfehlung nicht folgen muss und auch einen anderen Empfänger beim Beantworten auswählen kann.
 
-> **Hinweis**
->
-> Jedem Adressaten werden auch alle anderen **TO**- und **CC**-Einträge angezeigt.
+{{< info >}}
+Jedem Adressaten werden auch alle anderen **TO**- und **CC**-Einträge angezeigt.
+{{< /info >}}
 
 
 #### Text der Nachricht eingeben {#usage_email_manage_compose_message}
@@ -133,9 +133,9 @@ Der Nachricht können beliebig viele Dateien als Anhang beigefügt werden. Klick
 
 Jede angehängte Datei wird unterhalb des Textbereiches als Symbol dargestellt. Um den Anhang nachträglich wieder zu entfernen, markieren Sie das jeweilige Symbol und klicken Sie auf Entfernen.
 
-> **Hinweis**
->
-> Abhängig vom E-Mailanbieter dürfen Anhänge nicht beliebig groß sein. In der Regel wird eine maximale Gesamtgröße für Anhänge vorgegeben, welches im Bereich von 5 bis 10 MB liegt. Erfragen Sie die genauen Limits bei Ihrem E-Mailanbieter.
+{{< info >}}
+Abhängig vom E-Mailanbieter dürfen Anhänge nicht beliebig groß sein. In der Regel wird eine maximale Gesamtgröße für Anhänge vorgegeben, welches im Bereich von 5 bis 10 MB liegt. Erfragen Sie die genauen Limits bei Ihrem E-Mailanbieter.
+{{< /info >}}
 
 
 #### Nachricht abschicken {#usage_email_manage_compose_send}

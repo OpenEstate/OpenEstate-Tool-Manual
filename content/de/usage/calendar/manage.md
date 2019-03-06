@@ -27,9 +27,9 @@ Innerhalb eines Projektes können beliebig viele Kalendereinträge gespeichert w
 
 Daraufhin wird eine tabellarische Übersicht der erfassten Kalendereinträge dargestellt:
 
-> **TODO**
->
-> Screenshot einfügen
+{{< todo >}}
+Screenshot einfügen
+{{< /todo >}}
 
 
 ### Kalendereintrag erfassen {#usage_calendar_manage_add}
@@ -50,9 +50,9 @@ Nehmen Sie die gewünschten Änderungen im [Formular für Kalendereinträge](#us
 
 Öffnen Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) und suchen Sie den zu löschenden Eintrag. Klicken Sie mit der rechten Maustaste auf den betreffenden Kalendereintrag und wählen Sie im dargestellten Menü die Aktion `Kalendereintrag löschen`.
 
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Formular für Kalendereinträge {#usage_calendar_manage_form}
@@ -64,9 +64,9 @@ Jeder Kalendereintrag hat verschiedene allgemeine Eigenschaften.
 -   Zu jedem Kalendereintrag können weitere Notizen gespeichert werden. Dafür steht im Reiter Notizen ein Textfeld zur Verfügung.
 -   Jeder Kalendereintrag kann ggf. mit Adressen und / oder Immobilien aus Ihrem Bestand verknüpft werden.
 
-> **TODO**
->
-> Screenshot einfügen, weitere Reiter dokumentieren
+{{< todo >}}
+Screenshot einfügen, weitere Reiter dokumentieren
+{{< /todo >}}
 
 
 #### Notizen {#usage_calendar_manage_form_notes}
@@ -78,13 +78,13 @@ Im Tab `Notizen` kann zum Kalendereintrag ein beliebiger Notiztext hinterlegt we
 
 Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
 
-> **Hinweis**
->
-> Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< info >}}
+Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+{{< /info >}}
 
-> **Achtung**
->
-> Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< warning >}}
+Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+{{< /warning >}}
 
 
 ### Was sind Kalender? {#usage_calendar_manage_groups_info}
@@ -95,9 +95,9 @@ Mit der Installation des Programms werden die Kalender **privat** und **geschäf
 
 Die aktuell im Programm erfassten Kalender werden in der Sidebar dargestellt:
 
-> **TODO**
->
-> Screenshot einfügen
+{{< todo >}}
+Screenshot einfügen
+{{< /todo >}}
 
 
 ### Kalender erfassen {#usage_calendar_manage_groups_add}
@@ -118,18 +118,18 @@ Nehmen Sie die gewünschten Einträge im [Formular für Kalender](#usage_calenda
 
 Öffnen Sie die Kalender-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf den zu löschenden Kalender und wählen Sie im Menü die Aktion `Kalender löschen`.
 
-> **Achtung**
->
-> Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< warning >}}
+Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
+{{< /warning >}}
 
 
 ### Formular für Kalender {#usage_calendar_manage_groups_form}
 
 Im Formular für Kalender können die Details zu einem Kalender eingesehen und ggf. bearbeitet werden.
 
-> **TODO**
->
-> Screenshot einfügen
+{{< todo >}}
+Screenshot einfügen
+{{< /todo >}}
 
 
 #### Eckdaten {#usage_calendar_manage_groups_form_general}

@@ -1,3 +1,4 @@
+.directory
 apps/downloads
 apps/licenses
 apps/linux
@@ -8,6 +9,7 @@ book/*
 bundle
 public
 resources
+temp
 
 #
 # Default entries for IntelliJ IDEA

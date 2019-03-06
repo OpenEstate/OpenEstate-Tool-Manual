@@ -14,6 +14,6 @@ menu:
 
 ## Vermittlungsaufträge {#usage_addressbook_brokerings}
 
-> **TODO**
->
-> Inhalte einfügen
+{{< todo >}}
+Inhalte einfügen
+{{< /todo >}}

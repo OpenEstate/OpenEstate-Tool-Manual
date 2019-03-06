@@ -2,12 +2,41 @@
 title: Handbuch für OpenEstate-ImmoTool
 date: ${date}
 lang: de-DE
-documentclass: book
 links-as-notes: 1
 toc: 1
-toc-depth: 2
+toc-depth: 1
 author:
 - OpenEstate.org
+pandoc-latex-admonition:
+- classes: [info]
+  color: navy
+- classes: [warning]
+  color: firebrick
+- classes: [tip]
+  color: forestgreen
+- classes: [todo]
+  color: dimgray
+pandoc-latex-tip:
+- classes: [info]
+  icons: [info-circle]
+  color: navy
+  size: 20
+  position: left
+- classes: [warning]
+  icons: [exclamation-triangle]
+  color: firebrick
+  size: 20
+  position: left
+- classes: [tip]
+  icons: [lightbulb-o]
+  color: forestgreen
+  size: 20
+  position: left
+- classes: [todo]
+  icons: [ambulance]
+  color: dimgray
+  size: 20
+  position: left
 ---
 
 
@@ -20,10 +49,11 @@ author:
 
 !INCLUDE "intro/about.md"
 !INCLUDE "intro/requirements.md"
-!INCLUDE "intro/java.md"
 !INCLUDE "intro/download.md"
-!INCLUDE "intro/install_local.md"
-!INCLUDE "intro/install_network.md"
+!INCLUDE "intro/install_types.md"
+!INCLUDE "intro/install_client.md"
+!INCLUDE "intro/install_server.md"
+!INCLUDE "intro/java.md"
 
 
 # Allgemeine Hinweise zur Benutzung {#usage_general}
@@ -85,31 +115,31 @@ author:
 !INCLUDE "usage/news/manage.md"
 
 
-# ImmoTool administrieren {#admin_client}
+# Administration des ImmoTools {#admin_client}
 
 !INCLUDE "admin/client/startup.md"
+!INCLUDE "admin/client/directories.md"
 !INCLUDE "admin/client/update.md"
-!INCLUDE "admin/client/backup.md"
 
 
-# ImmoTool-Server administrieren {#admin_server}
+# Administration des ImmoTool-Servers {#admin_server}
 
 !INCLUDE "admin/server/startup.md"
+!INCLUDE "admin/server/directories.md"
 !INCLUDE "admin/server/setup.md"
-!INCLUDE "admin/server/daemon.md"
+!INCLUDE "admin/server/service.md"
 !INCLUDE "admin/server/update.md"
-!INCLUDE "admin/server/backup.md"
 !INCLUDE "admin/server/resetpwd.md"
 
 
-# Anleitungen zur Administration {#admin_howtos}
+# Weitere Anleitungen zur Administration {#admin_misc}
 
 !INCLUDE "admin/tool.md"
+!INCLUDE "admin/backup.md"
 !INCLUDE "admin/migration.md"
 
 
 # Anhänge {#appendix}
 
-!INCLUDE "appendix/glossary.md"
 !INCLUDE "appendix/support.md"
 !INCLUDE "appendix/licenses.md"

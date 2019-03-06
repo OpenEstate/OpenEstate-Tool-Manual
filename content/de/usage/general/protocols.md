@@ -18,7 +18,7 @@ Warnungen, Probleme oder Fehler, die während der Nutzung des Programms auftrete
 
 Klicken Sie im Hauptmenü auf `Extras` → `Protokolle`, um die derzeit vorliegenden Protokolle einzusehen.
 
-{{< figure src="menu_extras.jpg" caption="Protokolle im Extras-Menü aufrufen" >}}
+{{< figure src="menu_extras.png" caption="Protokolle im Extras-Menü aufrufen" >}}
 
 Es werden verschiedene Arten von Protokoll-Dateien erstellt.
 
@@ -26,11 +26,16 @@ Es werden verschiedene Arten von Protokoll-Dateien erstellt.
     Das Protokoll `system.log` speichert allgemeine Meldungen des Programms.
 
 -   **Datenbank-Protokolle**
-    Das Protokoll `exist.log` speichert Warnungen & Fehler der ImmoTool-Datenbank.
+    Das Protokoll `hsqldb.log` speichert Warnungen & Fehler der ImmoTool-Datenbank.
 
-> **Hinweis**
->
-> Die Protokoll-Dateien des aktuellen Tages haben kein Datum im Namen (z.B. `system.log`). Ältere Dateien tragen im Namen das jeweilige Datum der Erstellung (z.B. `system.log.2012-01-20`).
+-   **Mail-Protokolle**
+    Die Protokolle `,mail_imap.log, mail_pop3.log, mail_smtp.log` speichern Fehler des Mail-Add-On.
+
+{{< figure src="protocols.png" caption="Protokolle anzeigen" >}}
+    
+{{< info >}}
+Die Protokoll-Dateien des aktuellen Tages haben kein Datum im Namen (z.B. `system.log`). Ältere Dateien tragen im Namen das jeweilige Datum der Erstellung (z.B. `system.log.2012-01-20`).
+{{< /info >}}
 
 
 ### Protokoll speichern {#usage_general_protocols_export}
