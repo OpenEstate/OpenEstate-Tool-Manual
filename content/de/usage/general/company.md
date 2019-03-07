@@ -39,7 +39,7 @@ Das hinterlegte Firmenlogo wird an verschiedenen Stellen in der Software dargest
 Öffnen Sie das Anbieterprofil und wählen Sie den Tab **"Logo"** um ein Firmenlogo zu hinterlegen, ein hinterlegtes einzusehen bzw. zu ändern.
 
 {{< info >}}
-Es werden die Bildformate **JPG**, **PNG**, **GIF**, **TIF** unterstützt.
+Es werden die gängigen Bildformate unterstützt (**JPG**, **PNG**, **GIF**, **TIF**, **BMP**).
 {{< /info >}}
 
 {{< figure src="company_logo.png" caption="Formular zur Bearbeitung der Firmendaten" >}}
