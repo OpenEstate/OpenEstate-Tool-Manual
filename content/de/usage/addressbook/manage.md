@@ -72,10 +72,6 @@ Die originale Adresse bleibt bei dieser Verfahrensweise unangetastet!
 
 Öffnen Sie die [Übersicht der Adressen](#usage_addressbook_manage_table) und suchen Sie die zu löschende Adresse in der Tabelle. Klicken Sie mit der rechten Maustaste auf die betreffende Adresse und wählen Sie im dargestellten Menü die Aktion **"Adresse löschen"**.
 
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
-
 
 ### Adressformular {#usage_addressbook_manage_form}
 
@@ -173,10 +169,6 @@ Nehmen Sie die gewünschten Einträge im [Formular für Adressgruppen](#usage_ad
 ### Adressgruppe löschen {#usage_addressbook_manage_groups_remove}
 
 Öffnen Sie die Adressbuch-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf die zu löschende Adressgruppe und wählen Sie im Menü die Aktion **"Adressgruppe löschen"**.
-
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
 
 
 ### Formular für Adressgruppen {#usage_addressbook_manage_groups_form}

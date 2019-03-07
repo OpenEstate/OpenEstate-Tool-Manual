@@ -167,10 +167,6 @@ Eine Immobilie können Sie auf zwei Wegen löschen.
 
 -   Klicken Sie im oberen Bereich der Übersicht der Immobilien auf **"Aktionen → Entfernen"**.
 
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
-
 
 ### Immobilienformular {#usage_realestate_manage_form}
 

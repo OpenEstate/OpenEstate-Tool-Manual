@@ -71,10 +71,6 @@ Nehmen Sie die gewünschten Änderungen im [Formular für Ansprechpartner](#usag
 
 Öffnen Sie die [Übersicht der Ansprechpartner](#usage_realestate_contact_table) und suchen Sie den zu löschenden Ansprechpartner in der Tabelle. Klicken Sie mit der rechten Maustaste auf den betreffenden Ansprechpartner und wählen Sie im dargestellten Menü die Aktion **"Ansprechpartner löschen"**.
 
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
-
 
 ### Formular für Ansprechpartner {#usage_realestate_contact_form}
 

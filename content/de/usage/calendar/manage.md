@@ -50,10 +50,6 @@ Nehmen Sie die gewünschten Änderungen im [Formular für Kalendereinträge](#us
 
 Öffnen Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) und suchen Sie den zu löschenden Eintrag. Klicken Sie mit der rechten Maustaste auf den betreffenden Kalendereintrag und wählen Sie im dargestellten Menü die Aktion **"Kalendereintrag löschen"**.
 
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
-
 
 ### Formular für Kalendereinträge {#usage_calendar_manage_form}
 
@@ -117,10 +113,6 @@ Nehmen Sie die gewünschten Einträge im [Formular für Kalender](#usage_calenda
 ### Kalender löschen {#usage_calendar_manage_groups_remove}
 
 Öffnen Sie die Kalender-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf den zu löschenden Kalender und wählen Sie im Menü die Aktion **"Kalender löschen"**.
-
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
 
 
 ### Formular für Kalender {#usage_calendar_manage_groups_form}

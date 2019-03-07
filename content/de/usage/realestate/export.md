@@ -70,10 +70,6 @@ Bei Rechtsklick auf die betreffende Export-Schnittstelle in der Tabelle öffnet 
 
 Alternativ kann die betreffende Export-Schnittstelle in der Tabelle per Linksklick markiert werden. Bei Klick auf den Button **"Aktionen"** wird ein Menü dargestellt, in dem Sie die Aktion **"Entfernen"** auswählen können um die Export-Schnittstelle zu entfernen.
 
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
-
 
 ### Export-Schnittstelle (de)aktivieren {#usage_realestate_export_enable}
 
