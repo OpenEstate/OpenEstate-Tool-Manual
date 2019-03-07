@@ -35,7 +35,7 @@ Inhalte einfügen
 
 - Zum Installieren eines Add-Ons muss dessen Installationsdatei bereits auf Ihrer Festplatte gespeichert sein.
 
-- Klicken Sie zur Installation auf dem Button `Add-On hinzufügen`.
+- Klicken Sie zur Installation auf dem Button **"Add-On hinzufügen"**.
 
 - Es öffnet sich ein Dialogfenster, in welchem Sie die heruntergeladene ZIP-Datei des Add-Ons auswählen können.
 
@@ -54,7 +54,7 @@ Ein installiertes Add-On kann jederzeit wieder deinstalliert werden.
 
 - Markieren Sie das zu deinstallierende Add-On mit der Maus. Dieses wird farbig hinterlegt und die Optionen werden angezeigt.
 
-- Klicken Sie in den Optionen auf `Deinstallieren` um das gewählte Add-On zu entfernen. Sie werden mit einer Sicherheitsabfrage gebeten die Löschung zu bestätigen.
+- Klicken Sie in den Optionen auf **"Deinstallieren"** um das gewählte Add-On zu entfernen. Sie werden mit einer Sicherheitsabfrage gebeten die Löschung zu bestätigen.
 
 {{< warning >}}
 Die mit dem Add-On verbunden Funktionen stehen Ihnen nach der Deinstallation nicht mehr im Programm zur Verfügung.
@@ -70,5 +70,5 @@ Wenn Sie sich nicht sicher sein sollten, ob Sie das Add-On ggf. zukünftig noch 
 
 Ein nicht benötigtes Add-On muss nicht zwingend aus dem Programm entfernt werden. Statt dessen kann das Add-On im Programm deaktiviert werden - somit stehen die Funktionen des Add-Ons nicht mehr im Programm zur Verfügung. Sollte man das Add-On im späteren Verlauf wieder benötigen, kann es wieder aktiviert werden.
 
-Klicken Sie im Hauptmenü auf `Extras` → `Add-Ons`. Markieren Sie ein zu bearbeitendes Add-On mit der Maus. Dieses wird farbig hinterlegt und dessen Optionen werden angezeigt. Zum Aktivieren / Deaktivieren setzen / entfernen Sie die Option `Aktivieren`.
+Klicken Sie im Hauptmenü auf **"Extras → Add-Ons"**. Markieren Sie ein zu bearbeitendes Add-On mit der Maus. Dieses wird farbig hinterlegt und dessen Optionen werden angezeigt. Zum Aktivieren / Deaktivieren setzen / entfernen Sie die Option **"Aktivieren"**.
 

@@ -30,11 +30,11 @@ Sobald das Programm **erstmals** mit einer Gegenstelle verschlüsselt kommunizie
 
 {{< figure src="certificates_import.jpg" caption="Zertifikat von Google prüfen" >}}
 
-Dieses Fenster stellt verschiedene Informationen dar, mit der die Gegenstelle (in diesem Falle `google.com`) identifiziert werden kann. An dieser Stelle muss der Anwender die Angaben prüfen und kann entscheiden, ob er der Gegenstelle sein Vertrauen aussprechen möchte.
+Dieses Fenster stellt verschiedene Informationen dar, mit der die Gegenstelle (in diesem Falle "google.com") identifiziert werden kann. An dieser Stelle muss der Anwender die Angaben prüfen und kann entscheiden, ob er der Gegenstelle sein Vertrauen aussprechen möchte.
 
-- Um der Gegenstelle das Vertrauen auszusprechen, kann auf `Übernehmen` geklickt werden. Danach beginnt das ImmoTool die verschlüsselte Kommunikation mit der jeweiligen Gegenstelle.
+- Um der Gegenstelle das Vertrauen auszusprechen, kann auf **"Übernehmen"** geklickt werden. Danach beginnt das ImmoTool die verschlüsselte Kommunikation mit der jeweiligen Gegenstelle.
 
-- Um der Gegenstelle kein Vertrauen auszusprechen, kann auf `Abbrechen` geklickt werden. Das ImmoTool wird in diesem Falle die verschlüsselte Kommunikation abbrechen.
+- Um der Gegenstelle kein Vertrauen auszusprechen, kann auf **"Abbrechen"** geklickt werden. Das ImmoTool wird in diesem Falle die verschlüsselte Kommunikation abbrechen.
 
 {{< warning >}}
 Es ist Vorsicht geboten, wenn sich das Zertifikat einer Gegenstelle ändert und Sie dieses erneut bestätigen / prüfen sollen. Um sich vor sogenannten [Man-in-the-middle-Angriffen](http://de.wikipedia.org/wiki/Man-in-the-middle-Angriff) zu schützen, sollten Sie sich im Zweifelsfall von der jeweiligen Gegenstelle die Korrektheit des neuen Zertifikats bestätigen lassen.
@@ -43,18 +43,18 @@ Es ist Vorsicht geboten, wenn sich das Zertifikat einer Gegenstelle ändert und 
 
 ### Verwaltung der Zertifikate {#usage_general_certificates_management}
 
-Klicken Sie im Hauptmenü auf `Extras` → `Zertifikate` um die bereits bestätigten Zertifikate einsehen und bearbeiten zu können. Es öffnet sich daraufhin ein Fenster, das ungefähr wie folgt aussieht:
+Klicken Sie im Hauptmenü auf **"Extras → Zertifikate"** um die bereits bestätigten Zertifikate einsehen und bearbeiten zu können. Es öffnet sich daraufhin ein Fenster, das ungefähr wie folgt aussieht:
 
 {{< figure src="certificates_dialog.jpg" caption="Verwaltung der Zertifikate" >}}
 
 Auf der linken Seite wird eine Liste der bereits erfassten Zertifikate dargestellt. Wählen Sie einen der Einträge in der Liste aus, um auf der rechten Seite weitere Details über das gewählte Zertifikat dargestellt zu bekommen.
 
-Um die Änderungen der vertrauenswürdigen Zertifikaten (Importe, Löschungen, etc.) dauerhaft zu speichern, muss auf `Übernehmen` geklickt werden. Wenn die Änderungen nicht gespeichert werden sollen, kann auf `Abbrechen` geklickt werden.
+Um die Änderungen der vertrauenswürdigen Zertifikaten (Importe, Löschungen, etc.) dauerhaft zu speichern, muss auf **"Übernehmen"** geklickt werden. Wenn die Änderungen nicht gespeichert werden sollen, kann auf **"Abbrechen"** geklickt werden.
 
 
 #### Zertifikat importieren {#usage_general_certificates_management_import}
 
-Klicken Sie auf den Button `Einfügen`. Es erscheint daraufhin ein Untermenü mit folgenden Einträgen:
+Klicken Sie auf den Button **"Einfügen"**. Es erscheint daraufhin ein Untermenü mit folgenden Einträgen:
 
 
 -   **Zertifikat aus Datei laden**
@@ -67,10 +67,10 @@ Klicken Sie auf den Button `Einfügen`. Es erscheint daraufhin ein Untermenü mi
 
 #### Zertifikat entfernen {#usage_general_certificates_management_remove}
 
-Markieren Sie das zu entfernende Zertifikat in der Liste und klicken Sie auf `Entfernen` um den gewählten Eintrag aus dem Programm zu entfernen.
+Markieren Sie das zu entfernende Zertifikat in der Liste und klicken Sie auf **"Entfernen"** um den gewählten Eintrag aus dem Programm zu entfernen.
 
 
 #### Zertifikat exportieren {#usage_general_certificates_export}
 
-Markieren Sie das zu entfernende Zertifikat in der Liste und klicken Sie auf `Export` um den gewählten Eintrag als separate Datei auf Ihrem Rechner zu speichern.
+Markieren Sie das zu entfernende Zertifikat in der Liste und klicken Sie auf **"Export"** um den gewählten Eintrag als separate Datei auf Ihrem Rechner zu speichern.
 

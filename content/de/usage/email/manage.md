@@ -17,9 +17,9 @@ menu:
 
 ### E-Mails lesen {#usage_email_manage_read}
 
-Nachdem ein E-Mailkonto mit Mailempfang eingerichtet wurde kann auf den Inhalt der E-Mailkonten zugegriffen werden. Klicken Sie dafür im Hauptmenü auf `E-Mails` → `E-Mailansicht öffnen`.
+Nachdem ein E-Mailkonto mit Mailempfang eingerichtet wurde kann auf den Inhalt der E-Mailkonten zugegriffen werden. Klicken Sie dafür im Hauptmenü auf **"E-Mails → E-Mailansicht öffnen"**.
 
--   E-Mailkonten mit Mailempfang via **IMAP** werden in der Sidebar mit den jeweiligen Unter-Ordnern dargestellt (z.B. Posteingang, Postausgang, etc.).
+-   E-Mailkonten mit Mailempfang via **IMAP** werden in der Sidebar mit den jeweiligen Unterordnern dargestellt (z.B. Posteingang, Postausgang, etc.).
 -   E-Mailkonten mit Mailempfang via **POP3** werden **nicht** in der Sidebar dargestellt. Empfange Mails werden in diesem Falle automatisch in den gewählten Posteingangs-Ordner gespeichert.
 
 Wählen Sie in der Sidebar einen E-Mailordner aus, dessen Inhalt dargestellt werden soll. Es wird daraufhin die [Ansicht des E-Mailordners](#usage_email_manage_folder) geöffnet.
@@ -58,14 +58,14 @@ Auf diesem Wege erzeugt E-Mails werden beim Versand automatisch mit der gewählt
 
 ### E-Mail verfassen {#usage_email_manage_compose}
 
-Nachdem mindestens ein E-Mailkonto mit Mailversand eingerichtet wurde können E-Mails erstellt und versendet werden. Klicken Sie dafür im Hauptmenü auf `E-Mails` → `E-Mail verfassen`. Daraufhin wird das folgende Formular zum Verfassen von E-Mails geöffnet:
+Nachdem mindestens ein E-Mailkonto mit Mailversand eingerichtet wurde können E-Mails erstellt und versendet werden. Klicken Sie dafür im Hauptmenü auf **"E-Mails → E-Mail verfassen"**. Daraufhin wird das folgende Formular zum Verfassen von E-Mails geöffnet:
 
 {{< figure src="compose_form.jpg" caption="Formular zum Verfassen einer E-Mail-Nachricht" >}}
 
 
 #### Absender wählen {#usage_email_manage_compose_sender}
 
-Im Auswahleld `Absender` werden alle E-Mailkonten dargestellt, für die ein Mailversand eingerichtet wurde. Wählen Sie hier das E-Mailkonto aus, über welches die E-Mail versendet werden soll.
+Im Auswahlfeld **"Absender"** werden alle E-Mailkonten dargestellt, für die ein Mailversand eingerichtet wurde. Wählen Sie hier das E-Mailkonto aus, über welches die E-Mail versendet werden soll.
 
 
 #### Empfänger bearbeiten {#usage_email_manage_compose_recipients}
@@ -129,7 +129,7 @@ Im HTML-Modus können verschiedenste Formatierungen in der Nachricht eingefügt 
 
 #### Anhänge verwalten {#usage_email_manage_compose_attachments}
 
-Der Nachricht können beliebig viele Dateien als Anhang beigefügt werden. Klicken Sie dafür unten rechts auf den Button `Hinzufügen` und wählen Sie eine oder mehrere Dateien von der Festplatte aus.
+Der Nachricht können beliebig viele Dateien als Anhang beigefügt werden. Klicken Sie dafür unten rechts auf den Button **"Hinzufügen"** und wählen Sie eine oder mehrere Dateien von der Festplatte aus.
 
 Jede angehängte Datei wird unterhalb des Textbereiches als Symbol dargestellt. Um den Anhang nachträglich wieder zu entfernen, markieren Sie das jeweilige Symbol und klicken Sie auf Entfernen.
 
@@ -140,12 +140,12 @@ Abhängig vom E-Mailanbieter dürfen Anhänge nicht beliebig groß sein. In der 
 
 #### Nachricht abschicken {#usage_email_manage_compose_send}
 
-Nachdem die Eingaben im Formular vervollständigt wurden, klicken Sie oben rechts auf `Senden` um die Mitteilung zur verschicken.
+Nachdem die Eingaben im Formular vervollständigt wurden, klicken Sie oben rechts auf **"Senden"** um die Mitteilung zur verschicken.
 
 
 #### Nachricht als Entwurf speichern {#usage_email_manage_compose_save}
 
-Nachdem die Eingaben im Formular vervollständigt wurden, klicken Sie oben rechts auf `Speichern` um die Mitteilung als Entwurf zu speichern.
+Nachdem die Eingaben im Formular vervollständigt wurden, klicken Sie oben rechts auf **"Speichern"** um die Mitteilung als Entwurf zu speichern.
 
 Es findet in diesem Falle kein Versand statt. Die Nachricht wird stattdessen im Entwurfs-Ordner des als Absender gewählten Mailkontos gespeichert. Wenn kein Entwurfs-Ordner ermittelt werden kann, wird alternativ der Entwurfs-Ordner im Benutzerkonto verwendet.
 

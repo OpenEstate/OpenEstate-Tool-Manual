@@ -86,7 +86,11 @@ Wenn Sie die Angaben in allen Tabs vorgenommen haben, speichern Sie Ihr Projekt 
 
 ### Ein Projekt öffnen {#usage_general_projects_open}
 
-Projekte können Sie entweder über den Projektassitenten oder direkt im Hauptmenü öffnen. Den Projektassisten öffnen Sie im Hauptmenü unter `Programm → Neues Projekt`. Direkt öffnen Sie Projekte im Hauptmenü unter `Programm → Projekt öffnen`. Zuletzt verwendete Projekte öffnen Sie im Hauptmenü unter  `Programm → zuletzt verwendet ...`.
+Projekte können Sie entweder über den Projektassistenten oder direkt im Hauptmenü öffnen. 
+
+-   Den Projektassistenten öffnen Sie im Hauptmenü unter **"Programm → Neues Projekt"**. 
+-   Direkt öffnen Sie Projekte im Hauptmenü unter **"Programm → Projekt öffnen"**. 
+-   Zuletzt verwendete Projekte öffnen Sie im Hauptmenü unter  **"Programm → zuletzt verwendet..."**.
 
 
 #### Ein bereits existierendes Projekt öffnen {#usage_general_projects_open_exist}
@@ -121,12 +125,15 @@ Inhalte einfügen
 
 #### Wo wird mein Projekt gespeichert? {#usage_general_projects_faq_location}
 
-Standardmäßig werden Projekte in das Verzeichnis `OpenEstate-Files` im Benutzerverzeichnis des im Betriebssystem angemeldetetn Benutzer abgelegt. Sie können beim Anlegen eines Projekts ggf. eine beliebige andere Stelle angeben. Darauf sollten Sie aber verzichten, wenn dies nicht zwingend notwendig ist.
+Standardmäßig werden Projekte in das Verzeichnis **`OpenEstate-Files`** im Benutzerverzeichnis des im Betriebssystem angemeldeten Benutzer abgelegt. Sie können beim Anlegen eines Projekts ggf. eine beliebige andere Stelle angeben. Darauf sollten Sie aber verzichten, wenn dies nicht zwingend notwendig ist.
 
 
 #### Wie kann ich mein Projekt an eine andere Stelle verschieben? {#usage_general_projects_faq_move}
 
 Verschieben oder kopieren Sie das Projektverzeichnis an eine beliebige Stelle, z.B. auf einen USB-Festplatte.
 
-Da nach dem verschieben das Projektverzeichnis nicht mehr an seiner alten Stelle existiert, wird das Programm beim nächsten Start eine Fehlermeldung ausgeben. Die Frage, ob ein neues Projekt erzeugt werden soll, beantwortet mit `Ja`. Darauf öffnet sich der [Projektassistent](#usage_general_projects_wizard). Klicken Sie im Projektassistenten auf den Tab `Projekt öffnen` und wählen das Projekt-Verzeichnis an seiner neuen Position aus und klicken auf Projekt öffnen. Dann wird das Projekt vom neuen Speicherort im Programm geöffnet. Beim nächsten Programmstart wird das Projekt automatisch vom neuen Speicherort geöffnet, wenn Sie zuvor bei der Projektwahl im Projektassistent die Checkbox `Das Projekt automatisch beim Programmstart öffnen` aktiviert hatten.
+Da nach dem verschieben das Projektverzeichnis nicht mehr an seiner alten Stelle existiert, wird das Programm beim nächsten Start eine Fehlermeldung ausgeben. Die Frage, ob ein neues Projekt erzeugt werden soll, beantwortet mit **"Ja"**. 
 
+Darauf öffnet sich der [Projektassistent](#usage_general_projects_wizard). Klicken Sie im Projektassistenten auf den Tab **"Projekt öffnen"** und wählen das Projekt-Verzeichnis an seiner neuen Position aus und klicken auf **"Projekt öffnen"**. Dann wird das Projekt vom neuen Speicherort im Programm geöffnet. 
+
+Beim nächsten Programmstart wird das Projekt automatisch vom neuen Speicherort geöffnet, wenn Sie zuvor im Projektassistenten die Checkbox **"Das Projekt automatisch beim Programmstart öffnen"** aktiviert haben.

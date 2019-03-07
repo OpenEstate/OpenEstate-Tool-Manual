@@ -14,12 +14,12 @@ menu:
 
 ## Einstellungen am Programm anpassen {#usage_general_settings}
 
-Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Hauptmenü auf `Extras` → `Einstellungen`.
+Um Einstellungen am Programm / Add-Ons vorzunehmen, klicken Sie im Hauptmenü auf **"Extras → Einstellungen"**.
 
 {{< figure src="menu_extras.png" caption="Einstellungen im Extras-Menü aufrufen" >}}
 
 {{< info >}}
-Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst durch betätigen des Buttons `Speichern` übernommen werden.
+Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst durch betätigen des Buttons **"Speichern"** übernommen werden.
 {{< /info >}}
 
 
@@ -32,14 +32,14 @@ Bitte beachten Sie, dass im folgenden Fenster vorgenommene Einstellungen erst du
 
 Der bevorzugte Web-Browser kann hier eingetragen werden. Im ImmoTool angezeigte URL's werden im hinterlegten Web-Browser geöffnet. Wenn kein Web-Browser eingetragen wurde, versucht das Programm den Standard-Browser des Betriebssystems zu starten.
 
-Um den bevorzugten Webbrowser auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
+Um den bevorzugten Webbrowser auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button **"Programmdatei wählen"**.
 
 
 #### PDF-Reader {#usage_general_settings_pdfreader}
 
 Der bevorzugte PDF-Reader kann hier eingetragen werden. Erzeugte PDF-Dokumente können aus dem ImmoTool heraus mit der hinterlegten Anwendung geöffnet werden.
 
-Um den bevorzugten PDF-Reader auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button `Programmdatei wählen`.
+Um den bevorzugten PDF-Reader auszuwählen klicken Sie auf das Ordner-Symbol rechts neben der entsprechenden Zeile und navigieren im folgenden Dialogfenster zur Programmdatei. Markieren dieses und übernehmen die Einstellung mit dem Button **"Programmdatei wählen"**.
 
 
 #### Darstellung {#usage_general_settings_rendering}
@@ -58,7 +58,7 @@ Hier können Sie einstellen, ob das zu letzt verwendete Projekt beim Start des P
 
 Wenn Sie für HTTP- und / oder FTP-Verbindungen ins Internet einen Proxy-Server verwenden, können Sie dies hier der Software mitteilen.
 
-Sollte dies der Fall sein, entfernen Sie den Haken bei `Keinen HTTP/FTP-Proxy verwenden` und tragen Sie `Hostname / IP-Adresse` sowie die `Port-Nr` des Proxy-Servers ein.
+Sollte dies der Fall sein, entfernen Sie den Haken bei **"Keinen HTTP/FTP-Proxy verwenden"** und tragen Sie **"Hostname / IP-Adresse"** sowie die **"Port-Nr"** des Proxy-Servers ein.
 
 {{< info >}}
 Auf der Webseite der Entwickler können Sie ggf. weitere Informationen zur Konfiguration der aktiven FTP-Übertragung erhalten.
@@ -71,13 +71,13 @@ Auf der Webseite der Entwickler können Sie ggf. weitere Informationen zur Konfi
 
 Hier können Sie festlegen, wo und wann die automatische Datensicherung vollzogen wird. Standardmäßig ist bereits ein Verzeichnis eingetragen, welches Sie bei Bedarf ändern können. Dies sollten Sie aber nur machen, wenn es zwingend notwendig ist, weil Sie z.B. die Sicherung auf einem externen Datenträger speichern möchten.
 
-Für den Zeitpunkt der Datensicherung werden Ihnen unter `Automatische Sicherung` mehrere Optionen angeboten. Wählen Sie eine Einstellung, die Ihren Anforderungen entspricht. Die Standardeinstellung ist `an jedem Tag`.
+Für den Zeitpunkt der Datensicherung werden Ihnen unter **"Automatische Sicherung"** mehrere Optionen angeboten. Wählen Sie eine Einstellung, die Ihren Anforderungen entspricht. Die Standardeinstellung ist **"an jedem Tag"**.
 
-Die Ziffer unter Limit gibt an, wie viele Sicherungen der Datenbank angelegt werden. Der voreingestellte Standardwert ist 5. Dies bedeutet z.B., dass - unabhängig von den Einstellungen unter `Automatische Sicherung` - fünf Sicherungen angelegt werden. Wenn die sechste Sicherung angelegt wird wird die erste gelöscht, so dass immer die fünf letzten Sicherungen verfügbar sind.
+Die Ziffer unter Limit gibt an, wie viele Sicherungen der Datenbank angelegt werden. Der voreingestellte Standardwert ist 5. Dies bedeutet z.B., dass - unabhängig von den Einstellungen unter **"Automatische Sicherung"** - fünf Sicherungen angelegt werden. Wenn die sechste Sicherung angelegt wird wird die erste gelöscht, so dass immer die fünf letzten Sicherungen verfügbar sind.
 Wenn Sie diesen Wert erhöhen, beachten Sie, dass jede Sicherung die gesamte Datenbank enthält. Diese können je nach Datenbestand recht groß werden.
 
 {{< info >}}
-Unabhängig von diesen Einstellungen können Sie im Hauptmenü unter `Extras → Datenbank → Sicherung` jederzeit eine Manuelle Datensicherung an einem besliebigen vornehmen.
+Unabhängig von diesen Einstellungen können Sie im Hauptmenü unter **"Extras → Datenbank → Sicherung"** jederzeit eine Manuelle Datensicherung nach Bedarf durchführen.
 {{< /info >}}
 
 
