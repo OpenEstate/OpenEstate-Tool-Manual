@@ -37,7 +37,7 @@ Das Programm-Fenster besteht aus den folgenden Elementen:
     Für die in (2) gewählte Ansicht werden in diesem Bereich verschiedene Informationen zur weiteren Bearbeitung dargestellt.
 
 5.  **Hauptbereich:** \
-    In diesem Bereich werden die Informationen aus der Datenbank dargestellt und bearbeitet. Es können beliebig viele Tabs im Hauptbereich dargestellt werden. Durch Klick auf das *rote X* (oder via Hauptmenü F8 Programm Tab schließen) kann ein geöffneter Reiter / Tab im Hauptbereich geschlossen werden.
+    In diesem Bereich werden die Informationen aus der Datenbank dargestellt und bearbeitet. Es können beliebig viele Tabs im Hauptbereich dargestellt werden. Durch Klick auf das rote  **"X"** (oder via **"Hauptmenü → Programm → Tab schließen"**) kann das aktuell im Hauptbereich dargestellte Tab geschlossen werden.
 
 6.  **Kalenderbereich:** \
     Der aktuelle Kalender wird dargestellt. Aktuelle Termine werden farblich im Kalender hervorgehoben und können durch Doppelklick geöffnet werden.
@@ -49,7 +49,7 @@ Das Programm-Fenster besteht aus den folgenden Elementen:
     Während eine Aufgabe im Hintergrund ausgeführt wird, findet an dieser eine optische Rückmeldung statt.
 
 9.  **Benachrichtigung:** \
-    Eine ausgeführte Aufgabe kann Rückmeldungen liefern, die im Programm als Information dargestellt werden. Nach einer Zeitspanne von 30 Sekunden wird die Benachrichtigung automatisch ausgeblendet. Es werden die letzten fünf Benachrichtigungen angezeigt. Wenn man die Benachrichtigung explizit schließt (durch Klick auf das *rote X*), werden die fünf zuletzt dargestellten Benachrichtigungen geleert.
+    Eine ausgeführte Aufgabe kann Rückmeldungen liefern, die im Programm als Information dargestellt werden. Nach einer Zeitspanne von 30 Sekunden wird die Benachrichtigung automatisch ausgeblendet. Es werden die letzten fünf Benachrichtigungen angezeigt. Wenn man die Benachrichtigung explizit schließt (durch Klick auf das rote **"X"**), werden die fünf zuletzt dargestellten Benachrichtigungen geleert.
 
 {{< todo >}}
 Bereiche beschreiben
