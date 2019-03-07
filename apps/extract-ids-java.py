@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
+import html
 import os
 import re
 import sys
@@ -24,11 +25,29 @@ import sys
 
 def parse(md_file, base_path):
     title = '//\n// ID\'s from \'%s\'\n//' % md_file[len(base_path) + 1:]
+
+    # Extract file contents below the YAML header.
+    lines = []
     with open(md_file, 'r') as md_content:
-        data = md_content.read()
-    for line in data.split('\n'):
+        state = 0
+        for line in md_content.readlines():
+            line_normalized = line.strip().lower()
+
+            # ignore drafts
+            if state == 1 and line_normalized.startswith('draft:') and line_normalized.endswith('true'):
+                return
+
+            if state < 2:
+                if line_normalized == '---':
+                    state = state + 1
+            else:
+                lines.append(line)
+
+    # Process contents.
+    for line in lines:
         if parse_line(line, title):
             title = None
+
     if title is None:
         print()
 
@@ -44,7 +63,7 @@ def parse_line(line, title):
 
         title = match.group(1)
         key = match.group(2)
-        print('/** %s */' % title.strip())
+        print('/** %s */' % html.escape(title.strip(), False))
         # print('String %s = "%s";' % (key.upper(), key))
         print('%s,' % key.upper())
         return True

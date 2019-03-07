@@ -24,9 +24,26 @@ import sys
 
 def parse(md_file, base_path):
     html_path = '%s.html' % md_file[len(base_path) + 1:-3]
+
+    # Extract file contents below the YAML header.
+    lines = []
     with open(md_file, 'r') as md_content:
-        data = md_content.read()
-    for line in data.split('\n'):
+        state = 0
+        for line in md_content.readlines():
+            line_normalized = line.strip().lower()
+
+            # ignore drafts
+            if state == 1 and line_normalized.startswith('draft:') and line_normalized.endswith('true'):
+                return
+
+            if state < 2:
+                if line_normalized == '---':
+                    state = state + 1
+            else:
+                lines.append(line)
+
+    # Process contents.
+    for line in lines:
         parse_line(line, html_path)
 
 
