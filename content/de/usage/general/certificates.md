@@ -17,7 +17,7 @@ menu:
 
 ### Was sind Zertifikate? {#usage_general_certificates_info}
 
-ImmoTool unterstützt an verschiedenen Stellen [SSL-Verschlüsselung](http://de.wikipedia.org/wiki/Transport_Layer_Security) (z.B. beim Immobilienexport oder E-Mailabruf). Ein wesentlicher Bestandteil der Verschlüsselung sind [digitale Zertifikate](http://de.wikipedia.org/wiki/Digitales_Zertifikat). Damit wird die [Authentizität](http://de.wikipedia.org/wiki/Authentizit%C3%A4t) und [Integrität](http://de.wikipedia.org/wiki/Integrit%C3%A4t_%28Informationssicherheit%29) der jeweiligen Gegenstelle sichergestellt.
+ImmoTool unterstützt an verschiedenen Stellen [SSL-Verschlüsselung](https://de.wikipedia.org/wiki/Transport_Layer_Security) (z.B. beim Immobilienexport oder E-Mailabruf). Ein wesentlicher Bestandteil der Verschlüsselung sind [digitale Zertifikate](https://de.wikipedia.org/wiki/Digitales_Zertifikat). Damit wird die [Authentizität](https://de.wikipedia.org/wiki/Authentizit%C3%A4t) und [Integrität](https://de.wikipedia.org/wiki/Integrit%C3%A4t_%28Informationssicherheit%29) der jeweiligen Gegenstelle sichergestellt.
 
 {{< info >}}
 Ein Zertifikat besitzt immer eine bestimmte Lebensdauer. Sobald diese "Lebenszeit" abgelaufen ist, muss die Gegenstelle ein neues Zertifikat bereitstellen. Das neue Zertifikat wird dann erneut beim erstmaligen Verbindungsaufbau heruntergeladen und Ihnen zur Prüfung vorgelegt.
@@ -37,7 +37,7 @@ Dieses Fenster stellt verschiedene Informationen dar, mit der die Gegenstelle (i
 - Um der Gegenstelle kein Vertrauen auszusprechen, kann auf **"Abbrechen"** geklickt werden. Das ImmoTool wird in diesem Falle die verschlüsselte Kommunikation abbrechen.
 
 {{< warning >}}
-Es ist Vorsicht geboten, wenn sich das Zertifikat einer Gegenstelle ändert und Sie dieses erneut bestätigen / prüfen sollen. Um sich vor sogenannten [Man-in-the-middle-Angriffen](http://de.wikipedia.org/wiki/Man-in-the-middle-Angriff) zu schützen, sollten Sie sich im Zweifelsfall von der jeweiligen Gegenstelle die Korrektheit des neuen Zertifikats bestätigen lassen.
+Es ist Vorsicht geboten, wenn sich das Zertifikat einer Gegenstelle ändert und Sie dieses erneut bestätigen / prüfen sollen. Um sich vor sogenannten [Man-in-the-middle-Angriffen](https://de.wikipedia.org/wiki/Man-in-the-Middle-Angriff) zu schützen, sollten Sie sich im Zweifelsfall von der jeweiligen Gegenstelle die Korrektheit des neuen Zertifikats bestätigen lassen.
 {{< /warning >}}
 
 
