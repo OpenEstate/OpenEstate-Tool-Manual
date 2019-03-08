@@ -70,16 +70,16 @@ The character string **`${openestate.server.varDir}`** is automatically replaced
 
 ### Configure protocols {#admin_server_setup_logging}
 
-The [configuration directory]({{< relref "directories.md#admin_server_directories_etc" >}}) of ImmoTool-Server contains a file called **`log4j.properties`**. With this file the logging behaviour of ImmoTool-Server can be configured.
+The [configuration directory]({{< relref "directories.md#admin_server_directories_etc" >}}) of ImmoTool-Server contains a file called **`logback.xml`**. With this file the logging behaviour of ImmoTool-Server can be configured.
 
-By default the application stores its protocols into the [protocol directory]({{< relref "directories.md#admin_server_directories_log" >}}). In most cases it is not necessary to make any changes to this file. But you can find further information about customization in the [documentation of log4j](https://logging.apache.org/log4j/1.2/manual.html).
+By default the application stores its protocols into the [protocol directory]({{< relref "directories.md#admin_server_directories_log" >}}). In most cases it is not necessary to make any changes to this file. But you can find further information about customization in the [documentation of Logback](https://logback.qos.ch/documentation.html).
 
 {{< info >}}
-The character string **`${openestate.server.logDir}`** in the **`log4j.properties`** file is automatically replaced with the configured path of the [protocol directory]({{< relref "directories.md#admin_server_directories_log" >}}).
+The character string **`${openestate.server.logDir}`** in the **`logback.xml`** file is automatically replaced with the configured path of the [protocol directory]({{< relref "directories.md#admin_server_directories_log" >}}).
 {{< /info >}}
 
 {{< info >}}
-The character string **`${openestate.server.app}`** in the **`log4j.properties`** file is automatically replaced with the name of the executing application. This allows every application to use a separate log file.
+The character string **`${openestate.server.app}`** in the **`logback.xml`** file is automatically replaced with the name of the executing application. This allows every application to use a separate log file.
 {{< /info >}}
 
 
