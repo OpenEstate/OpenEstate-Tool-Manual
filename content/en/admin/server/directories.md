@@ -44,7 +44,7 @@ All data, that is created and written by ImmoTool-Server, is stored in the data 
 
 -   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the data directory is located at **`/var/lib/OpenEstate-ImmoServer`**.
 
--   For all other types of installation (Windows, macOS, Linux via [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) the data directory is located at the subfolder **`OpenEstate-ImmoServer`** of the home directory by the user, who executed the application.
+-   For all other types of installation (Windows, macOS, Linux via [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) the data directory is located at the subfolder **`OpenEstate-Files`** of the home directory by the user, who executed the application.
 
 
 ### Protocol directory of ImmoTool-Server {#admin_server_directories_log}
@@ -53,7 +53,7 @@ The protocol directory contains log files with messages created during the execu
 
 -   If the [**Debian** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (or Debian repository) was used on Debian, Ubuntu, Linux Mint or similar for installation, the protocol directory is located at **`/var/log/OpenEstate-ImmoServer`**.
 
--   For all other types of installation (Windows, macOS, Linux via [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) the protocol directory is located in the subfolder **`log`** of the [data directory]({{< relref "directories.md#admin_server_directories_data" >}}).
+-   For all other types of installation (Windows, macOS, Linux via [**TAR.GZ** package]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) the protocol directory is located in the subfolder **`logs`** of the [data directory]({{< relref "directories.md#admin_server_directories_data" >}}).
 
 
 ### Configuration directory of ImmoTool-Server {#admin_server_directories_etc}
@@ -111,7 +111,7 @@ On Windows it depends, how the individual applications provided by ImmoTool-Serv
     -Dopenestate.server.etcDir=D:\OpenEstate-ImmoServer\etc
     
     # path to protocol directory
-    -Dopenestate.server.logDir=D:\OpenEstate-ImmoServer\log
+    -Dopenestate.server.logDir=D:\OpenEstate-ImmoServer\logs
     
     # path to data directory
     -Dopenestate.server.varDir=D:\OpenEstate-ImmoServer
@@ -124,7 +124,7 @@ On Windows it depends, how the individual applications provided by ImmoTool-Serv
     set "SERVER_ETC_DIR=D:\OpenEstate-ImmoServer\etc"
     
     :: path to protocol directory
-    set "SERVER_LOG_DIR=D:\OpenEstate-ImmoServer\log"
+    set "SERVER_LOG_DIR=D:\OpenEstate-ImmoServer\logs"
     
     :: path to data directory
     set "SERVER_VAR_DIR=D:\OpenEstate-ImmoServer"

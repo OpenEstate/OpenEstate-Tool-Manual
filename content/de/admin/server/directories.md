@@ -44,7 +44,7 @@ Im Daten-Verzeichnis speichert der ImmoTool-Server standardmäßig die verwaltet
 
 -   Wenn unter Debian, Ubuntu, Linux Mint & Co. das [**Debian**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (bzw. Debian-Repository) zur Installation verwendet wurde, wird das Verzeichnis **`/var/lib/OpenEstate-ImmoServer`** als Daten-Verzeichnis verwendet.
 
--   Bei allen anderen Installationen (Windows, macOS, Linux via [**TAR.GZ**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) wird im persönlichen Benutzer-Verzeichnis des ausführenden Benutzers ein Ordner namens **`OpenEstate-ImmoServer`** erzeugt und als Daten-Verzeichnis verwendet.
+-   Bei allen anderen Installationen (Windows, macOS, Linux via [**TAR.GZ**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) wird im persönlichen Benutzer-Verzeichnis des ausführenden Benutzers ein Ordner namens **`OpenEstate-Files`** erzeugt und als Daten-Verzeichnis verwendet.
 
 
 ### Protokoll-Verzeichnis des ImmoTool-Servers {#admin_server_directories_log}
@@ -53,7 +53,7 @@ Im Protokoll-Verzeichnis speichert der ImmoTool-Server verschiedene Protokolle m
 
 -   Wenn unter Debian, Ubuntu, Linux Mint & Co. das [**Debian**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_debian" >}}) (bzw. Debian-Repository) zur Installation verwendet wurde, wird das Verzeichnis **`/var/log/OpenEstate-ImmoServer`** als Protokoll-Verzeichnis verwendet.
 
--   Bei allen anderen Installationen (Windows, macOS, Linux via [**TAR.GZ**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) wird der Unterordner **`log`** im [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) des ausführenden Benutzers verwendet.
+-   Bei allen anderen Installationen (Windows, macOS, Linux via [**TAR.GZ**-Paket]({{< relref "../../intro/install_server.md#intro_install_server_setup_linux" >}})) wird der Unterordner **`logs`** im [Daten-Verzeichnis]({{< relref "directories.md#admin_server_directories_data" >}}) des ausführenden Benutzers verwendet.
 
 
 ### Konfigurations-Verzeichnis des ImmoTool-Servers {#admin_server_directories_etc}
@@ -111,7 +111,7 @@ Unter Windows hängt es davon ab, wie die einzelnen Programme des ImmoTool-Serve
     -Dopenestate.server.etcDir=D:\OpenEstate-ImmoServer\etc
     
     # Pfad zum Protokoll-Verzeichnis
-    -Dopenestate.server.logDir=D:\OpenEstate-ImmoServer\log
+    -Dopenestate.server.logDir=D:\OpenEstate-ImmoServer\logs
     
     # Pfad zum Daten-Verzeichnis
     -Dopenestate.server.varDir=D:\OpenEstate-ImmoServer
@@ -124,7 +124,7 @@ Unter Windows hängt es davon ab, wie die einzelnen Programme des ImmoTool-Serve
     set "SERVER_ETC_DIR=D:\OpenEstate-ImmoServer\etc"
     
     :: Pfad zum Protokoll-Verzeichnis
-    set "SERVER_LOG_DIR=D:\OpenEstate-ImmoServer\log"
+    set "SERVER_LOG_DIR=D:\OpenEstate-ImmoServer\logs"
     
     :: Pfad zum Daten-Verzeichnis
     set "SERVER_VAR_DIR=D:\OpenEstate-ImmoServer"
