@@ -169,7 +169,7 @@ Wenn im Feld **"Transport"** die Übertragungs-Art **"HTTP"** gewählt wurde, wi
     Tragen Sie hier Ihr Passwort ein.
 
 -   **Übertragung:** \
-    Wählen Sie die [Art der HTTP-Anfrage]((http://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP-Request-Methoden)) in diesem Feld aus.
+    Wählen Sie die [Art der HTTP-Anfrage](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP-Request-Methoden)) in diesem Feld aus.
 
     -   **via PUT-Anfrage:** \
         In diesem Falle werden die exportierten Dateien durch eine **"HTTP PUT"**-Anfrage zum Empfänger gesendet.
