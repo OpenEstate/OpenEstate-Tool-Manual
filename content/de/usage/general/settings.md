@@ -115,11 +115,13 @@ Manche Portale benötigen eigene Geodaten um Immobilien regional präzise zuordn
 
 {{< figure src="settings_realestate_geo.png" caption="Geodaten verwalten" >}}
 
-Für IS24 können Sie die benötigte Datei unter (Link wird nachgeführt) herunterladen. Speichern Sie diese Datei auf Ihrem Rechner und betätigen in den ImmoTool-Einstellungen Immobilien » Geodaten den Button Importieren. Wählen Sie im folgenden Dialogfenster die entsprechende Datei auf Ihrem Rechner und starten den Import durch den button 'Geo-Datei wählen'.
+Für folgende Portale sind derzeit entsprechende Dateien verfügbar.
 
-{{< todo >}}
-Link zu Download der Geo-Daten von IS24 einfügen.
-{{< /todo >}}
+- ImmobilienScout24.de
+- Immobiliare.it
+- Wohnen-In-Suedtirol-it
+
+Die benötigte Datei kann von der [Webseite des OpenEstate-Projekts](https://openestate.org/downloads/misc) herunterladen. Speichern Sie diese Datei auf Ihrem Rechner und betätigen in den ImmoTool-Einstellungen **"Immobilien » Geodaten"** den Button **"Importieren"**. Wählen Sie im folgenden Dialogfenster die entsprechende Datei auf Ihrem Rechner und starten den Import durch den button 'GeoDB-Datei wählen'.
 
 
 #### Sprachen {#usage_general_settings_realestate_languages}

@@ -23,7 +23,7 @@ Innerhalb eines Projektes können beliebig viele Immobilien verwaltet werden. Di
 
     {{< figure src="menu.png" caption="Übersicht der Immobilien über das Hauptmenü öffnen" >}}
 
--   Öffnen Sie die Immobilien-Ansicht und klicken Sie in der Sidebar auf den Eintrag **"Immobilien"**.
+-   Öffnen Sie die Immobilien-Ansicht und klicken in der Sidebar auf den Eintrag **"Immobilien"**.
 
     {{< figure src="sidebar.png" caption="Übersicht der Immobilien über die Sidebar öffnen" >}}
 

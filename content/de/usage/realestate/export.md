@@ -17,7 +17,7 @@ menu:
 Die im ImmoTool erfassten Immobiliendaten können als Export zusammengestellt und an externe Partner versendet werden (z.B. Immmobilienportale). Für jeden zu beliefernden Empfänger muss eine **Export-Schnittstelle** im Programm eingerichtet werden.
 
 {{< info >}}
-Zu den uns bekannten funktionierenden Immobilienportalen finden Sie [Hilfestellungen und Anleitungen im OpenEstate-Wiki](http://wiki.openestate.org/Kategorie:ImmoTool_Portalexport). Berücksichtigt sind hier Portale, welche von uns getestet wurden oder zu welchen ImmoTool-Benutzer erfolgreich senden konnten.
+Zu den uns bekannten funktionierenden Immobilienportalen finden Sie [Hilfestellungen und Anleitungen auf der OpenEstate-Webseite](https://openestate.org/immotool/portals). Berücksichtigt sind hier Portale, welche von uns getestet wurden oder zu welchen ImmoTool-Benutzer erfolgreich senden konnten.
 {{< /info >}}
 
 
@@ -34,27 +34,25 @@ Zur Verwaltung der Export-Schnittstelle gelangen Sie auf zweierlei Wegen:
     {{< figure src="sidebar.png" caption="Schnittstellen über die Sidebar auflisten" >}}
 
 
-Es öffnet sich daraufhin ein Fenster mit den registrierten Export-Schnittstellen.
+Es öffnet sich daraufhin ein Fenster mit den von Ihnen angelegten Export-Schnittstellen.
 
-{{< figure src="export_table.jpg" caption="Übersicht der Export-Schnittstellen" >}}
+{{< figure src="export_table.png" caption="Übersicht der Export-Schnittstellen" >}}
 
 
 ### Exportvorgang starten {#usage_realestate_export_start}
 
-Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und [aktivieren](#usage_realestate_export_enable) bzw. [deaktivieren](#usage_realestate_export_enable) Sie die Schnittstellen, welche für den Export verwendet / nicht verwendet werden sollen. Diese Einstellung können Sie aber auch nach der Zusammenstellung des Exports entscheiden und temporär (nur für den folgenden Export) ändern.Bei den aktivierten Schnittstellen ist die Schrift schwarz und bei den deaktivierten ist sie grau.
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und [aktivieren](#usage_realestate_export_enable) bzw. [deaktivieren](#usage_realestate_export_enable) Sie die Schnittstellen, welche für den Export verwendet / nicht verwendet werden sollen.  Bei den aktivierten Schnittstellen ist die Schrift schwarz und bei den deaktivierten ist sie grau.
 
-Klicken Sie auf **"Export starten"** um den Exportvorgang anzustoßen.
+Klicken Sie, um die Exportvorbereitung zu starten, auf **"Export starten"**. Es öffnet sich folgendes Fenster.
 
-Es öffnet sich ein weiteres Fenster, in welchem die Immobilien für den Export zusammengestellt werden.
+{{< figure src="export_summary.png" caption="Vorbereitung des Exportvorgangs" >}}
 
-{{< figure src="export_summary.jpg" caption="Vorbereitung des Exportvorgangs" >}}
-
-Nach Bedarf können einzelne Immobilien vom Export ausgeschlossen werden. Klicken Sie abschließend auf **"Export starten"** um den Exportvorgang mit den gewählten Immobilien / Schnittstellen zu starten.
+Hier erhalten Sie zur den jeweiligen Schnittstellen verschiedene Informationen. Sie können die Einstellung der Schnittstelle zum Modus (Teil- oder Vollabgleich) temporär für diesen Export ändern. Wenn sie auf die blauen Pfeile klicken wird Ihnen aufgezeigt, welche Aktionen mit welcher Immobilie ausgeführt werden. Wenn Sie auf ein rotes Minus klicke, wird die entsprechende Schnittstelle temporär für diesen Export deaktiviert. Sollten Sie eine Schnittstelle versehentlich deaktiviert haben, können Sie diese wieder hinzufügen, indem Sie auf den Button **"Hinzufügen"** klicken und die gewünschten Schnittstellen wieder hinzufügen.
 
 
 ### Export-Schnittstelle erstellen {#usage_realestate_export_add}
 
-Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und klicken Sie oben rechts auf den Button **"Neu"**. Es öffnet sich danach ein [Formular zur Erfassung einer neuen Export-Schnittstelle](#usage_realestate_export_form).
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und klicken oben rechts auf den Button **"Neu"**. Es öffnet sich danach ein [Formular zur Erfassung einer neuen Export-Schnittstelle](#usage_realestate_export_form).
 
 
 ### Export-Schnittstelle bearbeiten {#usage_realestate_export_edit}
@@ -66,9 +64,11 @@ Nach Bedarf können einzelne Immobilien vom Export ausgeschlossen werden. Klicke
 
 Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary).
 
-Bei Rechtsklick auf die betreffende Export-Schnittstelle in der Tabelle öffnet sich ein Menü, in dem Sie die Aktion **"Entfernen"** auswählen können um die Export-Schnittstelle zu entfernen.
+Mit einem Rechtsklick auf die betreffende Export-Schnittstelle in der Tabelle öffnet sich ein Menü, in dem Sie die Aktion **"Schnittstelle entfernen"** auswählen können um die Export-Schnittstelle zu löschen.
 
-Alternativ kann die betreffende Export-Schnittstelle in der Tabelle per Linksklick markiert werden. Bei Klick auf den Button **"Aktionen"** wird ein Menü dargestellt, in dem Sie die Aktion **"Entfernen"** auswählen können um die Export-Schnittstelle zu entfernen.
+Alternativ kann die betreffende Export-Schnittstelle in der Tabelle mit der Maus markieren. Bei Klick auf den Button **"Aktionen"** wird ein Menü dargestellt, in dem Sie die Aktion **"Schnittstelle entfernen"** auswählen können um die Export-Schnittstelle zu löschen.
+
+Darüber hinaus können Sie die Schnittstelle auch in der Sidebar mit der linken Maustaste markieren und im folgenden Menü  die Aktion **"Schnittstelle entfernen"** auswählen.
 
 
 ### Export-Schnittstelle (de)aktivieren {#usage_realestate_export_enable}
@@ -78,7 +78,7 @@ Alternativ kann die betreffende Export-Schnittstelle in der Tabelle per Linkskli
 
 #### Export-Schnittstelle permanent (de)aktivieren {#usage_realestate_export_enable_permanent}
 
-Öffnen Sie die zu aktivierende Schnittstelle zur Bearbeitung und (de)aktivieren Sie die Option **"Die Export-Schnittstelle aktivieren"**.
+Öffnen Sie die zu aktivierende Schnittstelle zur Bearbeitung und (de)aktivieren Sie die Option **"Schnittstelle aktivieren"**.
 
 Nachdem die Änderung durch Klick auf den Button **"Speichern"** übernommen wurde, ist die Export-Schnittstelle permanent im Projekt (de)aktiviert.
 
