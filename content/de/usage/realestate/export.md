@@ -78,23 +78,26 @@ Darüber hinaus können Sie die Schnittstelle auch in der Sidebar mit der linken
 
 #### Export-Schnittstelle permanent (de)aktivieren {#usage_realestate_export_enable_permanent}
 
-Öffnen Sie die zu aktivierende Schnittstelle zur Bearbeitung und (de)aktivieren Sie die Option **"Schnittstelle aktivieren"**.
+Öffnen Sie die zu aktivierende Schnittstelle zur Bearbeitung und (de)aktivieren Sie die Option **"Schnittstelle aktivieren"**. Nachdem die Änderung durch Klick auf den Button **"Speichern"** übernommen wurde, ist die Export-Schnittstelle permanent im Projekt (de)aktiviert.
 
-Nachdem die Änderung durch Klick auf den Button **"Speichern"** übernommen wurde, ist die Export-Schnittstelle permanent im Projekt (de)aktiviert.
+Alternativ können klicken Sie mit der rechten Maustaste auf eine Schnittstelle und wählen im folgenden Menü **"Schnittstelle deaktivieren"**.
 
 
 #### Export-Schnittstelle für einen Exportvorgang (de)aktivieren  {#usage_realestate_export_enable_temporarily}
 
-Links in der Übersicht der Schnittstellen können Sie eine oder mehrere Schnittstelle(n) für einen Exportvorgang (de)aktivieren. Diese Einstellung wird nicht dauerhaft gespeichert, sondern gilt nur solange die Übersicht der Schnittstellen geöffnet ist.
+Nachdem Sie **"Export starten"** geklickt haben, können Sie Schnittstellen für den nächsten Export ausschließen, indem Sie in der Exportvorbereitung diese mit dem **"roten Minus"** entfernen.
+
+
+### Export-Schnittstelle exportieren {#usage_realestate_export_export}
+
+Sie können angelegte Schnittstellen als gesonderte Sicherung oder zum Transfer in ein anderes ImmoTool auf Ihrem Computer ablegen. Markieren Sie hierfür eine oder mehrere Schnittstellen und klicken auf die Immobilie(n) mit der rechten Maustaste und wählen im erscheinenden Menü **"Schnittstelle auf Festplatte exportieren"**. Im folgenden Fenster wählen Sie den Speicherort und klicken auf **"Speichern"**.
 
 
 ### Export-Schnittstelle importieren {#usage_realestate_export_import}
 
 Um die Einrichtung der Schnittstelle zu erleichtern unterstützt das Programm den Import von Schnittstellen. Sie können von teilnehmenden Partnern eine XML-Datei beziehen, die Sie direkt ins Programm importieren können. Dadurch können eventuelle Fehleingaben bei der Einrichtung einer Schnittstelle vermieden werden.
 
-Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und klicken Sie oben rechts auf den Button **"Import"**. Es öffnet sich ein Fenster, in dem die zuvor heruntergeladene Schnittstellen-Datei ausgewählt werden kann.
-
-Nach Auswahl der Schnittstellen-Datei wird automatisch eine Export-Schnittstelle im Programm mit den jeweiligen Vorgaben des Empfängers erzeugt.
+Öffnen Sie die [Übersicht der Exporte](#usage_realestate_export_summary) und klicken mit der rechten Maustaste in der Sidebar auf **"Exporte sonstiges Schnittstelle importieren"**. Es öffnet sich ein Fenster, in dem Sie eine oder mehrere die Schnittstellen-Datei auswählen und auf den Button **"Öffnen"** klicken. Die ausgewählten Schnittstelle-Datein werden in das ImmoTool eingelesen.
 
 
 ### Formular für Export-Schnittstellen {#usage_realestate_export_form}
@@ -103,22 +106,56 @@ Nach Auswahl der Schnittstellen-Datei wird automatisch eine Export-Schnittstelle
 
 Die allgemeinen Einstellungen können im oberen Bereich des Formulars eingetragen werden:
 
-{{< figure src="export_form_general.jpg" caption="Allgemeine Einstellungen der Export-Schnittstelle" >}}
+{{< figure src="export_form_general.png" caption="Allgemeine Einstellungen der Export-Schnittstelle" >}}
 
--   **Bezeichnung:** \
+-   **Titel:** \
     Tragen Sie hier einen Namen zu dieser Schnittstelle ein (z.B. "ImmobilienScout24").
+
+-   **Format:** \
+    Wählen Sie das vom jeweiligen Empfänger geforderte Format aus. Das gebräuchlichste ist **OpenImmo-XML**.
 
 -   **Transport:** \
     Wählen Sie die vom jeweiligen Empfänger geforderte Transport-Art aus. Die gebräuchlichste ist extern auf einen FTP-Server.
 
--   **Format:** \
-    Wählen Sie das vom jeweiligen Empfänger geforderte Format aus. Das gebräuchlichste ist **OpenImmo-XML**.
+-   **Modes:** \
+    Wählen Sie hier zwischen Teil- und Vollabgleich. Es wird empfohlen Exporte im Teilabgleich zu senden.
 
 -   **Limitierung:** \
     Sie können hier einstellen, wie viele Inserate maximal zum Empfänger gesendet werden. Sollten Sie eine Limitierung einstellen wollen, deaktivieren Sie die Option **"Keine Limitierung verwenden"** und tragen Sie die gewünschte Anzahl ein.
 
 -   **Schnittstelle aktivieren** \
     Standardmäßig ist diese Option auf **"aktiv"** gesetzt. Wenn Sie diese Schnittstelle noch nicht aktivieren möchten, so entfernen Sie den Haken. Sie können diese Schnittstelle ggf. auch in der Übersicht der Schnittstellen temporär für einen einzelnen Exportvorgang aktivieren.
+
+-   **Anbieter-Nr:** \
+    Tragen Sie hier die Anbieter- / Kundennummer des jeweiligen Portals ein.
+
+-   **OpenImmo-Nr:** \
+    Diese Angabe wird meist nicht benötigt. Wenn doch, tragen Sie hier ebenfalls die Anbieter- / Kundennummer des jeweiligen Portals ein.
+
+-   **Technik Mail:** \
+    Tragen Sie hier die E-Mailadresse der Person ein, welche ggf. die Import-Meldungen erhält.
+
+-   **Modus:** \
+    Wählen Sie zwischen Voll- und Teilabgleich.
+
+-   **Vollabgleich:** \
+        Der gesamte Immobilienbestand, der zur Schnittstelle zugewiesen wurde, wird bei jedem Exportvorgang zum Empfänger gesendet.
+
+-   **Teilabgleich:** \
+        Es werden nur Immobilien exportiert, die zur Schnittstelle zugewiesen wurden und die seit dem letzten Exportvorgang über diese Schnittstelle geändert wurden.
+
+-   **Zeilenumbruch:** \
+    Wählen Sie die Methode des Zeilenumbruchs. Im Zweifelsfall belassen Sie die Standardeinstellung und überprüfen die Darstellung in jeweiligen Portal.
+
+-   **Anhänge:** \
+    Wenn nicht anders benannt, belassen Sie die Standardeinstellung.
+
+-   **Markierung:** \
+    Wenn nicht anders benannt, belassen Sie die Standardeinstellung. Sollten keine Bilder beim Empfänger dargestellt werden, so ändern Sie die Einstellung und führen Sie einen erneuten Exportvorgang durch.
+
+-   **Sonstiges:** \
+    Wenn nicht anders benannt, belassen Sie die Standardeinstellung.
+
 
 {{< warning >}}
 Die Option zur Limitierung schützt Sie nicht zwangsläufig vor der Überschreitung Ihres Kontingents bei dem Empfänger. Prüfen Sie bitte dennoch in regelmäßigen Abständen beim Empfänger, ob das Limit korrekt eingehalten wird.
@@ -129,16 +166,16 @@ Die Option zur Limitierung schützt Sie nicht zwangsläufig vor der Überschreit
 
 Wenn im Feld **"Transport"** die Übertragungs-Art **"FTP"** gewählt wurde, wird das folgende Formular im Tab **"Transport"** dargestellt:
 
-{{< figure src="export_form_ftp.jpg" caption="FTP-Einstellungen der Export-Schnittstelle" >}}
+{{< figure src="export_form_ftp.png" caption="FTP-Einstellungen der Export-Schnittstelle" >}}
 
--   **Adresse:** \
-    Tragen Sie hier die Adresse des FTP-Servers ein. Manchmal wird auch der Begriff "Host" oder "Hostname" verwendet.
+-   **Hostname:** \
+    Tragen Sie hier die Adresse des FTP-Servers ein. Manchmal wird auch der Begriff "Host" oder "Serveradresse" verwendet.
 
 -   **Port:** \
     Standardmäßig ist Port **`21`** zu verwenden. Dies ist auch voreingestellt, und sollte nur auf ausdrückliche Aufforderung geändert werden.
 
--   **Login:** \
-    Tragen Sie hier Ihren FTP-Benutzernamen ein.
+-   **User:** \
+    Tragen Sie hier Ihren FTP-Benutzernamen ein. Manchmal wird auch der Begriff "Loginnname" oder "Benutzer" verwendet.
 
 -   **Passwort:** \
     Tragen Sie hier Ihr FTP-Passwort ein.
@@ -157,16 +194,16 @@ Wenn im Feld **"Transport"** die Übertragungs-Art **"FTP"** gewählt wurde, wir
 
 Wenn im Feld **"Transport"** die Übertragungs-Art **"HTTP"** gewählt wurde, wird das folgende Formular im Tab **"Transport"** dargestellt:
 
-{{< figure src="export_form_http.jpg" caption="HTTP-Einstellungen der Export-Schnittstelle" >}}
+{{< figure src="export_form_http.png" caption="HTTP-Einstellungen der Export-Schnittstelle" >}}
 
--   **HTTP-Adresse:** \
-    Tragen Sie hier die URL des Empfängers ein, zu der die exportierten Immobilien gesendet werden sollen.
+-   **URL:** \
+    Tragen Sie hier die HTTP-Adresse des Empfängers ein, zu der die exportierten Immobilien gesendet werden sollen.
 
--   **Login:** \
-    Tragen Sie hier Ihren Benutzernamen ein.
+-   **User:** \
+    Tragen Sie hier Ihren FTP-Benutzernamen ein. Manchmal wird auch der Begriff "Loginnname" oder "Benutzer" verwendet.
 
 -   **Passwort:** \
-    Tragen Sie hier Ihr Passwort ein.
+    Tragen Sie hier Ihr HTTP-Passwort ein.
 
 -   **Übertragung:** \
     Wählen Sie die [Art der HTTP-Anfrage](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP-Request-Methoden)) in diesem Feld aus.
@@ -188,60 +225,10 @@ Wenn im Feld **"Transport"** die Übertragungs-Art **"HTTP"** gewählt wurde, wi
 
 Wenn im Feld **"Transport"** die Übertragungs-Art **"lokal auf die Festplatte"** gewählt wurde, wird das folgende Formular im Tab **"Transport"** dargestellt:
 
-{{< todo >}}
-Bild einfügen
-{{< /todo >}}
+{{< figure src="export_form_local.png" caption="Lokale Einstellungen der Export-Schnittstelle" >}}
 
--   **Zielverzeichnis:** \
+-   **Zielordner:** \
     Wählen Sie hier das lokale Verzeichnis auf Ihrer Festplatte aus, in welches die exportierten Immobiliendaten abgelegt werden soll.
-
-
-#### Einstellungen zum OpenImmo-XML-Format {#usage_realestate_export_form_openimmo}
-
-Wenn im Feld **"Format"** die Übertragungs-Art **"OpenImmo-XML"** gewählt wurde, wird das folgende Formular im Tab **"Format"** dargestellt:
-
-{{< figure src="export_form_openimmo.jpg" caption="Einstellungen in Export-Schnittstelle zum OpenImmo-Format" >}}
-
--   **Anbieter-Nr:** \
-    Tragen Sie hier die Anbieter- / Kundennummer des jeweiligen Portals ein.
-
--   **OpenImmo-Nr:** \
-    Diese Angabe wird meist nicht benötigt. Wenn doch, tragen Sie hier ebenfalls die Anbieter- / Kundennummer des jeweiligen Portals ein.
-
--   **Technik Mail:** \
-    Tragen Sie hier die E-Mailadresse der Person ein, welche ggf. die Import-Meldungen erhält.
-
--   **Modus:** \
-    Wählen Sie zwischen Voll- und Teilabgleich.
-
-    -   **Vollabgleich:** \
-        Der gesamte Immobilienbestand, der zur Schnittstelle zugewiesen wurde, wird bei jedem Exportvorgang zum Empfänger gesendet.
-
-    -   **Teilabgleich:** \
-        Es werden nur Immobilien exportiert, die zur Schnittstelle zugewiesen wurden und die seit dem letzten Exportvorgang über diese Schnittstelle geändert wurden.
-
--   **Zeilenumbruch:** \
-    Wählen Sie die Methode des Zeilenumbruchs. Im Zweifelsfall belassen Sie die Standardeinstellung und überprüfen die Darstellung in jeweiligen Portal.
-
--   **Anhänge:** \
-    Wenn nicht anders benannt, belassen Sie die Standardeinstellung.
-
--   **Markierung:** \
-    Wenn nicht anders benannt, belassen Sie die Standardeinstellung. Sollten keine Bilder beim Empfänger dargestellt werden, so ändern Sie die Einstellung und führen Sie einen erneuten Exportvorgang durch.
-
--   **Sonstiges:** \
-    Wenn nicht anders benannt, belassen Sie die Standardeinstellung.
-
-
-#### Einstellungen zu exportierten Bildern {#usage_realestate_export_form_images}
-
-Wählen Sie im unteren Bereich des Formulars den Tab **"Bilder"** um Einstellungen für exportierte Bilder anzupassen.
-
--   Zur Immobilie können Bilder gespeichert werden, welche nicht auf den Portalen veröffentlicht werden sollen, weil z.B. eine Begrenzung der Anzahl der Bilder vorgegeben ist. Wenn Sie diese aber auf Ihrer Website darstellen wollen, so aktivieren Sie die Option Allgemein.
-
--   Es kann sinnvoll sein, die Bilder für den Website-Export zu verkleinern. Wenn Sie dies wünschen, so aktivieren Sie die Option **"Skalierung"** und tragen Sie die Maximalwerte für die Breite und Höhe (in Pixeln) ein.
-
--   Wenn Sie Ihr Firmenlogo als Wasserzeichen in die Bilder einfügen möchten, so aktivieren Sie die Option **"Wasserzeichen"**. Tragen Sie die Größe des Wasserzeichens ein, wählen die Position innerhalb der Bilder und den gewünschten Transparenz-Wert.
 
 
 #### Änderungen speichern {#usage_realestate_export_form_submit}
