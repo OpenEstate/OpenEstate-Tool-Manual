@@ -21,38 +21,34 @@ Im Kalender Add-On können **Termine** und **Aufgaben** erfasst werden. Im Folge
 
 Innerhalb eines Projektes können beliebig viele Kalendereinträge gespeichert werden. Zur Verwaltung der hinterlegten Kalendereinträge gelangen Sie auf zweierlei Wegen:
 
-1.  Klicken Sie im Hauptmenü auf den Eintrag `Kalender` → `Monatsansicht` / `Wochenansicht` / `Tagesansicht` / `Tabellenansicht` um die jeweilige Kalender-Ansicht zu öffnen.
+-   Klicken Sie im Hauptmenü auf den Eintrag **"Kalender → Monatsansicht"** (bzw. **"Wochenansicht"** / **"Tagesansicht"** / **"Tabellenansicht"**) um die jeweilige Kalender-Ansicht zu öffnen.
 
-2.  Klicken Sie in der Sidebar `Kalender` auf die `Monatsansicht` / `Wochenansicht` / `Tagesansicht` / `Tabellenansicht` von einem der erfassten Kalender.
+-   Klicken Sie in der Sidebar **"Kalender"** auf die **"Monatsansicht"** / **"Wochenansicht"** / **"Tagesansicht"** / **"Tabellenansicht"** von einem der erfassten Kalender.
 
 Daraufhin wird eine tabellarische Übersicht der erfassten Kalendereinträge dargestellt:
 
 {{< todo >}}
-Screenshot einfügen
+Screenshot einfügen, Bezeichnungen aktualisieren
 {{< /todo >}}
 
 
 ### Kalendereintrag erfassen {#usage_calendar_manage_add}
 
-Klicken Sie im Hauptmenü auf `Kalender` → `Neu` → `Termin` / `Aufgabe`. Alternativ können Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) öffnen und oben rechts auf den Button `Neu` klicken.
+Klicken Sie im Hauptmenü auf **"Kalender → Neu → Termin"** (bzw. **"Aufgabe"**). Alternativ können Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) öffnen und oben rechts auf den Button **"Neu"** klicken.
 
-Nehmen Sie die gewünschten Einträge im [Formular für Kalendereinträge](#usage_calendar_manage_form) vor und klicken Sie abschließend auf den Button `Speichern`.
+Nehmen Sie die gewünschten Einträge im [Formular für Kalendereinträge](#usage_calendar_manage_form) vor und klicken Sie abschließend auf den Button **"Speichern"**.
 
 
 ### Kalendereintrag bearbeiten {#usage_calendar_manage_edit}
 
 Öffnen Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) und suchen Sie den zu bearbeitenden Eintrag. Durch einen Doppelklick auf den betreffenden Kalendereintrag wird das [Formular für Kalendereinträge](#usage_calendar_manage_form) zur Bearbeitung des Kalendereintrags geöffnet.
 
-Nehmen Sie die gewünschten Änderungen im [Formular für Kalendereinträge](#usage_calendar_manage_form) vor und klicken Sie abschließend auf den Button `Speichern`.
+Nehmen Sie die gewünschten Änderungen im [Formular für Kalendereinträge](#usage_calendar_manage_form) vor und klicken Sie abschließend auf den Button **"Speichern"**.
 
 
 ### Kalendereintrag löschen {#usage_calendar_manage_remove}
 
-Öffnen Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) und suchen Sie den zu löschenden Eintrag. Klicken Sie mit der rechten Maustaste auf den betreffenden Kalendereintrag und wählen Sie im dargestellten Menü die Aktion `Kalendereintrag löschen`.
-
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
+Öffnen Sie die [Übersicht der Kalendereinträge](#usage_calendar_manage_table) und suchen Sie den zu löschenden Eintrag. Klicken Sie mit der rechten Maustaste auf den betreffenden Kalendereintrag und wählen Sie im dargestellten Menü die Aktion **"Kalendereintrag löschen"**.
 
 
 ### Formular für Kalendereinträge {#usage_calendar_manage_form}
@@ -71,19 +67,19 @@ Screenshot einfügen, weitere Reiter dokumentieren
 
 #### Notizen {#usage_calendar_manage_form_notes}
 
-Im Tab `Notizen` kann zum Kalendereintrag ein beliebiger Notiztext hinterlegt werden.
+Im Tab **"Notizen"** kann zum Kalendereintrag ein beliebiger Notiztext hinterlegt werden.
 
 
 #### Änderungen speichern {#usage_calendar_manage_form_submit}
 
-Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie oben rechts auf den Button `Speichern`.
+Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie oben rechts auf den Button **"Speichern"**.
 
 {{< info >}}
-Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist dass Programm darauf hin.
+Das Speichern ist zu jedem Zeitpunkt der Bearbeitung möglich. Sollten relevante Eingaben fehlen, so weist das Programm darauf hin.
 {{< /info >}}
 
 {{< warning >}}
-Jede Änderung im Formular muss am Ende der Bearbeitung durch Klick auf `Speichern` dauerhaft gespeichert werden.
+Jede Änderung im Formular muss abschließend durch Klick auf **"Speichern"** dauerhaft gespeichert werden.
 {{< /warning >}}
 
 
@@ -102,25 +98,21 @@ Screenshot einfügen
 
 ### Kalender erfassen {#usage_calendar_manage_groups_add}
 
-Klicken Sie im Hauptmenü auf `Adressen` → `Neu` → `Kalender`.
+Klicken Sie im Hauptmenü auf **"Adressen → Neu → Kalender"**.
 
-Nehmen Sie die gewünschten Einträge im [Formular für Kalender](#usage_calendar_manage_groups_form) vor und klicken Sie abschließend auf den Button `Speichern`.
+Nehmen Sie die gewünschten Einträge im [Formular für Kalender](#usage_calendar_manage_groups_form) vor und klicken Sie abschließend auf den Button **"Speichern"**.
 
 
 ### Kalender bearbeiten {#usage_calendar_manage_groups_edit}
 
-Öffnen Sie die Kalender-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf den bearbeitenden Kalender und wählen Sie im Menü die Aktion `Kalender bearbeiten`.
+Öffnen Sie die Kalender-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf den bearbeitenden Kalender und wählen Sie im Menü die Aktion **"Kalender bearbeiten"**.
 
-Nehmen Sie die gewünschten Einträge im [Formular für Kalender](#usage_calendar_manage_groups_form) vor und klicken Sie abschließend auf den Button `Speichern`.
+Nehmen Sie die gewünschten Einträge im [Formular für Kalender](#usage_calendar_manage_groups_form) vor und klicken Sie abschließend auf den Button **"Speichern"**.
 
 
 ### Kalender löschen {#usage_calendar_manage_groups_remove}
 
-Öffnen Sie die Kalender-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf den zu löschenden Kalender und wählen Sie im Menü die Aktion `Kalender löschen`.
-
-{{< warning >}}
-Eine Löschung kann ohne vorherige Datensicherung nicht wieder rückgängig gemacht werden!
-{{< /warning >}}
+Öffnen Sie die Kalender-Ansicht in der Sidebar, klicken Sie mit der rechten Maustaste auf den zu löschenden Kalender und wählen Sie im Menü die Aktion **"Kalender löschen"**.
 
 
 ### Formular für Kalender {#usage_calendar_manage_groups_form}
@@ -139,4 +131,4 @@ Tragen Sie eine Bezeichnung für des Kalenders und ggf. einen Beschreibungstext 
 
 #### Änderungen speichern {#usage_calendar_manage_groups_form_submit}
 
-Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie auf den Button `Speichern`.
+Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie auf den Button **"Speichern"**.

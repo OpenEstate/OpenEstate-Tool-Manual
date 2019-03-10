@@ -17,7 +17,7 @@ menu:
 
 ### Was sind Nachrichtenquellen? {#usage_news_manage_info}
 
-In vielen Fällen stellen Betreiber von Webseiten / Blogs / Foren ihre aktuellen Ankündigungen / Nachrichten als "Nachrichten-Feed" im [RSS-Format](http://de.wikipedia.org/wiki/RSS) oder [Atom-Format](http://de.wikipedia.org/wiki/Atom_%28Format%29) bereit.
+In vielen Fällen stellen Betreiber von Webseiten / Blogs / Foren ihre aktuellen Ankündigungen / Nachrichten als "Nachrichten-Feed" im [RSS-Format](https://de.wikipedia.org/wiki/RSS_%28Web-Feed%29) oder [Atom-Format](https://de.wikipedia.org/wiki/Atom_%28Format%29) bereit.
 
 Solche Nachrichtenquellen können vom ImmoTool automatisch in regelmäßigen Abständen abgerufen werden. Wenn es dabei neue Nachrichten findet, wird eine Information dargestellt.
 

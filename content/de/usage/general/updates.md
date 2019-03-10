@@ -14,15 +14,22 @@ menu:
 
 ## Aktualisierungen {#usage_general_updates}
 
-In regelmäßigen Abständen werden Aktualisierungen für das ImmoTool und die Add-Ons bereitgestellt.
+
+### Aktualisierung des ImmoTools {#usage_general_updates_client}
+
+In regelmäßigen Abständen werden Aktualisierungen für das ImmoTool und die Add-Ons bereitgestellt. 
+
+Beim Start des Programms wird **automatisch** einmal täglich nach vorliegenden Aktualisierungen gesucht. Sollten Aktualisierungen vorliegen, wird folgende Information unten rechts im Programm dargestellt:
+
+{{< figure src="../../admin/client/update_notification.png" caption="Information über eine verfügbare Aktualisierung" >}}
+
+Falls Sie das Programm auf Aktualisierungen hinweist, kontaktieren Sie Ihren zuständigen Administrator sodass dieser die nötigen Schritte durchführen kann (siehe ["ImmoTool aktualisieren"]({{< relref "../../admin/client/update.md#admin_client_update" >}})).
+
+{{< info >}}
+Bei Bedarf können Sie die Prüfung auf Aktualisierungen auch manuell durchführen indem Sie im Hauptmenü auf **"Extras → Aktualisierung"** klicken.
+{{< /info >}}
 
 
-### Aktualisierung aus dem Programm heraus starten {#usage_general_updates_execute}
+### Aktualisierung des ImmoTool-Servers {#usage_general_updates_server}
 
-Klicken Sie im Hauptmenü auf `Extras` → `Aktualisierung` um die Aktualisierung zu starten.
-
-{{< figure src="menu_extras.png" caption="Aktualisierungen im Extras-Menü aufrufen" >}}
-
-Während der Suche nach Updates wird Ihnen ein Dialogfenster angezeigt, welches Sie über den Fortschritt informiert. Wenn Aktualisierungen gefunden wurden, werden Sie gefragt, ob die gefundenen Dateien installiert werden sollen. Wenn Sie auf `Ja` klicken, werden die Aktualisierungen heruntergeladen und installiert.
-
-Nach erfolgter Aktualisierung schließt sich das Programm selbstständig. Erst durch einem Neustart werden die Änderungen wirksam.
+Zur Aktualisierung des ImmoTool-Servers sollte Ihr zuständiger Administrator den Hinweisen im Kapitel ["ImmoTool-Server aktualisieren"]({{< relref "../../admin/server/update.md#admin_server_update" >}}) folgen.

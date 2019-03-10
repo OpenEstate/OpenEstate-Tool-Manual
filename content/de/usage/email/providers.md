@@ -16,7 +16,7 @@ menu:
 
 Im Folgenden finden Sie die technischen Eckdaten verschiedener E-Mailanbieter, die zur Einrichtung eines E-Mailkontos im ImmoTool verwendet werden können.
 
-Selbstverständlich können auch beliebige andere E-Mailanbieter mit dem ImmoTool verwendet werden, wenn diese die üblichen Protokolle ([IMAP](http://de.wikipedia.org/wiki/Internet_Message_Access_Protocol), [POP3](http://de.wikipedia.org/wiki/Post_Office_Protocol), [SMTP](http://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)) unterstützen.
+Selbstverständlich können auch beliebige andere E-Mailanbieter mit dem ImmoTool verwendet werden, wenn diese die üblichen Protokolle ([IMAP](https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol), [POP3](https://de.wikipedia.org/wiki/Post_Office_Protocol), [SMTP](https://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol)) unterstützen.
 
 
 ### E-Mailempfang via IMAP {#usage_email_providers_imap}
@@ -25,13 +25,11 @@ Die folgende Tabelle enthält einer Übersicht der IMAP-Einstellungen von versch
 
 | Anbieter | Anmeldung | Krypto     | Server                | Port  |
 | -------- | --------- | ---------- | --------------------- | -----:|
-| [GMail]  | `LOGIN`¹  | `IMAPS`    | `imap.googlemail.com` | `993` |
-| [GMX]    | `LOGIN`¹  | `IMAPS`    | `imap.gmx.net`        | `993` |
-| [Web.de] | `LOGIN`¹  | `STARTTLS` | `imap.web.de`         | `143` |
+| [GMail]  | `LOGIN`   | `IMAPS`    | `imap.googlemail.com` | `993` |
+| [GMX]    | `LOGIN`   | `IMAPS`    | `imap.gmx.net`        | `993` |
+| [Web.de] | `LOGIN`   | `STARTTLS` | `imap.web.de`         | `143` |
 |          |           | `IMAPS`    | `imap.web.de`         | `993` |
-| [Yahoo]  | `LOGIN`¹  | `IMAPS`    | `imap.mail.yahoo.com` | `993` |
-
-**¹** Für die Anmeldung beim IMAP-Server muss die E-Mailadresse als Login-Name und das gewählte Passwort im Programm eingetragen werden.
+| [Yahoo]  | `LOGIN`   | `IMAPS`    | `imap.mail.yahoo.com` | `993` |
 
 
 ### E-Mailempfang via POP3 {#usage_email_providers_pop3}
@@ -40,13 +38,11 @@ Die folgende Tabelle enthält einer Übersicht der POP3-Einstellungen von versch
 
 | Anbieter | Anmeldung | Krypto     | Server                | Port  |
 | -------- | --------- | ---------- | --------------------- | -----:|
-| [GMail]  | `LOGIN`¹  | `POP3S`    | `pop.googlemail.com`  | `995` |
-| [GMX]    | `LOGIN`¹  | `POP3S`    | `pop.gmx.net`         | `995` |
-| [Web.de] | `LOGIN`¹  | `STARTTLS` | `pop3.web.de`         | `110` |
+| [GMail]  | `LOGIN`   | `POP3S`    | `pop.googlemail.com`  | `995` |
+| [GMX]    | `LOGIN`   | `POP3S`    | `pop.gmx.net`         | `995` |
+| [Web.de] | `LOGIN`   | `STARTTLS` | `pop3.web.de`         | `110` |
 |          |           | `POP3S`    | `pop3.web.de`         | `995` |
-| [Yahoo]  | `LOGIN`¹  | `POP3S`    | `pop.mail.yahoo.com`  | `995` |
-
-**¹** Für die Anmeldung beim POP3-Server muss die E-Mailadresse als Login-Name und das gewählte Passwort im Programm eingetragen werden.
+| [Yahoo]  | `LOGIN`   | `POP3S`    | `pop.mail.yahoo.com`  | `995` |
 
 
 ### E-Mailversand via SMTP {#usage_email_providers_smtp}
@@ -55,16 +51,14 @@ Die folgende Tabelle enthält einer Übersicht der SMTP-Einstellungen von versch
 
 | Anbieter | Anmeldung | Krypto     | Server                | Port  |
 | -------- | --------- | ---------- | --------------------- | -----:|
-| [GMail]  | `LOGIN`¹  | `SMTPS`    | `smtp.gmail.com`      | `465` |
+| [GMail]  | `LOGIN`   | `SMTPS`    | `smtp.gmail.com`      | `465` |
 |          |           | `STARTTLS` | `smtp.gmail.com`      | `587` |
-| [GMX]    | `LOGIN`¹  | *keine*    | `mail.gmx.net`        | `25`  |
+| [GMX]    | `LOGIN`   | *keine*    | `mail.gmx.net`        | `25`  |
 |          |           | `SMTPS`    | `mail.gmx.net`        | `465` |
-| [Web.de] | `LOGIN`¹  | *keine*    | `smtp.web.de`         | `25`  |
+| [Web.de] | `LOGIN`   | *keine*    | `smtp.web.de`         | `25`  |
 |          |           | `STARTTLS` | `smtp.web.de`         | `587` |
-| [Yahoo]  | `LOGIN`¹  | *keine*    | `smtp.mail.yahoo.com` | `25`  |
+| [Yahoo]  | `LOGIN`   | *keine*    | `smtp.mail.yahoo.com` | `25`  |
 |          |           | `SMTPS`    | `smtp.mail.yahoo.com` | `465` |
-
-**¹** Für die Anmeldung beim SMTP-Server muss die E-Mailadresse als Login-Name und das gewählte Passwort im Programm eingetragen werden.
 
 
 [GMail]:  http://mail.google.com/

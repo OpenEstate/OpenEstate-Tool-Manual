@@ -70,16 +70,16 @@ Die Zeichenkette **`${openestate.server.varDir}`** wird automatisch durch den Pf
 
 ### Protokollierung konfigurieren {#admin_server_setup_logging}
 
-Im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers finden Sie eine Datei namens **`log4j.properties`**. Über diese Datei kann die Protokollierung des ImmoTool-Servers konfiguriert werden.
+Im [Konfigurations-Verzeichnis]({{< relref "directories.md#admin_server_directories_etc" >}}) des ImmoTool-Servers finden Sie eine Datei namens **`logback.xml`**. Über diese Datei kann die Protokollierung des ImmoTool-Servers konfiguriert werden.
 
-Standardmäßig werden die Protokolle im [Protokoll-Verzeichnis]({{< relref "directories.md#admin_server_directories_log" >}}) abgelegt. In der Regel ist es nicht nötig, die Protokollierung des ImmoTool-Servers individuell anzupassen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von log4j](https://logging.apache.org/log4j/1.2/manual.html).
+Standardmäßig werden die Protokolle im [Protokoll-Verzeichnis]({{< relref "directories.md#admin_server_directories_log" >}}) abgelegt. In der Regel ist es nicht nötig, die Protokollierung des ImmoTool-Servers individuell anzupassen. Weitere Informationen zu dieser Konfigurationsdatei finden Sie in der [Dokumentation von Logback](https://logback.qos.ch/documentation.html).
 
 {{< info >}}
-Die Zeichenkette **`${openestate.server.logDir}`** in der Datei **`log4j.properties`** wird automatisch durch den Pfad zum [Protokoll-Verzeichnis]({{< relref "directories.md#admin_server_directories_log" >}}) ersetzt.
+Die Zeichenkette **`${openestate.server.logDir}`** in der Datei **`logback.xml`** wird automatisch durch den Pfad zum [Protokoll-Verzeichnis]({{< relref "directories.md#admin_server_directories_log" >}}) ersetzt.
 {{< /info >}}
 
 {{< info >}}
-Die Zeichenkette **`${openestate.server.app}`** in der Datei **`log4j.properties`** wird automatisch durch den Namen der aktuellen Anwendung ersetzt. Somit können für verschiedene Anwendungen unterschiedliche Protokoll-Dateien erzeugt werden.
+Die Zeichenkette **`${openestate.server.app}`** in der Datei **`logback.xml`** wird automatisch durch den Namen der aktuellen Anwendung ersetzt. Somit können für verschiedene Anwendungen unterschiedliche Protokoll-Dateien erzeugt werden.
 {{< /info >}}
 
 

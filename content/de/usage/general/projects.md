@@ -86,7 +86,11 @@ Wenn Sie die Angaben in allen Tabs vorgenommen haben, speichern Sie Ihr Projekt 
 
 ### Ein Projekt öffnen {#usage_general_projects_open}
 
-Projekte können Sie entweder über den Projektassitenten oder direkt im Hauptmenü öffnen. Den Projektassisten öffnen Sie im Hauptmenü unter `Programm → Neues Projekt`. Direkt öffnen Sie Projekte im Hauptmenü unter `Programm → Projekt öffnen`. Zuletzt verwendete Projekte öffnen Sie im Hauptmenü unter  `Programm → zuletzt verwendet ...`.
+Projekte können Sie entweder über den Projektassistenten oder direkt im Hauptmenü öffnen. 
+
+-   Den Projektassistenten öffnen Sie im Hauptmenü unter **"Programm → Neues Projekt"**. 
+-   Direkt öffnen Sie Projekte im Hauptmenü unter **"Programm → Projekt öffnen"**. 
+-   Zuletzt verwendete Projekte öffnen Sie im Hauptmenü unter  **"Programm → zuletzt verwendet..."**.
 
 
 #### Ein bereits existierendes Projekt öffnen {#usage_general_projects_open_exist}
@@ -121,12 +125,25 @@ Inhalte einfügen
 
 #### Wo wird mein Projekt gespeichert? {#usage_general_projects_faq_location}
 
-Standardmäßig werden Projekte in das Verzeichnis `OpenEstate-Files` im Benutzerverzeichnis des im Betriebssystem angemeldetetn Benutzer abgelegt. Sie können beim Anlegen eines Projekts ggf. eine beliebige andere Stelle angeben. Darauf sollten Sie aber verzichten, wenn dies nicht zwingend notwendig ist.
+Standardmäßig werden Projekte in das Verzeichnis **`OpenEstate-Files`** im Benutzerverzeichnis des im Betriebssystem angemeldeten Benutzer abgelegt. Sie können beim Erstellen des Projekts im [Projektassistent](#usage_general_projects_wizard) auch einen beliebigen anderen Speicherort wählen.
+
+{{< info >}}
+Weitere Informationen finden Sie im Kapitel ["Projekt-Verzeichnis des ImmoTools"]({{< relref "../../admin/client/directories.md#admin_client_directories_project" >}}).
+{{< /info >}} 
 
 
 #### Wie kann ich mein Projekt an eine andere Stelle verschieben? {#usage_general_projects_faq_move}
 
-Verschieben oder kopieren Sie das Projektverzeichnis an eine beliebige Stelle, z.B. auf einen USB-Festplatte.
+Sie können ein Projekt jederzeit an einen anderen Speicherort auf Ihrer Festplatte verschieben. Gehen Sie dafür wie folgt vor:
 
-Da nach dem verschieben das Projektverzeichnis nicht mehr an seiner alten Stelle existiert, wird das Programm beim nächsten Start eine Fehlermeldung ausgeben. Die Frage, ob ein neues Projekt erzeugt werden soll, beantwortet mit `Ja`. Darauf öffnet sich der [Projektassistent](#usage_general_projects_wizard). Klicken Sie im Projektassistenten auf den Tab `Projekt öffnen` und wählen das Projekt-Verzeichnis an seiner neuen Position aus und klicken auf Projekt öffnen. Dann wird das Projekt vom neuen Speicherort im Programm geöffnet. Beim nächsten Programmstart wird das Projekt automatisch vom neuen Speicherort geöffnet, wenn Sie zuvor bei der Projektwahl im Projektassistent die Checkbox `Das Projekt automatisch beim Programmstart öffnen` aktiviert hatten.
+1.  Beenden Sie das ImmoTool, sollte es aktuell in Betrieb sein.
 
+2.  Ermitteln Sie den Speicherort des [Projekt-Verzeichnisses]({{< relref "../../admin/client/directories.md#admin_client_directories_project" >}}).
+
+3.  Verschieben Sie das Verzeichnis an die gewünschte Stelle (z.B. auf einen USB-Festplatte) und merken Sie sich den neuen Speicherort.
+
+4.  Starten Sie das ImmoTool neu. 
+
+5.  Da nach dem Verschieben das Projekt nicht mehr vom alten Speicherort geladen werden kann, wird das Programm beim nächsten Start ggf. eine Fehlermeldung ausgeben. Die Frage, ob ein neues Projekt erzeugt werden soll, können Sie mit mit **"Nein"** beantworten.
+
+6.  Klicken Sie im Hauptmenü auf **"Programm → Projekt öffnen"** und wählen Sie den in Schritt (3) gewählten neuen Speicherort für das Projekt aus. Das Programm wird daraufhin das Projekt vom neuen Speicherort aus öffnen.

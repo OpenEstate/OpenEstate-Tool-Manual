@@ -28,28 +28,28 @@ Die technischen Details zur Einrichtung des E-Mailkontos erfahren Sie von Ihrem 
 
 ### E-Mailkonto hinzufügen {#usage_email_accounts_add}
 
-Klicken Sie im Hauptmenü auf `E-Mails` → `E-Mailkonten verwalten` um das [Dialogfenster zur Bearbeitung der Mailkonten](#usage_email_accounts_setup) zu öffnen.
+Klicken Sie im Hauptmenü auf **"E-Mails → E-Mailkonten verwalten"** um das [Dialogfenster zur Bearbeitung der Mailkonten](#usage_email_accounts_setup) zu öffnen.
 
-Klicken Sie in dem Fenster unten links auf den Button `Aktionen` → `Hinzufügen` um ein neues Mailkonto vorzubereiten. Nehmen Sie die nötigen Änderungen vor und klicken Sie abschließend auf `Übernehmen`.
+Klicken Sie in dem Fenster unten links auf den Button **"Aktionen → Hinzufügen"** um ein neues Mailkonto vorzubereiten. Nehmen Sie die nötigen Änderungen vor und klicken Sie abschließend auf **"Übernehmen"**.
 
 
 ### E-Mailkonto bearbeiten {#usage_email_accounts_edit}
 
-Klicken Sie im Hauptmenü auf `E-Mails` → `E-Mailkonten verwalten` um das [Dialogfenster zur Bearbeitung der Mailkonten](#usage_email_accounts_setup) zu öffnen.
+Klicken Sie im Hauptmenü auf **"E-Mails → E-Mailkonten verwalten"** um das [Dialogfenster zur Bearbeitung der Mailkonten](#usage_email_accounts_setup) zu öffnen.
 
-Wählen Sie auf der linken Seite des Fensters das zu bearbeitende E-Mailkonto aus. Nehmen Sie die nötigen Änderungen auf der rechten Seite des Fensters vor und klicken Sie abschließend auf `Übernehmen`.
+Wählen Sie auf der linken Seite des Fensters das zu bearbeitende E-Mailkonto aus. Nehmen Sie die nötigen Änderungen auf der rechten Seite des Fensters vor und klicken Sie abschließend auf **"Übernehmen"**.
 
 
 ### E-Mailkonto löschen {#usage_email_accounts_remove}
 
-Klicken Sie im Hauptmenü auf `E-Mails` → `E-Mailkonten verwalten` um das [Dialogfenster zur Bearbeitung der Mailkonten](#usage_email_accounts_setup) zu öffnen.
+Klicken Sie im Hauptmenü auf **"E-Mails → E-Mailkonten verwalten"** um das [Dialogfenster zur Bearbeitung der Mailkonten](#usage_email_accounts_setup) zu öffnen.
 
-Wählen Sie auf der linken Seite des Fensters das zu bearbeitende E-Mailkonto aus. Klicken Sie unten links auf den Button `Aktionen` → `Entfernen` um ein neues Mailkonto zu entfernen und klicken Sie abschließend auf `Übernehmen`.
+Wählen Sie auf der linken Seite des Fensters das zu bearbeitende E-Mailkonto aus. Klicken Sie unten links auf den Button **"Aktionen → Entfernen"** um ein neues Mailkonto zu entfernen und klicken Sie abschließend auf **"Übernehmen"**.
 
 
 ### E-Mailkonten verwalten {#usage_email_accounts_setup}
 
-Klicken Sie im Hauptmenü auf `E-Mails` → `E-Mailkonten verwalten` um das Dialogfenster zur Bearbeitung der Mailkonten zu öffnen.
+Klicken Sie im Hauptmenü auf **"E-Mails → E-Mailkonten verwalten"** um das Dialogfenster zur Bearbeitung der Mailkonten zu öffnen.
 
 {{< figure src="account_dialog.jpg" caption="Dialogfenster zur Verwaltung der E-Mailkonten" >}}
 
@@ -80,7 +80,7 @@ Verschiedene allgemeine Angaben können zu jedem E-Mailkonto hinterlegt werden.
 
 #### Empfang via IMAP {#usage_email_accounts_setup_imap}
 
-Um eingehende Nachrichten über das **IMAP**-Protokoll vom E-Mailserver abholen zu können, öffnen Sie den Bereich `Empfang` und wählen Sie `IMAP` als Protokoll aus. Daraufhin wird ein Formular dargestellt, über welches die Anbindung des IMAP-Mailservers eingestellt werden kann.
+Um eingehende Nachrichten über das **IMAP**-Protokoll vom E-Mailserver abholen zu können, öffnen Sie den Bereich **"Empfang"** und wählen Sie **"IMAP"** als Protokoll aus. Daraufhin wird ein Formular dargestellt, über welches die Anbindung des IMAP-Mailservers eingestellt werden kann.
 
 {{< figure src="account_imap.jpg" caption="IMAP-Einstellungen eines E-Mailkontos" >}}
 
@@ -119,7 +119,7 @@ Folgende Port-Nummern werden bei IMAP meist für die verschiedenen Verfahren zur
 
 #### Empfang via POP3 {#usage_email_accounts_setup_pop3}
 
-Um eingehende Mails über das **POP3**-Protokoll vom E-Mailserver abholen zu können, öffnen Sie den Bereich `Empfang` und wählen Sie `POP3` als Protokoll aus. Daraufhin wird ein Formular dargestellt, über welches die Anbindung des POP3-Mailservers eingestellt werden kann.
+Um eingehende Mails über das **POP3**-Protokoll vom E-Mailserver abholen zu können, öffnen Sie den Bereich **"Empfang"** und wählen Sie **"POP3"** als Protokoll aus. Daraufhin wird ein Formular dargestellt, über welches die Anbindung des POP3-Mailservers eingestellt werden kann.
 
 {{< figure src="account_pop3.jpg" caption="POP3-Einstellungen eines E-Mailkontos" >}}
 
@@ -156,7 +156,7 @@ Folgende Port-Nummern werden bei POP3 meist für die verschiedenen Verfahren zur
 
 #### Versand via SMTP {#usage_email_accounts_setup_smtp}
 
-Um ausgehende Mails über das **SMTP**-Protokoll versenden zu können, öffnen Sie den Bereich `Versand` und wählen Sie `SMTP` als Protokoll aus. Daraufhin wird ein Formular dargestellt, über welches die Anbindung des SMTP-Mailservers eingestellt werden kann.
+Um ausgehende Mails über das **SMTP**-Protokoll versenden zu können, öffnen Sie den Bereich **"Versand"** und wählen Sie **"SMTP"** als Protokoll aus. Daraufhin wird ein Formular dargestellt, über welches die Anbindung des SMTP-Mailservers eingestellt werden kann.
 
 {{< figure src="account_smtp.jpg" caption="SMTP-Einstellungen eines E-Mailkontos" >}}
 
@@ -208,7 +208,7 @@ Für jedes E-Mailkonto können verschiedene Standard-Mailordner eingestellt werd
 
 Um einen anderen E-Mailordner zu wählen, klicken Sie auf den jeweiligen Button. Es öffnet sich daraufhin ein Fenster, über welches der Zielordner ausgewählt werden kann.
 
-Wenn für eine der Aktionen kein Mailordner verwendet werden soll, kann rechts neben dem jeweiligen Button auf `inaktiv` geklickt werden.
+Wenn für eine der Aktionen kein Mailordner verwendet werden soll, kann rechts neben dem jeweiligen Button auf **"inaktiv"** geklickt werden.
 
 
 #### Erweiterte Einstellungen {#usage_email_accounts_setup_extended}
@@ -217,7 +217,7 @@ Abhängig vom E-Mailanbieter können weitere Einstellungen hinterlegt werden. Im
 
 {{< figure src="account_properties.jpg" caption="Erweiterte Einstellungen eines E-Mailkontos" >}}
 
-Klicken Sie oberhalb der Tabelle auf den Button `+` um einen leeren Eintrag in die Tabelle einzufügen. Um einen markierten Eintrag zu entfernen, klicken Sie auf den Button `-`.
+Klicken Sie oberhalb der Tabelle auf den Button **"+"** um einen leeren Eintrag in die Tabelle einzufügen. Um einen markierten Eintrag zu entfernen, klicken Sie auf den Button **"-"**.
 
 Die möglichen Einstellungen sind in der Javamail-API dokumentiert:
 
@@ -228,4 +228,4 @@ Die möglichen Einstellungen sind in der Javamail-API dokumentiert:
 
 #### Änderungen speichern {#usage_email_accounts_setup_submit}
 
-Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie auf den Button `Übernehmen`.
+Um die Änderungen im Formular dauerhaft zu speichern, klicken Sie auf den Button **"Übernehmen"**.
