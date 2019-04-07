@@ -211,7 +211,7 @@ The **ManagerBackup** can be controlled by the following command line parameters
     Only the database with identifier **`<urlid>`** from the **`manager.conf`** file should be backed up. Otherwise all configured database are backed up.
 
 -   **-dir `<path>`** \
-    You may specify the directory at **`<path>`**, where backups are stored.
+    You may specify a directory at **`<path>`**, where backups are stored.
 
 -   **-limit `<number>`** \
     You may set the maximal number **`<number>`** of backups to keep for each database. Older backups are automatically removed, if the limit is exceeded.

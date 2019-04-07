@@ -207,13 +207,13 @@ Das Hilfsprogramm **ManagerBackup** kann über Kommandozeilen-Parameter bei Beda
     Nur die in **`manager.conf`** registrierte Datenbank mit der Kennung **`<urlid>`** sichern. Andernfalls werden alle in **`manager.conf`** registrierten Datenbanken gesichert.
 
 -   **-dir `<path>`** \
-    Die erzeugten Datensicherungen werden im unter **`<path>`** angegebenen Pfad gespeichert.
+    Die erzeugten Datensicherungen werden im Verzeichnis **`<path>`** gespeichert.
 
 -   **-limit `<number>`** \
-    Maximal werden die als **`<number>`** angegebenen Datenbank im Sicherungsverzeichnis vorgehalten. Ältere überschüssige Sicherungsdateien werden automatisch aus dem Verzeichnis gelöscht.
+    Maximal werden die als **`<number>`** angegebene Anzahl von Sicherungen im Sicherungsverzeichnis vorgehalten. Ältere überschüssige Sicherungsdateien werden automatisch aus dem Verzeichnis gelöscht.
     
 -   **-delay `<seconds>`** \
-    Die Datensicherung kann um die in **`<seconds>`** angegebenen Sekunden verzögert werden.
+    Die Datensicherung kann um die als **`<seconds>`** angegebenen Sekunden verzögert werden.
     
 -   **-wait** \
     Nach erfolgter Ausführung wird das Programm nicht sofort beendet. Der Benutzer muss erst mit **"ENTER"** bestätigen, dass das Programm beendet werden soll.
