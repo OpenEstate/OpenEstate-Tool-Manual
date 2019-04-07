@@ -33,15 +33,22 @@ Anwender von Debian-basierten Linux-Distributionen (z.B. **Debian**, **Ubuntu** 
 
 Zur Integration des Repositories ins Betriebssystem ist wie folgt vorzugehen:
 
-1.  PGP-Schlüssel importieren via
+1.  PGP-Schlüssel importieren via:
 
     ```bash
-    wget -qO - \
-      https://debian.openestate.org/conf/debian.gpg.key \ 
-      | sudo apt-key add -
+    wget -qO - \ 
+      "https://debian.openestate.org/conf/debian.gpg.key" | \ 
+      sudo apt-key add -
     ```
 
-2.  Folgende Zeile am Ende der Datei **`/etc/apt/sources.list`** eintragen:
+2.  Repository registrieren via:
+
+    ```bash
+    sudo apt-add-repository \
+      "deb https://debian.openestate.org/ openestate main"
+    ```
+
+    Oder alternativ folgende Zeile am Ende der Datei **`/etc/apt/sources.list`** eintragen:
 
     ```
     deb https://debian.openestate.org/ openestate main

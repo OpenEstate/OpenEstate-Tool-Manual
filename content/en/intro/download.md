@@ -36,12 +36,19 @@ Follow these steps in order to integrate the Debian repository into your operati
 1.  Import the PGP key via:
 
     ```bash
-    wget -qO - \
-      https://debian.openestate.org/conf/debian.gpg.key \ 
-      | sudo apt-key add -
+    wget -qO - \ 
+      "https://debian.openestate.org/conf/debian.gpg.key" | \ 
+      sudo apt-key add -
     ```
 
-2.  Add the following line to the end of the file **`/etc/apt/sources.list`**:
+2.  Register the repository via:
+
+    ```bash
+    sudo apt-add-repository \
+      "deb https://debian.openestate.org/ openestate main"
+    ```
+
+    Or alternatively add the following line to the end of the file **`/etc/apt/sources.list`**:
 
     ```
     deb https://debian.openestate.org/ openestate main
